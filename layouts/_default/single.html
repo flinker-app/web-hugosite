@@ -10,10 +10,14 @@
             {{ $content = replaceRE `href="\./assets/` (printf `href="%sassets/` (absURL "")) $content }}
             {{ $content = replaceRE `src="\./assets/` (printf `src="%sassets/` (absURL "")) $content }}
             {{ $content = replaceRE `href="\./blog/` (printf `href="%blog-flinker/` (absURL "")) $content }}
+            {{ $content = replaceRE `url\(\s*\/assets/` (printf `url(%sassets/` (absURL "")) $content }}
+
           
             {{ $content = replaceRE `href="\./assets-flinker/` (printf `href="%sassets-flinker/` (absURL "")) $content }}
             {{ $content = replaceRE `src="\./assets-flinker/` (printf `src="%sassets-flinker/` (absURL "")) $content }}
             {{ $content = replaceRE `href="\./blog-flinker/` (printf `href="%blog-flinker/` (absURL "")) $content }}
+            {{ $content = replaceRE `url\(\s*\/assets-flinker/` (printf `url(%sassets-flinker/` (absURL "")) $content }}
+
 
             {{ $content = replaceRE `href="\./(.*?\.html)"` (printf `href="%s$1"` (absURL "")) $content }}
             {{ $content | safeHTML }}
