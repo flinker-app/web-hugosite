@@ -1,0 +1,75 @@
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+  window.addEventListener("load", function () {
+    window.cookieconsent.initialise({
+      container: document.getElementById("content"),
+      palette: {
+        popup: { background: "#ffffff", text: "#000", link: "#000" },
+        button: {
+          background: "var(--bs-primary)",
+          border: "var(--bs-primary)",
+          text: "#fff",
+          "border-radius": "20px",
+        },
+        highlight: {
+          background: "var(--bs-primary)",
+          border: "var(--bs-primary)",
+          text: "#000000",
+        },
+      },
+      elements: {
+        allow:
+          '<a aria-label="allow cookies" tabindex="0" class="cc-btn cc-allow btn btn-primary" style="font-family: var(--global-font); border: none;">Allow Cookies</a>',
+        deny:
+          '<a style="background-color:transparent; border-color:transparent; color:#999; font-family: var(--global-font);" aria-label="deny cookies" tabindex="0" class="cc-btn cc-deny">Deny Cookies</a>',
+      },
+      compliance: {},
+      onStatusChange: function (status) {
+        console.log(status);
+        if (status == "allow") {
+          // Add your opt-in logic here
+        }
+      },
+      law: {
+        regionalLaw: false,
+      },
+      theme: "block",
+      position: "bottom-left",
+      revokable: false,
+      location: false,
+      cookie: {
+        // This is the name of this cookie - you can ignore this
+        //name: "cookieconsent_status",
+        // '/',
+
+        // This is the domain that the cookie 'name' belongs to. The cookie can only be read on this domain.
+        //domain: "/",
+
+        // The cookies expire date, specified in days (specify -1 for no expiry)
+        //expiryDays: 365,
+
+        // If true the cookie will be created with the secure flag. Secure cookies will only be transmitted via HTTPS.
+        //secure: false,
+      },
+      content: {
+        header: "",
+        message: "This website uses cookies to ensure you get the best experience.",
+        dismiss: "",
+        allow: "Allow Cookies",
+        deny: "Deny Cookies",
+        link: "Learn more",
+        href: "/privacy-policy", // Change this to your privacy policy URL
+        close: "&#x274c;",
+        policy: "Cookie Policy",
+        target: "_blank",
+      },
+      type: "opt-out",
+      layout: "basic",
+    });
+  });
+</script>

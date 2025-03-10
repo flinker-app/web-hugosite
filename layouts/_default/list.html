@@ -1,0 +1,16 @@
+{{ define "main" }}
+  {{ if ne .RelPermalink "/" }}
+    <section>
+      <h1>{{ .Title }}</h1>
+      {{ range .Pages }}
+        <article>
+          <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          <p>{{ .Summary }}</p>
+        </article>
+      {{ end }}
+    </section>
+  {{ else }}
+    <!-- Keine Listenansicht für die Root-Seite -->
+    {{ .Content }}
+  {{ end }}
+{{ end }}

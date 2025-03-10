@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "assets-flinker/images/favicon/apple-touch-icon.png" | absURL }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "assets-flinker/images/favicon/favicon-32x32.png" | absURL }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "assets-flinker/images/favicon/favicon-16x16.png" | absURL }}">
+    <link rel="manifest" href="{{ "assets-flinker/images/favicon/site.webmanifest" | absURL }}">
+    <link rel="mask-icon" href="{{ "assets-flinker/images/favicon/block-safari-pinned-tab.svg" | absURL }}" color="#8b3dff">
+    <link rel="shortcut icon" href="{{ "assets-flinker/images/favicon/favicon.ico" | absURL }}">
+    <meta name="msapplication-TileColor" content="#8b3dff">
+    <meta name="msapplication-config" content="{{ "assets-flinker/images/favicon/tile.xml" | absURL }}">
+
+    <!-- Color modes -->
+    <script src="{{ "assets/js/vendors/color-modes.js" | absURL }}"></script>
+
+    <!-- Libs CSS -->
+    <link href="{{ "assets/libs/simplebar/dist/simplebar.min.css" | absURL }}" rel="stylesheet">
+    <link href="{{ "assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" | absURL }}" rel="stylesheet">
+
+    <!-- Scroll Cue -->
+    <link rel="stylesheet" href="{{ "assets/libs/scrollcue/scrollCue.css" | absURL }}">
+
+    <!-- Box icons -->
+    <link rel="stylesheet" href="{{ "assets/fonts/css/boxicons.min.css" | absURL }}">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="{{ "assets/libs/swiper/swiper-bundle.min.css" | absURL }}">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{{ "assets/css/theme.min.css" | absURL }}">
+
+    <!-- Title -->
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+
+    <!-- SEO, Open Graph, Twitter Cards -->
+    {{ partial "seo.html" . }}
+
+    <!-- Prefetch important assets -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Tag Manager -->
+    {{ partial "gtm.html" . }}
+
+    <!-- Custom Head Content -->
+    {{ block "extra_head" . }}{{ end }}
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Q7CL8WF" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header -->
+    {{ partial "header.html" . }}
+
+    <!-- Main content -->
+    <main>
+        {{ block "main" . }}
+          {{ .Content }} <!-- Fallback, falls single.html nicht greift -->
+        {{ end }}
+    </main>
+
+    <!-- Footer -->
+    {{ partial "footer.html" . }}
+
+    <!-- Cookie-consent -->
+    {{ partial "cookies.html" . }}
+
+    <!-- Scripts -->
+    {{ partial "scripts.html" . }}
+
+    <!-- Extra JS -->
+    {{ block "extra_js" . }}{{ end }}
+  </body>
+</html>

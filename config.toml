@@ -1,0 +1,26 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "Flinker | Building Digital Twins in Microsoft 365"
+
+[params]
+  author = "Flinker GmbH"
+  description = "We are Flinker, accelerating human to robot collaboration for construction, property and facility management processes to protect and empower humans."
+  linkedinImage = "images/linkedin-image.jpg"
+  youtubeChannel = "IhrYouTubeKanalID"
+  githubRepo = "https://github.com/IhrGitHubBenutzername/IhrRepository"
+
+[server] 
+  port = 1313  # Standardport für `hugo server`
+  watch = true  # Automatische Live-Reloads aktivieren
+
+# Erlaube rohes HTML
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Ermöglicht HTML in .html- und .md-Dateien
+
+# Permalinks für URL-Struktur
+[permalinks]
+#  "home" = "/"  # Mappt home.html explizit auf die Root-URL
+  "blog" = "/blog/:slug"  # Für Blogposts
