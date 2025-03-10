@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Flinker | Building Digital Twins in Microsoft 365</title><link>http://localhost:1313/</link><description>Recent content in Home on Flinker | Building Digital Twins in Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 05 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Post</title><link>http://localhost:1313/blog/my-first-post/</link><pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/my-first-post/</guid><description>&lt;p>This is the content of my first blog post.&lt;/p></description></item><item><title>Imprint</title><link>http://localhost:1313/legal/imprint/</link><pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/legal/imprint/</guid><description>&lt;h2 id="1-responsible-for-content">1. Responsible for content&lt;/h2>
+&lt;p>Flinker GmbH&lt;br>
+Zittelstraße&lt;br>
+780796 Munich&lt;/p>
+&lt;p>&lt;a href="mailto:info@flinker.app">info@flinker.app&lt;/a>&lt;/p>
+&lt;p>Represented by the managing directors:&lt;br>
+Christian Laimer, Mario Beltempo&lt;/p>
+&lt;br>
+&lt;h2 id="2-eligibility">2. Eligibility&lt;/h2>
+&lt;h3 id="liability-for-content">Liability for content&lt;/h3>
+&lt;p>As a service provider, we are responsible for our own content on these pages in accordance with general laws. As a service provider, however, we are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information in accordance with general laws remain unaffected. However, liability in this regard is only possible from the time of knowledge of a specific infringement of law. If we become aware of such legal violations, we will remove this content immediately.&lt;/p></description></item><item><title>Privacy Policy</title><link>http://localhost:1313/legal/privacy/</link><pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/legal/privacy/</guid><description>&lt;!-- Your privacy policy content goes here -->
+&lt;h2 id="general-information">General information&lt;/h2>
+&lt;p>The following information provides a simple overview of what happens to your personal data when you visit this website (flinker.app) or any related subdomains such as https://[viewer, docs].flinker.app – website, web application, Teams app, SharePoint solution or Power BI solution. Hereafter, the website and all subdomains will be referred to as services. Personal data includes all data that can personally identify you. Detailed information on data protection can be found in our privacy policy listed below this text.&lt;/p></description></item><item><title>Technical organizational measures (TOM)</title><link>http://localhost:1313/legal/tom/</link><pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/legal/tom/</guid><description>&lt;!-- Your Terms &amp; Conditions content goes here -->
+&lt;h1 id="1-pseudonymization-of-personal-data">1. Pseudonymization of Personal Data&lt;/h1>
+&lt;p>In the case of pseudonymization: Separation of assignment data and storage in separate and secured systems (possibly encrypted).&lt;/p>
+&lt;p>Internal instruction: Personal data should, if possible, be anonymized/pseudonymized in the event of disclosure or after the expiration of the statutory deletion period.&lt;/p>
+&lt;h1 id="2-encryption-of-personal-data">2. Encryption of Personal Data&lt;/h1>
+&lt;p>All IT systems that store and process personal data are encrypted.&lt;/p></description></item><item><title>Terms &amp; Conditions</title><link>http://localhost:1313/legal/terms/</link><pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/legal/terms/</guid><description>&lt;!-- Your Terms &amp; Conditions content goes here -->
+&lt;h1 id="1-remuneration-payment-performance-protection-deadlines">1. Remuneration, Payment, Performance Protection, Deadlines&lt;/h1>
+&lt;h2 id="11">1.1&lt;/h2>
+&lt;p>Unless otherwise agreed, the remuneration will be calculated based on expenditure at the provider&amp;rsquo;s generally valid prices at the time of conclusion of the contract. Remunerations are generally net prices plus statutory sales tax. The provider can bill monthly. If services are paid according to expenses, the provider documents the type and duration of the activities and submits this documentation with the invoice.&lt;/p></description></item><item><title>About</title><link>http://localhost:1313/about/</link><pubDate>Thu, 05 Oct 2023 00:00:00 +0000</pubDate><guid>http://localhost:1313/about/</guid><description>&lt;!-- Page Header start -->
+&lt;section class="py-5 py-lg-8">
+ &lt;div class="container">
+ &lt;div class="row">
+ &lt;div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+ &lt;div class="text-center">
+ &lt;br>&lt;br>&lt;br>
+ &lt;small class="text-uppercase ls-md fw-semibold">Our Mission&lt;/small>
+ &lt;h1 class="mb-3 mt-3">Robotize buildings and infrastructure&lt;/h1>
+ &lt;p class="mb-0 px-lg-6">
+ We are Flinker, accelerating human to robot collaboration for construction, property and facility management processes to protect and empower humans.
+ &lt;/p>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+&lt;!-- Page Header end -->
+
+&lt;!--Image start-->
+&lt;section class>
+ &lt;div class="container">
+ &lt;div class="row gy-4">
+ &lt;div class="col-lg-4 col-md-4 col-12">
+ &lt;a href="./assets-flinker/images/about-img/about-img-2.png" class="glightbox rounded-3">
+ &lt;div
+ class="rounded-3 card-lift"
+ style="background-image: url(/assets-flinker/images/about-img/about-img-2.png); background-repeat: no-repeat; height: 350px; background-size: cover">&lt;/div>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="col-lg-4 col-md-4 col-12">
+ &lt;a href="./assets/images/about-img/about-img-2.jpg" class="glightbox rounded-3">
+ &lt;div
+ class="rounded-3 card-lift"
+ style="background-image: url(/assets/images/about-img/about-img-2.jpg); background-repeat: no-repeat; height: 350px; background-size: cover">&lt;/div>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="col-lg-4 col-md-4 col-12">
+ &lt;a href="./assets-flinker/images/about-img/about-img-5.png" class="glightbox rounded-3">
+ &lt;div
+ class="rounded-3 card-lift"
+ style="background-image: url(/assets-flinker/images/about-img/about-img-5.png); background-repeat: no-repeat; height: 350px; background-size: cover">&lt;/div>
+ &lt;/a>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+&lt;!--Image end-->
+
+&lt;!-- Values Section start -->
+
+ &lt;section class="my-lg-9 my-5">
+ &lt;div class="container">
+ &lt;div class="row">
+ &lt;div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+ &lt;div class="text-center mb-xl-7 mb-5">
+ &lt;h2 class="mb-0">Our principles that keep us moving forward together.&lt;/h2>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row g-lg-7 gy-5">
+ &lt;div class="col-lg-4 col-md-4">
+ &lt;div class="mb-5">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-rocket-takeoff text-primary" viewBox="0 0 16 16">
+ &lt;path d="M9.752 6.193c.599.6 1.73.437 2.528-.362.798-.799.96-1.932.362-2.531-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532Z" />
+ &lt;path
+ d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9.42 9.42 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a9.556 9.556 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093.067.017.12.033.16.045.184.06.279.13.351.295l.029.073a3.475 3.475 0 0 1 .157.721c.055.485.051 1.178-.159 2.065Zm-4.828 7.475.04-.04-.107 1.081a1.536 1.536 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a8.548 8.548 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006ZM5.205 5c-.625.626-.94 1.351-1.004 2.09a8.497 8.497 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107-.04.039Zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a2.835 2.835 0 0 0-.045-.283 3.078 3.078 0 0 0-.3-.041Z" />
+ &lt;path d="M7.009 12.139a7.632 7.632 0 0 1-1.804-1.352A7.568 7.568 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+ &lt;/svg>
+ &lt;/div>
+
+ &lt;h4>Performance&lt;/h4>
+ &lt;p class="mb-0">Harnessing cutting-edge technology, we create solutions that enable businesses to thrive globally, anytime, with Microsoft.&lt;/p></description></item><item><title>About</title><link>http://localhost:1313/blogging/</link><pubDate>Thu, 05 Oct 2023 00:00:00 +0000</pubDate><guid>http://localhost:1313/blogging/</guid><description>&lt;!-- Page Header start -->
+&lt;section class="py-5 py-lg-8">
+ &lt;div class="container">
+ &lt;div class="row">
+ &lt;div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+ &lt;div class="text-center">
+ &lt;br>&lt;br>&lt;br>
+ &lt;small class="text-uppercase ls-md fw-semibold">Our Mission&lt;/small>
+ &lt;h1 class="mb-3 mt-3">Robotize buildings and infrastructure&lt;/h1>
+ &lt;p class="mb-0 px-lg-6">
+ We are Flinker, accelerating human to robot collaboration for construction, property and facility management processes to protect and empower humans.
+ &lt;/p>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+&lt;!-- Page Header end -->
+
+&lt;!--Image start-->
+&lt;section class>
+ &lt;div class="container">
+ &lt;div class="row gy-4">
+ &lt;div class="col-lg-4 col-md-4 col-12">
+ &lt;a href="./assets-flinker/images/about-img/about-img-2.png" class="glightbox rounded-3">
+ &lt;div
+ class="rounded-3 card-lift"
+ style="background-image: url(/assets-flinker/images/about-img/about-img-2.png); background-repeat: no-repeat; height: 350px; background-size: cover">&lt;/div>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="col-lg-4 col-md-4 col-12">
+ &lt;a href="./assets/images/about-img/about-img-2.jpg" class="glightbox rounded-3">
+ &lt;div
+ class="rounded-3 card-lift"
+ style="background-image: url(/assets/images/about-img/about-img-2.jpg); background-repeat: no-repeat; height: 350px; background-size: cover">&lt;/div>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="col-lg-4 col-md-4 col-12">
+ &lt;a href="./assets-flinker/images/about-img/about-img-5.png" class="glightbox rounded-3">
+ &lt;div
+ class="rounded-3 card-lift"
+ style="background-image: url(/assets-flinker/images/about-img/about-img-5.png); background-repeat: no-repeat; height: 350px; background-size: cover">&lt;/div>
+ &lt;/a>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+&lt;!--Image end-->
+
+&lt;!-- Values Section start -->
+
+ &lt;section class="my-lg-9 my-5">
+ &lt;div class="container">
+ &lt;div class="row">
+ &lt;div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+ &lt;div class="text-center mb-xl-7 mb-5">
+ &lt;h2 class="mb-0">Our principles that keep us moving forward together.&lt;/h2>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row g-lg-7 gy-5">
+ &lt;div class="col-lg-4 col-md-4">
+ &lt;div class="mb-5">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-rocket-takeoff text-primary" viewBox="0 0 16 16">
+ &lt;path d="M9.752 6.193c.599.6 1.73.437 2.528-.362.798-.799.96-1.932.362-2.531-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532Z" />
+ &lt;path
+ d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9.42 9.42 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a9.556 9.556 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093.067.017.12.033.16.045.184.06.279.13.351.295l.029.073a3.475 3.475 0 0 1 .157.721c.055.485.051 1.178-.159 2.065Zm-4.828 7.475.04-.04-.107 1.081a1.536 1.536 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a8.548 8.548 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006ZM5.205 5c-.625.626-.94 1.351-1.004 2.09a8.497 8.497 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107-.04.039Zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a2.835 2.835 0 0 0-.045-.283 3.078 3.078 0 0 0-.3-.041Z" />
+ &lt;path d="M7.009 12.139a7.632 7.632 0 0 1-1.804-1.352A7.568 7.568 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+ &lt;/svg>
+ &lt;/div>
+
+ &lt;h4>Performance&lt;/h4>
+ &lt;p class="mb-0">Harnessing cutting-edge technology, we create solutions that enable businesses to thrive globally, anytime, with Microsoft.&lt;/p></description></item><item><title>Service</title><link>http://localhost:1313/service/</link><pubDate>Thu, 05 Oct 2023 00:00:00 +0000</pubDate><guid>http://localhost:1313/service/</guid><description/></item></channel></rss>
