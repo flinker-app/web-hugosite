@@ -30,23 +30,24 @@ layout: "single"
 <!--hero end-->
 
 <!--Logo section start-->
-<div class="container" data-cue="fadeIn">
-<div class="row border-top border-bottom">
-   <div class="d-flex flex-row flex-wrap gap-2 align-items-center justify-content-center justify-content-md-start lh-1 position-lg-absolute bottom-0 mb-lg-6">
-      <span class="text-white-stable fs-6">Great</span>
-      <div>
-         <img src="./assets/images/mobile-app/star.svg" alt="star">
-         <img src="./assets/images/mobile-app/star.svg" alt="star">
-         <img src="./assets/images/mobile-app/star.svg" alt="star">
-         <img src="./assets/images/mobile-app/star.svg" alt="star">
-         <img src="./assets/images/mobile-app/star-light.svg" alt="star">
+<div class="container position-relative" data-cue="fadeIn">
+   <div class="row border-top border-bottom">
+      <div class="d-flex flex-row flex-wrap gap-2 align-items-center justify-content-center justify-content-md-start lh-1 position-lg-absolute bottom-0 mb-lg-6" style="width: 100%;">
+         <span class="text-white-stable fs-6">Great</span>
+         <div>
+            <img src="./assets/images/mobile-app/star.svg" alt="star">
+            <img src="./assets/images/mobile-app/star.svg" alt="star">
+            <img src="./assets/images/mobile-app/star.svg" alt="star">
+            <img src="./assets/images/mobile-app/star.svg" alt="star">
+            <img src="./assets/images/mobile-app/star-light.svg" alt="star">
+         </div>
+         <span class="text-white-stable">12&nbsp;reviews on</span>
+         <span class="lh-1 text-white-stable fw-bold">Microsoft AppSource</span>
       </div>
-      <span class="text-white-stable">12&nbsp;reviews on</span>
-      <span class="lh-1 text-white-stable fw-bold">Microsoft AppSource</span>
    </div>
 </div>
-</div>
 <!--Logo section end-->
+
    
    
 
@@ -724,3 +725,23 @@ layout: "single"
    </div>
 </section>
 <!--Call to action end-->
+
+<!-- Extra JS -->
+<script>
+   function adjustHeroSection() {
+     var hero = document.getElementById('get-started');
+     if (!hero) return; // Falls das Element nicht existiert, nichts tun
+     var vh = window.innerHeight;
+     // Beispiel: Auf Bildschirmen ab 1200px volle Viewport-Höhe, sonst 70% der Viewport-Höhe
+     if (window.innerWidth >= 1200) {
+       hero.style.minHeight = vh + 'px';
+     } else {
+       hero.style.minHeight = (vh * 0.7) + 'px';
+     }
+   }
+ 
+   // Beim Laden und bei Größenänderungen ausführen
+   document.addEventListener('DOMContentLoaded', adjustHeroSection);
+   window.addEventListener('resize', adjustHeroSection);
+ </script>
+ 
