@@ -42,7 +42,7 @@ Christian Laimer, Mario Beltempo&lt;/p>
  &lt;div class="container">
  &lt;div class="row gy-4">
  &lt;div class="col-lg-4 col-md-4 col-12">
- &lt;a href="./assets-flinker/images/about-img/about-img-2.png" class="glightbox rounded-3">
+ &lt;a href="./assets-flinker/images/about-img/about-img-1-2.png" class="glightbox rounded-3">
  &lt;div
  class="rounded-3 card-lift"
  style="background-image: url(/assets-flinker/images/about-img/about-img-2.png); background-repeat: no-repeat; height: 350px; background-size: cover">&lt;/div>
@@ -56,7 +56,7 @@ Christian Laimer, Mario Beltempo&lt;/p>
  &lt;/a>
  &lt;/div>
  &lt;div class="col-lg-4 col-md-4 col-12">
- &lt;a href="./assets-flinker/images/about-img/about-img-5.png" class="glightbox rounded-3">
+ &lt;a href="./assets-flinker/images/about-img/about-img-5-1.png" class="glightbox rounded-3">
  &lt;div
  class="rounded-3 card-lift"
  style="background-image: url(/assets-flinker/images/about-img/about-img-5.png); background-repeat: no-repeat; height: 350px; background-size: cover">&lt;/div>
@@ -140,10 +140,10 @@ Christian Laimer, Mario Beltempo&lt;/p>
  
  &lt;div
  class="col-md-6 col-12 position-md-absolute top-0 end-0 left-0 h-100 mt-6 mt-md-0 px-0"
- style="background-image: url(static\assets-flinker\images\landings\account\account-hero-img.png); background-size: cover; background-position: center">
+ style="background-image: url(./assets-flinker/images/landings/account/account-hero-img2.png); background-size: cover; background-position: center">
  &lt;div class="d-block d-md-none">
  &lt;figure class="figure">
- &lt;img src="static\assets-flinker\images\landings\account\account-hero-img.png" alt="" class="img-fluid" />
+ &lt;img src="./assets-flinker/images/landings/account/account-hero-img2.png" alt="" class="img-fluid" />
  &lt;/figure>
  &lt;/div>
  &lt;/div>
