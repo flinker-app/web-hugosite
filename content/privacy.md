@@ -7,6 +7,7 @@ keywords: ["Privacy Policy", "Flinker GmbH", "Data Collection", "Data Usage", "U
 author: "Flinker GmbH"
 canonical_url: "https://www.flinker.app/privacy"
 url: "/privacy/"
+aliases: ["/data-protection"]
 layout: "mdpage"
 ---
 
