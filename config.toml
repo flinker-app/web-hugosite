@@ -1,4 +1,4 @@
-baseURL = "https://flinker-app.github.io/web-hugosite/"
+baseURL = "https://flinker.app/"
 languageCode = "en-us"
 title = "Flinker | Building Digital Twins in Microsoft 365"
 
@@ -7,7 +7,7 @@ title = "Flinker | Building Digital Twins in Microsoft 365"
   description = "We are Flinker, accelerating human to robot collaboration for construction, property and facility management processes to protect and empower humans."
   linkedinImage = "images/linkedin-image.jpg"
   youtubeChannel = "IhrYouTubeKanalID"
-  githubRepo = "https://github.com/IhrGitHubBenutzername/IhrRepository"
+  githubRepo = "https://github.com/flinker-app"
 
 [server] 
   port = 1313  # Standardport für `hugo server`
