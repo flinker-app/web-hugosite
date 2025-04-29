@@ -23,4 +23,4 @@ title = "Flinker | Building Digital Twins in Microsoft 365"
 # Permalinks für URL-Struktur
 [permalinks]
 #  "home" = "/"  # Mappt home.html explizit auf die Root-URL
-  "blog" = "/blog/:slug"  # Für Blogposts
+  "blog" = "/blog/:slug/"  # Für Blogposts
