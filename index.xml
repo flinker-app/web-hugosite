@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Flinker | Building Digital Twins in Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Home on Flinker | Building Digital Twins in Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 05 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Post</title><link>https://flinker.app/blog/my-first-post/</link><pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/my-first-post/</guid><description>&lt;p>This is the content of my first blog post.&lt;/p></description></item><item><title>Imprint</title><link>https://flinker.app/imprint/</link><pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/imprint/</guid><description>&lt;h2 id="1-responsible-for-content">1. Responsible for content&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Flinker | Building Digital Twins in Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Home on Flinker | Building Digital Twins in Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>IFC Power BI Visual</title><link>https://flinker.app/pbivisual/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/pbivisual/</guid><description>&lt;!--Hero section start-->
+&lt;section class="container py-lg-8 py-5" data-cue="fadeIn">
+ &lt;div class="row justify-content-center">
+ &lt;div class="col-xl-8 col-lg-10 col-12" data-cues="zoomIn" data-group="page-title" data-delay="700">
+ &lt;div class="text-center d-flex flex-column gap-5">
+ &lt;div class="d-flex justify-content-center">
+ &lt;span class="bg-primary bg-opacity-10 text-primary border-primary border p-2 fs-6 rounded-pill lh-1 d-flex align-items-center">
+ &lt;span class="badge bg-primary">New&lt;/span>
+ &lt;a href="https://docs.flinker.app/docs/ai-search.html" class="ms-2 text-decoration-none text-primary" target="_blank">Introducing AI Search &lt;/a>
+ &lt;span class="ms-1">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+ &lt;path
+ fill-rule="evenod&lt;/svg>d"
+ clip-rule="evenodd"
+ d="M1 8.89181C1 8.7592 1.05268 8.63202 1.14645 8.53825C1.24021 8.44448 1.36739 8.39181 1.5 8.39181H13.293L10.146 5.24581C10.0521 5.15192 9.99937 5.02458 9.99937 4.89181C9.99937 4.75903 10.0521 4.63169 10.146 4.53781C10.2399 4.44392 10.3672 4.39117 10.5 4.39117C10.6328 4.39117 10.7601 4.44392 10.854 4.53781L14.854 8.53781C14.9006 8.58425 14.9375 8.63943 14.9627 8.70017C14.9879 8.76092 15.0009 8.82604 15.0009 8.89181C15.0009 8.95757 14.9879 9.02269 14.9627 9.08344C14.9375 9.14418 14.9006 9.19936 14.854 9.24581L10.854 13.2458C10.7601 13.3397 10.6328 13.3924 10.5 13.3924C10.3672 13.3924 10.2399 13.3397 10.146 13.2458C10.0521 13.1519 9.99937 13.0246 9.99937 12.8918C9.99937 12.759 10.0521 12.6317 10.146 12.5378L13.293 9.39181H1.5C1.36739 9.39181 1.24021 9.33913 1.14645 9.24536C1.05268 9.15159 1 9.02441 1 8.89181Z"
+ fill="#8B3DFF" />
+ &lt;/svg>
+ &lt;/span>
+ &lt;/span>
+ &lt;/div>
+ &lt;div class="d-flex flex-column gap-3 mx-lg-8">
+ &lt;h1 class="mb-0 display-4">Visualize Your Data in 3D with Flinker&lt;/h1>
+ &lt;p class="mb-0 lead">Bring spatial insight to your BIM, IoT, logistics, and more with IFC for Microsoft Power BI. Empower your self-service BIM by visualizing both model geometry and data. &lt;/p></description></item><item><title>My First Post</title><link>https://flinker.app/blog/my-first-post/</link><pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/my-first-post/</guid><description>&lt;p>This is the content of my first blog post.&lt;/p></description></item><item><title>Imprint</title><link>https://flinker.app/imprint/</link><pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/imprint/</guid><description>&lt;h2 id="1-responsible-for-content">1. Responsible for content&lt;/h2>
 &lt;p>Flinker GmbH&lt;br>
 Zittelstraße&lt;br>
 780796 Munich&lt;/p>
