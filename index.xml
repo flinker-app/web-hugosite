@@ -3,7 +3,7 @@
 &lt;p>Integrate and interact with IFC models within your dashboards for enhanced project insights without using any extra software.&lt;/p>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>In the Architecture, Engineering, Construction, and Operations (AECO) industry, &lt;strong>IFC (Industry Foundation Classes)&lt;/strong> has become the standard for sharing Building Information Modeling (BIM) data across platforms.&lt;/p>
-&lt;p>Professionals build rich 3D models, but when it’s time to present them in Power BI, something’s missing: the model itself. No geometry, no visual context, just numbers. Power BI doesn’t natively support IFC.&lt;/p></description></item><item><title>IFC Power BI Visual</title><link>https://flinker.app/pbivisual/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/pbivisual/</guid><description>&lt;!--Hero section start-->
+&lt;p>Professionals build rich 3D models, but when it’s time to present them in Power BI, something’s missing: the model itself. No geometry, no visual context, just numbers. Power BI doesn’t natively support IFC.&lt;/p></description></item><item><title>IFC Power BI Visual</title><link>https://flinker.app/ifcpbivisual/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/ifcpbivisual/</guid><description>&lt;!--Hero section start-->
 &lt;section class="container py-lg-8 py-5" data-cue="fadeIn">
  &lt;div class="row justify-content-center">
  &lt;div class="col-xl-8 col-lg-10 col-12" data-cues="zoomIn" data-group="page-title" data-delay="700">
