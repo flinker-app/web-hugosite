@@ -1,0 +1,119 @@
+<section class="container py-5" id="ifc-service-intro">
+  <div class="text-center mb-4">
+    <p class="mb-2 fw-semibold">Choose your role:</p>
+    <div class="d-flex justify-content-center gap-3">
+      <button class="btn btn-outline-primary d-flex align-items-center gap-2" onclick="switchIntro('general')">
+        <i class="bi bi-person"></i> General User
+      </button>
+      <button class="btn btn-outline-secondary d-flex align-items-center gap-2" onclick="switchIntro('tech')">
+        <i class="bi bi-tools"></i> BIM / Technical Role
+      </button>
+    </div>
+  </div>
+
+  <div id="intro-general" class="text-center mb-5 fade-in">
+    <h2 class="mb-3">Optional Setup Support for Power BI</h2>
+    <p class="mb-0 me-lg-8">
+      You can use the Flinker IFC Viewer completely free in Power BI Desktop — no setup required.<br>
+      If you'd like help getting started, we offer optional fixed-price support packages to help you load your models, connect data, and automate dashboards.
+    </p>
+  </div>
+
+  <div id="intro-tech" class="text-center mb-5 fade-in" style="display:none;">
+    <h2 class="mb-3">Optional Setup Support for Power BI</h2>
+    <p class="mb-0 me-lg-8">
+      The Flinker IFC Viewer runs free in Power BI Desktop and is ready to use out-of-the-box.<br>
+      If your team works with complex models or multiple data sources, we offer optional fixed-price packages to help integrate your IFC workflows into Microsoft 365 securely and efficiently.
+    </p>
+  </div>
+
+  <div class="row g-4">
+    <!-- Kickstart -->
+    <div class="col-md-3">
+      <div class="card h-100 shadow-sm border-0 fade-in">
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title">Kickstart Package</h4>
+          <p class="text-muted mb-3">€149 – “See Your Model Working”</p>
+          <ul class="mb-4">
+            <li>IFC model structure review</li>
+            <li>Assistance loading your first model</li>
+            <li>Filtering & KPI walkthrough</li>
+            <li>30 min live support</li>
+          </ul>
+          <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-primary mt-auto">Request Kickstart Help</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Link -->
+    <div class="col-md-3">
+      <div class="card h-100 shadow-sm border-0 fade-in">
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title">Data Link Package</h4>
+          <p class="text-muted mb-3">€290 – “Connect Excel to Your Model”</p>
+          <ul class="mb-4">
+            <li>Excel/SharePoint mapping</li>
+            <li>Dynamic filter setup</li>
+            <li>Live dashboard walkthrough</li>
+            <li>60 min session + docs</li>
+          </ul>
+          <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-primary mt-auto">Request Data Linking</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pro Setup -->
+    <div class="col-md-3">
+      <div class="card h-100 shadow-sm border-0 fade-in">
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title">Pro Setup Package</h4>
+          <p class="text-muted mb-3">€490 – “Multiple Files & Queries”</p>
+          <ul class="mb-4">
+            <li>Multi-IFC model setup</li>
+            <li>Custom property extraction</li>
+            <li>Power BI automation tips</li>
+            <li>90 min session + docs</li>
+          </ul>
+          <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-primary mt-auto">Request Pro Support</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enterprise PoC -->
+    <div class="col-md-3">
+      <div class="card h-100 shadow-sm border-0 fade-in">
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title">Enterprise PoC Track</h4>
+          <p class="text-muted mb-3">€2,450 – “Plan, Prove, Scale”</p>
+          <ul class="mb-4">
+            <li>Structured pilot for large teams</li>
+            <li>Multiple IFCs + KPI integration</li>
+            <li>Stakeholder-ready summary</li>
+            <li>2–3 week fixed scope delivery</li>
+          </ul>
+          <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-primary mt-auto">Request Enterprise Track</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function switchIntro(type) {
+    document.getElementById("intro-general").style.display = type === "general" ? "block" : "none";
+    document.getElementById("intro-tech").style.display = type === "tech" ? "block" : "none";
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  document.querySelectorAll('.fade-in').forEach(el => {
+    observer.observe(el);
+  });
+</script>
