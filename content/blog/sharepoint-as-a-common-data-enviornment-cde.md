@@ -30,6 +30,20 @@ tags:
     - Digital Transformation
     - IFC Models
     - AECO Industry
+robots: "index, follow"
+canonicalUrl: "https://flinker.app/blog/sharepoint-cde-construction-projects"
+image: "/images/blog/sharepoint-cde-construction-projects-cover.png"
+ogTitle: "Leveraging SharePoint as a Common Data Environment (CDE) for Construction"
+ogDescription: "Learn how SharePoint empowers construction teams as a secure, integrated Common Data Environment (CDE) for BIM, collaboration, and analytics."
+faq:
+  - question: "Why use SharePoint as a CDE for construction projects?"
+    answer: "SharePoint offers secure data management, seamless Microsoft 365 integration, and advanced analytics, making it ideal for construction project collaboration and BIM workflows."
+  - question: "Can SharePoint handle BIM and IFC files?"
+    answer: "Yes, SharePoint can store, manage, and share BIM and IFC files, and integrates with tools like Power BI and Flinker for visualization and analytics."
+  - question: "Is SharePoint secure for sensitive construction data?"
+    answer: "SharePoint provides enterprise-grade security and compliance within your Microsoft tenant, ensuring data sovereignty and protection."
+  - question: "How does SharePoint improve collaboration?"
+    answer: "SharePoint centralizes project data, supports real-time co-authoring, and integrates with Teams and Power BI for streamlined communication and productivity."
 ---
 
 
