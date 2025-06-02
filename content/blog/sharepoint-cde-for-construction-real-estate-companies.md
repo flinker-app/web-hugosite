@@ -46,10 +46,9 @@ faq:
     answer: "SharePoint can store and manage BIM and IFC files and integrates with tools like Power BI and Flinker for visualization and analytics."
 ---
 
-![SharePoint Common Data Environment in Construction]( /assets-flinker/images/blog/blog-img-3-1.png )
-
-
 # How Leading Construction Companies Use SharePoint as a Common Data Environment (CDE)
+
+![SharePoint Common Data Environment in Construction]( /assets-flinker/images/blog/blog-img-3-1.png )
 
 In today’s construction industry, success depends on managing data effectively across global teams, complex projects, and tight deadlines. Traditional tools like spreadsheets, shared drives, and siloed platforms are no longer enough. That’s why many leading construction firms are adopting **SharePoint as a Common Data Environment (CDE)** — transforming scattered information into streamlined, collaborative, and secure workflows.
 
