@@ -246,4 +246,13 @@
  &lt;/div>
  &lt;/div>
 &lt;/section>
-&lt;!-- /Teams vs SP Viewer Comparison --></description></item></channel></rss>
+&lt;!-- /Teams vs SP Viewer Comparison -->
+
+```html
+&lt;section class="py-xl-9 py-lg-7 py-5 bg-gray-900" data-bs-theme="dark">
+ &lt;div class="container pb-xl-5">
+ &lt;div class="row">
+ &lt;div class="col-12">
+ &lt;div class="text-center mb-xl-7 mb-5 d-flex flex-column gap-2">
+ &lt;h2 class="mb-0">&lt;span class="gradient-text">Pricing Plans&lt;/span>&lt;/h2>
+ &lt;p class="mb-0 lead">Choose the perfect plan for your IFC Viewer needs&lt;/p></description></item></channel></rss>
