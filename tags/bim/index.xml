@@ -6,7 +6,11 @@
 &lt;p>Integrate and interact with IFC models within your dashboards for enhanced project insights without using any extra software.&lt;/p>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>In the Architecture, Engineering, Construction, and Operations (AECO) industry, &lt;strong>IFC (Industry Foundation Classes)&lt;/strong> has become the standard for sharing Building Information Modeling (BIM) data across platforms.&lt;/p>
-&lt;p>Professionals build rich 3D models, but when it’s time to present them in Power BI, something’s missing: the model itself. No geometry, no visual context, just numbers. Power BI doesn’t natively support IFC.&lt;/p></description></item><item><title>IFC Viewer – Free Online 3D IFC &amp; BCF Model Viewer</title><link>https://flinker.app/ifcviewer/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/ifcviewer/</guid><description>&lt;!-- Teams vs SP Viewer Comparison -->
+&lt;p>Professionals build rich 3D models, but when it’s time to present them in Power BI, something’s missing: the model itself. No geometry, no visual context, just numbers. Power BI doesn’t natively support IFC.&lt;/p></description></item><item><title>IFC Viewer – Free Online 3D IFC &amp; BCF Model Viewer</title><link>https://flinker.app/ifcviewer/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/ifcviewer/</guid><description>&lt;!-- Add vertical space -->
+&lt;div style="height: 48px;">&lt;/div>
+
+
+&lt;!-- Teams vs SP Viewer Comparison -->
 &lt;section class="mb-xl-9 py-4">
  &lt;div class="container">
  &lt;div class="row">
@@ -227,15 +231,9 @@
  &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
  &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
  &lt;/tr>
+ 
  &lt;tr>
- &lt;td>Import/Synch from MS List&lt;/td>
- &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
- &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
- &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
- &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Screenshot Integration to MS List&lt;/td>
+ &lt;td>Viewpoint Integration to MS List&lt;/td>
  &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
  &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
  &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>

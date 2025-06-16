@@ -28,7 +28,11 @@
  &lt;/div>
  &lt;div class="d-flex flex-column gap-3 mx-lg-8">
  &lt;h1 class="mb-0 display-4">Visualize Your Data in 3D with Flinker&lt;/h1>
- &lt;p class="mb-0 lead">Bring spatial insight to your BIM, IoT, logistics, and more with IFC for Microsoft Power BI. Empower your self-service BIM by visualizing both model geometry and data. &lt;/p></description></item><item><title>IFC Viewer – Free Online 3D IFC &amp; BCF Model Viewer</title><link>https://flinker.app/ifcviewer/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/ifcviewer/</guid><description>&lt;!-- Teams vs SP Viewer Comparison -->
+ &lt;p class="mb-0 lead">Bring spatial insight to your BIM, IoT, logistics, and more with IFC for Microsoft Power BI. Empower your self-service BIM by visualizing both model geometry and data. &lt;/p></description></item><item><title>IFC Viewer – Free Online 3D IFC &amp; BCF Model Viewer</title><link>https://flinker.app/ifcviewer/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/ifcviewer/</guid><description>&lt;!-- Add vertical space -->
+&lt;div style="height: 48px;">&lt;/div>
+
+
+&lt;!-- Teams vs SP Viewer Comparison -->
 &lt;section class="mb-xl-9 py-4">
  &lt;div class="container">
  &lt;div class="row">
@@ -249,15 +253,9 @@
  &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
  &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
  &lt;/tr>
+ 
  &lt;tr>
- &lt;td>Import/Synch from MS List&lt;/td>
- &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
- &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
- &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
- &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Screenshot Integration to MS List&lt;/td>
+ &lt;td>Viewpoint Integration to MS List&lt;/td>
  &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
  &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
  &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>

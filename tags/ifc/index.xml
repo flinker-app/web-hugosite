@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IFC on Flinker | Building Digital Twins in Microsoft 365</title><link>https://flinker.app/tags/ifc/</link><description>Recent content in IFC on Flinker | Building Digital Twins in Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/tags/ifc/index.xml" rel="self" type="application/rss+xml"/><item><title>IFC Viewer – Free Online 3D IFC &amp; BCF Model Viewer</title><link>https://flinker.app/ifcviewer/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/ifcviewer/</guid><description>&lt;!-- Teams vs SP Viewer Comparison -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IFC on Flinker | Building Digital Twins in Microsoft 365</title><link>https://flinker.app/tags/ifc/</link><description>Recent content in IFC on Flinker | Building Digital Twins in Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/tags/ifc/index.xml" rel="self" type="application/rss+xml"/><item><title>IFC Viewer – Free Online 3D IFC &amp; BCF Model Viewer</title><link>https://flinker.app/ifcviewer/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/ifcviewer/</guid><description>&lt;!-- Add vertical space -->
+&lt;div style="height: 48px;">&lt;/div>
+
+
+&lt;!-- Teams vs SP Viewer Comparison -->
 &lt;section class="mb-xl-9 py-4">
  &lt;div class="container">
  &lt;div class="row">
@@ -219,15 +223,9 @@
  &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
  &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
  &lt;/tr>
+ 
  &lt;tr>
- &lt;td>Import/Synch from MS List&lt;/td>
- &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
- &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
- &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
- &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Screenshot Integration to MS List&lt;/td>
+ &lt;td>Viewpoint Integration to MS List&lt;/td>
  &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
  &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
  &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
