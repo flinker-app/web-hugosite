@@ -1,4 +1,246 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Microsoft 365 on Flinker | Building Digital Twins in Microsoft 365</title><link>https://flinker.app/tags/microsoft-365/</link><description>Recent content in Microsoft 365 on Flinker | Building Digital Twins in Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 26 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/tags/microsoft-365/index.xml" rel="self" type="application/rss+xml"/><item><title>Leveraging SharePoint as a Common Data Environment (CDE) for Large Construction Projects</title><link>https://flinker.app/blog/sharepoint-cde-construction-projects/</link><pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-construction-projects/</guid><description>&lt;p>&lt;strong>Leveraging SharePoint as a Common Data Environment (CDE) for Large Construction Projects&lt;/strong>&lt;/p>
 &lt;p>Large-scale construction projects often grapple with fragmented data, misaligned communications, and inefficient workflows. A Common Data Environment (CDE) addresses these challenges by providing a centralized platform to manage, collaborate on, and leverage critical project data throughout a project&amp;rsquo;s lifecycle. SharePoint, deeply integrated within Microsoft 365, emerges as a powerful, secure, and scalable solution ideal for managing complex construction data.&lt;/p></description></item><item><title>Real-World Success Stories: Why Leading Construction Firms Choose SharePoint as Their CDE</title><link>https://flinker.app/blog/sharepoint-cde-success-stories/</link><pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-success-stories/</guid><description>&lt;h1 id="how-leading-construction-companies-use-sharepoint-as-a-common-data-environment-cde">How Leading Construction Companies Use SharePoint as a Common Data Environment (CDE)&lt;/h1>
 &lt;p>&lt;img src="https://flinker.app/assets-flinker/images/blog/blog-img-3-1.png" alt="SharePoint Common Data Environment in Construction">&lt;/p>
-&lt;p>In today’s construction industry, success depends on managing data effectively across global teams, complex projects, and tight deadlines. Traditional tools like spreadsheets, shared drives, and siloed platforms are no longer enough. That’s why many leading construction firms are adopting &lt;strong>SharePoint as a Common Data Environment (CDE)&lt;/strong> — transforming scattered information into streamlined, collaborative, and secure workflows.&lt;/p></description></item></channel></rss>
+&lt;p>In today’s construction industry, success depends on managing data effectively across global teams, complex projects, and tight deadlines. Traditional tools like spreadsheets, shared drives, and siloed platforms are no longer enough. That’s why many leading construction firms are adopting &lt;strong>SharePoint as a Common Data Environment (CDE)&lt;/strong> — transforming scattered information into streamlined, collaborative, and secure workflows.&lt;/p></description></item><item><title>IFC Viewer – Free Online 3D IFC &amp; BCF Model Viewer</title><link>https://flinker.app/ifcviewer/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/ifcviewer/</guid><description>&lt;!-- Teams vs SP Viewer Comparison -->
+&lt;section class="mb-xl-9 py-4">
+ &lt;div class="container">
+ &lt;div class="row">
+ &lt;div class="col-12 text-center mb-7">
+ &lt;h2>Compare Viewers&lt;/h2>
+ &lt;p class="mb-0">See which features are available in Free vs. Pro for Teams and SharePoint viewers.&lt;/p>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row">
+ &lt;div class="col-12">
+ &lt;div class="table-responsive">
+ &lt;table class="table table-striped text-nowrap table-lg table-borderless">
+ &lt;thead>
+ &lt;tr>
+ &lt;th rowspan="2">
+ &lt;div class="fs-5 text-dark fw-semibold mb-3">Feature&lt;/div>
+ &lt;/th>
+ &lt;th colspan="2">
+ &lt;div class="fs-5 text-dark fw-semibold">Teams Viewer&lt;/div>
+ &lt;/th>
+ &lt;th colspan="2">
+ &lt;div class="fs-5 text-dark fw-semibold">SP Viewer&lt;/div>
+ &lt;/th>
+ &lt;/tr>
+ &lt;tr>
+ &lt;th class="text-center">Free&lt;/th>
+ &lt;th class="text-center">Pro&lt;/th>
+ &lt;th class="text-center">Free&lt;/th>
+ &lt;th class="text-center">Pro&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;!-- Access &amp; Storage -->
+ &lt;tr class="table-secondary">
+ &lt;td colspan="5">&lt;strong>Access &amp;amp; Storage&lt;/strong>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>
+ Unlimited Projects
+ &lt;i class="bi bi-question-circle-fill text-muted ms-1"
+ data-bs-toggle="tooltip"
+ title="Unlimited creation in M365 tenant">&lt;/i>
+ &lt;/td>
+ &lt;td class="text-center">&lt;span class="text-success">✔️&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-success">✔️&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-success">✔️&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-success">✔️&lt;/span>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>
+ Unlimited Storage
+ &lt;i class="bi bi-question-circle-fill text-muted ms-1"
+ data-bs-toggle="tooltip"
+ title="Uses your M365 storage quota">&lt;/i>
+ &lt;/td>
+ &lt;td class="text-center">&lt;span class="text-success">✔️&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-success">✔️&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-success">✔️&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-success">✔️&lt;/span>&lt;/td>
+ &lt;/tr>
+
+ &lt;!-- IFC Viewer – Access -->
+ &lt;tr class="table-secondary">
+ &lt;td colspan="5">&lt;strong>IFC Viewer – Access&lt;/strong>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Open IFC from Computer&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Open IFC from SharePoint&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Load multiple IFC from URLs&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Load multiple IFC from SP Folder&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-success">✔️&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-success">✔️&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-success">✔️&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-success">✔️&lt;/span>&lt;/td>
+ &lt;/tr>
+
+ &lt;!-- IFC Viewer – Integration -->
+ &lt;tr class="table-secondary">
+ &lt;td colspan="5">&lt;strong>IFC Viewer – Integration&lt;/strong>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Set as Teams Tab&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">–&lt;/td>
+ &lt;td class="text-center">–&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Embed as SP Webpart&lt;/td>
+ &lt;td class="text-center">–&lt;/td>
+ &lt;td class="text-center">–&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/span>&lt;/td>
+ &lt;/tr>
+
+ &lt;!-- IFC Viewer – Functions -->
+ &lt;tr class="table-secondary">
+ &lt;td colspan="5">&lt;strong>IFC Viewer – Functions&lt;/strong>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Natural Language Search&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Filter Elements by Class&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Download Excel to Computer&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Download Selected as IFC&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>View Model Details&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Save Excel to SP/Teams&lt;/td>
+ &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
+ &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
+ &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
+ &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Sync Excel to SP/Teams&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
+ &lt;/tr>
+
+ &lt;!-- BCF Manager -->
+ &lt;tr class="table-secondary">
+ &lt;td colspan="5">&lt;strong>BCF Manager&lt;/strong>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Add New Topics&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Open BCF from Computer&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Download BCF&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Search BCF Topics&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;td class="text-center">✔️&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Assign Attributes&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-success">✔️&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-success">✔️&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-success">✔️&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-success">✔️&lt;/span>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Save to SP/Teams&lt;/td>
+ &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
+ &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
+ &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
+ &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Save to Microsoft List&lt;/td>
+ &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
+ &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
+ &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
+ &lt;td class="text-center">&lt;strong>Pro&lt;/strong>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Import/Synch from MS List&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Screenshot Integration to MS List&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
+ &lt;td class="text-center">&lt;span class="text-warning">🔜&lt;/span>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+ &lt;/table>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+&lt;!-- /Teams vs SP Viewer Comparison --></description></item></channel></rss>
