@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="160"
+   width="180"
    height="80"
-   viewBox="0 0 160 80"
+   viewBox="0 0 180 80"
    fill="none"
    version="1.1"
    id="svg869"
@@ -28,7 +28,26 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs873" />
+     id="defs873">
+    <clipPath
+       id="clipPath17">
+      <path
+         d="M 0.030029,841.86 H 1190.55 V 0 H 0.030029 Z"
+         id="path19" />
+    </clipPath>
+    <clipPath
+       id="clipPath39">
+      <path
+         d="m 1003.46,841.86 h 187.09 V 688.819 h -187.09 z"
+         id="path41" />
+    </clipPath>
+    <clipPath
+       id="clipPath51">
+      <path
+         d="M 0.030029,841.86 H 1190.55 V 0 H 0.030029 Z"
+         id="path53" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -38,8 +57,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="3186"
-     inkscape:window-height="2126"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
      id="namedview871"
      showgrid="false"
      inkscape:zoom="5.575095"
@@ -51,11 +70,10 @@
      inkscape:current-layer="svg869"
      inkscape:document-rotation="0" />
   <g
-     transform="matrix(0.28351151,0,0,-0.3092853,-221.88157,107.89618)"
-     id="g11"
-     style="fill:#94a3b8;fill-opacity:1">
+     transform="matrix(0.28471345,0,0,-0.28471345,-169.74491,92.422363)"
+     id="g11">
     <g
-       transform="matrix(3.3416988,0,0,3.3416988,109.13397,583.12747)"
+       transform="matrix(3.740233,0,0,3.740233,-157.3309,591.08812)"
        id="g3368"
        style="fill:#94a3b8;fill-opacity:1">
       <g
@@ -159,4 +177,10 @@
       </g>
     </g>
   </g>
+  <style
+     type="text/css"
+     id="style108">
+	.st0{fill:#D2051E;}
+	.st1{fill:#FFFFFF;}
+</style>
 </svg>
