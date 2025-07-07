@@ -1,0 +1,52 @@
+
+{{ define "main" }}
+<main>
+    <!-- <div class="pattern-square"></div> -->
+
+    <!-- Blog single start -->
+    <div class="py-xl-9 py-4">
+        <div class="container">
+            <div class="row">
+                <article class="col-lg-8 offset-lg-2">
+                    <h1>{{ .Title }}</h1>
+                    <div class="d-flex align-items-center mt-lg-6 mt-4">
+                        <div class="me-5">
+                            <span class="fs-6">Written by</span>
+                            <div class="d-flex align-items-center mt-2">
+                                <img src="{{ .Params.author_image | default "./assets/images/avatar/avatar-1.jpg" }}" alt="Avatar" class="avatar avatar-xs rounded-circle" />
+                                <div class="ms-2">
+                                    <a href="#" class="text-reset fs-6">{{ .Params.author | default "Author Name" }}</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="fs-6">Published on</span>
+                            <div class="mt-2 text-dark">
+                                <span class="fs-6">{{ .Date.Format "2 Jan, 2006" }}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <figure class="my-6">
+                        <img src="{{ .Params.featured_image | default "./assets/images/blog/blog-img-6.jpg" }}" alt="blog" class="rounded-3 img-fluid w-100" />
+                    </figure>
+
+                    <!-- Post content from Markdown -->
+                    <div>
+                        {{ .Content }}
+
+                    </div>
+                </article>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!-- Newsletter Blogpost -->
+    {{ partial "newsletter-blog.html" . }}
+
+    <!-- Blog single end -->
+</main>
+
+{{ end }}
+
