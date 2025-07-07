@@ -1,10 +1,173 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Flinker | Building Digital Twins in Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Home on Flinker | Building Digital Twins in Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 26 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Leveraging SharePoint as a Common Data Environment (CDE) for Large Construction Projects</title><link>https://flinker.app/blog/sharepoint-cde-construction-projects/</link><pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-construction-projects/</guid><description>&lt;p>&lt;strong>Leveraging SharePoint as a Common Data Environment (CDE) for Large Construction Projects&lt;/strong>&lt;/p>
-&lt;p>Large-scale construction projects often grapple with fragmented data, misaligned communications, and inefficient workflows. A Common Data Environment (CDE) addresses these challenges by providing a centralized platform to manage, collaborate on, and leverage critical project data throughout a project&amp;rsquo;s lifecycle. SharePoint, deeply integrated within Microsoft 365, emerges as a powerful, secure, and scalable solution ideal for managing complex construction data.&lt;/p></description></item><item><title>Real-World Success Stories: Why Leading Construction Firms Choose SharePoint as Their CDE</title><link>https://flinker.app/blog/sharepoint-cde-success-stories/</link><pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-success-stories/</guid><description>&lt;h1 id="how-leading-construction-companies-use-sharepoint-as-a-common-data-environment-cde">How Leading Construction Companies Use SharePoint as a Common Data Environment (CDE)&lt;/h1>
-&lt;p>&lt;img src="https://flinker.app/assets-flinker/images/blog/blog-img-3-1.png" alt="SharePoint Common Data Environment in Construction">&lt;/p>
-&lt;p>In today’s construction industry, success depends on managing data effectively across global teams, complex projects, and tight deadlines. Traditional tools like spreadsheets, shared drives, and siloed platforms are no longer enough. That’s why many leading construction firms are adopting &lt;strong>SharePoint as a Common Data Environment (CDE)&lt;/strong> — transforming scattered information into streamlined, collaborative, and secure workflows.&lt;/p></description></item><item><title>Visualize BIM Models in Power BI with Flinker's 3D Viewer</title><link>https://flinker.app/blog/visualize-bim-in-power-bi/</link><pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/visualize-bim-in-power-bi/</guid><description>&lt;h1 id="visualize-bim-models-in-power-bi-using-flinkers-3d-viewer">Visualize BIM Models in Power BI using Flinker&amp;rsquo;s 3D Viewer&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Flinker | Building Digital Twins in Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Home on Flinker | Building Digital Twins in Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>blog</title><link>https://flinker.app/blog/</link><pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/</guid><description>&lt;!--Square Pattern Start-->
+&lt;div class="pattern">&lt;/div>
+&lt;!--Square Pattern End-->
+
+&lt;!--Pageheader start-->
+&lt;section class="py-5 py-lg-8">
+ &lt;div class="container">
+ &lt;div class="row">
+ &lt;div class="col-lg-12 col-md-12 col-12">
+ &lt;div class="text-center">
+ &lt;h1 class="mb-3">Latest news&lt;/h1>
+ &lt;p class="mb-0">Read about our latest product and partner announcements for Microsoft 365 BIM innovations. 🚀&lt;/p>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+&lt;!--Pageheader end-->
+
+&lt;!--Blog grid start-->
+&lt;section class="mb-xl-9 my-4">
+ &lt;div class="container">
+ &lt;div class="row mb-5">
+ &lt;div class="col-lg-5 col-md-7 col-12">
+ &lt;div class="row g-2 g-sm-3 align-items-center">
+ &lt;div class="col-lg-6 col-md-6 col-12">
+ &lt;form>
+ &lt;label for="searchInput" class="form-label visually-hidden">Search Blog&lt;/label>
+ &lt;input type="search" class="form-control" id="searchInput" placeholder="Search Blog" />
+ &lt;/form>
+ &lt;/div>
+ &lt;div class="col-lg-6 col-md-6 col-12">
+ &lt;label for="categoryList" class="form-label visually-hidden">Search Category&lt;/label>
+ &lt;select class="form-select" id="categoryList">
+ &lt;option selected disabled value="">Select Category&lt;/option>
+ &lt;option value="Construction">Construction&lt;/option>
+ &lt;option value="Technology">Technology&lt;/option>
+ &lt;option value="Data Management">Data Management&lt;/option>
+ &lt;option value="Partnerships">Partnerships&lt;/option>
+ &lt;option value="Architecture">Architecture&lt;/option>
+ &lt;option value="Facility Management">Facility Management&lt;/option>
+
+ &lt;/select>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;!--
+ &lt;div class="col-lg-7 col-md-5 col-12 d-none d-lg-block">
+ &lt;ul class="nav d-flex gap-1 justify-content-md-end mt-3 mt-md-0">
+ &lt;li>
+ &lt;a class="btn btn-light btn-icon btn-md" href="./blog-grid-thumbnail.html">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+ &lt;path
+ d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a.5.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+ &lt;/svg>
+ &lt;/a>
+ &lt;/li>
+ &lt;li>
+ &lt;a class="btn btn-light btn-icon btn-md" href="./blog-list-view.html">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+ &lt;path
+ fill-rule="evenodd"
+ d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+ &lt;/svg>
+ &lt;/a>
+ &lt;/li>
+ &lt;li>
+ &lt;a class="btn btn-primary btn-icon btn-md" href="./blog.html">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-grid-3x3-gap" viewBox="0 0 16 16">
+ &lt;path
+ d="M4 2v2H2V2h2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zM9 2v2H7V2h2zm5 0v2h-2V2h2zM4 7v2H2V7h2zm5 0v2H7V7h2zm5 0h-2v2h2V7zM4 12v2H2v-2h2zm5 0v2H7v-2h2zm5 0v2h-2v-2h2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-2z" />
+ &lt;/svg>
+ &lt;/a>
+ &lt;/li>
+ &lt;/ul>
+ &lt;/div>
+ -->
+ &lt;/div>
+
+ &lt;div class="row gy-lg-7 gy-5">
+ &lt;article class="col-lg-4 col-md-6 col-12">
+ &lt;figure class="mb-4 zoom-img">
+ &lt;a href="https://flinker.app/blog/sharepoint-cde-construction-projects">
+ &lt;img src="./assets-flinker/images/blog/blog-img-12.svg" alt="blog" class="img-fluid rounded-3" />
+ &lt;/a>
+ &lt;/figure>
+
+ &lt;a href="#!" class="badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase">Data Management&lt;/a>
+ &lt;h3 class="my-3 lh-base h4">
+ &lt;a href="https://flinker.app/blog/sharepoint-cde-construction-projects" class="text-reset">Leveraging SharePoint as a CDE for Large Construction Projects&lt;/a>
+ &lt;/h3>
+ &lt;div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
+ &lt;div class="d-flex align-items-center">
+ &lt;img src="./assets/images/avatar/avatar-7.jpg" alt="Avatar" class="avatar avatar-xs rounded-circle" />
+ &lt;div class="ms-2">
+ &lt;a href="#" class="text-reset fs-6">Misbah Afzal&lt;/a>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="ms-3">&lt;span class="fs-6">May 28, 2025&lt;/span>&lt;/div>
+ &lt;/div>
+ &lt;/article>
+
+
+ &lt;article class="col-lg-4 col-md-6 col-12">
+ &lt;figure class="mb-4 zoom-img">
+ &lt;a href="https://flinker.app/blog/sharepoint-cde-success-stories">
+ &lt;img src="./assets-flinker/images/blog/blog-img-3-1.png" alt="blog" class="img-fluid rounded-3" />
+ &lt;/a>
+ &lt;/figure>
+
+ &lt;a href="#!" class="badge bg-success-subtle text-success-emphasis rounded-pill text-uppercase">Data Management&lt;/a>
+ &lt;h3 class="my-3 lh-base h4">
+ &lt;a href="https://flinker.app/blog/sharepoint-cde-success-stories" class="text-reset">How Leading Construction Companies Use SharePoint as a CDE&lt;/a>
+ &lt;/h3>
+ &lt;div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
+ &lt;div class="d-flex align-items-center">
+ &lt;img src="./assets/images/avatar/avatar-7.jpg" alt="Avatar" class="avatar avatar-xs rounded-circle" />
+ &lt;div class="ms-2">
+ &lt;a href="#" class="text-reset fs-6">Misbah Afzal&lt;/a>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="ms-3">&lt;span class="fs-6">May 12, 2025&lt;/span>&lt;/div>
+ &lt;/div>
+ &lt;/article>
+
+
+ &lt;article class="col-lg-4 col-md-6 col-12">
+ &lt;figure class="mb-4 zoom-img">
+ &lt;a href="https://flinker.app/blog/visualize-bim-in-power-bi">
+ &lt;img src="./assets-flinker/images/blog/blog-img-9.svg" alt="blog" class="img-fluid rounded-3" />
+ &lt;/a>
+ &lt;/figure>
+
+ &lt;a href="#!" class="badge bg-warning-subtle text-warning-emphasis rounded-pill text-uppercase">Technology&lt;/a>
+ &lt;h3 class="my-3 lh-base h4">
+ &lt;a href="https://flinker.app/blog/visualize-bim-in-power-bi" class="text-reset">Visualize BIM Models in Power BI with Flinker's 3D Viewer&lt;/a>
+ &lt;/h3>
+ &lt;div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
+ &lt;div class="d-flex align-items-center">
+ &lt;img src="./assets/images/avatar/avatar-7.jpg" alt="Avatar" class="avatar avatar-xs rounded-circle" />
+ &lt;div class="ms-2">
+ &lt;a href="#" class="text-reset fs-6">Misbah Afzal&lt;/a>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="ms-3">&lt;span class="fs-6">Apr 27, 2025&lt;/span>&lt;/div>
+ &lt;/div>
+ &lt;/article>
+
+
+
+
+ &lt;div class="col-lg-12">
+ &lt;div class="mt-xl-7 mt-3">
+ &lt;a class="btn btn-outline-primary" href="#!">
+ &lt;span class="spinner-border spinner-border-sm" role="status" aria-hidden="true">&lt;/span>
+ &lt;span class="ms-2">Load More&lt;/span>
+ &lt;/a>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+&lt;!--Blog grid end--></description></item><item><title>Leveraging SharePoint as a Common Data Environment (CDE) for Large Construction Projects</title><link>https://flinker.app/blog/sharepoint-cde-construction-projects/</link><pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-construction-projects/</guid><description>&lt;p>Large-scale construction projects often grapple with fragmented data, misaligned communications, and inefficient workflows. A Common Data Environment (CDE) addresses these challenges by providing a centralized platform to manage, collaborate on, and leverage critical project data throughout a project&amp;rsquo;s lifecycle. SharePoint, deeply integrated within Microsoft 365, emerges as a powerful, secure, and scalable solution ideal for managing complex construction data.&lt;/p>
+&lt;h3 id="why-choose-sharepoint-as-your-cde">Why Choose SharePoint as Your CDE?&lt;/h3>
+&lt;h4 id="1-data-sovereignty-and-security">1. &lt;strong>Data Sovereignty and Security&lt;/strong>&lt;/h4>
+&lt;p>SharePoint ensures your project data stays securely within your own Microsoft environment, enhancing data sovereignty and compliance. This reduces dependency on external third-party cloud solutions, ensuring maximum data control and security.&lt;/p></description></item><item><title>How Leading Construction Companies Use SharePoint as a Common Data Environment (CDE)</title><link>https://flinker.app/blog/sharepoint-cde-success-stories/</link><pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-success-stories/</guid><description>&lt;p>In today’s construction industry, success depends on managing data effectively across global teams, complex projects, and tight deadlines. Traditional tools like spreadsheets, shared drives, and siloed platforms are no longer enough. That’s why many leading construction firms are adopting &lt;strong>SharePoint as a Common Data Environment (CDE)&lt;/strong> transforming scattered information into streamlined, collaborative, and secure workflows.&lt;/p>
+&lt;h2 id="from-chaos-to-clarity-why-sharepoint">From Chaos to Clarity: Why SharePoint?&lt;/h2>
+&lt;p>Construction teams often struggle with fragmented project data. Lost emails, outdated documents, and unsupported legacy tools cause costly delays and coordination errors. SharePoint changes this dynamic.&lt;/p></description></item><item><title>Visualize BIM Models in Power BI with Flinker's 3D Viewer</title><link>https://flinker.app/blog/visualize-bim-in-power-bi/</link><pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/visualize-bim-in-power-bi/</guid><description>&lt;p>Integrate and interact with IFC models within your dashboards for enhanced project insights without using any extra software.&lt;/p>
 &lt;h2 id="power-bi-bim-integration">Power BI BIM Integration&lt;/h2>
-&lt;p>Integrate and interact with IFC models within your dashboards for enhanced project insights without using any extra software.&lt;/p>
-&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>In the Architecture, Engineering, Construction, and Operations (AECO) industry, &lt;strong>IFC (Industry Foundation Classes)&lt;/strong> has become the standard for sharing Building Information Modeling (BIM) data across platforms.&lt;/p>
 &lt;p>Professionals build rich 3D models, but when it’s time to present them in Power BI, something’s missing: the model itself. No geometry, no visual context, just numbers. Power BI doesn’t natively support IFC.&lt;/p></description></item><item><title>IFC Power BI Visual</title><link>https://flinker.app/ifcpbivisual/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/ifcpbivisual/</guid><description>&lt;!--Hero section start-->
 &lt;section class="container py-lg-8 py-5" data-cue="fadeIn">
