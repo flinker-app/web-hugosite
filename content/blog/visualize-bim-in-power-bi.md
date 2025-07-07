@@ -4,7 +4,7 @@ date: 2025-04-27
 draft: false
 description: "Integrate and visualize IFC BIM models in Power BI using Flinker's 3D IFC Viewer. Step-by-step guide for AECO professionals to enhance dashboards with interactive 3D BIM data and unlock project insights."
 slug: "visualize-bim-in-power-bi"
-layout: "mdpage"
+layout: "blogsingle"
 keywords: 
     - BIM visualization
     - Power BI BIM integration
@@ -19,6 +19,8 @@ keywords:
     - Power BI custom visuals
     - BIM data analytics
 author: "Misbah Afzal"
+author_image: "/assets/images/avatar/avatar-7.jpg"
+featured_image: "/assets-flinker/images/blog/blog-img-9.svg"
 categories: 
     - Technology
     - Architecture
@@ -50,15 +52,10 @@ faq:
     answer: "The viewer uses the IFC file URL you provide. No data is stored by Flinker — the file remains in your specified location."
 ---
 
-
-
-# Visualize BIM Models in Power BI using Flinker's 3D Viewer
-
-## Power BI BIM Integration
 Integrate and interact with IFC models within your dashboards for enhanced project insights without using any extra software.
 
 
-## Introduction
+## Power BI BIM Integration
 
 In the Architecture, Engineering, Construction, and Operations (AECO) industry, **IFC (Industry Foundation Classes)** has become the standard for sharing Building Information Modeling (BIM) data across platforms. 
 
@@ -85,31 +82,25 @@ A true missing link between BIM and Power BI:
 
 ### Key Benefits:
 
-- **No Extra Software Required**: Visualize IFC models directly within Power BI.
-- **Interactive 3D View**: Explore models with intuitive pan, zoom, and rotate functionalities.
-- **Connects BIM to Dashboards**: Link spatial data with Power BI metrics for comprehensive insights.
+- No Extra Software Required: Visualize IFC models directly within Power BI.
+- Interactive 3D View: Explore models with intuitive pan, zoom, and rotate functionalities.
+- Connects BIM to Dashboards: Link spatial data with Power BI metrics for comprehensive insights.
 
-
+{{< blogfigure src="/assets-flinker/images/blog/blog-img-10.svg" alt="Power Bi IFC Viewer for Enterprises and SMBs in Construction and Real Estate" class="my-6" imgclass="img-fluid rounded-3 w-100" >}}
 
 ## Step-by-Step Guide: How to Use the Viewer in Power BI
 
-### 1. Get the Visual
-- Go to **Microsoft AppSource** and add the **Flinker IFC Viewer** to your Power BI environment or Desktop.
+Go to [Microsoft AppSource](https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer?tab=Overview) and add the Flinker IFC Viewer to your Power BI environment or Desktop.
 
 ### 2. Configure the IFC Source
-- In the visual's settings, paste a direct link to your IFC file (e.g., from cloud storage or project platform).
+- In the visual's settings, paste a direct link to your IFC file (e.g., from SharePoint, Windows Explorer, cloud storage or project platform).
 - Open or create the report where you'd like to include the BIM model.
 
 ### 3. Insert the Viewer
 - Add the **Flinker IFC Viewer** from your Visualizations pane to your report canvas.
 
 ### 4. Edit Parameters
-- Click the visual, open the **Format pane**, and fill in:
-  - IFC file URL
-  - Model settings
-  - Background color
-  - Transparency
-  - Initial Camera Position
+- Click the visual, open the **Format pane**, and fill in the IFC file path.
 
 ### 5. Apply & View
 - Click **“Apply changes”** and the viewer will render the interactive 3D model inside your report.
@@ -121,7 +112,7 @@ A true missing link between BIM and Power BI:
 
 ## Real World Common Use Cases
 
-**Flinker’s 3D IFC Viewer** unlocks value for various stakeholders across the AECO industry:
+Flinker’s 3D IFC Viewer unlocks value for various stakeholders across the AECO industry:
 
 ### BIM Managers:
 - Enhance project reviews with interactive 3D models.
@@ -142,7 +133,7 @@ A true missing link between BIM and Power BI:
 
 ### Is the Flinker Viewer free?
 Yes!  
-The viewer is free to download via AppSource. It ensures full privacy as files remain local and are never uploaded to a server.
+The IFC Viewer for Power Bi is fully free for Power Bi Desktop. Please download the our template from AppSource and start building in Power BI desktop. It ensures full privacy as files remain local and are never uploaded to a server.
 
 ### Can Power BI open IFC files?
 No, Power BI does not natively support IFC files.  
@@ -153,8 +144,8 @@ No, Power BI does not natively support IFC files.
 - **IFC**: Open, neutral file format for interoperability across BIM tools (including Revit).
 
 ### Where does the data live?
-The viewer uses the IFC file URL you provide.  
-No data is stored by Flinker — the file remains in your specified location (e.g., cloud storage, SharePoint, OneDrive).
+The viewer uses the IFC file path you provide.  
+No data is stored by Flinker or any external servers, the file remains in your specified Microsoft 365 location (e.g., SharePoint, OneDrive, or other cloud service).
 
 
 
@@ -170,19 +161,20 @@ You can now unite your BIM models and business insights into one interactive spa
 - Maintenance planning
 - Stakeholder presentations
 
-Without complex setup — just plug in your IFC file and start exploring powerful integration directly in Power BI.
+Without complex setup just plug in your IFC file and start exploring powerful integration directly in Power BI.
 
 
 
 ## Ready to Experience It Yourself?
 
-- [→ Try the viewer on AppSource](https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer)
-- [→ Explore the privacy first live viewer for Web](https://viewer.flinker.app)
-- [→ Read the full documentation](https://docs.flinker.app/docs/ifc-power-bi.html)
+1.  [Try the viewer on AppSource](https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer)
+2.  [Explore the privacy first live viewer for Web](https://viewer.flinker.app)
+3.  [Read the our support documentation if needed](https://docs.flinker.app/docs/ifc-power-bi.html)
 
 
 
 ## 📞 Contact Us
 Have questions?  
-**Contact the Flinker team** and discover how we can help you unlock the full potential of your BIM data!
+**Contact the Flinker team** and discover how we can help you unlock the full potential of your BIM data!  
+[Book a support and consulting meeting](https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true)
 
