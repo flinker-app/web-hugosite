@@ -14,7 +14,7 @@ layout: "mdpage"
 
 Flinker GmbH  
 Zittelstraße  
-780796 Munich
+80796 Munich
 
 info@flinker.app
 
