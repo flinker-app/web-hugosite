@@ -1,14 +1,21 @@
+{{- $desc := or (.Params.description | plainify) (.Summary | plainify) -}}
+{{- $shareImage := .Params.shareImage | default .Params.linkedinImage -}}
+
 <title>{{ .Title }} | {{ .Site.Title }}</title>
-<meta name="description" content="{{ .Params.description }}">
+<meta name="description" content="{{ $desc }}">
 <meta name="keywords" content="{{ .Params.keywords }}">
 <meta name="author" content="{{ .Site.Author.name }}">
 
 <!-- Open Graph / LinkedIn -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
-<meta property="og:description" content="{{ .Description }}">
-<meta property="og:image" content="{{ .Params.linkedinImage }}">
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ $desc }}">
+{{ with $shareImage }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
 <meta property="og:url" content="{{ .Permalink }}">
+
+<!-- Twitter (minimal) -->
+<meta name="twitter:card" content="{{ .Params.twitterCard | default "summary_large_image" }}">
+{{ with $shareImage }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
 
 <!-- YouTube -->
 <meta name="youtube:channel" content="{{ .Site.Params.youtubeChannel }}">
@@ -17,5 +24,4 @@
 <meta name="github:repository" content="{{ .Site.Params.githubRepo }}">
 
 <!-- Canonical URL -->
-<!-- The canonical URL helps to prevent duplicate content issues by specifying the preferred version of a webpage -->
 <link rel="canonical" href="{{ .Permalink }}">
