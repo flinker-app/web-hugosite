@@ -1,0 +1,21 @@
+<section>
+  <div class="container py-7">
+    <div class="row line-pattern bg-primary rounded-3 py-7 g-0">
+      <div class="col-md-8 offset-md-2">
+        <div class="text-center position-relative z-1 py-5 px-4">
+          <div class="mb-4">
+            <span class="badge border border-white rounded-pill px-3 py-2">Free • Runs in your Microsoft 365 tenant</span>
+          </div>
+          <h2 class="text-white-stable mb-3">Get the free IFC Viewer for Microsoft 365</h2>
+          <p class="text-white-50 mb-4">Install the Flinker IFC Viewer from Microsoft AppSource. No external servers. Works right in your tenant.</p>
+          <div class="d-flex justify-content-center">
+            {{ $appSourceUrl := .Site.Params.appsource_ifc_viewer_url | default "https://appsource.microsoft.com/en-us/marketplace/apps?search=flinker&page=1" }}
+            <a class="d-inline-block" href="{{ $appSourceUrl }}" target="_blank" rel="noopener">
+              <img src="/assets-flinker/images/microsoft/MS_AppSource.png" alt="Get it from Microsoft AppSource" class="img-fluid" style="height:70px; width:auto;" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
