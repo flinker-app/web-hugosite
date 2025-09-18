@@ -8,6 +8,13 @@ layout: "single"
 type: "article"
 shareImage: "/assets-flinker/images/case-studies/Sawa-Engineering/sawa-mobility-hub-workflow-1.png"
 twitterCard: "summary_large_image"
+region: "Europe"
+company_size: "Startup"
+solutions:
+  - Flinker Copilot
+  - Excel Viewer
+industry: ["Infrastructure", "Engineering"]
+content_type: "case_study"
 ---
 
 <!--Square Pattern Start-->
@@ -20,7 +27,7 @@ twitterCard: "summary_large_image"
 <div class="container">
    <div class="row">
    <div class="col-lg-7 offset-lg-2 col-md-12 col-12">
-   <h1 class="mb-3">Concrete Quantity Takeoff & Cost Segmentation with IFC + Excel</h1>
+   <h1 class="mb-3">Quantity Takeoff & Cost Segmentation with Excel Viewer</h1>
       <p class="mb-0 lead">
          How an intuitive workflow combining the Flinker IFC Viewer and Excel enabled reliable quantities, transparent parameters, and faster handover to schedule and cost planning in a complex BIM project.
       </p>
@@ -44,48 +51,75 @@ twitterCard: "summary_large_image"
    </div>
 
    <div class="col-xl-8 offset-xl-2 col-lg-12 col-md-12 col-12">
-      <!-- Top meta row -->
-      <div class="row g-5 mb-lg-9 mb-md-7 mb-5">
-         <div class="col-xl-3 col-lg-3 col-md-3 col-6">
-         <div class="mb-4 mb-lg-0">
-            <span>Client</span>
-            <div class="d-flex align-items-center mt-2">
-               <img src="\assets-flinker\images\case-studies\Sawa-Engineering\profile-sawadogo-1.jpg" alt="Avatar" class="avatar avatar-xs rounded-circle" />
-               <div class="ms-2">
-               <span class="text-dark fs-6">Sawa Engineering</span>
-               </div>
-            </div>
+  <!-- Top meta row -->
+  <div class="row g-5 mb-lg-9 mb-md-7 mb-5">
+
+    <!-- Client -->
+    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+      <div class="mb-4 mb-lg-0">
+        <span>Client</span>
+        <div class="d-flex align-items-center mt-2">
+          <img src="/assets-flinker/images/case-studies/Sawa-Engineering/profile-sawadogo-1.jpg" alt="Avatar" class="avatar avatar-xs rounded-circle" />
+          <div class="ms-2">
+            <span class="text-dark fs-6">Sawa Engineering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- Solutions in use -->
+   <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+      <div class="mb-4 mb-lg-0">
+         <span>Solution in use</span>
+         <div class="mt-2 text-primary fs-6">
+            {{< param key="solutions" default="—" sep=", " >}}
          </div>
-         </div>
-         <div class="col-xl-3 col-lg-3 col-md-3 col-6">
-         <div class="mb-4 mb-lg-0">
-            <span>Date</span>
-            <div class="mt-2 text-dark fs-6">16 Sep, 2025</div>
-         </div>
-         </div>
-         <div class="col-xl-4 col-lg-4 col-md-3 col-8">
-         <span>Solutions in use</span>
-         <div class="mt-2 text-primary fs-6">Flinker Copilot, Excel Viewer</div>
-         </div>
-         <div class="col-xl-2 col-lg-2 col-md-3 col-4">
-         <span>Share</span>
-         <div class="mt-2 d-flex align-items-center">
-         <div class="dropdown d-inline-block">
-            <button class="btn btn-link text-reset p-0" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share">
-               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-               <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
-               </svg>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end">
-               <li><a id="share-email" class="dropdown-item" href="#">Share via Email</a></li>
-               <li><a id="share-linkedin" class="dropdown-item" href="#" target="_blank" rel="noopener">Share on LinkedIn</a></li>
-               <li><a id="share-teams" class="dropdown-item" href="#" target="_blank" rel="noopener">Share to Microsoft Teams</a></li>
-               <li><button id="share-copy" class="dropdown-item" type="button">Copy Link</button></li>
-            </ul>
-         </div>
-         </div>
+      </div>
    </div>
-   </div> <!-- CLOSE: .row.g-5 meta row -->
+
+
+
+    <!-- Region -->
+    <div class="col-xl-2 col-lg-4 col-md-6 col-12">
+      <div class="mb-4 mb-lg-0">
+        <span>Region</span>
+        <div class="mt-2 text-dark fs-6">{{< param key="region" default="—" >}}</div>
+      </div>
+    </div>
+
+    <!-- Company size -->
+    <div class="col-xl-2 col-lg-4 col-md-6 col-12">
+      <div class="mb-4 mb-lg-0">
+        <span>Company</span>
+        <div class="mt-2 text-dark fs-6">{{< param key="company_size" default="—" >}}</div>
+      </div>
+    </div>
+
+    <!-- Share -->
+    <div class="col-xl-2 col-lg-4 col-md-6 col-12">
+      <span>Share</span>
+      <div class="mt-2 d-flex align-items-center">
+        <div class="dropdown d-inline-block">
+          <button class="btn btn-link text-reset p-0" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+              <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+            </svg>
+          </button>
+               <ul id="share-menu" class="dropdown-menu dropdown-menu-end">
+            <li><a id="share-email" class="dropdown-item" href="#">via Email</a></li>
+            <li><a id="share-linkedin" class="dropdown-item" href="#" target="_blank" rel="noopener">on LinkedIn</a></li>
+            <li><a id="share-teams" class="dropdown-item" href="#" target="_blank" rel="noopener">to Microsoft Teams</a></li>
+                  <li><a id="share-whatsapp" class="dropdown-item" href="#" target="_blank" rel="noopener">on WhatsApp</a></li>
+            <li><button id="share-copy" class="dropdown-item" type="button">Copy Link</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- CLOSE: .row.g-5 meta row -->
+
+</div>
+
 
    <!-- Challenge -->
       <div class="row mb-lg-9 mb-md-7 mb-5">
@@ -104,20 +138,51 @@ twitterCard: "summary_large_image"
       </div>
 
       <!-- Screenshots (replace with your two detail images) -->
+      <style>
+         /* Consistent frame for screenshots with subtle zoom on hover/click */
+         .screenshot-frame {
+            position: relative;
+            overflow: hidden;
+            /* Keep both frames equal height responsively */
+            aspect-ratio: 16 / 9;
+            /* Optional: pleasant placeholder while loading */
+            background-color: #f8f9fa;
+            cursor: zoom-in;
+         }
+         .screenshot-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* cover ensures fill without manual cropping */
+            transition: transform .35s ease;
+            display: block;
+         }
+         .screenshot-frame:hover img,
+         .screenshot-frame:active img {
+            transform: scale(1.08);
+         }
+         /* Keyboard focus parity */
+         .screenshot-frame:focus {
+            outline: 2px solid rgba(13,110,253,.6); /* bootstrap primary-ish */
+            outline-offset: 2px;
+         }
+         .screenshot-frame:focus img {
+            transform: scale(1.08);
+         }
+      </style>
       <div class="row mb-lg-9 mb-md-7 mb-5 g-4">
          <div class="col-lg-6 col-md-6 col-12">
-         <figure>
+         <button class="screenshot-frame rounded-3 p-0 border-0 bg-transparent" type="button" aria-label="Open screenshot in fullscreen">
             <img src="/assets-flinker/images/case-studies/Sawa-Engineering/sawa-analysis-copilot.png"
                   alt="Excel rules and parameter filters applied to exported element table"
-                  class="img-fluid rounded-3" />
-         </figure>
+                  class="img-fluid" />
+         </button>
          </div>
          <div class="col-lg-6 col-md-6 col-12">
-         <figure>
+         <button class="screenshot-frame rounded-3 p-0 border-0 bg-transparent" type="button" aria-label="Open screenshot in fullscreen">
             <img src="/assets-flinker/images/case-studies/Sawa-Engineering/sawa-variant-comparison-1.png"
                   alt="Segmented RC elements by floors and construction sections (sample IFC)"
-                  class="img-fluid rounded-3" />
-         </figure>
+                  class="img-fluid" />
+         </button>
          </div>
       </div>
 
@@ -127,9 +192,9 @@ twitterCard: "summary_large_image"
          <h4 class="mb-3 mb-md-0 text-black-50">Solution</h4>
          </div>
          <div class="col-lg-8 col-md-8 col-12">
-         <h3 class="mb-3">Excel-centric analysis with model context from the Copilot Viewer</h3>
+         <h3 class="mb-3">Excel-centric analysis with model context from Flinker Copilot</h3>
          <p class="mb-3">
-            The workflow combines the Flinker Copilot Viewer (for model context and parameter export) with rule-based queries and filtering in Excel. Predefined criteria segment reinforced concrete elements by floors and construction phases while mapping costs for each variant. Thanks to the linkage to the 3D model, location and scope remain clear at all times.
+            The workflow combines the Flinker Copilot and IFC Viewer (for model context and parameter export) with rule-based queries and filtering in Excel. Predefined criteria segment reinforced concrete elements by floors and construction phases while mapping costs for each variant. Thanks to the linkage to the 3D model, location and scope remain clear at all times.
          </p>
          <p class="mb-3">
             Parameter issues (e.g., basement walls mislabeled as ground-floor walls) are surfaced early and corrected quickly. Because teams already work confidently in Excel, iteration cycles are significantly faster than with traditional, multi-tool approaches.
@@ -143,29 +208,24 @@ twitterCard: "summary_large_image"
       <!-- Tech Stack -->
       <div class="row mb-lg-9 mb-md-7 mb-5">
          <div class="col-lg-4 col-md-4 col-12">
-         <h4 class="mb-3 mb-md-0 text-black-50">Tech Stack</h4>
+         <h4 class="mb-1 mb-md-0 text-black-50">Flinker Apps</h4>
+         <p class="small text-black-50 mb-0">Run in your Microsoft 365 tenant — no external servers, databases or platform.</p>
          </div>
          <div class="col-lg-8 col-md-8 col-12">
          <div class="row">
-            <h3 class="mb-3">Technology used</h3>
+            <h3 class="mb-3">Microsoft BIM Apps used</h3>
             <div class="col-lg-3 col-md-3 col-6">
                <figure class="py-3 text-center">
-               <img src="./assets/images/brand-logo/brand-logo-10.svg" alt="Flinker Copilot Viewer" class="mw-100" />
+               <img src="./assets-flinker/images/brand-logo/ifc-viewer-logo-1.png" alt="Flinker Copilot" class="mw-100" />
                <figcaption class="small mt-2">Flinker Copilot</figcaption>
                </figure>
             </div>
             <div class="col-lg-3 col-md-3 col-6">
                <figure class="py-3 text-center">
-               <img src="./assets/images/brand-logo/brand-logo-12.svg" alt="Microsoft Excel" class="mw-100" />
-               <figcaption class="small mt-2">Excel Viewer</figcaption>
+               <img src="./assets-flinker/images/brand-logo/ifc-viewer-logo-1.png" alt="Flinker Excel Viewer" class="mw-100" />
+               <figcaption class="small mt-2">Flinker Excel Viewer</figcaption>
                </figure>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6">
-               <figure class="py-3 text-center">
-               <img src="./assets/images/brand-logo/brand-logo-9.svg" alt="OneDrive (storage)" class="mw-100" />
-               <figcaption class="small mt-2">OneDrive (storage)</figcaption>
-               </figure>
-            </div>
+            </div>            
          </div>
          </div>
       </div>
@@ -179,10 +239,10 @@ twitterCard: "summary_large_image"
          <div class="mb-4">
             <p class="mb-2">Outcomes reported by the user:</p>
             <ul class="mb-0">
-               <li>Reliable evaluation of <strong>three variants</strong> within <strong>three weeks</strong>.</li>
-               <li>Chosen solution shortens shell construction from <strong>~10 to ~7 months</strong>.</li>
-               <li>All variants available with transparent, decision-ready data.</li>
-               <li>Iterations significantly faster than traditional methods, with minimal learning curve.</li>
+               <li>Reliable evaluation of three variants within three weeks</li>
+               <li>Chosen solution shortens shell construction from ~10 to ~7 months</li>
+               <li>All variants available with transparent, decision-ready data</li>
+               <li>Iterations significantly faster than traditional methods, with minimal learning curve</li>
             </ul>
          </div>
          <div class="row">
@@ -191,8 +251,8 @@ twitterCard: "summary_large_image"
                <span>Time to evaluate 3 variants</span>
             </div>
             <div class="col-md-4 col-6 mb-4">
-               <h4 class="mb-0">≈7 vs 10 mo</h4>
-               <span>Shell construction (chosen vs prior plan)</span>
+               <h4 class="mb-0">~ 7 vs. 10 mo</h4>
+               <span>Shell construction (chosen vs. prior plan)</span>
             </div>
             <div class="col-md-4 col-6 mb-4">
                <h4 class="mb-0">3 variants</h4>
@@ -202,10 +262,10 @@ twitterCard: "summary_large_image"
          </div>
       </div>
 
-      <!-- Services provided -->
+      <!-- Workflows endable -->
       <div class="row mb-lg-9 mb-md-7 mb-5">
          <div class="col-lg-4 col-md-4 col-12">
-         <h4 class="mb-3 mb-lg-0 text-black-50">Services provided</h4>
+         <h4 class="mb-3 mb-lg-0 text-black-50">Workflows enabled</h4>
          </div>
          <div class="col-lg-8 col-md-8 col-12">
          <ul class="list-group list-group-flush">
@@ -223,14 +283,14 @@ twitterCard: "summary_large_image"
    <div class="offset-xl-1 col-xl-10 col-lg-12 col-md-12 col-12">
       <div class="text-center mx-xl-7 my-5">
          <div class="mb-5">
-         <img src="\assets-flinker\images\case-studies\Sawa-Engineering\profile-sawadogo-1.jpg" alt="Avatar" class="avatar avatar-xxl rounded-circle" />
+         <img src="/assets-flinker/images/case-studies/Sawa-Engineering/profile-sawadogo-1.jpg" alt="Avatar" class="avatar avatar-xxl rounded-circle" />
          </div>
          <p class="lead mb-4">
-         <em>“With Flinker Copilot Viewer, we evaluate models transparently and quickly, without extra interfaces. That speeds us up and makes our handover to schedule and cost planning more reliable.”</em>
+         <em>“With Flinker Copilot and IFC Viewer for Microsoft 365, we evaluate models transparently and quickly, without extra interfaces. That speeds us up and makes our handover to schedule and cost planning more reliable.”</em>
          </p>
          <div class="d-md-flex align-items-center justify-content-center">
          <h4 class="mb-0">Sékou Sawadogo</h4>
-         <small class="ms-2">Case Study Partner</small>
+         <small class="ms-2">Civil Engineer, at Sawa Engineering</small>
          </div>
       </div>
    </div>
@@ -241,99 +301,18 @@ twitterCard: "summary_large_image"
 <!-- CTA -->
 <section>
 <div class="container py-7">
-   <div class="row bg-pattern bg-primary-gradient rounded-3 py-7 g-0">
+   <div class="row row line-pattern bg-primary rounded-3 py-7 g-0">
    <div class="col-md-8 offset-md-2">
       <div class="text-center position-relative z-1 py-5">
-         <h2 class="text-white-stable mb-5">Interested in data-driven BIM workflows?</h2>
-         <a href="./contact-2.html" class="btn btn-dark">Contact Sales</a>
+         <h2 class="text-white-stable mb-5">Interested in IFC workflows within M365?</h2>
+         <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true" class="btn btn-dark">Contact Sales</a>
       </div>
    </div>
    </div>
 </div>
 </section>
 
-<!-- More Case Studies (optional placeholders) -->
-<section class="py-7">
-<div class="container">
-   <div class="row gy-7">
-   <div class="col-lg-12 col-md-12 col-12">
-      <h2 class="mb-0">Explore More Case Studies</h2>
-   </div>
-   <!-- Keep or remove the placeholder cards below -->
-   <div class="col-lg-4 col-md-6 col-12">
-      <figure class="lift position-relative btn-arrow mb-5">
-         <a href="./portfolio-single.html">
-         <img src="./assets/images/portfolio/portfolio-img-3.jpg" alt="portfolio" class="img-fluid rounded-3" />
-         <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg">
-            <i class="bi bi-arrow-up-right"></i>
-         </div>
-         </a>
-      </figure>
-      <div class="mb-5">
-         <h2 class="lh-base h4">
-         <a href="./portfolio-single.html" class="text-reset">Robot handshake human, futuristic digital age</a>
-         </h2>
-         <p class="mb-0">Morbi a sem lobortis tincidunt dui, dui auctor ac. Donec ornare felis nibh. Vivamus faucibus purus non libero porttitor viverra.</p>
-      </div>
-      <a href="./portfolio-single.html" class="btn btn-outline-dark">
-         View Project
-         <span class="ms-1">
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
-            <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z"/>
-         </svg>
-         </span>
-      </a>
-   </div>
-   <div class="col-lg-4 col-md-6 col-12">
-      <figure class="lift position-relative btn-arrow mb-5">
-         <a href="./portfolio-single.html">
-         <img src="./assets/images/portfolio/portfolio-img-6.jpg" alt="portfolio" class="img-fluid rounded-3" />
-         <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg">
-            <i class="bi bi-arrow-up-right"></i>
-         </div>
-         </a>
-      </figure>
-      <div class="mb-5">
-         <h2 class="lh-base h4">
-         <a href="./portfolio-single.html" class="text-reset">Busy deliveryman driving scooter while holding pizza</a>
-         </h2>
-         <p class="mb-0">Praesent molestie odio cursus porta in. Turpis bibendum ligula ullamcorper mauris.</p>
-      </div>
-      <a href="./portfolio-single.html" class="btn btn-outline-secondary disabled">
-         Coming Soon
-         <span class="ms-1">
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
-            <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z"/>
-         </svg>
-         </span>
-      </a>
-   </div>
-   <div class="col-lg-4 col-md-6 col-12">
-      <figure class="lift position-relative btn-arrow mb-5">
-         <a href="./portfolio-single.html">
-         <img src="./assets/images/portfolio/portfolio-img-4.jpg" alt="portfolio" class="img-fluid rounded-3" />
-         <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg">
-            <i class="bi bi-arrow-up-right"></i>
-         </div>
-         </a>
-      </figure>
-      <div class="mb-5">
-         <h2 class="lh-base h4">
-         <a href="./portfolio-single.html" class="text-reset">Side view man charging electric car</a>
-         </h2>
-         <p class="mb-0">Praesent molestie odio cursus porta in. Turpis bibendum ligula ullamcorper mauris.</p>
-      </div>
-      <a href="./portfolio-single.html" class="btn btn-outline-dark">
-         View Project
-         <span class="ms-1">
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
-            <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z"/>
-         </svg>
-         </span>
-      </a>
-   </div>
-   </div>
-</div>
+<!-- Placeholder section removed -->
 
 
 <script>
@@ -367,6 +346,12 @@ twitterCard: "summary_large_image"
     const teamsLink = `https://teams.microsoft.com/share?href=${teamsTarget}&text=${enc(pageTitleRaw)}`;
     document.getElementById('share-teams')?.setAttribute('href', teamsLink);
 
+   // WhatsApp
+   const waText = enc(`${pageTitleRaw} — ${withUtm(pageUrlRaw, 'whatsapp')}`);
+   // Use wa.me for desktop and mobile compatibility; WhatsApp will handle platform
+   const waLink = `https://wa.me/?text=${waText}`;
+   document.getElementById('share-whatsapp')?.setAttribute('href', waLink);
+
     // Copy Link
     const copyBtn = document.getElementById('share-copy');
     copyBtn?.addEventListener('click', async () => {
@@ -380,18 +365,68 @@ twitterCard: "summary_large_image"
       }
     });
 
-    // Optional: Web Share API
-    if ('share' in navigator) {
-      const shareUrl = withUtm(pageUrlRaw, 'webshare');
-      const menu = document.querySelector('.dropdown-menu');
-      const li = document.createElement('li');
-      const btn = document.createElement('button');
-      btn.className = 'dropdown-item';
-      btn.type = 'button';
-      btn.textContent = 'Share…';
-      btn.addEventListener('click', () => navigator.share({ title: pageTitleRaw, url: shareUrl }));
-      li.appendChild(btn);
-      menu?.appendChild(li);
-    }
+      // Optional: Web Share API
+         if ('share' in navigator) {
+         const shareUrl = withUtm(pageUrlRaw, 'webshare');
+         const menu = document.getElementById('share-menu');
+         if (menu && !menu.querySelector('#share-webshare')) {
+            const li = document.createElement('li');
+            const btn = document.createElement('button');
+            btn.id = 'share-webshare';
+            btn.className = 'dropdown-item';
+            btn.type = 'button';
+            btn.textContent = 'Share…';
+            btn.addEventListener('click', () => navigator.share({ title: pageTitleRaw, url: shareUrl }));
+            li.appendChild(btn);
+            menu.appendChild(li);
+         }
+      }
   })();
 </script>
+
+<!-- Lightbox Modal -->
+<div class="modal fade" id="screenshotLightbox" tabindex="-1" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down" style="--bs-modal-width: 750px;">
+      <div class="modal-content bg-black">
+         <button type="button" class="btn btn-light position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close">Close</button>
+         <div class="modal-body p-0 d-flex align-items-center justify-content-center">
+            <img id="lightboxImage" src="" alt="Expanded screenshot" class="img-fluid w-100" style="object-fit: contain; max-height: 100vh;" />
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- Lightbox wiring -->
+<script>
+   (function () {
+      const lightboxEl = document.getElementById('screenshotLightbox');
+      const lightboxImg = document.getElementById('lightboxImage');
+      const frames = document.querySelectorAll('.screenshot-frame');
+
+            function openLightbox(src, alt) {
+               if (!lightboxEl || !lightboxImg) return;
+               lightboxImg.src = src;
+               lightboxImg.alt = alt || 'Expanded screenshot';
+               // If Bootstrap Modal is available
+               if (window.bootstrap && window.bootstrap.Modal) {
+                  const modal = new window.bootstrap.Modal(lightboxEl);
+                  modal.show();
+               } else {
+                  // Fallback: simple full-window view
+                  window.open(src, '_blank', 'noopener');
+               }
+            }
+
+      frames.forEach(frame => {
+         const img = frame.querySelector('img');
+         if (!img) return;
+         frame.addEventListener('click', () => openLightbox(img.src, img.alt));
+         frame.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+               e.preventDefault();
+               openLightbox(img.src, img.alt);
+            }
+         });
+      });
+   })();
+   </script>
