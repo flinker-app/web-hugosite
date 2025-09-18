@@ -1,0 +1,14 @@
+{{- $key := .Get "key" -}}
+{{- $def := .Get "default" | default "—" -}}
+{{- $sep := .Get "sep" | default ", " -}}
+{{- $val := index .Page.Params $key -}}
+
+{{- if $val -}}
+  {{- if (reflect.IsSlice $val) -}}
+    {{- delimit $val $sep -}}
+  {{- else -}}
+    {{- $val -}}
+  {{- end -}}
+{{- else -}}
+  {{- $def -}}
+{{- end -}}
