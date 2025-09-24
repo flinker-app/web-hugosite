@@ -2,10 +2,16 @@
 {{ define "main" }}
 <main>
     <!-- <div class="pattern-square"></div> -->
+    {{/* Configurable top spacing (service-v1 style). Defaults to py-5 py-lg-8, overridable via site or page params. */}}
+    {{ $disableTopSpacing := .Params.disableTopSpacing }}
+    {{ $topSpacingClasses := "py-5 py-lg-8" }}
+    {{ with .Site.Params.topSpacingClasses }}{{ $topSpacingClasses = . }}{{ end }}
+    {{ with .Params.topSpacingClasses }}{{ $topSpacingClasses = . }}{{ end }}
 
     <!-- Blog single start -->
     <div class="py-xl-9 py-4">
         <div class="container">
+            {{ if not $disableTopSpacing }}<div class="{{ $topSpacingClasses }}">{{ end }}
             <div class="row">
                 <article class="col-lg-8 offset-lg-2">
                     <h1>{{ .Title }}</h1>
@@ -39,6 +45,7 @@
                 </article>
                 
             </div>
+            {{ if not $disableTopSpacing }}</div>{{ end }}
             
         </div>
     </div>

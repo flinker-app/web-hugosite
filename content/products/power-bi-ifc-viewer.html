@@ -19,28 +19,49 @@ solutions:
   - SharePoint Integration
 industry: ["Construction", "Engineering", "Real Estate"]
 content_type: "product_page"
+disableTopSpacing: false
 ---
 
 
 <!-- HERO -->
-<section class="py-8" style="padding:72px 0;">
+<section class="py-5 py-lg-8" style="padding-bottom:72px;">
   <div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
     <h1 class="display-5 fw-bold" style="margin:0 0 12px; font-size:clamp(32px,5vw,48px); line-height:1.15; letter-spacing:-0.02em;">
-      Bring your IFC models into Power BI
+      IFC in Power BI, without leaving your tenant
     </h1>
     <p class="lead text-muted" style="margin:0 auto 28px; max-width:720px; color:#64748b;">
-      Start free today. Unlock powerful editor features when you need them. Scale to organization-wide sharing when your team is ready.
+      Load models from SharePoint, explore in 3D, and publish decision-ready dashboards — no external servers.
     </p>
     <a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer"
        class="btn btn-lg"
        style="--btn-bg: var(--bs-primary, #0d6efd); background:var(--btn-bg); color:#fff; padding:12px 18px; border-radius:12px; font-weight:700; text-decoration:none;">
       Start Free in AppSource
     </a>
+    <small class="d-block mt-2 text-muted">Works in your Microsoft 365 tenant — self-hosted by design.</small>
   </div>
 </section>
 
+<!--Demo section end-->
+<section class="container py-lg-8 py-5">
+   <div class="row justify-content-center">
+      <div class="col-md-10 col-12">
+         <div class="text-center position-relative" data-cue="zoomIn">
+            <iframe title="ifc-large" style="width: 100%; aspect-ratio: 16 / 10;" width="100%" src="https://app.powerbi.com/view?r=eyJrIjoiOTgwNmVhYjYtZGFlMS00MGU4LTg4NTItMWU4OWQ3MmU1MDA5IiwidCI6IjQ0YjY0MGYzLTQ5YjAtNDMwNC05Yzk4LWM2MWQwYmMwZGMwMiJ9" allowFullScreen="true" class="img-fluid bg-light p-3 rounded-3 border"></iframe>
+            <div class="position-absolute top-50 d-none d-lg-block ms-lg-n5" data-cue="slideInLeft">
+               <img src="./assets-flinker/images/landings/products/ifcpbivisual/hero-frame-left.svg" alt="" />
+            </div>
+            <div class="position-absolute top-50 end-0 translate-middle me-n9 d-none d-lg-block">
+               <img src="./assets-flinker/images/landings/products/ifcpbivisual/hero-frame-right-1.svg" class="me-n9 mb-4" alt="" data-cue="slideInRight" />
+               <br />
+               <img src="./assets-flinker/images/landings/products/ifcpbivisual/hero-frame-right-2.svg" alt="" data-cue="slideInRight" />
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
 <!-- FEATURES -->
-<section class="py-8" style="padding:72px 0;">  
+<section class="py-8" style="padding:72px 0;">
   <div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px;">
     <div style="text-align:center; margin-bottom:36px;">
       <h2 style="font-size:clamp(24px,3.5vw,36px); margin:0 0 10px; letter-spacing:-0.02em;">
@@ -102,6 +123,20 @@ content_type: "product_page"
     </div>
   </div>
 </section>
+
+<!-- USER LOGOS -->
+<section class="py-8" style="padding:72px 0;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+        <div class="text-center mb-4">
+          <h2 class="mb-1">Trusted by BIM and data teams</h2>
+          <p class="mb-0 text-muted">Used by teams across construction, engineering, and real estate</p>
+        </div>
+      </div>
+      {{< pbi-user-logos >}}
+    </div>
+ </section>
 
 <!-- PRICING -->
 <section aria-labelledby="pricing-title" style="font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height:1.45; color:#0f172a; padding:72px 0;">
@@ -227,6 +262,27 @@ content_type: "product_page"
   </div>
 </section>
 
+<!-- TUTORIAL -->
+<section class="py-8" style="padding:72px 0; background-color:#ffffff;">
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1 col-md-12">
+            <iframe
+              title="Flinker IFC Viewer – Overview & Tutorial"
+              src="https://www.youtube.com/embed/mBCLSzCkDks"
+              style="width:100%; aspect-ratio: 16 / 9;"
+              width="100%"
+              class="bg-light p-3 rounded-3 border"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+        </div>
+      </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="py-8" style="padding:72px 0;">  
   <div class="container">
@@ -334,7 +390,6 @@ content_type: "product_page"
     </div>
   </div>
 </section>
-<!-- /FAQ -->
 
 <!-- FOOTER CTA -->
 <section class="py-lg-9 py-md-8 py-5 bg-light">

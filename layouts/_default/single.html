@@ -4,6 +4,12 @@
 
 {{ define "main" }}
     <article>
+        {{/* Global top spacing config (overridable) */}}
+        {{ $disableTopSpacing := .Params.disableTopSpacing }}
+        {{ $topSpacingClasses := "py-5 py-lg-8" }}
+        {{ with .Site.Params.topSpacingClasses }}{{ $topSpacingClasses = . }}{{ end }}
+        {{ with .Params.topSpacingClasses }}{{ $topSpacingClasses = . }}{{ end }}
+
         <div class="content">
             {{ $content := .Content }}
             <!-- Automatically replace asset URLs to make theme assets work-->
@@ -25,8 +31,15 @@
             {{ $content = replaceRE "url\\(\\s*\\.\\/assets-flinker/" (printf "url(%sassets-flinker/" (absURL "")) $content }}
             {{ $content = replaceRE "src=\"\\.\\/assets-flinker/" (printf "src=\"%sassets-flinker/" (absURL "")) $content }}
 
-            {{ $content = replaceRE `href="\./(.*?\.html)"` (printf `href="%s$1"` (absURL "")) $content }}
-            {{ $content | safeHTML }}
+                        {{ $content = replaceRE `href="\./(.*?\.html)"` (printf `href="%s$1"` (absURL "")) $content }}
+
+                        {{ if not $disableTopSpacing }}
+                            <div class="{{ $topSpacingClasses }}">
+                                {{ $content | safeHTML }}
+                            </div>
+                        {{ else }}
+                            {{ $content | safeHTML }}
+                        {{ end }}
 
 
         </div>
