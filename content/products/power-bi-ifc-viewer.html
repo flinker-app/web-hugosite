@@ -22,7 +22,6 @@ content_type: "product_page"
 disableTopSpacing: false
 ---
 
-
 <!-- HERO -->
 <section class="py-5 py-lg-8" style="padding-bottom:72px;">
   <div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
@@ -167,7 +166,8 @@ disableTopSpacing: false
   <div style="max-width:1120px; margin:0 auto; padding:0 20px;">
     <h2 id="pricing-title" class="heading-theme">Pricing & Plans</h2>
     <p class="text-muted" style="text-align:center; color:#64748b; margin:0 auto 36px; max-width:720px;">
-      Start free in Power BI Desktop. Unlock Pro for editors. Scale to Business or Enterprise when your team is ready.
+      Transparent tenant-wide pricing. No hidden per-GB or per-project fees.<br>
+      Start free in Power BI Desktop. Upgrade when your team is ready to share.
     </p>
 
     <div class="pricing-grid">
@@ -180,7 +180,7 @@ disableTopSpacing: false
           <!-- Free -->
           <article aria-labelledby="free" class="plan">
             <h3 id="free">Free</h3>
-            <p class="sub">Power BI Desktop usage</p>
+            <p class="sub">Build reports in Power BI Desktop</p>
             <p class="price">€0</p>
             <ul>
               <li>1 free starter template</li>
@@ -198,9 +198,9 @@ disableTopSpacing: false
             <p class="sub">Unlock advanced editor features</p>
             <p class="price">€99 <span style="font-size:14px; font-weight:500; color:#94a3b8;">/month / tenant</span></p>
             <ul>
-              <li>Multi-IFC loading</li>
-              <li>Extended query / data extension</li>
-              <li>Color-by features</li>
+              <li><strong>Multi-IFC</strong> loading</li>
+              <li><strong>Extended query</strong> / data extension</li>
+              <li><strong>Color-by</strong> features</li>
               <li>All editors included</li>
               <li>Email support</li>
             </ul>
@@ -218,13 +218,13 @@ disableTopSpacing: false
           <!-- Business (Sharing & Viewers) -->
           <article aria-labelledby="business" class="plan">
             <h3 id="business">Business (Sharing)</h3>
-            <p class="sub">Enable Power BI Service sharing & viewing</p>
+            <p class="sub">Enable Power BI Service sharing & unlimited viewing</p>
             <p class="price">€299 <span style="font-size:14px; font-weight:500; color:#94a3b8;">/month / tenant</span></p>
             <ul>
               <li>Everything in Pro</li>
-              <li>Power BI Service sharing & viewing</li>
-              <li>Multi-IFC & folder ingest</li>
-              <li>Optimized performance for large models</li>
+              <li>Power BI Service sharing included</li>
+              <li><strong>All MS365 viewers covered</strong></li>
+              <li>Multi-IFC subfolder loading</li>
               <li>Priority support</li>
             </ul>
             <a href="#contact-sales" class="btn-theme-outline">Talk to sales</a>
@@ -234,13 +234,13 @@ disableTopSpacing: false
           <article aria-labelledby="enterprise" class="plan">
             <h3 id="enterprise">Enterprise</h3>
             <p class="sub">For large-scale rollouts & governance</p>
-            <p class="price">Custom <span style="font-size:14px; font-weight:500; color:#94a3b8;">— contact us</span></p>
+            <p class="price">€999 <span style="font-size:14px; font-weight:500; color:#94a3b8;">starting /mo. / ten.</span></p>
             <ul>
               <li>Everything in Business</li>
-              <li>Unlimited models & projects</li>
-              <li>SSO, advanced security, compliance</li>
-              <li>SLAs & dedicated success manager</li>
-              <li>Onboarding & customization</li>
+              <li>API for advanced performance on ultra large datasets</li>
+              <li>Early access & custom features</li>
+              <li>Dedicated success manager & SLAs</li>
+              <li>Enterprise onboarding</li>
             </ul>
             <a href="#contact-enterprise" class="btn-theme-outline">Contact us</a>
           </article>
@@ -254,11 +254,84 @@ disableTopSpacing: false
     <div style="margin-top:32px; font-size:14px; color:#64748b;">
       <p><strong>Notes:</strong></p>
       <ul style="margin:0 0 0 20px; padding:0;">
-        <li>Free plan supports Power BI Desktop only. Service sharing requires Business or Enterprise.</li>
-        <li>Prices exclude VAT. Monthly billing; annual options available on request.</li>
-        <li>Pro plan enables advanced editor features for all editors within the tenant.</li>
+        <li>Free plan supports Power BI Desktop only. Sharing requires Business or Enterprise.</li>
+        <li>All plans include MS365 sign-on for editors and viewers.</li>
+        <li>Prices exclude VAT. Yearly billing; discounts for long-term commitments on request.</li>
       </ul>
     </div>
+  </div>
+</section>
+
+<!-- PRICING MODEL COMPARISON -->
+<section class="py-8" style="padding:72px 0;">
+  <div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px;">
+
+    <div style="text-align:center; margin-bottom:36px;">
+      <h3 id="compare-title" class="cmp-title" style="margin:0 0 8px; font-weight:700; font-size:clamp(22px,3vw,28px);">
+        Compare pricing models
+      </h3>
+      <p class="cmp-sub" style="margin:0 auto 24px; max-width:700px; color:#64748b;">
+        Most BIM tools charge per user or per project/GB — costs grow fast as you scale.  
+        Flinker keeps it simple: <strong>flat, tenant-wide pricing with unlimited viewers</strong>.
+      </p>
+    </div>
+
+    <style>
+      .cmp-table{width:100%;border-collapse:collapse;border:1px solid #e2e8f0;border-radius:14px;overflow:hidden;font-size:15px}
+      .cmp-table th,.cmp-table td{padding:12px 14px;border-top:1px solid #e2e8f0;vertical-align:top}
+      .cmp-table th{background:#f8fafc;font-weight:700;text-align:left}
+      .cmp-badge{display:inline-block;padding:3px 8px;border-radius:999px;font-weight:700;font-size:12px;background:var(--bs-primary,#0d6efd);color:#fff}
+      .cmp-good{color:#16a34a;font-weight:600}
+      .cmp-warn{color:#ca8a04;font-weight:600}
+      .cmp-bad{color:#dc2626;font-weight:600}
+      @media (max-width:720px){
+        .cmp-table th,.cmp-table td{padding:10px}
+      }
+    </style>
+
+    <div>
+      <table class="cmp-table" role="table" aria-label="Pricing model comparison">
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th>Flinker <span class="cmp-badge">Flat per tenant</span></th>
+            <th>Per-user tools</th>
+            <th>Per-project / GB tools</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>License model</strong></td>
+            <td><span class="cmp-good">Flat monthly fee</span> (editors + viewers)</td>
+            <td><span class="cmp-bad">€ per user</span></td>
+            <td><span class="cmp-bad">€ per project or GB</span></td>
+          </tr>
+          <tr>
+            <td><strong>Viewers</strong></td>
+            <td><span class="cmp-good">Unlimited</span></td>
+            <td>Extra seats needed</td>
+            <td>Often tied to storage</td>
+          </tr>
+          <tr>
+            <td><strong>Predictability</strong></td>
+            <td><span class="cmp-good">No hidden fees</span></td>
+            <td>Scales with headcount</td>
+            <td><span class="cmp-warn">Bill varies with file size</span></td>
+          </tr>
+          <tr>
+            <td><strong>Best fit</strong></td>
+            <td>Teams wanting <em>simple, scalable</em> BIM in Power BI</td>
+            <td>Orgs with fixed named users</td>
+            <td>Vendors pushing project-based billing</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p style="margin:12px 0 0; color:#94a3b8; font-size:12px; text-align:center;">
+        Market models shown for illustration. Figures are indicative only.
+      </p>
+    </div>
+
   </div>
 </section>
 
@@ -391,6 +464,185 @@ disableTopSpacing: false
   </div>
 </section>
 
+<!-- MS365-NATIVE COMPARISON -->
+<section class="py-xl-8 py-lg-7 py-5" data-cue="fadeIn" id="ms365-native">
+  <div class="container">
+    <div class="row mb-6">
+      <div class="col-12 offset-xl-3 col-xl-6">
+        <div class="text-center" data-cue="fadeIn">
+          <h2 class="mb-2" style="color:var(--bs-emphasis-color)">Why MS365-native beats vendor-hosted</h2>
+          <p class="mb-0" style="color:var(--bs-secondary-color)">
+            Keep data, identity, and governance inside your Microsoft tenant. No extra clouds. No new security boundary.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" data-cue="zoomIn">
+      <div class="col-12">
+        <div class="table-responsive-xl">
+          <table class="table table-lg table-centered align-middle"
+                 role="table" aria-label="MS365 native vs vendor-hosted comparison"
+                 style="border:1px solid var(--bs-border-color); border-radius:12px; overflow:hidden;">
+            <tbody>
+
+              <!-- Header row -->
+              <tr>
+                <td></td>
+                <td class="py-4 rounded-top-3 d-flex justify-content-center"
+                    style="background:color-mix(in oklab, var(--bs-success) 10%, transparent);">
+                  <div class="d-md-flex align-items-center gap-3">
+                    <img src="/assets-flinker/images/logo.svg" alt="Flinker" class="lh-1" style="height:28px;" />
+                    <p class="fs-5 fw-semibold mb-0 mt-1" style="color:var(--bs-emphasis-color)"> Power BI App</p>
+                  </div>
+                </td>
+                <td class="text-center py-4" style="width: 380px; color:var(--bs-secondary-color)">
+                  Typical vendor-hosted tools
+                </td>
+              </tr>
+
+              <!-- Data residency & sovereignty -->
+              <tr>
+                <td class="fw-bold py-4" style="width: 380px; color:var(--bs-emphasis-color)">Data residency & sovereignty</td>
+                <td class="py-4 px-md-6"
+                    style="background:color-mix(in oklab, var(--bs-success) 8%, transparent);">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check2" style="color:var(--bs-success)"></i>
+                    <span style="color:var(--bs-emphasis-color)">Files remain in SharePoint/OneDrive; no data leaves your tenant.</span>
+                  </div>
+                </td>
+                <td class="py-4 px-md-6">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-exclamation-triangle" style="color:var(--bs-warning)"></i>
+                    <span style="color:var(--bs-body-color)">External storage or replication into vendor clouds.</span>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Identity & SSO -->
+              <tr>
+                <td class="fw-bold py-4" style="color:var(--bs-emphasis-color)">Identity & SSO</td>
+                <td class="py-4 px-md-6" style="background:color-mix(in oklab, var(--bs-success) 8%, transparent);">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check2" style="color:var(--bs-success)"></i>
+                    <span>Azure AD (Entra ID) native SSO for editors & viewers; honors tenant policies.</span>
+                  </div>
+                </td>
+                <td class="py-4 px-md-6">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-x" style="color:var(--bs-danger)"></i>
+                    <span>Separate user store or extra SSO setup/licensing.</span>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Security & compliance -->
+              <tr>
+                <td class="fw-bold py-4" style="color:var(--bs-emphasis-color)">Security & compliance</td>
+                <td class="py-4 px-md-6" style="background:color-mix(in oklab, var(--bs-success) 8%, transparent);">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check2" style="color:var(--bs-success)"></i>
+                    <span>Inherits MFA, DLP, audit, retention, Purview—your controls, your logs.</span>
+                  </div>
+                </td>
+                <td class="py-4 px-md-6">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-exclamation-triangle" style="color:var(--bs-warning)"></i>
+                    <span>New security boundary, separate audits and vendor attestations.</span>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Deployment & change control -->
+              <tr>
+                <td class="fw-bold py-4" style="color:var(--bs-emphasis-color)">Deployment & change control</td>
+                <td class="py-4 px-md-6" style="background:color-mix(in oklab, var(--bs-success) 8%, transparent);">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check2" style="color:var(--bs-success)"></i>
+                    <span>AppSource distribution; admin-governed rollout with standard Microsoft channels.</span>
+                  </div>
+                </td>
+                <td class="py-4 px-md-6">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-x" style="color:var(--bs-danger)"></i>
+                    <span>Vendor environments & release cycles outside your M365 controls.</span>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Performance & access path -->
+              <tr>
+                <td class="fw-bold py-4" style="color:var(--bs-emphasis-color)">Performance & access path</td>
+                <td class="py-4 px-md-6" style="background:color-mix(in oklab, var(--bs-success) 8%, transparent);">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check2" style="color:var(--bs-success)"></i>
+                    <span>Direct access to SharePoint files — no ingest jobs or data shuttling.</span>
+                  </div>
+                </td>
+                <td class="py-4 px-md-6">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-exclamation-triangle" style="color:var(--bs-warning)"></i>
+                    <span>Imports, sync pipelines, and duplicate storage add latency.</span>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Interop in Microsoft 365 -->
+              <tr>
+                <td class="fw-bold py-4" style="color:var(--bs-emphasis-color)">Interop in Microsoft 365</td>
+                <td class="py-4 px-md-6" style="background:color-mix(in oklab, var(--bs-success) 8%, transparent);">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check2" style="color:var(--bs-success)"></i>
+                    <span>Works with Teams, SharePoint, Power BI, Lists, Excel — native graph of tools.</span>
+                  </div>
+                </td>
+                <td class="py-4 px-md-6">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-x" style="color:var(--bs-danger)"></i>
+                    <span>Bridges & connectors required; partial coverage.</span>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Admin & governance -->
+              <tr>
+                <td class="fw-bold py-4" style="color:var(--bs-emphasis-color)">Admin & governance</td>
+                <td class="py-4 px-md-6" style="background:color-mix(in oklab, var(--bs-success) 8%, transparent);">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check2" style="color:var(--bs-success)"></i>
+                    <span>Controlled via your tenant: groups, permissions, lifecycle, auditing.</span>
+                  </div>
+                </td>
+                <td class="py-4 px-md-6">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-exclamation-triangle" style="color:var(--bs-warning)"></i>
+                    <span>Shared responsibility with vendor policies & role models.</span>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- CTA row (single, editor-focused) -->
+              <tr>
+                <td class="py-4 border-bottom-0"></td>
+                <td class="border-bottom-0 text-center py-4"
+                    style="background:color-mix(in oklab, var(--bs-success) 10%, transparent);">
+                  <a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer"
+                     class="btn btn-primary fw-semibold">Start free</a>
+                </td>
+                <td class="py-4 border-bottom-0"></td>
+              </tr>
+
+            </tbody>
+          </table>
+          <p class="text-muted small mt-2">
+            Notes: “Typical vendor-hosted tools” summarizes common approaches; details vary by vendor and deployment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER CTA -->
 <section class="py-lg-9 py-md-8 py-5 bg-light">
   <div class="container">
@@ -428,5 +680,3 @@ disableTopSpacing: false
     </div>
   </div>
 </section>
-
-

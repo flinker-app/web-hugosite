@@ -1,4 +1,130 @@
 
+<!-- PRICING -->
+<section aria-labelledby="pricing-title" style="font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height:1.45; color:#0f172a; padding:72px 0;">
+  <style>
+    .btn-theme{display:inline-block;text-decoration:none;background:var(--bs-primary,#0d6efd);color:#fff;padding:10px 14px;border-radius:10px;font-weight:600;border:0}
+    .btn-theme-outline{display:inline-block;text-decoration:none;background:transparent;color:var(--bs-primary,#0d6efd);padding:10px 14px;border-radius:10px;font-weight:600;border:2px solid var(--bs-primary,#0d6efd)}
+    .pro-accent{border:2px solid var(--bs-primary,#0d6efd);box-shadow:0 6px 24px rgba(13,110,253,.10);border-radius:16px;padding:24px;position:relative}
+    .heading-theme{margin:0 0 8px;font-weight:700;color:var(--bs-emphasis-color,#0f172a);font-size:clamp(28px,4vw,40px);text-align:center}
+
+    /* Group labels */
+    .group-label{font-size:14px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#64748b;margin:12px 0 16px}
+
+    /* Grid (2x2 on desktop, 1x on mobile) */
+    .pricing-grid{display:grid;gap:20px}
+    @media (min-width: 992px){
+      .pricing-grid{grid-template-columns:repeat(2,1fr);gap:32px}
+      .plan-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    }
+
+    /* Card base */
+    .plan{border:1px solid #e2e8f0;border-radius:16px;padding:24px}
+    .plan h3{margin:0 0 8px;font-size:22px}
+    .plan p.sub{margin:0 0 12px;color:#64748b}
+    .price{margin:0 0 16px;font-size:28px;font-weight:800}
+    .plan ul{margin:0 20px 20px;padding:0}
+  </style>
+
+  <div style="max-width:1120px; margin:0 auto; padding:0 20px;">
+    <h2 id="pricing-title" class="heading-theme">Pricing & Plans</h2>
+    <p class="text-muted" style="text-align:center; color:#64748b; margin:0 auto 36px; max-width:720px;">
+      Transparent, tenant-based pricing — no hidden per-GB or per-project fees.<br>
+      Start free in Power BI Desktop. Unlock Pro for editors. Scale to Business or Enterprise when your team is ready.
+    </p>
+
+
+    <div class="pricing-grid">
+
+      <!-- Editors group -->
+      <div>
+        <div class="group-label">For editors — start here</div>
+        <div class="plan-pair">
+
+          <!-- Free -->
+          <article aria-labelledby="free" class="plan">
+            <h3 id="free">Free</h3>
+            <p class="sub">Power BI Desktop usage.</p>
+            <p class="price">€0</p>
+            <ul>
+              <li>1 free starter template</li>
+              <li>IFC in Power BI Desktop</li>
+              <li>Core features to build first reports</li>
+              <li><strong>No</strong> Service sharing</li>
+            </ul>
+            <a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer" class="btn-theme">Start free</a>
+          </article>
+
+          <!-- Pro (Editors) -->
+          <article aria-labelledby="pro" class="pro-accent">
+            <div style="position:absolute; top:-12px; right:16px; background:#fef3c7; color:#b45309; font-weight:800; font-size:12px; padding:4px 8px; border-radius:999px;">Most popular</div>
+            <h3 id="pro">Pro (Editors)</h3>
+            <p class="sub">Unlock advanced editor features</p>
+            <p class="price">€99 <span style="font-size:14px; font-weight:500; color:#94a3b8;">/month / tenant</span></p>
+            <ul>
+                <li><strong>Multi-IFC</strong> loading</li>
+                <li><strong>Extended query</strong> / data extension</li>
+                <li><strong>Color-by</strong> features</li>
+              <li>All editors included</li>
+              <li>Email support</li>
+            </ul>
+            <a href="#upgrade-pro" class="btn-theme">Unlock Pro</a>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Teams/org group -->
+      <div>
+        <div class="group-label">For teams & organizations — scale up</div>
+        <div class="plan-pair">
+
+          <!-- Business (Sharing & Viewers) -->
+          <article aria-labelledby="business" class="plan">
+            <h3 id="business">Business (Sharing)</h3>
+            <p class="sub">Enable Power BI Service sharing & viewing</p>
+            <p class="price">€299 <span style="font-size:14px; font-weight:500; color:#94a3b8;">/month / tenant</span></p>
+            <ul>
+              <li>Everything in Pro</li>
+              <li>Power BI Service sharing & viewing</li>
+              <li>Share with unlimited MS365 viewers</li>
+              <li>Multi-IFC subfolder loading</li>
+              <li>Priority roadmap influence</li>
+            </ul>
+            <a href="#contact-sales" class="btn-theme-outline">Talk to sales</a>
+          </article>
+
+          <!-- Enterprise -->
+          <article aria-labelledby="enterprise" class="plan">
+            <h3 id="enterprise">Enterprise</h3>
+            <p class="sub">For large-scale rollouts & governance</p>
+            <p class="price">Custom <span style="font-size:14px; font-weight:500; color:#94a3b8;">— contact us</span></p>
+            <ul>
+              <li>Everything in Business</li>
+              <li>API for unlimited project sizes</li>
+              <li>Early Access & custom features</li>
+              <li>SLAs & dedicated onboarding</li>
+              <li>Onboarding & customization</li>
+            </ul>
+            <a href="#contact-enterprise" class="btn-theme-outline">Contact us</a>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Notes -->
+    <div style="margin-top:32px; font-size:14px; color:#64748b;">
+      <p><strong>Notes:</strong></p>
+      <ul style="margin:0 0 0 20px; padding:0;">
+        <li>Free plan supports Power BI Desktop only. Service sharing requires Business or Enterprise.</li>
+        <li>Prices exclude VAT. Monthly billing; annual options available on request.</li>
+        <li>Pro plan enables advanced editor features for all editors within the tenant.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 
 <!-- PRICING -->
 <section aria-labelledby="pricing-title" style="font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height:1.45; color:#0f172a; padding:40px 0 20px;">
