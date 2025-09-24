@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Flinker | Building Digital Twins in Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Home on Flinker | Building Digital Twins in Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>blog</title><link>https://flinker.app/blog/</link><pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/</guid><description>&lt;!--Square Pattern Start-->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Flinker | Building Digital Twins in Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Home on Flinker | Building Digital Twins in Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 23 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Flinker IFC Viewer for Power BI — Overview &amp; Pricing</title><link>https://flinker.app/products/power-bi-ifc-viewer/</link><pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/products/power-bi-ifc-viewer/</guid><description>&lt;!-- HERO -->
+&lt;section class="py-5 py-lg-8" style="padding-bottom:72px;">
+ &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
+ &lt;h1 class="display-5 fw-bold" style="margin:0 0 12px; font-size:clamp(32px,5vw,48px); line-height:1.15; letter-spacing:-0.02em;">
+ IFC in Power BI, without leaving your tenant
+ &lt;/h1>
+ &lt;p class="lead text-muted" style="margin:0 auto 28px; max-width:720px; color:#64748b;">
+ Load models from SharePoint, explore in 3D, and publish decision-ready dashboards — no external servers.
+ &lt;/p>
+ &lt;a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer"
+ class="btn btn-lg"
+ style="--btn-bg: var(--bs-primary, #0d6efd); background:var(--btn-bg); color:#fff; padding:12px 18px; border-radius:12px; font-weight:700; text-decoration:none;">
+ Start Free in AppSource
+ &lt;/a>
+ &lt;small class="d-block mt-2 text-muted">Works in your Microsoft 365 tenant — self-hosted by design.&lt;/small>
+ &lt;/div>
+&lt;/section>
+
+&lt;!--Demo section end-->
+&lt;section class="container py-lg-8 py-5">
+ &lt;div class="row justify-content-center">
+ &lt;div class="col-md-10 col-12">
+ &lt;div class="text-center position-relative" data-cue="zoomIn">
+ &lt;iframe title="ifc-large" style="width: 100%; aspect-ratio: 16 / 10;" width="100%" src="https://app.powerbi.com/view?r=eyJrIjoiOTgwNmVhYjYtZGFlMS00MGU4LTg4NTItMWU4OWQ3MmU1MDA5IiwidCI6IjQ0YjY0MGYzLTQ5YjAtNDMwNC05Yzk4LWM2MWQwYmMwZGMwMiJ9" allowFullScreen="true" class="img-fluid bg-light p-3 rounded-3 border">&lt;/iframe>
+ &lt;div class="position-absolute top-50 d-none d-lg-block ms-lg-n5" data-cue="slideInLeft">
+ &lt;img src="./assets-flinker/images/landings/products/ifcpbivisual/hero-frame-left.svg" alt="" />
+ &lt;/div>
+ &lt;div class="position-absolute top-50 end-0 translate-middle me-n9 d-none d-lg-block">
+ &lt;img src="./assets-flinker/images/landings/products/ifcpbivisual/hero-frame-right-1.svg" class="me-n9 mb-4" alt="" data-cue="slideInRight" />
+ &lt;br />
+ &lt;img src="./assets-flinker/images/landings/products/ifcpbivisual/hero-frame-right-2.svg" alt="" data-cue="slideInRight" />
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+
+&lt;!-- FEATURES -->
+&lt;section class="py-8" style="padding:72px 0;">
+ &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px;">
+ &lt;div style="text-align:center; margin-bottom:36px;">
+ &lt;h2 style="font-size:clamp(24px,3.5vw,36px); margin:0 0 10px; letter-spacing:-0.02em;">
+ What you get with the IFC Viewer
+ &lt;/h2>
+ &lt;p class="text-muted" style="margin:0 auto; max-width:720px; color:#64748b;">
+ From SharePoint-native storage to advanced Pro tools, build reports faster and share them across your team.
+ &lt;/p></description></item><item><title>blog</title><link>https://flinker.app/blog/</link><pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/</guid><description>&lt;!--Square Pattern Start-->
 &lt;div class="pattern">&lt;/div>
 &lt;!--Square Pattern End-->
 
@@ -171,9 +217,9 @@
 &lt;div class="container">
  &lt;div class="row">
  &lt;div class="col-lg-7 offset-lg-2 col-md-12 col-12">
- &lt;h1 class="mb-3">Quantity Takeoff &amp; Cost Segmentation with Excel Viewer&lt;/h1>
+ &lt;h1 class="mb-3">Chat-to-Quantities with Flinker Copilot and Excel IFC Viewer&lt;/h1>
  &lt;p class="mb-0 lead">
- How an intuitive workflow combining the Flinker IFC Viewer and Excel enabled reliable quantities, transparent parameters, and faster handover to schedule and cost planning in a complex BIM project.
+ How Sawa Engineering used Flinker Copilot and Excel Viewer for reliable BIM quantity takeoff, cost segmentation, and faster planning decisions.
  &lt;/p>
  &lt;/div>
  &lt;/div>
@@ -203,7 +249,7 @@
  &lt;div class="mb-4 mb-lg-0">
  &lt;span>Client&lt;/span>
  &lt;div class="d-flex align-items-center mt-2">
- &lt;img src="https://flinker.app/assets-flinker/images/case-studies/Sawa-Engineering/profile-sawadogo-1.jpg" alt="Avatar" class="avatar avatar-xs rounded-circle" />
+ &lt;img src="https://flinker.app/assets-flinker/images/case-studies/Sawa-Engineering/sawa-company-logo-1.png" alt="Sawa Engineering Logo" class="avatar rounded-circle" style="width:36px;height:36px;" />
  &lt;div class="ms-2">
  &lt;span class="text-dark fs-6">Sawa Engineering&lt;/span>
  &lt;/div>
