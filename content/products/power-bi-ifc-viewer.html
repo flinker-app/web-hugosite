@@ -217,6 +217,7 @@ disableTopSpacing: false
 
           <!-- Business (Sharing & Viewers) -->
           <article aria-labelledby="business" class="plan">
+            <div style="position:absolute; top:-12px; right:16px; background:#e0f2fe; color:#0369a1; font-weight:700; font-size:12px; padding:4px 8px; border-radius:999px;"> Intro pricing</div>
             <h3 id="business">Business (Sharing)</h3>
             <p class="sub">Enable Power BI Service sharing & unlimited viewing</p>
             <p class="price">€299 <span style="font-size:14px; font-weight:500; color:#94a3b8;">/month / tenant</span></p>
@@ -233,11 +234,12 @@ disableTopSpacing: false
           <!-- Enterprise -->
           <article aria-labelledby="enterprise" class="plan">
             <h3 id="enterprise">Enterprise</h3>
-            <p class="sub">For large-scale rollouts & governance</p>
+            <p class="sub">For large-scale rollouts & performance</p>
             <p class="price">€999 <span style="font-size:14px; font-weight:500; color:#94a3b8;">starting /mo. / ten.</span></p>
             <ul>
               <li>Everything in Business</li>
               <li>API for advanced performance on ultra large datasets</li>
+              <li>Roadmap influence</li>
               <li>Early access & custom features</li>
               <li>Dedicated success manager & SLAs</li>
               <li>Enterprise onboarding</li>
@@ -253,84 +255,61 @@ disableTopSpacing: false
     <!-- Notes -->
     <div style="margin-top:32px; font-size:14px; color:#64748b;">
       <p><strong>Notes:</strong></p>
-      <ul style="margin:0 0 0 20px; padding:0;">
-        <li>Free plan supports Power BI Desktop only. Sharing requires Business or Enterprise.</li>
-        <li>All plans include MS365 sign-on for editors and viewers.</li>
-        <li>Prices exclude VAT. Yearly billing; discounts for long-term commitments on request.</li>
-      </ul>
+        <ul style="margin:0 0 0 20px; padding:0;">
+          <li>Free plan supports Power BI Desktop only; sharing requires Business or Enterprise.</li>
+          <li>All plans include secure MS365 sign-on for both editors and viewers.</li>
+          <li>Business plan includes unlimited viewers today; if future scaling options are introduced, customers will be informed in advance at renewal.</li>
+          <li>Prices exclude VAT. Annual billing by default.</li>
+          <li>Save with long-term commitments: 10% off 2-year plans, 15% off 3-year plans.</li>
+          <li>Current prices reflect our introductory offer — early customers lock in these rates.</li>
+
+
+        </ul>
     </div>
   </div>
 </section>
 
-<!-- PRICING MODEL COMPARISON -->
+<!-- PRICING MODEL SUMMARY -->
 <section class="py-8" style="padding:72px 0;">
   <div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px;">
 
-    <div style="text-align:center; margin-bottom:36px;">
-      <h3 id="compare-title" class="cmp-title" style="margin:0 0 8px; font-weight:700; font-size:clamp(22px,3vw,28px);">
-        Compare pricing models
+    <div style="text-align:center; margin-bottom:20px;">
+      <h3 style="margin:0 0 8px; font-weight:700; font-size:clamp(22px,3vw,28px);">
+        Flinker pricing at a glance
       </h3>
-      <p class="cmp-sub" style="margin:0 auto 24px; max-width:700px; color:#64748b;">
-        Most BIM tools charge per user or per project/GB — costs grow fast as you scale.  
-        Flinker keeps it simple: <strong>flat, tenant-wide pricing with unlimited viewers</strong>.
+      <p class="text-muted" style="margin:0 auto; max-width:760px; color:#64748b;">
+        Flat, tenant-wide pricing built for scale — <em>no per-user or per-GB surprises</em>.
       </p>
     </div>
 
-    <style>
-      .cmp-table{width:100%;border-collapse:collapse;border:1px solid #e2e8f0;border-radius:14px;overflow:hidden;font-size:15px}
-      .cmp-table th,.cmp-table td{padding:12px 14px;border-top:1px solid #e2e8f0;vertical-align:top}
-      .cmp-table th{background:#f8fafc;font-weight:700;text-align:left}
-      .cmp-badge{display:inline-block;padding:3px 8px;border-radius:999px;font-weight:700;font-size:12px;background:var(--bs-primary,#0d6efd);color:#fff}
-      .cmp-good{color:#16a34a;font-weight:600}
-      .cmp-warn{color:#ca8a04;font-weight:600}
-      .cmp-bad{color:#dc2626;font-weight:600}
-      @media (max-width:720px){
-        .cmp-table th,.cmp-table td{padding:10px}
-      }
-    </style>
-
-    <div>
-      <table class="cmp-table" role="table" aria-label="Pricing model comparison">
-        <thead>
-          <tr>
-            <th>&nbsp;</th>
-            <th>Flinker <span class="cmp-badge">Flat per tenant</span></th>
-            <th>Per-user tools</th>
-            <th>Per-project / GB tools</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>License model</strong></td>
-            <td><span class="cmp-good">Flat monthly fee</span> (editors + viewers)</td>
-            <td><span class="cmp-bad">€ per user</span></td>
-            <td><span class="cmp-bad">€ per project or GB</span></td>
-          </tr>
-          <tr>
-            <td><strong>Viewers</strong></td>
-            <td><span class="cmp-good">Unlimited</span></td>
-            <td>Extra seats needed</td>
-            <td>Often tied to storage</td>
-          </tr>
-          <tr>
-            <td><strong>Predictability</strong></td>
-            <td><span class="cmp-good">No hidden fees</span></td>
-            <td>Scales with headcount</td>
-            <td><span class="cmp-warn">Bill varies with file size</span></td>
-          </tr>
-          <tr>
-            <td><strong>Best fit</strong></td>
-            <td>Teams wanting <em>simple, scalable</em> BIM in Power BI</td>
-            <td>Orgs with fixed named users</td>
-            <td>Vendors pushing project-based billing</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p style="margin:12px 0 0; color:#94a3b8; font-size:12px; text-align:center;">
-        Market models shown for illustration. Figures are indicative only.
+    <div style="border:1px solid #e2e8f0; border-radius:14px; padding:20px;">
+      <ul style="margin:0; padding:0; list-style:none; display:grid; gap:12px;">
+        <li class="d-flex gap-2">
+          <i class="bi bi-check2" style="color:var(--bs-success)"></i>
+          <span><strong>Flat monthly per tenant</strong> — editors and viewers included.</span>
+        </li>
+        <li class="d-flex gap-2">
+          <i class="bi bi-check2" style="color:var(--bs-success)"></i>
+          <span><strong>Unlimited MS365 viewers</strong> — share broadly across your organization.</span>
+        </li>
+        <li class="d-flex gap-2">
+          <i class="bi bi-check2" style="color:var(--bs-success)"></i>
+          <span><strong>Predictable TCO</strong> — no per-GB, per-projec metering, or “check” fees.</span>
+        </li>
+        <li class="d-flex gap-2">
+          <i class="bi bi-check2" style="color:var(--bs-success)"></i>
+          <span><strong>Tenant-native rollout</strong> — MS365 sign-in, your data stays in your tenant.</span>
+        </li>
+      </ul>
+      <p class="text-muted small" style="margin:14px 0 0; color:#94a3b8;">
+        Other market models (per-user, per-project/GB) exist; Flinker stays intentionally simple for scale.
       </p>
     </div>
+
+    <!-- Optional tiny CTA under the summary 
+    <div class="text-center" style="margin-top:16px;">
+      <a href="#contact-sales" class="btn btn-primary">Request a tailored estimate</a>
+    </div> -->
 
   </div>
 </section>
@@ -625,7 +604,7 @@ disableTopSpacing: false
               <tr>
                 <td class="py-4 border-bottom-0"></td>
                 <td class="border-bottom-0 text-center py-4"
-                    style="background:color-mix(in oklab, var(--bs-success) 10%, transparent);">
+                    style="background:color-mix(in oklab, var(--bs-success) 10%, transparent); border-bottom-left-radius:12px; border-bottom-right-radius:12px;">
                   <a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer"
                      class="btn btn-primary fw-semibold">Start free</a>
                 </td>
