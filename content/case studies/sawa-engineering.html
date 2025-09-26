@@ -218,23 +218,48 @@ disableTopSpacing: true
          <h4 class="mb-1 mb-md-0 text-black-50">Flinker Apps</h4>
          </div>
          <div class="col-lg-8 col-md-8 col-12">
-         <div class="row">
+         <style>
+            /* Make app logos visually the same size without editing image files */
+            .app-logos img.app-logo {
+               height: 64px; /* base height for consistent sizing */
+               width: auto;  /* keep aspect ratio */
+               object-fit: contain;
+            }
+            /* Center image and caption as a column, shrink-wrap to image width */
+            .app-logos figure {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               width: fit-content;        /* make figure width equal to widest child (image) */
+               margin-left: auto;         /* center figure in its grid column */
+               margin-right: auto;
+            }
+            /* Ensure multi-line captions are centered under the logos */
+            .app-logos figcaption {
+               display: inline-block; /* shrink to text width for nicer centering */
+               text-align: center;    /* center each line inside multi-line captions */
+            }
+            @media (min-width: 768px) {
+               .app-logos img.app-logo { height: 72px; }
+            }
+         </style>
+         <div class="row app-logos">
             <h3 class="mb-3">BIM Apps for Microsoft 365 used</h3>
             <p class="small text-black-50 mb-3">Our Apps run in your Microsoft 365 tenant — no external servers, databases or platform.</p>
             <div class="col-lg-3 col-md-3 col-6">
                <figure class="py-3 text-center">
-               <a href="https://copilot.flinker.app/" target="_blank" rel="noopener" aria-label="Open Flinker Copilot">
-                  <img src="./assets-flinker/images/brand-logo/ifc-viewer-logo-3.png" alt="Flinker Copilot" class="mw-100" />
+               <a href="https://copilot.flinker.app/" target="_blank" rel="noopener" aria-label="Open IFC Copilot">
+                  <img src="./assets-flinker/images/brand-logo/ifc-copilot-logo.svg" alt="Flinker Copilot" class="app-logo" />
                </a>
-               <figcaption class="small mt-2">Flinker Copilot</figcaption>
+               <figcaption class="small mt-2">IFC Copilot</figcaption>
                </figure>
             </div>
             <div class="col-lg-3 col-md-3 col-6">
                <figure class="py-3 text-center">
                <a href="https://appsource.microsoft.com/en-us/product/office/WA200008867?tab=Overview" target="_blank" rel="noopener" aria-label="Open Flinker Excel Viewer on AppSource">
-                  <img src="./assets-flinker/images/brand-logo/ifc-viewer-logo-3.png" alt="Flinker Excel Viewer" class="mw-100" />
+                  <img src="./assets-flinker/images/brand-logo/ifc-viewer-logo.svg" alt="Flinker Excel Viewer" class="app-logo viewer-logo" />
                </a>
-               <figcaption class="small mt-2">Flinker Excel Viewer</figcaption>
+               <figcaption class="small mt-2">Excel IFC Viewer</figcaption>
                </figure>
             </div>            
          </div>
