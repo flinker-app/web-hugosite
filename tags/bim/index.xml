@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BIM on Flinker | Building Digital Twins in Microsoft 365</title><link>https://flinker.app/tags/bim/</link><description>Recent content in BIM on Flinker | Building Digital Twins in Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 28 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/tags/bim/index.xml" rel="self" type="application/rss+xml"/><item><title>Leveraging SharePoint as a Common Data Environment (CDE) for Large Construction Projects</title><link>https://flinker.app/blog/sharepoint-cde-construction-projects/</link><pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-construction-projects/</guid><description>&lt;p>Large-scale construction projects often grapple with fragmented data, misaligned communications, and inefficient workflows. A Common Data Environment (CDE) addresses these challenges by providing a centralized platform to manage, collaborate on, and leverage critical project data throughout a project&amp;rsquo;s lifecycle. SharePoint, deeply integrated within Microsoft 365, emerges as a powerful, secure, and scalable solution ideal for managing complex construction data.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BIM on Flinker | Building Digital Twins in Microsoft 365</title><link>https://flinker.app/tags/bim/</link><description>Recent content in BIM on Flinker | Building Digital Twins in Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 23 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/tags/bim/index.xml" rel="self" type="application/rss+xml"/><item><title>Flinker IFC Viewer for Power BI — Overview &amp; Pricing</title><link>https://flinker.app/products/power-bi-ifc-viewer/</link><pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/products/power-bi-ifc-viewer/</guid><description>&lt;!-- HERO -->
+&lt;section class="py-5 py-lg-8" style="padding-bottom:72px;">
+ &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
+ &lt;h1 class="display-5 fw-bold" style="margin:0 0 12px; font-size:clamp(32px,5vw,48px); line-height:1.15; letter-spacing:-0.02em;">
+ IFC in Power BI, without leaving your tenant
+ &lt;/h1>
+ &lt;p class="lead text-muted" style="margin:0 auto 28px; max-width:720px; color:#64748b;">
+ Load models from SharePoint, explore in 3D, and publish decision-ready dashboards — no external servers.
+ &lt;/p>
+ &lt;a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer"
+ class="btn btn-lg"
+ style="--btn-bg: var(--bs-primary, #0d6efd); background:var(--btn-bg); color:#fff; padding:12px 18px; border-radius:12px; font-weight:700; text-decoration:none;">
+ Start Free in AppSource
+ &lt;/a>
+ &lt;small class="d-block mt-2 text-muted">Works in your Microsoft 365 tenant — self-hosted by design.&lt;/small>
+ &lt;/div>
+&lt;/section>
+
+&lt;!--Demo section end-->
+&lt;section class="container py-lg-8 py-5">
+ &lt;div class="row justify-content-center">
+ &lt;div class="col-md-10 col-12">
+ &lt;div class="text-center position-relative" data-cue="zoomIn">
+ &lt;iframe title="ifc-large" style="width: 100%; aspect-ratio: 16 / 10;" width="100%" src="https://app.powerbi.com/view?r=eyJrIjoiOTgwNmVhYjYtZGFlMS00MGU4LTg4NTItMWU4OWQ3MmU1MDA5IiwidCI6IjQ0YjY0MGYzLTQ5YjAtNDMwNC05Yzk4LWM2MWQwYmMwZGMwMiJ9" allowFullScreen="true" class="img-fluid bg-light p-3 rounded-3 border">&lt;/iframe>
+ &lt;div class="position-absolute top-50 d-none d-lg-block ms-lg-n5" data-cue="slideInLeft">
+ &lt;img src="./assets-flinker/images/landings/products/ifcpbivisual/hero-frame-left.svg" alt="" />
+ &lt;/div>
+ &lt;div class="position-absolute top-50 end-0 translate-middle me-n9 d-none d-lg-block">
+ &lt;img src="./assets-flinker/images/landings/products/ifcpbivisual/hero-frame-right-1.svg" class="me-n9 mb-4" alt="" data-cue="slideInRight" />
+ &lt;br />
+ &lt;img src="./assets-flinker/images/landings/products/ifcpbivisual/hero-frame-right-2.svg" alt="" data-cue="slideInRight" />
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+
+&lt;!-- FEATURES -->
+&lt;section class="py-8" style="padding:72px 0;">
+ &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px;">
+ &lt;div style="text-align:center; margin-bottom:36px;">
+ &lt;h2 style="font-size:clamp(24px,3.5vw,36px); margin:0 0 10px; letter-spacing:-0.02em;">
+ What you get with the IFC Viewer
+ &lt;/h2>
+ &lt;p class="text-muted" style="margin:0 auto; max-width:720px; color:#64748b;">
+ From SharePoint-native storage to advanced Pro tools, build reports faster and share them across your team.
+ &lt;/p></description></item><item><title>Leveraging SharePoint as a Common Data Environment (CDE) for Large Construction Projects</title><link>https://flinker.app/blog/sharepoint-cde-construction-projects/</link><pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-construction-projects/</guid><description>&lt;p>Large-scale construction projects often grapple with fragmented data, misaligned communications, and inefficient workflows. A Common Data Environment (CDE) addresses these challenges by providing a centralized platform to manage, collaborate on, and leverage critical project data throughout a project&amp;rsquo;s lifecycle. SharePoint, deeply integrated within Microsoft 365, emerges as a powerful, secure, and scalable solution ideal for managing complex construction data.&lt;/p>
 &lt;h3 id="why-choose-sharepoint-as-your-cde">Why Choose SharePoint as Your CDE?&lt;/h3>
 &lt;h4 id="1-data-sovereignty-and-security">1. &lt;strong>Data Sovereignty and Security&lt;/strong>&lt;/h4>
 &lt;p>SharePoint ensures your project data stays securely within your own Microsoft environment, enhancing data sovereignty and compliance. This reduces dependency on external third-party cloud solutions, ensuring maximum data control and security.&lt;/p></description></item><item><title>How Leading Construction Companies Use SharePoint as a Common Data Environment (CDE)</title><link>https://flinker.app/blog/sharepoint-cde-success-stories/</link><pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-success-stories/</guid><description>&lt;p>In today’s construction industry, success depends on managing data effectively across global teams, complex projects, and tight deadlines. Traditional tools like spreadsheets, shared drives, and siloed platforms are no longer enough. That’s why many leading construction firms are adopting &lt;strong>SharePoint as a Common Data Environment (CDE)&lt;/strong> transforming scattered information into streamlined, collaborative, and secure workflows.&lt;/p>
