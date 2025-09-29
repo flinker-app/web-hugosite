@@ -1,0 +1,24 @@
+<!-- TRUST STRIP -->
+<section class="py-8">
+  <style>
+    .trust-wrap{display:grid;gap:28px;grid-template-columns:repeat(2,minmax(120px,1fr));align-items:center;justify-items:center}
+    @media (min-width:768px){.trust-wrap{grid-template-columns:repeat(6,1fr)}}
+    .trust-item{opacity:.7;filter:grayscale(1);transition:opacity .2s ease}
+    .trust-item:hover{opacity:1}
+    [data-bs-theme="dark"] .trust-item{opacity:.8;filter:grayscale(1) brightness(.9)}
+  </style>
+  <div class="container" style="max-width:1120px">
+    <div class="text-center mb-4">
+      <p class="mb-1 text-muted" style="letter-spacing:.08em;text-transform:uppercase;font-weight:700;font-size:12px;">BIM Apps for your Microsoft 365 tenant</p>
+      <h3 class="mb-0" style="font-size:clamp(20px,3vw,26px);font-weight:700;">Built for Microsoft 365 with Open Standards</h3>
+    </div>
+    <div class="trust-wrap">
+      <!-- Replace src with your partner/customer/tech logos (SVG/PNG) -->
+      <img class="trust-item" src="/assets-flinker/images/microsoft/MS_AppSource.png" alt="Microsoft" height="28">
+      <img class="trust-item" src="/assets-flinker/images/microsoft/SharePoint.svg" alt="Power BI" height="28">
+      <img class="trust-item" src="/assets-flinker/images/microsoft/Teams.svg" alt="SharePoint" height="28">
+      <img class="trust-item" src="/assets-flinker/images/microsoft/Excel.svg" alt="Teams" height="28">
+      <img class="trust-item" src="\assets-flinker\images\building-smart\buildingSMART-logo.png" alt="Open BIM" height="38">
+    </div>
+  </div>
+</section>
