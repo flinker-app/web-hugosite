@@ -110,82 +110,21 @@ canonical: "https://flinker.app/services/partners/"
   
 </section>
 
+
 <section class="py-8" style="padding:56px 0;">
   <div class="container" style="max-width:960px; margin:0 auto; padding:0 20px;">
-    <h2 class="h4 mb-3">Partner application</h2>
-    <form action="https://formsubmit.co/partners@flinker.app" method="POST" class="row g-3">
-      <!-- FormSubmit options -->
-      <input type="hidden" name="_subject" value="New Partner Application" />
-      <input type="hidden" name="_template" value="table" />
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_next" value="https://flinker.app/services/partners/?submitted=true" />
-      <!-- Honeypot -->
-      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
-
-      <div class="col-md-6">
-        <label for="org" class="form-label">Organization</label>
-        <input type="text" id="org" name="Organization" class="form-control" required />
-      </div>
-      <div class="col-md-6">
-        <label for="website" class="form-label">Website</label>
-        <input type="url" id="website" name="Website" class="form-control" placeholder="https://" />
-      </div>
-      <div class="col-md-6">
-        <label for="contact" class="form-label">Contact name</label>
-        <input type="text" id="contact" name="Contact" class="form-control" required />
-      </div>
-      <div class="col-md-6">
-        <label for="email" class="form-label">Work email</label>
-        <input type="email" id="email" name="Email" class="form-control" required />
-      </div>
-      <div class="col-md-6">
-        <label for="region" class="form-label">Region</label>
-        <select id="region" name="Region" class="form-select" required>
-          <option value="" selected disabled>Select region</option>
-          <option>Americas</option>
-          <option>EMEA</option>
-          <option>APAC</option>
-          <option>Global</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="col-md-6">
-        <label for="expertise" class="form-label">Expertise</label>
-        <select id="expertise" name="Expertise" class="form-select" required>
-          <option value="" selected disabled>Select primary expertise</option>
-          <option>Microsoft data & analytics</option>
-          <option>BIM / IFC</option>
-          <option>CDEs</option>
-          <option>Implementation services</option>
-          <option>Training / Enablement</option>
-          <option>QA / Governance</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="col-12">
-        <label for="notes" class="form-label">Notes / experience</label>
-        <textarea id="notes" name="Notes" class="form-control" rows="4" placeholder="Briefly describe relevant projects or clients"></textarea>
-      </div>
-      <div class="col-12 form-check">
-        <input class="form-check-input" type="checkbox" value="yes" id="consent" name="Consent" required>
-        <label class="form-check-label" for="consent">
-          I agree to be contacted about the Flinker Partner Program and accept the privacy policy.
-        </label>
-      </div>
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Submit application</button>
-      </div>
-    </form>
+  <h2 class="h4 mb-3">Apply to the Partner Program</h2>
+    <div class="p-0 p-md-1 border rounded-3 bg-white shadow-sm overflow-hidden">
+      <iframe
+        title="Flinker Partner Program Application Form"
+        src="https://forms.office.com/Pages/ResponsePage.aspx?id=80C2RLBJBEOcmMYdC8DcAu3Acr_HHtlOuyPGamiQECNUQTRWQVpKTE1WNDlKT0M2ODIwRUo1RFoxRS4u&embed=true"
+        style="display:block; width:100%; height:80vh; min-height:640px; border:0;"
+        loading="lazy"
+        allowfullscreen
+        webkitallowfullscreen
+        mozallowfullscreen
+        msallowfullscreen
+      ></iframe>
+    </div>
   </div>
-  <script>
-    (function(){
-      const params = new URLSearchParams(window.location.search);
-      if(params.get('submitted')==='true'){
-        const div = document.createElement('div');
-        div.className = 'alert alert-success mt-3';
-        div.textContent = 'Thanks! Your application was submitted.';
-        document.currentScript.previousElementSibling.appendChild(div);
-      }
-    })();
-  </script>
 </section>
