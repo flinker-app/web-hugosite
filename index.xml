@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Flinker | Building Digital Twins in Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Home on Flinker | Building Digital Twins in Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 23 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Flinker IFC Viewer for Power BI — Overview &amp; Pricing</title><link>https://flinker.app/products/power-bi-ifc-viewer/</link><pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/products/power-bi-ifc-viewer/</guid><description>&lt;!-- HERO -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Flinker | Building Digital Twins in Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Home on Flinker | Building Digital Twins in Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Flinker Partner Program — Deliver Flinker Apps for Microsoft 365</title><link>https://flinker.app/services/partners/</link><pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/services/partners/</guid><description>&lt;section class="py-8" style="padding:88px 0;">
+ &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px;">
+ &lt;div class="text-center mb-4">
+ &lt;span class="badge rounded-pill" style="background:rgba(13,110,253,.08); color:#0d6efd;">Partner Program&lt;/span>
+ &lt;/div>
+ &lt;h1 class="display-5 fw-bold text-center" style="letter-spacing:-.01em">Deliver Flinker apps for Microsoft 365&lt;/h1>
+ &lt;p class="lead text-muted text-center mx-auto" style="max-width:72ch">
+ Implement Flinker apps with our playbooks, templates, and QA.
+ &lt;/p>
+
+ &lt;!-- Pillars -->
+ &lt;div class="row g-4 mt-4">
+ &lt;div class="col-md-4">
+ &lt;div class="p-4 border rounded-4 h-100 bg-white">
+ &lt;div class="d-flex align-items-center gap-2 mb-2" aria-hidden="true">
+ &lt;i class="bi bi-patch-check-fill text-primary fs-5">&lt;/i>
+ &lt;h3 class="h6 mb-0">Certify&lt;/h3>
+ &lt;/div>
+ &lt;ul class="mb-0">
+ &lt;li>Enablement on Flinker apps for Microsoft 365 (IFC Viewer, BCF, SharePoint Protect, Power BI Visual)&lt;/li>
+ &lt;li>Playbooks and templates for tenant setup, SharePoint CDE, and governance&lt;/li>
+ &lt;li>Quality bar aligned to openBIM standards (IFC/BCF)&lt;/li>
+ &lt;li>NFR/demo tenant for internal testing and demos&lt;/li>
+ &lt;/ul>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="col-md-4">
+ &lt;div class="p-4 border rounded-4 h-100 bg-white">
+ &lt;div class="d-flex align-items-center gap-2 mb-2" aria-hidden="true">
+ &lt;i class="bi bi-gear-fill text-success fs-5">&lt;/i>
+ &lt;h3 class="h6 mb-0">Deliver&lt;/h3>
+ &lt;/div>
+ &lt;ul class="mb-0">
+ &lt;li>Install and configure in Teams, SharePoint, and Power BI per our docs&lt;/li>
+ &lt;li>Stand up a secure SharePoint CDE with permissions and SSO; automate with Power Automate&lt;/li>
+ &lt;li>Run QA checkpoints with escalation to Flinker when needed&lt;/li>
+ &lt;/ul>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="col-md-4">
+ &lt;div class="p-4 border rounded-4 h-100 bg-white">
+ &lt;div class="d-flex align-items-center gap-2 mb-2" aria-hidden="true">
+ &lt;i class="bi bi-people-fill text-primary fs-5">&lt;/i>
+ &lt;h3 class="h6 mb-0">Co‑sell&lt;/h3>
+ &lt;/div>
+ &lt;ul class="mb-0">
+ &lt;li>Simple referral and co‑sell motions for Microsoft 365 customers&lt;/li>
+ &lt;li>Per‑tenant pricing — no per‑user costs, no new software to buy&lt;/li>
+ &lt;li>Clear rules of engagement and email‑based deal registration&lt;/li>
+ &lt;/ul>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;div class="mt-4">
+ &lt;div class="row line-pattern bg-primary rounded-3 p-7 g-0 align-items-center">
+ &lt;div class="col-xl-5 col-md-7 z-1">
+ &lt;h2 class="h1 text-white-stable">Register a deal&lt;/h2>
+ &lt;p class="text-white-50 mb-0">If you bring the opportunity, we support your motion and won’t bypass you.&lt;/p></description></item><item><title>Power BI Data Services — Implementation, Enablement &amp; Managed Support</title><link>https://flinker.app/services/data-services/</link><pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/services/data-services/</guid><description>Implementation, rollout, and managed support for IFC Viewer on Power BI—enterprise-ready with clear SLAs, industry accelerators, add-ons, governance, and enablement.</description></item><item><title>Flinker IFC Viewer for Power BI — Overview &amp; Pricing</title><link>https://flinker.app/products/power-bi-ifc-viewer/</link><pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/products/power-bi-ifc-viewer/</guid><description>&lt;!-- HERO -->
 &lt;section class="py-5 py-lg-8" style="padding-bottom:72px;">
  &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
  &lt;h1 class="display-5 fw-bold" style="margin:0 0 12px; font-size:clamp(32px,5vw,48px); line-height:1.15; letter-spacing:-0.02em;">
