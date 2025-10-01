@@ -36,17 +36,18 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="3840"
-     inkscape:window-height="2054"
+     inkscape:window-width="1260"
+     inkscape:window-height="770"
      id="namedview959"
      showgrid="false"
-     inkscape:zoom="1.6979167"
-     inkscape:cx="730.66451"
-     inkscape:cy="284.82406"
-     inkscape:window-x="2509"
-     inkscape:window-y="-11"
+     inkscape:zoom="0.84895835"
+     inkscape:cx="619.08866"
+     inkscape:cy="321.24593"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg957" />
+     inkscape:current-layer="svg957"
+     inkscape:document-rotation="0" />
   <title
      id="title">External CDE vs SharePoint + Flinker (Light Mode)</title>
   <desc
@@ -208,12 +209,14 @@
              x="20"
              y="5"
              class="h2"
-             id="text889">Deep M365 integration</text>
+             id="text889"
+             style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:18px;line-height:1.3;font-family:system-ui, '-apple-system', 'Segoe UI', Roboto, Arial, sans-serif">M365 connectors needed</text>
           <text
              x="20"
              y="28"
              class="p"
-             id="text891">Limited native SharePoint/Teams</text>
+             id="text891"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:14px;line-height:1.35;font-family:system-ui, '-apple-system', 'Segoe UI', Roboto, Arial, sans-serif">Complex SharePoint/Teams synchronizations</text>
         </g>
       </g>
     </g>
@@ -286,7 +289,8 @@
              x="20"
              y="28"
              class="p"
-             id="text921">Enforced ISO schema on upload</text>
+             id="text921"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:14px;line-height:1.35;font-family:system-ui, '-apple-system', 'Segoe UI', Roboto, Arial, sans-serif">Enforcable ISO schema on upload</text>
         </g>
         <g
            transform="translate(0,144)"
@@ -304,7 +308,8 @@
              x="20"
              y="28"
              class="p"
-             id="text929">Dashboards, export for compliance</text>
+             id="text929"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:14px;line-height:1.35;font-family:system-ui, '-apple-system', 'Segoe UI', Roboto, Arial, sans-serif">Dashboards, export for compliance to set</text>
         </g>
         <g
            transform="translate(0,216)"
@@ -353,5 +358,5 @@
      id="text955"
      style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:12px;line-height:1.3;font-family:system-ui, '-apple-system', 'Segoe UI', Roboto, Arial, sans-serif"><tspan
        style="font-size:16px"
-       id="tspan963">Flinker adds approvals, naming checks, audit visibility and external filtering — using your existing Microsoft 365.</tspan></text>
+       id="tspan963">Flinker Apps add approvals, naming checks, audit visibility and external filtering — using your existing Microsoft 365.</tspan></text>
 </svg>
