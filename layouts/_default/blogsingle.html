@@ -1,7 +1,12 @@
 
 {{ define "main" }}
 <main>
-    <!-- <div class="pattern-square"></div> -->
+    <!-- Blogpost-only typography -->
+    <link rel="stylesheet" href="/assets-flinker/css/blog-post.css">
+    <!-- Reading progress bar (blog single only) -->
+    <div id="reading-progress" aria-hidden="true"></div>
+    <!-- Blogpost-only typography -->
+    <link rel="stylesheet" href="/assets-flinker/css/blog-post.css">
     {{/* Configurable top spacing (service-v1 style). Defaults to py-5 py-lg-8, overridable via site or page params. */}}
     {{ $disableTopSpacing := .Params.disableTopSpacing }}
     {{ $topSpacingClasses := "py-5 py-lg-8" }}
@@ -33,14 +38,37 @@
                         </div>
                     </div>
 
+                    <!-- Reading meta (time & words) -->
+                    <div class="text-body-secondary mt-3 small">
+                        {{ $mins := .ReadingTime }}
+                        {{ $words := .WordCount }}
+                        <span>{{ $mins }} min read</span>
+                        <span class="mx-2">·</span>
+                        <span>{{ $words }} words</span>
+                    </div>
+
                     <figure class="my-6">
                         <img src="{{ .Params.featured_image | default "./assets/images/blog/blog-img-6.jpg" }}" alt="blog" class="rounded-3 img-fluid w-100" />
                     </figure>
 
-                    <!-- Post content from Markdown -->
-                    <div>
-                        {{ .Content }}
+                    <!-- Optional in-page Table of Contents -->
+                    {{ if ne .Params.toc false }}
+                    {{ if .TableOfContents }}
+                    <div class="card border-0 bg-light my-5">
+                        <div class="card-body py-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-shape bg-primary bg-opacity-10 icon-sm rounded-circle me-2"></div>
+                                <strong class="mb-0">On this page</strong>
+                            </div>
+                            <div class="toc-content">{{ .TableOfContents }}</div>
+                        </div>
+                    </div>
+                    {{ end }}
+                    {{ end }}
 
+                    <!-- Post content from Markdown -->
+                    <div class="markdown-content">
+                        {{ .Content }}
                     </div>
                 </article>
                 
@@ -53,6 +81,9 @@
     {{ partial "newsletter-blog.html" . }}
 
     <!-- Blog single end -->
+
+    <!-- Blogpost-only script -->
+    <script src="/assets-flinker/js/blog-post.js" defer></script>
 </main>
 
 {{ end }}
