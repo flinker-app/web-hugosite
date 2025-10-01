@@ -1,43 +1,148 @@
-<!-- File: iso19650-sharepoint-cde-cover-light.svg -->
-<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">ISO 19650 + SharePoint — Flinker Compliance Layer (Light)</title>
-  <desc id="desc">Light UI hero showing ISO 19650 states along a pipeline with SharePoint/Teams chips and a Flinker badge in brand blues.</desc>
-
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1200"
+   height="630"
+   viewBox="0 0 1200 630"
+   role="img"
+   aria-labelledby="title desc"
+   version="1.1"
+   id="svg141"
+   sodipodi:docname="blog-img-16.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
+  <metadata
+     id="metadata145">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1260"
+     inkscape:window-height="770"
+     id="namedview143"
+     showgrid="false"
+     inkscape:zoom="0.62853936"
+     inkscape:cx="1064.9469"
+     inkscape:cy="291.66835"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g133" />
+  <title
+     id="title">ISO 19650 + SharePoint — Flinker Compliance Layer (Light)</title>
+  <desc
+     id="desc">Light UI hero showing ISO 19650 states along a pipeline with SharePoint/Teams chips and a Flinker badge in brand blues.</desc>
   <!-- ====== PALETTE / HELPERS ====== -->
-  <defs>
+  <defs
+     id="defs33">
     <!-- Brand blues -->
-    <linearGradient id="brandGradient" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#96BFFF"></stop>
-      <stop offset="1" stop-color="#0779FF"></stop>
+    <linearGradient
+       id="brandGradient"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0"
+         stop-color="#96BFFF"
+         id="stop12" />
+      <stop
+         offset="1"
+         stop-color="#0779FF"
+         id="stop14" />
     </linearGradient>
-
     <!-- Background and surfaces -->
-    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"></stop>
-      <stop offset="1" stop-color="#F7FAFF"></stop>
+    <linearGradient
+       id="paper"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0"
+         stop-color="#FFFFFF"
+         id="stop17" />
+      <stop
+         offset="1"
+         stop-color="#F7FAFF"
+         id="stop19" />
     </linearGradient>
-
     <!-- Pipe glow, clipped to pipe -->
-    <linearGradient id="pipeGlowGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#96BFFF" stop-opacity="0.45"></stop>
-      <stop offset="1" stop-color="#96BFFF" stop-opacity="0"></stop>
+    <linearGradient
+       id="pipeGlowGrad"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0"
+         stop-color="#96BFFF"
+         stop-opacity="0.45"
+         id="stop22" />
+      <stop
+         offset="1"
+         stop-color="#96BFFF"
+         stop-opacity="0"
+         id="stop24" />
     </linearGradient>
-
     <!-- Soft elevation -->
-    <filter id="shadow-sm" x="-40%" y="-40%" width="180%" height="180%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.15"></feDropShadow>
+    <filter
+       id="shadow-sm"
+       x="-40%"
+       y="-40%"
+       width="180%"
+       height="180%">
+      <feDropShadow
+         dx="0"
+         dy="4"
+         stdDeviation="8"
+         flood-opacity="0.15" />
     </filter>
-    <filter id="shadow-md" x="-40%" y="-40%" width="180%" height="180%">
-      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-opacity="0.16"></feDropShadow>
+    <filter
+       id="shadow-md"
+       x="-40%"
+       y="-40%"
+       width="180%"
+       height="180%">
+      <feDropShadow
+         dx="0"
+         dy="8"
+         stdDeviation="14"
+         flood-opacity="0.16" />
     </filter>
-
     <!-- Clip for the pipe glow -->
-    <clipPath id="pipeClip">
-      <rect id="pipeArea" x="80" y="248" width="1040" height="20" rx="10"></rect>
+    <clipPath
+       id="pipeClip">
+      <rect
+         id="pipeArea"
+         x="80"
+         y="248"
+         width="1040"
+         height="20"
+         rx="10" />
     </clipPath>
-
     <!-- Type & colors -->
-    <style>
+    <style
+       id="style31">
       .t-title { fill:#0B1220; font:800 40px/1.15 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; letter-spacing:.2px; }
       .t-sub   { fill:#334155; font:600 18px/1.35 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; }
       .t-cap   { fill:#0B1220; font:700 14px/1.2 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; }
@@ -49,94 +154,334 @@
       .muted   { fill:#EEF4FF; }
     </style>
   </defs>
-
   <!-- ====== BACKGROUND ====== -->
-  <rect width="1200" height="630" fill="url(#paper)"></rect>
-
+  <rect
+     width="1200"
+     height="630"
+     fill="url(#paper)"
+     id="rect35" />
   <!-- Subtle grid (lighter for print-friendly look) -->
-  <g opacity=".8">
-    <rect class="grid" x="80" width="1" height="630"></rect>
-    <rect class="grid" x="240" width="1" height="630"></rect>
-    <rect class="grid" x="400" width="1" height="630"></rect>
-    <rect class="grid" x="560" width="1" height="630"></rect>
-    <rect class="grid" x="720" width="1" height="630"></rect>
-    <rect class="grid" x="880" width="1" height="630"></rect>
-    <rect class="grid" x="1040" width="1" height="630"></rect>
-    <rect class="grid" y="100" width="1200" height="1"></rect>
-    <rect class="grid" y="220" width="1200" height="1"></rect>
-    <rect class="grid" y="340" width="1200" height="1"></rect>
-    <rect class="grid" y="460" width="1200" height="1"></rect>
-    <rect class="grid" y="580" width="1200" height="1"></rect>
+  <g
+     opacity=".8"
+     id="g61">
+    <rect
+       class="grid"
+       x="80"
+       width="1"
+       height="630"
+       id="rect37" />
+    <rect
+       class="grid"
+       x="240"
+       width="1"
+       height="630"
+       id="rect39" />
+    <rect
+       class="grid"
+       x="400"
+       width="1"
+       height="630"
+       id="rect41" />
+    <rect
+       class="grid"
+       x="560"
+       width="1"
+       height="630"
+       id="rect43" />
+    <rect
+       class="grid"
+       x="720"
+       width="1"
+       height="630"
+       id="rect45" />
+    <rect
+       class="grid"
+       x="880"
+       width="1"
+       height="630"
+       id="rect47" />
+    <rect
+       class="grid"
+       x="1040"
+       width="1"
+       height="630"
+       id="rect49" />
+    <rect
+       class="grid"
+       y="100"
+       width="1200"
+       height="1"
+       id="rect51" />
+    <rect
+       class="grid"
+       y="220"
+       width="1200"
+       height="1"
+       id="rect53" />
+    <rect
+       class="grid"
+       y="340"
+       width="1200"
+       height="1"
+       id="rect55" />
+    <rect
+       class="grid"
+       y="460"
+       width="1200"
+       height="1"
+       id="rect57" />
+    <rect
+       class="grid"
+       y="580"
+       width="1200"
+       height="1"
+       id="rect59" />
   </g>
-
   <!-- ====== TITLE ====== -->
-  <text x="80" y="116" class="t-title">ISO 19650 + SharePoint</text>
-  <text x="80" y="150" class="t-sub">Turn SharePoint &amp; Teams into a compliant CDE with Flinker</text>
-
+  <text
+     x="80"
+     y="116"
+     class="t-title"
+     id="text63">ISO 19650 + SharePoint</text>
+  <text
+     x="80"
+     y="150"
+     class="t-sub"
+     id="text65">Turn SharePoint &amp; Teams into a compliant CDE with Flinker</text>
   <!-- ====== DECORATIVE SKYLINE (very soft) ====== -->
-  <g transform="translate(70,342)" opacity=".7">
-    <rect x="0" y="60" width="36" height="120" rx="8" class="muted"></rect>
-    <rect x="52" y="14" width="36" height="166" rx="8" class="muted"></rect>
-    <rect x="104" y="95" width="36" height="85" rx="8" class="muted"></rect>
-    <rect x="156" y="38" width="36" height="142" rx="8" class="muted"></rect>
-    <rect x="208" y="0" width="36" height="180" rx="8" class="muted"></rect>
+  <g
+     transform="translate(70,342)"
+     opacity=".7"
+     id="g77">
+    <rect
+       x="0"
+       y="60"
+       width="36"
+       height="120"
+       rx="8"
+       class="muted"
+       id="rect67" />
+    <rect
+       x="52"
+       y="14"
+       width="36"
+       height="166"
+       rx="8"
+       class="muted"
+       id="rect69" />
+    <rect
+       x="104"
+       y="95"
+       width="36"
+       height="85"
+       rx="8"
+       class="muted"
+       id="rect71" />
+    <rect
+       x="156"
+       y="38"
+       width="36"
+       height="142"
+       rx="8"
+       class="muted"
+       id="rect73" />
+    <rect
+       x="208"
+       y="0"
+       width="36"
+       height="180"
+       rx="8"
+       class="muted"
+       id="rect75" />
   </g>
-
   <!-- ====== PIPE (behind stations/chips) ====== -->
   <!-- bar -->
-  <rect x="80" y="248" width="1040" height="20" rx="10" class="bar" filter="url(#shadow-sm)"></rect>
+  <rect
+     x="80"
+     y="248"
+     width="1040"
+     height="20"
+     rx="10"
+     class="bar"
+     filter="url(#shadow-sm)"
+     id="rect79" />
   <!-- glow clipped to pipe -->
-  <g clip-path="url(#pipeClip)">
-    <rect x="60" y="220" width="1080" height="84" fill="url(#pipeGlowGrad)"></rect>
+  <g
+     clip-path="url(#pipeClip)"
+     id="g83">
+    <rect
+       x="60"
+       y="220"
+       width="1080"
+       height="84"
+       fill="url(#pipeGlowGrad)"
+       id="rect81" />
   </g>
-
   <!-- ====== STATIONS (above bar) ====== -->
   <!-- WIP -->
-  <g transform="translate(80,248)">
-    <circle cx="0" cy="10" r="24" fill="#96BFFF" stroke="#FFFFFF" stroke-width="4"></circle>
-    <text x="-10" y="-12" class="t-cap">WIP</text>
+  <g
+     transform="translate(80,248)"
+     id="g89">
+    <circle
+       cx="0"
+       cy="10"
+       r="24"
+       fill="#96BFFF"
+       stroke="#FFFFFF"
+       stroke-width="4"
+       id="circle85" />
+    <text
+       x="-10"
+       y="-12"
+       class="t-cap"
+       id="text87">WIP</text>
   </g>
   <!-- Shared -->
-  <g transform="translate(420,248)">
-    <circle cx="0" cy="10" r="24" fill="#7EB0FF" stroke="#FFFFFF" stroke-width="4"></circle>
-    <text x="-28" y="-12" class="t-cap">Shared</text>
+  <g
+     transform="translate(420,248)"
+     id="g95">
+    <circle
+       cx="0"
+       cy="10"
+       r="24"
+       fill="#7EB0FF"
+       stroke="#FFFFFF"
+       stroke-width="4"
+       id="circle91" />
+    <text
+       x="-28"
+       y="-12"
+       class="t-cap"
+       id="text93">Shared</text>
   </g>
   <!-- Published -->
-  <g transform="translate(760,248)">
-    <circle cx="0" cy="10" r="24" fill="#2C8BFF" stroke="#FFFFFF" stroke-width="4"></circle>
-    <text x="-38" y="-12" class="t-cap">Published</text>
+  <g
+     transform="translate(760,248)"
+     id="g101">
+    <circle
+       cx="0"
+       cy="10"
+       r="24"
+       fill="#2C8BFF"
+       stroke="#FFFFFF"
+       stroke-width="4"
+       id="circle97" />
+    <text
+       x="-38"
+       y="-12"
+       class="t-cap"
+       id="text99">Published</text>
   </g>
   <!-- Archive -->
-  <g transform="translate(1120,248)">
-    <circle cx="0" cy="10" r="24" fill="#0779FF" stroke="#FFFFFF" stroke-width="4"></circle>
-    <text x="-28" y="-12" class="t-cap">Archive</text>
+  <g
+     transform="translate(1120,248)"
+     id="g107">
+    <circle
+       cx="0"
+       cy="10"
+       r="24"
+       fill="#0779FF"
+       stroke="#FFFFFF"
+       stroke-width="4"
+       id="circle103" />
+    <text
+       x="-28"
+       y="-12"
+       class="t-cap"
+       id="text105">Archive</text>
   </g>
-
   <!-- ====== CHIPS (top layer) ====== -->
-  <g filter="url(#shadow-md)">
+  <g
+     filter="url(#shadow-md)"
+     id="g137">
     <!-- SharePoint -->
-    <g transform="translate(350,320)">
-      <rect class="chip" width="216" height="66" rx="16"></rect>
-      <circle cx="36" cy="33" r="10" fill="#96BFFF"></circle>
-      <text x="56" y="38" class="chipTxt">SharePoint Site</text>
+    <g
+       transform="translate(350,320)"
+       id="g115">
+      <rect
+         class="chip"
+         width="216"
+         height="66"
+         rx="16"
+         id="rect109" />
+      <circle
+         cx="36"
+         cy="33"
+         r="10"
+         fill="#96BFFF"
+         id="circle111" />
+      <text
+         x="56"
+         y="38"
+         class="chipTxt"
+         id="text113">SharePoint Site</text>
     </g>
     <!-- Teams -->
-    <g transform="translate(586,320)">
-      <rect class="chip" width="236" height="66" rx="16"></rect>
-      <circle cx="36" cy="33" r="10" fill="#0779FF"></circle>
-      <text x="56" y="38" class="chipTxt">Microsoft Teams</text>
+    <g
+       transform="translate(586,320)"
+       id="g123">
+      <rect
+         class="chip"
+         width="236"
+         height="66"
+         rx="16"
+         id="rect117" />
+      <circle
+         cx="36"
+         cy="33"
+         r="10"
+         fill="#0779FF"
+         id="circle119" />
+      <text
+         x="56"
+         y="38"
+         class="chipTxt"
+         id="text121">Microsoft Teams</text>
     </g>
     <!-- Flinker -->
-    <g transform="translate(860,308)">
-      <rect class="chip" width="264" height="100" rx="18"></rect>
-      <g transform="translate(20,18)">
-        <path d="M24 0l24 8v18c0 18-24 30-24 30S0 44 0 26V8l24-8z" fill="url(#brandGradient)"></path>
-        <text x="64" y="24" class="t-title" style="font-size:22px">Flinker</text>
-        <text x="64" y="50" class="t-sub">ISO 19650 compliance layer</text>
+    <g
+       transform="translate(860,308)"
+       id="g135">
+      <rect
+         class="chip"
+         width="264"
+         height="100"
+         rx="18"
+         id="rect125" />
+      <g
+         transform="translate(20,18)"
+         id="g133">
+        <path
+           d="M24 0l24 8v18c0 18-24 30-24 30S0 44 0 26V8l24-8z"
+           fill="url(#brandGradient)"
+           id="path127" />
+        <text
+           x="64"
+           y="24"
+           class="t-title"
+           style="font-size:22px"
+           id="text129">Flinker</text>
+        <text
+           x="64"
+           y="50"
+           class="t-sub"
+           id="text131"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:18px;line-height:1.35;font-family:system-ui, '-apple-system', 'Segoe UI', Roboto, Arial, sans-serif"><tspan
+             sodipodi:role="line"
+             id="tspan147"
+             x="64"
+             y="50">ISO 19650</tspan><tspan
+             sodipodi:role="line"
+             id="tspan149"
+             x="64"
+             y="74.300003">compliance layer</tspan></text>
       </g>
     </g>
   </g>
-
   <!-- ====== FOOTER ====== -->
-  <text x="80" y="600" class="t-foot">Data stays in your Microsoft 365 tenant · Approvals · Versioning · Naming validation</text>
+  <text
+     x="80"
+     y="600"
+     class="t-foot"
+     id="text139">Data stays in your Microsoft 365 tenant · Approvals · Versioning · Naming validation</text>
 </svg>

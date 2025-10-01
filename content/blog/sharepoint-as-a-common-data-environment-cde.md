@@ -93,6 +93,6 @@ Flinker helps organizations transform their SharePoint into a robust Common Data
 
 Discover how your projects can benefit from SharePoint as a CDE. Contact our team at [www.flinker.app](https://www.flinker.app) to learn more.
 
-## 📞 Contact Us
+## Contact Us
 Have questions?  
 [Contact the Flinker team](https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true) and discover how we can help you unlock the full potential of your BIM data!

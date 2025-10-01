@@ -5,8 +5,7 @@
     <link rel="stylesheet" href="/assets-flinker/css/blog-post.css">
     <!-- Reading progress bar (blog single only) -->
     <div id="reading-progress" aria-hidden="true"></div>
-    <!-- Blogpost-only typography -->
-    <link rel="stylesheet" href="/assets-flinker/css/blog-post.css">
+    
     {{/* Configurable top spacing (service-v1 style). Defaults to py-5 py-lg-8, overridable via site or page params. */}}
     {{ $disableTopSpacing := .Params.disableTopSpacing }}
     {{ $topSpacingClasses := "py-5 py-lg-8" }}
@@ -19,6 +18,13 @@
             {{ if not $disableTopSpacing }}<div class="{{ $topSpacingClasses }}">{{ end }}
             <div class="row">
                 <article class="col-lg-8 offset-lg-2">
+                    {{/* Share variables for links */}}
+                    {{ $url := .Permalink }}
+                    {{ $title := .Title }}
+                    {{ $encodedURL := $url | urlquery }}
+                    {{ $encodedTitle := $title | urlquery }}
+                    {{ $text := printf "%s – %s" $title $url }}
+                    {{ $encodedText := $text | urlquery }}
                     <h1>{{ .Title }}</h1>
                     <div class="d-flex align-items-center mt-lg-6 mt-4">
                         <div class="me-5">
@@ -35,6 +41,20 @@
                             <div class="mt-2 text-dark">
                                 <span class="fs-6">{{ .Date.Format "2 Jan, 2006" }}</span>
                             </div>
+                        </div>
+                        <!-- Share dropdown -->
+                        <div class="dropdown ms-auto">
+                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Share
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item" id="share-native" type="button">Share…</button></li>
+                                <li><a class="dropdown-item" href="mailto:?subject={{ $encodedTitle }}&body={{ $encodedText }}">Email</a></li>
+                                <li><a class="dropdown-item" href="https://www.linkedin.com/sharing/share-offsite/?url={{ $encodedURL }}" target="_blank" rel="noopener">LinkedIn</a></li>
+                                <li><a class="dropdown-item" href="https://teams.microsoft.com/share?href={{ $encodedURL }}&text={{ $encodedTitle }}" target="_blank" rel="noopener">Microsoft Teams</a></li>
+                                <li><a class="dropdown-item" href="https://wa.me/?text={{ $encodedText }}" target="_blank" rel="noopener">WhatsApp</a></li>
+                                <li><button class="dropdown-item" id="share-copy" type="button">Copy link</button></li>
+                            </ul>
                         </div>
                     </div>
 
@@ -57,7 +77,11 @@
                     <div class="card border-0 bg-light my-5">
                         <div class="card-body py-4">
                             <div class="d-flex align-items-center mb-3">
-                                <div class="icon-shape bg-primary bg-opacity-10 icon-sm rounded-circle me-2"></div>
+                                <div class="icon-shape bg-primary bg-opacity-10 icon-sm rounded-circle me-2 d-inline-flex align-items-center justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ul text-primary" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                                      <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0-4a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0-4a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5ZM8 12.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm0-4a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm0-4a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Z"/>
+                                    </svg>
+                                </div>
                                 <strong class="mb-0">On this page</strong>
                             </div>
                             <div class="toc-content">{{ .TableOfContents }}</div>
@@ -84,6 +108,31 @@
 
     <!-- Blogpost-only script -->
     <script src="/assets-flinker/js/blog-post.js" defer></script>
+        <script>
+            // Lightweight share/copy handlers
+            document.addEventListener('DOMContentLoaded', function () {
+                const nativeBtn = document.getElementById('share-native');
+                const copyBtn = document.getElementById('share-copy');
+                if (nativeBtn && navigator.share) {
+                    nativeBtn.addEventListener('click', async () => {
+                        try {
+                            await navigator.share({ title: document.title, url: window.location.href });
+                        } catch (e) { /* user cancelled */ }
+                    });
+                } else if (nativeBtn) {
+                    nativeBtn.disabled = true;
+                }
+                if (copyBtn && navigator.clipboard) {
+                    copyBtn.addEventListener('click', async () => {
+                        try {
+                            await navigator.clipboard.writeText(window.location.href);
+                            copyBtn.textContent = 'Copied!';
+                            setTimeout(() => (copyBtn.textContent = 'Copy link'), 1500);
+                        } catch (e) { /* ignore */ }
+                    });
+                }
+            });
+        </script>
 </main>
 
 {{ end }}

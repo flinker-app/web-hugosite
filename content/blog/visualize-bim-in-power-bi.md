@@ -173,7 +173,7 @@ Without complex setup just plug in your IFC file and start exploring powerful in
 
 
 
-## 📞 Contact Us
+## Contact Us
 Have questions?  
 **Contact the Flinker team** and discover how we can help you unlock the full potential of your BIM data!  
 [Book a support and consulting meeting](https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true)

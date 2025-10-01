@@ -143,3 +143,21 @@
   padding-right: 0.25rem;
   font-weight: 700;
 }
+
+/* Decorative opening quote for blogquote shortcode only */
+.markdown-content .blog-quote .blockquote {
+  position: relative;
+}
+.markdown-content .blog-quote .blockquote::before {
+  content: "\201C"; /* Left double quotation mark */
+  position: absolute;
+  top: -0.25rem;
+  left: -0.5rem;
+  font-size: 3rem;
+  line-height: 1;
+  color: rgba(var(--bs-primary-rgb), 0.25);
+  font-family: Georgia, "Times New Roman", serif;
+}
+.markdown-content .blog-quote {
+  font-size: 1.0625rem; /* nudge quote readability */
+}
