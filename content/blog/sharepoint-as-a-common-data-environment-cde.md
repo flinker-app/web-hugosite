@@ -50,25 +50,25 @@ faq:
 
 Large-scale construction projects often grapple with fragmented data, misaligned communications, and inefficient workflows. A Common Data Environment (CDE) addresses these challenges by providing a centralized platform to manage, collaborate on, and leverage critical project data throughout a project's lifecycle. SharePoint, deeply integrated within Microsoft 365, emerges as a powerful, secure, and scalable solution ideal for managing complex construction data.
 
-### Why Choose SharePoint as Your CDE?
+## Why Choose SharePoint as Your CDE?
 
-#### 1. **Data Sovereignty and Security**
+### 1. Data Sovereignty and Security
 
 SharePoint ensures your project data stays securely within your own Microsoft environment, enhancing data sovereignty and compliance. This reduces dependency on external third-party cloud solutions, ensuring maximum data control and security.
 
-#### 2. **Seamless Integration**
+### 2. Seamless Integration
 
 SharePoint integrates smoothly with the Microsoft ecosystem, including Teams, Power BI, and Dynamics 365. This connectivity enables seamless collaboration, advanced analytics, and robust workflow automation directly within the tools your teams already use daily.
 
-#### 3. **Advanced Analytics and AI-driven Insights**
+### 3. Advanced Analytics and AI-driven Insights
 
 By hosting your construction project data including IFC models, building documentation, and sensor datain SharePoint, you unlock powerful analytics and AI capabilities. Generate predictive insights, automate reporting, and enhance decision-making to boost productivity and project efficiency.
 
-#### 4. **Comprehensive Collaboration**
+### 4. Comprehensive Collaboration
 
 SharePoint simplifies collaboration by providing intuitive document management, real-time co-authoring, and streamlined version control. Internal and external stakeholders can collaborate securely and effortlessly, driving efficiency and clarity across all project phases.
 
-### Realizing the Full Potential of SharePoint as Your CDE
+## Realizing the Full Potential of SharePoint as Your CDE
 
 * **Centralized BIM Management:** Store and manage your BIM files directly in SharePoint, integrating seamlessly with IFC viewers and BIM collaboration platforms to facilitate real-time BIM management, eliminate data silos, and enhance team coordination.
 * **Enhanced Compliance:** Easily maintain compliance and regulatory standards by leveraging SharePoint’s powerful governance and security features.
@@ -77,7 +77,7 @@ SharePoint simplifies collaboration by providing intuitive document management, 
 {{< blogfigure src="/assets-flinker/images/blog/blog-img-11.svg" alt="SharePoint Common Data Environment with Microsoft 365" class="my-6" imgclass="img-fluid rounded-3 w-100" >}}
 
 
-### Step-by-Step Guide to Implementing SharePoint as Your CDE
+## Step-by-Step Guide to Implementing SharePoint as Your CDE
 
 To seamlessly transition to SharePoint as your primary CDE, consider these key steps:
 
@@ -87,7 +87,7 @@ To seamlessly transition to SharePoint as your primary CDE, consider these key s
 4. **Integrate Essential Tools:** Connect SharePoint with Teams, Power BI, and IFC viewers to streamline workflows and enhance real-time collaboration.
 5. **Train Your Team:** Provide targeted training and resources to ensure all users effectively leverage SharePoint’s comprehensive capabilities.
 
-### Get Started with SharePoint as Your CDE
+## Get Started with SharePoint as Your CDE
 
 Flinker helps organizations transform their SharePoint into a robust Common Data Environment tailored for the unique demands of large-scale construction projects. Experience seamless integration, enhanced security, and powerful analytics capabilities all within your Microsoft ecosystem.
 

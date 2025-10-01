@@ -71,11 +71,9 @@ One of Europe’s largest infrastructure firms faced challenges managing a massi
 - 20% boost in overall productivity
 
 
-{{< blogquote >}}
-Adopting SharePoint completely streamlined our processes and significantly reduced project turnaround time.   
+{{< blogquote cite="Project Lead" source="European Infrastructure Firm" >}}
+Adopting SharePoint completely streamlined our processes and significantly reduced project turnaround time.
 {{< /blogquote >}}
->  
-> — Project Lead, European Infrastructure Firm
 
 ### Global Construction Corporation: Empowering a Worldwide Workforce
 
@@ -87,11 +85,10 @@ A multinational construction company with global operations needed a secure, sca
 - 40% faster decision-making cycle
 
 
-{{< blogquote >}}
-The shift to SharePoint provided unparalleled integration and led to measurable operational savings.  
+{{< blogquote cite="IT Manager" source="Global Construction Corporation" >}}
+The shift to SharePoint provided unparalleled integration and led to measurable operational savings. 
 {{< /blogquote >}}
 
-> — IT Manager, Global Construction Corporation
 <br>
 <br>
 

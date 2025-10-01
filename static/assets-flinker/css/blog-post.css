@@ -161,3 +161,41 @@
 .markdown-content .blog-quote {
   font-size: 1.0625rem; /* nudge quote readability */
 }
+
+/* Blog quote: card variant */
+.markdown-content .blog-quote--card .card { background: rgba(var(--bs-primary-rgb), 0.06); }
+.markdown-content .blog-quote--card .quote-accent {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.25rem; /* large accent */
+  line-height: 1;
+  margin-top: 0.25rem; /* optical alignment with first line */
+}
+.markdown-content .blog-quote--card .icon-shape.icon-lg {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.markdown-content .blog-quote--card .quote-icon {
+  flex: 0 0 auto;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(var(--bs-primary-rgb), 0.1);
+  color: var(--bs-primary);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+}
+.markdown-content .blog-quote--card blockquote {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  /* neutralize default blockquote styling within card */
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+.markdown-content .blog-quote--card .blockquote::before { content: none !important; }
+.markdown-content .blog-quote--card .quote-cite a { text-underline-offset: 2px; }
