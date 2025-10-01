@@ -1,0 +1,48 @@
+{{/*
+  Reusable CTA shortcode using theme classes only (no global color overrides)
+  Params:
+    - title:   Headline text
+    - text:    Supporting paragraph
+    - href:    Button link (defaults to "/contact")
+    - label:   Button label (defaults to "Book a demo")
+    - target:  Optional (e.g., "_blank"). If provided, rel="noopener" is added.
+*/}}
+
+{{ $title := .Get "title" | default "Ready to get started?" }}
+{{ $text := .Get "text" | default "See how we can help you move faster with your existing Microsoft 365 stack." }}
+{{ $href := .Get "href" | default "https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true" }}
+{{ $label := .Get "label" | default "Book a demo" }}
+{{ $target := .Get "target" }}
+{{ $newsletterWidth := .Get "newsletterWidth" }}
+
+<section class="my-lg-7 py-5">
+  {{ if $newsletterWidth }}
+    <div class="position-relative" style="left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;width:100vw;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="bg-primary rounded-3 px-5 pt-5 pb-7 text-center">
+              <div class="position-relative z-1">
+                <div class="mb-5">
+                  <h3 class="h2 text-white-stable mb-3">{{ $title }}</h3>
+                  <p class="mb-0 text-white-stable">{{ $text }}</p>
+                </div>
+                <a href="{{ $href }}" class="btn btn-dark"{{ if $target }} target="{{ $target }}" rel="noopener"{{ end }}>{{ $label }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{ else }}
+    <div class="bg-primary rounded-3 px-5 pt-5 pb-7 text-center">
+      <div class="position-relative z-1">
+        <div class="mb-5">
+          <h3 class="h2 text-white-stable mb-3">{{ $title }}</h3>
+          <p class="mb-0 text-white-stable">{{ $text }}</p>
+        </div>
+        <a href="{{ $href }}" class="btn btn-dark"{{ if $target }} target="{{ $target }}" rel="noopener"{{ end }}>{{ $label }}</a>
+      </div>
+    </div>
+  {{ end }}
+</section>
