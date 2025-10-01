@@ -265,4 +265,5 @@ You don’t need to rip out SharePoint or adopt a standalone CDE platform — yo
   href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true" 
   label="Book a demo" 
   target="_blank" 
+  newsletterWidth="true"
 >}}
