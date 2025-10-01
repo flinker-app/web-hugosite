@@ -1,0 +1,110 @@
+<svg width="960" height="600" viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">External CDE vs SharePoint + Flinker (Light Mode)</title>
+  <desc id="desc">Two-column comparison, white background, Flinker brand blues as highlights.</desc>
+
+  <defs>
+    <style>
+      .h1 { fill:#0B1220; font:700 28px/1.2 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+      .h2 { fill:#0B1220; font:700 18px/1.3 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+      .p  { fill:#334155; font:600 14px/1.35 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+      .card { fill:#FFFFFF; stroke:#E2E8F0; stroke-width:1;}
+      .ok { fill:#0779FF;}
+      .ok2 { fill:#96BFFF;}
+      .no { fill:#EF4444;}
+      .badge { fill:#F8FAFC; stroke:#E2E8F0; stroke-width:1;}
+      .mono { fill:#0B1220; font:700 12px/1.2 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; letter-spacing:.2px;}
+      .hint { fill:#475569; font:600 12px/1.3 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="600" fill="#FFFFFF"></rect>
+
+  <!-- Header -->
+  <text x="60" y="68" class="h1">External CDE vs. SharePoint + Flinker</text>
+  <text x="60" y="94" class="hint">Parity on ISO 19650 — stronger data control in Microsoft 365</text>
+
+  <!-- Comparison cards -->
+  <g transform="translate(60,130)">
+    <!-- External CDE -->
+    <g>
+      <rect class="card" width="380" height="380" rx="16"></rect>
+      <g transform="translate(20,22)">
+        <rect class="badge" width="142" height="28" rx="8"></rect>
+        <circle cx="12" cy="14" r="5" class="ok2"></circle>
+        <text x="26" y="19" class="mono">External CDE</text>
+      </g>
+
+      <g transform="translate(20,70)">
+        <g>
+          <circle r="7" class="ok2"></circle>
+          <text x="20" y="5" class="h2">ISO 19650 workflows</text>
+          <text x="20" y="28" class="p">Prebuilt gates, reviews, approvals</text>
+        </g>
+        <g transform="translate(0,72)">
+          <circle r="7" class="ok2"></circle>
+          <text x="20" y="5" class="h2">Naming validation</text>
+          <text x="20" y="28" class="p">Automated ID/schema checks</text>
+        </g>
+        <g transform="translate(0,144)">
+          <circle r="7" class="ok2"></circle>
+          <text x="20" y="5" class="h2">Audit &amp; versions</text>
+          <text x="20" y="28" class="p">Traceable changes, approvals</text>
+        </g>
+        <g transform="translate(0,216)">
+          <circle r="7" class="no"></circle>
+          <text x="20" y="5" class="h2">Data sovereignty</text>
+          <text x="20" y="28" class="p">Hosted outside your tenant</text>
+        </g>
+        <g transform="translate(0,288)">
+          <circle r="7" class="no"></circle>
+          <text x="20" y="5" class="h2">Deep M365 integration</text>
+          <text x="20" y="28" class="p">Limited native SharePoint/Teams</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- SharePoint + Flinker -->
+    <g transform="translate(460,0)">
+      <rect class="card" width="380" height="380" rx="16"></rect>
+      <g transform="translate(20,22)">
+        <rect class="badge" width="192" height="28" rx="8"></rect>
+        <circle cx="12" cy="14" r="5" class="ok"></circle>
+        <text x="26" y="19" class="mono">SharePoint + Flinker</text>
+      </g>
+
+      <g transform="translate(20,70)">
+        <g>
+          <circle r="7" class="ok"></circle>
+          <text x="20" y="5" class="h2">ISO 19650 workflows</text>
+          <text x="20" y="28" class="p">WIP → Shared → Published → Archive</text>
+        </g>
+        <g transform="translate(0,72)">
+          <circle r="7" class="ok"></circle>
+          <text x="20" y="5" class="h2">Naming validation</text>
+          <text x="20" y="28" class="p">Enforced ISO schema on upload</text>
+        </g>
+        <g transform="translate(0,144)">
+          <circle r="7" class="ok"></circle>
+          <text x="20" y="5" class="h2">Audit &amp; reporting</text>
+          <text x="20" y="28" class="p">Dashboards, export for compliance</text>
+        </g>
+        <g transform="translate(0,216)">
+          <circle r="7" class="ok"></circle>
+          <text x="20" y="5" class="h2">Data sovereignty</text>
+          <text x="20" y="28" class="p">All data in your M365 tenant</text>
+        </g>
+        <g transform="translate(0,288)">
+          <circle r="7" class="ok"></circle>
+          <text x="20" y="5" class="h2">Deep M365 integration</text>
+          <text x="20" y="28" class="p">Native SharePoint/Teams UX</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <text x="60" y="588" class="hint">
+    Flinker adds approvals, naming checks, audit visibility and external filtering — using your existing Microsoft 365.
+  </text>
+</svg>
