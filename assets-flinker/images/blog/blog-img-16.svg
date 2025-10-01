@@ -1,0 +1,142 @@
+<!-- File: iso19650-sharepoint-cde-cover-light.svg -->
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">ISO 19650 + SharePoint — Flinker Compliance Layer (Light)</title>
+  <desc id="desc">Light UI hero showing ISO 19650 states along a pipeline with SharePoint/Teams chips and a Flinker badge in brand blues.</desc>
+
+  <!-- ====== PALETTE / HELPERS ====== -->
+  <defs>
+    <!-- Brand blues -->
+    <linearGradient id="brandGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#96BFFF"></stop>
+      <stop offset="1" stop-color="#0779FF"></stop>
+    </linearGradient>
+
+    <!-- Background and surfaces -->
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"></stop>
+      <stop offset="1" stop-color="#F7FAFF"></stop>
+    </linearGradient>
+
+    <!-- Pipe glow, clipped to pipe -->
+    <linearGradient id="pipeGlowGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#96BFFF" stop-opacity="0.45"></stop>
+      <stop offset="1" stop-color="#96BFFF" stop-opacity="0"></stop>
+    </linearGradient>
+
+    <!-- Soft elevation -->
+    <filter id="shadow-sm" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.15"></feDropShadow>
+    </filter>
+    <filter id="shadow-md" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-opacity="0.16"></feDropShadow>
+    </filter>
+
+    <!-- Clip for the pipe glow -->
+    <clipPath id="pipeClip">
+      <rect id="pipeArea" x="80" y="248" width="1040" height="20" rx="10"></rect>
+    </clipPath>
+
+    <!-- Type & colors -->
+    <style>
+      .t-title { fill:#0B1220; font:800 40px/1.15 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; letter-spacing:.2px; }
+      .t-sub   { fill:#334155; font:600 18px/1.35 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; }
+      .t-cap   { fill:#0B1220; font:700 14px/1.2 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; }
+      .t-foot  { fill:#475569; font:600 14px/1.35 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; }
+      .grid    { fill:#E6EEF9; }
+      .bar     { fill:url(#brandGradient); }
+      .chip    { fill:#FFFFFF; stroke:#E6EEF9; stroke-width:1; }
+      .chipTxt { fill:#0B1220; font:700 14px/1.2 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; }
+      .muted   { fill:#EEF4FF; }
+    </style>
+  </defs>
+
+  <!-- ====== BACKGROUND ====== -->
+  <rect width="1200" height="630" fill="url(#paper)"></rect>
+
+  <!-- Subtle grid (lighter for print-friendly look) -->
+  <g opacity=".8">
+    <rect class="grid" x="80" width="1" height="630"></rect>
+    <rect class="grid" x="240" width="1" height="630"></rect>
+    <rect class="grid" x="400" width="1" height="630"></rect>
+    <rect class="grid" x="560" width="1" height="630"></rect>
+    <rect class="grid" x="720" width="1" height="630"></rect>
+    <rect class="grid" x="880" width="1" height="630"></rect>
+    <rect class="grid" x="1040" width="1" height="630"></rect>
+    <rect class="grid" y="100" width="1200" height="1"></rect>
+    <rect class="grid" y="220" width="1200" height="1"></rect>
+    <rect class="grid" y="340" width="1200" height="1"></rect>
+    <rect class="grid" y="460" width="1200" height="1"></rect>
+    <rect class="grid" y="580" width="1200" height="1"></rect>
+  </g>
+
+  <!-- ====== TITLE ====== -->
+  <text x="80" y="116" class="t-title">ISO 19650 + SharePoint</text>
+  <text x="80" y="150" class="t-sub">Turn SharePoint &amp; Teams into a compliant CDE with Flinker</text>
+
+  <!-- ====== DECORATIVE SKYLINE (very soft) ====== -->
+  <g transform="translate(70,342)" opacity=".7">
+    <rect x="0" y="60" width="36" height="120" rx="8" class="muted"></rect>
+    <rect x="52" y="14" width="36" height="166" rx="8" class="muted"></rect>
+    <rect x="104" y="95" width="36" height="85" rx="8" class="muted"></rect>
+    <rect x="156" y="38" width="36" height="142" rx="8" class="muted"></rect>
+    <rect x="208" y="0" width="36" height="180" rx="8" class="muted"></rect>
+  </g>
+
+  <!-- ====== PIPE (behind stations/chips) ====== -->
+  <!-- bar -->
+  <rect x="80" y="248" width="1040" height="20" rx="10" class="bar" filter="url(#shadow-sm)"></rect>
+  <!-- glow clipped to pipe -->
+  <g clip-path="url(#pipeClip)">
+    <rect x="60" y="220" width="1080" height="84" fill="url(#pipeGlowGrad)"></rect>
+  </g>
+
+  <!-- ====== STATIONS (above bar) ====== -->
+  <!-- WIP -->
+  <g transform="translate(80,248)">
+    <circle cx="0" cy="10" r="24" fill="#96BFFF" stroke="#FFFFFF" stroke-width="4"></circle>
+    <text x="-10" y="-12" class="t-cap">WIP</text>
+  </g>
+  <!-- Shared -->
+  <g transform="translate(420,248)">
+    <circle cx="0" cy="10" r="24" fill="#7EB0FF" stroke="#FFFFFF" stroke-width="4"></circle>
+    <text x="-28" y="-12" class="t-cap">Shared</text>
+  </g>
+  <!-- Published -->
+  <g transform="translate(760,248)">
+    <circle cx="0" cy="10" r="24" fill="#2C8BFF" stroke="#FFFFFF" stroke-width="4"></circle>
+    <text x="-38" y="-12" class="t-cap">Published</text>
+  </g>
+  <!-- Archive -->
+  <g transform="translate(1120,248)">
+    <circle cx="0" cy="10" r="24" fill="#0779FF" stroke="#FFFFFF" stroke-width="4"></circle>
+    <text x="-28" y="-12" class="t-cap">Archive</text>
+  </g>
+
+  <!-- ====== CHIPS (top layer) ====== -->
+  <g filter="url(#shadow-md)">
+    <!-- SharePoint -->
+    <g transform="translate(350,320)">
+      <rect class="chip" width="216" height="66" rx="16"></rect>
+      <circle cx="36" cy="33" r="10" fill="#96BFFF"></circle>
+      <text x="56" y="38" class="chipTxt">SharePoint Site</text>
+    </g>
+    <!-- Teams -->
+    <g transform="translate(586,320)">
+      <rect class="chip" width="236" height="66" rx="16"></rect>
+      <circle cx="36" cy="33" r="10" fill="#0779FF"></circle>
+      <text x="56" y="38" class="chipTxt">Microsoft Teams</text>
+    </g>
+    <!-- Flinker -->
+    <g transform="translate(860,308)">
+      <rect class="chip" width="264" height="100" rx="18"></rect>
+      <g transform="translate(20,18)">
+        <path d="M24 0l24 8v18c0 18-24 30-24 30S0 44 0 26V8l24-8z" fill="url(#brandGradient)"></path>
+        <text x="64" y="24" class="t-title" style="font-size:22px">Flinker</text>
+        <text x="64" y="50" class="t-sub">ISO 19650 compliance layer</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ====== FOOTER ====== -->
+  <text x="80" y="600" class="t-foot">Data stays in your Microsoft 365 tenant · Approvals · Versioning · Naming validation</text>
+</svg>
