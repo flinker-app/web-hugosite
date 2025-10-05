@@ -50,6 +50,9 @@
 
     <!-- Custom Head Content -->
     {{ block "extra_head" . }}{{ end }}
+
+    <!-- Logo tint setup (SVG filter + minimal CSS) -->
+    {{ partial "logo-tint-setup.html" . }}
   </head>
 
   <body>

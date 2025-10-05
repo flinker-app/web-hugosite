@@ -1,0 +1,40 @@
+<!--
+	Logo tint setup (site-wide):
+	- Target color: #94a3b8 (rgba(148,163,184,1))
+	- Auto-tint via:
+			* .logo-tint            -> opt-in per <img>
+			* .logo-tint-scope img  -> everything inside a wrapper
+	- To change the color, adjust the intercept values below (R,G,B) and the CSS fallback.
+	- No sizing here by design — sizes are managed manually per SVG/PNG.
+-->
+<svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+	<filter id="tint-94a3b8" color-interpolation-filters="sRGB">
+		<!-- Map all colors to target rgb(148,163,184) while preserving alpha -->
+		<!-- 148/255=0.58039, 163/255=0.63922, 184/255=0.72157 -->
+		<feComponentTransfer>
+			<feFuncR type="linear" slope="0" intercept="0.58039"/>
+			<feFuncG type="linear" slope="0" intercept="0.63922"/>
+			<feFuncB type="linear" slope="0" intercept="0.72157"/>
+			<feFuncA type="identity"/>
+		</feComponentTransfer>
+	</filter>
+</svg>
+
+<style>
+	/* Opt-in tint on specific images */
+	.logo-tint { filter: url(#tint-94a3b8); }
+
+	/* Scoped auto-tint: any <img> inside a wrapper with this class will be tinted */
+	.logo-tint-scope img { filter: url(#tint-94a3b8); }
+
+	/* Fallback approximation for browsers not supporting filter:url(#...) */
+	@supports not (filter: url(#x)) {
+		.logo-tint,
+		.logo-tint-scope img {
+			/* Approximate #94a3b8 via CSS filters applied to dark/monochrome source */
+			filter: grayscale(1) brightness(0) invert(59%) sepia(6%) saturate(900%)
+							hue-rotate(178deg) brightness(95%) contrast(92%);
+		}
+	}
+</style>
+
