@@ -1,0 +1,19 @@
+ifc-copilot:
+  name: "IFC Copilot"
+  url: "https://copilot.flinker.app/"
+  logo: "/assets-flinker/images/brand-logo/ifc-copilot-logo.svg"
+  caption: "IFC Copilot"
+
+excel-viewer:
+  name: "Excel IFC Viewer"
+  url: "https://appsource.microsoft.com/en-us/product/office/WA200008867?tab=Overview"
+  logo: "/assets-flinker/images/brand-logo/ifc-viewer-logo.svg"
+  caption: "Excel IFC Viewer"
+
+
+# Beispiel für weitere Apps:
+# power-bi-viewer:
+#   name: "Power BI IFC Viewer"
+#   url: "https://..."
+#   logo: "/assets-flinker/images/brand-logo/pbi-ifc-viewer.svg"
+#   caption: "Power BI IFC Viewer"

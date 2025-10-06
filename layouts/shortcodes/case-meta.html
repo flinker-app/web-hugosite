@@ -1,0 +1,52 @@
+{{/* case-meta.html */}}
+{{- $p := .Page.Params -}}
+
+<div class="container mb-7">
+  <div class="row g-4 text-start small">
+
+    <div class="col-md-3">
+      <strong>Client</strong><br>
+      {{ with $p.client }}
+        {{ . }}
+      {{ else }}
+        {{ with $p.company_name }}
+          {{ . }}
+        {{ else }}
+          {{- /* Fallback auf evtl. Titelteil */ -}}
+          {{- $title := $p.title | default .Page.Title -}}
+          {{- $title -}}
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <div class="col-md-3">
+      <strong>Solutions</strong><br>
+      {{- if $p.apps -}}
+        {{ delimit $p.apps ", " }}
+      {{- else if $p.solutions -}}
+        {{ delimit $p.solutions ", " }}
+      {{- else -}}
+        —
+      {{- end -}}
+    </div>
+
+    <div class="col-md-2">
+      <strong>Region</strong><br>
+      {{ $p.region | default "—" }}
+    </div>
+
+    <div class="col-md-2">
+      <strong>Company size</strong><br>
+      {{ $p.company_size | default "—" }}
+    </div>
+
+    <div class="col-md-2">
+      <strong>Industry</strong><br>
+      {{- if $p.industry -}}
+        {{ delimit $p.industry ", " }}
+      {{- else -}}
+        —
+      {{- end -}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,109 @@
+{{/* Shortcode: flinker-apps (mit Debug, ohne 'keys')
+   Params:
+     - list               : CSV App-IDs (überschreibt .Page.Params.apps)
+     - heading            : Überschrift (Default)
+     - sub                : Untertitel (Default)
+     - show_captions      : "true" | "false" (Default "true")
+     - size               : "sm" | "md" | "lg" (56/64/80px)
+     - cols               : "2" | "3" | "4"  (Grid ab md)
+     - debug              : "true" → Diagnosebox anzeigen
+*/}}
+
+{{- $appsParam := .Page.Params.apps -}}
+{{- with .Get "list" -}}
+  {{- $appsParam = (split . ",") | apply "trim" "." -}}
+{{- end -}}
+
+{{- $data := site.Data.apps -}}
+{{- $heading := or (.Get "heading") "BIM Apps for Microsoft 365 used" -}}
+{{- $sub := or (.Get "sub") "Our Apps run in your Microsoft 365 tenant — no external servers, databases or platform." -}}
+{{- $showCaptions := cond (eq (.Get "show_captions") "false") false true -}}
+{{- $size := or (.Get "size") "md" -}}
+{{- $cols := or (.Get "cols") "4" -}}
+{{- $debug := eq (.Get "debug") "true" -}}
+
+{{- $h := 64 -}}
+{{- if eq $size "sm" -}}{{- $h = 56 -}}
+{{- else if eq $size "lg" -}}{{- $h = 80 -}}
+{{- end -}}
+
+{{- $mdCol := cond (eq $cols "2") "col-md-6" (cond (eq $cols "3") "col-md-4" "col-md-3") -}}
+
+<div class="container my-7">
+  <div class="row align-items-end mb-4">
+    <div class="col-lg-8">
+      <h3 class="mb-2">{{ $heading }}</h3>
+      <p class="text-secondary mb-0 small">{{ $sub }}</p>
+    </div>
+  </div>
+
+  {{/* DEBUG-PANEL */}}
+  {{- if $debug -}}
+    {{- /* Keys der Data-Datei manuell aufbauen */ -}}
+    {{- $dataKeys := slice -}}
+    {{- if $data -}}
+      {{- range $k, $_ := $data -}}
+        {{- $dataKeys = $dataKeys | append $k -}}
+      {{- end -}}
+    {{- end -}}
+    <div class="alert alert-info small">
+      <div><strong>Front-Matter apps:</strong> {{ if $appsParam }}{{ jsonify $appsParam }}{{ else }}<em>nil</em>{{ end }}</div>
+      <div><strong>Keys in data/apps.yaml:</strong>
+        {{- if $data -}}
+          {{- if gt (len $dataKeys) 0 -}}
+            {{ delimit $dataKeys ", " }}
+          {{- else -}}
+            <em>empty map</em>
+          {{- end -}}
+        {{- else -}}
+          <em>not found (site.Data.apps is nil)</em>
+        {{- end -}}
+      </div>
+    </div>
+  {{- end -}}
+
+  <style>
+    .flinker-apps figure{display:flex;flex-direction:column;align-items:center;width:fit-content;margin-left:auto;margin-right:auto}
+    .flinker-apps img.flinker-app-logo{height: {{ $h }}px; width:auto; object-fit:contain}
+    .flinker-apps figcaption{font-size:.875rem; opacity:.9}
+    @media (prefers-color-scheme: dark){
+      .flinker-apps figcaption{opacity:.85}
+    }
+  </style>
+
+  {{- $missing := slice -}}
+  <div class="row g-4 flinker-apps">
+    {{- if not $appsParam -}}
+      <div class="col-12">
+        <div class="alert alert-warning small">No <code>apps:</code> provided in this page’s front matter and no <code>list=</code> override.</div>
+      </div>
+    {{- else if not $data -}}
+      <div class="col-12">
+        <div class="alert alert-warning small"><code>data/apps.yaml</code> not found or empty. Ensure the file exists at <code>/data/apps.yaml</code>.</div>
+      </div>
+    {{- else -}}
+      {{- range $appsParam -}}
+        {{- $id := . -}}
+        {{- $app := index $data $id -}}
+        {{- if not $app -}}
+          {{- $missing = $missing | append $id -}}
+          {{- continue -}}
+        {{- end -}}
+        <div class="col-6 {{ $mdCol }}">
+          <figure class="py-2 text-center">
+            <a href="{{ $app.url }}" target="_blank" rel="noopener" aria-label="Open {{ $app.name }}">
+              <img loading="lazy" decoding="async" src="{{ $app.logo }}" alt="{{ $app.name }}" class="flinker-app-logo">
+            </a>
+            {{- if $showCaptions -}}<figcaption class="mt-2">{{ or $app.caption $app.name }}</figcaption>{{- end -}}
+          </figure>
+        </div>
+      {{- end -}}
+    {{- end -}}
+  </div>
+
+  {{- if gt (len $missing) 0 -}}
+    <div class="alert alert-warning small mt-3" role="alert">
+      Unknown app IDs (not found in <code>data/apps.yaml</code>): {{ delimit $missing ", " }}
+    </div>
+  {{- end -}}
+</div>
