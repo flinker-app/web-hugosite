@@ -8,6 +8,8 @@ title = "Flinker | Building Digital Twins in Microsoft 365"
   linkedinImage = "images/linkedin-image.jpg"
   youtubeChannel = "IhrYouTubeKanalID"
   githubRepo = "https://github.com/flinker-app"
+  apps_heading = "BIM Apps for Microsoft 365 used"
+  apps_tagline = "All Flinker Apps run natively in your Microsoft 365 tenant — no external servers or databases."
 
 [server] 
   port = 1313  # Standardport für `hugo server`
