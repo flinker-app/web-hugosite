@@ -1,0 +1,97 @@
+{{/* Inline Meta Bar for case studies
+     - Renders inside your centered column (no side column).
+     - Desktop: horizontal, wraps nicely.
+     - Mobile: stacks naturally.
+     - Shows only fields that exist.
+     - Uses apps from .Params.apps with data/apps.yaml for names/logos.
+*/}}
+
+{{- $p := .Params -}}
+{{- $apps := $p.apps -}}
+{{- $appsData := site.Data.apps -}}
+
+<div class="bg-light rounded-3 p-4 p-lg-5 mb-lg-9 mb-md-7 mb-5 shadow-sm">
+
+  <!-- Row 1: Logo + Company (left) -->
+  <div class="d-flex align-items-center gap-3 mb-4">
+    {{ with $p.company_logo }}
+      <img src="{{ . }}" alt="{{ $p.company | default "Client" }} logo"
+           class="rounded-2" style="height:36px;width:auto;object-fit:contain;">
+    {{ end }}
+    <h3 class="mb-0">{{ or $p.company $p.client $p.company_name "—" }}</h3>
+  </div>
+
+  <!-- Row 2+: Meta items as flexible chips/blocks -->
+  <div class="d-flex flex-wrap align-items-start gap-4">
+
+    {{/* Solutions (apps) */}}
+    {{ if $apps }}
+      <div class="d-flex flex-column" style="min-width: 260px;">
+        <span class="text-uppercase text-muted small fw-semibold mb-1">Solutions in use</span>
+        <div class="d-flex flex-wrap gap-2">
+          {{ range $apps }}
+            {{- $id := . -}}
+            {{- $app := (cond (and $appsData (index $appsData $id)) (index $appsData $id) dict) -}}
+            {{- $name := or ($app.name) $id -}}
+            <span class="badge bg-white border d-inline-flex align-items-center py-2 px-3">
+              {{ with $app.logo }}
+                <img src="{{ . }}" alt="" style="height:16px;width:auto;" class="me-2">
+              {{ end }}
+              <span class="text-dark fw-semibold">{{ $name }}</span>
+            </span>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    {{ with $p.team }}
+      <div class="d-flex flex-column" style="min-width: 200px;">
+        <span class="text-uppercase text-muted small fw-semibold mb-1">Team</span>
+        <span class="fs-6">{{ if (reflect.IsSlice .) }}{{ delimit . ", " }}{{ else }}{{ . }}{{ end }}</span>
+      </div>
+    {{ end }}
+
+    {{ with $p.projects }}
+      <div class="d-flex flex-column" style="min-width: 200px;">
+        <span class="text-uppercase text-muted small fw-semibold mb-1">Projects</span>
+        <span class="fs-6">{{ if (reflect.IsSlice .) }}{{ delimit . ", " }}{{ else }}{{ . }}{{ end }}</span>
+      </div>
+    {{ end }}
+
+    {{ with $p.region }}
+      <div class="d-flex flex-column" style="min-width: 200px;">
+        <span class="text-uppercase text-muted small fw-semibold mb-1">Region</span>
+        <span class="fs-6">{{ . }}</span>
+      </div>
+    {{ end }}
+
+    {{ with $p.company_size }}
+      <div class="d-flex flex-column" style="min-width: 200px;">
+        <span class="text-uppercase text-muted small fw-semibold mb-1">Company size</span>
+        <span class="fs-6">{{ . }}</span>
+      </div>
+    {{ end }}
+
+    {{ with $p.industry }}
+      <div class="d-flex flex-column" style="min-width: 200px;">
+        <span class="text-uppercase text-muted small fw-semibold mb-1">Industry</span>
+        <span class="fs-6">{{ if (reflect.IsSlice .) }}{{ delimit . ", " }}{{ else }}{{ . }}{{ end }}</span>
+      </div>
+    {{ end }}
+
+    {{ with $p.use_case }}
+      <div class="d-flex flex-column" style="min-width: 200px;">
+        <span class="text-uppercase text-muted small fw-semibold mb-1">Workflows</span>
+        <span class="fs-6">{{ if (reflect.IsSlice .) }}{{ delimit . ", " }}{{ else }}{{ . }}{{ end }}</span>
+      </div>
+    {{ end }}
+
+    {{ with $p.tech_stack }}
+      <div class="d-flex flex-column" style="min-width: 200px;">
+        <span class="text-uppercase text-muted small fw-semibold mb-1">Tech stack</span>
+        <span class="fs-6">{{ if (reflect.IsSlice .) }}{{ delimit . ", " }}{{ else }}{{ . }}{{ end }}</span>
+      </div>
+    {{ end }}
+
+  </div>
+</div>

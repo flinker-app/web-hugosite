@@ -1,0 +1,257 @@
+{{/* CASE STRUCTURE PARTIAL — keeps your spacing/columns; pulls copy from front-matter */}}
+{{- $p := .Params -}}
+
+<!--Square Pattern Start-->
+<div class="py-5 py-lg-5"></div>
+<!--Square Pattern End-->
+
+<!-- Pageheader -->
+<section class="py-5 py-lg-8">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 offset-lg-2 col-md-12 col-12">
+        <h1 class="mb-3">{{ with $p.hero.h1 }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h1>
+        {{ with $p.hero.lead }}<p class="mb-0 lead">{{ . | markdownify }}</p>{{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio single -->
+<section>
+  <div class="container">
+    <div class="row">
+
+      <!-- Hero image -->
+      {{ with $p.hero.image }}
+      <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+        <figure class="mb-lg-9 mb-md-7 mb-5">
+          <img src="{{ . }}" alt="{{ $p.hero.image_alt }}" class="img-fluid rounded-3" />
+        </figure>
+      </div>
+      {{ end }}
+
+      <div class="col-xl-8 offset-xl-2 col-lg-12 col-md-12 col-12">
+
+  <!-- Quick Facts / Meta -->
+  {{ partial "case-meta.html" . }}
+
+        <!-- Company -->
+        {{ with $p.sections.company }}
+        <div class="row mb-lg-9 mb-md-7 mb-5">
+          <div class="col-lg-4 col-md-4 col-12">
+            <h4 class="mb-3 mb-md-0 text-black-50">Company</h4>
+          </div>
+          <div class="col-lg-8 col-md-8 col-12">
+            <p class="mb-0">{{ . | markdownify }}</p>
+          </div>
+        </div>
+        {{ end }}
+
+        <!-- Challenge -->
+        {{ if or $p.sections.challenge_h2 $p.sections.challenge }}
+        <div class="row mb-lg-9 mb-md-7 mb-5">
+          <div class="col-lg-4 col-md-4 col-12">
+            <h4 class="mb-3 mb-md-0 text-black-50">Challenge</h4>
+          </div>
+          <div class="col-lg-8 col-md-8 col-12">
+            {{ with $p.sections.challenge_h2 }}<h2 class="mb-3">{{ . }}</h2>{{ end }}
+            {{ with $p.sections.challenge }}<div class="mb-0">{{ . | markdownify }}</div>{{ end }}
+          </div>
+        </div>
+        {{ end }}
+
+      </div> <!-- close centered column before full-width screenshots -->
+
+      <!-- Screenshots (2-up gallery with your classes) -->
+      {{ with $p.gallery }}
+      <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+        <style>
+          .screenshot-frame{position:relative;overflow:hidden;aspect-ratio:16/9;background-color:#f8f9fa;cursor:zoom-in}
+          .screenshot-frame img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease;display:block}
+          .screenshot-frame:hover img,.screenshot-frame:active img{transform:scale(1.08)}
+          .screenshot-frame:focus{outline:2px solid rgba(13,110,253,.6);outline-offset:2px}
+          .screenshot-frame:focus img{transform:scale(1.08)}
+        </style>
+        <div class="row mb-lg-9 mb-md-7 mb-5 g-4">
+          {{ range . }}
+          <div class="col-lg-6 col-md-6 col-12">
+            <button class="screenshot-frame rounded-3 p-0 border-0 bg-transparent" type="button" aria-label="Open screenshot in fullscreen">
+              <img src="{{ .src }}" alt="{{ .alt }}" class="img-fluid" />
+            </button>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      <div class="col-xl-8 offset-xl-2 col-lg-12 col-md-12 col-12"> <!-- reopen centered column -->
+
+        <!-- Solution (merged with HOW steps) -->
+        {{ if or $p.sections.solution_intro $p.sections.solution_steps }}
+        <div class="row mb-lg-9 mb-md-7 mb-5">
+          <div class="col-lg-4 col-md-4 col-12">
+            <h4 class="mb-3 mb-md-0 text-black-50">Solution</h4>
+          </div>
+          <div class="col-lg-8 col-md-8 col-12">
+            {{ with $p.sections.solution_h3 }}<h3 class="mb-3">{{ . }}</h3>{{ end }}
+            {{ with $p.sections.solution_intro }}<div class="mb-3">{{ . | markdownify }}</div>{{ end }}
+            {{ with $p.sections.solution_steps }}
+              <ol class="mb-3">
+                {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
+              </ol>
+            {{ end }}
+            {{ with $p.sections.solution_notes }}<div class="mb-0">{{ . | markdownify }}</div>{{ end }}
+          </div>
+        </div>
+        {{ end }}
+
+        
+
+        <!-- Results -->
+        {{ if or $p.sections.results_list $p.sections.kpis }}
+        <div class="row mb-lg-9 mb-md-7 mb-5">
+          <div class="col-lg-4 col-md-4 col-12">
+            <h4 class="fw-semibold mb-3 mb-md-0 text-black-50">The Results</h4>
+          </div>
+          <div class="col-lg-8 col-md-8 col-12">
+            {{ with $p.sections.results_intro }}<p class="mb-2">{{ . }}</p>{{ end }}
+            {{ with $p.sections.results_list }}
+            <ul class="mb-0">
+              {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
+            </ul>
+            {{ end }}
+            {{ with $p.sections.kpis }}
+            <div class="row mt-4">
+              {{ range . }}
+              <div class="col-md-4 col-6 mb-4">
+                <h4 class="mb-0">{{ .value }}</h4>
+                <span>{{ .label }}</span>
+              </div>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+
+      </div>
+
+      <!-- Testimonial (full width center like your original) -->
+      {{ with $p.testimonial }}
+      <div class="offset-xl-1 col-xl-10 col-lg-12 col-md-12 col-12 mb-lg-9 mb-md-7 mb-5">
+        <div class="text-center mx-xl-7 my-5">
+          <div class="mb-5">
+            {{ with .avatar }}<img src="{{ . }}" alt="Avatar" class="avatar avatar-xxl rounded-circle" />{{ end }}
+          </div>
+          {{ with .text }}<p class="lead mb-4"><em>{{ . }}</em></p>{{ end }}
+          <div class="d-md-flex align-items-center justify-content-center">
+            {{ with .author }}<h4 class="mb-0">{{ . }}</h4>{{ end }}
+            {{ with .role }}<small class="ms-2">{{ . }}</small>{{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+
+      <div class="col-xl-8 offset-xl-2 col-lg-12 col-md-12 col-12">
+
+        <!-- Future (optionally includes "Workflows enabled") -->
+        {{ if or $p.sections.future $p.sections.workflows_enabled }}
+        <div class="row mb-lg-9 mb-md-7 mb-5">
+          <div class="col-lg-4 col-md-4 col-12">
+            <h4 class="mb-3 mb-md-0 text-black-50">Future</h4>
+          </div>
+          <div class="col-lg-8 col-md-8 col-12">
+            {{ with $p.sections.future }}<div class="mb-3">{{ . | markdownify }}</div>{{ end }}
+            {{ with $p.sections.workflows_enabled }}
+              <ul class="list-group list-group-flush">
+                {{ range . }}<li class="list-group-item px-0 py-2">{{ . | markdownify }}</li>{{ end }}
+              </ul>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+
+        {{/* --- Workflows Enabled Section --- */}}
+        {{ with .Params.workflows_enabled }}
+          <div class="row mb-lg-9 mb-md-7 mb-5">
+            <div class="col-lg-4 col-md-4 col-12">
+              <h4 class="mb-3 mb-lg-0 text-black-50">Workflows enabled</h4>
+            </div>
+            <div class="col-lg-8 col-md-8 col-12">
+              {{ with .intro }}
+                <p class="mb-3">{{ . }}</p>
+              {{ else }}
+                <p class="mb-3">
+                  These results illustrate how Flinker’s modular apps enable connected BIM workflows directly inside Microsoft 365 — linking design data, cost, and collaboration without external systems.
+                </p>
+              {{ end }}
+              {{ with .items }}
+                <ul class="list-group list-group-flush">
+                  {{ range . }}
+                    <li class="list-group-item px-0 py-2">{{ . }}</li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+
+        {{/* --- Flinker Apps Section --- */}}
+        <div class="row mb-lg-9 mb-md-7 mb-5">
+          <div class="col-lg-4 col-md-4 col-12">
+            <h4 class="mb-1 mb-md-0 text-black-50">Flinker Apps</h4>
+          </div>
+
+          <div class="col-lg-8 col-md-8 col-12">
+            <!-- Title + short Microsoft tagline (kept concise to avoid CTA duplication) -->
+            <h3 class="mb-3">
+              {{ .Site.Params.apps_heading | default "BIM Apps for Microsoft 365 used" }}
+            </h3>
+            <p class="small text-black-50 mb-4">
+              {{ .Site.Params.apps_tagline | default "All Flinker Apps run natively in your Microsoft 365 tenant — no external servers or databases." }}
+            </p>
+
+            <!-- Logos (from data/apps.yaml; shows only the apps listed in page front matter) -->
+            {{ partial "flinker-apps.html" . }}
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+{{ partial "cta1.html" . }}
+
+<!-- Lightbox Modal + wiring (reuse from your page if not global) -->
+<div class="modal fade" id="screenshotLightbox" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down" style="--bs-modal-width: 975px;">
+    <div class="modal-content bg-black">
+      <button type="button" class="btn btn-light position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close">Close</button>
+      <div class="modal-body p-0 d-flex align-items-center justify-content-center">
+        <img id="lightboxImage" src="" alt="Expanded screenshot" class="img-fluid w-100" style="object-fit: contain; max-height: 100vh;" />
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  const lightboxEl=document.getElementById('screenshotLightbox');
+  const lightboxImg=document.getElementById('lightboxImage');
+  const frames=document.querySelectorAll('.screenshot-frame');
+  function openLightbox(src,alt){
+    if(!lightboxEl||!lightboxImg) return;
+    lightboxImg.src=src; lightboxImg.alt=alt||'Expanded screenshot';
+    if(window.bootstrap&&window.bootstrap.Modal){ new window.bootstrap.Modal(lightboxEl).show(); }
+    else{ window.open(src,'_blank','noopener'); }
+  }
+  frames.forEach(f=>{
+    const img=f.querySelector('img'); if(!img) return;
+    f.addEventListener('click',()=>openLightbox(img.src,img.alt));
+    f.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); openLightbox(img.src,img.alt);} });
+  });
+})();
+</script>

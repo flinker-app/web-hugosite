@@ -10,449 +10,96 @@ shareImage: "/assets-flinker/images/case-studies/Sawa-Engineering/sawa-mobility-
 twitterCard: "summary_large_image"
 region: "Europe"
 company_size: "Startup"
-solutions:
-  - Flinker Copilot
-  - Excel Viewer
+company: "Sawa Engineering"
 industry: ["Infrastructure", "Engineering"]
+company_logo: "/assets-flinker/images/case-studies/Sawa-Engineering/sawa-company-logo-1.png"
+customer_url: "https://sawa-engineering.example"
+team: "BIM Management"
+projects: ["Infrastructure"]
+use_case: ["Quantity Takeoff", "Cost Segmentation"]
+tech_stack: ["SharePoint", "Excel", "Power BI"]
 content_type: "case_study"
 disableTopSpacing: true
+
+flags:
+  show_gallery: true
+  show_apps: true
+  show_testimonial: true
+
+sections_order: ["company","challenge","solution","results","testimonial","future","apps"]
+
+workflows_enabled:
+  intro: "Flinker’s modular Microsoft 365 apps enable these connected BIM workflows:"
+  items:
+    - Variant evaluation with decision-ready data
+    - Quantity takeoff & segmentation (floors, construction sections)
+    - Rule-based Excel queries & filtering
+    - Model parameter QA & correction workflow
+    - Cost mapping handover to schedule & budgeting
+
+# apps will be rendered by {{< flinker-apps >}} (data/apps.yaml provides meta)
+apps: ["ifc-copilot", "excel-viewer"]
+
+hero:
+  h1: "Chat-to-Quantities with Flinker Copilot and Excel IFC Viewer"
+  lead: "How Sawa Engineering used Flinker Copilot and Excel Viewer for reliable BIM quantity takeoff, cost segmentation, and faster planning decisions."
+  image: "/assets-flinker/images/case-studies/Sawa-Engineering/sawa-analysis-copilot.png"
+  image_alt: "Flinker Copilot Viewer with model context and Excel handover (sample IFC)"
+
+gallery:
+  - src: "/assets-flinker/images/case-studies/Sawa-Engineering/sawa-analysis-strategies-1.png"
+    alt: "Excel rules and parameter filters applied to exported element table"
+  - src: "/assets-flinker/images/case-studies/Sawa-Engineering/sawa-variant-comparison-1.png"
+    alt: "Segmented RC elements by floors and construction sections (sample IFC)"
+
+sections:
+  company: |
+    **Sawa Engineering** is a young engineering firm focused on innovative and data-driven infrastructure projects.
+
+  challenge_h2: "Fast, reliable quantities within tight schedules"
+  challenge: |
+    In a complex BIM environment, the team needed robust quantity takeoff and segmentation of reinforced concrete elements by floors and construction phases — including cost mapping — while keeping decision-makers supplied with transparent data across multiple design variants.
+    The process had to minimize tool switching and leverage existing Excel know-how to keep the learning curve low and iteration speed high.
+
+  solution_h3: "Excel-centric analysis with model context from Flinker Copilot"
+  solution_intro: |
+    Sawa Engineering combined **Flinker Copilot** and the **Excel IFC Viewer** to link BIM data directly with Excel — enabling quantity takeoff, cost mapping, and model QA in one connected flow inside Microsoft 365.
+
+  solution_steps:
+    - "Connected model parameters to Excel via **Flinker Copilot** and the **IFC Viewer**."
+    - "Applied **rule-based queries** to segment reinforced-concrete elements by floor and construction section."
+    - "Used **Excel filters & formulas** for cost mapping and variant comparison."
+    - "Validated results in Microsoft 365 with live model context—no third-party tools or exports."
+
+  solution_notes: |
+    Parameter issues (e.g., basement walls mislabeled as ground-floor walls) were surfaced early and corrected quickly, accelerating iteration across three design variants.
+    For this public case, a sample IFC reproduces the exact workflow without exposing project data.
+
+  results_intro: "Outcomes reported by the user:"
+  results_list:
+    - "Reliable evaluation of three variants within three weeks"
+    - "Chosen solution shortens shell construction from ~10 to ~7 months"
+    - "All variants available with transparent, decision-ready data"
+    - "Iterations significantly faster than traditional methods, with minimal learning curve"
+  kpis:
+    - label: "Time to evaluate 3 variants"
+      value: "3 weeks"
+    - label: "Shell construction (chosen vs. prior plan)"
+      value: "~ 7 vs. 10 mo"
+    - label: "Variants compared"
+      value: "3 variants"
+
+  future: |
+    Sawa Engineering plans to extend the workflow to MEP and façade models and connect cost data to Power BI for live dashboards.
+
+
+testimonial:
+  text: "With Flinker Copilot and IFC Viewer for Microsoft 365, we evaluate models transparently and quickly, without extra interfaces. That speeds us up and makes our handover to schedule and cost planning more reliable."
+  author: "Sékou Sawadogo"
+  role: "Civil Engineer, Sawa Engineering"
+  avatar: "/assets-flinker/images/case-studies/Sawa-Engineering/profile-sawadogo-1.jpg"
+
+custom_blocks:
+  - position: "after_solution"
+    html: "<div class='alert alert-info'>Pilot pricing applied for this project.</div>"
 ---
-
-<!--Square Pattern Start-->
-<div class="py-5 py-lg-5"></div>
-<!--Square Pattern End-->
-
-
-<!-- Pageheader -->
-<section class="py-5 py-lg-8">
-<div class="container">
-   <div class="row">
-   <div class="col-lg-7 offset-lg-2 col-md-12 col-12">
-   <h1 class="mb-3">Chat-to-Quantities with Flinker Copilot and Excel IFC Viewer</h1>
-      <p class="mb-0 lead">
-         How Sawa Engineering used Flinker Copilot and Excel Viewer for reliable BIM quantity takeoff, cost segmentation, and faster planning decisions.
-      </p>
-   </div>
-   </div>
-</div>
-</section>
-
-<!-- Portfolio single -->
-<section>
-<div class="container">
-   <div class="row">
-   <!-- Hero image -->
-   <div class="col-xl-12 col-lg-12 col-md-12 col-12">
-      <figure class="mb-lg-9 mb-md-7 mb-5">
-         <!-- Replace with your large landscape screenshot -->
-         <img src="/assets-flinker/images/case-studies/Sawa-Engineering/sawa-mobility-hub-workflow-1.png"
-            alt="Flinker Copilot Viewer with model context and Excel handover (sample IFC)"
-            class="img-fluid rounded-3" />
-      </figure>
-   </div>
-
-   <div class="col-xl-8 offset-xl-2 col-lg-12 col-md-12 col-12">
-  <!-- Top meta row -->
-  <div class="row g-5 mb-lg-9 mb-md-7 mb-5">
-
-    <!-- Client -->
-    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-      <div class="mb-4 mb-lg-0">
-        <span>Client</span>
-        <div class="d-flex align-items-center mt-2">
-          <img src="/assets-flinker/images/case-studies/Sawa-Engineering/sawa-company-logo-1.png" alt="Sawa Engineering Logo" class="avatar rounded-circle" style="width:36px;height:36px;" />
-          <div class="ms-2">
-            <span class="text-dark fs-6">Sawa Engineering</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Solutions in use -->
-   <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-      <div class="mb-4 mb-lg-0">
-         <span>Solution in use</span>
-         <div class="mt-2 text-primary fs-6">
-            {{< param key="solutions" default="—" sep=", " >}}
-         </div>
-      </div>
-   </div>
-
-
-
-    <!-- Region -->
-    <div class="col-xl-2 col-lg-4 col-md-6 col-12">
-      <div class="mb-4 mb-lg-0">
-        <span>Region</span>
-        <div class="mt-2 text-dark fs-6">{{< param key="region" default="—" >}}</div>
-      </div>
-    </div>
-
-    <!-- Company size -->
-    <div class="col-xl-2 col-lg-4 col-md-6 col-12">
-      <div class="mb-4 mb-lg-0">
-        <span>Company</span>
-        <div class="mt-2 text-dark fs-6">{{< param key="company_size" default="—" >}}</div>
-      </div>
-    </div>
-
-    <!-- Share -->
-    <div class="col-xl-2 col-lg-4 col-md-6 col-12">
-      <span>Share</span>
-      <div class="mt-2 d-flex align-items-center">
-        <div class="dropdown d-inline-block">
-          <button class="btn btn-link text-reset p-0" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-              <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
-            </svg>
-          </button>
-               <ul id="share-menu" class="dropdown-menu dropdown-menu-end">
-            <li><a id="share-email" class="dropdown-item" href="#">via Email</a></li>
-            <li><a id="share-linkedin" class="dropdown-item" href="#" target="_blank" rel="noopener">on LinkedIn</a></li>
-            <li><a id="share-teams" class="dropdown-item" href="#" target="_blank" rel="noopener">to Microsoft Teams</a></li>
-                  <li><a id="share-whatsapp" class="dropdown-item" href="#" target="_blank" rel="noopener">on WhatsApp</a></li>
-            <li><button id="share-copy" class="dropdown-item" type="button">Copy Link</button></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div> <!-- CLOSE: .row.g-5 meta row -->
-
-    
-
-
-   <!-- Challenge -->
-      <div class="row mb-lg-9 mb-md-7 mb-5">
-         <div class="col-lg-4 col-md-4 col-12">
-         <h4 class="mb-3 mb-md-0 text-black-50">Challenge</h4>
-         </div>
-         <div class="col-lg-8 col-md-8 col-12">
-         <h2 class="mb-3">Fast, reliable quantities within tight schedules</h2>
-         <p class="mb-3">
-            In a complex BIM environment, the team needed robust quantity takeoff and segmentation of reinforced concrete elements by floors and construction phases — including cost mapping — while keeping decision-makers supplied with transparent data across multiple design variants.
-         </p>
-         <p class="mb-0">
-            The process had to minimize tool switching and leverage existing Excel know-how to keep the learning curve low and iteration speed high.
-         </p>
-         </div>
-      </div>
-
-      <!-- Screenshots (replace with your two detail images) -->
-      </div> <!-- close centered column before full-width screenshots -->
-
-      <div class="col-xl-12 col-lg-12 col-md-12 col-12">
-        <style>
-           /* Consistent frame for screenshots with subtle zoom on hover/click */
-           .screenshot-frame {
-              position: relative;
-              overflow: hidden;
-              /* Keep both frames equal height responsively */
-              aspect-ratio: 16 / 9;
-              /* Optional: pleasant placeholder while loading */
-              background-color: #f8f9fa;
-              cursor: zoom-in;
-           }
-           .screenshot-frame img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover; /* cover ensures fill without manual cropping */
-              transition: transform .35s ease;
-              display: block;
-           }
-           .screenshot-frame:hover img,
-           .screenshot-frame:active img {
-              transform: scale(1.08);
-           }
-           /* Keyboard focus parity */
-           .screenshot-frame:focus {
-              outline: 2px solid rgba(13,110,253,.6); /* bootstrap primary-ish */
-              outline-offset: 2px;
-           }
-           .screenshot-frame:focus img {
-              transform: scale(1.08);
-           }
-        </style>
-        <div class="row mb-lg-9 mb-md-7 mb-5 g-4">
-           <div class="col-lg-6 col-md-6 col-12">
-             <button class="screenshot-frame rounded-3 p-0 border-0 bg-transparent" type="button" aria-label="Open screenshot in fullscreen">
-                <img src="/assets-flinker/images/case-studies/Sawa-Engineering/sawa-analysis-copilot.png"
-                      alt="Excel rules and parameter filters applied to exported element table"
-                      class="img-fluid" />
-             </button>
-           </div>
-           <div class="col-lg-6 col-md-6 col-12">
-             <button class="screenshot-frame rounded-3 p-0 border-0 bg-transparent" type="button" aria-label="Open screenshot in fullscreen">
-                <img src="/assets-flinker/images/case-studies/Sawa-Engineering/sawa-variant-comparison-1.png"
-                      alt="Segmented RC elements by floors and construction sections (sample IFC)"
-                      class="img-fluid" />
-             </button>
-           </div>
-        </div>
-      </div>
-
-      <div class="col-xl-8 offset-xl-2 col-lg-12 col-md-12 col-12"> <!-- reopen centered column for subsequent sections -->
-
-      <!-- Solution -->
-      <div class="row mb-lg-9 mb-md-7 mb-5">
-         <div class="col-lg-4 col-md-4 col-12">
-         <h4 class="mb-3 mb-md-0 text-black-50">Solution</h4>
-         </div>
-         <div class="col-lg-8 col-md-8 col-12">
-         <h3 class="mb-3">Excel-centric analysis with model context from Flinker Copilot</h3>
-         <p class="mb-3">
-            The workflow combines the Flinker Copilot and IFC Viewer (for model context and parameter export) with rule-based queries and filtering in Excel. Predefined criteria segment reinforced concrete elements by floors and construction phases while mapping costs for each variant. Thanks to the linkage to the 3D model, location and scope remain clear at all times.
-         </p>
-         <p class="mb-3">
-            Parameter issues (e.g., basement walls mislabeled as ground-floor walls) are surfaced early and corrected quickly. Because teams already work confidently in Excel, iteration cycles are significantly faster than with traditional, multi-tool approaches.
-         </p>
-         <p class="mb-0">
-            For this public case, a sample IFC was used to reproduce the exact workflow without exposing project data. The final results feed into a comparison table to support variant selection.
-         </p>
-         </div>
-      </div>
-
-      <!-- Tech Stack -->
-      <div class="row mb-lg-9 mb-md-7 mb-5">
-         <div class="col-lg-4 col-md-4 col-12">
-         <h4 class="mb-1 mb-md-0 text-black-50">Flinker Apps</h4>
-         </div>
-         <div class="col-lg-8 col-md-8 col-12">
-         <style>
-            /* Make app logos visually the same size without editing image files */
-            .app-logos img.app-logo {
-               height: 64px; /* base height for consistent sizing */
-               width: auto;  /* keep aspect ratio */
-               object-fit: contain;
-            }
-            /* Center image and caption as a column, shrink-wrap to image width */
-            .app-logos figure {
-               display: flex;
-               flex-direction: column;
-               align-items: center;
-               width: fit-content;        /* make figure width equal to widest child (image) */
-               margin-left: auto;         /* center figure in its grid column */
-               margin-right: auto;
-            }
-            /* Ensure multi-line captions are centered under the logos */
-            .app-logos figcaption {
-               display: inline-block; /* shrink to text width for nicer centering */
-               text-align: center;    /* center each line inside multi-line captions */
-            }
-            @media (min-width: 768px) {
-               .app-logos img.app-logo { height: 72px; }
-            }
-         </style>
-         <div class="row app-logos">
-            <h3 class="mb-3">BIM Apps for Microsoft 365 used</h3>
-            <p class="small text-black-50 mb-3">Our Apps run in your Microsoft 365 tenant — no external servers, databases or platform.</p>
-            <div class="col-lg-3 col-md-3 col-6">
-               <figure class="py-3 text-center">
-               <a href="https://copilot.flinker.app/" target="_blank" rel="noopener" aria-label="Open IFC Copilot">
-                  <img src="./assets-flinker/images/brand-logo/ifc-copilot-logo.svg" alt="Flinker Copilot" class="app-logo" />
-               </a>
-               <figcaption class="small mt-2">IFC Copilot</figcaption>
-               </figure>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6">
-               <figure class="py-3 text-center">
-               <a href="https://appsource.microsoft.com/en-us/product/office/WA200008867?tab=Overview" target="_blank" rel="noopener" aria-label="Open Flinker Excel Viewer on AppSource">
-                  <img src="./assets-flinker/images/brand-logo/ifc-viewer-logo.svg" alt="Flinker Excel Viewer" class="app-logo viewer-logo" />
-               </a>
-               <figcaption class="small mt-2">Excel IFC Viewer</figcaption>
-               </figure>
-            </div>            
-         </div>
-         </div>
-      </div>
-
-      <!-- Results -->
-      <div class="row mb-lg-9 mb-md-7 mb-5">
-         <div class="col-lg-4 col-md-4 col-12">
-         <h4 class="fw-semibold mb-3 mb-md-0 text-black-50">The Results</h4>
-         </div>
-         <div class="col-lg-8 col-md-8 col-12">
-         <div class="mb-4">
-            <p class="mb-2">Outcomes reported by the user:</p>
-            <ul class="mb-0">
-               <li>Reliable evaluation of three variants within three weeks</li>
-               <li>Chosen solution shortens shell construction from ~10 to ~7 months</li>
-               <li>All variants available with transparent, decision-ready data</li>
-               <li>Iterations significantly faster than traditional methods, with minimal learning curve</li>
-            </ul>
-         </div>
-         <div class="row">
-            <div class="col-md-4 col-6 mb-4">
-               <h4 class="mb-0">3 weeks</h4>
-               <span>Time to evaluate 3 variants</span>
-            </div>
-            <div class="col-md-4 col-6 mb-4">
-               <h4 class="mb-0">~ 7 vs. 10 mo</h4>
-               <span>Shell construction (chosen vs. prior plan)</span>
-            </div>
-            <div class="col-md-4 col-6 mb-4">
-               <h4 class="mb-0">3 variants</h4>
-               <span>Compared with decision-ready data</span>
-            </div>
-         </div>
-         </div>
-      </div>
-
-      <!-- Workflows endable -->
-      <div class="row mb-lg-9 mb-md-7 mb-5">
-         <div class="col-lg-4 col-md-4 col-12">
-         <h4 class="mb-3 mb-lg-0 text-black-50">Workflows enabled</h4>
-         </div>
-         <div class="col-lg-8 col-md-8 col-12">
-         <ul class="list-group list-group-flush">
-            <li class="list-group-item px-0 py-2">Variant evaluation with decision-ready data</li>
-            <li class="list-group-item px-0 py-2">Quantity takeoff & segmentation (floors, construction sections)</li>
-            <li class="list-group-item px-0 py-2">Rule-based Excel queries & filtering</li>
-            <li class="list-group-item px-0 py-2">Model parameter QA & correction workflow</li>
-            <li class="list-group-item px-0 py-2">Cost mapping handover to schedule & budgeting</li>
-         </ul>
-         </div>
-      </div>
-   </div>
-
-   <!-- Testimonial -->
-   <div class="offset-xl-1 col-xl-10 col-lg-12 col-md-12 col-12">
-      <div class="text-center mx-xl-7 my-5">
-         <div class="mb-5">
-         <img src="/assets-flinker/images/case-studies/Sawa-Engineering/profile-sawadogo-1.jpg" alt="Avatar" class="avatar avatar-xxl rounded-circle" />
-         </div>
-         <p class="lead mb-4">
-         <em>“With Flinker Copilot and IFC Viewer for Microsoft 365, we evaluate models transparently and quickly, without extra interfaces. That speeds us up and makes our handover to schedule and cost planning more reliable.”</em>
-         </p>
-         <div class="d-md-flex align-items-center justify-content-center">
-         <h4 class="mb-0">Sékou Sawadogo</h4>
-         <small class="ms-2">Civil Engineer, at Sawa Engineering</small>
-         </div>
-      </div>
-   </div>
-   </div>
-</div>
-</section>
-
-<!-- CTA -->
-{{< cta1 >}}
-
-
-<!-- Placeholder section removed -->
-
-
-<script>
-  (function () {
-    const pageUrlRaw = window.location.href;
-    const pageTitleRaw = document.querySelector('h1')?.innerText || document.title;
-    const enc = encodeURIComponent;
-
-    function withUtm(url, source) {
-      const u = new URL(url);
-      u.searchParams.set('utm_source', source);
-      u.searchParams.set('utm_medium', 'share');
-      u.searchParams.set('utm_campaign', 'case-study');
-      u.searchParams.set('utm_content', 'sawa-engineering');
-      return u.toString();
-    }
-
-    // Email
-    const emailUrl = withUtm(pageUrlRaw, 'email');
-    const emailBody = enc(`I thought this might interest you:\r\n${pageTitleRaw}\r\n${emailUrl}`);
-    const emailLink = `mailto:?subject=${enc(pageTitleRaw)}&body=${emailBody}`;
-    document.getElementById('share-email')?.setAttribute('href', emailLink);
-
-    // LinkedIn
-    const liTarget = enc(withUtm(pageUrlRaw, 'linkedin'));
-    const liLink = `https://www.linkedin.com/sharing/share-offsite/?url=${liTarget}`;
-    document.getElementById('share-linkedin')?.setAttribute('href', liLink);
-
-    // Microsoft Teams
-    const teamsTarget = enc(withUtm(pageUrlRaw, 'teams'));
-    const teamsLink = `https://teams.microsoft.com/share?href=${teamsTarget}&text=${enc(pageTitleRaw)}`;
-    document.getElementById('share-teams')?.setAttribute('href', teamsLink);
-
-   // WhatsApp
-   const waText = enc(`${pageTitleRaw} — ${withUtm(pageUrlRaw, 'whatsapp')}`);
-   // Use wa.me for desktop and mobile compatibility; WhatsApp will handle platform
-   const waLink = `https://wa.me/?text=${waText}`;
-   document.getElementById('share-whatsapp')?.setAttribute('href', waLink);
-
-    // Copy Link
-    const copyBtn = document.getElementById('share-copy');
-    copyBtn?.addEventListener('click', async () => {
-      const copyUrl = withUtm(pageUrlRaw, 'copy');
-      try {
-        await navigator.clipboard.writeText(copyUrl);
-        copyBtn.textContent = 'Copied';
-        setTimeout(() => (copyBtn.textContent = 'Copy Link'), 1500);
-      } catch {
-        alert('Copy failed. Link: ' + copyUrl);
-      }
-    });
-
-      // Optional: Web Share API
-         if ('share' in navigator) {
-         const shareUrl = withUtm(pageUrlRaw, 'webshare');
-         const menu = document.getElementById('share-menu');
-         if (menu && !menu.querySelector('#share-webshare')) {
-            const li = document.createElement('li');
-            const btn = document.createElement('button');
-            btn.id = 'share-webshare';
-            btn.className = 'dropdown-item';
-            btn.type = 'button';
-            btn.textContent = 'Share…';
-            btn.addEventListener('click', () => navigator.share({ title: pageTitleRaw, url: shareUrl }));
-            li.appendChild(btn);
-            menu.appendChild(li);
-         }
-      }
-  })();
-</script>
-
-<!-- Lightbox Modal -->
-<div class="modal fade" id="screenshotLightbox" tabindex="-1" aria-hidden="true">
-   <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down" style="--bs-modal-width: 975px;">
-      <div class="modal-content bg-black">
-         <button type="button" class="btn btn-light position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close">Close</button>
-         <div class="modal-body p-0 d-flex align-items-center justify-content-center">
-            <img id="lightboxImage" src="" alt="Expanded screenshot" class="img-fluid w-100" style="object-fit: contain; max-height: 100vh;" />
-         </div>
-      </div>
-   </div>
-</div>
-
-<!-- Lightbox wiring -->
-<script>
-   (function () {
-      const lightboxEl = document.getElementById('screenshotLightbox');
-      const lightboxImg = document.getElementById('lightboxImage');
-      const frames = document.querySelectorAll('.screenshot-frame');
-
-            function openLightbox(src, alt) {
-               if (!lightboxEl || !lightboxImg) return;
-               lightboxImg.src = src;
-               lightboxImg.alt = alt || 'Expanded screenshot';
-               // If Bootstrap Modal is available
-               if (window.bootstrap && window.bootstrap.Modal) {
-                  const modal = new window.bootstrap.Modal(lightboxEl);
-                  modal.show();
-               } else {
-                  // Fallback: simple full-window view
-                  window.open(src, '_blank', 'noopener');
-               }
-            }
-
-      frames.forEach(frame => {
-         const img = frame.querySelector('img');
-         if (!img) return;
-         frame.addEventListener('click', () => openLightbox(img.src, img.alt));
-         frame.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-               e.preventDefault();
-               openLightbox(img.src, img.alt);
-            }
-         });
-      });
-   })();
-   </script>
