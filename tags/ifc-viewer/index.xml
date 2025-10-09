@@ -35,13 +35,20 @@
  &lt;/div>
 &lt;/section>
 
-&lt;!-- FEATURES -->
-&lt;section class="py-8" style="padding:72px 0;">
- &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px;">
- &lt;div style="text-align:center; margin-bottom:36px;">
- &lt;h2 style="font-size:clamp(24px,3.5vw,36px); margin:0 0 10px; letter-spacing:-0.02em;">
- What you get with the IFC Viewer
- &lt;/h2>
- &lt;p class="text-muted" style="margin:0 auto; max-width:720px; color:#64748b;">
- From SharePoint-native storage to advanced Pro tools, build reports faster and share them across your team.
- &lt;/p></description></item></channel></rss>
+&lt;!-- IN-PAGE NAV (place right under HERO, before Demo) -->
+&lt;nav class="container my-3 text-center" aria-label="Feature shortcuts">
+ &lt;a class="btn btn-outline-primary btn-sm me-2 mb-2" href="#load-from-sharepoint">SharePoint/Teams&lt;/a>
+ &lt;a class="btn btn-outline-primary btn-sm me-2 mb-2" href="#multi-ifc">Multi-IFC&lt;/a>
+ &lt;a class="btn btn-outline-primary btn-sm me-2 mb-2" href="#extended-query">Extended query&lt;/a>
+ &lt;a class="btn btn-outline-primary btn-sm mb-2" href="#color-by">Color-by&lt;/a>
+&lt;/nav>
+
+&lt;!--Load from SharePoint start-->
+&lt;section id="load-from-sharepoint" class="my-xl-7 py-5">
+ &lt;div class="container">
+ &lt;div class="row align-items-center">
+ &lt;div class="col-lg-5 col-md-6 col-12">
+ &lt;small class="text-primary text-uppercase ls-md fw-semibold">Microsoft 365–native&lt;/small>
+ &lt;div class="mb-5 mt-4">
+ &lt;h2 class="mb-3">Open IFC from SharePoint &amp; Teams — no extra logins.&lt;/h2>
+ &lt;p class="lead mb-0">Keep data in your tenant. Browse sites, libraries, folders &amp; subfolders and load models straight into Power BI.&lt;/p></description></item></channel></rss>
