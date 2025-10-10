@@ -237,7 +237,7 @@ schema:
    </div>
 </section>
 
-<!-- IN-PAGE NAV (place right under HERO, before Demo) -->
+<!-- IN-PAGE NAV -->
 <nav class="container my-3 text-center" aria-label="Feature shortcuts">
   <a class="btn btn-outline-primary btn-sm me-2 mb-2" href="#load-from-sharepoint">SharePoint/Teams</a>
   <a class="btn btn-outline-primary btn-sm me-2 mb-2" href="#multi-ifc">Multi-IFC</a>
@@ -245,124 +245,98 @@ schema:
   <a class="btn btn-outline-primary btn-sm mb-2" href="#color-by">Color-by</a>
 </nav>
 
-<!--Load from SharePoint start-->
-<section id="load-from-sharepoint" class="my-xl-7 py-5">
+<!-- LOAD FROM SHAREPOINT -->
+<section id="load-from-sharepoint" class="feature my-xl-7 py-5">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5 col-md-6 col-12">
-        <small class="text-primary text-uppercase ls-md fw-semibold">Microsoft 365–native</small>
+        <small class="text-primary text-uppercase ls-md fw-semibold">Microsoft 365–native <span class="badge bg-primary-subtle text-primary ms-1">Direct-from-IFC</span></small>
         <div class="mb-5 mt-4">
           <h2 class="mb-3">Open IFC from SharePoint & Teams — no extra logins.</h2>
-          <p class="lead mb-0">Keep data in your tenant. Browse sites, libraries, folders & subfolders and load models straight into Power BI.</p>
+          <p class="lead mb-0">Point to a file or folder in your tenant. The Viewer reads IFC directly — no exports, no CSV staging, no mapping.</p>
         </div>
         <ul class="list-unstyled mb-5">
-          <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>Works with Sites, Libraries, and nested folders</li>
+          <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>Works with Sites, Libraries & subfolders</li>
+          <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>No manual data prep — loads directly from IFC</li>
           <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>Respects your Microsoft 365 permissions</li>
-          <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>No separate accounts or data copies</li>
         </ul>
       </div>
       <div class="col-lg-6 offset-lg-1 col-md-6 col-12">
         <figure class="position-relative">
-          <img src="/assets-flinker/images/features/load-from-sharepoint.png" alt="Load IFC from SharePoint into Power BI" class="img-fluid rounded-4 shadow-sm" loading="lazy">
+          <img src="/assets-flinker/images/features/load-from-sharepoint.png" alt="Load IFC directly from SharePoint into Power BI" class="img-fluid rounded-4 shadow-sm" loading="lazy">
         </figure>
       </div>
     </div>
   </div>
 </section>
-<!--Load from SharePoint end-->
 
-<!--Multi-IFC start-->
-<section id="multi-ifc" class="my-xl-7 py-5 bg-light">
+<!-- MULTI-IFC -->
+<section id="multi-ifc" class="feature my-xl-7 py-5 bg-light">
   <div class="container pb-lg-5">
     <div class="row align-items-center">
-      <!-- Bild links -->
-      <div class="col-lg-6 col-md-6 col-12 order-lg-1 order-1">
+      <div class="col-lg-6 col-md-6 col-12 order-lg-1">
         <figure class="position-relative">
-          <img src="/assets-flinker/images/features/multi-ifc.png"
-               alt="Combine multiple IFCs into one Power BI view"
-               class="img-fluid rounded-4 shadow-sm"
-               loading="lazy">
+          <img src="/assets-flinker/images/features/multi-ifc.png" alt="Combine multiple IFCs in one Power BI view" class="img-fluid rounded-4 shadow-sm" loading="lazy">
         </figure>
       </div>
-      <!-- Text rechts -->
       <div class="col-lg-5 offset-lg-1 col-md-6 col-12 order-lg-2">
-        <small class="text-primary text-uppercase ls-md fw-semibold">
-          Multi-IFC Loading <span class="badge bg-primary-subtle text-primary ms-1">Pro</span>
-        </small>
+        <small class="text-primary text-uppercase ls-md fw-semibold">Multi-IFC Loading <span class="badge bg-primary-subtle text-primary ms-1">Pro</span></small>
         <div class="mb-5 mt-4">
           <h2 class="mb-3">Combine multiple IFCs into one view.</h2>
-          <p class="lead mb-0">Link folders or select many models for holistic coordination in a single report.</p>
+          <p class="lead mb-0">Link folders or select several models to coordinate all trades in one Power BI report.</p>
         </div>
         <ul class="list-unstyled mb-5">
-          <li class="mb-2 d-flex">
-            <i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>
-            Load dozens of models up to 10 GB each in-app; beyond 10 GB, use the API for unlimited-scale performance
-          </li>
-          <li class="mb-2 d-flex">
-            <i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>
-            Toggle per-model visibility
-          </li>
-          <li class="mb-2 d-flex">
-            <i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>
-            Link a whole folder to stay in sync
-          </li>
+          <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>Load dozens of models up to 10 GB each</li>
+          <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>Toggle per-model visibility</li>
+          <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>Link a whole folder to stay in sync</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
-<!--Multi-IFC end-->
 
-<!--Extended Query start-->
-<section id="extended-query" class="my-xl-7 py-5">
+<!-- EXTENDED QUERY -->
+<section id="extended-query" class="feature my-xl-7 py-5">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5 col-md-6 col-12">
         <small class="text-primary text-uppercase ls-md fw-semibold">Data Extension <span class="badge bg-primary-subtle text-primary ms-1">Pro</span></small>
         <div class="mb-5 mt-4">
           <h2 class="mb-3">Query IFC like a database.</h2>
-          <p class="lead mb-0">Extend attributes, join cost & schedule tables, and build reusable BIM logic to power analytics.</p>
+          <p class="lead mb-0">Every IFC property becomes a usable field in Power BI — ready for visuals, measures, and filters.</p>
         </div>
         <ul class="list-unstyled mb-5">
-          <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>Join IFC ↔ Cost ↔ Schedule</li>
-          <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>Reusable transformations for all projects</li>
-          <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>Answer “how much / where / when” in one place</li>
+          <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>Auto-schema: IFC attributes appear as columns</li>
+          <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>No manual imports — query loads everything</li>
+          <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>Join cost & schedule data only when needed</li>
         </ul>
       </div>
       <div class="col-lg-6 offset-lg-1 col-md-6 col-12">
         <figure class="position-relative">
-          <img src="/assets-flinker/images/features/extended-query.png" alt="Join IFC data with cost and schedule tables" class="img-fluid rounded-4 shadow-sm" loading="lazy">
+          <img src="/assets-flinker/images/features/extended-query.png" alt="Query IFC attributes directly in Power BI" class="img-fluid rounded-4 shadow-sm" loading="lazy">
         </figure>
       </div>
     </div>
   </div>
 </section>
-<!--Extended Query end-->
 
-<!--Color-by start-->
-<section id="color-by" class="my-xl-7 py-5 bg-light">
+<!-- COLOR-BY -->
+<section id="color-by" class="feature my-xl-7 py-5 bg-light">
   <div class="container pb-lg-5">
     <div class="row align-items-center">
-      <!-- Bild links -->
-      <div class="col-lg-6 col-md-6 col-12 order-lg-1 order-1">
+      <div class="col-lg-6 col-md-6 col-12 order-lg-1">
         <figure class="position-relative">
-          <img src="/assets-flinker/images/features/color-by.png"
-               alt="Color-by system, level, or custom fields in Power BI"
-               class="img-fluid rounded-4 shadow-sm"
-               loading="lazy">
+          <img src="/assets-flinker/images/features/color-by.png" alt="Color-by system, level, or custom fields" class="img-fluid rounded-4 shadow-sm" loading="lazy">
         </figure>
       </div>
-      <!-- Text rechts -->
       <div class="col-lg-5 offset-lg-1 col-md-6 col-12 order-lg-2">
-        <small class="text-primary text-uppercase ls-md fw-semibold">
-          Visualization <span class="badge bg-primary-subtle text-primary ms-1">Pro</span>
-        </small>
+        <small class="text-primary text-uppercase ls-md fw-semibold">Visualization <span class="badge bg-primary-subtle text-primary ms-1">Pro</span></small>
         <div class="mb-5 mt-4">
           <h2 class="mb-3">See what matters with Color-by.</h2>
-          <p class="lead mb-0">Visualize by status, system, level, or any custom field to surface insights instantly.</p>
+          <p class="lead mb-0">Visualize by status, system, level, or any custom field — insights appear at a glance.</p>
         </div>
         <ul class="list-unstyled mb-5">
-          <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>Status, Level, System, or any field</li>
+          <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>Status, Level, System, or any property</li>
           <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>Save presets for quick reviews</li>
           <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>Switch perspectives in one click</li>
         </ul>
@@ -370,7 +344,29 @@ schema:
     </div>
   </div>
 </section>
-<!--Color-by end-->
+
+<!-- Direct-from-IFC visual -->
+<section id="direct-from-ifc" class="feature py-6 bg-light">
+  <div class="container text-center" style="max-width:980px;">
+    <small class="text-primary text-uppercase fw-semibold">Direct-from-IFC</small>
+    <h2 class="mt-2 mb-2 fw-bold">From IFC file to dashboard — instantly</h2>
+    <p class="text-muted mb-4" style="max-width:720px;margin:0 auto;">
+      Flinker loads your IFC model directly into Power BI.  
+      No exports, no extra files — just point to your SharePoint or Teams folder and start analyzing.
+    </p>
+
+    <figure class="position-relative">
+      <img src="/assets-flinker/images/features/direct-from-ifc.png"
+           alt="Flinker loads IFC directly into Power BI without extra imports"
+           class="img-fluid rounded-4 shadow-sm border"
+           loading="lazy">
+      <figcaption class="mt-3 small text-muted">
+        The query reads the IFC directly — all attributes become instantly available in Power BI.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+<!-- /Direct-from-IFC visual -->
 
 <!-- FEATURES -->
 <section class="py-8" style="padding:72px 0;">
@@ -1445,3 +1441,53 @@ schema:
     </div>
   </div>
 </section>
+
+
+<!-- your page content above ... -->
+
+<!-- Local page-only styling -->
+<style>
+  /* Shared feature tweaks (desktop + mobile) */
+  .feature h2{letter-spacing:-.015em}
+  .feature .lead{max-width:48ch}
+  .feature ul{margin:0; padding:0}
+  .feature li{line-height:1.35}
+  .feature figure img{border-radius:14px}
+
+  /* In-page feature nav: better on mobile */
+  nav[aria-label="Feature shortcuts"]{
+    overflow:auto; -webkit-overflow-scrolling:touch;
+    padding-bottom:6px;
+  }
+  nav[aria-label="Feature shortcuts"] .btn{white-space:nowrap}
+
+  /* Tablet and down */
+  @media (max-width: 992px){
+    .feature [class*="col-"]:has(figure){margin-top:16px}
+    .feature .lead{font-size:1rem}
+  }
+
+  /* Phones */
+  @media (max-width: 576px){
+    .feature{padding-top:36px!important; padding-bottom:36px!important}
+    .feature h2{font-size:1.35rem; margin-bottom:.5rem}
+    .feature .lead{max-width:100%; color:var(--bs-secondary-color)}
+    .feature ul{margin-top:10px}
+    .feature li{margin-bottom:.35rem}
+    .feature figure{margin:8px 0 0}
+    .feature figure img{
+      width:100%; height:auto; box-shadow:0 8px 28px rgba(2,6,23,.08)
+    }
+    nav[aria-label="Feature shortcuts"] .btn{
+      padding:.45rem .7rem; border-radius:999px
+    }
+  }
+
+  /* Optional: limit tall screenshots on very small screens */
+  @media (max-width:420px){
+    .feature figure img{max-height:52vh; object-fit:contain}
+  }
+</style>
+
+</body>
+</html>
