@@ -37,6 +37,14 @@ In the event of economic failure on the part of the customer to fulfill its obli
 ## 1.8
 Fixed performance dates should be agreed exclusively in documented form. The agreement of a fixed performance date is subject to the provider receiving the services of its respective upstream suppliers in good time and in accordance with the contract.
 
+## Pricing & Renewals
+
+Current subscription fees reflect our introductory price model.
+Subscription renewals are subject to Flinker’s then-current price list, unless otherwise agreed in writing.
+Customers will be notified of any changes in advance of renewal.
+Flinker may introduce new plans (e.g., viewer-based tiers, enterprise features) as usage grows.
+Existing customers can either continue under their current term or transition to the new model at renewal.
+
 # 2. Cooperation, Duties to Cooperate, Confidentiality
 
 ## 2.1
