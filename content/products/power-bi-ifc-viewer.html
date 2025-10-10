@@ -347,7 +347,7 @@ schema:
 
 <!-- Direct-from-IFC visual -->
 <section id="direct-from-ifc" class="feature py-6 bg-light">
-  <div class="container text-center" style="max-width:980px;">
+  <div class="container text-center" style="max-width:1120px;">
     <small class="text-primary text-uppercase fw-semibold">Direct-from-IFC</small>
     <h2 class="mt-2 mb-2 fw-bold">From IFC file to dashboard — instantly</h2>
     <p class="text-muted mb-4" style="max-width:720px;margin:0 auto;">
@@ -1487,6 +1487,47 @@ schema:
   @media (max-width:420px){
     .feature figure img{max-height:52vh; object-fit:contain}
   }
+  
+  /* --- Gentle, page-local rhythm + readability (inspired by service-v2) --- */
+  :root{
+    --pv-section-gap: clamp(28px, 5vw, 64px);
+    --pv-section-gap-lg: clamp(48px, 7vw, 96px);
+  }
+
+  /* Add breathing room between top-level sections without touching global theme */
+  section + section{ margin-top: var(--pv-section-gap); }
+
+  /* Slightly increase inner vertical space on feature sections */
+  .feature{ padding-top: clamp(40px, 6vw, 88px) !important; padding-bottom: clamp(40px, 6vw, 88px) !important; }
+
+  /* Improve anchor jumps for in-page nav */
+  section[id]{ scroll-margin-top: 96px; }
+
+  /* Typography: calmer reading rhythm */
+  section p{ line-height: 1.65; }
+  .lead{ letter-spacing: -.005em; }
+
+  /* Headings: a touch more air below */
+  h2{ margin-bottom: .75rem; }
+  h3{ margin-bottom: .5rem; }
+
+  /* Lists: give bullets some breath */
+  .feature ul{ margin-top: .75rem; }
+  .feature li + li{ margin-top: .35rem; }
+
+  /* Figures: consistent spacing to text */
+  figure + figcaption{ margin-top: .5rem; }
+  .feature figure{ margin-top: .75rem; }
+
+  /* On large screens, increase section separation further for a noble look */
+  @media (min-width: 1200px){
+    section + section{ margin-top: var(--pv-section-gap-lg); }
+  }
+
+  /* Normalize key section widths to a consistent, elegant max width */
+  section > .container,
+  section.container,
+  nav.container{ max-width: 1120px; }
 </style>
 
 </body>
