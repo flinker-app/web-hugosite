@@ -39,7 +39,7 @@
  &lt;/div>
 &lt;/section>
 
-&lt;!-- IN-PAGE NAV (place right under HERO, before Demo) -->
+&lt;!-- IN-PAGE NAV -->
 &lt;nav class="container my-3 text-center" aria-label="Feature shortcuts">
  &lt;a class="btn btn-outline-primary btn-sm me-2 mb-2" href="#load-from-sharepoint">SharePoint/Teams&lt;/a>
  &lt;a class="btn btn-outline-primary btn-sm me-2 mb-2" href="#multi-ifc">Multi-IFC&lt;/a>
@@ -47,15 +47,15 @@
  &lt;a class="btn btn-outline-primary btn-sm mb-2" href="#color-by">Color-by&lt;/a>
 &lt;/nav>
 
-&lt;!--Load from SharePoint start-->
-&lt;section id="load-from-sharepoint" class="my-xl-7 py-5">
+&lt;!-- LOAD FROM SHAREPOINT -->
+&lt;section id="load-from-sharepoint" class="feature my-xl-7 py-5">
  &lt;div class="container">
  &lt;div class="row align-items-center">
  &lt;div class="col-lg-5 col-md-6 col-12">
- &lt;small class="text-primary text-uppercase ls-md fw-semibold">Microsoft 365–native&lt;/small>
+ &lt;small class="text-primary text-uppercase ls-md fw-semibold">Microsoft 365–native &lt;span class="badge bg-primary-subtle text-primary ms-1">Direct-from-IFC&lt;/span>&lt;/small>
  &lt;div class="mb-5 mt-4">
  &lt;h2 class="mb-3">Open IFC from SharePoint &amp; Teams — no extra logins.&lt;/h2>
- &lt;p class="lead mb-0">Keep data in your tenant. Browse sites, libraries, folders &amp; subfolders and load models straight into Power BI.&lt;/p></description></item><item><title>Leveraging SharePoint as a Common Data Environment (CDE) for Large Construction Projects</title><link>https://flinker.app/blog/sharepoint-cde-construction-projects/</link><pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-construction-projects/</guid><description>&lt;p>Large-scale construction projects often grapple with fragmented data, misaligned communications, and inefficient workflows. A Common Data Environment (CDE) addresses these challenges by providing a centralized platform to manage, collaborate on, and leverage critical project data throughout a project&amp;rsquo;s lifecycle. SharePoint, deeply integrated within Microsoft 365, emerges as a powerful, secure, and scalable solution ideal for managing complex construction data.&lt;/p>
+ &lt;p class="lead mb-0">Point to a file or folder in your tenant. The Viewer reads IFC directly — no exports, no CSV staging, no mapping.&lt;/p></description></item><item><title>Leveraging SharePoint as a Common Data Environment (CDE) for Large Construction Projects</title><link>https://flinker.app/blog/sharepoint-cde-construction-projects/</link><pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-construction-projects/</guid><description>&lt;p>Large-scale construction projects often grapple with fragmented data, misaligned communications, and inefficient workflows. A Common Data Environment (CDE) addresses these challenges by providing a centralized platform to manage, collaborate on, and leverage critical project data throughout a project&amp;rsquo;s lifecycle. SharePoint, deeply integrated within Microsoft 365, emerges as a powerful, secure, and scalable solution ideal for managing complex construction data.&lt;/p>
 &lt;h2 id="why-choose-sharepoint-as-your-cde">Why Choose SharePoint as Your CDE?&lt;/h2>
 &lt;h3 id="1-data-sovereignty-and-security">1. Data Sovereignty and Security&lt;/h3>
 &lt;p>SharePoint ensures your project data stays securely within your own Microsoft environment, enhancing data sovereignty and compliance. This reduces dependency on external third-party cloud solutions, ensuring maximum data control and security.&lt;/p></description></item><item><title>How Leading Construction Companies Use SharePoint as a Common Data Environment (CDE)</title><link>https://flinker.app/blog/sharepoint-cde-success-stories/</link><pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-success-stories/</guid><description>&lt;p>In today’s construction industry, success depends on managing data effectively across global teams, complex projects, and tight deadlines. Traditional tools like spreadsheets, shared drives, and siloed platforms are no longer enough. That’s why many leading construction firms are adopting &lt;strong>SharePoint as a Common Data Environment (CDE)&lt;/strong> transforming scattered information into streamlined, collaborative, and secure workflows.&lt;/p>
