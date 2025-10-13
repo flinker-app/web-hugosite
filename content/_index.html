@@ -28,7 +28,7 @@ disableTopSpacing: true
 
 <!--hero start-->
 <section id="get-started" class="position-relative py-10 jarallax hero-agency" data-jarallax data-speed="0.4">
-   <img class="jarallax-img w-100" src="./assets-flinker/images/landings/landing-img-8.png" alt="agency" loading="eager" fetchpriority="high" decoding="async"
+   <img class="jarallax-img w-100" src="./assets-flinker/images/landings/landing-img-9.svg" alt="agency" loading="eager" fetchpriority="high" decoding="async"
       style="object-fit: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; object-position: center;" />
    <div class="position-absolute start-0 end-0">
       <div class="container">
@@ -60,7 +60,12 @@ disableTopSpacing: true
                   <img src="./assets/images/mobile-app/star.svg" alt="star">
                   <img src="./assets/images/mobile-app/star.svg" alt="star">
                   <img src="./assets/images/mobile-app/star.svg" alt="star">
-                  <img src="./assets/images/mobile-app/star-light.svg" alt="star">
+                  <!-- 0.8 filled star to represent 4.8 rating -->
+                  <span class="position-relative d-inline-block align-middle" aria-hidden="true">
+                     <img src="./assets/images/mobile-app/star-light.svg" alt="star background">
+                     <img src="./assets/images/mobile-app/star.svg" alt="star 80% filled" class="position-absolute top-0 start-0" style="width: 100%; height: 100%; clip-path: inset(0 20% 0 0);">
+                  </span>
+                  <span class="visually-hidden">4.8 out of 5 stars</span>
                </div>
                <span class="text-white-stable">30&nbsp;reviews on</span>
                <a href="https://appsource.microsoft.com/de-de/marketplace/apps?search=flinker&page=1" target="_blank" class="lh-1 text-white-stable fw-bold">Microsoft AppSource</a>
@@ -83,7 +88,7 @@ disableTopSpacing: true
             Build on IFC, BCF, and IDS — all inside Microsoft 365.
             Open to partners, integrators, and builders. Join and <strong>earn revenues</strong>.
           </p>
-          <!-- TODO: replace with your MS Form or a /community page -->
+          <!-- Note: replace with your MS Form or a /community page if desired -->
           <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=80C2RLBJBEOcmMYdC8DcAu3Acr_HHtlOuyPGamiQECNUOVJEUkpLSU1STVlFVjhLSUhUOVhTUUdOUi4u" class="btn btn-light btn-lg fw-semibold shadow-sm">
             Join the Movement
           </a>
@@ -123,12 +128,7 @@ disableTopSpacing: true
 </section>
 <!-- Company stats -->
 
-<!-- Intro above pillars
-<div class="text-center mb-4" data-cue="fadeIn">
-  <h2 class="mb-1">OpenBIM for Microsoft 365</h2>
-  <p class="text-muted mb-0">Our ecosystem is built on three principles: openness, integration, and collaboration. </p>
-</div>
- Intro above pillars end -->
+
 
 <!-- Movement Pillars start -->
 <section class="my-xl-7 py-5">
@@ -272,6 +272,7 @@ disableTopSpacing: true
                   class="border rounded-3 img-fluid card-lift" style="width: 100%; height: 84%;" />
                <!-- Title -->
                <h4 class="mb-0 mt-3">
+                  <img src="./assets-flinker/images/microsoft/SharePoint.svg" alt="Microsoft SharePoint" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
                   SharePoint Viewer <i class="bi-box-arrow-up-right"></i>
                   <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill">
                      Free
@@ -288,6 +289,7 @@ disableTopSpacing: true
                   class="border rounded-3 img-fluid card-lift" />
                <!-- Title -->
                <h4 class="mb-0 mt-3">
+                  <img src="./assets-flinker/images/microsoft/Teams.svg" alt="Microsoft Teams" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
                   Teams Viewer <i class="bi-box-arrow-up-right"></i>
                   <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill">
                      Free
@@ -305,6 +307,7 @@ disableTopSpacing: true
                   class="border rounded-3 img-fluid card-lift" />
                <!-- Title -->
                <h4 class="mb-0 mt-3">
+                  <img src="./assets-flinker/images/microsoft/Edge.svg" alt="Microsoft Edge" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
                   Web Viewer <i class="bi-box-arrow-up-right"></i>
                   <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill">
                      Free
@@ -320,7 +323,8 @@ disableTopSpacing: true
                class="border rounded-3 img-fluid card-lift" />
             <!-- Title -->
             <h4 class="mb-0 mt-3">
-               SharePoint CDE</i>
+               <img src="./assets-flinker/images/microsoft/SharePoint.svg" alt="Microsoft SharePoint" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
+               SharePoint CDE
             </h4>
          </div>
 
@@ -332,6 +336,7 @@ disableTopSpacing: true
                   class="border rounded-3 img-fluid card-lift" />
                <!-- Title -->
                <h4 class="mb-0 mt-3">
+                  <img src="./assets-flinker/images/microsoft/SharePoint.svg" alt="Microsoft SharePoint" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
                   SharePoint Protect <i class="bi-box-arrow-up-right"></i>
                </h4>
             </a>
@@ -344,8 +349,9 @@ disableTopSpacing: true
                class="border rounded-3 img-fluid card-lift" />
             <!-- Title -->
             <h4 class="mb-0 mt-3">
-               SharePoint Document Manager</i>
-               
+               <img src="./assets-flinker/images/microsoft/SharePoint.svg" alt="Microsoft SharePoint" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
+               SharePoint Document Manager
+            </h4>
          </div>
 
          <!-- Item 7: Power BI Visual -->
@@ -357,6 +363,7 @@ disableTopSpacing: true
                   class="border rounded-3 img-fluid card-lift" />
                <!-- Title -->
                <h4 class="mb-0 mt-3">
+                  <img src="./assets-flinker/images/microsoft/Power-BI.svg" alt="Microsoft Power BI" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
                   Power BI Visual <i class="bi-box-arrow-up-right"></i>
                   <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill">
                      New
@@ -372,7 +379,8 @@ disableTopSpacing: true
                class="border rounded-3 img-fluid card-lift" />
             <!-- Title -->
             <h4 class="mb-0 mt-3">
-               Mobile Site Manager</i>
+               <img src="./assets-flinker/images/microsoft/Android.svg" alt="Android" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
+               Mobile Site Manager
             </h4>
          </div>
 
@@ -383,7 +391,8 @@ disableTopSpacing: true
                class="border rounded-3 img-fluid card-lift" />
             <!-- Title -->
             <h4 class="mb-0 mt-3">
-               Excel Site Manager</i>
+               <img src="./assets-flinker/images/microsoft/Excel.svg" alt="Microsoft Excel" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
+               Excel Site Manager
             </h4>
          </div>
 
