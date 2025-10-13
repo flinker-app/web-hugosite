@@ -8,10 +8,28 @@ layout: "single"
 disableTopSpacing: true
 ---
 
+<style>
+   /* Hero height without JS-induced reflows */
+   #get-started { min-height: 70vh; }
+   @media (min-width: 1200px) { #get-started { min-height: 100vh; } }
+
+   /* Keep outline-light legible on dark hero */
+   .hero-agency .btn.btn-outline-light {
+      --bs-btn-color: #fff;
+      --bs-btn-border-color: rgba(255,255,255,.9);
+      --bs-btn-hover-bg: rgba(255,255,255,.12);
+   }
+
+   /* Respect reduced motion: tone down parallax */
+   @media (prefers-reduced-motion: reduce) {
+      .jarallax { transform: none !important; }
+   }
+</style>
+
 <!--hero start-->
 <section id="get-started" class="position-relative py-10 jarallax hero-agency" data-jarallax data-speed="0.4">
-   <img class="jarallax-img w-100" src="./assets-flinker/images/landings/landing-img-8.png" alt="agency"
-      style="object-fit: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;" />
+   <img class="jarallax-img w-100" src="./assets-flinker/images/landings/landing-img-8.png" alt="agency" loading="eager" fetchpriority="high" decoding="async"
+      style="object-fit: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; object-position: center;" />
    <div class="position-absolute start-0 end-0">
       <div class="container">
          <div class="row">
@@ -20,11 +38,32 @@ disableTopSpacing: true
                   <div class="mb-4 text-white-stable">
                      <small class="text-uppercase ls-lg">Microsoft 365 Apps</small>
                      <h1 class="mb-3 mt-3 display-3 text-white-stable">The new era of AI-powered buildings</h1>
-                     <p class="lead mb-0">From design to operation, self-hosted Building Digital Twins in Microsoft. For
-                        human robots collaboration. Secure. Enterprise-ready.</p>
+                     <p class="lead mb-0">Self-hosted OpenBIM in Microsoft 365 — from design to operations. Secure. Enterprise-ready.</p>
                   </div>
-                  <a href="#clients" class="btn btn-primary">Learn more</a>
+                  <a href="#clients" class="btn btn-primary">Explore</a>
+                  <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" aria-label="Talk to an Expert (book a call)" class="btn btn-outline-light ms-2" style="color:#fff;border-color:rgba(255,255,255,0.9);background-color:transparent;">Talk to an Expert</a>
                </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Reviews bar in hero (stars + AppSource link) -->
+   <div class="position-absolute start-0 end-0 bottom-0" data-cue="fadeIn">
+      <div class="container">
+         <div class="row">
+            <div class="d-flex flex-row flex-wrap gap-2 align-items-center justify-content-center justify-content-md-start lh-1 py-3"
+               style="width: 100%;">
+               <span class="text-white-stable fs-6">Great</span>
+               <div>
+                  <img src="./assets/images/mobile-app/star.svg" alt="star">
+                  <img src="./assets/images/mobile-app/star.svg" alt="star">
+                  <img src="./assets/images/mobile-app/star.svg" alt="star">
+                  <img src="./assets/images/mobile-app/star.svg" alt="star">
+                  <img src="./assets/images/mobile-app/star-light.svg" alt="star">
+               </div>
+               <span class="text-white-stable">30&nbsp;reviews on</span>
+               <a href="https://appsource.microsoft.com/de-de/marketplace/apps?search=flinker&page=1" target="_blank" class="lh-1 text-white-stable fw-bold">Microsoft AppSource</a>
             </div>
          </div>
       </div>
@@ -32,203 +71,184 @@ disableTopSpacing: true
 </section>
 <!--hero end-->
 
-<!--Logo section start-->
-<div class="container position-relative" data-cue="fadeIn">
-   <div class="row border-top border-bottom">
-      <div
-         class="d-flex flex-row flex-wrap gap-2 align-items-center justify-content-center justify-content-md-start lh-1 position-lg-absolute bottom-0 mb-lg-6"
-         style="width: 100%;">
-         <span class="text-white-stable fs-6">Great</span>
-         <div>
-            <img src="./assets/images/mobile-app/star.svg" alt="star">
-            <img src="./assets/images/mobile-app/star.svg" alt="star">
-            <img src="./assets/images/mobile-app/star.svg" alt="star">
-            <img src="./assets/images/mobile-app/star.svg" alt="star">
-            <img src="./assets/images/mobile-app/star-light.svg" alt="star">
-         </div>
-         <span class="text-white-stable">30&nbsp;reviews on</span>
-          <a href="https://appsource.microsoft.com/de-de/marketplace/apps?search=flinker&page=1" target="_blank" class="lh-1 text-white-stable fw-bold">Microsoft AppSource</a>
+<!-- movement hero start adj. -->
+<section id="community" class="right-slant-shape bg-primary py-8" data-cue="fadeIn">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1" data-cue="zoomIn">
+        <div class="text-center text-white-stable">
+          <small class="text-uppercase ls-lg fw-semibold">OpenBIM • Microsoft 365 • Movement</small>
+          <h2 class="display-4 mt-3 mb-3 text-white-stable">Building the #1 OpenBIM Ecosystem for Microsoft 365</h2>
+          <p class="lead text-opacity-75 mb-5 px-lg-7">
+            Build on IFC, BCF, and IDS — all inside Microsoft 365.
+            Open to partners, integrators, and builders. Join and <strong>earn revenues</strong>.
+          </p>
+          <!-- TODO: replace with your MS Form or a /community page -->
+          <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=80C2RLBJBEOcmMYdC8DcAu3Acr_HHtlOuyPGamiQECNUOVJEUkpLSU1STVlFVjhLSUhUOVhTUUdOUi4u" class="btn btn-light btn-lg fw-semibold shadow-sm">
+            Join the Movement
+          </a>
+        </div>
       </div>
-   </div>
-</div>
-<!--Logo section end-->
+    </div>
+  </div>
+</section>
+<!-- movement hero end adj. -->
 
+<section id="clients">
+{{< pbi-user-logos >}}
+</section>
 
-
-
-<!--Trusted worldwide end-->
-<div class="my-xl-7 py-5" data-cue="fadeIn">
-   <div id="clients" class="container py-2">
-      <div class="row">
-         <div class="col-lg-10 offset-lg-1">
-            <div class="text-center mb-4 mb-lg-7">
-               <small class="text-uppercase ls-md fw-semibold">
-                  Used by
-                  <span class="fw-bold text-dark">550+</span>
-                  organizations worldwide
-               </small>
-            </div>
-            <div class="row">
-               <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
-                  <div class="row row-cols-lg-5 row-cols-md-4 row-cols-2 justify-content-center g-5">
-                     
-                     <!--
-                                     <div class="col">
-                                       <figure class="text-center mb-0">
-                                          <a href="https://www.hilti.com/" target="_blank">
-                                            <img src="./assets-flinker/images/brand-logo/brand-logo-1.svg" alt="logo" />
-                                          </a>
-                                       </figure>
-                                     </div>
-                                     <div class="col">
-                                       <figure class="text-center mb-0">
-                                          <a href="https://www.electroluxprofessional.com/" target="_blank">
-                                            <img src="./assets-flinker/images/brand-logo/brand-logo-4.svg" alt="logo" />
-                                          </a>
-                                       </figure>
-                                     </div>
-                     -->
-                      
-                     <div class="col">
-                        <figure class="text-center mb-0">
-                           <a href="https://www.ohla-group.com/" target="_blank">
-
-                              <img src="./assets-flinker/images/brand-logo/brand-logo-10.svg" alt="logo" />
-                           </a>
-
-                        </figure>
-                     </div>
-                     <div class="col">
-                        <figure class="text-center mb-0">
-                           <a href="https://www.metrostav.cz/en" target="_blank">
-                              <img src="./assets-flinker/images/brand-logo/brand-logo-15.svg" alt="logo" />
-                           </a>
-
-                        </figure>
-                     </div>
-                     <div class="col">
-                        <figure class="text-center mb-0">
-                           <a href="https://www.marti.com/ch_en/" target="_blank">
-                              <img src="./assets-flinker/images/brand-logo/brand-logo-22.svg" alt="logo" />
-                           </a>
-                        </figure>
-                     </div>
-                     <div class="col">
-                        <figure class="text-center mb-0">
-                           <a href="https://www.comune.milano.it/" target="_blank">
-                              <img src="./assets-flinker/images/brand-logo/brand-logo-16.png" alt="logo" />
-                           </a>
-                        </figure>
-                     </div>
-                     <div class="col">
-                        <figure class="text-center mb-0">
-                           <a href="https://www.arteliadigitalsolutions.com/en/" target="_blank">
-                              <img src="./assets-flinker/images/brand-logo/brand-logo-17.png" alt="logo" />
-                           </a>
-                        </figure>
-                     </div>
-                     <div class="col">
-                        <figure class="text-center mb-0">
-                           <a href="https://www.veidekke.no/" target="_blank">
-                              <img src="./assets-flinker/images/brand-logo/brand-logo-18.svg" alt="logo" />
-                           </a>
-                        </figure>
-                     </div>
-                     <div class="col">
-                        <figure class="text-center mb-0">
-                           <a href="https://www.bayer.com/en/" target="_blank">
-                              <img src="./assets-flinker/images/brand-logo/brand-logo-25.svg" alt="logo" />
-                           </a>
-                        </figure>
-                     </div>
-                     <div class="col">
-                        <figure class="text-center mb-0">
-                           <a href="https://www.multiplex.global/" target="_blank">
-                              <img src="./assets-flinker/images/brand-logo/brand-logo-26.svg" alt="logo" />
-                           </a>
-                        </figure>
-                     </div>
-
-                  </div>
-               </div>
-            </div>
-         </div>
+<!-- Company stats -->
+<section class="py-lg-9 py-5">
+  <div class="container">
+    <div class="row g-5 text-center">
+      <div class="col-md-3 col-6">
+        <h2 class="text-white-stable">1,000+</h2>
+        <h5 class="text-white-stable mb-0">Organizations Using Flinker</h5>
       </div>
-   </div>
-</div>
-<!--Trusted worldwide end-->
+      <div class="col-md-3 col-6">
+        <h2 class="text-white-stable">Hundreds</h2>
+        <h5 class="text-white-stable mb-0">of Daily App Openings</h5>
+      </div>
+      <div class="col-md-3 col-6">
+        <h2 class="text-white-stable">4.8★</h2>
+        <h5 class="text-white-stable mb-0">Microsoft AppSource Rating</h5>
+      </div>
+      <div class="col-md-3 col-6">
+        <h2 class="text-white-stable">2020</h2>
+        <h5 class="text-white-stable mb-0">Founded</h5>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Company stats -->
 
-<!--Landing pages start-->
+<!-- Intro above pillars
+<div class="text-center mb-4" data-cue="fadeIn">
+  <h2 class="mb-1">OpenBIM for Microsoft 365</h2>
+  <p class="text-muted mb-0">Our ecosystem is built on three principles: openness, integration, and collaboration. </p>
+</div>
+ Intro above pillars end -->
+
+<!-- Movement Pillars start -->
 <section class="my-xl-7 py-5">
-   <div id="usp" class="container mb-xl-7" data-cue="fadeIn">
-      <div class="row row-cols-1 row-cols-md-3 gy-4">
-         <div class="col" data-cue="zoomIn">
-            <div class="card card-lift">
-               <div class="card-body d-flex flex-column gap-4">
-                  <div>
-                     <!-- Updated BIM Collaboration Icon -->
-                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <path d="M16 3L4 10L16 17L28 10L16 3Z" fill="var(--bs-primary)" />
-                        <path opacity="0.2" d="M4 10V22L16 29L28 22V10L16 17L4 10Z" fill="var(--bs-primary)" />
-                     </svg>
-                  </div>
-                  <div class="d-flex flex-column gap-2">
-                     <h3 class="mb-0 fs-4">The Open Way</h3>
-                     <p class="mb-0">Enhance model coordination, centralize data, and improve teamwork within Microsoft
-                        365 and Open Standards like IFC, BCF, IDS.</p>
-                  </div>
+  <div id="usp" class="container mb-xl-7" data-cue="fadeIn">
+    <div class="row row-cols-1 row-cols-md-3 gy-4">
+
+      <!-- Pillar 1: Open Standards -->
+      <div class="col" data-cue="zoomIn">
+        <div class="card card-lift">
+          <div class="card-body d-flex flex-column gap-4">
+            <div>
+                     <!-- Updated Icon -->
+                     <i class="bi bi-diagram-3" style="font-size: 32px; color: var(--bs-primary);"></i>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <h3 class="mb-0 fs-4">Open Standards</h3>
+              <p class="mb-0">Work natively with IFC, IDS, and BCF to ensure open, interoperable BIM data across platforms and teams.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar 2: Built in Microsoft 365 -->
+      <div class="col" data-cue="zoomIn">
+        <div class="card card-lift">
+          <div class="card-body d-flex flex-column gap-4">
+            <div>
+                     <!-- Microsoft Integration Icon (aligned with Pillars 1 & 3) -->
+                     <i class="bi bi-microsoft" style="font-size: 32px; color: var(--bs-primary);"></i>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <h3 class="mb-0 fs-4">Built in Microsoft 365</h3>
+              <p class="mb-0">Native integration with SharePoint, Teams, Power BI, and Excel — secure, scalable, and ready for enterprise use.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar 3: Ecosystem, Not Silos -->
+      <div class="col" data-cue="zoomIn">
+        <div class="card card-lift">
+          <div class="card-body d-flex flex-column gap-4">
+            <div>
+              <!-- People / Ecosystem Icon -->
+              <i class="bi bi-people" style="font-size: 32px; color: var(--bs-primary);"></i>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <h3 class="mb-0 fs-4">Ecosystem</h3>
+              <p class="mb-0">Join, integrate, and build with us — collaborate as partners, implement at your customers, and grow the movement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Movement Pillars end -->
+
+<!-- security section -->
+<section class="py-xl-9 py-6" data-cue="fadeIn" data-show="true"
+   style="animation-name: fadeIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+   <div class="container">
+      <div class="row mb-6">
+         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
+            <div class="d-flex flex-column gap-4 text-center">
+               <div class="d-flex justify-content-center">
+                  <span
+                     class="badge bg-white text-muted border border-light-subtle rounded-pill text-uppercase fw-semibold py-2 px-3 small ls-md">Security</span>
+               </div>
+               <div class="d-flex flex-column gap-2">
+                  <h2 class="mb-0 display-6">Your Security is Our Priority</h2>
+                  <p class="mb-0">
+                     We believe that you should always have complete ownership and control of your data and processing. We deliver
+                     app solutions that run self-hosted in your existing Microsoft environment.
+                  </p>
                </div>
             </div>
          </div>
-
-         <div class="col" data-cue="zoomIn">
-            <div class="card card-lift">
-               <div class="card-body d-flex flex-column gap-4">
-                  <div>
-                     <!-- Updated Microsoft Integration Icon -->
-                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <rect x="4" y="4" width="10" height="10" fill="#F25022" />
-                        <rect x="18" y="4" width="10" height="10" fill="#7FBA00" />
-                        <rect x="4" y="18" width="10" height="10" fill="#00A4EF" />
-                        <rect x="18" y="18" width="10" height="10" fill="#FFB900" />
-                     </svg>
-                  </div>
-                  <div class="d-flex flex-column gap-2">
-                     <h3 class="mb-0 fs-4">Build in Microsoft</h3>
-                     <p class="mb-0">Work flexible within Microsoft 365, including SharePoint, Teams, Power BI, Copilot, Power
-                        Automate, and more.</p>
-                  </div>
+      </div>
+      <div class="row gy-lg-6 gy-4">
+         <div class="col-lg-4 col-md-6" data-cue="zoomIn" data-show="true"
+            style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+            <div class="d-flex flex-column gap-5 p-xxl-6 text-center p-3 card card-lift">
+               <div><img src="./assets-flinker/images/security/security.svg" alt="security"></div>
+               <div class="d-flex flex-column gap-2">
+                  <h3 class="h4">Enterprise-Ready Security</h3>
+                  <p class="mb-0">Because your data remains in your own Microsoft tenant, you benefit from the full
+                     suite of Microsoft’s security controls.</p>
                </div>
             </div>
          </div>
-
-
-         <div class="col" data-cue="zoomIn">
-            <div class="card card-lift">
-               <div class="card-body d-flex flex-column gap-4">
-                  <div>
-                     <!-- Updated AI-Powered Insights Icon -->
-                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <circle cx="16" cy="16" r="12" stroke="var(--bs-primary)" stroke-width="2" />
-                        <path d="M10 16H22M16 10V22" stroke="var(--bs-primary)" stroke-width="2" />
-                        <circle cx="16" cy="16" r="3" fill="var(--bs-primary)" />
-                     </svg>
-                  </div>
-                  <div class="d-flex flex-column gap-2">
-                     <h3 class="mb-0 fs-4">AI-Powered</h3>
-                     <p class="mb-0">Use AI tools to prompt, analyze, automate, and enhance speed across teams and all your SharePoint data.
+         <div class="col-lg-4 col-md-6" data-cue="zoomIn" data-show="true"
+            style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 200ms; animation-direction: normal; animation-fill-mode: both;">
+            <div class="d-flex flex-column gap-5 p-xxl-6 text-center p-3 card card-lift">
+               <div><img src="./assets-flinker/images/security/privacy.svg" alt="privacy"></div>
+               <div class="d-flex flex-column gap-2">
+                  <h3 class="h4">Your Data, Your AI-Power</h3>
+                  <p class="mb-0">You decide who has access and how data is shared. There’s no secondary platform to
+                     worry about or data uploads needed.</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6" data-cue="zoomIn" data-show="true"
+            style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 400ms; animation-direction: normal; animation-fill-mode: both;">
+            <div class="d-flex flex-column gap-5 p-xxl-6 text-center p-3 card card-lift">
+               <div><img src="./assets-flinker/images/security/authentication.svg" alt="authentication"></div>
+               <div class="d-flex flex-column gap-2">
+                  <h3 class="h4">Self-Hosting, SSO and MFA</h3>
+                  <p class="mb-0">Reduce external IT dependencies. Strengthen your data’s security with Microsoft’s SSO and MFA tools.
                      </p>
-                  </div>
                </div>
             </div>
          </div>
-
       </div>
    </div>
 </section>
-<!--Landing pages end-->
+<!-- security section end-->
 
-<!--Stunning landing start-->
+<!--Apps Section-->
 <section class="py-5 bg-light-subtle" id="demo">
    <div class="container my-lg-7" data-cues="fadeIn">
       <div class="row mb-8">
@@ -248,7 +268,7 @@ disableTopSpacing: true
             <a href="https://appsource.microsoft.com/en-us/product/office/WA200006238?tab=Overview" target="_blank">
 
                <!-- Thumbnail -->
-               <img src="./assets-flinker/images/hero/sharepoint-webpart-ifc-viewer.gif" alt="Image"
+               <img src="./assets-flinker/images/hero/sharepoint-webpart-ifc-viewer.gif" alt="SharePoint Viewer"
                   class="border rounded-3 img-fluid card-lift" style="width: 100%; height: 84%;" />
                <!-- Title -->
                <h4 class="mb-0 mt-3">
@@ -264,7 +284,7 @@ disableTopSpacing: true
          <div class="col" data-cues="zoomIn">
             <a href="https://appsource.microsoft.com/en-us/product/office/WA200007412?tab=Overview" target="_blank">
                <!-- Thumbnail -->
-               <img src="./assets-flinker/images/hero/Teams-Viewer-hero2.png" alt="Image"
+               <img src="./assets-flinker/images/hero/Teams-Viewer-hero2.png" alt="Teams Viewer"
                   class="border rounded-3 img-fluid card-lift" />
                <!-- Title -->
                <h4 class="mb-0 mt-3">
@@ -295,22 +315,20 @@ disableTopSpacing: true
 
          <!-- Item 4: SharePoint CDE -->
          <div class="col" data-cues="zoomIn">
-            <!-- <a href="./index.html" target="_blank"> -->
             <!-- Thumbnail -->
-            <img src="./assets-flinker/images/hero/Flinker-Studio-Hero2.png" alt="Image"
+            <img src="./assets-flinker/images/hero/Flinker-Studio-Hero2.png" alt="SharePoint CDE"
                class="border rounded-3 img-fluid card-lift" />
             <!-- Title -->
             <h4 class="mb-0 mt-3">
                SharePoint CDE</i>
             </h4>
-            <!-- </a> -->
          </div>
 
          <!-- Item 5: SharePoint Protect -->
          <div class="col" data-cues="zoomIn">
             <a href="https://appsource.microsoft.com/en-us/product/office/WA200007197?tab=Overview" target="_blank">
                <!-- Thumbnail -->
-               <img src="./assets-flinker/images/hero/Protect-Hero.png" alt="Image"
+               <img src="./assets-flinker/images/hero/Protect-Hero.png" alt="SharePoint Protect"
                   class="border rounded-3 img-fluid card-lift" />
                <!-- Title -->
                <h4 class="mb-0 mt-3">
@@ -321,15 +339,13 @@ disableTopSpacing: true
 
          <!-- Item 6: SharePoint Document Manager -->
          <div class="col" data-cues="zoomIn">
-            <!-- <a href="./index.html" target="_blank"> -->
             <!-- Thumbnail -->
-            <img src="./assets-flinker/images/hero/Document-Manager-Hero.png" alt="Image"
+            <img src="./assets-flinker/images/hero/Document-Manager-Hero.png" alt="SharePoint Document Manager"
                class="border rounded-3 img-fluid card-lift" />
             <!-- Title -->
             <h4 class="mb-0 mt-3">
                SharePoint Document Manager</i>
-               <!-- </h4> -->
-               </a>
+               
          </div>
 
          <!-- Item 7: Power BI Visual -->
@@ -337,7 +353,7 @@ disableTopSpacing: true
             <a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer?tab=Overview"
                target="_blank">
                <!-- Thumbnail -->
-               <img src="./assets-flinker/images/hero/PBI-Visual-Hero.png" alt="Image"
+               <img src="./assets-flinker/images/hero/PBI-Visual-Hero.png" alt="Power BI Visual"
                   class="border rounded-3 img-fluid card-lift" />
                <!-- Title -->
                <h4 class="mb-0 mt-3">
@@ -351,58 +367,55 @@ disableTopSpacing: true
 
          <!-- Item 8: Mobile Site Manager -->
          <div class="col" data-cues="zoomIn">
-            <!-- <a href="./index.html" target="_blank"> -->
             <!-- Thumbnail -->
-            <img src="./assets-flinker/images/hero/Site-Mobile.png" alt="Image"
+            <img src="./assets-flinker/images/hero/Site-Mobile.png" alt="Mobile Site Manager"
                class="border rounded-3 img-fluid card-lift" />
             <!-- Title -->
             <h4 class="mb-0 mt-3">
                Mobile Site Manager</i>
             </h4>
-            <!-- </a> -->
          </div>
 
          <!-- Item 9: Excel Site Manager -->
          <div class="col" data-cues="zoomIn">
-            <!-- <a href="./index.html" target="_blank"> -->
             <!-- Thumbnail -->
-            <img src="./assets-flinker/images/hero/Defect-Management-Hero.png" alt="Image"
+            <img src="./assets-flinker/images/hero/Defect-Management-Hero.png" alt="Excel Site Manager"
                class="border rounded-3 img-fluid card-lift" />
             <!-- Title -->
             <h4 class="mb-0 mt-3">
                Excel Site Manager</i>
             </h4>
-            <!-- </a> -->
          </div>
 
       </div>
    </div>
 </section>
-<!--Stunning landing end-->
+<!--Apps Section end-->
 
-
-<!--speak with expert-->
+<!-- partner & integrators promo (kept design) -->
 <section class="my-9">
    <div class="container">
       <div class="row line-pattern bg-primary rounded-3 p-7 g-0">
          <div class="col-lg-8 offset-lg-2 z-1">
             <div class="text-center py-md-7">
-               <h2 class="h1 text-white-stable">Want to speak with a expert?</h2>
+               <h2 class="h1 text-white-stable">Partners & Integrators</h2>
                <p class="text-white-50 px-lg-7 mb-5">
-                  We’d love to hear about your business
-                  challenges, even if you’re not sure what your next
-                  step is. Tell us how you work with IFC and Microsoft. No strings attached.
+                  Integrate into your AECO software or implement Flinker BIM Apps.
+                  <br class="d-none d-md-block" />Join • Integrate • Earn
                </p>
-               <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/"
-                  class="btn btn-dark">Let's talk</a>
+               <div class="d-flex gap-3 justify-content-center flex-wrap">
+                  <a href="/services/partners/" class="btn btn-light">Become a Partner</a>
+                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=80C2RLBJBEOcmMYdC8DcAu3Acr_HHtlOuyPGamiQECNUOVJEUkpLSU1STVlFVjhLSUhUOVhTUUdOUi4u" class="btn btn-dark">Join the Movement</a>
+               </div>
             </div>
          </div>
       </div>
    </div>
+   
 </section>
+<!-- partner & integrators promo end -->
 
 <!--speak with expert-->
-
 <section class="py-xl-9 py-6" data-cue="fadeIn" data-show="true"
    style="animation-name: fadeIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
    <div class="container">
@@ -475,9 +488,9 @@ disableTopSpacing: true
       </div>
    </div>
 </section>
+<!--speak with expert end-->
 
-
-<!--More block theme start-->
+<!-- Features -->
 <section class="py-5">
    <div class="container my-lg-7">
       <div class="row">
@@ -635,65 +648,8 @@ disableTopSpacing: true
       </div>
    </div>
 </section>
+<!-- Features end -->
 
-<section class="py-xl-9 py-6" data-cue="fadeIn" data-show="true"
-   style="animation-name: fadeIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
-   <div class="container">
-      <div class="row mb-6">
-         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
-            <div class="d-flex flex-column gap-4 text-center">
-               <div class="d-flex justify-content-center">
-                  <span
-                     class="badge bg-white text-muted border border-light-subtle rounded-pill text-uppercase fw-semibold py-2 px-3 small ls-md">Security</span>
-               </div>
-               <div class="d-flex flex-column gap-2">
-                  <h2 class="mb-0 display-6">Your Security is Our Priority</h2>
-                  <p class="mb-0">
-                     We believe that you should always have complete ownership and control of your data and processing. We deliver
-                     app solutions that run self-hosted in your existing Microsoft environment.
-                  </p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="row gy-lg-6 gy-4">
-         <div class="col-lg-4 col-md-6" data-cue="zoomIn" data-show="true"
-            style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
-            <div class="d-flex flex-column gap-5 p-xxl-6 text-center p-3 card card-lift">
-               <div><img src="./assets-flinker/images/security/security.svg" alt="security"></div>
-               <div class="d-flex flex-column gap-2">
-                  <h3 class="h4">Enterprise-Ready Security</h3>
-                  <p class="mb-0">Because your data remains in your own Microsoft tenant, you benefit from the full
-                     suite of Microsoft’s security controls.</p>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-4 col-md-6" data-cue="zoomIn" data-show="true"
-            style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 200ms; animation-direction: normal; animation-fill-mode: both;">
-            <div class="d-flex flex-column gap-5 p-xxl-6 text-center p-3 card card-lift">
-               <div><img src="./assets-flinker/images/security/privacy.svg" alt="privacy"></div>
-               <div class="d-flex flex-column gap-2">
-                  <h3 class="h4">Your Data, Your AI-Power</h3>
-                  <p class="mb-0">You decide who has access and how data is shared. There’s no secondary platform to
-                     worry about or data uploads needed.</p>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-4 col-md-6" data-cue="zoomIn" data-show="true"
-            style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 400ms; animation-direction: normal; animation-fill-mode: both;">
-            <div class="d-flex flex-column gap-5 p-xxl-6 text-center p-3 card card-lift">
-               <div><img src="./assets-flinker/images/security/authentication.svg" alt="authentication"></div>
-               <div class="d-flex flex-column gap-2">
-                  <h3 class="h4">Self-Hosting, SSO and MFA</h3>
-                  <p class="mb-0">Reduce external IT dependencies. Strengthen your data’s security with Microsoft’s SSO and MFA tools.
-                     </p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<!--More block theme end-->
 <!-- awards section -->
 <section class="py-xl-8 py-lg-7 py-5" data-cue="fadeIn">
    <!--Logo section start-->
@@ -742,113 +698,26 @@ disableTopSpacing: true
 </section>
 <!-- awards section -->
 
-<!--Our articles start-->
-<!-- <section class="my-xl-9 my-5">
+<!--speak with expert-->
+<section class="my-9">
    <div class="container">
-      <div class="row">
-         <div class="col-lg-6 offset-lg-3">
-            <div class="text-center mb-xl-7 mb-5">
-               <h2 class="h1 mb-3">Latest news</h2>
-               <p class="mb-0">Stay informed about our latest Microsoft Apps, integrations, and industry trends.</p>
-            </div>
-         </div>
-         <div class="table-responsive-lg">
-            <div class="row g-5 flex-nowrap pb-4 pb-lg-0 me-5 me-lg-0">
-               <article class="col-lg-4 col-md-6 col-12">
-                  <figure class="mb-4 zoom-img">
-                     <a href="./blog-single.html">
-                        <img src="./assets-flinker/images/blog/blog-img-1.png" alt="blog" class="img-fluid rounded-3" />
-                     </a>
-                  </figure>
-
-                  <a href="#!"
-                     class="badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase">Release</a>
-                  <h3 class="my-3 lh-base h4">
-                     <a href="./blog-single.html" class="text-reset">Revolutionizing BIM
-                        Collaboration with Power BI</a>
-                  </h3>
-                  <div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
-                     <div class="d-flex align-items-center">
-                        <img src="./assets/images/avatar/avatar-8.jpg" alt="Avatar"
-                           class="avatar avatar-xs rounded-circle" />
-                        <div class="ms-2">
-                           <a href="#" class="text-reset fs-6">Leon
-                              Fischer</a>
-                        </div>
-                     </div>
-                     <div class="ms-3"><span class="fs-6">Feb 2,
-                           2025</span></div>
-                  </div>
-               </article>
-               <article class="col-lg-4 col-md-6 col-12">
-                  <figure class="mb-4 zoom-img">
-                     <a href="./blog-single.html">
-                        <img src="./assets/images/blog/blog-img-6.jpg" alt="blog" class="img-fluid rounded-3" />
-                     </a>
-                  </figure>
-
-                  <a href="#!"
-                     class="badge bg-warning-subtle text-warning-emphasis rounded-pill text-uppercase">Viewer</a>
-                  <h3 class="my-3 lh-base h4">
-                     <a href="./blog-single.html" class="text-reset">Enhancing Issue Tracking with MS List</a>
-                  </h3>
-                  <div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
-                     <div class="d-flex align-items-center">
-                        <img src="./assets/images/avatar/avatar-6.jpg" alt="Avatar"
-                           class="avatar avatar-xs rounded-circle" />
-                        <div class="ms-2">
-                           <a href="#" class="text-reset fs-6">Matteo
-                              Schneider</a>
-                        </div>
-                     </div>
-                     <div class="ms-3"><span class="fs-6">Jan 23,
-                           2025</span></div>
-                  </div>
-               </article>
-               <article class="col-lg-4 col-md-6 col-12">
-                  <figure class="mb-4 zoom-img">
-                     <a href="./blog-single.html">
-                        <img src="./assets/images/blog/blog-img-4.jpg" alt="blog" class="img-fluid rounded-3" />
-                     </a>
-                  </figure>
-
-                  <a href="#!" class="badge bg-success-subtle text-success-emphasis rounded-pill text-uppercase">GPT</a>
-                  <h4 class="my-3 lh-base">
-                     <a href="./blog-single.html" class="text-reset">Query IFC elements with natural language</a>
-                  </h4>
-                  <div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
-                     <div class="d-flex align-items-center">
-                        <img src="./assets/images/avatar/avatar-4.jpg" alt="Avatar"
-                           class="avatar avatar-xs rounded-circle" />
-                        <div class="ms-2">
-                           <a href="#" class="text-reset fs-6">Sophie
-                              Dupont</a>
-                        </div>
-                     </div>
-                     <div class="ms-3"><span class="fs-6">Dec 11,
-                           2024</span></div>
-                  </div>
-               </article>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-lg-12">
-               <div class="mt-lg-8 mt-5">
-                  <a href="./blog.html" class="icon-link icon-link-hover text-dark">
-                     Read more news
-                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                           d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                     </svg>
-                  </a>
-               </div>
+      <div class="row line-pattern bg-primary rounded-3 p-7 g-0">
+         <div class="col-lg-8 offset-lg-2 z-1">
+            <div class="text-center py-md-7">
+               <h2 class="h1 text-white-stable">Want to speak with a expert?</h2>
+               <p class="text-white-50 px-lg-7 mb-5">
+                  We’d love to hear about your business
+                  challenges, even if you’re not sure what your next
+                  step is. Tell us how you work with IFC, IDS and BCF in Microsoft. No strings attached.
+               </p>
+               <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/"
+                  class="btn btn-dark">Let's talk</a>
             </div>
          </div>
       </div>
-</section> -->
-<!--Our articles end-->
-
+   </div>
+</section>
+<!--speak with expert end-->  
 
 <!--Call to action start-->
 <section class="py-5 bg-light-subtle" data-cue="fadeIn">
@@ -922,21 +791,4 @@ disableTopSpacing: true
 </section>
 <!--Call to action end-->
 
-<!-- Extra JS -->
-<script>
-   function adjustHeroSection() {
-      var hero = document.getElementById('get-started');
-      if (!hero) return; // Falls das Element nicht existiert, nichts tun
-      var vh = window.innerHeight;
-      // Beispiel: Auf Bildschirmen ab 1200px volle Viewport-Höhe, sonst 70% der Viewport-Höhe
-      if (window.innerWidth >= 1200) {
-         hero.style.minHeight = vh + 'px';
-      } else {
-         hero.style.minHeight = (vh * 0.7) + 'px';
-      }
-   }
-
-   // Beim Laden und bei Größenänderungen ausführen
-   document.addEventListener('DOMContentLoaded', adjustHeroSection);
-   window.addEventListener('resize', adjustHeroSection);
-</script>
+<!-- Extra JS removed: replaced with CSS for hero sizing to avoid reflows -->
