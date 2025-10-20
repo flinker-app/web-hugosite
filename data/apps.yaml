@@ -10,6 +10,11 @@ excel-viewer:
   logo: "/assets-flinker/images/brand-logo/ifc-viewer-logo.svg"
   caption: "Excel IFC Viewer"
 
+powerbi-viewer:
+  name: "Power BI IFC Viewer"
+  url: "https://marketplace.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer?tab=Overvieww"
+  logo: "/assets-flinker/images/brand-logo/ifc-viewer-logo.svg"
+  caption: "Power BI IFC Viewer"
 
 # Beispiel für weitere Apps:
 # power-bi-viewer:
