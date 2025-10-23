@@ -145,8 +145,14 @@
             {{ with .avatar }}<img src="{{ . }}" alt="Avatar" class="avatar avatar-xxl rounded-circle" />{{ end }}
           </div>
           {{ with .text }}<p class="lead mb-4"><em>{{ . }}</em></p>{{ end }}
+          {{/* Prefer href, then link, then url if provided */}}
+          {{ $link := or .href (or .link .url) }}
           <div class="d-md-flex align-items-center justify-content-center">
-            {{ with .author }}<h4 class="mb-0">{{ . }}</h4>{{ end }}
+            {{ if and .author $link }}
+              <h4 class="mb-0"><a href="{{ $link }}" target="_blank" rel="noopener nofollow" aria-label="View {{ .author }} on LinkedIn">{{ .author }}</a></h4>
+            {{ else }}
+              {{ with .author }}<h4 class="mb-0">{{ . }}</h4>{{ end }}
+            {{ end }}
             {{ with .role }}<small class="ms-2">{{ . }}</small>{{ end }}
           </div>
         </div>
@@ -245,13 +251,13 @@
   function openLightbox(src,alt){
     if(!lightboxEl||!lightboxImg) return;
     lightboxImg.src=src; lightboxImg.alt=alt||'Expanded screenshot';
-    if(window.bootstrap&&window.bootstrap.Modal){ new window.bootstrap.Modal(lightboxEl).show(); }
-    else{ window.open(src,'_blank','noopener'); }
+    if(globalThis.bootstrap&&globalThis.bootstrap.Modal){ new globalThis.bootstrap.Modal(lightboxEl).show(); }
+    else{ globalThis.open(src,'_blank','noopener'); }
   }
-  frames.forEach(f=>{
-    const img=f.querySelector('img'); if(!img) return;
+  for(const f of frames){
+    const img=f.querySelector('img'); if(!img) continue;
     f.addEventListener('click',()=>openLightbox(img.src,img.alt));
     f.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); openLightbox(img.src,img.alt);} });
-  });
+  }
 })();
 </script>

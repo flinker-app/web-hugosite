@@ -12,13 +12,46 @@
 
 <div class="bg-light rounded-3 p-4 p-lg-5 mb-lg-9 mb-md-7 mb-5 shadow-sm">
 
-  <!-- Row 1: Logo + Company (left) -->
+  <!-- Row 1: Logo + Company (left) with internal link and external icons -->
   <div class="d-flex align-items-center gap-3 mb-4">
     {{ with $p.company_logo }}
       <img src="{{ . }}" alt="{{ $p.company | default "Client" }} logo"
            class="rounded-2" style="height:36px;width:auto;object-fit:contain;">
     {{ end }}
-    <h3 class="mb-0">{{ or $p.company $p.client $p.company_name "—" }}</h3>
+
+    {{/* Internal link target: /customers filtered by first industry if available */}}
+    {{- $firstIndustry := "" -}}
+    {{ with $p.industry }}{{ $firstIndustry = (index . 0) }}{{ end }}
+    {{- $internal := cond (ne $firstIndustry "") (printf "/customers/?industry=%s" (urlize $firstIndustry)) "/customers/" -}}
+
+    <div class="d-flex align-items-center">
+      <h3 class="mb-0">
+        <a href="{{ $internal }}" class="text-decoration-none text-dark">
+          {{ or $p.company $p.client $p.company_name "—" }}
+        </a>
+      </h3>
+
+      {{/* External website icon */}}
+      {{ with $p.company_url }}
+        <a href="{{ . }}" target="_blank" rel="noopener nofollow"
+           class="ms-2 text-muted" aria-label="Company website">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M10.5 1h4v4h-1.5V3.206L7.853 8.353l-1.206-1.206L11.794 2.5H10.5V1z"/>
+            <path d="M14 9.5V14a1 1 0 0 1-1 1H2A1 1 0 0 1 1 14V3a1 1 0 0 1 1-1h4.5v1.5H2.5v10h10V9.5H14z"/>
+          </svg>
+        </a>
+      {{ end }}
+
+      {{/* External LinkedIn icon */}}
+      {{ with $p.company_linkedin }}
+        <a href="{{ . }}" target="_blank" rel="noopener nofollow"
+           class="ms-2 text-muted" aria-label="Company on LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M1.146 1.146A1.5 1.5 0 0 1 2.5 0h11a1.5 1.5 0 0 1 1.5 1.5v11A1.5 1.5 0 0 1 13.5 14h-11A1.5 1.5 0 0 1 1 12.5v-11c0-.398.158-.78.439-1.061zM4.943 12.394V6.169H2.542v6.225h2.401zM3.743 5.175a1.39 1.39 0 1 0 0-2.778 1.39 1.39 0 0 0 0 2.778zM13.458 12.394V8.617c0-2.02-1.08-2.959-2.52-2.959-1.162 0-1.687.64-1.982 1.09v-.935H6.555c.03.617 0 6.575 0 6.575h2.401V8.434c0-.211.015-.422.077-.573.168-.422.55-.859 1.192-.859.84 0 1.176.648 1.176 1.598v3.794h2.057z"/>
+          </svg>
+        </a>
+      {{ end }}
+    </div>
   </div>
 
   <!-- Row 2+: Meta items as flexible chips/blocks -->
