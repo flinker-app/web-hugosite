@@ -1,10 +1,12 @@
 baseURL = "https://flinker.app/"
 languageCode = "en-us"
-title = "Flinker | Building Digital Twins in Microsoft 365"
+title = "Flinker | The built-environment layer for Microsoft 365"
+description = "Building the global OpenBIM layer for Microsoft 365 — secure, self-hosted, and enterprise-grade."
 
 [params]
   author = "Flinker GmbH"
-  description = "We are Flinker, accelerating human to robot collaboration for construction, property and facility management processes to protect and empower humans."
+  tagline = "Building the global OpenBIM layer for Microsoft 365"
+  legacy_description = "We are Flinker, accelerating human to robot collaboration for construction, property and facility management processes to protect and empower humans."
   linkedinImage = "images/linkedin-image.jpg"
   youtubeChannel = "IhrYouTubeKanalID"
   githubRepo = "https://github.com/flinker-app"
