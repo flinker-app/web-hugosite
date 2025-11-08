@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="160"
+   width="120"
    height="80"
-   viewBox="0 0 160 80"
+   viewBox="0 0 120 80"
    fill="none"
    version="1.1"
    id="svg1023"
@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -55,21 +55,20 @@
      inkscape:document-rotation="0" />
   <mask
      id="mask0_1838_1151"
-     style="mask-type:luminance"
      maskUnits="userSpaceOnUse"
      x="18"
      y="27"
      width="124"
      height="26">
     <path
-       d="M141.538 27.6923H18.4614V52.6923H141.538V27.6923Z"
-       fill="white"
+       d="M 141.538,27.6923 H 18.4614 v 25 H 141.538 Z"
+       fill="#ffffff"
        id="path998" />
   </mask>
   <g
      style="fill:none"
      id="g96"
-     transform="matrix(0.65625,0,0,0.65625,30.125,29.5)"
+     transform="matrix(0.65625,0,0,0.65625,10.125,29.5)"
      inkscape:export-xdpi="96"
      inkscape:export-ydpi="96">
     <path
