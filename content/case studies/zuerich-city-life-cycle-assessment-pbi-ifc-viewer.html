@@ -1,0 +1,116 @@
+---
+title: "City of Zürich: Power BI IFC analytics with KBOB & SIA 416"
+description: "Prototype dashboard connects IFC model data to KBOB material codes and SIA 416 building/floor filters using an Excel source, enabling maintainable, standards-based analysis and simple publishing via iFrame."
+date: 2025-11-12
+draft: false
+url: "/customers/zuerich-city/"
+layout: "single"
+type: "article"
+shareImage: "/assets-flinker/images/case-studies/zuerich-city/zuerich-city-hero_3.jpg"
+twitterCard: "summary_large_image"
+
+region: "Europe"
+company_size: "Public Sector"
+company: "City of Zürich - Amt für Hochbauten"
+industry: ["Government", "Construction"]
+company_logo: "/assets-flinker/images/case-studies/zuerich-city/zuerich-city-logo.svg"
+
+use_case: ["Life cycle assessment (KBOB)", "IFC materials classification", "Power BI IFC reporting"]
+tech_stack: ["Power BI", "SharePoint"]
+
+content_type: "case_study"
+disableTopSpacing: true
+
+flags:
+  show_gallery: true
+  show_apps: true
+  show_testimonial: true
+
+sections_order: ["company","challenge","solution","results","testimonial","future","apps"]
+
+workflows_enabled:
+  intro: "Flinker’s modular Microsoft 365 apps enable these connected BIM workflows:"
+  items:
+    - "Maintain KBOB material mappings in Excel and link them to IFC elements for LCA."
+    - "Filter reports by building and floor per SIA 416 with embedded model context."
+
+# Apps shown as logos; use slugs from data/apps.yaml
+apps: ["powerbi-visual"]
+
+hero:
+  h1: "City of Zürich: Power BI IFC analytics with KBOB & SIA 416"
+  lead: "IFC model data connected to KBOB codes and SIA 416 filters in a maintainable Power BI report."
+  image: "/assets-flinker/images/case-studies/zuerich-city/zuerich-city-hero_3.jpg"
+  image_alt: "Power BI prototype filtering IFC data with KBOB materials and SIA 416 levels"
+
+gallery:
+  - src: "/assets-flinker/images/case-studies/zuerich-city/zuerich-city_access-all-data-from-ifc-file-like-a-database_1.png"
+    alt: "Access IFC data like a database for reporting"
+  - src: "/assets-flinker/images/case-studies/zuerich-city/zuerich-city_oekobilanzierung-KBOB_2.png"
+    alt: "KBOB-aligned material classification for LCA"
+
+sections:
+  company: |
+    The City of Zürich’s Amt für Hochbauten (AHB) is the city’s building owner representative. It plans and delivers sustainable buildings on the path to net-zero and defines concepts, norms, and standards for municipal construction.
+
+    Responsibilities include strategic planning, feasibility studies and condition assessments; architecture competitions and planner selection; project management for municipal building projects including procurement and financials; Kunst und Bau; and maintaining the city’s plan archive. AHB also supports projects in non-profit housing and city-supported third-party institutions.
+
+    Facts and scale: around 6,000 city-owned buildings; ~CHF 650 million invested per year; ~CHF 25 million in services; 220 employees with a 50:50 gender ratio, 60% working part-time; about 50 architecture competitions and planner selections each year; and 80% of planned new-build area meeting the 2000-Watt Society requirements. The city administration targets climate-neutral operations by 2035.
+
+    In digital delivery and reporting, the team works within Swiss norms and city guidelines. For this prototype, we aligned to SIA 416 (areas/levels) and KBOB material codes to enable consistent ecological accounting and reporting across assets.
+
+  challenge_h2: "Unify IFC attributes and Swiss standards in Power BI without extra work for planners"
+  challenge: |
+    Existing pilot projects store information in varying IFC locations, making it hard to aggregate materials, quantities, and room/level data. Zürich wanted a standards-based report that: (1) reads IFC attributes reliably; (2) classifies materials via KBOB codes; (3) filters by building and floor per SIA 416; and (4) can be maintained by the team without asking planners to remodel data. A lightweight, Power BI-first approach was preferred, with the option to migrate to a database later.
+
+  solution_h3: "Excel-driven KBOB mapping with embedded model context in Power BI"
+  solution_intro: |
+    Flinker set up a Power BI report that connects IFC element data with an Excel table containing KBOB mappings. Filters for building and floors (SIA 416) let users slice results while keeping the 3D model context available via the embedded IFC visual in Power Bi. Governance stays simple — update the IFC models stored in SharePoint and refresh. For publishing, an iFrame (e.g., in SharePoint or Zürich city publishing portal) keeps access straightforward for wider stakeholders.
+
+  solution_steps:
+    - "Provide example IFC models to validate attribute placement and end-to-end dataflow."
+    - "Normalize material identification via KBOB codes, including codes appearing within text fields."
+    - "Join IFC quantities/attributes with the Excel KBOB table in a Power BI dataset."
+    - "Add building and floor selectors aligned to SIA 416; keep 3D viewer available alongside visuals."
+    - "Agree on publishing approach (iFrame) and access points (e.g., SharePoint) to minimize authoring-license needs."
+    - "Coordinate storyboard inputs with Build Analytics for competition dashboards."
+
+  solution_notes: |
+    Start with Excel as the authoritative mapping source to reduce coordination overhead; later, swap to a managed database without changing the reporting logic. 
+
+  results_intro: "Outcomes reported by the user:"
+  results_list:
+    - "Competition dashboards; simple model scopes (e.g., walls, floors, doors, rooms) covered first"
+    - "Clear publishing (e.g., SharePoint)"
+
+  client_fit_h2: "Zürich’s BIM strategy: data ownership & long-term flexibility"
+  client_fit: |
+    <p>The Flinker Power BI IFC Visual aligns with AHB’s principles by keeping data in the city’s Microsoft 365 tenant and avoiding lock-in:</p>
+    <ul>
+      <li><strong>Data stays in Microsoft 365:</strong> Reports, mappings, and files live in SharePoint/OneDrive and Power BI—no external hosting is required</li>
+      <li><strong>Open standards first:</strong> Works over IFC, remaining authoring-tool agnostic and portable across projects</li>
+      <li><strong>Flexible governance:</strong> Start with Excel/Lists for KBOB mappings; later swap to a database without changing report logic</li>
+      <li><strong>Embed anywhere the city works:</strong> Publish via SharePoint/Teams/web using standard M365 security and access control</li>
+      <li><strong>Iterate without vendor lock-in:</strong> Models, mappings, and visuals can evolve independently of any single platform</li>
+    </ul>
+
+  client_fit_gallery:
+    - src: "/assets-flinker/images/case-studies/zuerich-city/zuerich-city_data-management_1.png"
+      alt: "Durchgängiges Datenmanagement – Vision BIM Stadt Zürich"
+    - src: "/assets-flinker/images/case-studies/zuerich-city/zuerich-city_system-requirements_1.png"
+      alt: "Modularer Aufbau des Systems – Anforderungen & Komponenten"
+    - src: "/assets-flinker/images/case-studies/zuerich-city/zuerich-city_data-mesh_1.png"
+      alt: "Daten Mesh Ansatz des Programms BIM Stadt Zürich"
+    - src: "/assets-flinker/images/case-studies/zuerich-city/zuerich-city_data-mesh_2.png"
+      alt: "Daten Mesh Ansatz des Programms BIM Stadt Zürich mit Flinker Power BI IFC Visual und SharePoint IFC Viewer"
+
+  future: |
+    Short term: deliver dashboards for competition evaluation. Mid term: automate refresh, harden governance around mandatory KBOB codes, and migrate from Excel to a database. Longer term: publish through the city’s selected CDE.
+
+
+testimonial:
+  text: "Das Schöne an Ihrer Lösung ist, dass Sie sehr gutes Datenwissen haben – und mit Power BI sind Sie überhaupt ein zentraler Entwickler solcher Tools."
+  author: "Herr Robert Urbanek"
+  role: "Amt für Hochbauten, Stadt Zürich"
+  avatar: "/assets-flinker/images/case-studies/zuerich-city/profile.jpg"
+---

@@ -12,6 +12,8 @@ description = "Building the global OpenBIM layer for Microsoft 365 — secure, s
   githubRepo = "https://github.com/flinker-app"
   apps_heading = "BIM Apps for Microsoft 365 used"
   apps_tagline = "All Flinker Apps run natively in your Microsoft 365 tenant — no external servers or databases."
+  caseStudyClientFitCarouselInterval = 5000  # ms interval for client_fit_gallery auto-slide (global)
+  caseStudyClientFitCarouselIndicators = true # show position indicators (dots) for client_fit_gallery when >2 images
 
 [server] 
   port = 1313  # Standardport für `hugo server`

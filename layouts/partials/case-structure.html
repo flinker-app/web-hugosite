@@ -106,6 +106,15 @@
         </div>
         {{ end }}
 
+        {{/* --- Custom Blocks injected by position (e.g., after_solution) --- */}}
+        {{ with $p.custom_blocks }}
+          {{ range . }}
+            {{ if eq .position "after_solution" }}
+              <div class="mb-lg-9 mb-md-7 mb-5">{{ .html | safeHTML }}</div>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
         
 
         <!-- Results -->
@@ -135,7 +144,90 @@
         </div>
         {{ end }}
 
+        <!-- Client fit (optional) -->
+        {{ if or $p.sections.client_fit_h2 $p.sections.client_fit }}
+        <div class="row mb-lg-9 mb-md-7 mb-5">
+          <div class="col-lg-4 col-md-4 col-12">
+            <h4 class="mb-3 mb-md-0 text-black-50">Client fit</h4>
+          </div>
+          <div class="col-lg-8 col-md-8 col-12">
+            {{ with $p.sections.client_fit_h2 }}<h2 class="mb-3">{{ . }}</h2>{{ end }}
+            {{ with $p.sections.client_fit }}<div class="mb-0">{{ . | markdownify }}</div>{{ end }}
+          </div>
+        </div>
+        {{ end }}
+
       </div>
+
+      {{/* Client fit gallery (full-width, same as main gallery) */}}
+      {{ with $p.sections.client_fit_gallery }}
+      <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+        <style>
+          .screenshot-frame{position:relative;overflow:hidden;aspect-ratio:16/9;background-color:#f8f9fa;cursor:zoom-in}
+          .screenshot-frame img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease;display:block}
+          .screenshot-frame:hover img,.screenshot-frame:active img{transform:scale(1.08)}
+          .screenshot-frame:focus{outline:2px solid rgba(13,110,253,.6);outline-offset:2px}
+          .screenshot-frame:focus img{transform:scale(1.08)}
+        </style>
+        {{ $count := len . }}
+        {{ if le $count 2 }}
+          <div class="row mb-lg-9 mb-md-7 mb-5 g-4">
+            {{ range . }}
+            <div class="col-lg-6 col-md-6 col-12">
+              <button class="screenshot-frame rounded-3 p-0 border-0 bg-transparent" type="button" aria-label="Open screenshot in fullscreen">
+                <img src="{{ .src }}" alt="{{ .alt }}" class="img-fluid" />
+              </button>
+            </div>
+            {{ end }}
+          </div>
+        {{ else }}
+          {{ $interval := $.Site.Params.caseStudyClientFitCarouselInterval | default 5000 }}
+          {{ $showIndicators := $.Site.Params.caseStudyClientFitCarouselIndicators | default false }}
+          <div id="clientFitCarousel" class="carousel slide mb-lg-9 mb-md-7 mb-5" data-bs-ride="carousel" data-bs-interval="{{ $interval }}">
+            {{ if $showIndicators }}
+            <div class="carousel-indicators">
+              {{ $items := . }}
+              {{ range $i, $v := $items }}
+                {{ if eq (mod $i 2) 0 }}
+                  <button type="button" data-bs-target="#clientFitCarousel" data-bs-slide-to="{{ div $i 2 }}" class="{{ if eq $i 0 }}active{{ end }}" aria-label="Slide {{ add (div $i 2) 1 }}" {{ if eq $i 0 }}aria-current="true"{{ end }}></button>
+                {{ end }}
+              {{ end }}
+            </div>
+            {{ end }}
+            <div class="carousel-inner">
+              {{ $items := . }}
+              {{ range $index, $img := $items }}
+                {{ if eq (mod $index 2) 0 }}
+                <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
+                  <div class="container">
+                    <div class="row g-4">
+                {{ end }}
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <button class="screenshot-frame rounded-3 p-0 border-0 bg-transparent" type="button" aria-label="Open screenshot in fullscreen">
+                          <img src="{{ $img.src }}" alt="{{ $img.alt }}" class="img-fluid" />
+                        </button>
+                      </div>
+                {{ $isEndOfRow := eq (mod $index 2) 1 }}
+                {{ $isLast := eq (add $index 1) (len $items) }}
+                {{ if or $isEndOfRow $isLast }}
+                    </div>
+                  </div>
+                </div>
+                {{ end }}
+              {{ end }}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#clientFitCarousel" data-bs-slide="prev" aria-label="Previous slide">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#clientFitCarousel" data-bs-slide="next" aria-label="Next slide">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        {{ end }}
+      </div>
+      {{ end }}
 
       <!-- Testimonial (full width center like your original) -->
       {{ with $p.testimonial }}
