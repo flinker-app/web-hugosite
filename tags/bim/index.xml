@@ -48,7 +48,7 @@
 &lt;/nav>
 
 &lt;!-- LOAD FROM SHAREPOINT -->
-&lt;section id="load-from-sharepoint" class="feature my-xl-7 py-5">
+&lt;section id="load-from-sharepoint" class="feature py-5">
  &lt;div class="container">
  &lt;div class="row align-items-center">
  &lt;div class="col-lg-5 col-md-6 col-12">
