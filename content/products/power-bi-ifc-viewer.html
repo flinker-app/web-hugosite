@@ -446,57 +446,68 @@ schema:
     </div>
  </section>
 
-<!-- PRICING -->
+<!-- PRICING 1.0.3 (Plans first, then Template matrix, then Embedded add-on) -->
 <section aria-labelledby="pricing-title" style="font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height:1.45; color:var(--bs-body-color); padding:72px 0;">
   <style>
-    .btn-theme{display:inline-block;text-decoration:none;background:var(--bs-primary,#0d6efd);color:#fff;padding:10px 14px;border-radius:10px;font-weight:600;border:0}
-    .btn-theme-outline{display:inline-block;text-decoration:none;background:transparent;color:var(--bs-primary,#0d6efd);padding:10px 14px;border-radius:10px;font-weight:600;border:2px solid var(--bs-primary,#0d6efd)}
-    .pro-accent{border:2px solid var(--bs-primary,#0d6efd);box-shadow:0 6px 24px rgba(13,110,253,.10);border-radius:16px;padding:24px;position:relative}
-    .heading-theme{margin:0 0 8px;font-weight:700;color:var(--bs-emphasis-color,#0f172a);font-size:clamp(28px,4vw,40px);text-align:center}
-
-    /* Group labels */
-  .group-label{font-size:14px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--bs-secondary-color);margin:12px 0 16px}
-
-    /* Grid (2x2 on desktop, 1x on mobile) */
-    .pricing-grid{display:grid;gap:20px}
+    .btn-theme{display:inline-block;text-decoration:none;background:var(--bs-primary,#0d6efd);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;border:0}
+    .btn-theme-outline{display:inline-block;text-decoration:none;background:transparent;color:var(--bs-primary,#0d6efd);padding:10px 14px;border-radius:10px;font-weight:700;border:2px solid var(--bs-primary,#0d6efd)}
+    .heading-theme{margin:0 0 10px;font-weight:900;color:var(--bs-emphasis-color,#0f172a);font-size:clamp(28px,4vw,40px);text-align:center;letter-spacing:-.01em}
+    .muted{color:var(--bs-secondary-color)}
+    .group-label{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--bs-secondary-color);margin:22px 0 14px}
+    .pricing-grid{display:grid;gap:24px}
     @media (min-width: 992px){
-      .pricing-grid{grid-template-columns:repeat(2,1fr);gap:32px}
+      .pricing-grid{grid-template-columns:repeat(2,1fr);gap:40px}
       .plan-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}
     }
-
-    /* Card base */
-    .plan{border:1px solid #e2e8f0;border-radius:16px;padding:24px}
-    .plan h3{margin:0 0 8px;font-size:22px}
+    .plan{border:1px solid #e2e8f0;border-radius:16px;padding:26px;background:#fff;box-shadow:0 10px 30px rgba(15,23,42,.06)}
+    .plan h3{margin:0 0 8px;font-size:22px;font-weight:900}
     .plan p.sub{margin:0 0 12px;color:var(--bs-secondary-color)}
-  .price{margin:0 0 16px;font-size:28px;font-weight:800;color:var(--bs-emphasis-color)}
+    .price{margin:0 0 16px;font-size:28px;font-weight:950;color:var(--bs-emphasis-color)}
     .plan ul{margin:0 20px 20px;padding:0}
+    .pro-accent{border:1px solid #e2e8f0;box-shadow:0 14px 44px rgba(15,23,42,.10);border-radius:16px;padding:26px;position:relative;background:#fff}
+    .pill{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid #e2e8f0;font-size:12px;font-weight:900}
+    .card{border:1px solid #e2e8f0;border-radius:16px;padding:24px;background:#fff;box-shadow:0 10px 30px rgba(15,23,42,.05)}
+    .card-title{margin:0 0 8px;font-size:18px;font-weight:900;color:var(--bs-emphasis-color,#0f172a)}
+    .card-sub{margin:0 0 14px;color:var(--bs-secondary-color)}
+    .note{font-size:13px;color:var(--bs-secondary-color)}
+    .kicker{max-width:820px;margin:0 auto 28px;text-align:center}
+    table.matrix{width:100%;border-collapse:separate;border-spacing:0;border:1px solid #e2e8f0;border-radius:16px;overflow:hidden}
+    table.matrix th, table.matrix td{padding:12px 12px;border-bottom:1px solid #e2e8f0;vertical-align:top}
+    table.matrix th{background:#f8fafc;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#475569}
+    table.matrix tr:last-child td{border-bottom:none}
+    .yes{font-weight:950}
+    .no{color:#94a3b8}
+    .cta-row{display:grid;gap:14px;margin-top:14px}
+    @media (min-width: 992px){ .cta-row{grid-template-columns:1fr 1fr;gap:18px} }
+    .cta-box{border:1px solid #e2e8f0;border-radius:16px;padding:16px;background:#fff}
+    .cta-box h4{margin:0 0 6px;font-size:16px;font-weight:900}
+    .cta-box p{margin:0 0 10px}
+    .link-muted{color:var(--bs-secondary-color);text-decoration:none;border-bottom:1px dotted #cbd5e1}
+    .link-muted:hover{color:var(--bs-emphasis-color)}
+    .subheading-theme{margin:0;font-weight:950;color:var(--bs-emphasis-color,#0f172a);font-size:clamp(18px,2.2vw,24px);letter-spacing:-.01em}
+    .section-gap{height:112px}
   </style>
 
   <div style="max-width:1120px; margin:0 auto; padding:0 20px;">
     <h2 id="pricing-title" class="heading-theme">Pricing & Plans</h2>
-    <p class="text-muted" style="text-align:center; color:var(--bs-secondary-color); margin:0 auto 36px; max-width:720px;">
-      Transparent tenant-wide pricing. No hidden per-GB or per-project fees.<br>
-      Start free in Power BI Desktop. Upgrade when your team is ready to share.
-    </p>
 
-        <!-- Quick clarity badges 
-    <div class="d-flex flex-wrap justify-content-center gap-2 mb-2" aria-label="pricing policy badges">
-      <span class="badge rounded-pill" style="background:#eef4ff;color:#0d47a1;border:1px solid #d6e4ff;">Per tenant</span>
-      <span class="badge rounded-pill" style="background:#eef4ff;color:#0d47a1;border:1px solid #d6e4ff;">No per-user fees</span>
-      <span class="badge rounded-pill" style="background:#eef9f0;color:#0f5132;border:1px solid #d1e7dd;">Unlimited MS365 viewers (Business)</span>
-    </div> -->
+    <div class="kicker">
+      <p class="muted" style="margin:0;">
+        Start free in Power BI Desktop. Upgrade when you need project-scale loading and sharing.
+      </p>
 
-    <!-- What is a tenant? mini explainer -->
-    <div class="text-center">
-      <button class="btn btn-link btn-sm p-0 align-baseline" type="button" data-bs-toggle="collapse" data-bs-target="#tenantHelp" aria-expanded="false" aria-controls="tenantHelp">
-        What is a Microsoft 365 tenant?
-      </button>
-      <div id="tenantHelp" class="collapse small text-muted mt-2" style="max-width:720px; margin:0 auto;">
-        A Microsoft 365 tenant is your organization’s dedicated Microsoft cloud environment — your users, groups, domains, and security policies. Pricing is per tenant, not per user.
+      <!-- What is a tenant? mini explainer -->
+      <div style="margin-top:8px;">
+        <button class="btn btn-link btn-sm p-0 align-baseline" type="button" data-bs-toggle="collapse" data-bs-target="#tenantHelp" aria-expanded="false" aria-controls="tenantHelp">
+          What is per-tenant pricing?
+        </button>
+        <div id="tenantHelp" class="collapse small muted mt-2" style="max-width:720px; margin:0 auto;">
+          A Microsoft 365 tenant is your organization’s dedicated Microsoft cloud environment — your users, groups, domains, and security policies. Pricing is per tenant, not per user.
+        </div>
       </div>
     </div>
 
-
+    <!-- PLANS -->
     <div class="pricing-grid">
 
       <!-- Editors group -->
@@ -504,34 +515,57 @@ schema:
         <div class="group-label">For editors — start here</div>
         <div class="plan-pair">
 
-          <!-- Free -->
-          <article aria-labelledby="free" class="plan">
-            <h3 id="free">Free</h3>
-            <p class="sub">Build reports in Power BI Desktop</p>
+          <!-- Starter -->
+          <article aria-labelledby="plan-starter" class="plan">
+            <h3 id="plan-starter">Starter (Free)</h3>
+            <p class="sub">Build first reports in Power BI Desktop</p>
             <p class="price">€0</p>
-            <ul>
-              <li>1 free starter template</li>
-              <li>IFC in Power BI Desktop</li>
-              <li>Core features to build first reports</li>
-              <li><strong>No</strong> Service sharing</li>
+            <ul class="list-unstyled" style="margin:0 0 20px; padding:0;">
+              <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
+                <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+                <span><strong>Starter template</strong> included</span>
+              </li>
+              <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;" title="Fast to start with Power Query—extracts a subset of IFC properties (ideal for first reports).">
+                <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+                <span>Power Query extraction (subset of IFC properties)</span>
+              </li>
+              <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;" title="Compare multiple IFC models in one visual and analyze them with standard Power BI filters.">
+                <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+                <span>Multi-IFC viewing &amp; analysis (great for first comparisons)</span>
+              </li>
+              <li class="d-flex align-items-start" style="gap:10px; margin:0;">
+                <i class="bi bi-x-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+                <span><strong>No</strong> Power BI Service sharing</span>
+              </li>
             </ul>
             <a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer" class="btn-theme">Start free</a>
           </article>
 
-          <!-- Pro (Editors) -->
-          <article aria-labelledby="pro" class="pro-accent">
-            <div style="position:absolute; top:-12px; right:16px; background:#fef3c7; color:#b45309; font-weight:800; font-size:12px; padding:4px 8px; border-radius:999px;">Most popular</div>
-            <h3 id="pro">Pro (Editors)</h3>
-            <p class="sub">Unlock advanced editor features</p>
-            <p class="price">€99 <span style="font-size:14px; font-weight:500; color:var(--bs-secondary-color);">/month / tenant</span></p>
-            <ul>
-              <li><strong>Multi-IFC</strong> loading</li>
-              <li><strong>Extended query</strong> / data extension</li>
-              <li><strong>Color-by</strong> features</li>
-              <li>All editors included</li>
-              <li>Email support</li>
+          <!-- Pro -->
+          <article aria-labelledby="plan-pro" class="pro-accent">
+            <div style="position:absolute; top:-12px; right:16px; background:#f8fafc; color:#475569; font-weight:900; font-size:12px; padding:4px 10px; border-radius:999px; border:1px solid #e2e8f0;">Most popular</div>
+            <h3 id="plan-pro">Pro</h3>
+            <p class="sub">Project-scale analysis for editors</p>
+            <p class="price">€99 <span style="font-size:14px; font-weight:600; color:var(--bs-secondary-color);">/month / tenant</span></p>
+            <ul class="list-unstyled" style="margin:0 0 20px; padding:0;">
+              <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
+                <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+                <span><strong>Pro template</strong> included (folder + subfolder loading)</span>
+              </li>
+              <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;" title="Query all IFC properties locally (up to 10 GB)—privacy-first, data stays on the device.">
+                <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+                <span>Full-property local query up to <strong>10 GB</strong> (privacy-first)</span>
+              </li>
+              <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;" title="Color elements by any property (status, system, level, custom fields) and drive it with DAX for fully customized visuals.">
+                <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+                <span>Color-by any field (DAX-customizable)</span>
+              </li>
+              <li class="d-flex align-items-start" style="gap:10px; margin:0;" title="All Power BI report editors in your tenant are covered—no per-editor licensing">
+                <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+                <span>Unlimited editors per tenant (no per-editor licensing)</span>
+              </li>
             </ul>
-            <a href="https://buy.stripe.com/8x24gy6aueFCdMU4UDcZa02" class="btn-theme">Unlock Pro</a>
+            <a href="https://buy.stripe.com/8x24gy6aueFCdMU4UDcZa02" class="btn-theme-outline">Upgrade to Pro</a>
           </article>
 
         </div>
@@ -539,59 +573,166 @@ schema:
 
       <!-- Teams/org group -->
       <div>
-        <div class="group-label">For teams & organizations — scale up</div>
+        <div class="group-label">For teams &amp; organizations — scale up</div>
         <div class="plan-pair">
 
-          <!-- Business (Sharing & Viewers) -->
-          <article aria-labelledby="business" class="plan">
-            <h3 id="business">Business (Sharing)</h3>
-            <p class="sub">Enable Power BI Service sharing & unlimited viewing</p>
-            <p class="price">€299 <span style="font-size:14px; font-weight:500; color:var(--bs-secondary-color);">/month / tenant</span></p>
-            <ul>
-              <li>Everything in Pro</li>
-              <li>Power BI Service sharing included</li>
-              <li><strong>All MS365 viewers covered</strong></li>
-              <li>Multi-IFC subfolder loading</li>
-              <li>Priority support</li>
+          <!-- Business -->
+          <article aria-labelledby="plan-business" class="plan">
+            <h3 id="plan-business">Business</h3>
+            <p class="sub">Sharing in Power BI Service + tenant-wide viewing</p>
+            <p class="price">€299 <span style="font-size:14px; font-weight:600; color:var(--bs-secondary-color);">/month / tenant</span></p>
+            <ul class="list-unstyled" style="margin:0 0 20px; padding:0;">
+              <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
+                <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+                <span>Everything in Pro</span>
+              </li>
+              <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;" title="Use the visual in Power BI Service (cloud) for viewing and sharing—beyond Power BI Desktop.">
+                <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+                <span>Power BI Service (online) supported</span>
+              </li>
+              <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;" title="Share reports broadly: viewers in your Microsoft 365 tenant can view the report without requiring individual Flinker PBI visual licenses.">
+                <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+                <span><strong>All Microsoft 365 viewers covered</strong></span>
+              </li>
+              <li class="d-flex align-items-start note" style="gap:10px; margin:0;">
+                <i class="bi bi-info-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+                <span>Need Embedded? See add-on below.</span>
+              </li>
             </ul>
-            <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true" class="btn-theme-outline">Talk to sales</a>
+            <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true" class="btn-theme-outline">Enable sharing</a>
           </article>
 
           <!-- Enterprise -->
-          <article aria-labelledby="enterprise" class="plan">
-            <h3 id="enterprise">Enterprise</h3>
-            <p class="sub">For large-scale rollouts & performance</p>
-            <p class="price">€999 <span style="font-size:14px; font-weight:500; color:var(--bs-secondary-color);">starting /mo. / ten.</span></p>
-            <ul>
-              <li>Everything in Business</li>
-              <li>API for advanced performance on ultra large datasets</li>
-              <li>Roadmap influence</li>
-              <li>Early access & custom features</li>
-              <li>Dedicated success manager & SLAs</li>
-              <li>Enterprise onboarding</li>
+          <article aria-labelledby="plan-enterprise" class="plan">
+            <h3 id="plan-enterprise">Enterprise</h3>
+            <p class="sub">Maximum scale &amp; performance</p>
+            <p class="price">€999 <span style="font-size:14px; font-weight:600; color:var(--bs-secondary-color);">starting /mo. / ten.</span></p>
+            <ul class="list-unstyled" style="margin:0 0 20px; padding:0;">
+              <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
+                <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+                <span>Everything in Business</span>
+              </li>
+              <li class="d-flex align-items-start" style="gap:10px; margin:0;" title="Query very large model libraries via API with full properties—built for scale and performance.">
+                <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+                <span>Unlimited model size via API (full properties)</span>
+              </li>
             </ul>
             <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true" class="btn-theme-outline">Contact us</a>
           </article>
 
         </div>
       </div>
-
     </div>
 
+    <p class="note text-center" style="margin:16px 0 0;">
+      Prefer testing first? Get a monthly, cancel-anytime user pro-license on
+      <a class="link-muted" href="https://marketplace.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer?tab=PlansAndPrice">Microsoft marketplace</a>.
+    </p>
+
+    <!-- Embedded add-on -->
+    <div style="margin-top:28px;">
+      <div class="group-label">Add-on</div>
+      <div class="card">
+        <div style="display:flex; gap:18px; flex-wrap:wrap; align-items:flex-start; justify-content:space-between;">
+          <div style="min-width:260px;">
+            <h3 style="margin:0 0 6px; font-size:18px;">Power BI Embedded support</h3>
+            <div class="muted small" style="max-width:560px;">
+              Use the visual in embedded analytics scenarios (customer-facing apps/portals), beyond the Power BI Service UI — especially for agencies and ISVs.
+            </div>
+            <div class="note" style="margin-top:8px; max-width:560px;">
+              Learn more: <a class="link-muted" href="https://docs.flinker.app/docs/sharing-power-bi-ifc-reports-with-external-users.html#option-3-power-bi-embedded-app-owns-data--custom-client-portal">Embedded docs</a>
+            </div>
+          </div>
+          <div style="text-align:right;">
+            <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true" class="btn-theme-outline">Discuss Embedded</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="section-gap" aria-hidden="true"></div>
+
+    <!-- TEMPLATES (visible, not hidden) -->
+    <div style="padding:0; border:0; background:transparent; box-shadow:none;">
+      <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:space-between;">
+        <div>
+          <div class="card-title">
+            Connect &amp; Load
+            <span class="note" style="margin-left:8px; padding:2px 8px; border:1px solid #e2e8f0; border-radius:999px; background:#f8fafc;">
+              PBIX template capabilities
+            </span>
+          </div>
+          <div class="card-sub" style="margin:0;">Choose how you load IFC models: single file or folders/subfolders.</div>
+        </div>
+        <div class="pill" style="color:var(--bs-secondary-color); font-weight:800;">Included with your plan</div>
+      </div>
+
+      <table class="matrix" aria-label="Template capabilities matrix" style="margin-top:12px;">
+        <thead>
+          <tr>
+            <th style="width:44%;">Capability</th>
+            <th style="width:28%;">Starter template (Free)</th>
+            <th style="width:28%;">Pro template (Included in Pro+)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td title="Load one IFC model from SharePoint or your local drive."><strong>Single file</strong></td>
+            <td class="yes" title="Load one IFC model from SharePoint or your local drive to build your first report in minutes.">Yes</td>
+            <td class="yes" title="Load IFC models from SharePoint or your local drive—ideal for quick checks and single-model reporting.">Yes</td>
+          </tr>
+          <tr>
+            <td title="Quick cross-model test (limited)."><strong>Multiple files</strong></td>
+            <td class="yes" title="Load up to 3 IFC models to test cross-model analysis before upgrading.">Up to 3</td>
+            <td class="no" title="Legacy: multi-file loading is being replaced by folder/subfolder loading for better scalability.">Legacy</td>
+          </tr>
+          <tr>
+            <td title="Load all IFC files from a folder."><strong>Folder loading</strong></td>
+            <td class="no" title="Upgrade to Pro to load all IFC files from a folder for project-scale reporting.">No</td>
+            <td class="yes" title="Load all IFC files from a SharePoint or local folder to analyze full projects in one report.">Yes</td>
+          </tr>
+          <tr>
+            <td title="Includes folder trees (subfolders)."><strong>Subfolder loading</strong></td>
+            <td class="no" title="Upgrade to Pro to load entire folder trees (including subfolders) for large projects and model libraries.">No</td>
+            <td class="yes" title="Load large model libraries by providing one folder path—includes all subfolders for maximum scale.">Yes</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Template CTAs -->
+      <div class="cta-row">
+        <div class="cta-box">
+          <h4>Starter template (Free)</h4>
+          <p class="note" style="margin:0 0 12px; min-height:40px;">Power BI Desktop PBIX template.</p>
+          <a class="btn-theme" href="https://customvisualspackages.powerbi.com/publishedpackages/ifcviewer.3.3.0.0.pbix">Download PBIX</a>
+          <div class="note" style="margin-top:10px;">
+            Prefer AppSource? <a class="link-muted" href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer">View on AppSource</a>
+          </div>
+        </div>
+
+        <div class="cta-box">
+          <h4>Pro template (Pro+)</h4>
+          <p class="note" style="margin:0 0 12px; min-height:40px;">Folder + subfolder loading.</p>
+          <a class="btn-theme-outline" href="https://buy.stripe.com/8x24gy6aueFCdMU4UDcZa02">Upgrade to Pro</a>
+          <div class="note" style="margin-top:10px;">Instant delivery after purchase.</div>
+        </div>
+      </div>
+
+      <p class="note" style="margin:14px 6px 0;">
+        <strong>Tip:</strong> Works with any cloud drive that syncs to Windows Explorer (ACC, Dalux, BIMcollab, Trimble, Google, Box, Dropbox, etc.).
+      </p>
+    </div>
+
+
+
     <!-- Notes -->
-    <div style="margin-top:32px; font-size:14px; color:var(--bs-secondary-color);">
+    <div style="margin-top:30px; font-size:14px; color:var(--bs-secondary-color);">
       <p><strong>Notes:</strong></p>
-        <ul style="margin:0 0 0 20px; padding:0;">
-          <li>Free plan supports Power BI Desktop only; sharing requires Business or Enterprise.</li>
-          <li>All plans include secure MS365 sign-on for both editors and viewers.</li>
-          <li>All pricing is per tenant. There are no per‑user, per project, per GB file size fees in any plan.</li>
-          <li>Business plan includes unlimited viewers today; if future scaling options are introduced, customers will be informed in advance at renewal.</li>
-          <li>Prices exclude VAT. Annual billing by default.</li>
-          <li>Save with long-term commitments: 10% off 2-year plans, 15% off 3-year plans.</li>
-          <li>Current prices reflect our introductory offer — early customers lock in these rates.</li>
-
-
-        </ul>
+      <ul style="margin:0 0 0 20px; padding:0;">
+        <li>Starter and Pro are designed for Power BI Desktop. Sharing in Power BI Service is included from Business.</li>
+        <li>All pricing is per tenant. There are no per-user fees for editors or viewers within the included plan scope.</li>
+        <li>Prices exclude VAT. Annual billing by default.</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -1048,7 +1189,7 @@ schema:
                  data-bs-target="#faqTenant"
                  aria-expanded="false"
                  aria-controls="faqTenant">
-                What is a Microsoft 365 tenant?
+                What is per-tenant pricing?
                 <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
               </a>
             </h2>
