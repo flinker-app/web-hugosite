@@ -246,7 +246,7 @@ schema:
 </nav>
 
 <!-- LOAD FROM SHAREPOINT -->
-<section id="load-from-sharepoint" class="feature my-xl-7 py-5">
+<section id="load-from-sharepoint" class="feature py-5">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5 col-md-6 col-12">
@@ -271,7 +271,7 @@ schema:
 </section>
 
 <!-- MULTI-IFC -->
-<section id="multi-ifc" class="feature my-xl-7 py-5 bg-light">
+<section id="multi-ifc" class="feature py-5 bg-light">
   <div class="container pb-lg-5">
     <div class="row align-items-center">
       <div class="col-lg-6 col-md-6 col-12 order-lg-1">
@@ -296,7 +296,7 @@ schema:
 </section>
 
 <!-- EXTENDED QUERY -->
-<section id="extended-query" class="feature my-xl-7 py-5">
+<section id="extended-query" class="feature py-5">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5 col-md-6 col-12">
@@ -321,7 +321,7 @@ schema:
 </section>
 
 <!-- COLOR-BY -->
-<section id="color-by" class="feature my-xl-7 py-5 bg-light">
+<section id="color-by" class="feature py-5 bg-light">
   <div class="container pb-lg-5">
     <div class="row align-items-center">
       <div class="col-lg-6 col-md-6 col-12 order-lg-1">
@@ -1544,6 +1544,116 @@ schema:
     </div>
   </div>
 </section>
+
+<!-- SHARING OPTIONS MATRIX -->
+<section id="sharing-options" class="py-8" style="padding:72px 0;">
+  <style>
+    /* Scoped to sharing-options */
+    #sharing-options .frame{
+      border:1px solid #e2e8f0;
+      border-radius:16px;
+      background:var(--bs-body-bg,#fff);
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+      overflow:hidden;
+    }
+    #sharing-options table{margin:0; border-collapse:separate; border-spacing:0; width:100%;}
+    #sharing-options thead{background:#f8fafc;}
+    #sharing-options th,
+    #sharing-options td{padding:12px 12px; vertical-align:top;}
+    #sharing-options th{
+      font-size:12px;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      color:#475569;
+      border-bottom:1px solid #e2e8f0;
+    }
+    #sharing-options td{border-bottom:1px solid #e2e8f0;}
+    #sharing-options tr:last-child td{border-bottom:none;}
+    #sharing-options .label{
+      display:inline-flex; align-items:center; gap:6px;
+      padding:6px 10px;
+      border-radius:999px;
+      font-weight:800;
+      font-size:12px;
+      background:#fff;
+      color:var(--bs-secondary-color,#64748b);
+      border:1px solid #e2e8f0;
+    }
+    #sharing-options .note{color:var(--bs-secondary-color,#64748b); font-size:13px;}
+    @media (max-width:768px){
+      #sharing-options th, #sharing-options td{padding:12px;}
+    }
+  </style>
+
+  <div class="container" style="max-width:1120px;">
+  <div class="text-center mb-4">
+    <h2 class="mb-2" style="letter-spacing:-0.01em;">How do I share IFC reports?</h2>
+    <p class="text-muted mb-0" style="max-width:720px;margin:0 auto;">
+      Match your audience to the right sharing path and plan. Everything stays in your Microsoft 365 tenant.
+    </p>
+  </div>
+
+  <div class="frame">
+    <table aria-label="Sharing options matrix">
+      <thead>
+        <tr>
+          <th style="width:24%;">If you need to…</th>
+          <th style="width:22%;">Best sharing option</th>
+          <th style="width:26%;">Power BI licensing</th>
+          <th style="width:28%;">Flinker plan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Build & test in Desktop (no sharing)</td>
+          <td>Power BI Desktop only</td>
+          <td>Editor: Power BI Desktop</td>
+          <td><span class="label">Starter (Free)</span> or <span class="label">Pro</span></td>
+        </tr>
+        <tr>
+          <td>Share with internal viewers</td>
+          <td>Publish to workspace/app (tenant)</td>
+          <td>Standard Power BI Service licensing</td>
+          <td><span class="label">Business</span></td>
+        </tr>
+        <tr>
+          <td>Share with named external users</td>
+          <td>Entra B2B guest sharing (report/app)</td>
+          <td>Publisher: Pro/PPU; Guests: Pro/PPU or Premium/Fabric capacity</td>
+          <td><span class="label">Business</span></td>
+        </tr>
+        <tr>
+          <td>Portal-like experience in SharePoint/Teams</td>
+          <td>Embed in SharePoint/Teams + guests</td>
+          <td>Matches workspace/app licensing</td>
+          <td><span class="label">Business</span></td>
+        </tr>
+        <tr>
+          <td>Branded client portal, many external viewers</td>
+          <td>Power BI Embedded (app-owns-data)</td>
+          <td>Capacity-based (Embedded/Fabric); no per-viewer licenses</td>
+          <td><span class="label">Enterprise</span> + <span class="label">Embedded add-on</span></td>
+        </tr>
+        <tr>
+          <td>Public demo or marketing sample</td>
+          <td>Publish to web (public/unauthenticated)</td>
+          <td>Publish-to-web rules; demo data only</td>
+          <td>Any plan; <strong>demo content only</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="text-center mt-3">
+    <a class="btn btn-outline-primary btn-sm"
+        href="https://docs.flinker.app/docs/sharing-power-bi-ifc-reports-with-external-users.html#option-3-power-bi-embedded-app-owns-data--custom-client-portal">
+      See detailed sharing guidance
+    </a>
+    <p class="note mt-2 mb-0">Embedded is an add-on; pricing is capacity-based via Power BI Embedded/Fabric.</p>
+  </div>
+</div>
+</section>
+
 
 <!-- FOOTER CTA -->
 <section class="py-lg-9 py-md-8 py-5 bg-light">
