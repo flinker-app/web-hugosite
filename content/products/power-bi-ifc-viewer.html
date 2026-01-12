@@ -493,16 +493,40 @@ schema:
 
     <div class="kicker">
       <p class="muted" style="margin:0;">
-        Start free in Power BI Desktop. Upgrade when you need project-scale loading and sharing.
+        Start free in Power BI Desktop. Pilot per user in AppSource. Scale per tenant.
       </p>
+    </div>
 
-      <!-- What is a tenant? mini explainer -->
-      <div style="margin-top:8px;">
-        <button class="btn btn-link btn-sm p-0 align-baseline" type="button" data-bs-toggle="collapse" data-bs-target="#tenantHelp" aria-expanded="false" aria-controls="tenantHelp">
-          What is per-tenant pricing?
-        </button>
-        <div id="tenantHelp" class="collapse small muted mt-2" style="max-width:720px; margin:0 auto;">
-          A Microsoft 365 tenant is your organization’s dedicated Microsoft cloud environment — your users, groups, domains, and security policies. Pricing is per tenant, not per user.
+    <!-- PILOT (per user) -->
+    <div class="card" style="margin:22px auto 28px; max-width:920px;">
+      <div style="display:flex; gap:18px; flex-wrap:wrap; align-items:center; justify-content:space-between;">
+        <div style="min-width:280px; flex:1 1 520px;">
+          <div class="d-flex align-items-center gap-2 flex-wrap" style="margin-bottom:6px;">
+            <div class="card-title" style="margin:0;">Business (Per user)</div>
+            <span class="pill">Monthly • Cancel anytime</span>
+          </div>
+          <div class="muted small" style="max-width:70ch;">
+            Business features, per user. Great for pilots.
+          </div>
+
+          <div style="margin-top:10px;">
+            <div class="d-flex align-items-start note" style="gap:10px; margin:0 0 6px;">
+              <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+              <span>Purchase &amp; manage via Microsoft AppSource</span>
+            </div>
+            <div class="d-flex align-items-start note" style="gap:10px; margin:0;">
+              <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+              <span>Easy org-wide deployment by IT via <strong>admin.microsoft.com</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <div style="min-width:240px; text-align:right;">
+          <div class="d-flex flex-column align-items-end" style="gap:10px;">
+            <a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer?tab=Overview" target="_blank" rel="noopener" aria-label="View on Microsoft AppSource">
+              <img src="/assets-flinker/images/microsoft/MS_AppSource.png" alt="Microsoft AppSource" class="img-fluid" style="height:78px; width:auto;" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -624,11 +648,6 @@ schema:
       </div>
     </div>
 
-    <p class="note text-center" style="margin:16px 0 0;">
-      Prefer testing first? Get a monthly, cancel-anytime user pro-license on
-      <a class="link-muted" href="https://marketplace.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer?tab=PlansAndPrice">Microsoft marketplace</a>.
-    </p>
-
     <!-- Embedded add-on -->
     <div style="margin-top:28px;">
       <div class="group-label">Add-on</div>
@@ -730,7 +749,7 @@ schema:
       <p><strong>Notes:</strong></p>
       <ul style="margin:0 0 0 20px; padding:0;">
         <li>Starter and Pro are designed for Power BI Desktop. Sharing in Power BI Service is included from Business.</li>
-        <li>All pricing is per tenant. There are no per-user fees for editors or viewers within the included plan scope.</li>
+        <li>Pro, Business, and Enterprise are priced per tenant.</li>
         <li>Prices exclude VAT. Annual billing by default.</li>
       </ul>
     </div>
@@ -794,6 +813,34 @@ schema:
   </div>
 </section>
 <!-- /HOW IT WORKS -->
+
+<!-- GET IT FROM APPSOURCE -->
+<section>
+  <div class="container py-7">
+    <div class="row line-pattern bg-primary rounded-3 py-7 g-0">
+      <div class="col-md-8 offset-md-2">
+        <div class="text-center position-relative z-1 py-5 px-4">
+          <div class="mb-4">
+            <span class="badge border border-white rounded-pill px-3 py-2">
+              Free • Runs in your Microsoft 365 tenant
+            </span>
+          </div>
+          <h2 class="text-white-stable mb-3">Get the free IFC Viewer for Microsoft 365</h2>
+          <p class="text-white-50 mb-4">
+            Get the Flinker IFC Visual for Power BI from Microsoft AppSource. No external servers. Works right in your tenant.
+          </p>
+          <div class="d-flex justify-content-center">
+            <a class="d-inline-block" href="https://marketplace.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer?tab=PlansAndPrice" target="_blank" rel="noopener">
+              <img src="/assets-flinker/images/microsoft/MS_AppSource.png"
+                   alt="Get it from Microsoft AppSource"
+                   class="img-fluid" style="height:80px; width:auto;" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- DATA SERVICES & SUPPORT -->
 <section id="data-services" class="py-6 py-lg-8">
