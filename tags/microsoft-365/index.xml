@@ -21,9 +21,9 @@
 &lt;/section>
 
 &lt;!--Demo section end-->
-&lt;section class="container py-lg-8 py-5">
+&lt;section class="container py-lg-8 py-5" style="max-width:1120px;">
  &lt;div class="row justify-content-center">
- &lt;div class="col-md-10 col-12">
+ &lt;div class="col-12">
  &lt;div class="text-center position-relative" data-cue="zoomIn">
  &lt;iframe title="ifc-large" style="width: 100%; aspect-ratio: 16 / 10;" width="100%" src="https://app.powerbi.com/view?r=eyJrIjoiOTgwNmVhYjYtZGFlMS00MGU4LTg4NTItMWU4OWQ3MmU1MDA5IiwidCI6IjQ0YjY0MGYzLTQ5YjAtNDMwNC05Yzk4LWM2MWQwYmMwZGMwMiJ9" allowFullScreen="true" class="img-fluid bg-light p-3 rounded-3 border">&lt;/iframe>
  &lt;div class="position-absolute top-50 d-none d-lg-block ms-lg-n5" data-cue="slideInLeft">
