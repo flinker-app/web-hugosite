@@ -37,6 +37,6 @@ pdf_path: "/assets-flinker/legal/Flinker-Services-Terms-v2026-01.pdf"
 <hr class="my-5" />
 
 <p class="text-muted small">
-  Note: The PDF file is expected at <code>{{< param key="pdf_path" >}}</code> under <code>static/assets-flinker/legal/</code>.
+  PDF downloads are provided for convenience (e.g., procurement/offline review).
 </p>
 
