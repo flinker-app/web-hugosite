@@ -1,14 +1,20 @@
 {{- $desc := or (.Params.description | plainify) (.Summary | plainify) -}}
 {{- $shareImage := .Params.shareImage | default .Params.linkedinImage -}}
 
-<title>{{ .Title }} | {{ .Site.Title }}</title>
+{{- $pageTitle := or .Title .Params.title -}}
+{{- if and (not $pageTitle) (eq .RelPermalink "/legal/support-plans/") -}}
+	{{- with .Site.GetPage "section" "legal/support-plans" -}}
+		{{- $pageTitle = .Title -}}
+	{{- end -}}
+{{- end -}}
+<title>{{ $pageTitle }} | {{ .Site.Title }}</title>
 <meta name="description" content="{{ $desc }}">
 <meta name="keywords" content="{{ .Params.keywords }}">
 <meta name="author" content="{{ .Site.Author.name }}">
 
 <!-- Open Graph / LinkedIn -->
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
-<meta property="og:title" content="{{ .Title }}">
+<meta property="og:title" content="{{ $pageTitle }}">
 <meta property="og:description" content="{{ $desc }}">
 {{ with $shareImage }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
 <meta property="og:url" content="{{ .Permalink }}">
