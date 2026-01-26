@@ -1,28 +1,26 @@
 ---
-title: "Flinker Services Terms"
-date: 2026-01-14
+title: "Support Plans"
+date: 2026-01-26
 draft: false
-description: "Flinker Services Terms — current version and archive."
+description: "Support Plans Schedule A — current version and archive."
 author: "Flinker GmbH"
-canonical_url: "https://flinker.app/legal/services-terms/"
-url: "/legal/services-terms/"
+canonical_url: "https://flinker.app/legal/support-plans/"
+url: "/legal/support-plans/"
 layout: "mdpage"
 
 # Page metadata
 current_version: "v2026-02"
 effective_date: 2026-01-26
-pdf_path: "/assets-flinker/legal/Flinker-Services-Terms-v2026-02.pdf"
 ---
 
 <section class="py-5 py-lg-6">
   <div class="row align-items-center g-4">
     <div class="col-lg-8">
       <span class="badge rounded-pill text-bg-light border border-light-subtle mb-3">Legal</span>
-      <h1 class="display-5 fw-semibold mb-3">Flinker Services Terms</h1>
-      <p class="lead text-muted mb-4">Authoritative, versioned terms for professional and case‑capped services.</p>
+      <h1 class="display-5 fw-semibold mb-3">Support Plans — Schedule A</h1>
+      <p class="lead text-muted mb-4">Scope, service levels, and operating rules for Enterprise Basic/Plus and Success Hours.</p>
       <div class="d-flex flex-wrap gap-2">
-        <a class="btn btn-primary" href="/legal/services-terms/v2026-02/">Read current version</a>
-        <a class="btn btn-outline-secondary" href="{{< param key="pdf_path" >}}" target="_blank" rel="noopener">Download PDF</a>
+        <a class="btn btn-primary" href="/legal/support-plans/v2026-02/">Read current version</a>
       </div>
       <div class="mt-3 text-muted">
         Current version: {{< param key="current_version" >}} · Effective {{< param key="effective_date" >}}
@@ -39,12 +37,8 @@ pdf_path: "/assets-flinker/legal/Flinker-Services-Terms-v2026-02.pdf"
           <h4 class="fw-semibold mb-3">Versions</h4>
           <ul class="list-unstyled mb-0">
             <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
-              <a href="/legal/services-terms/v2026-02/">v2026-02</a>
+              <a href="/legal/support-plans/v2026-02/">v2026-02</a>
               <span class="text-muted">Effective 2026-01-26 · Current</span>
-            </li>
-            <li class="d-flex justify-content-between align-items-center py-2">
-              <a href="/legal/services-terms/v2026-01/">v2026-01</a>
-              <span class="text-muted">Effective 2026-01-14 · Archived</span>
             </li>
           </ul>
         </div>
@@ -52,4 +46,3 @@ pdf_path: "/assets-flinker/legal/Flinker-Services-Terms-v2026-02.pdf"
     </div>
   </div>
 </section>
-
