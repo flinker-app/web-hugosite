@@ -1,7 +1,7 @@
 ---
 title: "Support Plans"
 date: 2026-01-26
-draft: true
+draft: false
 description: "Support Plans Schedule A — current version and archive."
 author: "Flinker GmbH"
 canonical_url: "https://flinker.app/legal/support-plans/"
