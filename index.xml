@@ -952,4 +952,20 @@ Christian Laimer, Mario Beltempo&lt;/p>
  &lt;div class="mx-lg-5">
  &lt;div class="mb-6">
  &lt;h2>Accessible BIM for Everyone&lt;/h2>
- &lt;p class="mb-0">The BIM Viewer makes IFC models and BCF issues accessible to every project member, seamlessly integrated into MS SharePoint and Teams for enhanced collaboration and efficiency.&lt;/p></description></item><item><title/><link>https://flinker.app/case-studies/mango/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flinker.app/case-studies/mango/</guid><description/></item></channel></rss>
+ &lt;p class="mb-0">The BIM Viewer makes IFC models and BCF issues accessible to every project member, seamlessly integrated into MS SharePoint and Teams for enhanced collaboration and efficiency.&lt;/p></description></item><item><title/><link>https://flinker.app/case-studies/mango/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flinker.app/case-studies/mango/</guid><description/></item><item><title/><link>https://flinker.app/products/ifc-copilot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flinker.app/products/ifc-copilot/</guid><description>&lt;!-- HERO -->
+&lt;section class="py-5 py-lg-8" style="padding-bottom:72px;">
+ &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
+ &lt;h1 class="display-5 fw-bold" style="margin:0 0 12px; font-size:clamp(32px,5vw,48px); line-height:1.15; letter-spacing:-0.02em;">
+ IFC in Power BI, without leaving your tenant
+ &lt;/h1>
+ &lt;p class="lead text-muted" style="margin:0 auto 28px; max-width:720px; color:#64748b;">
+ Load models from SharePoint, explore in 3D, and publish decision-ready dashboards — no external servers.
+ &lt;/p>
+ &lt;a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer"
+ class="btn btn-lg"
+ style="--btn-bg: var(--bs-primary, #0d6efd); background:var(--btn-bg); color:#fff; padding:12px 18px; border-radius:12px; font-weight:700; text-decoration:none;">
+ Start Free in AppSource
+ &lt;/a>
+ &lt;small class="d-block mt-2 text-muted">Works in your Microsoft 365 tenant — self-hosted by design.&lt;/small>
+ &lt;/div>
+&lt;/section></description></item></channel></rss>
