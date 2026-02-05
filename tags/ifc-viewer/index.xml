@@ -1,4 +1,78 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IFC Viewer on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/tags/ifc-viewer/</link><description>Recent content in IFC Viewer on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/tags/ifc-viewer/index.xml" rel="self" type="application/rss+xml"/><item><title>Power BI Data Services — Implementation, Enablement &amp; Managed Support</title><link>https://flinker.app/services/data-services/</link><pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/services/data-services/</guid><description>Implementation, rollout, and managed support for IFC Viewer on Power BI—enterprise-ready with clear SLAs, industry accelerators, add-ons, governance, and enablement.</description></item><item><title>Flinker IFC Viewer for Power BI — Overview &amp; Pricing</title><link>https://flinker.app/products/power-bi-ifc-viewer/</link><pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/products/power-bi-ifc-viewer/</guid><description>&lt;!-- HERO -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IFC Viewer on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/tags/ifc-viewer/</link><description>Recent content in IFC Viewer on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 05 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/tags/ifc-viewer/index.xml" rel="self" type="application/rss+xml"/><item><title>IFC Viewer App for SharePoint, Teams &amp; Excel</title><link>https://flinker.app/products/ifc-viewer/</link><pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/products/ifc-viewer/</guid><description>&lt;!-- HERO -->
+&lt;section class="pt-5 pt-lg-8 pb-4">
+ &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
+ &lt;small class="text-primary text-uppercase ls-md fw-semibold">Enterprise-ready openBIM&lt;/small>
+ &lt;h1 class="display-5 fw-bold mt-2" style="margin:0 0 12px; font-size:clamp(32px,5vw,48px); line-height:1.15; letter-spacing:-0.02em;">
+ IFC Viewer: Free, Fast, and Private
+ &lt;/h1>
+ &lt;p class="lead text-muted" style="margin:0 auto 28px; max-width:720px;">
+ Open large IFC models directly in your browser. Files stay on your device — no upload required.
+ &lt;/p>
+ &lt;div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+ &lt;a href="https://viewer.flinker.app/" target="_blank"
+ class="btn btn-primary btn-lg" style="padding:12px 24px; border-radius:12px; font-weight:700;">
+ Try Free Viewer →
+ &lt;/a>
+ &lt;a href="https://appsource.microsoft.com/en-us/product/office/WA200007412" target="_blank"
+ class="btn btn-outline-primary btn-lg" style="padding:12px 24px; border-radius:12px; font-weight:700;">
+ Install from AppSource
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="d-flex flex-wrap justify-content-center align-items-center gap-4 text-muted small">
+ &lt;span class="d-flex align-items-center gap-2">
+ &lt;i class="bi bi-star-fill text-warning">&lt;/i>
+ &lt;strong>4.8&lt;/strong> Microsoft rating
+ &lt;/span>
+ &lt;span class="d-flex align-items-center gap-2">
+ &lt;i class="bi bi-shield-check text-success">&lt;/i>
+ Certified for Teams, SharePoint &amp; Power BI
+ &lt;/span>
+ &lt;span class="d-flex align-items-center gap-2">
+ &lt;i class="bi bi-lock-fill text-primary">&lt;/i>
+ Privacy-first
+ &lt;/span>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+
+&lt;!-- DEMO EMBED -->
+&lt;section class="pb-lg-9 pb-5">
+ &lt;div class="container" style="max-width:1120px;">
+ &lt;div class="text-center position-relative">
+ &lt;iframe 
+ src="https://viewer.flinker.app/examples/ifc.html" 
+ style="width: 100%; aspect-ratio: 16 / 10; border-radius: 16px; border: 1px solid #e2e8f0;" 
+ allowFullScreen="true" 
+ loading="lazy"
+ title="IFC Viewer Demo">
+ &lt;/iframe>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+
+&lt;!-- OPENBIM STANDARDS -->
+&lt;section id="openbim-standards" class="py-lg-9 py-5">
+ &lt;div class="container">
+ &lt;div class="row">
+ &lt;div class="col-lg-8 offset-lg-2">
+ &lt;div class="text-center mb-xl-7 mb-5">
+ &lt;small class="text-primary text-uppercase ls-md fw-semibold">openBIM Standards&lt;/small>
+ &lt;h2 class="mt-2 mb-3">Interoperability that scales with &lt;span class="text-primary">federated project teams.&lt;/span>&lt;/h2>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="row align-items-center">
+ &lt;div class="col-xl-5 col-md-6 col-12">
+ &lt;div class="nav flex-column nav-pills mb-5 mb-lg-0" id="openbim-tabs" role="tablist" aria-orientation="vertical">
+ &lt;a href="#" class="nav-link active d-flex text-start align-items-center align-items-lg-start p-xl-4 p-3" id="ifc-tab" data-bs-toggle="pill" data-bs-target="#ifc-panel" role="tab" aria-controls="ifc-panel" aria-selected="true">
+ &lt;div class="d-flex">
+ &lt;div class="icon-md icon-shape rounded-circle bg-white shadow-sm d-flex align-items-center justify-content-center" style="width:40px; height:40px;">
+ &lt;i class="bi bi-box text-primary">&lt;/i>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="ms-4">
+ &lt;h4 class="mb-0">IFC 2x3, 4, 4x3&lt;/h4>
+ &lt;p class="mb-0 mt-lg-3 d-none d-lg-block text-muted">Accelerated rendering for enterprise-scale datasets. Open multiple models simultaneously.&lt;/p></description></item><item><title>Power BI Data Services — Implementation, Enablement &amp; Managed Support</title><link>https://flinker.app/services/data-services/</link><pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/services/data-services/</guid><description>Implementation, rollout, and managed support for IFC Viewer on Power BI—enterprise-ready with clear SLAs, industry accelerators, add-ons, governance, and enablement.</description></item><item><title>Flinker IFC Viewer for Power BI — Overview &amp; Pricing</title><link>https://flinker.app/products/power-bi-ifc-viewer/</link><pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/products/power-bi-ifc-viewer/</guid><description>&lt;!-- HERO -->
 &lt;section class="py-5 py-lg-8" style="padding-bottom:72px;">
  &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
  &lt;h1 class="display-5 fw-bold" style="margin:0 0 12px; font-size:clamp(32px,5vw,48px); line-height:1.15; letter-spacing:-0.02em;">
