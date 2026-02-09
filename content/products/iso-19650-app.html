@@ -144,12 +144,11 @@ schema:
 <!-- HERO -->
 <section class="pt-5 pt-lg-8 pb-4">
   <div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
-    <small class="text-primary text-uppercase ls-md fw-semibold">ISO 19650 Compliance for Microsoft 365</small>
-    <h1 class="display-5 fw-bold mt-2" style="margin:0 0 12px; font-size:clamp(32px,5vw,48px); line-height:1.15; letter-spacing:-0.02em;">
-      ISO 19650 CDE Builder for SharePoint
+    <h1 class="display-5 fw-bold" style="margin:0 0 12px; font-size:clamp(32px,5vw,48px); line-height:1.15; letter-spacing:-0.02em;">
+      ISO 19650 compliance for SharePoint
     </h1>
     <p class="lead text-muted" style="margin:0 auto 28px; max-width:720px;">
-      Define ISO rules with a single Policy-JSON. Enforce naming conventions, control document status, and ensure only compliant files reach Published — all within your Microsoft 365 tenant.
+      Your data stays in M365. Your rules get enforced.
     </p>
     <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
       <a href="#contact"
@@ -179,19 +178,38 @@ schema:
 </section>
 
 <!-- IN-PAGE NAVIGATION -->
+<style>
+  .nav-underline-link {
+    position: relative;
+    color: #6c757d;
+    text-decoration: none;
+    padding-bottom: 0.25rem;
+    transition: color 0.2s ease;
+  }
+  .nav-underline-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--bs-primary);
+    transition: width 0.2s ease;
+  }
+  .nav-underline-link:hover {
+    color: var(--bs-primary);
+  }
+  .nav-underline-link:hover::after {
+    width: 100%;
+  }
+</style>
 <nav class="py-3 border-bottom bg-white sticky-top" style="top:0; z-index:100;">
   <div class="container">
-    <div class="d-flex flex-wrap justify-content-center gap-2 gap-md-4">
-      <a href="#overview-video" class="text-muted text-decoration-none small fw-medium">Overview</a>
-      <a href="#problem" class="text-muted text-decoration-none small fw-medium">Why?</a>
-      <a href="#features" class="text-muted text-decoration-none small fw-medium">Features</a>
-      <a href="#permissions" class="text-muted text-decoration-none small fw-medium">Permissions</a>
-      <a href="#how-it-works" class="text-muted text-decoration-none small fw-medium">How It Works</a>
-      <a href="#feature-video" class="text-muted text-decoration-none small fw-medium">Feature</a>
-      <a href="#naming" class="text-muted text-decoration-none small fw-medium">Naming</a>
-      <a href="#comparison" class="text-muted text-decoration-none small fw-medium">Comparison</a>
-      <a href="#pricing" class="text-muted text-decoration-none small fw-medium">Pricing</a>
-      <a href="#faq" class="text-muted text-decoration-none small fw-medium">FAQ</a>
+    <div class="d-flex flex-wrap justify-content-center gap-4 gap-md-5">
+      <a href="#features" class="nav-underline-link small fw-medium">Features</a>
+      <a href="#comparison" class="nav-underline-link small fw-medium">Comparison</a>
+      <a href="#pricing" class="nav-underline-link small fw-medium">Pricing</a>
+      <a href="#faq" class="nav-underline-link small fw-medium">FAQ</a>
     </div>
   </div>
 </nav>
@@ -200,18 +218,18 @@ schema:
 <section id="overview-video" class="py-lg-7 py-5">
   <div class="container" style="max-width:900px;">
     <div class="text-center mb-4">
-      <small class="text-primary text-uppercase ls-md fw-semibold">See It In Action</small>
-      <h2 class="mt-2 mb-3">Product Overview</h2>
+      <h2 class="mb-3">Product Introduction</h2>
     </div>
-    <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
-      <iframe
-        src="https://www.youtube.com/embed/aJbnuYtHd7U"
-        title="ISO 19650 App Overview"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        loading="lazy">
-      </iframe>
-    </div>
+    <iframe
+      title="ISO 19650 App Overview"
+      src="https://www.youtube.com/embed/aJbnuYtHd7U"
+      style="width:100%; aspect-ratio: 16 / 9;"
+      class="bg-body-tertiary p-3 rounded-3 border"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
   </div>
 </section>
 
@@ -221,8 +239,7 @@ schema:
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
         <div class="text-center mb-5">
-          <small class="text-primary text-uppercase ls-md fw-semibold">The Challenge</small>
-          <h2 class="mt-2 mb-3">SharePoint manages documents. <span class="text-primary">ISO 19650 rules are not enforced by design.</span></h2>
+          <h2 class="mb-3">SharePoint stores documents. <span class="text-primary">It doesn't enforce ISO 19650.</span></h2>
         </div>
         <div class="row g-4">
           <div class="col-md-6">
@@ -253,14 +270,15 @@ schema:
 <section id="audience" class="py-lg-9 py-5">
   <div class="container" style="max-width:1120px;">
     <div class="text-center mb-5">
-      <small class="text-primary text-uppercase ls-md fw-semibold">Who It's For</small>
-      <h2 class="mt-2 mb-3">Built for construction teams who need compliance without complexity</h2>
+      <h2 class="mb-3">Built for the built environment</h2>
     </div>
     <div class="row g-4">
       <div class="col-md-4">
-        <div class="card h-100 border-0 shadow-sm text-center p-4">
+        <div class="card card-lift h-100 border-0 shadow-sm text-center p-4">
           <div class="mb-3">
-            <i class="bi bi-building fs-2 text-primary"></i>
+            <div class="border rounded-circle d-inline-flex align-items-center justify-content-center" style="width:64px; height:64px;">
+              <i class="bi bi-building fs-3 text-primary"></i>
+            </div>
           </div>
           <h3 class="h5 fw-bold mb-2">End Customers</h3>
           <ul class="list-unstyled text-muted small mb-0">
@@ -272,9 +290,11 @@ schema:
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card h-100 border-0 shadow-sm text-center p-4">
+        <div class="card card-lift h-100 border-0 shadow-sm text-center p-4">
           <div class="mb-3">
-            <i class="bi bi-people fs-2 text-primary"></i>
+            <div class="border rounded-circle d-inline-flex align-items-center justify-content-center" style="width:64px; height:64px;">
+              <i class="bi bi-people fs-3 text-primary"></i>
+            </div>
           </div>
           <h3 class="h5 fw-bold mb-2">Users</h3>
           <ul class="list-unstyled text-muted small mb-0">
@@ -286,9 +306,11 @@ schema:
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card h-100 border-0 shadow-sm text-center p-4">
+        <div class="card card-lift h-100 border-0 shadow-sm text-center p-4">
           <div class="mb-3">
-            <i class="bi bi-gear fs-2 text-primary"></i>
+            <div class="border rounded-circle d-inline-flex align-items-center justify-content-center" style="width:64px; height:64px;">
+              <i class="bi bi-gear fs-3 text-primary"></i>
+            </div>
           </div>
           <h3 class="h5 fw-bold mb-2">Partners</h3>
           <ul class="list-unstyled text-muted small mb-0">
@@ -309,9 +331,8 @@ schema:
     <div class="row">
       <div class="col-lg-8 offset-lg-2">
         <div class="text-center mb-xl-7 mb-5">
-          <small class="text-primary text-uppercase ls-md fw-semibold">Core Features</small>
-          <h2 class="mt-2 mb-3">Everything you need for <span class="text-primary">ISO 19650 compliance</span></h2>
-          <p class="text-muted">Policy-driven document control that guides users and prevents non-compliant publications.</p>
+          <small class="text-primary text-uppercase ls-md fw-semibold">Features</small>
+          <h2 class="mt-2 mb-3">Turn SharePoint into an ISO 19650 CDE</h2>
         </div>
       </div>
     </div>
@@ -426,9 +447,8 @@ schema:
 <section id="permissions" class="py-lg-9 py-5">
   <div class="container" style="max-width:1120px;">
     <div class="text-center mb-5">
-      <small class="text-primary text-uppercase ls-md fw-semibold">Built-in Protect App</small>
-      <h2 class="mt-2 mb-3">Enterprise-grade <span class="text-primary">permission management</span></h2>
-      <p class="text-muted">Control who can view, edit, and share content across your CDE areas. No external servers — runs entirely in SharePoint.</p>
+      <small class="text-primary text-uppercase ls-md fw-semibold">Permissions</small>
+      <h2 class="mt-2 mb-3">Full access control, <span class="text-primary">built in</span></h2>
     </div>
     <div class="row g-4">
       <div class="col-md-6 col-lg-4">
@@ -506,88 +526,22 @@ schema:
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section id="how-it-works" class="py-lg-9 py-5">
-  <div class="container" style="max-width:900px;">
-    <div class="text-center mb-5">
-      <small class="text-primary text-uppercase ls-md fw-semibold">How It Works</small>
-      <h2 class="mt-2 mb-3">From policy to compliance in 5 steps</h2>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="position-relative">
-          <!-- Step 1 -->
-          <div class="d-flex mb-4">
-            <div class="flex-shrink-0">
-              <span class="badge bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width:40px; height:40px; font-size:1.1rem;">1</span>
-            </div>
-            <div class="ms-4">
-              <h3 class="h5 fw-bold mb-1">Upload your configuration to SharePoint</h3>
-              <p class="text-muted mb-0">Define your ISO rules: naming patterns, metadata requirements, approval workflows, and area structure.</p>
-            </div>
-          </div>
-          <!-- Step 2 -->
-          <div class="d-flex mb-4">
-            <div class="flex-shrink-0">
-              <span class="badge bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width:40px; height:40px; font-size:1.1rem;">2</span>
-            </div>
-            <div class="ms-4">
-              <h3 class="h5 fw-bold mb-1">App validates policy and sets up structure</h3>
-              <p class="text-muted mb-0">Libraries created: WIP, Shared, Published, Archive. Fields, views, and versioning configured automatically.</p>
-            </div>
-          </div>
-          <!-- Step 3 -->
-          <div class="d-flex mb-4">
-            <div class="flex-shrink-0">
-              <span class="badge bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width:40px; height:40px; font-size:1.1rem;">3</span>
-            </div>
-            <div class="ms-4">
-              <h3 class="h5 fw-bold mb-1">Users upload documents</h3>
-              <p class="text-muted mb-0">Upload with wrong naming? <span class="text-danger fw-semibold">Blocked with clear guidance.</span> Users see exactly what to fix.</p>
-            </div>
-          </div>
-          <!-- Step 4 -->
-          <div class="d-flex mb-4">
-            <div class="flex-shrink-0">
-              <span class="badge bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width:40px; height:40px; font-size:1.1rem;">4</span>
-            </div>
-            <div class="ms-4">
-              <h3 class="h5 fw-bold mb-1">Fix and request approval</h3>
-              <p class="text-muted mb-0">Correct naming, add required metadata. <span class="text-primary fw-semibold">Approval workflow starts.</span> Approvers notified.</p>
-            </div>
-          </div>
-          <!-- Step 5 -->
-          <div class="d-flex">
-            <div class="flex-shrink-0">
-              <span class="badge bg-success rounded-circle d-flex align-items-center justify-content-center" style="width:40px; height:40px; font-size:1.1rem;">5</span>
-            </div>
-            <div class="ms-4">
-              <h3 class="h5 fw-bold mb-1">Approved = Published</h3>
-              <p class="text-muted mb-0"><span class="text-success fw-semibold">File moves to Published.</span> Audit event logged. Only approved files visible to readers.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- FEATURE VIDEO -->
 <section id="feature-video" class="py-lg-7 py-5 bg-light">
   <div class="container" style="max-width:900px;">
     <div class="text-center mb-4">
-      <small class="text-primary text-uppercase ls-md fw-semibold">Feature Deep Dive</small>
-      <h2 class="mt-2 mb-3">See the Features in Detail</h2>
+      <h2 class="mb-3">Approval Workflow</h2>
     </div>
-    <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
-      <iframe
-        src="https://www.youtube.com/embed/78Hd3phz_OA"
-        title="ISO 19650 App Features"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        loading="lazy">
-      </iframe>
-    </div>
+    <iframe
+      title="Approval Workflow Demo"
+      src="https://www.youtube.com/embed/78Hd3phz_OA"
+      style="width:100%; aspect-ratio: 16 / 9;"
+      class="bg-body-tertiary p-3 rounded-3 border"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
   </div>
 </section>
 
@@ -595,8 +549,8 @@ schema:
 <section id="naming" class="py-lg-9 py-5">
   <div class="container" style="max-width:900px;">
     <div class="text-center mb-5">
-      <small class="text-primary text-uppercase ls-md fw-semibold">ISO 19650 Naming</small>
-      <h2 class="mt-2 mb-3">Compliant filename structure</h2>
+      <h2 class="mb-2">Compliant filename structure</h2>
+      <p class="text-muted mb-0">Your schema, your rules — column names, field count, and metadata are fully configurable.</p>
     </div>
     <div class="card border-0 shadow-sm p-4">
       <div class="text-center mb-4">
@@ -636,103 +590,60 @@ schema:
           <div class="text-muted small">Status & Revision</div>
         </div>
       </div>
-      <hr class="my-4">
-      <div class="row g-3">
-        <div class="col-md-6">
-          <h4 class="h6 fw-bold">Status Codes</h4>
-          <ul class="list-unstyled text-muted small mb-0">
-            <li><strong>S0</strong> — Work in progress (WIP)</li>
-            <li><strong>S1</strong> — For coordination (Shared)</li>
-            <li><strong>A</strong> — For review/approval (Shared)</li>
-            <li><strong>B</strong> — Approved / For construction (Published)</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <h4 class="h6 fw-bold">Supported Extensions</h4>
-          <ul class="list-unstyled text-muted small mb-0">
-            <li><code>.ifc</code> — IFC Models</li>
-            <li><code>.pdf</code> — Documents</li>
-            <li><code>.dwg</code> — CAD Drawings</li>
-            <li><code>.xlsx</code> — Spreadsheets</li>
-          </ul>
-        </div>
+      <hr class="my-3">
+      <div class="d-flex flex-wrap justify-content-center gap-3 small text-muted">
+        <span><strong>S0</strong> WIP</span>
+        <span><strong>S1</strong> Shared</span>
+        <span><strong>A</strong> Review</span>
+        <span><strong>B</strong> Published</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- COMPARISON TABLE -->
+<!-- COMPARISON -->
 <section id="comparison" class="py-lg-9 py-5">
   <div class="container" style="max-width:900px;">
     <div class="text-center mb-5">
-      <small class="text-primary text-uppercase ls-md fw-semibold">Comparison</small>
-      <h2 class="mt-2 mb-3">Dedicated CDE vs. SharePoint + Flinker</h2>
-      <p class="text-muted">Keep your data, security, and governance in your Microsoft 365 tenant.</p>
+      <h2 class="mb-3">Dedicated CDE vs. SharePoint + Flinker</h2>
     </div>
-    <div class="table-responsive">
-      <table class="table table-lg table-borderless bg-white rounded-3 shadow-sm">
-        <thead>
-          <tr class="table-light">
-            <th class="fw-semibold">Capability</th>
-            <th class="text-center fw-semibold">Dalux / Autodesk CDE</th>
-            <th class="text-center fw-semibold">SharePoint + Flinker</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Data Sovereignty</td>
-            <td class="text-center"><span class="text-muted">External platform</span></td>
-            <td class="text-center"><strong class="text-success">Stays in M365 tenant</strong></td>
-          </tr>
-          <tr>
-            <td>ISO 19650 Naming Enforcement</td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i> Hard enforcement</td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i> UI/Process gate (Enterprise: hard)</td>
-          </tr>
-          <tr>
-            <td>Approval Workflows</td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i> Customizable</td>
-          </tr>
-          <tr>
-            <td>Metadata Compliance</td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
-          </tr>
-          <tr>
-            <td>Customizable Policies</td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-muted"></i> Limited</td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i> JSON Blueprints</td>
-          </tr>
-          <tr>
-            <td>Partner Customization</td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-muted"></i></td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i> Export/import blueprints</td>
-          </tr>
-          <tr>
-            <td>Permission Management</td>
-            <td class="text-center"><span class="text-muted">Basic</span></td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i> Advanced (templates, bulk edit, reports)</td>
-          </tr>
-          <tr>
-            <td>External User Access</td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i> With notifications</td>
-          </tr>
-          <tr>
-            <td>Extensibility</td>
-            <td class="text-center"><span class="text-muted">Closed</span></td>
-            <td class="text-center"><strong class="text-primary">Open (profiles, extensions)</strong></td>
-          </tr>
-          <tr>
-            <td>Integrates with existing M365</td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-muted"></i></td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i> Native</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="row g-4">
+      <!-- Traditional CDE -->
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <h3 class="h6 fw-bold text-muted mb-3">Traditional CDE</h3>
+          <ul class="list-unstyled mb-0 small">
+            <li class="d-flex justify-content-between py-2 border-bottom"><span>Data sovereignty</span> <span class="text-muted">External</span></li>
+            <li class="d-flex justify-content-between py-2 border-bottom"><span>Naming enforcement</span> <i class="bi bi-check text-success"></i></li>
+            <li class="d-flex justify-content-between py-2 border-bottom"><span>Approval workflows</span> <i class="bi bi-check text-success"></i></li>
+            <li class="d-flex justify-content-between py-2 border-bottom"><span>Metadata compliance</span> <i class="bi bi-check text-success"></i></li>
+            <li class="d-flex justify-content-between py-2 border-bottom"><span>Customizable policies</span> <span class="text-muted">Limited</span></li>
+            <li class="d-flex justify-content-between py-2 border-bottom"><span>Partner customization</span> <i class="bi bi-x text-muted"></i></li>
+            <li class="d-flex justify-content-between py-2 border-bottom"><span>Permission management</span> <span class="text-muted">Basic</span></li>
+            <li class="d-flex justify-content-between py-2 border-bottom"><span>Extensibility</span> <span class="text-muted">Closed</span></li>
+            <li class="d-flex justify-content-between py-2"><span>M365 integration</span> <i class="bi bi-x text-muted"></i></li>
+          </ul>
+        </div>
+      </div>
+      <!-- SharePoint + Flinker -->
+      <div class="col-md-6">
+        <div class="card h-100 border-primary shadow-sm p-4" style="border-width: 2px !important;">
+          <h3 class="h6 fw-bold text-primary mb-3">SharePoint + Flinker</h3>
+          <ul class="list-unstyled mb-0 small">
+            <li class="d-flex justify-content-between py-2 border-bottom"><span>Data sovereignty</span> <strong class="text-success">Your M365</strong></li>
+            <li class="d-flex justify-content-between py-2 border-bottom"><span>Naming enforcement</span> <i class="bi bi-check text-success"></i></li>
+            <li class="d-flex justify-content-between py-2 border-bottom"><span>Approval workflows</span> <i class="bi bi-check text-success"></i></li>
+            <li class="d-flex justify-content-between py-2 border-bottom"><span>Metadata compliance</span> <i class="bi bi-check text-success"></i></li>
+            <li class="d-flex justify-content-between py-2 border-bottom"><span>Customizable policies</span> <i class="bi bi-check text-success"></i></li>
+            <li class="d-flex justify-content-between py-2 border-bottom"><span>Partner customization</span> <i class="bi bi-check text-success"></i></li>
+            <li class="d-flex justify-content-between py-2 border-bottom"><span>Permission management</span> <strong class="text-success">Advanced</strong></li>
+            <li class="d-flex justify-content-between py-2 border-bottom"><span>Extensibility</span> <strong class="text-primary">Open</strong></li>
+            <li class="d-flex justify-content-between py-2"><span>M365 integration</span> <strong class="text-success">Native</strong></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <p class="text-muted small text-center mt-3">
+    <p class="text-muted small text-center mt-4">
       <a href="/blog/iso19650-sharepoint-policy-driven-vs-power-automate/" class="text-primary">Read more: Policy-Driven vs. Power Automate approach</a>
     </p>
   </div>
@@ -740,73 +651,137 @@ schema:
 
 <!-- PRICING -->
 <section id="pricing" class="py-lg-9 py-5 bg-light">
-  <div class="container" style="max-width:1000px;">
-    <div class="text-center mb-5">
-      <small class="text-primary text-uppercase ls-md fw-semibold">Pricing</small>
-      <h2 class="mt-2 mb-3">Simple, scalable pricing</h2>
-      <p class="text-muted">Start free with Protect, upgrade for full CDE capabilities.</p>
+  <div class="container pb-xl-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center mb-xl-7 mb-5 d-flex flex-column gap-2">
+          <h2 class="mb-0">Pricing Plans</h2>
+          <p class="mb-0 lead text-muted">Choose the right plan for your team</p>
+        </div>
+      </div>
     </div>
-    <div class="row g-4 justify-content-center">
-      <!-- Free -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm p-4">
-          <div class="mb-3">
-            <h3 class="h5 fw-bold mb-1">Free (Protect)</h3>
-            <p class="text-muted small mb-0">Basic permission management</p>
+    <div class="row gy-5 gy-xl-0">
+      <!-- Free Plan -->
+      <div class="col-xl-4 col-md-6 col-12">
+        <div class="card position-relative bg-white border-primary border-2 shadow">
+          <div class="card-body d-flex flex-column gap-6 p-5 z-2">
+            <div class="d-flex flex-column gap-3">
+              <div class="position-absolute top-0 end-0 translate-middle">
+                <span class="badge bg-primary rounded-pill fw-medium px-3 py-2">Most Popular</span>
+              </div>
+              <div class="d-flex flex-column gap-1">
+                <h3 class="mb-0">Free</h3>
+                <p class="mb-0 text-muted">Basic permission management</p>
+              </div>
+              <div class="d-flex flex-row align-items-center gap-2">
+                <h3 class="fs-1 fw-bold mb-0">€0</h3>
+                <span class="text-muted">forever</span>
+              </div>
+              <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-primary" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+                  <span>Role-based permissions</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-primary" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+                  <span>Basic compliance checks</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-primary" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+                  <span>External user management</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://marketplace.microsoft.com/en-us/product/WA200007197" target="_blank" class="btn btn-primary">Use Free</a>
+            </div>
           </div>
-          <div class="mb-4">
-            <span class="display-6 fw-bold">€0</span>
-            <span class="text-muted">/forever</span>
-          </div>
-          <ul class="list-unstyled mb-4">
-            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Role-based permissions</li>
-            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Basic compliance checks</li>
-            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>External user management</li>
-          </ul>
-          <a href="https://appsource.microsoft.com/en-us/product/office/WA200003670" class="btn btn-outline-primary w-100" target="_blank">Get Started</a>
         </div>
       </div>
-      <!-- Pro -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm p-4 border-primary" style="border: 2px solid var(--bs-primary) !important;">
-          <div class="mb-3">
-            <span class="badge bg-primary mb-2">Most Popular</span>
-            <h3 class="h5 fw-bold mb-1">Pro (CDE Builder)</h3>
-            <p class="text-muted small mb-0">Full ISO 19650 compliance</p>
+
+      <!-- Pro Plan -->
+      <div class="col-xl-4 col-md-6 col-12">
+        <div class="card bg-white border shadow-sm">
+          <div class="card-body d-flex flex-column gap-6 p-5">
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex flex-column gap-1">
+                <h3 class="mb-0">Pro</h3>
+                <p class="mb-0 text-muted">Full ISO 19650 compliance</p>
+              </div>
+              <div class="d-flex flex-row align-items-center gap-2">
+                <h3 class="fs-1 fw-bold mb-0">Contact</h3>
+                <span class="text-muted">for pricing</span>
+              </div>
+              <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-primary" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+                  <span>Everything in Free</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-primary" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+                  <span>Policy-JSON configuration</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-primary" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+                  <span>Naming & metadata enforcement</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-primary" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+                  <span>Approval workflows</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-primary" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+                  <span>Audit & issue logging</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="#contact" class="btn btn-outline-primary">Request Demo</a>
+            </div>
           </div>
-          <div class="mb-4">
-            <span class="display-6 fw-bold">Contact</span>
-            <span class="text-muted">for pricing</span>
-          </div>
-          <ul class="list-unstyled mb-4">
-            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Everything in Free</li>
-            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Policy-JSON configuration</li>
-            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Naming & metadata enforcement</li>
-            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Approval workflows</li>
-            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Audit & issue logging</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary w-100">Request Demo</a>
         </div>
       </div>
-      <!-- Enterprise -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm p-4">
-          <div class="mb-3">
-            <h3 class="h5 fw-bold mb-1">Enterprise</h3>
-            <p class="text-muted small mb-0">Full enforcement + advanced features</p>
+
+      <!-- Enterprise Plan -->
+      <div class="col-xl-4 col-md-6 col-12">
+        <div class="card bg-white border shadow-sm">
+          <div class="card-body d-flex flex-column gap-6 p-5">
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex flex-column gap-1">
+                <h3 class="mb-0">Enterprise</h3>
+                <p class="mb-0 text-muted">Full enforcement + advanced features</p>
+              </div>
+              <div class="d-flex flex-row gap-2">
+                <h3 class="fs-1 fw-bold mb-0">Custom</h3>
+                <span class="mt-auto text-muted">pricing</span>
+              </div>
+              <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-primary" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+                  <span>Everything in Pro</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-primary" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+                  <span>Hard enforcement (all paths)</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-primary" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+                  <span>Transmittals suite</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-primary" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+                  <span>Advanced reporting</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-primary" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+                  <span>Priority support</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" target="_blank" class="btn btn-outline-primary">Contact Sales</a>
+            </div>
           </div>
-          <div class="mb-4">
-            <span class="display-6 fw-bold">Custom</span>
-            <span class="text-muted">pricing</span>
-          </div>
-          <ul class="list-unstyled mb-4">
-            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Everything in Pro</li>
-            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Hard enforcement (all paths)</li>
-            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Transmittals suite</li>
-            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Advanced reporting</li>
-            <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Priority support</li>
-          </ul>
-          <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-outline-primary w-100" target="_blank">Contact Sales</a>
         </div>
       </div>
     </div>
@@ -815,82 +790,103 @@ schema:
 
 <!-- FAQ -->
 <section id="faq" class="py-lg-9 py-5">
-  <div class="container" style="max-width:800px;">
-    <div class="text-center mb-5">
-      <small class="text-primary text-uppercase ls-md fw-semibold">FAQ</small>
-      <h2 class="mt-2 mb-3">Frequently asked questions</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+        <div class="text-center mb-xl-7 mb-5">
+          <h2>Frequently asked questions</h2>
+          <p class="mb-0">
+            Can't find an answer? <a href="mailto:info@flinker.app" class="text-primary">Contact support</a>
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="accordion" id="faqAccordion">
-      <div class="accordion-item border-0 mb-3 shadow-sm rounded-3">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-            How are ISO rules defined?
-          </button>
-        </h3>
-        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-muted">
-            All rules are defined in a single configuration file stored in SharePoint. This includes naming patterns, metadata requirements, approval workflows, area structure (WIP/Shared/Published/Archive), and role definitions. Partners can export, import, and customize blueprints.
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+        <div class="accordion" id="faqAccordion">
+          <div class="border mb-2 rounded-3 p-3">
+            <h3 class="h5 mb-0">
+              <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                How are ISO rules defined?
+                <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+              </a>
+            </h3>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="mt-3 text-muted">
+                All rules are defined in a single configuration file stored in SharePoint. This includes naming patterns, metadata requirements, approval workflows, area structure (WIP/Shared/Published/Archive), and role definitions. Partners can export, import, and customize blueprints.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="accordion-item border-0 mb-3 shadow-sm rounded-3">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-            What happens when a file fails naming validation?
-          </button>
-        </h3>
-        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-muted">
-            The user receives clear guidance on what's wrong and how to fix it. Depending on the mode (warn/enforce), the file is either flagged with a warning or blocked from proceeding. A compliance issue is logged for tracking.
+
+          <div class="border mb-2 rounded-3 p-3">
+            <h3 class="h5 mb-0">
+              <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                What happens when a file fails naming validation?
+                <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+              </a>
+            </h3>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="mt-3 text-muted">
+                The user receives clear guidance on what's wrong and how to fix it. Depending on the mode (warn/enforce), the file is either flagged with a warning or blocked from proceeding. A compliance issue is logged for tracking.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="accordion-item border-0 mb-3 shadow-sm rounded-3">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-            How is the release gate enforced?
-          </button>
-        </h3>
-        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-muted">
-            Files can only move from Shared to Published if they pass all compliance checks: correct naming, required metadata present, and approval granted (if required). Pro enforces this at the UI/process level. Enterprise adds hard enforcement for all upload paths (sync, API, third-party).
+
+          <div class="border mb-2 rounded-3 p-3">
+            <h3 class="h5 mb-0">
+              <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                How is the release gate enforced?
+                <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+              </a>
+            </h3>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="mt-3 text-muted">
+                Files can only move from Shared to Published if they pass all compliance checks: correct naming, required metadata present, and approval granted (if required). Pro enforces this at the UI/process level. Enterprise adds hard enforcement for all upload paths (sync, API, third-party).
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="accordion-item border-0 mb-3 shadow-sm rounded-3">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-            Is there an audit trail?
-          </button>
-        </h3>
-        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-muted">
-            Yes. Compliance issues are logged in a dedicated SharePoint list. Audit events (policy loaded, action attempted, action blocked, approved, rejected, file moved) are tracked automatically. Long-term retention integrates with Microsoft Purview.
+
+          <div class="border mb-2 rounded-3 p-3">
+            <h3 class="h5 mb-0">
+              <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                Is there an audit trail?
+                <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+              </a>
+            </h3>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="mt-3 text-muted">
+                Yes. Compliance issues are logged in a dedicated SharePoint list. Audit events (policy loaded, action attempted, action blocked, approved, rejected, file moved) are tracked automatically. Long-term retention integrates with Microsoft Purview.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="accordion-item border-0 mb-3 shadow-sm rounded-3">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-            How can partners customize the setup?
-          </button>
-        </h3>
-        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-muted">
-            Partners can create, export, import, and version blueprints (JSON). Build a country-specific or client-specific profile once, then deploy to multiple projects. Customizing without code — change the JSON, redeploy.
+
+          <div class="border mb-2 rounded-3 p-3">
+            <h3 class="h5 mb-0">
+              <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                How can partners customize the setup?
+                <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+              </a>
+            </h3>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="mt-3 text-muted">
+                Partners can create, export, import, and version blueprints (JSON). Build a country-specific or client-specific profile once, then deploy to multiple projects. Customizing without code — change the JSON, redeploy.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="accordion-item border-0 mb-3 shadow-sm rounded-3">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
-            What's the difference between Pro and Enterprise?
-          </button>
-        </h3>
-        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-muted">
-            <strong>Pro:</strong> Process gate enforcement. Validates at release actions (submit, approve, publish). Users can upload files, but non-compliant files won't pass the release gate.<br><br>
-            <strong>Enterprise:</strong> Hard enforcement on all upload paths. Blocks non-compliant files immediately. Plus transmittals suite, advanced reporting, and priority support.
+
+          <div class="border mb-2 rounded-3 p-3">
+            <h3 class="h5 mb-0">
+              <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                What's the difference between Pro and Enterprise?
+                <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+              </a>
+            </h3>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="mt-3 text-muted">
+                <strong>Pro:</strong> Process gate enforcement. Validates at release actions (submit, approve, publish). Users can upload files, but non-compliant files won't pass the release gate.<br><br>
+                <strong>Enterprise:</strong> Hard enforcement on all upload paths. Blocks non-compliant files immediately. Plus transmittals suite, advanced reporting, and priority support.
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -899,20 +895,18 @@ schema:
 </section>
 
 <!-- CTA / CONTACT -->
-<section id="contact" class="py-lg-9 py-5 bg-primary text-white">
-  <div class="container" style="max-width:700px;">
-    <div class="text-center">
-      <h2 class="fw-bold mb-3">Ready to simplify ISO 19650 compliance?</h2>
-      <p class="mb-4 opacity-75">Get a live demo, discuss your requirements, or start with a free consultation on your SharePoint CDE setup.</p>
-      <div class="d-flex flex-wrap justify-content-center gap-3">
-        <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/"
-           class="btn btn-light btn-lg" style="padding:12px 24px; border-radius:12px; font-weight:700;" target="_blank">
-          Book a Demo
-        </a>
-        <a href="mailto:info@flinker.app"
-           class="btn btn-outline-light btn-lg" style="padding:12px 24px; border-radius:12px; font-weight:700;">
-          Email Us
-        </a>
+<section id="contact" class="py-lg-8 py-5 bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <div class="text-center">
+          <h2 class="text-white mb-3">Ready to get started?</h2>
+          <p class="text-white opacity-75 mb-4">Book a demo or reach out to discuss your project.</p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" target="_blank" class="btn btn-light">Book a Demo</a>
+            <a href="mailto:support@flinker.app" class="btn btn-outline-light">Email Us</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
