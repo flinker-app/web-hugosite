@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- Left accent bar -->
+  <rect width="8" height="630" fill="#0779ff"/>
+
+  <!-- Content -->
+  <g transform="translate(80 0)">
+    <!-- Tag -->
+    <rect x="0" y="100" width="130" height="40" rx="20" fill="#0779ff"/>
+    <text x="20" y="128" fill="#FFFFFF" style="font:600 16px 'Segoe UI',system-ui,sans-serif">ISO 19650</text>
+
+    <!-- Main title -->
+    <text x="0" y="220" fill="#0B1B3A" style="font:800 72px 'Segoe UI',system-ui,sans-serif">Policy-Driven</text>
+    <text x="0" y="310" fill="#0B1B3A" style="font:800 72px 'Segoe UI',system-ui,sans-serif">CDE</text>
+
+    <!-- Divider -->
+    <rect x="0" y="340" width="120" height="4" fill="#0779ff"/>
+
+    <!-- Subtitle -->
+    <text x="0" y="400" fill="#64748B" style="font:400 32px 'Segoe UI',system-ui,sans-serif">vs Power Automate</text>
+    <text x="0" y="450" fill="#94A3B8" style="font:400 24px 'Segoe UI',system-ui,sans-serif">SharePoint governance with release gates</text>
+
+    <!-- Flinker logo bottom left -->
+    <g transform="translate(0 530)">
+      <g transform="scale(2)">
+        <path d="M21.7 0L6.7 11.1 11.2 15.4 14.6 10.2z" fill="#96bfff"/>
+        <path d="M14.6 10.2L11.2 15.4 4 25.6 19 14.5z" fill="#0779ff"/>
+      </g>
+      <text x="60" y="32" fill="#64748B" style="font:600 18px 'Segoe UI',system-ui,sans-serif">flinker.app</text>
+    </g>
+  </g>
+
+  <!-- Right side: abstract shapes -->
+  <g transform="translate(750 0)">
+    <!-- Large circle -->
+    <circle cx="300" cy="315" r="280" fill="#f8fafc"/>
+    <!-- Smaller overlapping circles -->
+    <circle cx="220" cy="250" r="120" fill="#e8f2ff"/>
+    <circle cx="380" cy="380" r="100" fill="#0779ff" opacity="0.15"/>
+    <!-- Accent dot -->
+    <circle cx="320" cy="300" r="40" fill="#0779ff"/>
+  </g>
+</svg>
