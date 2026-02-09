@@ -51,6 +51,33 @@
     <!-- Custom Head Content -->
     {{ block "extra_head" . }}{{ end }}
 
+    <!-- Light mode navbar fix (non-homepage pages) -->
+    {{ if not .IsHome }}
+    <style>
+      /* Override navbar-dark colors for light mode pages */
+      .navbar.navbar-dark .nav-link,
+      .navbar.navbar-dark .navbar-nav .nav-link {
+        color: rgba(0, 0, 0, 0.85) !important;
+      }
+      .navbar.navbar-dark .nav-link:hover,
+      .navbar.navbar-dark .nav-link:focus {
+        color: rgba(0, 0, 0, 1) !important;
+      }
+      /* Ensure dark logo is visible (remove any theme filters) */
+      .navbar .navbar-brand img,
+      .navbar .offcanvas-header img {
+        filter: none !important;
+      }
+      .navbar.navbar-dark .navbar-toggler {
+        color: rgba(0, 0, 0, 0.85);
+        border-color: rgba(0, 0, 0, 0.1);
+      }
+      .navbar.navbar-dark .navbar-toggler i {
+        color: rgba(0, 0, 0, 0.85);
+      }
+    </style>
+    {{ end }}
+
     <!-- Logo tint setup (SVG filter + minimal CSS) -->
     {{ partial "logo-tint-setup.html" . }}
   </head>

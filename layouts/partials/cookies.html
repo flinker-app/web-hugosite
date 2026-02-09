@@ -1,75 +1,291 @@
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.css"
-/>
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-<script>
-  window.addEventListener("load", function () {
-    window.cookieconsent.initialise({
-      container: document.getElementById("content"),
-      palette: {
-        popup: { background: "#ffffff", text: "#000", link: "#000" },
-        button: {
-          background: "var(--bs-primary)",
-          border: "var(--bs-primary)",
-          text: "#fff",
-          "border-radius": "20px",
+<!-- CookieConsent v3 by orestbida - https://cookieconsent.orestbida.com -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
+
+<!-- Custom Cookie Banner Styles -->
+<style>
+  :root {
+    --cc-primary: #8b3dff;
+    --cc-primary-hover: #7a2ef0;
+    --cc-bg: #ffffff;
+    --cc-text: #1a1a2e;
+    --cc-text-secondary: #5c5c6d;
+    --cc-border: #e8e8ec;
+    --cc-toggle-on: #8b3dff;
+    --cc-toggle-off: #d0d0d8;
+    --cc-btn-radius: 12px;
+  }
+
+  /* Modal container */
+  #cc-main .cm,
+  #cc-main .pm {
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--cc-border);
+  }
+
+  /* Primary button (Accept all) */
+  #cc-main .cm__btn--primary,
+  #cc-main .pm__btn--primary {
+    background: var(--cc-primary);
+    border: none;
+    border-radius: var(--cc-btn-radius);
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 4px 14px rgba(139, 61, 255, 0.3);
+    transition: all 0.2s ease;
+  }
+
+  #cc-main .cm__btn--primary:hover,
+  #cc-main .pm__btn--primary:hover {
+    background: var(--cc-primary-hover);
+    box-shadow: 0 6px 20px rgba(139, 61, 255, 0.4);
+    transform: translateY(-1px);
+  }
+
+  /* Secondary button (Reject all, Manage preferences) */
+  #cc-main .cm__btn--secondary,
+  #cc-main .pm__btn--secondary {
+    background: transparent;
+    border: 2px solid var(--cc-border);
+    border-radius: var(--cc-btn-radius);
+    color: var(--cc-text);
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.2s ease;
+  }
+
+  #cc-main .cm__btn--secondary:hover,
+  #cc-main .pm__btn--secondary:hover {
+    border-color: var(--cc-primary);
+    color: var(--cc-primary);
+    background: rgba(139, 61, 255, 0.05);
+  }
+
+  /* Toggle switches */
+  #cc-main .toggle__icon {
+    border-radius: 50px;
+  }
+
+  #cc-main .toggle__icon-on {
+    background: var(--cc-primary);
+  }
+
+  /* Links */
+  #cc-main a {
+    color: var(--cc-primary);
+  }
+
+  #cc-main a:hover {
+    color: var(--cc-primary-hover);
+  }
+
+  /* Title styling */
+  #cc-main .cm__title,
+  #cc-main .pm__title {
+    font-weight: 700;
+    color: var(--cc-text);
+  }
+
+  /* Section titles in preferences */
+  #cc-main .pm__section-title {
+    font-weight: 600;
+    color: var(--cc-text);
+  }
+
+  /* Description text */
+  #cc-main .cm__desc,
+  #cc-main .pm__section-desc {
+    color: var(--cc-text-secondary);
+    line-height: 1.6;
+  }
+
+  /* Footer link */
+  #cc-main .cm__footer a {
+    color: var(--cc-text-secondary);
+    font-size: 0.85rem;
+  }
+
+  #cc-main .cm__footer a:hover {
+    color: var(--cc-primary);
+  }
+</style>
+
+<script type="module">
+import 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.umd.js';
+
+// Update Google Consent Mode based on user choices
+function updateGtagConsent() {
+  gtag('consent', 'update', {
+    'analytics_storage': CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied',
+    'ad_storage': CookieConsent.acceptedCategory('marketing') ? 'granted' : 'denied',
+    'ad_user_data': CookieConsent.acceptedCategory('marketing') ? 'granted' : 'denied',
+    'ad_personalization': CookieConsent.acceptedCategory('marketing') ? 'granted' : 'denied',
+    'functionality_storage': CookieConsent.acceptedCategory('functionality') ? 'granted' : 'denied',
+    'personalization_storage': CookieConsent.acceptedCategory('functionality') ? 'granted' : 'denied',
+  });
+}
+
+CookieConsent.run({
+  guiOptions: {
+    consentModal: {
+      layout: 'box wide',
+      position: 'bottom left',
+      equalWeightButtons: true,
+      flipButtons: false
+    },
+    preferencesModal: {
+      layout: 'box',
+      position: 'right',
+      equalWeightButtons: true,
+      flipButtons: false
+    }
+  },
+
+  onFirstConsent: () => {
+    updateGtagConsent();
+  },
+
+  onConsent: () => {
+    updateGtagConsent();
+  },
+
+  onChange: () => {
+    updateGtagConsent();
+  },
+
+  categories: {
+    necessary: {
+      enabled: true,
+      readOnly: true
+    },
+    analytics: {
+      autoClear: {
+        cookies: [
+          { name: /^_ga/ },
+          { name: '_gid' },
+          { name: /^_gat/ },
+          { name: '__utma' },
+          { name: '__utmb' },
+          { name: '__utmc' },
+          { name: '__utmz' },
+          { name: '__utmt' }
+        ]
+      }
+    },
+    marketing: {
+      autoClear: {
+        cookies: [
+          { name: /^_gcl/ },
+          { name: '_fbp' },
+          { name: 'fr' },
+          { name: 'tr' }
+        ]
+      }
+    },
+    functionality: {}
+  },
+
+  language: {
+    default: 'en',
+    autoDetect: 'browser',
+    translations: {
+      en: {
+        consentModal: {
+          title: 'We use cookies',
+          description: 'We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking "Accept all", you consent to our use of cookies.',
+          acceptAllBtn: 'Accept all',
+          acceptNecessaryBtn: 'Reject all',
+          showPreferencesBtn: 'Manage preferences',
+          footer: '<a href="/legal/privacy/">Privacy Policy</a>'
         },
-        highlight: {
-          background: "var(--bs-primary)",
-          border: "var(--bs-primary)",
-          text: "#000000",
-        },
-      },
-      elements: {
-        allow:
-          '<a aria-label="allow cookies" tabindex="0" class="cc-btn cc-allow btn btn-primary" style="font-family: var(--global-font); border: none;">Allow Cookies</a>',
-        deny:
-          '<a style="background-color:transparent; border-color:transparent; color:#999; font-family: var(--global-font);" aria-label="deny cookies" tabindex="0" class="cc-btn cc-deny">Deny Cookies</a>',
-      },
-      compliance: {},
-      onStatusChange: function (status) {
-        console.log(status);
-        if (status == "allow") {
-          // Add your opt-in logic here
+        preferencesModal: {
+          title: 'Cookie Preferences',
+          acceptAllBtn: 'Accept all',
+          acceptNecessaryBtn: 'Reject all',
+          savePreferencesBtn: 'Save preferences',
+          closeIconLabel: 'Close',
+          serviceCounterLabel: 'Service|Services',
+          sections: [
+            {
+              title: 'Cookie Usage',
+              description: 'We use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose to opt-in or opt-out of each category whenever you want.'
+            },
+            {
+              title: 'Strictly Necessary Cookies',
+              description: 'These cookies are essential for the proper functioning of the website. Without these cookies, the website would not work properly.',
+              linkedCategory: 'necessary'
+            },
+            {
+              title: 'Analytics Cookies',
+              description: 'These cookies collect information about how you use the website, which pages you visited and which links you clicked on. All data is anonymized and cannot be used to identify you.',
+              linkedCategory: 'analytics'
+            },
+            {
+              title: 'Marketing Cookies',
+              description: 'These cookies track your online activity to help advertisers deliver more relevant advertising or to limit how many times you see an ad.',
+              linkedCategory: 'marketing'
+            },
+            {
+              title: 'Functionality Cookies',
+              description: 'These cookies allow the website to remember choices you have made in the past, like your language preference or your username and password for automatic login.',
+              linkedCategory: 'functionality'
+            },
+            {
+              title: 'More Information',
+              description: 'For any queries regarding our cookie policy, please <a href="/about/">contact us</a>.'
+            }
+          ]
         }
       },
-      law: {
-        regionalLaw: false,
-      },
-      theme: "block",
-      position: "bottom-left",
-      revokable: false,
-      location: false,
-      cookie: {
-        // This is the name of this cookie - you can ignore this
-        //name: "cookieconsent_status",
-        // '/',
-
-        // This is the domain that the cookie 'name' belongs to. The cookie can only be read on this domain.
-        //domain: "/",
-
-        // The cookies expire date, specified in days (specify -1 for no expiry)
-        //expiryDays: 365,
-
-        // If true the cookie will be created with the secure flag. Secure cookies will only be transmitted via HTTPS.
-        //secure: false,
-      },
-      content: {
-        header: "",
-        message: "This website uses cookies to ensure you get the best experience.",
-        dismiss: "",
-        allow: "Allow Cookies",
-        deny: "Deny Cookies",
-        link: "Learn more",
-        href: "/privacy-policy", // Change this to your privacy policy URL
-        close: "&#x274c;",
-        policy: "Cookie Policy",
-        target: "_blank",
-      },
-      type: "opt-out",
-      layout: "basic",
-    });
-  });
+      de: {
+        consentModal: {
+          title: 'Wir verwenden Cookies',
+          description: 'Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern, den Website-Traffic zu analysieren und Inhalte zu personalisieren. Durch Klicken auf "Alle akzeptieren" stimmen Sie unserer Verwendung von Cookies zu.',
+          acceptAllBtn: 'Alle akzeptieren',
+          acceptNecessaryBtn: 'Alle ablehnen',
+          showPreferencesBtn: 'Einstellungen verwalten',
+          footer: '<a href="/legal/privacy/">Datenschutzerklärung</a>'
+        },
+        preferencesModal: {
+          title: 'Cookie-Einstellungen',
+          acceptAllBtn: 'Alle akzeptieren',
+          acceptNecessaryBtn: 'Alle ablehnen',
+          savePreferencesBtn: 'Einstellungen speichern',
+          closeIconLabel: 'Schließen',
+          serviceCounterLabel: 'Dienst|Dienste',
+          sections: [
+            {
+              title: 'Cookie-Nutzung',
+              description: 'Wir verwenden Cookies, um die grundlegenden Funktionen der Website zu gewährleisten und Ihr Online-Erlebnis zu verbessern. Sie können sich jederzeit für jede Kategorie an- oder abmelden.'
+            },
+            {
+              title: 'Notwendige Cookies',
+              description: 'Diese Cookies sind für das ordnungsgemäße Funktionieren der Website unerlässlich. Ohne diese Cookies würde die Website nicht richtig funktionieren.',
+              linkedCategory: 'necessary'
+            },
+            {
+              title: 'Analyse-Cookies',
+              description: 'Diese Cookies sammeln Informationen darüber, wie Sie die Website nutzen, welche Seiten Sie besucht und auf welche Links Sie geklickt haben. Alle Daten sind anonymisiert und können nicht zur Identifizierung verwendet werden.',
+              linkedCategory: 'analytics'
+            },
+            {
+              title: 'Marketing-Cookies',
+              description: 'Diese Cookies verfolgen Ihre Online-Aktivitäten, um Werbetreibenden zu helfen, relevantere Werbung zu schalten oder zu begrenzen, wie oft Sie eine Anzeige sehen.',
+              linkedCategory: 'marketing'
+            },
+            {
+              title: 'Funktionale Cookies',
+              description: 'Diese Cookies ermöglichen es der Website, sich an Ihre früheren Entscheidungen zu erinnern, wie z.B. Ihre Sprachpräferenz oder Ihren Benutzernamen für die automatische Anmeldung.',
+              linkedCategory: 'functionality'
+            },
+            {
+              title: 'Weitere Informationen',
+              description: 'Bei Fragen zu unserer Cookie-Richtlinie <a href="/about/">kontaktieren Sie uns</a> bitte.'
+            }
+          ]
+        }
+      }
+    }
+  }
+});
 </script>
