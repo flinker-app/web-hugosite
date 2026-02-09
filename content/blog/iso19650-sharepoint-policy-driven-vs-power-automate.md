@@ -39,7 +39,7 @@ tags:
   - Policy Management
 robots: "index, follow"
 canonicalUrl: "https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate"
-image: "/assets-flinker/images/blog/iso19650-policy-vs-powerautomate-cover.svg"
+image: "/assets-flinker/images/blog/iso19650-policy-vs-powerautomate-cover.png"
 ogTitle: "ISO 19650 on SharePoint: Policy-Driven App vs Power Automate"
 ogDescription: "Why Power Automate alone isn't enough for ISO 19650 CDE governance. Learn how a policy-driven app layer delivers repeatable, scalable compliance on SharePoint."
 twitterTitle: "ISO 19650 on SharePoint: Policy App vs Power Automate"
@@ -168,6 +168,19 @@ This policy is versioned, portable, and reusable across projects.
 
 ![Benefits overview](/assets-flinker/images/blog/blog-img-20.svg)
 *Less flow brittleness, more repeatability, control, and traceability.*
+
+| Topic                                              | Power Automate-only (typical pain points)                                                          | Policy-driven ISO 19650 layer on SharePoint                                                |
+| -------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Setup time                                         | Often requires designing, building, and testing multiple flows per project                         | Fast setup via a reusable, versioned policy blueprint (JSON)                               |
+| No-code rule configuration (e.g., plan key checks) | Rules are implemented as flow logic; changes require Power Platform skills                         | Rules are configuration (policy), editable without building flows                          |
+| Permissions & admin friction                       | Creating/maintaining flows often requires Power Automate privileges and governance approvals       | No Power Automate permissions required for core governance operations                      |
+| Correct attribution after moves                    | File operations executed by flows can complicate "who did what" attribution without careful design | Governance actions performed in-app can preserve clear user attribution and logging        |
+| Approval performance                               | Multi-step flow chains can introduce delays during peak submission periods                         | Release-gate UX minimizes orchestration steps; approvals are handled as controlled actions |
+| Blueprint reuse & adaptation                       | Reuse across projects is possible but tends to drift across environments                           | Policy JSON acts as a repeatable template; easy to adapt per project type                  |
+| AI-assisted optimization                           | Not practical to "optimize" flow logic quickly                                                     | Policy text/config can be generated and improved quickly with AI assistance                |
+| Approval status tied to file versions              | Often requires custom linking and careful flow design                                              | Governance layer can store approval/state per file version by design                       |
+| Provisioning wizard                         | Not a native "ISO project room" deploy mechanism                                                   | Wizard can generate folders/libraries/columns/views from the same policy (roadmap)         |
+| QR codes for physical workflows                    | Typically custom build and integration work                                                        | QR generation/printing tied to controlled documents and revisions         |
 
 ### A) Faster, more repeatable setup
 

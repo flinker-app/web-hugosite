@@ -22,9 +22,13 @@
                     {{ $url := .Permalink }}
                     {{ $title := .Title }}
                     {{ $encodedURL := $url | urlquery }}
-                    {{ $encodedTitle := $title | urlquery }}
+                    {{ $titleEncoded := $title | urlquery }}
+                    {{ $encodedTitle := replace $titleEncoded "+" "%20" }}
                     {{ $text := printf "%s – %s" $title $url }}
-                    {{ $encodedText := $text | urlquery }}
+                    {{ $textEncoded := $text | urlquery }}
+                    {{ $encodedText := replace $textEncoded "+" "%20" }}
+                    {{ $mailtoBody := printf "%s%%0A%%0A%s" $encodedTitle $encodedURL }}
+                    {{ $mailtoURL := printf "mailto:?subject=%s&body=%s" $encodedTitle $mailtoBody }}
                     <h1>{{ .Title }}</h1>
                     <div class="d-flex align-items-center mt-lg-6 mt-4">
                         <div class="me-5">
@@ -44,14 +48,14 @@
                         </div>
                         <!-- Share dropdown -->
                         <div class="dropdown ms-auto">
-                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Share
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li><button class="dropdown-item" id="share-native" type="button">Share…</button></li>
-                                <li><a class="dropdown-item" href="mailto:?subject={{ $encodedTitle }}&body={{ $encodedText }}">Email</a></li>
+                                <li><a class="dropdown-item" href="{{ $mailtoURL | safeURL }}">Email</a></li>
                                 <li><a class="dropdown-item" href="https://www.linkedin.com/sharing/share-offsite/?url={{ $encodedURL }}" target="_blank" rel="noopener">LinkedIn</a></li>
-                                <li><a class="dropdown-item" href="https://teams.microsoft.com/share?href={{ $encodedURL }}&text={{ $encodedTitle }}" target="_blank" rel="noopener">Microsoft Teams</a></li>
+                                <li><a class="dropdown-item" href="https://teams.microsoft.com/share?href={{ $encodedURL }}&msgText={{ $encodedTitle }}" target="_blank" rel="noopener">Microsoft Teams</a></li>
                                 <li><a class="dropdown-item" href="https://wa.me/?text={{ $encodedText }}" target="_blank" rel="noopener">WhatsApp</a></li>
                                 <li><button class="dropdown-item" id="share-copy" type="button">Copy link</button></li>
                             </ul>
@@ -120,7 +124,7 @@
                         } catch (e) { /* user cancelled */ }
                     });
                 } else if (nativeBtn) {
-                    nativeBtn.disabled = true;
+                    nativeBtn.parentElement.style.display = 'none';
                 }
                 if (copyBtn && navigator.clipboard) {
                     copyBtn.addEventListener('click', async () => {
