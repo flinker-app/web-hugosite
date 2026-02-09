@@ -2,7 +2,7 @@
 title: "ISO 19650 on SharePoint: Why a Policy-Driven App Beats Power Automate-Only"
 date: 2026-02-09
 draft: false
-description: "Discover why a policy-driven application layer outperforms Power Automate-only solutions for ISO 19650 CDE governance on SharePoint. Learn about release gates, naming compliance, and scalable information management for construction projects."
+description: "Discover why a policy-driven application layer outperforms Power Automate-only solutions for ISO 19650 CDE governance on SharePoint. Includes real-world feedback from BIM practitioners on release gates, naming compliance, and scalable information management."
 slug: "iso19650-sharepoint-policy-driven-vs-power-automate"
 layout: "blogsingle"
 keywords:
@@ -41,7 +41,7 @@ robots: "index, follow"
 canonicalUrl: "https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate"
 image: "/assets-flinker/images/blog/iso19650-policy-vs-powerautomate-cover.png"
 ogTitle: "ISO 19650 on SharePoint: Policy-Driven App vs Power Automate"
-ogDescription: "Why Power Automate alone isn't enough for ISO 19650 CDE governance. Learn how a policy-driven app layer delivers repeatable, scalable compliance on SharePoint."
+ogDescription: "Why Power Automate alone isn't enough for ISO 19650 CDE governance. Real practitioner feedback plus how a policy-driven app layer delivers repeatable, scalable compliance on SharePoint."
 twitterTitle: "ISO 19650 on SharePoint: Policy App vs Power Automate"
 twitterDescription: "Power Automate starts fast but doesn't scale. A policy-driven app layer provides repeatable ISO 19650 governance across SharePoint projects."
 faq:
@@ -138,6 +138,47 @@ At scale, flow-based solutions can run into:
 - Change control challenges (multiple flows with intertwined logic)
 
 This is not an argument against Power Automate. It is an argument against using it as the primary governance engine for a CDE across many projects.
+
+## Real-world feedback from BIM practitioners
+
+The limitations outlined above are not theoretical. Here is direct feedback from a BIM manager on a major UK infrastructure project with hands-on experience implementing Power Automate pipelines for ISO 19650 workflows between ProjectWise and SharePoint:
+
+{{< blogquote variant="prominent" >}}
+Power Automate is reactive. It triggers after the file is uploaded. For ISO 19650, we need a 'Gatekeeper' that prevents non-compliant naming or metadata from even entering the CDE.
+{{< /blogquote >}}
+
+This highlights a fundamental architectural gap: flow-based automation responds to events rather than preventing issues at the source. A policy-driven approach with release gates addresses this by blocking promotion to Published status until compliance is confirmed.
+
+### Maintenance and scaling challenges
+
+{{< blogquote variant="prominent" >}}
+Complex flows with multiple conditions for Status (S0, S1...) and Revisions (P01, C01...) become extremely hard to debug and scale across different projects.
+{{< /blogquote >}}
+
+ISO 19650 status and revision logic is inherently complex. When this logic is embedded in flow conditions rather than externalized as policy configuration, every project becomes a maintenance burden. Changes to revision rules or status codes require flow modifications rather than simple policy updates.
+
+### Hidden operational risks
+
+Two practical issues often overlooked in initial assessments:
+
+- **Connection renewal**: External connectors (e.g., to ProjectWise or other CDEs) require re-authentication every 90 days. If this renewal is missed, data synchronization stops silently—potentially causing days of lost transfers before anyone notices.
+- **Execution duration**: Some flows run for hours due to the nature of CDE systems and API response times. This creates delays in design progress reporting and makes troubleshooting difficult when issues occur mid-execution.
+
+### The expertise barrier
+
+{{< blogquote variant="prominent" >}}
+I have applied some functions that might be advanced for some users who do not know Power Automate very well. I would describe the Flow as simple, but for most BIM users, it's really complicated. You do not expect each and everyone in that field to have that knowledge with Power Automate.
+{{< /blogquote >}}
+
+This is a critical adoption barrier. BIM coordinators and information managers are not Power Platform specialists. When governance depends on flow logic that only a few people understand, the organization creates a knowledge bottleneck and a single point of failure for compliance operations.
+
+### Audit trail limitations
+
+{{< blogquote variant="prominent" >}}
+Creating a consolidated, BIM-manager-friendly audit trail that links documents to specific containers and levels is tedious to build manually.
+{{< /blogquote >}}
+
+While Power Automate logs flow runs, translating those logs into meaningful governance reports requires significant custom development. A purpose-built governance layer can provide structured issue tracking and event logging designed for BIM workflows from the start.
 
 ## The alternative: a policy-driven application layer on top of SharePoint
 
