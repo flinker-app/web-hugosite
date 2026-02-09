@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="923" height="520" viewBox="0 0 923 520" role="img" aria-label="ISO 19650 Governance on SharePoint with policy-driven app and release gates">
+  <defs>
+    <linearGradient id="accHero" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1E6BFF"/>
+      <stop offset="0.55" stop-color="#00B7C3"/>
+      <stop offset="1" stop-color="#20C997"/>
+    </linearGradient>
+    <filter id="dsHero" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0B1B3A" flood-opacity="0.10"/>
+    </filter>
+    <filter id="dsSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0B1B3A" flood-opacity="0.06"/>
+    </filter>
+    <style>
+      .lbl{font:600 13px/1.2 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; fill:#0B1B3A}
+      .cap{font:600 11px/1.2 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; fill:#5B6B7C; letter-spacing:.05em; text-transform:uppercase}
+      .mini{font:500 11px/1.2 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; fill:#5B6B7C}
+      .mono{font:500 10px/1.2 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace; fill:#0B1B3A}
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="923" height="520" rx="20" fill="#FAFBFD"/>
+
+  <!-- Left: SharePoint Project Room -->
+  <g transform="translate(40 32)">
+    <rect x="0" y="0" width="480" height="456" rx="16" fill="#FFFFFF" filter="url(#dsHero)"/>
+
+    <!-- Top bar -->
+    <rect x="0" y="0" width="480" height="52" rx="16" fill="#F5F7FA"/>
+    <rect x="0" y="36" width="480" height="16" fill="#F5F7FA"/>
+    <circle cx="24" cy="26" r="6" fill="#1E6BFF" opacity="0.6"/>
+    <circle cx="44" cy="26" r="6" fill="#00B7C3" opacity="0.6"/>
+    <circle cx="64" cy="26" r="6" fill="#20C997" opacity="0.6"/>
+    <text class="lbl" x="88" y="30">SharePoint Project Room</text>
+
+    <!-- Libraries section -->
+    <g transform="translate(20 72)">
+      <text class="cap" x="0" y="0">Document Libraries</text>
+
+      <!-- WIP -->
+      <g transform="translate(0 16)">
+        <rect x="0" y="0" width="180" height="56" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#dsSoft)"/>
+        <rect x="12" y="12" width="32" height="32" rx="8" fill="#EBF4FF"/>
+        <path d="M24 20h16a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H24a4 4 0 0 1-4-4V24a4 4 0 0 1 4-4z" fill="none" stroke="#1E6BFF" stroke-width="1.5"/>
+        <text class="lbl" x="56" y="30">WIP</text>
+        <text class="mini" x="56" y="44">Work in progress</text>
+      </g>
+
+      <!-- Shared -->
+      <g transform="translate(0 82)">
+        <rect x="0" y="0" width="180" height="56" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#dsSoft)"/>
+        <rect x="12" y="12" width="32" height="32" rx="8" fill="#E6FAFA"/>
+        <circle cx="28" cy="28" r="8" fill="none" stroke="#00B7C3" stroke-width="1.5"/>
+        <path d="M28 24v8M24 28h8" stroke="#00B7C3" stroke-width="1.5" stroke-linecap="round"/>
+        <text class="lbl" x="56" y="30">Shared</text>
+        <text class="mini" x="56" y="44">Coordination</text>
+      </g>
+
+      <!-- Published -->
+      <g transform="translate(0 148)">
+        <rect x="0" y="0" width="180" height="56" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#dsSoft)"/>
+        <rect x="12" y="12" width="32" height="32" rx="8" fill="#ECFDF5"/>
+        <path d="M22 28l5 5 10-10" fill="none" stroke="#20C997" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="lbl" x="56" y="30">Published</text>
+        <text class="mini" x="56" y="44">Deliverables</text>
+      </g>
+
+      <!-- Archived -->
+      <g transform="translate(0 214)">
+        <rect x="0" y="0" width="180" height="56" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#dsSoft)"/>
+        <rect x="12" y="12" width="32" height="32" rx="8" fill="#F1F5F9"/>
+        <path d="M20 24h20v4H20zM22 28v12h16V28" fill="none" stroke="#64748B" stroke-width="1.5" stroke-linejoin="round"/>
+        <text class="lbl" x="56" y="30">Archived</text>
+        <text class="mini" x="56" y="44">Retention</text>
+      </g>
+    </g>
+
+    <!-- Release Gate -->
+    <g transform="translate(220 88)">
+      <rect x="0" y="0" width="240" height="200" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <text class="cap" x="16" y="24">Release Gate</text>
+
+      <!-- Lock icon -->
+      <g transform="translate(16 40)">
+        <rect x="0" y="0" width="56" height="64" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+        <path d="M18 28v-6a10 10 0 0 1 20 0v6" fill="none" stroke="#1E6BFF" stroke-width="1.5" stroke-linecap="round"/>
+        <rect x="16" y="28" width="24" height="20" rx="6" fill="#EBF4FF" stroke="#1E6BFF" stroke-width="1.5"/>
+        <circle cx="28" cy="38" r="2.5" fill="#1E6BFF"/>
+      </g>
+
+      <!-- Checklist -->
+      <g transform="translate(88 44)">
+        <text class="mini" x="0" y="0" fill="#0B1B3A" font-weight="600">Policy checks</text>
+
+        <g transform="translate(0 14)">
+          <rect x="0" y="0" width="136" height="24" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+          <path d="M12 12l3 3 6-6" fill="none" stroke="#20C997" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <text class="mini" x="28" y="16">Naming</text>
+        </g>
+        <g transform="translate(0 44)">
+          <rect x="0" y="0" width="136" height="24" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+          <path d="M12 12l3 3 6-6" fill="none" stroke="#20C997" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <text class="mini" x="28" y="16">Metadata</text>
+        </g>
+        <g transform="translate(0 74)">
+          <rect x="0" y="0" width="136" height="24" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+          <path d="M12 12l3 3 6-6" fill="none" stroke="#20C997" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <text class="mini" x="28" y="16">Status/Revision</text>
+        </g>
+        <g transform="translate(0 104)">
+          <rect x="0" y="0" width="136" height="24" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+          <path d="M12 12l3 3 6-6" fill="none" stroke="#20C997" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <text class="mini" x="28" y="16">Approval</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Policy Blueprint -->
+    <g transform="translate(220 304)">
+      <rect x="0" y="0" width="240" height="72" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#dsSoft)"/>
+      <rect x="12" y="12" width="216" height="6" rx="3" fill="url(#accHero)" opacity="0.8"/>
+      <text class="lbl" x="12" y="36">Policy blueprint</text>
+      <text class="mono" x="12" y="52">{ naming, metadata, states, logs }</text>
+    </g>
+
+    <!-- Flow arrows -->
+    <g transform="translate(200 110)" fill="none" stroke-linecap="round">
+      <path d="M0 12 Q16 12, 16 42 Q16 72, 0 72" stroke="#1E6BFF" stroke-width="2" opacity="0.3"/>
+      <path d="M0 78 Q20 78, 20 118 Q20 158, 0 158" stroke="#00B7C3" stroke-width="2" opacity="0.3"/>
+      <path d="M0 164 Q16 164, 16 194 Q16 224, 0 224" stroke="#20C997" stroke-width="2" opacity="0.3"/>
+    </g>
+  </g>
+
+  <!-- Right: Microsoft 365 -->
+  <g transform="translate(548 32)">
+    <rect x="0" y="0" width="335" height="456" rx="16" fill="#FFFFFF" filter="url(#dsHero)"/>
+
+    <!-- Top bar -->
+    <rect x="0" y="0" width="335" height="52" rx="16" fill="#F5F7FA"/>
+    <rect x="0" y="36" width="335" height="16" fill="#F5F7FA"/>
+    <text class="lbl" x="20" y="30">Microsoft 365</text>
+
+    <!-- Governance Log -->
+    <g transform="translate(20 72)">
+      <rect x="0" y="0" width="295" height="80" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#dsSoft)"/>
+      <text class="cap" x="16" y="24">Governance Log</text>
+      <text class="mini" x="16" y="44">Issues • Events • Evidence</text>
+      <g transform="translate(16 54)">
+        <circle cx="0" cy="0" r="4" fill="#1E6BFF"/>
+        <circle cx="16" cy="0" r="4" fill="#00B7C3"/>
+        <circle cx="32" cy="0" r="4" fill="#20C997"/>
+        <path d="M0 0h32" stroke="#E2E8F0" stroke-width="2"/>
+      </g>
+    </g>
+
+    <!-- Purview -->
+    <g transform="translate(20 168)">
+      <rect x="0" y="0" width="295" height="80" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#dsSoft)"/>
+      <text class="cap" x="16" y="24">Purview (optional)</text>
+      <text class="mini" x="16" y="44">Tenant audit &amp; retention</text>
+      <g transform="translate(240 24)">
+        <circle cx="20" cy="20" r="16" fill="#EBF4FF" stroke="#1E6BFF" stroke-width="1.5"/>
+        <path d="M20 14v10l6 4" fill="none" stroke="#1E6BFF" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- Power Automate -->
+    <g transform="translate(20 264)">
+      <rect x="0" y="0" width="295" height="120" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#dsSoft)"/>
+      <text class="cap" x="16" y="24">Power Automate</text>
+      <text class="mini" x="16" y="44">Selective add-ons</text>
+
+      <g transform="translate(16 58)">
+        <rect x="0" y="0" width="263" height="24" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text class="mini" x="12" y="16">Notifications</text>
+      </g>
+      <g transform="translate(16 88)">
+        <rect x="0" y="0" width="263" height="24" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text class="mini" x="12" y="16">Integrations</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Connection arrow between cards -->
+  <g transform="translate(520 240)">
+    <path d="M0 0 L28 0" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+    <path d="M20 -6 L28 0 L20 6" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
