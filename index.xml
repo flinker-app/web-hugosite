@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Home on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 05 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>IFC Viewer App for SharePoint, Teams &amp; Excel</title><link>https://flinker.app/products/ifc-viewer/</link><pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/products/ifc-viewer/</guid><description>&lt;!-- HERO -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Home on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 09 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>ISO 19650 on SharePoint: Why a Policy-Driven App Beats Power Automate-Only</title><link>https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate/</link><pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate/</guid><description>&lt;h1 id="iso-19650-on-sharepoint-why-a-policy-driven-app-beats-a-power-automate-only-approach">ISO 19650 on SharePoint: Why a Policy-Driven App Beats a &amp;ldquo;Power Automate-Only&amp;rdquo; Approach&lt;/h1>
+&lt;p>Many construction and infrastructure organizations want an ISO 19650–aligned Common Data Environment (CDE) while keeping data inside Microsoft 365. SharePoint provides the underlying document management platform, and Power Automate is often used to stitch processes together. In practice, however, an ISO 19650 CDE requires more than automation steps: it requires governance, repeatability, enforceable rules, and predictable user experience at scale.&lt;/p></description></item><item><title>IFC Viewer App for SharePoint, Teams &amp; Excel</title><link>https://flinker.app/products/ifc-viewer/</link><pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/products/ifc-viewer/</guid><description>&lt;!-- HERO -->
 &lt;section class="pt-5 pt-lg-8 pb-4">
  &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
  &lt;small class="text-primary text-uppercase ls-md fw-semibold">Enterprise-ready openBIM&lt;/small>
@@ -413,6 +414,28 @@
  &lt;/div>
 
  &lt;div class="row gy-lg-7 gy-5">
+ &lt;article class="col-lg-4 col-md-6 col-12">
+ &lt;figure class="mb-4 zoom-img">
+ &lt;a href="https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate">
+ &lt;img src="./assets-flinker/images/blog/blog-img-18.svg" alt="ISO 19650 Policy-Driven App vs Power Automate" class="img-fluid rounded-3" />
+ &lt;/a>
+ &lt;/figure>
+
+ &lt;a href="#!" class="badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase">Compliance&lt;/a>
+ &lt;h3 class="my-3 lh-base h4">
+ &lt;a href="https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate" class="text-reset">ISO 19650 on SharePoint: Why a Policy-Driven App Beats Power Automate-Only&lt;/a>
+ &lt;/h3>
+ &lt;div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
+ &lt;div class="d-flex align-items-center">
+ &lt;img src="./assets/images/avatar/avatar-7.jpg" alt="Avatar" class="avatar avatar-xs rounded-circle" />
+ &lt;div class="ms-2">
+ &lt;a href="#" class="text-reset fs-6">Misbah Afzal&lt;/a>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="ms-3">&lt;span class="fs-6">Feb 9, 2026&lt;/span>&lt;/div>
+ &lt;/div>
+ &lt;/article>
+
  &lt;article class="col-lg-4 col-md-6 col-12">
  &lt;figure class="mb-4 zoom-img">
  &lt;a href="https://flinker.app/blog/iso19650-sharepoint-cde">
