@@ -1,4 +1,111 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Products on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/categories/products/</link><description>Recent content in Products on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 05 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/categories/products/index.xml" rel="self" type="application/rss+xml"/><item><title>IFC Viewer App for SharePoint, Teams &amp; Excel</title><link>https://flinker.app/products/ifc-viewer/</link><pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/products/ifc-viewer/</guid><description>&lt;!-- HERO -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Products on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/categories/products/</link><description>Recent content in Products on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 09 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/categories/products/index.xml" rel="self" type="application/rss+xml"/><item><title>ISO 19650 App for SharePoint</title><link>https://flinker.app/products/iso-19650-app/</link><pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/products/iso-19650-app/</guid><description>&lt;!-- HERO -->
+&lt;section class="pt-5 pt-lg-8 pb-4">
+ &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
+ &lt;h1 class="display-5 fw-bold" style="margin:0 0 12px; font-size:clamp(32px,5vw,48px); line-height:1.15; letter-spacing:-0.02em;">
+ ISO 19650 compliance for SharePoint
+ &lt;/h1>
+ &lt;p class="lead text-muted" style="margin:0 auto 28px; max-width:720px;">
+ Your data stays in M365. Your rules get enforced.
+ &lt;/p>
+ &lt;div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+ &lt;a href="#contact"
+ class="btn btn-primary btn-lg" style="padding:12px 24px; border-radius:12px; font-weight:700;">
+ Request Demo
+ &lt;/a>
+ &lt;a href="https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate/"
+ class="btn btn-outline-primary btn-lg" style="padding:12px 24px; border-radius:12px; font-weight:700;">
+ Why Policy-Driven?
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="d-flex flex-wrap justify-content-center align-items-center gap-4 text-muted small">
+ &lt;span class="d-flex align-items-center gap-2">
+ &lt;i class="bi bi-shield-check text-success">&lt;/i>
+ Data stays in your M365 tenant
+ &lt;/span>
+ &lt;span class="d-flex align-items-center gap-2">
+ &lt;i class="bi bi-file-earmark-code text-primary">&lt;/i>
+ Policy-JSON configuration
+ &lt;/span>
+ &lt;span class="d-flex align-items-center gap-2">
+ &lt;i class="bi bi-check2-circle text-primary">&lt;/i>
+ Partner-ready blueprints
+ &lt;/span>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+
+&lt;!-- IN-PAGE NAVIGATION -->
+&lt;style>
+ .nav-underline-link {
+ position: relative;
+ color: #6c757d;
+ text-decoration: none;
+ padding-bottom: 0.25rem;
+ transition: color 0.2s ease;
+ }
+ .nav-underline-link::after {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 0;
+ height: 2px;
+ background-color: var(--bs-primary);
+ transition: width 0.2s ease;
+ }
+ .nav-underline-link:hover {
+ color: var(--bs-primary);
+ }
+ .nav-underline-link:hover::after {
+ width: 100%;
+ }
+&lt;/style>
+&lt;nav class="py-3 border-bottom bg-white sticky-top" style="top:0; z-index:100;">
+ &lt;div class="container">
+ &lt;div class="d-flex flex-wrap justify-content-center gap-4 gap-md-5">
+ &lt;a href="#features" class="nav-underline-link small fw-medium">Features&lt;/a>
+ &lt;a href="#comparison" class="nav-underline-link small fw-medium">Comparison&lt;/a>
+ &lt;a href="#pricing" class="nav-underline-link small fw-medium">Pricing&lt;/a>
+ &lt;a href="#faq" class="nav-underline-link small fw-medium">FAQ&lt;/a>
+ &lt;/div>
+ &lt;/div>
+&lt;/nav>
+
+&lt;!-- OVERVIEW VIDEO -->
+&lt;section id="overview-video" class="py-lg-7 py-5">
+ &lt;div class="container" style="max-width:900px;">
+ &lt;div class="text-center mb-4">
+ &lt;h2 class="mb-3">Product Introduction&lt;/h2>
+ &lt;/div>
+ &lt;iframe
+ title="ISO 19650 App Overview"
+ src="https://www.youtube.com/embed/aJbnuYtHd7U"
+ style="width:100%; aspect-ratio: 16 / 9;"
+ class="bg-body-tertiary p-3 rounded-3 border"
+ loading="lazy"
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ referrerpolicy="strict-origin-when-cross-origin"
+ allowfullscreen>
+ &lt;/iframe>
+ &lt;/div>
+&lt;/section>
+
+&lt;!-- PROBLEM &amp; SOLUTION -->
+&lt;section id="problem" class="py-lg-9 py-5 bg-light">
+ &lt;div class="container" style="max-width:900px;">
+ &lt;div class="row">
+ &lt;div class="col-lg-10 offset-lg-1">
+ &lt;div class="text-center mb-5">
+ &lt;h2 class="mb-3">SharePoint stores documents. &lt;span class="text-primary">It doesn't enforce ISO 19650.&lt;/span>&lt;/h2>
+ &lt;/div>
+ &lt;div class="row g-4">
+ &lt;div class="col-md-6">
+ &lt;div class="card h-100 border-0 shadow-sm p-4">
+ &lt;div class="mb-3">
+ &lt;i class="bi bi-x-circle fs-2 text-danger">&lt;/i>
+ &lt;/div>
+ &lt;h3 class="h5 fw-bold">The Problem&lt;/h3>
+ &lt;p class="text-muted mb-0">Large construction projects need ISO-19650 compliant CDE processes on their existing M365 tenant. But ISO rules (naming, status/revision, approvals) are not enforced — leading to inconsistency and compliance risks.&lt;/p></description></item><item><title>IFC Viewer App for SharePoint, Teams &amp; Excel</title><link>https://flinker.app/products/ifc-viewer/</link><pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/products/ifc-viewer/</guid><description>&lt;!-- HERO -->
 &lt;section class="pt-5 pt-lg-8 pb-4">
  &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
  &lt;small class="text-primary text-uppercase ls-md fw-semibold">Enterprise-ready openBIM&lt;/small>
