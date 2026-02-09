@@ -182,10 +182,12 @@ schema:
 <nav class="py-3 border-bottom bg-white sticky-top" style="top:0; z-index:100;">
   <div class="container">
     <div class="d-flex flex-wrap justify-content-center gap-2 gap-md-4">
+      <a href="#overview-video" class="text-muted text-decoration-none small fw-medium">Overview</a>
       <a href="#problem" class="text-muted text-decoration-none small fw-medium">Why?</a>
       <a href="#features" class="text-muted text-decoration-none small fw-medium">Features</a>
       <a href="#permissions" class="text-muted text-decoration-none small fw-medium">Permissions</a>
       <a href="#how-it-works" class="text-muted text-decoration-none small fw-medium">How It Works</a>
+      <a href="#feature-video" class="text-muted text-decoration-none small fw-medium">Feature</a>
       <a href="#naming" class="text-muted text-decoration-none small fw-medium">Naming</a>
       <a href="#comparison" class="text-muted text-decoration-none small fw-medium">Comparison</a>
       <a href="#pricing" class="text-muted text-decoration-none small fw-medium">Pricing</a>
@@ -193,6 +195,25 @@ schema:
     </div>
   </div>
 </nav>
+
+<!-- OVERVIEW VIDEO -->
+<section id="overview-video" class="py-lg-7 py-5">
+  <div class="container" style="max-width:900px;">
+    <div class="text-center mb-4">
+      <small class="text-primary text-uppercase ls-md fw-semibold">See It In Action</small>
+      <h2 class="mt-2 mb-3">Product Overview</h2>
+    </div>
+    <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
+      <iframe
+        src="https://www.youtube.com/embed/aJbnuYtHd7U"
+        title="ISO 19650 App Overview"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
 
 <!-- PROBLEM & SOLUTION -->
 <section id="problem" class="py-lg-9 py-5 bg-light">
@@ -288,7 +309,7 @@ schema:
     <div class="row">
       <div class="col-lg-8 offset-lg-2">
         <div class="text-center mb-xl-7 mb-5">
-          <small class="text-primary text-uppercase ls-md fw-semibold">V1 Features</small>
+          <small class="text-primary text-uppercase ls-md fw-semibold">Core Features</small>
           <h2 class="mt-2 mb-3">Everything you need for <span class="text-primary">ISO 19650 compliance</span></h2>
           <p class="text-muted">Policy-driven document control that guides users and prevents non-compliant publications.</p>
         </div>
@@ -304,7 +325,7 @@ schema:
             </div>
           </div>
           <h3 class="h5 fw-bold">Policy-JSON Configuration</h3>
-          <p class="text-muted small mb-3">Define all ISO rules in a single JSON file stored in Site Assets. Schema-validated with clear error messages.</p>
+          <p class="text-muted small mb-3">Define all ISO rules in a single configuration file stored in SharePoint. Schema-validated with clear error messages.</p>
           <ul class="list-unstyled text-muted small mb-0">
             <li><i class="bi bi-check text-success me-2"></i>Portable blueprints</li>
             <li><i class="bi bi-check text-success me-2"></i>Partner-customizable</li>
@@ -321,7 +342,7 @@ schema:
             </div>
           </div>
           <h3 class="h5 fw-bold">Naming Convention Enforcement</h3>
-          <p class="text-muted small mb-3">Regex-based patterns validate filenames. Mode per area: off in WIP, warn in Shared, enforce in Published.</p>
+          <p class="text-muted small mb-3">Pattern-based validation checks filenames automatically. Mode per area: off in WIP, warn in Shared, enforce in Published.</p>
           <ul class="list-unstyled text-muted small mb-0">
             <li><i class="bi bi-check text-success me-2"></i>Clear user guidance on failure</li>
             <li><i class="bi bi-check text-success me-2"></i>Auto-extract metadata from filename</li>
@@ -501,7 +522,7 @@ schema:
               <span class="badge bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width:40px; height:40px; font-size:1.1rem;">1</span>
             </div>
             <div class="ms-4">
-              <h3 class="h5 fw-bold mb-1">Upload Policy-JSON to Site Assets</h3>
+              <h3 class="h5 fw-bold mb-1">Upload your configuration to SharePoint</h3>
               <p class="text-muted mb-0">Define your ISO rules: naming patterns, metadata requirements, approval workflows, and area structure.</p>
             </div>
           </div>
@@ -551,8 +572,27 @@ schema:
   </div>
 </section>
 
+<!-- FEATURE VIDEO -->
+<section id="feature-video" class="py-lg-7 py-5 bg-light">
+  <div class="container" style="max-width:900px;">
+    <div class="text-center mb-4">
+      <small class="text-primary text-uppercase ls-md fw-semibold">Feature Deep Dive</small>
+      <h2 class="mt-2 mb-3">See the Features in Detail</h2>
+    </div>
+    <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
+      <iframe
+        src="https://www.youtube.com/embed/78Hd3phz_OA"
+        title="ISO 19650 App Features"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
 <!-- NAMING EXAMPLE -->
-<section id="naming" class="py-lg-9 py-5 bg-light">
+<section id="naming" class="py-lg-9 py-5">
   <div class="container" style="max-width:900px;">
     <div class="text-center mb-5">
       <small class="text-primary text-uppercase ls-md fw-semibold">ISO 19650 Naming</small>
@@ -789,7 +829,7 @@ schema:
         </h3>
         <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body text-muted">
-            All rules are defined in a single Policy-JSON file stored in Site Assets. The JSON schema includes naming patterns (regex), metadata requirements, approval workflows, area structure (WIP/Shared/Published/Archive), and role definitions. Partners can export/import and customize blueprints.
+            All rules are defined in a single configuration file stored in SharePoint. This includes naming patterns, metadata requirements, approval workflows, area structure (WIP/Shared/Published/Archive), and role definitions. Partners can export, import, and customize blueprints.
           </div>
         </div>
       </div>
@@ -813,7 +853,7 @@ schema:
         </h3>
         <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body text-muted">
-            Files can only move from Shared to Published if they pass all compliance checks: correct naming, required metadata present, and approval granted (if required). V1 enforces this at the UI/process level. Enterprise adds hard enforcement for all upload paths (sync, API, third-party).
+            Files can only move from Shared to Published if they pass all compliance checks: correct naming, required metadata present, and approval granted (if required). Pro enforces this at the UI/process level. Enterprise adds hard enforcement for all upload paths (sync, API, third-party).
           </div>
         </div>
       </div>
@@ -825,7 +865,7 @@ schema:
         </h3>
         <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body text-muted">
-            Yes. Compliance issues are logged in a SharePoint list (FLK_CDE_ComplianceIssues). Audit events (policy loaded, action attempted, action blocked, approved, rejected, file moved) are logged in FLK_CDE_AuditEvents. Long-term retention integrates with Microsoft Purview.
+            Yes. Compliance issues are logged in a dedicated SharePoint list. Audit events (policy loaded, action attempted, action blocked, approved, rejected, file moved) are tracked automatically. Long-term retention integrates with Microsoft Purview.
           </div>
         </div>
       </div>
@@ -837,20 +877,20 @@ schema:
         </h3>
         <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body text-muted">
-            Partners can create, export, import, and version blueprints (JSON). Build a "DB InfraGO profile" or "UK ISO 19650 profile" once, then deploy to multiple clients. Customizing without code — change the JSON, redeploy.
+            Partners can create, export, import, and version blueprints (JSON). Build a country-specific or client-specific profile once, then deploy to multiple projects. Customizing without code — change the JSON, redeploy.
           </div>
         </div>
       </div>
       <div class="accordion-item border-0 mb-3 shadow-sm rounded-3">
         <h3 class="accordion-header">
           <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
-            What's the difference between V1 and Enterprise?
+            What's the difference between Pro and Enterprise?
           </button>
         </h3>
         <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body text-muted">
-            <strong>V1 (Pro):</strong> UI/process gate enforcement. Validates at release actions (submit, approve, publish). Users can still upload via sync/API but files won't pass the release gate if non-compliant.<br><br>
-            <strong>Enterprise:</strong> Hard enforcement on all upload paths. Blocks non-compliant files at ingress. Plus transmittals suite, advanced reporting, and priority support.
+            <strong>Pro:</strong> Process gate enforcement. Validates at release actions (submit, approve, publish). Users can upload files, but non-compliant files won't pass the release gate.<br><br>
+            <strong>Enterprise:</strong> Hard enforcement on all upload paths. Blocks non-compliant files immediately. Plus transmittals suite, advanced reporting, and priority support.
           </div>
         </div>
       </div>
