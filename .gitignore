@@ -22,3 +22,7 @@ Thumbs.db
 
 # claude
 .claude
+
+# Backup and drafts
+_backup/
+_drafts/
