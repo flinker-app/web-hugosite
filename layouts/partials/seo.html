@@ -1,5 +1,5 @@
 {{- $desc := or (.Params.description | plainify) (.Summary | plainify) -}}
-{{- $shareImage := .Params.shareImage | default .Params.linkedinImage -}}
+{{- $shareImage := .Params.shareImage | default .Params.linkedinImage | default .Params.image | default .Params.featured_image -}}
 
 {{- $pageTitle := or .Title .Params.title -}}
 {{- if and (not $pageTitle) (eq .RelPermalink "/legal/support-plans/") -}}

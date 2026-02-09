@@ -39,7 +39,7 @@ tags:
   - Policy Management
 robots: "index, follow"
 canonicalUrl: "https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate"
-image: "/images/blog/iso19650-policy-vs-powerautomate-cover.png"
+image: "/assets-flinker/images/blog/iso19650-policy-vs-powerautomate-cover.svg"
 ogTitle: "ISO 19650 on SharePoint: Policy-Driven App vs Power Automate"
 ogDescription: "Why Power Automate alone isn't enough for ISO 19650 CDE governance. Learn how a policy-driven app layer delivers repeatable, scalable compliance on SharePoint."
 twitterTitle: "ISO 19650 on SharePoint: Policy App vs Power Automate"
