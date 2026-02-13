@@ -3,6 +3,8 @@
 <main>
     <!-- Blogpost-only typography -->
     <link rel="stylesheet" href="/assets-flinker/css/blog-post.css">
+    <!-- Lightbox for zoomable images -->
+    <link rel="stylesheet" href="/assets/libs/glightbox/dist/css/glightbox.min.css">
     <!-- Reading progress bar (blog single only) -->
     <div id="reading-progress" aria-hidden="true"></div>
     
@@ -137,6 +139,30 @@
                 }
             });
         </script>
+    <!-- Lightbox for zoomable images -->
+    <script src="/assets/libs/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Wrap all markdown images in links for lightbox (if not already linked)
+            document.querySelectorAll('.markdown-content img').forEach(function (img) {
+                if (img.parentElement.tagName !== 'A') {
+                    var link = document.createElement('a');
+                    link.href = img.src;
+                    link.classList.add('glightbox');
+                    img.parentNode.insertBefore(link, img);
+                    link.appendChild(img);
+                } else {
+                    img.parentElement.classList.add('glightbox');
+                }
+            });
+            // Initialize GLightbox with larger default size
+            GLightbox({
+                selector: '.glightbox',
+                width: '95vw',
+                height: '90vh'
+            });
+        });
+    </script>
 </main>
 
 {{ end }}

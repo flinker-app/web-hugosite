@@ -6,6 +6,18 @@ draft: false
 url: "/blog/"
 layout: "single"
 ---
+<style>
+/* Consistent blog card image sizing */
+.zoom-img {
+   aspect-ratio: 16 / 9;
+   overflow: hidden;
+}
+.zoom-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+</style>
 <!--Square Pattern Start-->
 <div class="pattern"></div>
 <!--Square Pattern End-->
@@ -40,14 +52,14 @@ layout: "single"
                <div class="col-lg-6 col-md-6 col-12">
                   <label for="categoryList" class="form-label visually-hidden">Search Category</label>
                   <select class="form-select" id="categoryList">
-                     <option selected disabled value="">Select Category</option>
+                     <option selected value="">All Categories</option>
+                     <option value="Compliance">Compliance</option>
                      <option value="Construction">Construction</option>
-                     <option value="Technology">Technology</option>
                      <option value="Data Management">Data Management</option>
-                     <option value="Partnerships">Partnerships</option>
+                     <option value="Technology">Technology</option>
                      <option value="Architecture">Architecture</option>
                      <option value="Facility Management">Facility Management</option>
-
+                     <option value="Partnerships">Partnerships</option>
                   </select>
                </div>
             </div>
@@ -87,7 +99,29 @@ layout: "single"
       </div>
 
       <div class="row gy-lg-7 gy-5">
-         <article class="col-lg-4 col-md-6 col-12">
+         <article class="col-lg-4 col-md-6 col-12" data-category="Compliance">
+            <figure class="mb-4 zoom-img">
+               <a href="/blog/power-automate-approvals-vs-iso-19650">
+                  <img src="./assets-flinker/images/blog/approvals-vs-iso/layer-model.svg" alt="Approvals Connector vs Approvals Kit vs ISO 19650 Governance" class="img-fluid rounded-3" />
+               </a>
+            </figure>
+
+            <a href="#!" class="badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase">Compliance</a>
+            <h3 class="my-3 lh-base h4">
+               <a href="/blog/power-automate-approvals-vs-iso-19650" class="text-reset">Approvals Connector vs Approvals Kit vs ISO 19650 Governance</a>
+            </h3>
+            <div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
+               <div class="d-flex align-items-center">
+                  <img src="./assets/images/avatar/avatar-7.jpg" alt="Avatar" class="avatar avatar-xs rounded-circle" />
+                  <div class="ms-2">
+                     <a href="#" class="text-reset fs-6">Misbah Afzal</a>
+                  </div>
+               </div>
+               <div class="ms-3"><span class="fs-6">Feb 13, 2026</span></div>
+            </div>
+         </article>
+
+         <article class="col-lg-4 col-md-6 col-12" data-category="Compliance">
             <figure class="mb-4 zoom-img">
                <a href="/blog/iso19650-sharepoint-policy-driven-vs-power-automate">
                   <img src="./assets-flinker/images/blog/blog-img-18.svg" alt="ISO 19650 Policy-Driven App vs Power Automate" class="img-fluid rounded-3" />
@@ -109,7 +143,7 @@ layout: "single"
             </div>
          </article>
 
-         <article class="col-lg-4 col-md-6 col-12">
+         <article class="col-lg-4 col-md-6 col-12" data-category="Data Management">
             <figure class="mb-4 zoom-img">
                <a href="/blog/iso19650-sharepoint-cde">
                   <img src="./assets-flinker/images/blog/blog-img-16.svg" alt="blog" class="img-fluid rounded-3" />
@@ -131,7 +165,7 @@ layout: "single"
             </div>
          </article>
 
-         <article class="col-lg-4 col-md-6 col-12">
+         <article class="col-lg-4 col-md-6 col-12" data-category="Data Management">
             <figure class="mb-4 zoom-img">
                <a href="/blog/sharepoint-cde-construction-projects">
                   <img src="./assets-flinker/images/blog/blog-img-12.1.png" alt="blog" class="img-fluid rounded-3" />
@@ -153,8 +187,7 @@ layout: "single"
             </div>
          </article>
 
-
-         <article class="col-lg-4 col-md-6 col-12">
+         <article class="col-lg-4 col-md-6 col-12" data-category="Data Management">
             <figure class="mb-4 zoom-img">
                <a href="/blog/sharepoint-cde-success-stories">
                   <img src="./assets-flinker/images/blog/blog-img-2.1.png" alt="blog" class="img-fluid rounded-3" />
@@ -176,8 +209,7 @@ layout: "single"
             </div>
          </article>
 
-
-         <article class="col-lg-4 col-md-6 col-12">
+         <article class="col-lg-4 col-md-6 col-12" data-category="Technology">
             <figure class="mb-4 zoom-img">
                <a href="/blog/visualize-bim-in-power-bi">
                   <img src="./assets-flinker/images/blog/blog-img-8.1.png" alt="blog" class="img-fluid rounded-3" />
@@ -214,4 +246,6 @@ layout: "single"
    </div>
 </section>
 <!--Blog grid end-->
+
+<script src="./assets-flinker/js/blog-filter.js"></script>
          

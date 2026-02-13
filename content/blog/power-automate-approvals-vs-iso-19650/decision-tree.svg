@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="400" viewBox="0 0 820 400">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0779ff"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <!-- Question 1: Contractual meaning -->
+  <rect x="250" y="20" width="320" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="410" y="50" font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#1d1d1f" font-weight="500" text-anchor="middle">Does "Published" have contractual meaning?</text>
+
+  <!-- Lines from Q1 -->
+  <line x1="330" y1="70" x2="150" y2="110" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="490" y1="70" x2="660" y2="110" stroke="#0779ff" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <text x="210" y="88" font-family="Inter, -apple-system, sans-serif" font-size="11" fill="#64748b" font-weight="500">NO</text>
+  <text x="600" y="88" font-family="Inter, -apple-system, sans-serif" font-size="11" fill="#0779ff" font-weight="600">YES</text>
+
+  <!-- Question 2a: Multi-stage processes (NO branch) -->
+  <rect x="20" y="115" width="260" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="150" y="145" font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#1d1d1f" font-weight="500" text-anchor="middle">Need multi-stage approval processes?</text>
+
+  <!-- Lines from Q2a -->
+  <line x1="80" y1="165" x2="80" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="220" y1="165" x2="320" y2="210" stroke="#96bfff" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="65" y="190" font-family="Inter, -apple-system, sans-serif" font-size="11" fill="#64748b" font-weight="500">NO</text>
+  <text x="285" y="190" font-family="Inter, -apple-system, sans-serif" font-size="11" fill="#64748b" font-weight="500">YES</text>
+
+  <!-- Answer: Standard Approvals -->
+  <rect x="20" y="215" width="180" height="65" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="20" y="215" width="6" height="65" rx="3" fill="#94a3b8"/>
+  <text x="40" y="240" font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#1d1d1f" font-weight="600">Standard Approvals</text>
+  <text x="40" y="258" font-family="Inter, -apple-system, sans-serif" font-size="10" fill="#64748b">Simple approve/reject</text>
+  <text x="40" y="272" font-family="Inter, -apple-system, sans-serif" font-size="10" fill="#ef4444">⚠ 28-day timeout</text>
+
+  <!-- Answer: Approvals Kit -->
+  <rect x="260" y="215" width="180" height="65" rx="8" fill="#f8fafc" stroke="#96bfff" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="260" y="215" width="6" height="65" rx="3" fill="#96bfff"/>
+  <text x="280" y="240" font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#1d1d1f" font-weight="600">Approvals Kit</text>
+  <text x="280" y="258" font-family="Inter, -apple-system, sans-serif" font-size="10" fill="#64748b">Branching + delegation</text>
+  <text x="280" y="272" font-family="Inter, -apple-system, sans-serif" font-size="10" fill="#ef4444">⚠ Power CAT sample</text>
+
+  <!-- Question 2b: Multiple ingress (YES branch) -->
+  <rect x="540" y="115" width="260" height="50" rx="8" fill="#eff6ff" stroke="#0779ff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="670" y="145" font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#1d1d1f" font-weight="500" text-anchor="middle">Multiple ingress paths?</text>
+
+  <!-- Lines from Q2b -->
+  <line x1="600" y1="165" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="740" y1="165" x2="740" y2="210" stroke="#0779ff" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <text x="520" y="190" font-family="Inter, -apple-system, sans-serif" font-size="11" fill="#64748b" font-weight="500">NO</text>
+  <text x="755" y="190" font-family="Inter, -apple-system, sans-serif" font-size="11" fill="#0779ff" font-weight="600">YES</text>
+
+  <!-- Question 3: Repeatable blueprints (from NO on multiple ingress) -->
+  <rect x="460" y="215" width="200" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="560" y="245" font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#1d1d1f" font-weight="500" text-anchor="middle">Need project blueprints?</text>
+
+  <!-- Lines from Q3 -->
+  <line x1="500" y1="265" x2="400" y2="310" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="620" y1="265" x2="620" y2="310" stroke="#0779ff" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <text x="420" y="290" font-family="Inter, -apple-system, sans-serif" font-size="11" fill="#64748b" font-weight="500">NO</text>
+  <text x="635" y="290" font-family="Inter, -apple-system, sans-serif" font-size="11" fill="#0779ff" font-weight="600">YES</text>
+
+  <!-- Answer: Custom Power Automate -->
+  <rect x="280" y="315" width="180" height="65" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="280" y="315" width="6" height="65" rx="3" fill="#ef4444"/>
+  <text x="300" y="340" font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#1d1d1f" font-weight="600">Custom flows</text>
+  <text x="300" y="358" font-family="Inter, -apple-system, sans-serif" font-size="10" fill="#64748b">Reactive, per-project</text>
+  <text x="300" y="372" font-family="Inter, -apple-system, sans-serif" font-size="10" fill="#ef4444">⚠ Fragile at scale</text>
+
+  <!-- Answer: ISO governance layer (from YES on multiple ingress or YES on blueprints) -->
+  <rect x="560" y="315" width="240" height="75" rx="8" fill="#eff6ff" stroke="#0779ff" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="560" y="315" width="6" height="75" rx="3" fill="#0779ff"/>
+  <text x="580" y="340" font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#1d1d1f" font-weight="600">ISO 19650 governance layer</text>
+  <text x="580" y="358" font-family="Inter, -apple-system, sans-serif" font-size="10" fill="#0779ff">State machine + release gates</text>
+  <text x="580" y="372" font-family="Inter, -apple-system, sans-serif" font-size="10" fill="#64748b">Policy-driven · repeatable · SharePoint</text>
+  <text x="580" y="385" font-family="Inter, -apple-system, sans-serif" font-size="10" fill="#166534">✓ Defensible compliance</text>
+
+  <!-- Arrow from YES on multiple ingress to ISO layer -->
+  <line x1="740" y1="215" x2="740" y2="305" stroke="#0779ff" stroke-width="2"/>
+  <line x1="740" y1="305" x2="710" y2="305" stroke="#0779ff" stroke-width="2"/>
+  <line x1="710" y1="305" x2="710" y2="315" stroke="#0779ff" stroke-width="2" marker-end="url(#arrow-blue)"/>
+</svg>

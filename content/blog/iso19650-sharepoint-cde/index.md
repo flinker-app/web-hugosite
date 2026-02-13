@@ -51,77 +51,55 @@ faq:
     answer: "With Flinker, all project data stays within the customer’s Microsoft tenant, ensuring full data sovereignty, seamless Teams integration, and cost-efficient use of existing M365 licenses."
 ---
 
-<!-- Body stays markdown below -->
+ISO 19650 is becoming a baseline requirement in construction and infrastructure contracts. Many organizations already have Microsoft 365 and SharePoint in place—often underutilized for project document control. The question: can SharePoint serve as a fully ISO 19650-compliant Common Data Environment (CDE)?
 
-## Introduction  
-In today’s construction and real estate ecosystem, information is as critical as bricks and steel. Projects are becoming more complex, many stakeholders are remote, and expectations for precision, traceability, and accountability are rising. That’s why **ISO 19650** is fast becoming a mandatory requirement in many contracts and public procurements.  
+Yes—but only with the right controls, workflows, and governance layered on top. Native SharePoint provides foundational capabilities but lacks the discipline ISO 19650 demands.
 
-Yet many firms already have Microsoft 365 and **SharePoint** in place — often under-utilized for project document control. The question is:  
-**Can SharePoint serve as a fully ISO 19650-compliant Common Data Environment (CDE)?**  
+## What is ISO 19650?
 
-Yes — but only if you layer in the right controls, workflows, and governance. Out of the box, SharePoint provides many foundational capabilities, but it lacks the discipline and structure that ISO 19650 demands.
+ISO 19650 is the international standard (originating from the UK's PAS/BS 1192 lineage) for information management using BIM across the lifecycle of a built asset. It covers how information is exchanged, approved, stored, and retrieved, and defines the Common Data Environment (CDE)—the single agreed source of truth for all project information.
 
+### Structure
 
+The ISO 19650 series includes:
+- **Part 1**: Concepts and principles
+- **Part 2**: Delivery phase (information delivery in projects)
+- **Part 3+**: Operational/asset information management, open data
 
-  <!-- Optional lead-in to set context visually -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 offset-lg-2">
-        <p class="lead">Learn how to make SharePoint a truly ISO 19650–compliant Common Data Environment with governance, approvals, and data sovereignty — all inside Microsoft 365.</p>
-      </div>
-    </div>
-  </div>
-  <div class="mt-6"></div>
+Key terms:
+- **EIR**: Exchange Information Requirements
+- **PIR / AIR / OIR**: Project / Asset / Organizational Information Requirements
+- **BEP / MIDP / TIDP**: Plans and protocols defining who does what, when
 
+### Why it matters
 
-## What is ISO 19650?  
-ISO 19650 is the international standard (originating from the UK’s PAS/BS 1192 lineage) for information management using BIM across the lifecycle of a built asset.  
+Adopting ISO 19650 enables:
+- **Coordination**: reduced errors and rework across architects, engineers, contractors, operators
+- **Risk reduction**: fewer version mismatches and disputes from outdated information
+- **Efficiency**: standardized processes, less time hunting files, fewer manual handovers
+- **Long-term operations**: good information early supports facility management, renovations, digital twins
 
-It covers how information is to be exchanged, approved, stored, and retrieved, and defines the role of a Common Data Environment **(CDE)** — the single agreed source of truth for all project information.  
-
-### Structure & Components  
-The ISO 19650 series includes parts covering:  
-- Part 1: Concepts & principles  
-- Part 2: Delivery phase (how to deliver information in projects)  
-- Part 3 (and beyond): Operational / asset information management, open data, etc.  
-
-Key terms include:  
-- EIR (Exchange Information Requirements)  
-- PIR / AIR / OIR (Project / Asset / Organizational Information Requirements)  
-- BEP / MIDP / TIDP (plans and protocols that layout who does what, when)  
-
-### Why It Matters  
-Adopting ISO 19650 enables:  
-- **Stronger collaboration and coordination** across architects, engineers, contractors, operators — reducing errors and rework.  
-- **Risk reduction**: fewer conflicts, version mismatches, disputes caused by out-of-date or poorly tracked information.  
-- **Efficiency & quality** improvements: standardized processes mean less time lost hunting files, fewer manual handovers, and higher consistency.  
-- **Sustainability and long-term operations**: good information early helps facility management, future renovations, digital twins.  
-
-In a nutshell: ISO 19650 is not just a checklist — it’s a **framework for disciplined information governance** that supports digital transformation in construction.  
+ISO 19650 is a framework for disciplined information governance—not a checklist.  
 
 
 
-## Can SharePoint be an ISO 19650 CDE?  
-Yes — SharePoint has many of the building-block features you’d expect from a document platform:
+## Can SharePoint be an ISO 19650 CDE?
 
-- Version history, check-in/check-out  
-- Permissions and access controls  
-- Document libraries, metadata, site collections  
-- Integration within Microsoft 365 / Teams / Office  
-- The advantage of staying **within your own tenant** (no external cloud)  
+Yes. SharePoint provides foundational capabilities:
 
-But out-of-the-box, it doesn’t enforce all the rules, workflows, or discipline that ISO 19650 expects.  
+- Version history, check-in/check-out
+- Permissions and access controls
+- Document libraries, metadata, site collections
+- Integration with Microsoft 365, Teams, Office
+- Data stays within your own tenant (no external cloud)
 
-Some third-party solutions already try to fill the gap: for example, **bimU.io** supports ISO 19650–compliant document management using SharePoint/Teams as the base CDE.  
-
-In fact, Flinker’s “Common Data Environment (CDE)” app is listed on Microsoft AppSource as a solution for integrating SharePoint & Teams into an ISO 19650-aligned CDE.  
-
-However, to be genuinely compliant and robust in real projects, additional layers must be overlaid.
+But native SharePoint doesn't enforce the rules, workflows, or discipline ISO 19650 expects. To be genuinely compliant in real projects, additional governance layers must be added.
 
 
 
-## What’s missing (or weak) in native SharePoint?  
-To truly satisfy ISO 19650, SharePoint alone will need enhancements in several dimensions:
+## What's missing in native SharePoint?
+
+To satisfy ISO 19650, SharePoint requires enhancements in several dimensions:
 
 <div class="table-responsive my-4">
   <table class="table table-striped table-bordered">
@@ -173,28 +151,28 @@ To truly satisfy ISO 19650, SharePoint alone will need enhancements in several d
   
 </div>
 
-Additionally, using SharePoint for a CDE must consider **usability** (teams must actually use it) and **interoperability** with BIM tools, external systems, and other project platforms.
+Additionally, SharePoint CDEs must consider usability (teams must actually adopt it) and interoperability with BIM tools and external systems.
 
-{{< blogfigure src="/assets-flinker/images/blog/blog-img-17.svg" alt="SharePoint Common Data Environment with Microsoft 365 and Flinker" class="my-6" imgclass="img-fluid rounded-3 w-100" >}}
+[![SharePoint Common Data Environment with Microsoft 365 and Flinker](/assets-flinker/images/blog/blog-img-17.svg)](/assets-flinker/images/blog/blog-img-17.svg)
+*SharePoint as CDE foundation – Flinker adds the governance layer for ISO 19650 compliance.*
 
-## The Solution: Flinker Microsoft Apps  
-With Flinker, you don’t just patch gaps — you transform SharePoint and Teams into a **first-class ISO 19650 CDE**. Below is how Flinker adds the essential compliance layer:
+## The solution: Flinker Microsoft Apps
 
-- **Preconfigured project templates**: libraries structured by WIP, Shared, Published, Archive, with correct folder order and naming scaffolding  
-- **Automatic filename validation**: enforce ISO 19650 naming rules on upload, to prevent non-compliant files  
-- **Built-in workflows**: review / checking / approval steps embedded, preventing uncontrolled transitions  
-- **Role-based permissions**: clearly enforced roles (Author, Checker, Approver) for internal and external parties  
-- **Audit dashboard & reports**: actionable logs and traceability, exportable for compliance  
-- **Control for externals**: ensure external users only ever see Shared or Published info, never WIP  
-- **Seamless integration in Microsoft 365**: users don’t need to leave their familiar SharePoint / Teams environment  
-- **Tenant-centric architecture**: everything runs inside the customer’s tenant — maintaining data sovereignty  
-- **Scalable to any project size**: from small pilot projects to large scale capital works (just like external CDEs)  
+Flinker transforms SharePoint and Teams into an ISO 19650 CDE with the essential compliance layer:
 
-Because Flinker is purpose-built for ISO 19650 in SharePoint, it provides not only compliance but **ease of adoption and governance**.
-
+- **Preconfigured project templates**: libraries structured by WIP, Shared, Published, Archive with naming scaffolding
+- **Filename validation**: ISO 19650 naming rules enforced on upload—non-compliant files blocked
+- **Built-in workflows**: review/checking/approval steps preventing uncontrolled state transitions
+- **Role-based permissions**: Author, Checker, Approver roles enforced for internal and external parties
+- **Audit dashboard**: actionable logs and traceability, exportable for compliance reporting
+- **External access control**: external users see only Shared/Published, never WIP
+- **Native Microsoft 365**: users stay in familiar SharePoint/Teams environment
+- **Tenant-centric**: everything runs inside the customer's tenant—full data sovereignty
+- **Scalable**: from pilot projects to large capital works
 
 
-## Comparison: External CDE vs SharePoint + Flinker
+
+## External CDE vs SharePoint + Flinker
 
 <div class="table-responsive my-4">
   <table class="table table-striped table-bordered">
@@ -250,14 +228,11 @@ Because Flinker is purpose-built for ISO 19650 in SharePoint, it provides not on
   </table>
 </div>
 
-This table underscores that SharePoint + Flinker can deliver **feature parity (and more control)** compared to pure external CDEs — while keeping data within your environment.
+SharePoint + Flinker delivers feature parity with external CDEs—while keeping data within your environment.
 
+## Conclusion
 
-
-## Conclusion  
-ISO 19650 is no longer a “nice to have” — in many markets, it’s a baseline requirement for construction, infrastructure, and real estate projects. Adopting it signals maturity, discipline, and readiness for modern, data-driven workflows.
-
-You don’t need to rip out SharePoint or adopt a standalone CDE platform — you can **elevate what you already have**. With Flinker, SharePoint and Teams become a **secure, compliant, and user-friendly ISO 19650 CDE**
+ISO 19650 is a baseline requirement in many construction, infrastructure, and real estate markets. You don't need to adopt a standalone CDE platform—you can elevate what you already have. With Flinker, SharePoint and Teams become a secure, compliant, user-friendly ISO 19650 CDE.
 
 {{< cta 
   title="Ready to make SharePoint ISO 19650‑compliant?" 

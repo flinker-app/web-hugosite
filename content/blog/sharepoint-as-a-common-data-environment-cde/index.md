@@ -2,7 +2,7 @@
 title: "Leveraging SharePoint as a Common Data Environment (CDE) for Large Construction Projects"
 date: 2025-05-28
 draft: false
-description: "Discover how SharePoint can serve as a powerful and secure Common Data Environment (CDE) for managing complex construction projects, enabling seamless integration, enhanced collaboration, and advanced analytics."
+description: "Technical guide to implementing SharePoint as a Common Data Environment (CDE) for construction projects: folder structures, metadata, permissions, and Microsoft 365 integration."
 slug: "sharepoint-cde-construction-projects"
 layout: "blogsingle"
 keywords: 

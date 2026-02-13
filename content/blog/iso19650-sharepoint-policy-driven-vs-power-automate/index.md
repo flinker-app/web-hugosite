@@ -78,7 +78,7 @@ This article explains where Power Automate fits well, where it typically becomes
 
 ## What ISO 19650 requires in daily operations
 
-ISO 19650 is not “a folder structure.” Operationally, teams need consistent control over:
+ISO 19650 is not "a folder structure." Operationally, teams need consistent control over:
 
 - **Information states and release gates**: WIP → Shared → Published → Archived, with clear criteria for what may be promoted.
 - **Naming and classification discipline**: predictable file naming and metadata to support traceability, retrieval, and coordination.
@@ -92,7 +92,7 @@ SharePoint can host the content and metadata; the main question is how to enforc
 
 Power Automate is attractive because it is already part of the Microsoft ecosystem and can connect events (file created/modified) to actions (notify, update metadata, request approvals, move files). For smaller scopes or one-off workflows, this can be perfectly adequate.
 
-Typical “Power Automate-only” ISO patterns include:
+Typical "Power Automate-only" ISO patterns include:
 
 - When a file is added to a library, check metadata and notify the author.
 - When an approval is completed, move the file to a Published library.
@@ -104,7 +104,7 @@ These patterns could work until you need to standardize across many projects, pa
 
 ### 1) Set-up time and repeatability
 
-ISO projects are rarely “one site, one flow.” Most organizations need consistent rollouts across projects, each with small variations (disciplines, packages, role structures, country conventions). Flow-based solutions often become a “project implementation” rather than a best practice.
+ISO projects are rarely "one site, one flow." Most organizations need consistent rollouts across projects, each with small variations (disciplines, packages, role structures, country conventions). Flow-based solutions often become a "project implementation" rather than a best practice.
 
 A policy-driven approach aims to separate:
 
@@ -117,7 +117,7 @@ So you can reuse and version a policy across projects.
 
 ISO governance fails when content enters the system through multiple paths (UI upload, sync client, external tools, APIs) and rules are only applied on some paths. Flow triggers can miss scenarios or behave inconsistently depending on where and how content is created or modified.
 
-A robust approach typically uses “release gates” (promotion to Published is blocked unless compliant) rather than relying on every upload to be caught perfectly.
+A robust approach typically uses "release gates" (promotion to Published is blocked unless compliant) rather than relying on every upload to be caught perfectly.
 
 ### 3) Permissions, ownership, and operational friction
 
@@ -125,7 +125,7 @@ Power Automate often requires:
 
 - Admin setup and ongoing ownership
 - Appropriate permissions (not always available to project teams or service partners)
-- Handling identity issues when flows move or modify files (e.g., “flow user” vs. actual author, depending on implementation)
+- Handling identity issues when flows move or modify files (e.g., "flow user" vs. actual author, depending on implementation)
 
 In ISO settings, operational friction matters because governance is only effective if it is adopted in day-to-day work.
 
@@ -184,10 +184,10 @@ While Power Automate logs flow runs, translating those logs into meaningful gove
 
 A policy-driven ISO 19650 approach on SharePoint uses a single source of truth for rules typically a JSON policy ("blueprint") and applies those rules consistently within a guided user experience and release gates.
 
-![Policy layer architecture](/assets-flinker/images/blog/blog-img-19.svg)
+![Policy layer architecture](policy-layer-architecture.svg)
 *Consistent enforcement across all entry points – the policy layer sits between ingress channels and SharePoint.*
 
-### Core concept: “Policy, not bespoke flows”
+### Core concept: "Policy, not bespoke flows"
 
 Instead of encoding governance logic into many flows, the organization defines:
 
@@ -203,11 +203,11 @@ This policy is versioned, portable, and reusable across projects.
 
 - Users do not have to understand Power Automate.
 - Project admins and service partners configure policies rather than creating workflows from scratch.
-- Release to “Published” becomes a controlled action that is blocked unless compliance is met.
+- Release to "Published" becomes a controlled action that is blocked unless compliance is met.
 
 ## Benefits of the app approach vs. Power Automate-only
 
-![Benefits overview](/assets-flinker/images/blog/blog-img-20.svg)
+![Benefits overview](benefits-overview.svg)
 *Less flow brittleness, more repeatability, control, and traceability.*
 
 | Topic                                              | Power Automate-only (typical pain points)                                                          | Policy-driven ISO 19650 layer on SharePoint                                                |
@@ -284,7 +284,7 @@ This is easier to sell, deploy, and support than a growing collection of project
 ### Building owners / contractors (asset owners, general contractors)
 
 - Faster rollout of ISO 19650-style governance across many projects without building and maintaining project-specific flow networks.
-- Lower risk of non-compliant deliverables reaching “Published” via policy-driven release gates (naming + required metadata + approval prerequisites).
+- Lower risk of non-compliant deliverables reaching "Published" via policy-driven release gates (naming + required metadata + approval prerequisites).
 - Improved audit readiness through policy versioning and structured governance logs (issues and events), complementing Microsoft 365 compliance tooling.
 
 ### BIM coordinators / information managers
@@ -301,7 +301,7 @@ This is easier to sell, deploy, and support than a growing collection of project
 
 ## What about transmittals (packages/distribution)?
 
-Formal transmittals (“Issued for information / review / construction”) typically require:
+Formal transmittals ("Issued for information / review / construction") typically require:
 
 - assembling a package of approved documents/models
 - defining recipients and purpose
