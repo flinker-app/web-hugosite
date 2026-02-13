@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Home on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 09 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>ISO 19650 on SharePoint: Why a Policy-Driven App Beats Power Automate-Only</title><link>https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate/</link><pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate/</guid><description>&lt;h1 id="iso-19650-on-sharepoint-why-a-policy-driven-app-beats-a-power-automate-only-approach">ISO 19650 on SharePoint: Why a Policy-Driven App Beats a &amp;ldquo;Power Automate-Only&amp;rdquo; Approach&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Home on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 13 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Approvals Connector vs Approvals Kit vs ISO 19650 Governance</title><link>https://flinker.app/blog/power-automate-approvals-vs-iso-19650/</link><pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/power-automate-approvals-vs-iso-19650/</guid><description>&lt;p>Microsoft Approvals and the Approvals Kit orchestrate decisions (approve/reject). They do not provide ISO 19650 governance primitives: information states, release gates, naming/metadata enforcement, or repeatable project blueprints. A policy-driven ISO layer treats approvals as one step inside a gated state transition—not the governance engine itself.&lt;/p>
+&lt;h2 id="the-terminology-problem">The terminology problem&lt;/h2>
+&lt;p>In Microsoft 365 environments, &amp;ldquo;approval&amp;rdquo; conflates two distinct concepts: a workflow task (approve/reject an item) and a release authorization (transition information into a contractually binding state). Treating Power Automate approval flows as ISO 19650 publication governance produces fragile implementations, incomplete audit trails, and operational complexity at scale.&lt;/p></description></item><item><title>ISO 19650 on SharePoint: Why a Policy-Driven App Beats Power Automate-Only</title><link>https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate/</link><pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate/</guid><description>&lt;h1 id="iso-19650-on-sharepoint-why-a-policy-driven-app-beats-a-power-automate-only-approach">ISO 19650 on SharePoint: Why a Policy-Driven App Beats a &amp;ldquo;Power Automate-Only&amp;rdquo; Approach&lt;/h1>
 &lt;p>Many construction and infrastructure organizations want an ISO 19650–aligned Common Data Environment (CDE) while keeping data inside Microsoft 365. SharePoint provides the underlying document management platform, and Power Automate is often used to stitch processes together. In practice, however, an ISO 19650 CDE requires more than automation steps: it requires governance, repeatability, enforceable rules, and predictable user experience at scale.&lt;/p></description></item><item><title>ISO 19650 App for SharePoint</title><link>https://flinker.app/products/iso-19650-app/</link><pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/products/iso-19650-app/</guid><description>&lt;!-- HERO -->
 &lt;section class="pt-5 pt-lg-8 pb-4">
  &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
@@ -325,11 +327,10 @@
 &lt;/style>
 &lt;hr>
 &lt;h2 id="scope-and-precedence">1. Scope and precedence&lt;/h2>
-&lt;p>These Flinker Services Terms (v2026) (“Terms”) apply to the services described in the quote (“Services”) provided by Flinker GmbH (“Flinker”) to the customer (“Customer”). If the parties have a signed master agreement or SOW that conflicts with these Terms, the signed agreement prevails.&lt;/p></description></item><item><title>OHLA Group brings IFC models to SharePoint</title><link>https://flinker.app/customers/ohla-group/</link><pubDate>Tue, 21 Oct 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/customers/ohla-group/</guid><description/></item><item><title>ISO 19650 and SharePoint: Making Your Project Data Room Compliant</title><link>https://flinker.app/blog/iso19650-sharepoint-cde/</link><pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/iso19650-sharepoint-cde/</guid><description>&lt;!-- Body stays markdown below -->
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>In today’s construction and real estate ecosystem, information is as critical as bricks and steel. Projects are becoming more complex, many stakeholders are remote, and expectations for precision, traceability, and accountability are rising. That’s why &lt;strong>ISO 19650&lt;/strong> is fast becoming a mandatory requirement in many contracts and public procurements.&lt;/p>
-&lt;p>Yet many firms already have Microsoft 365 and &lt;strong>SharePoint&lt;/strong> in place — often under-utilized for project document control. The question is:&lt;br>
-&lt;strong>Can SharePoint serve as a fully ISO 19650-compliant Common Data Environment (CDE)?&lt;/strong>&lt;/p></description></item><item><title>Flinker Partner Program — Deliver Flinker Apps for Microsoft 365</title><link>https://flinker.app/services/partners/</link><pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/services/partners/</guid><description>&lt;section class="py-8" style="padding:88px 0;">
+&lt;p>These Flinker Services Terms (v2026) (“Terms”) apply to the services described in the quote (“Services”) provided by Flinker GmbH (“Flinker”) to the customer (“Customer”). If the parties have a signed master agreement or SOW that conflicts with these Terms, the signed agreement prevails.&lt;/p></description></item><item><title>OHLA Group brings IFC models to SharePoint</title><link>https://flinker.app/customers/ohla-group/</link><pubDate>Tue, 21 Oct 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/customers/ohla-group/</guid><description/></item><item><title>ISO 19650 and SharePoint: Making Your Project Data Room Compliant</title><link>https://flinker.app/blog/iso19650-sharepoint-cde/</link><pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/iso19650-sharepoint-cde/</guid><description>&lt;p>ISO 19650 is becoming a baseline requirement in construction and infrastructure contracts. Many organizations already have Microsoft 365 and SharePoint in place—often underutilized for project document control. The question: can SharePoint serve as a fully ISO 19650-compliant Common Data Environment (CDE)?&lt;/p>
+&lt;p>Yes—but only with the right controls, workflows, and governance layered on top. Native SharePoint provides foundational capabilities but lacks the discipline ISO 19650 demands.&lt;/p>
+&lt;h2 id="what-is-iso-19650">What is ISO 19650?&lt;/h2>
+&lt;p>ISO 19650 is the international standard (originating from the UK&amp;rsquo;s PAS/BS 1192 lineage) for information management using BIM across the lifecycle of a built asset. It covers how information is exchanged, approved, stored, and retrieved, and defines the Common Data Environment (CDE)—the single agreed source of truth for all project information.&lt;/p></description></item><item><title>Flinker Partner Program — Deliver Flinker Apps for Microsoft 365</title><link>https://flinker.app/services/partners/</link><pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/services/partners/</guid><description>&lt;section class="py-8" style="padding:88px 0;">
  &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px;">
  &lt;div class="text-center mb-4">
  &lt;span class="badge rounded-pill" style="background:rgba(13,110,253,.08); color:#0d6efd;">Partner Program&lt;/span>
@@ -440,7 +441,19 @@
  &lt;small class="text-primary text-uppercase ls-md fw-semibold">Microsoft 365–native &lt;span class="badge bg-primary-subtle text-primary ms-1">Direct-from-IFC&lt;/span>&lt;/small>
  &lt;div class="mb-5 mt-4">
  &lt;h2 class="mb-3">Open IFC from SharePoint &amp; Teams — no extra logins.&lt;/h2>
- &lt;p class="lead mb-0">Point to a file or folder in your tenant. The Viewer reads IFC directly — no exports, no CSV staging, no mapping.&lt;/p></description></item><item><title>blog</title><link>https://flinker.app/blog/</link><pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/</guid><description>&lt;!--Square Pattern Start-->
+ &lt;p class="lead mb-0">Point to a file or folder in your tenant. The Viewer reads IFC directly — no exports, no CSV staging, no mapping.&lt;/p></description></item><item><title>blog</title><link>https://flinker.app/blog/</link><pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/</guid><description>&lt;style>
+/* Consistent blog card image sizing */
+.zoom-img {
+ aspect-ratio: 16 / 9;
+ overflow: hidden;
+}
+.zoom-img img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+&lt;/style>
+&lt;!--Square Pattern Start-->
 &lt;div class="pattern">&lt;/div>
 &lt;!--Square Pattern End-->
 
@@ -474,14 +487,14 @@
  &lt;div class="col-lg-6 col-md-6 col-12">
  &lt;label for="categoryList" class="form-label visually-hidden">Search Category&lt;/label>
  &lt;select class="form-select" id="categoryList">
- &lt;option selected disabled value="">Select Category&lt;/option>
+ &lt;option selected value="">All Categories&lt;/option>
+ &lt;option value="Compliance">Compliance&lt;/option>
  &lt;option value="Construction">Construction&lt;/option>
- &lt;option value="Technology">Technology&lt;/option>
  &lt;option value="Data Management">Data Management&lt;/option>
- &lt;option value="Partnerships">Partnerships&lt;/option>
+ &lt;option value="Technology">Technology&lt;/option>
  &lt;option value="Architecture">Architecture&lt;/option>
  &lt;option value="Facility Management">Facility Management&lt;/option>
-
+ &lt;option value="Partnerships">Partnerships&lt;/option>
  &lt;/select>
  &lt;/div>
  &lt;/div>
@@ -521,7 +534,29 @@
  &lt;/div>
 
  &lt;div class="row gy-lg-7 gy-5">
- &lt;article class="col-lg-4 col-md-6 col-12">
+ &lt;article class="col-lg-4 col-md-6 col-12" data-category="Compliance">
+ &lt;figure class="mb-4 zoom-img">
+ &lt;a href="https://flinker.app/blog/power-automate-approvals-vs-iso-19650">
+ &lt;img src="./assets-flinker/images/blog/approvals-vs-iso/layer-model.svg" alt="Approvals Connector vs Approvals Kit vs ISO 19650 Governance" class="img-fluid rounded-3" />
+ &lt;/a>
+ &lt;/figure>
+
+ &lt;a href="#!" class="badge bg-primary-subtle text-primary-emphasis rounded-pill text-uppercase">Compliance&lt;/a>
+ &lt;h3 class="my-3 lh-base h4">
+ &lt;a href="https://flinker.app/blog/power-automate-approvals-vs-iso-19650" class="text-reset">Approvals Connector vs Approvals Kit vs ISO 19650 Governance&lt;/a>
+ &lt;/h3>
+ &lt;div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
+ &lt;div class="d-flex align-items-center">
+ &lt;img src="./assets/images/avatar/avatar-7.jpg" alt="Avatar" class="avatar avatar-xs rounded-circle" />
+ &lt;div class="ms-2">
+ &lt;a href="#" class="text-reset fs-6">Misbah Afzal&lt;/a>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="ms-3">&lt;span class="fs-6">Feb 13, 2026&lt;/span>&lt;/div>
+ &lt;/div>
+ &lt;/article>
+
+ &lt;article class="col-lg-4 col-md-6 col-12" data-category="Compliance">
  &lt;figure class="mb-4 zoom-img">
  &lt;a href="https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate">
  &lt;img src="./assets-flinker/images/blog/blog-img-18.svg" alt="ISO 19650 Policy-Driven App vs Power Automate" class="img-fluid rounded-3" />
@@ -543,7 +578,7 @@
  &lt;/div>
  &lt;/article>
 
- &lt;article class="col-lg-4 col-md-6 col-12">
+ &lt;article class="col-lg-4 col-md-6 col-12" data-category="Data Management">
  &lt;figure class="mb-4 zoom-img">
  &lt;a href="https://flinker.app/blog/iso19650-sharepoint-cde">
  &lt;img src="./assets-flinker/images/blog/blog-img-16.svg" alt="blog" class="img-fluid rounded-3" />
@@ -565,7 +600,7 @@
  &lt;/div>
  &lt;/article>
 
- &lt;article class="col-lg-4 col-md-6 col-12">
+ &lt;article class="col-lg-4 col-md-6 col-12" data-category="Data Management">
  &lt;figure class="mb-4 zoom-img">
  &lt;a href="https://flinker.app/blog/sharepoint-cde-construction-projects">
  &lt;img src="./assets-flinker/images/blog/blog-img-12.1.png" alt="blog" class="img-fluid rounded-3" />
@@ -587,8 +622,7 @@
  &lt;/div>
  &lt;/article>
 
-
- &lt;article class="col-lg-4 col-md-6 col-12">
+ &lt;article class="col-lg-4 col-md-6 col-12" data-category="Data Management">
  &lt;figure class="mb-4 zoom-img">
  &lt;a href="https://flinker.app/blog/sharepoint-cde-success-stories">
  &lt;img src="./assets-flinker/images/blog/blog-img-2.1.png" alt="blog" class="img-fluid rounded-3" />
@@ -610,8 +644,7 @@
  &lt;/div>
  &lt;/article>
 
-
- &lt;article class="col-lg-4 col-md-6 col-12">
+ &lt;article class="col-lg-4 col-md-6 col-12" data-category="Technology">
  &lt;figure class="mb-4 zoom-img">
  &lt;a href="https://flinker.app/blog/visualize-bim-in-power-bi">
  &lt;img src="./assets-flinker/images/blog/blog-img-8.1.png" alt="blog" class="img-fluid rounded-3" />
@@ -647,15 +680,51 @@
  &lt;/div>
  &lt;/div>
 &lt;/section>
-&lt;!--Blog grid end--></description></item><item><title>Variant Quantity Takeoff</title><link>https://flinker.app/customers/sawa-engineering/</link><pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/customers/sawa-engineering/</guid><description/></item><item><title>Leveraging SharePoint as a Common Data Environment (CDE) for Large Construction Projects</title><link>https://flinker.app/blog/sharepoint-cde-construction-projects/</link><pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-construction-projects/</guid><description>&lt;p>Large-scale construction projects often grapple with fragmented data, misaligned communications, and inefficient workflows. A Common Data Environment (CDE) addresses these challenges by providing a centralized platform to manage, collaborate on, and leverage critical project data throughout a project&amp;rsquo;s lifecycle. SharePoint, deeply integrated within Microsoft 365, emerges as a powerful, secure, and scalable solution ideal for managing complex construction data.&lt;/p>
-&lt;h2 id="why-choose-sharepoint-as-your-cde">Why Choose SharePoint as Your CDE?&lt;/h2>
-&lt;h3 id="1-data-sovereignty-and-security">1. Data Sovereignty and Security&lt;/h3>
-&lt;p>SharePoint ensures your project data stays securely within your own Microsoft environment, enhancing data sovereignty and compliance. This reduces dependency on external third-party cloud solutions, ensuring maximum data control and security.&lt;/p></description></item><item><title>How Leading Construction Companies Use SharePoint as a Common Data Environment (CDE)</title><link>https://flinker.app/blog/sharepoint-cde-success-stories/</link><pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-success-stories/</guid><description>&lt;p>In today’s construction industry, success depends on managing data effectively across global teams, complex projects, and tight deadlines. Traditional tools like spreadsheets, shared drives, and siloed platforms are no longer enough. That’s why many leading construction firms are adopting &lt;strong>SharePoint as a Common Data Environment (CDE)&lt;/strong> transforming scattered information into streamlined, collaborative, and secure workflows.&lt;/p>
-&lt;h2 id="from-chaos-to-clarity-why-sharepoint">From Chaos to Clarity: Why SharePoint?&lt;/h2>
-&lt;p>Construction teams often struggle with fragmented project data. Lost emails, outdated documents, and unsupported legacy tools cause costly delays and coordination errors. SharePoint changes this dynamic.&lt;/p></description></item><item><title>Visualize BIM Models in Power BI with Flinker's 3D Viewer</title><link>https://flinker.app/blog/visualize-bim-in-power-bi/</link><pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/visualize-bim-in-power-bi/</guid><description>&lt;p>Integrate and interact with IFC models within your dashboards for enhanced project insights without using any extra software.&lt;/p>
-&lt;h2 id="power-bi-bim-integration">Power BI BIM Integration&lt;/h2>
-&lt;p>In the Architecture, Engineering, Construction, and Operations (AECO) industry, &lt;strong>IFC (Industry Foundation Classes)&lt;/strong> has become the standard for sharing Building Information Modeling (BIM) data across platforms.&lt;/p>
-&lt;p>Professionals build rich 3D models, but when it’s time to present them in Power BI, something’s missing: the model itself. No geometry, no visual context, just numbers. Power BI doesn’t natively support IFC.&lt;/p></description></item><item><title>IFC Power BI Visual</title><link>https://flinker.app/ifcpbivisual/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/ifcpbivisual/</guid><description>&lt;!--Hero section start-->
+&lt;!--Blog grid end-->
+
+&lt;script src="./assets-flinker/js/blog-filter.js">&lt;/script></description></item><item><title>Variant Quantity Takeoff</title><link>https://flinker.app/customers/sawa-engineering/</link><pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/customers/sawa-engineering/</guid><description/></item><item><title>Leveraging SharePoint as a Common Data Environment (CDE) for Large Construction Projects</title><link>https://flinker.app/blog/sharepoint-cde-construction-projects/</link><pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-construction-projects/</guid><description>&lt;p>A Common Data Environment (CDE) centralizes project documents, drawings, models, and coordination data in a single accessible location. For organizations using Microsoft 365, SharePoint provides the underlying infrastructure: document libraries, metadata, version control, and permissions.&lt;/p>
+&lt;p>This guide covers the technical implementation of SharePoint as a CDE for construction projects.&lt;/p>
+&lt;h2 id="sharepoint-capabilities-relevant-to-cde">SharePoint capabilities relevant to CDE&lt;/h2>
+&lt;h3 id="data-storage-and-organization">Data storage and organization&lt;/h3>
+&lt;p>SharePoint document libraries support:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Folder hierarchies&lt;/strong> for organizing by discipline, zone, or work package&lt;/li>
+&lt;li>&lt;strong>Metadata columns&lt;/strong> for classification (document type, status, revision, originator)&lt;/li>
+&lt;li>&lt;strong>Content types&lt;/strong> for applying consistent metadata schemas across libraries&lt;/li>
+&lt;li>&lt;strong>Views&lt;/strong> for filtering and sorting based on metadata values&lt;/li>
+&lt;/ul>
+&lt;h3 id="version-control">Version control&lt;/h3>
+&lt;ul>
+&lt;li>Automatic version history with configurable major/minor versioning&lt;/li>
+&lt;li>Check-in/check-out to prevent concurrent editing conflicts&lt;/li>
+&lt;li>Version comments and restore capability&lt;/li>
+&lt;/ul>
+&lt;h3 id="permissions-and-access">Permissions and access&lt;/h3>
+&lt;ul>
+&lt;li>Site-level, library-level, folder-level, and item-level permissions&lt;/li>
+&lt;li>SharePoint groups for role-based access (e.g., design team, contractor, client)&lt;/li>
+&lt;li>External sharing with configurable link expiration and password protection&lt;/li>
+&lt;li>Conditional access policies through Azure AD&lt;/li>
+&lt;/ul>
+&lt;h3 id="integration-with-microsoft-365">Integration with Microsoft 365&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Teams&lt;/strong>: Channels linked to SharePoint folders for collaboration context&lt;/li>
+&lt;li>&lt;strong>Power BI&lt;/strong>: Reports and dashboards connected to SharePoint lists and libraries&lt;/li>
+&lt;li>&lt;strong>Power Automate&lt;/strong>: Workflow automation for notifications, approvals, metadata updates&lt;/li>
+&lt;li>&lt;strong>Outlook&lt;/strong>: Email alerts and document sharing&lt;/li>
+&lt;/ul>
+&lt;h2 id="example-cde-folder-structure">Example CDE folder structure&lt;/h2>
+&lt;p>A typical SharePoint CDE for construction might use this hierarchy:&lt;/p></description></item><item><title>How Leading Construction Companies Use SharePoint as a Common Data Environment (CDE)</title><link>https://flinker.app/blog/sharepoint-cde-success-stories/</link><pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-success-stories/</guid><description>&lt;p>Construction projects generate large volumes of documents, drawings, models, and coordination data. Traditional tools—shared drives, email attachments, siloed platforms—create fragmentation that leads to version conflicts, access issues, and coordination errors.&lt;/p>
+&lt;p>Many construction firms already have Microsoft 365 licenses. SharePoint, as part of that ecosystem, provides a foundation for a Common Data Environment (CDE): centralized storage, version control, granular permissions, and integration with Teams, Power BI, and other Microsoft tools.&lt;/p>
+&lt;h2 id="why-sharepoint-as-a-cde">Why SharePoint as a CDE?&lt;/h2>
+&lt;p>SharePoint offers several characteristics relevant to construction project data management:&lt;/p></description></item><item><title>Visualize BIM Models in Power BI with Flinker's 3D Viewer</title><link>https://flinker.app/blog/visualize-bim-in-power-bi/</link><pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/visualize-bim-in-power-bi/</guid><description>&lt;p>IFC (Industry Foundation Classes) is the standard for sharing BIM data across platforms in the AECO industry. But when it&amp;rsquo;s time to present models in Power BI, the geometry is missing—just numbers, no visual context. Power BI doesn&amp;rsquo;t natively support IFC files.&lt;/p>
+&lt;p>Flinker&amp;rsquo;s 3D IFC Viewer embeds IFC models directly into Power BI reports:&lt;/p>
+&lt;ul>
+&lt;li>Interactive 3D views alongside live data, charts, and KPIs&lt;/li>
+&lt;li>No plugins, no extra licenses, no data uploads&lt;/li>
+&lt;/ul>
+&lt;h2 id="why-embed-ifc-in-power-bi">Why embed IFC in Power BI?&lt;/h2>
+&lt;p>BIM models contain spatial and attribute data that becomes more valuable when linked to business metrics. Without visual context, stakeholders review disconnected tools or rely on screen-sharing.&lt;/p></description></item><item><title>IFC Power BI Visual</title><link>https://flinker.app/ifcpbivisual/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/ifcpbivisual/</guid><description>&lt;!--Hero section start-->
 &lt;section class="container py-lg-8 py-5" data-cue="fadeIn">
  &lt;div class="row justify-content-center">
  &lt;div class="col-xl-8 col-lg-10 col-12" data-cues="zoomIn" data-group="page-title" data-delay="700">
