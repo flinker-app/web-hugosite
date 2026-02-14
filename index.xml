@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Home on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 13 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Approvals Connector vs Approvals Kit vs ISO 19650 Governance</title><link>https://flinker.app/blog/power-automate-approvals-vs-iso-19650/</link><pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/power-automate-approvals-vs-iso-19650/</guid><description>&lt;p>Microsoft Approvals and the Approvals Kit orchestrate decisions (approve/reject). They do not provide ISO 19650 governance primitives: information states, release gates, naming/metadata enforcement, or repeatable project blueprints. A policy-driven ISO layer treats approvals as one step inside a gated state transition—not the governance engine itself.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Home on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 14 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Accessibility Statement</title><link>https://flinker.app/legal/accessibility/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/legal/accessibility/</guid><description>&lt;h2 id="our-commitment-to-accessibility">Our commitment to accessibility&lt;/h2>
+&lt;p>Flinker GmbH is committed to ensuring digital accessibility for people with disabilities. We continually improve the user experience for everyone and apply the relevant accessibility standards.&lt;/p>
+&lt;h3 id="conformance-status">Conformance status&lt;/h3>
+&lt;p>We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA. These guidelines explain how to make web content more accessible for people with disabilities and more user-friendly for everyone.&lt;/p>
+&lt;h3 id="measures-we-take">Measures we take&lt;/h3>
+&lt;p>Flinker takes the following measures to ensure accessibility:&lt;/p></description></item><item><title>Approvals Connector vs Approvals Kit vs ISO 19650 Governance</title><link>https://flinker.app/blog/power-automate-approvals-vs-iso-19650/</link><pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/power-automate-approvals-vs-iso-19650/</guid><description>&lt;p>Microsoft Approvals and the Approvals Kit orchestrate decisions (approve/reject). They do not provide ISO 19650 governance primitives: information states, release gates, naming/metadata enforcement, or repeatable project blueprints. A policy-driven ISO layer treats approvals as one step inside a gated state transition—not the governance engine itself.&lt;/p>
 &lt;h2 id="the-terminology-problem">The terminology problem&lt;/h2>
 &lt;p>In Microsoft 365 environments, &amp;ldquo;approval&amp;rdquo; conflates two distinct concepts: a workflow task (approve/reject an item) and a release authorization (transition information into a contractually binding state). Treating Power Automate approval flows as ISO 19650 publication governance produces fragile implementations, incomplete audit trails, and operational complexity at scale.&lt;/p></description></item><item><title>ISO 19650 on SharePoint: Why a Policy-Driven App Beats Power Automate-Only</title><link>https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate/</link><pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate/</guid><description>&lt;h1 id="iso-19650-on-sharepoint-why-a-policy-driven-app-beats-a-power-automate-only-approach">ISO 19650 on SharePoint: Why a Policy-Driven App Beats a &amp;ldquo;Power Automate-Only&amp;rdquo; Approach&lt;/h1>
 &lt;p>Many construction and infrastructure organizations want an ISO 19650–aligned Common Data Environment (CDE) while keeping data inside Microsoft 365. SharePoint provides the underlying document management platform, and Power Automate is often used to stitch processes together. In practice, however, an ISO 19650 CDE requires more than automation steps: it requires governance, repeatability, enforceable rules, and predictable user experience at scale.&lt;/p></description></item><item><title>ISO 19650 App for SharePoint</title><link>https://flinker.app/products/iso-19650-app/</link><pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/products/iso-19650-app/</guid><description>&lt;!-- HERO -->
@@ -577,37 +582,7 @@ Christian Laimer, Mario Beltempo&lt;/p>
  &lt;p class="lead mb-4">
  We’re shaping the &lt;strong>OpenBIM ecosystem for Microsoft 365&lt;/strong> — a connected, self-hosted environment where companies, integrators, and developers can 
  &lt;strong>build, connect, and innovate&lt;/strong> together using open standards like IFC, IDS, and BCF.
- &lt;/p></description></item><item><title>Home (New Draft)</title><link>https://flinker.app/home-new/</link><pubDate>Thu, 05 Oct 2023 00:00:00 +0000</pubDate><guid>https://flinker.app/home-new/</guid><description>&lt;style>
- /* Hero height without JS-induced reflows */
- #get-started { min-height: 70vh; }
- @media (min-width: 1200px) { #get-started { min-height: 100vh; } }
-
- /* Keep outline-light legible on dark hero */
- .hero-agency .btn.btn-outline-light {
- --bs-btn-color: #fff;
- --bs-btn-border-color: rgba(255,255,255,.9);
- --bs-btn-hover-bg: rgba(255,255,255,.12);
- }
-
- /* Respect reduced motion: tone down parallax */
- @media (prefers-reduced-motion: reduce) {
- .jarallax { transform: none !important; }
- }
-&lt;/style>
-
-&lt;!--hero start-->
-&lt;section id="get-started" class="position-relative py-10 jarallax hero-agency" data-jarallax data-speed="0.4">
- &lt;img class="jarallax-img w-100" src="./assets-flinker/images/landings/landing-img-9.svg" alt="agency" loading="eager" fetchpriority="high" decoding="async"
- style="object-fit: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; object-position: center;" />
- &lt;div class="position-absolute start-0 end-0">
- &lt;div class="container">
- &lt;div class="row">
- &lt;div class="col-xl-5 col-lg-7 col-12" data-cue="zoomIn">
- &lt;div class="text-center text-lg-start">
- &lt;div class="mb-4 text-white-stable">
- &lt;small class="text-uppercase ls-lg">Microsoft 365 Apps&lt;/small>
- &lt;h1 class="mb-3 mt-3 display-3 text-white-stable">The built environment layer for Microsoft&lt;/h1>
- &lt;p class="lead mb-0">Self-hosted OpenBIM inside Microsoft 365 — connecting design, data and systems. Secure. Enterprise-grade.&lt;/p></description></item><item><title>Products</title><link>https://flinker.app/products/</link><pubDate>Thu, 05 Oct 2023 00:00:00 +0000</pubDate><guid>https://flinker.app/products/</guid><description>&lt;!--Accounting software start-->
+ &lt;/p></description></item><item><title>Products</title><link>https://flinker.app/products/</link><pubDate>Thu, 05 Oct 2023 00:00:00 +0000</pubDate><guid>https://flinker.app/products/</guid><description>&lt;!--Accounting software start-->
 &lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
  &lt;!-- Gradient overlay for navbar readability -->
  &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
