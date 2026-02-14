@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#96BFFF"/>
+      <stop offset="100%" stop-color="#0779FF"/>
+    </linearGradient>
+    <!-- Power Automate gradients -->
+    <linearGradient id="pa_dark" x1="43" y1="55" x2="29" y2="10" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D36A5"/>
+      <stop offset="1" stop-color="#1152D4"/>
+    </linearGradient>
+    <linearGradient id="pa_light" x1="46" y1="10" x2="46" y2="86" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#84CAFF"/>
+      <stop offset="1" stop-color="#61B1FB"/>
+    </linearGradient>
+    <linearGradient id="pa_mid" x1="37.5" y1="10" x2="37.5" y2="86" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B90F5"/>
+      <stop offset="1" stop-color="#2A78EE"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0779FF"/>
+      <stop offset="100%" stop-color="#0558B8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative circles in background -->
+  <circle cx="300" cy="260" r="200" fill="#3B90F5" opacity="0.05"/>
+  <circle cx="900" cy="260" r="200" fill="#0779FF" opacity="0.05"/>
+
+  <!-- LEFT SIDE: Power Automate Logo (large) -->
+  <g transform="translate(300, 260)">
+    <!-- Glow background -->
+    <circle r="140" fill="#3B90F5" opacity="0.1"/>
+    <circle r="110" fill="#3B90F5" opacity="0.1"/>
+
+    <!-- Power Automate logo scaled up -->
+    <g transform="translate(-80, -80) scale(1.67)">
+      <path d="M63 10L29 48L-5 10H63Z" fill="url(#pa_dark)"/>
+      <path d="M-5 86L63 10L97 48L63 86H-5Z" fill="url(#pa_light)"/>
+      <path d="M-5 86L63 10L80 29L29 86H-5Z" fill="url(#pa_mid)"/>
+    </g>
+
+    <!-- Label -->
+    <text y="160" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#1152D4" text-anchor="middle">Power Automate</text>
+    <text y="185" font-family="system-ui, sans-serif" font-size="16" fill="#64748B" text-anchor="middle">Approvals</text>
+  </g>
+
+  <!-- CENTER: VS badge -->
+  <g transform="translate(600, 260)">
+    <circle r="55" fill="white" stroke="#E2E8F0" stroke-width="3"/>
+    <circle r="45" fill="#F8FAFC"/>
+    <text y="12" font-family="system-ui, sans-serif" font-size="40" font-weight="900" fill="#0779FF" text-anchor="middle">vs</text>
+  </g>
+
+  <!-- RIGHT SIDE: ISO 19650 Governance Shield -->
+  <g transform="translate(900, 260)">
+    <!-- Glow background -->
+    <circle r="140" fill="#0779FF" opacity="0.1"/>
+    <circle r="110" fill="#0779FF" opacity="0.1"/>
+
+    <!-- Large shield icon -->
+    <g transform="translate(0, -20)">
+      <path d="M 0 -80 L 70 -55 L 70 20 C 70 60 0 90 0 90 C 0 90 -70 60 -70 20 L -70 -55 Z"
+            fill="url(#shieldGrad)" stroke="#0558B8" stroke-width="2"/>
+      <!-- Checkmark inside shield -->
+      <path d="M -25 5 L -8 22 L 30 -18" stroke="white" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Label -->
+    <text y="160" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#0779FF" text-anchor="middle">ISO 19650</text>
+    <text y="185" font-family="system-ui, sans-serif" font-size="16" fill="#64748B" text-anchor="middle">Governance</text>
+  </g>
+
+  <!-- Connecting dashed lines -->
+  <g stroke="#CBD5E1" stroke-width="2" stroke-dasharray="8 6">
+    <line x1="420" y1="260" x2="540" y2="260"/>
+    <line x1="660" y1="260" x2="780" y2="260"/>
+  </g>
+
+  <!-- Title text at bottom -->
+  <text x="600" y="500" font-family="system-ui, sans-serif" font-size="48" font-weight="800" fill="#0B1220" text-anchor="middle">Approvals vs Governance</text>
+  <text x="600" y="550" font-family="system-ui, sans-serif" font-size="24" fill="#64748B" text-anchor="middle">Understanding the difference in Microsoft 365</text>
+</svg>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <linearGradient id="flinkerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#96BFFF"/>
+      <stop offset="100%" stop-color="#0779FF"/>
+    </linearGradient>
+    <!-- SharePoint gradient -->
+    <linearGradient id="spGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#058F92"/>
+      <stop offset="0.5" stop-color="#038489"/>
+      <stop offset="1" stop-color="#026D71"/>
+    </linearGradient>
+    <!-- Teams gradient -->
+    <linearGradient id="teamsGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#5a62c3"/>
+      <stop offset="0.5" stop-color="#4d55bd"/>
+      <stop offset="1" stop-color="#3940ab"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="250" cy="280" r="150" fill="#038489" opacity="0.05"/>
+  <circle cx="600" cy="280" r="150" fill="#4d55bd" opacity="0.05"/>
+  <circle cx="950" cy="280" r="150" fill="#0779FF" opacity="0.05"/>
+
+  <!-- SharePoint Logo (left) -->
+  <g transform="translate(250, 260)">
+    <circle r="90" fill="white" stroke="#E2E8F0" stroke-width="3"/>
+    <!-- Simplified SharePoint circles logo -->
+    <g transform="translate(0, 0) scale(0.08)">
+      <circle fill="#036C70" cx="80" cy="-350" r="280"/>
+      <circle fill="#1A9BA1" cx="310" cy="-90" r="250"/>
+      <circle fill="#37C6D0" cx="115" cy="150" r="200"/>
+      <path fill="url(#spGrad)" d="M-420,-140 h430c24,0 43,19 43,43v430c0,24-19,43-43,43h-430c-24,0-43-19-43-43v-430c0-24,19-43,43-43z"/>
+      <path fill="#FFFFFF" d="M-270,70c-10-7-18-15-24-26c-6-11-9-23-8-35c-1-17,5-33,16-46c11-13,26-22,42-27c18-6,38-9,57-9c26-1,51,3,75,11v53c-11-6-22-11-34-14c-13-3-26-5-40-5c-14-1-28,3-41,9c-10,4-16,14-16,25c0,6,2,13,7,17c5,6,12,10,19,13c8,4,19,9,35,15c2,1,3,1,5,2c15,6,30,13,44,22c11,6,19,15,26,26c7,12,10,26,9,40c1,17-4,34-15,47c-10,13-24,22-39,27c-18,6-37,8-56,8c-17,0-34-1-51-4c-14-2-28-6-41-12v-56c13,9,27,16,42,20c15,5,30,7,46,7c15,1,29-2,42-9c9-5,15-15,14-25c0-7-3-14-8-19c-6-6-14-11-22-15c-9-5-23-11-41-18c-17-8-33-16-48-25z"/>
+    </g>
+    <text y="140" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#036C70" text-anchor="middle">SharePoint</text>
+  </g>
+
+  <!-- Plus sign -->
+  <g transform="translate(425, 260)">
+    <circle r="25" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <text y="8" font-family="system-ui, sans-serif" font-size="28" font-weight="300" fill="#94A3B8" text-anchor="middle">+</text>
+  </g>
+
+  <!-- Teams Logo (center) -->
+  <g transform="translate(600, 260)">
+    <circle r="90" fill="white" stroke="#E2E8F0" stroke-width="3"/>
+    <!-- Simplified Teams logo -->
+    <g transform="translate(-45, -45) scale(0.045)">
+      <path fill="#5059C9" d="M1554.637,777.5h575.713c54.391,0,98.483,44.092,98.483,98.483v524.398c0,199.901-162.051,361.952-361.952,361.952h-1.711c-199.901,0.028-361.975-162-362.004-361.901V828.971C1503.167,800.544,1526.211,777.5,1554.637,777.5z"/>
+      <circle fill="#5059C9" cx="1943.75" cy="440.583" r="233.25"/>
+      <circle fill="#7B83EB" cx="1218.083" cy="336.917" r="336.917"/>
+      <path fill="#7B83EB" d="M1667.323,777.5H717.01c-53.743,1.33-96.257,45.931-95.01,99.676v598.105c-7.505,322.519,247.657,590.16,570.167,598.053c322.51-7.893,577.671-275.534,570.167-598.053V877.176C1763.579,823.431,1721.066,778.83,1667.323,777.5z"/>
+      <path fill="url(#teamsGrad)" d="M95.01,466.5h950.312c52.473,0,95.01,42.538,95.01,95.01v950.312c0,52.473-42.538,95.01-95.01,95.01H95.01c-52.473,0-95.01-42.538-95.01-95.01V561.51C0,509.038,42.538,466.5,95.01,466.5z"/>
+      <path fill="#FFF" d="M820.211,828.193H630.241v517.297H509.211V828.193H320.123V727.844h500.088V828.193z"/>
+    </g>
+    <text y="140" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#5059C9" text-anchor="middle">Teams</text>
+  </g>
+
+  <!-- Plus sign -->
+  <g transform="translate(775, 260)">
+    <circle r="25" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <text y="8" font-family="system-ui, sans-serif" font-size="28" font-weight="300" fill="#94A3B8" text-anchor="middle">+</text>
+  </g>
+
+  <!-- Flinker Logo (right) -->
+  <g transform="translate(950, 260)">
+    <circle r="90" fill="url(#flinkerGrad)" stroke="#0779FF" stroke-width="3"/>
+    <!-- Shield icon -->
+    <g transform="translate(0, -10)">
+      <path d="M 0 -50 L 40 -35 L 40 10 C 40 40 0 60 0 60 C 0 60 -40 40 -40 10 L -40 -35 Z"
+            fill="white" opacity="0.95"/>
+      <path d="M -15 5 L -5 15 L 20 -15" stroke="#0779FF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text y="140" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#0779FF" text-anchor="middle">Flinker</text>
+  </g>
+
+  <!-- Connecting dashed lines -->
+  <g stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 4">
+    <line x1="340" y1="260" x2="400" y2="260"/>
+    <line x1="450" y1="260" x2="510" y2="260"/>
+    <line x1="690" y1="260" x2="750" y2="260"/>
+    <line x1="800" y1="260" x2="860" y2="260"/>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="480" font-family="system-ui, sans-serif" font-size="44" font-weight="800" fill="#0B1220" text-anchor="middle">ISO 19650 on SharePoint</text>
+  <text x="600" y="530" font-family="system-ui, sans-serif" font-size="22" fill="#64748B" text-anchor="middle">Compliant CDE with Microsoft 365 + Flinker</text>
+
+  <!-- ISO badge -->
+  <g transform="translate(600, 70)">
+    <rect x="-70" y="-25" width="140" height="50" rx="25" fill="white" stroke="#0779FF" stroke-width="2"/>
+    <text y="8" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#0779FF" text-anchor="middle">ISO 19650</text>
+  </g>
+</svg>

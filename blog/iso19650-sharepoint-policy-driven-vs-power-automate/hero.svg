@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <linearGradient id="policyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0779FF"/>
+      <stop offset="100%" stop-color="#0558B8"/>
+    </linearGradient>
+    <linearGradient id="docGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Large decorative circle behind center -->
+  <circle cx="600" cy="280" r="220" fill="#0779FF" opacity="0.03"/>
+  <circle cx="600" cy="280" r="170" fill="#0779FF" opacity="0.05"/>
+
+  <!-- CENTER: Policy Blueprint Document -->
+  <g transform="translate(600, 260)">
+    <!-- Document shadow -->
+    <rect x="-75" y="-95" width="150" height="190" rx="12" fill="#0779FF" opacity="0.1" transform="translate(4, 4)"/>
+
+    <!-- Main document -->
+    <rect x="-75" y="-95" width="150" height="190" rx="12" fill="url(#docGrad)" stroke="#0779FF" stroke-width="3"/>
+
+    <!-- Document header bar -->
+    <rect x="-75" y="-95" width="150" height="40" rx="12" fill="url(#policyGrad)"/>
+    <rect x="-75" y="-65" width="150" height="10" fill="url(#policyGrad)"/>
+
+    <!-- Header text -->
+    <text y="-68" font-family="ui-monospace, monospace" font-size="14" font-weight="700" fill="white" text-anchor="middle">POLICY</text>
+
+    <!-- JSON-like content lines -->
+    <g transform="translate(-55, -35)" font-family="ui-monospace, monospace" font-size="11" fill="#64748B">
+      <text y="0">{ "naming": [...],</text>
+      <text y="18">"metadata": [...],</text>
+      <text y="36">"states": [...],</text>
+      <text y="54">"gates": [...] }</text>
+    </g>
+
+    <!-- Checkmark badge -->
+    <g transform="translate(60, -80)">
+      <circle r="22" fill="#10B981"/>
+      <path d="M -8 0 L -3 5 L 8 -6" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- Radiating project connections -->
+  <!-- Top-left project -->
+  <g transform="translate(280, 140)">
+    <rect x="-50" y="-35" width="100" height="70" rx="10" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="-40" y="-25" width="30" height="8" rx="4" fill="#96BFFF"/>
+    <text y="5" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Project A</text>
+    <rect x="-40" y="15" width="80" height="4" rx="2" fill="#E2E8F0"/>
+  </g>
+  <path d="M 330 175 Q 400 200 525 220" stroke="#0779FF" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.5"/>
+
+  <!-- Top-right project -->
+  <g transform="translate(920, 140)">
+    <rect x="-50" y="-35" width="100" height="70" rx="10" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="-40" y="-25" width="30" height="8" rx="4" fill="#96BFFF"/>
+    <text y="5" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Project B</text>
+    <rect x="-40" y="15" width="80" height="4" rx="2" fill="#E2E8F0"/>
+  </g>
+  <path d="M 870 175 Q 800 200 675 220" stroke="#0779FF" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.5"/>
+
+  <!-- Left project -->
+  <g transform="translate(200, 300)">
+    <rect x="-50" y="-35" width="100" height="70" rx="10" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="-40" y="-25" width="30" height="8" rx="4" fill="#96BFFF"/>
+    <text y="5" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Project C</text>
+    <rect x="-40" y="15" width="80" height="4" rx="2" fill="#E2E8F0"/>
+  </g>
+  <path d="M 250 300 Q 350 290 525 270" stroke="#0779FF" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.5"/>
+
+  <!-- Right project -->
+  <g transform="translate(1000, 300)">
+    <rect x="-50" y="-35" width="100" height="70" rx="10" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="-40" y="-25" width="30" height="8" rx="4" fill="#96BFFF"/>
+    <text y="5" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Project D</text>
+    <rect x="-40" y="15" width="80" height="4" rx="2" fill="#E2E8F0"/>
+  </g>
+  <path d="M 950 300 Q 850 290 675 270" stroke="#0779FF" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.5"/>
+
+  <!-- Bottom-left project -->
+  <g transform="translate(320, 420)">
+    <rect x="-50" y="-35" width="100" height="70" rx="10" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="-40" y="-25" width="30" height="8" rx="4" fill="#96BFFF"/>
+    <text y="5" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Project E</text>
+    <rect x="-40" y="15" width="80" height="4" rx="2" fill="#E2E8F0"/>
+  </g>
+  <path d="M 370 385 Q 430 360 540 320" stroke="#0779FF" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.5"/>
+
+  <!-- Bottom-right project -->
+  <g transform="translate(880, 420)">
+    <rect x="-50" y="-35" width="100" height="70" rx="10" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="-40" y="-25" width="30" height="8" rx="4" fill="#96BFFF"/>
+    <text y="5" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Project F</text>
+    <rect x="-40" y="15" width="80" height="4" rx="2" fill="#E2E8F0"/>
+  </g>
+  <path d="M 830 385 Q 770 360 660 320" stroke="#0779FF" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.5"/>
+
+  <!-- Title at bottom -->
+  <text x="600" y="540" font-family="system-ui, sans-serif" font-size="42" font-weight="800" fill="#0B1220" text-anchor="middle">One Policy, Many Projects</text>
+  <text x="600" y="585" font-family="system-ui, sans-serif" font-size="20" fill="#64748B" text-anchor="middle">ISO 19650 Governance That Scales on SharePoint</text>
+
+  <!-- ISO 19650 badge top -->
+  <g transform="translate(600, 55)">
+    <rect x="-70" y="-22" width="140" height="44" rx="22" fill="url(#policyGrad)"/>
+    <text y="7" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle">ISO 19650</text>
+  </g>
+</svg>

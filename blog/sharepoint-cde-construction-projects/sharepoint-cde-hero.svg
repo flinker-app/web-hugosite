@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#96BFFF"/>
+      <stop offset="100%" stop-color="#0779FF"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Grid -->
+  <g stroke="#E2E8F0" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="157" x2="1200" y2="157"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="473" x2="1200" y2="473"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+  </g>
+
+  <!-- Central SharePoint icon with folder structure -->
+  <g transform="translate(400, 100)">
+    <!-- SharePoint card -->
+    <rect width="400" height="420" rx="16" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+
+    <!-- Header -->
+    <rect width="400" height="64" rx="16" fill="#0779FF"/>
+    <rect y="32" width="400" height="32" fill="#0779FF"/>
+
+    <!-- SharePoint icon -->
+    <g transform="translate(30, 16)">
+      <rect width="32" height="32" rx="6" fill="white" opacity="0.2"/>
+      <text x="16" y="24" font-family="system-ui, sans-serif" font-size="18" fill="white" text-anchor="middle">S</text>
+    </g>
+    <text x="76" y="44" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="white">SharePoint CDE</text>
+
+    <!-- Folder items -->
+    <g transform="translate(24, 88)">
+      <!-- WIP -->
+      <g>
+        <rect width="352" height="64" rx="8" fill="#F8FAFC" stroke="#96BFFF" stroke-width="2"/>
+        <rect x="16" y="16" width="32" height="32" rx="4" fill="#96BFFF" opacity="0.3"/>
+        <text x="32" y="38" font-family="system-ui, sans-serif" font-size="16" fill="#0779FF" text-anchor="middle">📁</text>
+        <text x="64" y="32" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#0B1220">01_WIP</text>
+        <text x="64" y="50" font-family="system-ui, sans-serif" font-size="12" fill="#64748B">Work in Progress</text>
+      </g>
+
+      <!-- Shared -->
+      <g transform="translate(0, 80)">
+        <rect width="352" height="64" rx="8" fill="#F8FAFC" stroke="#7EB0FF" stroke-width="2"/>
+        <rect x="16" y="16" width="32" height="32" rx="4" fill="#7EB0FF" opacity="0.3"/>
+        <text x="32" y="38" font-family="system-ui, sans-serif" font-size="16" fill="#0779FF" text-anchor="middle">📁</text>
+        <text x="64" y="32" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#0B1220">02_Shared</text>
+        <text x="64" y="50" font-family="system-ui, sans-serif" font-size="12" fill="#64748B">For Review</text>
+      </g>
+
+      <!-- Published -->
+      <g transform="translate(0, 160)">
+        <rect width="352" height="64" rx="8" fill="#F8FAFC" stroke="#0779FF" stroke-width="2"/>
+        <rect x="16" y="16" width="32" height="32" rx="4" fill="#0779FF" opacity="0.2"/>
+        <text x="32" y="38" font-family="system-ui, sans-serif" font-size="16" fill="#0779FF" text-anchor="middle">📁</text>
+        <text x="64" y="32" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#0B1220">03_Published</text>
+        <text x="64" y="50" font-family="system-ui, sans-serif" font-size="12" fill="#64748B">Approved Deliverables</text>
+      </g>
+
+      <!-- Archive -->
+      <g transform="translate(0, 240)">
+        <rect width="352" height="64" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+        <rect x="16" y="16" width="32" height="32" rx="4" fill="#CBD5E1" opacity="0.3"/>
+        <text x="32" y="38" font-family="system-ui, sans-serif" font-size="16" fill="#64748B" text-anchor="middle">📁</text>
+        <text x="64" y="32" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#0B1220">04_Archive</text>
+        <text x="64" y="50" font-family="system-ui, sans-serif" font-size="12" fill="#64748B">Superseded Versions</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Left decorative element: Teams chip -->
+  <g transform="translate(100, 200)">
+    <rect width="200" height="60" rx="10" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="15" y="12" width="36" height="36" rx="6" fill="#5B5FC7"/>
+    <text x="33" y="36" font-family="system-ui, sans-serif" font-size="14" fill="white" text-anchor="middle">T</text>
+    <text x="65" y="32" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0B1220">Microsoft Teams</text>
+    <text x="65" y="48" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Collaboration</text>
+  </g>
+
+  <!-- Left decorative: Power BI -->
+  <g transform="translate(140, 340)">
+    <rect width="180" height="60" rx="10" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="15" y="12" width="36" height="36" rx="6" fill="#F2C811"/>
+    <text x="33" y="36" font-family="system-ui, sans-serif" font-size="14" fill="#333" text-anchor="middle">📊</text>
+    <text x="65" y="32" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0B1220">Power BI</text>
+    <text x="65" y="48" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Analytics</text>
+  </g>
+
+  <!-- Right decorative: Flinker -->
+  <g transform="translate(900, 260)">
+    <rect width="200" height="70" rx="10" fill="white" stroke="#0779FF" stroke-width="2"/>
+    <rect x="15" y="15" width="40" height="40" rx="8" fill="url(#brandGrad)"/>
+    <path d="M35 25l12 4v9c0 9-12 15-12 15S23 47 23 38v-9l12-4z" fill="white" transform="translate(0, 3)"/>
+    <text x="72" y="38" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#0B1220">Flinker</text>
+    <text x="72" y="55" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">ISO 19650 Layer</text>
+  </g>
+
+  <!-- Right decorative: External users -->
+  <g transform="translate(920, 400)">
+    <rect width="160" height="50" rx="8" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="12" y="10" width="30" height="30" rx="6" fill="#64748B"/>
+    <text x="27" y="30" font-family="system-ui, sans-serif" font-size="12" fill="white" text-anchor="middle">👥</text>
+    <text x="52" y="30" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#0B1220">External Users</text>
+  </g>
+
+  <!-- Connecting lines -->
+  <g stroke="#0779FF" stroke-width="2" opacity="0.3">
+    <path d="M300 230 Q350 230 390 260" fill="none"/>
+    <path d="M320 370 Q360 370 390 340" fill="none"/>
+    <path d="M800 295 Q860 295 900 295" fill="none"/>
+    <path d="M800 370 Q860 400 920 425" fill="none"/>
+  </g>
+</svg>

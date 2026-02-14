@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960" height="540" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#96BFFF"/>
+      <stop offset="100%" stop-color="#0779FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="540" fill="#F8FAFC"/>
+
+  <!-- Grid -->
+  <g stroke="#E2E8F0" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="135" x2="960" y2="135"/>
+    <line x1="0" y1="270" x2="960" y2="270"/>
+    <line x1="0" y1="405" x2="960" y2="405"/>
+    <line x1="240" y1="0" x2="240" y2="540"/>
+    <line x1="480" y1="0" x2="480" y2="540"/>
+    <line x1="720" y1="0" x2="720" y2="540"/>
+  </g>
+
+  <!-- Center: SharePoint CDE Structure -->
+  <g transform="translate(280, 80)">
+    <!-- Main card -->
+    <rect width="400" height="380" rx="12" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+
+    <!-- Header -->
+    <rect width="400" height="50" rx="12" fill="#0779FF"/>
+    <rect y="24" width="400" height="26" fill="#0779FF"/>
+    <text x="20" y="32" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="white">SharePoint CDE</text>
+
+    <!-- Folder structure -->
+    <g transform="translate(20, 70)">
+      <!-- WIP -->
+      <g>
+        <rect width="360" height="56" rx="6" fill="#F8FAFC" stroke="#96BFFF" stroke-width="2"/>
+        <rect x="12" y="12" width="32" height="32" rx="4" fill="#96BFFF" opacity="0.3"/>
+        <text x="22" y="34" font-family="system-ui, sans-serif" font-size="14" fill="#0779FF">📁</text>
+        <text x="56" y="28" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#0B1220">01_WIP</text>
+        <text x="56" y="44" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Work in Progress</text>
+        <rect x="280" y="16" width="60" height="24" rx="4" fill="#96BFFF" opacity="0.2"/>
+        <text x="310" y="33" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#0779FF" text-anchor="middle">Internal</text>
+      </g>
+
+      <!-- Shared -->
+      <g transform="translate(0, 70)">
+        <rect width="360" height="56" rx="6" fill="#F8FAFC" stroke="#7EB0FF" stroke-width="2"/>
+        <rect x="12" y="12" width="32" height="32" rx="4" fill="#7EB0FF" opacity="0.3"/>
+        <text x="22" y="34" font-family="system-ui, sans-serif" font-size="14" fill="#0779FF">📁</text>
+        <text x="56" y="28" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#0B1220">02_Shared</text>
+        <text x="56" y="44" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">For Review</text>
+        <rect x="280" y="16" width="60" height="24" rx="4" fill="#7EB0FF" opacity="0.2"/>
+        <text x="310" y="33" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#0779FF" text-anchor="middle">Review</text>
+      </g>
+
+      <!-- Published -->
+      <g transform="translate(0, 140)">
+        <rect width="360" height="56" rx="6" fill="#F8FAFC" stroke="#0779FF" stroke-width="2"/>
+        <rect x="12" y="12" width="32" height="32" rx="4" fill="#0779FF" opacity="0.2"/>
+        <text x="22" y="34" font-family="system-ui, sans-serif" font-size="14" fill="#0779FF">📁</text>
+        <text x="56" y="28" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#0B1220">03_Published</text>
+        <text x="56" y="44" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Approved Deliverables</text>
+        <rect x="272" y="16" width="68" height="24" rx="4" fill="#0779FF" opacity="0.15"/>
+        <text x="306" y="33" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#0779FF" text-anchor="middle">External</text>
+      </g>
+
+      <!-- Archive -->
+      <g transform="translate(0, 210)">
+        <rect width="360" height="56" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+        <rect x="12" y="12" width="32" height="32" rx="4" fill="#CBD5E1" opacity="0.3"/>
+        <text x="22" y="34" font-family="system-ui, sans-serif" font-size="14" fill="#64748B">📁</text>
+        <text x="56" y="28" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#0B1220">04_Archive</text>
+        <text x="56" y="44" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Superseded Versions</text>
+        <rect x="272" y="16" width="68" height="24" rx="4" fill="#CBD5E1" opacity="0.3"/>
+        <text x="306" y="33" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#64748B" text-anchor="middle">Read-only</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Left side: Microsoft 365 integrations -->
+  <g transform="translate(40, 140)">
+    <!-- Teams -->
+    <g>
+      <rect width="180" height="70" rx="8" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+      <rect x="15" y="15" width="40" height="40" rx="6" fill="#5B5FC7"/>
+      <text x="35" y="42" font-family="system-ui, sans-serif" font-size="16" fill="white" text-anchor="middle">T</text>
+      <text x="70" y="35" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0B1220">Microsoft Teams</text>
+      <text x="70" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Collaboration</text>
+    </g>
+
+    <!-- Power Automate -->
+    <g transform="translate(0, 90)">
+      <rect width="180" height="70" rx="8" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+      <rect x="15" y="15" width="40" height="40" rx="6" fill="#0066FF"/>
+      <text x="35" y="42" font-family="system-ui, sans-serif" font-size="16" fill="white" text-anchor="middle">⚡</text>
+      <text x="70" y="35" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0B1220">Power Automate</text>
+      <text x="70" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Workflows</text>
+    </g>
+
+    <!-- Outlook -->
+    <g transform="translate(0, 180)">
+      <rect width="180" height="70" rx="8" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+      <rect x="15" y="15" width="40" height="40" rx="6" fill="#0078D4"/>
+      <text x="35" y="42" font-family="system-ui, sans-serif" font-size="16" fill="white" text-anchor="middle">✉</text>
+      <text x="70" y="35" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0B1220">Outlook</text>
+      <text x="70" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Notifications</text>
+    </g>
+  </g>
+
+  <!-- Connection lines left -->
+  <g stroke="#0779FF" stroke-width="2" fill="none" opacity="0.4">
+    <path d="M220 175 Q250 175 270 200 L280 210"/>
+    <path d="M220 265 L280 270"/>
+    <path d="M220 355 Q250 355 270 320 L280 310"/>
+  </g>
+
+  <!-- Right side: Power BI and Flinker -->
+  <g transform="translate(740, 140)">
+    <!-- Power BI -->
+    <g>
+      <rect width="180" height="70" rx="8" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+      <rect x="15" y="15" width="40" height="40" rx="6" fill="#F2C811"/>
+      <text x="35" y="42" font-family="system-ui, sans-serif" font-size="16" fill="#333" text-anchor="middle">📊</text>
+      <text x="70" y="35" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0B1220">Power BI</text>
+      <text x="70" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Analytics</text>
+    </g>
+
+    <!-- External Users -->
+    <g transform="translate(0, 90)">
+      <rect width="180" height="70" rx="8" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+      <rect x="15" y="15" width="40" height="40" rx="6" fill="#64748B"/>
+      <text x="35" y="42" font-family="system-ui, sans-serif" font-size="16" fill="white" text-anchor="middle">👥</text>
+      <text x="70" y="35" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0B1220">External Users</text>
+      <text x="70" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Published only</text>
+    </g>
+
+    <!-- Flinker -->
+    <g transform="translate(0, 180)">
+      <rect width="180" height="70" rx="8" fill="white" stroke="#0779FF" stroke-width="2"/>
+      <rect x="15" y="15" width="40" height="40" rx="6" fill="url(#brandGrad)"/>
+      <path d="M35 25l10 3v7c0 7-10 12-10 12s-10-5-10-12v-7l10-3z" fill="white" transform="translate(0, 3)"/>
+      <text x="70" y="35" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0B1220">Flinker</text>
+      <text x="70" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">ISO 19650 Layer</text>
+    </g>
+  </g>
+
+  <!-- Connection lines right -->
+  <g stroke="#0779FF" stroke-width="2" fill="none" opacity="0.4">
+    <path d="M680 210 L700 200 Q720 190 740 175"/>
+    <path d="M680 270 L740 265"/>
+    <path d="M680 310 L700 320 Q720 340 740 355"/>
+  </g>
+
+</svg>

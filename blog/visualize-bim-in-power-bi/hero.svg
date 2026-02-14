@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9E6"/>
+      <stop offset="100%" stop-color="#FFF3CC"/>
+    </linearGradient>
+    <!-- Power BI gradients -->
+    <linearGradient id="pbiDark" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#EBBB14"/>
+      <stop offset="100%" stop-color="#B25400"/>
+    </linearGradient>
+    <linearGradient id="pbiMid" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#F9E583"/>
+      <stop offset="100%" stop-color="#DE9800"/>
+    </linearGradient>
+    <linearGradient id="pbiLight" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#F9E68B"/>
+      <stop offset="100%" stop-color="#F3CD32"/>
+    </linearGradient>
+    <linearGradient id="flinkerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#96BFFF"/>
+      <stop offset="100%" stop-color="#0779FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="400" cy="280" r="200" fill="#F3CD32" opacity="0.08"/>
+  <circle cx="800" cy="280" r="180" fill="#0779FF" opacity="0.06"/>
+
+  <!-- LEFT: Power BI Logo (large) -->
+  <g transform="translate(350, 260)">
+    <!-- Glow -->
+    <circle r="130" fill="#F3CD32" opacity="0.15"/>
+    <circle r="100" fill="#F3CD32" opacity="0.1"/>
+
+    <!-- Power BI logo scaled -->
+    <g transform="translate(-60, -95) scale(0.3)">
+      <rect fill="url(#pbiDark)" x="256" y="0" width="219" height="630" rx="26"/>
+      <path fill="url(#pbiMid)" d="M346,604 L346,630 L320,630 L153,630 C138.640597,630 127,618.359403 127,604 L127,183 C127,168.640597 138.640597,157 153,157 L320,157 C334.359403,157 346,168.640597 346,183 L346,604 Z"/>
+      <path fill="url(#pbiLight)" d="M219,604 L219,630 L193,630 L26,630 C11.6405965,630 0,618.359403 0,604 L0,341 C0,326.640597 11.6405965,315 26,315 L193,315 C207.359403,315 219,326.640597 219,341 L219,604 Z"/>
+    </g>
+
+    <text y="150" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#B25400" text-anchor="middle">Power BI</text>
+  </g>
+
+  <!-- CENTER: Plus sign -->
+  <g transform="translate(550, 260)">
+    <circle r="30" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <text y="10" font-family="system-ui, sans-serif" font-size="36" font-weight="300" fill="#94A3B8" text-anchor="middle">+</text>
+  </g>
+
+  <!-- RIGHT: 3D Building/IFC concept -->
+  <g transform="translate(800, 260)">
+    <!-- Glow -->
+    <circle r="130" fill="#0779FF" opacity="0.1"/>
+    <circle r="100" fill="#0779FF" opacity="0.1"/>
+
+    <!-- Isometric 3D building -->
+    <g transform="translate(0, -30)">
+      <!-- Building base -->
+      <path d="M 0 -50 L 60 -20 L 60 60 L 0 90 L -60 60 L -60 -20 Z" fill="#96BFFF" stroke="#0779FF" stroke-width="2"/>
+      <!-- Building top -->
+      <path d="M 0 -50 L 60 -20 L 0 10 L -60 -20 Z" fill="#0779FF"/>
+      <!-- Building right face -->
+      <path d="M 60 -20 L 60 60 L 0 90 L 0 10 Z" fill="#5BA3FF"/>
+      <!-- Building left face -->
+      <path d="M -60 -20 L 0 10 L 0 90 L -60 60 Z" fill="#7BB8FF"/>
+
+      <!-- Window lines -->
+      <g stroke="white" stroke-width="1.5" opacity="0.6">
+        <line x1="10" y1="25" x2="50" y2="10"/>
+        <line x1="10" y1="45" x2="50" y2="30"/>
+        <line x1="10" y1="65" x2="50" y2="50"/>
+        <line x1="-10" y1="25" x2="-50" y2="10"/>
+        <line x1="-10" y1="45" x2="-50" y2="30"/>
+        <line x1="-10" y1="65" x2="-50" y2="50"/>
+      </g>
+    </g>
+
+    <text y="150" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#0779FF" text-anchor="middle">IFC / BIM</text>
+  </g>
+
+  <!-- Connecting dashed lines -->
+  <g stroke="#CBD5E1" stroke-width="2" stroke-dasharray="8 6">
+    <line x1="450" y1="260" x2="515" y2="260"/>
+    <line x1="585" y1="260" x2="680" y2="260"/>
+  </g>
+
+  <!-- Equals sign leading to result -->
+  <g transform="translate(920, 260)">
+    <text y="10" font-family="system-ui, sans-serif" font-size="40" font-weight="300" fill="#64748B" text-anchor="middle">=</text>
+  </g>
+
+  <!-- Result: Dashboard icon -->
+  <g transform="translate(1030, 260)">
+    <rect x="-70" y="-60" width="140" height="120" rx="12" fill="white" stroke="#0779FF" stroke-width="3"/>
+    <!-- Mini chart bars -->
+    <rect x="-55" y="10" width="20" height="35" rx="4" fill="url(#pbiLight)"/>
+    <rect x="-25" y="-20" width="20" height="65" rx="4" fill="url(#pbiMid)"/>
+    <rect x="5" y="-5" width="20" height="50" rx="4" fill="url(#pbiDark)"/>
+    <rect x="35" y="-30" width="20" height="75" rx="4" fill="url(#flinkerGrad)"/>
+    <!-- Mini 3D cube in corner -->
+    <g transform="translate(40, -40) scale(0.4)">
+      <path d="M 0 -20 L 20 -10 L 20 10 L 0 20 L -20 10 L -20 -10 Z" fill="#0779FF"/>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="490" font-family="system-ui, sans-serif" font-size="44" font-weight="800" fill="#0B1220" text-anchor="middle">3D BIM in Power BI</text>
+  <text x="600" y="540" font-family="system-ui, sans-serif" font-size="22" fill="#64748B" text-anchor="middle">Interactive IFC Visualization for Your Dashboards</text>
+
+  <!-- IFC Viewer badge -->
+  <g transform="translate(600, 70)">
+    <rect x="-80" y="-25" width="160" height="50" rx="25" fill="url(#flinkerGrad)"/>
+    <text y="8" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle">IFC Viewer</text>
+  </g>
+</svg>

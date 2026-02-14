@@ -36,11 +36,4 @@
 &lt;p>A typical SharePoint CDE for construction might use this hierarchy:&lt;/p></description></item><item><title>How Leading Construction Companies Use SharePoint as a Common Data Environment (CDE)</title><link>https://flinker.app/blog/sharepoint-cde-success-stories/</link><pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-success-stories/</guid><description>&lt;p>Construction projects generate large volumes of documents, drawings, models, and coordination data. Traditional tools—shared drives, email attachments, siloed platforms—create fragmentation that leads to version conflicts, access issues, and coordination errors.&lt;/p>
 &lt;p>Many construction firms already have Microsoft 365 licenses. SharePoint, as part of that ecosystem, provides a foundation for a Common Data Environment (CDE): centralized storage, version control, granular permissions, and integration with Teams, Power BI, and other Microsoft tools.&lt;/p>
 &lt;h2 id="why-sharepoint-as-a-cde">Why SharePoint as a CDE?&lt;/h2>
-&lt;p>SharePoint offers several characteristics relevant to construction project data management:&lt;/p></description></item><item><title>Visualize BIM Models in Power BI with Flinker's 3D Viewer</title><link>https://flinker.app/blog/visualize-bim-in-power-bi/</link><pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/visualize-bim-in-power-bi/</guid><description>&lt;p>IFC (Industry Foundation Classes) is the standard for sharing BIM data across platforms in the AECO industry. But when it&amp;rsquo;s time to present models in Power BI, the geometry is missing—just numbers, no visual context. Power BI doesn&amp;rsquo;t natively support IFC files.&lt;/p>
-&lt;p>Flinker&amp;rsquo;s 3D IFC Viewer embeds IFC models directly into Power BI reports:&lt;/p>
-&lt;ul>
-&lt;li>Interactive 3D views alongside live data, charts, and KPIs&lt;/li>
-&lt;li>No plugins, no extra licenses, no data uploads&lt;/li>
-&lt;/ul>
-&lt;h2 id="why-embed-ifc-in-power-bi">Why embed IFC in Power BI?&lt;/h2>
-&lt;p>BIM models contain spatial and attribute data that becomes more valuable when linked to business metrics. Without visual context, stakeholders review disconnected tools or rely on screen-sharing.&lt;/p></description></item></channel></rss>
+&lt;p>SharePoint offers several characteristics relevant to construction project data management:&lt;/p></description></item></channel></rss>
