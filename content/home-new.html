@@ -1,0 +1,814 @@
+---
+title: "Home (New Draft)"
+description: "We are Flinker - Building the OpenBIM Ecosystem for Microsoft 365"
+date: 2023-10-05
+draft: false
+type: "page"
+layout: "single"
+url: "/home-new/"
+disableTopSpacing: true
+---
+
+<style>
+   /* Hero height without JS-induced reflows */
+   #get-started { min-height: 70vh; }
+   @media (min-width: 1200px) { #get-started { min-height: 100vh; } }
+
+   /* Keep outline-light legible on dark hero */
+   .hero-agency .btn.btn-outline-light {
+      --bs-btn-color: #fff;
+      --bs-btn-border-color: rgba(255,255,255,.9);
+      --bs-btn-hover-bg: rgba(255,255,255,.12);
+   }
+
+   /* Respect reduced motion: tone down parallax */
+   @media (prefers-reduced-motion: reduce) {
+      .jarallax { transform: none !important; }
+   }
+</style>
+
+<!--hero start-->
+<section id="get-started" class="position-relative py-10 jarallax hero-agency" data-jarallax data-speed="0.4">
+   <img class="jarallax-img w-100" src="./assets-flinker/images/landings/landing-img-9.svg" alt="agency" loading="eager" fetchpriority="high" decoding="async"
+      style="object-fit: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; object-position: center;" />
+   <div class="position-absolute start-0 end-0">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-5 col-lg-7 col-12" data-cue="zoomIn">
+               <div class="text-center text-lg-start">
+                  <div class="mb-4 text-white-stable">
+                     <small class="text-uppercase ls-lg">Microsoft 365 Apps</small>
+                     <h1 class="mb-3 mt-3 display-3 text-white-stable">The built environment layer for Microsoft</h1>
+                     <p class="lead mb-0">Self-hosted OpenBIM inside Microsoft 365 — connecting design, data and systems. Secure. Enterprise-grade.</p>
+                  </div>
+                  <a href="#clients" class="btn btn-primary">Explore</a>
+                  <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" aria-label="Talk to an Expert (book a call)" class="btn btn-outline-light ms-2" style="color:#fff;border-color:rgba(255,255,255,0.9);background-color:transparent;">Talk to an Expert</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Reviews bar in hero (stars + AppSource link) -->
+   <div class="position-absolute start-0 end-0 bottom-0" data-cue="fadeIn">
+      <div class="container">
+         <div class="row">
+            <div class="d-flex flex-row flex-wrap gap-2 align-items-center justify-content-center justify-content-md-start lh-1 py-3"
+               style="width: 100%;">
+               <span class="text-white-stable fs-6">Great</span>
+               <div>
+                  <img src="./assets/images/mobile-app/star.svg" alt="star">
+                  <img src="./assets/images/mobile-app/star.svg" alt="star">
+                  <img src="./assets/images/mobile-app/star.svg" alt="star">
+                  <img src="./assets/images/mobile-app/star.svg" alt="star">
+                  <!-- 0.8 filled star to represent 4.8 rating -->
+                  <span class="position-relative d-inline-block align-middle" aria-hidden="true">
+                     <img src="./assets/images/mobile-app/star-light.svg" alt="star background">
+                     <img src="./assets/images/mobile-app/star.svg" alt="star 80% filled" class="position-absolute top-0 start-0" style="width: 100%; height: 100%; clip-path: inset(0 20% 0 0);">
+                  </span>
+                  <span class="visually-hidden">4.8 out of 5 stars</span>
+               </div>
+               <span class="text-white-stable">30&nbsp;reviews on</span>
+               <a href="https://appsource.microsoft.com/de-de/marketplace/apps?search=flinker&page=1" target="_blank" class="lh-1 text-white-stable fw-bold">Microsoft AppSource</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--hero end-->
+
+
+<!-- movement hero start adj. -->
+<section id="community" class="right-slant-shape bg-primary py-8" data-cue="fadeIn">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1" data-cue="zoomIn">
+        <div class="text-center text-white-stable">
+          <small class="text-uppercase ls-lg fw-semibold">OpenBIM • Microsoft 365 • Community</small>
+          <h2 class="display-4 mt-3 mb-3 text-white-stable">Building the #1 OpenBIM Ecosystem for Microsoft 365</h2>
+          <p class="lead text-opacity-75 mb-5 px-lg-7">
+            Build on IFC, BCF, and IDS — all inside Microsoft 365.
+            Open to partners, integrators, and developers. Join and <strong>earn revenues</strong>.
+          </p>
+          <!-- Note: replace with your MS Form or a /community page if desired -->
+          <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=80C2RLBJBEOcmMYdC8DcAu3Acr_HHtlOuyPGamiQECNUOVJEUkpLSU1STVlFVjhLSUhUOVhTUUdOUi4u" class="btn btn-light btn-lg fw-semibold shadow-sm">
+            Join the Movement
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- movement hero end adj. -->
+
+<section id="clients">
+{{< pbi-user-logos >}}
+</section>
+
+<!-- Company stats -->
+<section class="py-lg-9 py-5">
+  <div class="container">
+    <div class="row g-5 text-center">
+      <div class="col-md-3 col-6">
+        <h2 class="text-white-stable">1,000+</h2>
+        <h5 class="text-white-stable mb-0">Organizations Using Flinker</h5>
+      </div>
+      <div class="col-md-3 col-6">
+        <h2 class="text-white-stable">4.8★</h2>
+        <h5 class="text-white-stable mb-0">Microsoft AppSource Rating</h5>
+      </div>
+      <div class="col-md-3 col-6">
+        <h2 class="text-white-stable">Microsoft Native</h2>
+        <h5 class="text-white-stable mb-0">Self-hosted • No vendor lock-in</h5>
+      </div>
+      <div class="col-md-3 col-6">
+        <h2 class="text-white-stable">2020</h2>
+        <h5 class="text-white-stable mb-0">Independent Since</h5>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Company stats -->
+
+<!-- Movement Pillars start -->
+<section class="my-xl-7 py-5">
+  <div id="usp" class="container mb-xl-7" data-cue="fadeIn">
+    <div class="row row-cols-1 row-cols-md-3 gy-4">
+
+      <!-- Pillar 1: Open Standards -->
+      <div class="col" data-cue="zoomIn">
+        <div class="card card-lift">
+          <div class="card-body d-flex flex-column gap-4">
+            <div>
+                     <!-- Updated Icon -->
+                     <i class="bi bi-diagram-3" style="font-size: 32px; color: var(--bs-primary);"></i>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <h3 class="mb-0 fs-4">Open Standards</h3>
+              <p class="mb-0">Work natively with IFC, IDS, and BCF to ensure open, interoperable BIM data across platforms and teams.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar 2: Built in Microsoft 365 -->
+      <div class="col" data-cue="zoomIn">
+        <div class="card card-lift">
+          <div class="card-body d-flex flex-column gap-4">
+            <div>
+                     <!-- Microsoft Integration Icon (aligned with Pillars 1 & 3) -->
+                     <i class="bi bi-microsoft" style="font-size: 32px; color: var(--bs-primary);"></i>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <h3 class="mb-0 fs-4">Built in Microsoft 365</h3>
+              <p class="mb-0">Native integration with SharePoint, Teams, Power BI, and Excel — secure, scalable, and ready for enterprise use.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar 3: Ecosystem, Not Silos -->
+      <div class="col" data-cue="zoomIn">
+        <div class="card card-lift">
+          <div class="card-body d-flex flex-column gap-4">
+            <div>
+              <!-- People / Ecosystem Icon -->
+              <i class="bi bi-people" style="font-size: 32px; color: var(--bs-primary);"></i>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <h3 class="mb-0 fs-4">Ecosystem</h3>
+              <p class="mb-0">Join, integrate, and build with us — collaborate as partners, implement at your customers, and grow the movement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Movement Pillars end -->
+
+<!-- security section -->
+{{< index-animation >}}
+<section class="py-xl-9 py-6" data-cue="fadeIn" data-show="true"
+   style="animation-name: fadeIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+   <div class="container">
+      <div class="row mb-6">
+         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
+            <div class="d-flex flex-column gap-4 text-center">
+               <div class="d-flex justify-content-center">
+                  <span
+                     class="badge bg-white text-muted border border-light-subtle rounded-pill text-uppercase fw-semibold py-2 px-3 small ls-md">Security</span>
+               </div>
+               <div class="d-flex flex-column gap-2">
+                  <h2 class="mb-0 display-6">Your Security is Our Priority</h2>
+                  <p class="mb-0">
+                     We believe that you should always have complete ownership and control of your data and processing. We deliver
+                     app solutions that run self-hosted in your existing Microsoft environment.
+                  </p>
+                  
+                  <!-- NEW: add the deep-dive link right here -->
+                  <p class="mb-0">
+                     <a href="https://docs.flinker.app/docs/ifc-viewer-architecture-and-data-protection.html"
+                        class="text-decoration-underline"
+                        target="_blank" rel="noopener">
+                        Security &amp; Architecture docs →
+                     </a>
+                  </p>
+                  <!-- /NEW -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row gy-lg-6 gy-4">
+         <div class="col-lg-4 col-md-6" data-cue="zoomIn" data-show="true"
+            style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+            <div class="d-flex flex-column gap-5 p-xxl-6 text-center p-3 card card-lift">
+               <div><img src="./assets-flinker/images/security/security.svg" alt="security"></div>
+               <div class="d-flex flex-column gap-2">
+                  <h3 class="h4">Enterprise-Grade Security</h3>
+                  <p class="mb-0">Because your data remains in your own Microsoft tenant, you benefit from the full
+                     suite of Microsoft’s security controls.</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6" data-cue="zoomIn" data-show="true"
+            style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 200ms; animation-direction: normal; animation-fill-mode: both;">
+            <div class="d-flex flex-column gap-5 p-xxl-6 text-center p-3 card card-lift">
+               <div><img src="./assets-flinker/images/security/privacy.svg" alt="privacy"></div>
+               <div class="d-flex flex-column gap-2">
+                  <h3 class="h4">Your Data, Your AI Power</h3>
+                  <p class="mb-0">You decide who has access and how data is shared. There’s no secondary platform to
+                     worry about or data uploads needed.</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6" data-cue="zoomIn" data-show="true"
+            style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 400ms; animation-direction: normal; animation-fill-mode: both;">
+            <div class="d-flex flex-column gap-5 p-xxl-6 text-center p-3 card card-lift">
+               <div><img src="./assets-flinker/images/security/authentication.svg" alt="authentication"></div>
+               <div class="d-flex flex-column gap-2">
+                  <h3 class="h4">Self-Hosting, SSO and MFA</h3>
+                  <p class="mb-0">Reduce external IT dependencies. Strengthen your data’s security with Microsoft’s SSO and MFA tools.
+                     </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- security section end-->
+
+<!--Apps Section-->
+<section class="py-5 bg-light-subtle" id="demo">
+   <div class="container my-lg-7" data-cues="fadeIn">
+      <div class="row mb-8">
+         <div class="col-xl-8 offset-xl-2 col-12">
+            <div class="d-flex flex-column gap-2 mx-lg-8 text-center">
+               <h2 class="mb-0">Explore Apps</h2>
+               <p class="mb-0 lead">Enhances BIM model collaboration, data management and automation with seamless Microsoft
+                  365 integrations.
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 gy-6">
+
+         <!-- Item 1: SharePoint Viewer -->
+         <div class="col" data-cues="zoomIn">
+            <a href="https://appsource.microsoft.com/en-us/product/office/WA200006238?tab=Overview" target="_blank">
+
+               <!-- Thumbnail -->
+               <img src="./assets-flinker/images/hero/sharepoint-webpart-ifc-viewer.gif" alt="SharePoint Viewer"
+                  class="border rounded-3 img-fluid card-lift" style="width: 100%; height: 84%;" />
+               <!-- Title -->
+               <h4 class="mb-0 mt-3">
+                  <img src="./assets-flinker/images/microsoft/SharePoint.svg" alt="Microsoft SharePoint" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
+                  SharePoint Viewer <i class="bi-box-arrow-up-right"></i>
+                  <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill">
+                     Free
+                  </span>
+               </h4>
+            </a>
+         </div>
+
+         <!-- Item 2: Teams Viewer -->
+         <div class="col" data-cues="zoomIn">
+            <a href="https://appsource.microsoft.com/en-us/product/office/WA200007412?tab=Overview" target="_blank">
+               <!-- Thumbnail -->
+               <img src="./assets-flinker/images/hero/Teams-Viewer-hero2.png" alt="Teams Viewer"
+                  class="border rounded-3 img-fluid card-lift" />
+               <!-- Title -->
+               <h4 class="mb-0 mt-3">
+                  <img src="./assets-flinker/images/microsoft/Teams.svg" alt="Microsoft Teams" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
+                  Teams Viewer <i class="bi-box-arrow-up-right"></i>
+                  <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill">
+                     Free
+                  </span>
+               </h4>
+            </a>
+         </div>
+
+         <!-- Item 3: Web Viewer -->
+         <div class="col" data-cues="zoomIn">
+            <a href="https://viewer.flinker.app/" target="_blank">
+               <!-- Thumbnail -->
+               <img src=".\assets-flinker\images\hero\web-viewer-hero3.png"
+                  alt="Download SEO digital marketing agency landing page"
+                  class="border rounded-3 img-fluid card-lift" />
+               <!-- Title -->
+               <h4 class="mb-0 mt-3">
+                  <img src="./assets-flinker/images/microsoft/Edge.svg" alt="Microsoft Edge" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
+                  Web Viewer <i class="bi-box-arrow-up-right"></i>
+                  <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill">
+                     Free
+                  </span>
+               </h4>
+            </a>
+         </div>
+
+         <!-- Item 4: SharePoint CDE -->
+         <div class="col" data-cues="zoomIn">
+            <!-- Thumbnail -->
+            <img src="./assets-flinker/images/hero/Flinker-Studio-Hero2.png" alt="SharePoint CDE"
+               class="border rounded-3 img-fluid card-lift" />
+            <!-- Title -->
+            <h4 class="mb-0 mt-3">
+               <img src="./assets-flinker/images/microsoft/SharePoint.svg" alt="Microsoft SharePoint" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
+               SharePoint CDE
+            </h4>
+         </div>
+
+         <!-- Item 5: SharePoint Protect -->
+         <div class="col" data-cues="zoomIn">
+            <a href="https://appsource.microsoft.com/en-us/product/office/WA200007197?tab=Overview" target="_blank">
+               <!-- Thumbnail -->
+               <img src="./assets-flinker/images/hero/Protect-Hero.png" alt="SharePoint Protect"
+                  class="border rounded-3 img-fluid card-lift" />
+               <!-- Title -->
+               <h4 class="mb-0 mt-3">
+                  <img src="./assets-flinker/images/microsoft/SharePoint.svg" alt="Microsoft SharePoint" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
+                  SharePoint Protect <i class="bi-box-arrow-up-right"></i>
+               </h4>
+            </a>
+         </div>
+
+         <!-- Item 6: SharePoint Document Manager -->
+         <div class="col" data-cues="zoomIn">
+            <!-- Thumbnail -->
+            <img src="./assets-flinker/images/hero/Document-Manager-Hero.png" alt="SharePoint Document Manager"
+               class="border rounded-3 img-fluid card-lift" />
+            <!-- Title -->
+            <h4 class="mb-0 mt-3">
+               <img src="./assets-flinker/images/microsoft/SharePoint.svg" alt="Microsoft SharePoint" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
+               SharePoint Document Manager
+            </h4>
+         </div>
+
+         <!-- Item 7: Power BI Visual -->
+         <div class="col" data-cues="zoomIn">
+            <a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer?tab=Overview"
+               target="_blank">
+               <!-- Thumbnail -->
+               <img src="./assets-flinker/images/hero/PBI-Visual-Hero.png" alt="Power BI Visual"
+                  class="border rounded-3 img-fluid card-lift" />
+               <!-- Title -->
+               <h4 class="mb-0 mt-3">
+                  <img src="./assets-flinker/images/microsoft/Power-BI.svg" alt="Microsoft Power BI" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
+                  Power BI Visual <i class="bi-box-arrow-up-right"></i>
+                  <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill">
+                     New
+                  </span>
+               </h4>
+            </a>
+         </div>
+
+         <!-- Item 8: Mobile Site Manager -->
+         <div class="col" data-cues="zoomIn">
+            <!-- Thumbnail -->
+            <img src="./assets-flinker/images/hero/Site-Mobile.png" alt="Mobile Site Manager"
+               class="border rounded-3 img-fluid card-lift" />
+            <!-- Title -->
+            <h4 class="mb-0 mt-3">
+               <img src="./assets-flinker/images/microsoft/Android.svg" alt="Android" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
+               Mobile Site Manager
+            </h4>
+         </div>
+
+         <!-- Item 9: Excel Site Manager -->
+         <div class="col" data-cues="zoomIn">
+            <!-- Thumbnail -->
+            <img src="./assets-flinker/images/hero/Defect-Management-Hero.png" alt="Excel Site Manager"
+               class="border rounded-3 img-fluid card-lift" />
+            <!-- Title -->
+            <h4 class="mb-0 mt-3">
+               <img src="./assets-flinker/images/microsoft/Excel.svg" alt="Microsoft Excel" style="height:20px;width:auto;margin-right:6px;vertical-align:text-bottom;" />
+               Excel Site Manager
+            </h4>
+         </div>
+
+      </div>
+   </div>
+</section>
+<!--Apps Section end-->
+
+<!-- partner & integrators promo (kept design) -->
+<section class="my-9">
+   <div class="container">
+      <div class="row line-pattern bg-primary rounded-3 p-7 g-0">
+         <div class="col-lg-8 offset-lg-2 z-1">
+            <div class="text-center py-md-7">
+               <h2 class="h1 text-white-stable">Partners & Integrators</h2>
+               <p class="text-white-50 px-lg-7 mb-5">
+                  Integrate into your AECO software or implement Flinker BIM Apps.
+                  <br class="d-none d-md-block" />Join • Integrate • Earn
+               </p>
+               <div class="d-flex gap-3 justify-content-center flex-wrap">
+                  <a href="/services/partners/" class="btn btn-light">Become a Partner</a>
+                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=80C2RLBJBEOcmMYdC8DcAu3Acr_HHtlOuyPGamiQECNUOVJEUkpLSU1STVlFVjhLSUhUOVhTUUdOUi4u" class="btn btn-dark">Join the Movement</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+</section>
+<!-- partner & integrators promo end -->
+
+<!-- Open Standards -->
+<section class="py-xl-9 py-6" data-cue="fadeIn" data-show="true"
+   style="animation-name: fadeIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+   <div class="container">
+      <div class="row mb-6">
+         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
+            <div class="d-flex flex-column gap-4 text-center">
+               <div class="d-flex justify-content-center">
+                  <span
+                     class="badge bg-white text-muted border border-light-subtle rounded-pill text-uppercase fw-semibold py-2 px-3 small ls-md">
+                     The Open Way
+                  </span>
+               </div>
+               <div class="d-flex flex-column gap-2">
+                  <h2 class="mb-0 display-6">openBIM Standards</h2>
+                  <p class="mb-0">
+                     Build with Flinker in Microsoft 365 with buildingSMART’s openBIM standards so you can confidently share and manage project
+                     data — work smoother. Work independently. Stay flexible. 
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row gy-lg-6 gy-4">
+         <!-- Card 1: IFC -->
+         <div class="col-lg-4 col-md-6" data-cue="zoomIn" data-show="true"
+            style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+            <div class="d-flex flex-column gap-5 p-xxl-6 text-center p-3 card card-lift">
+               <div>
+                  <img src=".\assets-flinker\images\network-logo\ifc.png" alt="IFC Logo" />
+               </div>
+               <div class="d-flex flex-column gap-2">
+                  <h3 class="h4">IFC</h3>
+                  <p class="mb-0">
+                     Keep your data clear and consistent across different platforms, cutting down on errors and wasted
+                     time. Improve quality.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <!-- Card 2: IDS -->
+         <div class="col-lg-4 col-md-6" data-cue="zoomIn" data-show="true"
+            style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 200ms; animation-direction: normal; animation-fill-mode: both;">
+            <div class="d-flex flex-column gap-5 p-xxl-6 text-center p-3 card card-lift">
+               <div>
+                  <img src=".\assets-flinker\images\network-logo\ids.png" alt="IDS Logo" />
+               </div>
+               <div class="d-flex flex-column gap-2">
+                  <h3 class="h4">IDS</h3>
+                  <p class="mb-0">
+                     Get the right information exactly when you need it, avoiding last-minute surprises and delays. AI empowered.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <!-- Card 3: BCF -->
+         <div class="col-lg-4 col-md-6" data-cue="zoomIn" data-show="true"
+            style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 400ms; animation-direction: normal; animation-fill-mode: both;">
+            <div class="d-flex flex-column gap-5 p-xxl-6 text-center p-3 card card-lift">
+               <div>
+                  <img src=".\assets-flinker\images\network-logo\bcf.png" alt="BCF Logo" />
+               </div>
+               <div class="d-flex flex-column gap-2">
+                  <h3 class="h4">BCF</h3>
+                  <p class="mb-0">
+                     Quickly spot and resolve issues right in your 3D models, helping everyone stay in sync. Integrated in Microsoft Lists.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- Open Standards end-->
+
+<!-- Features -->
+<section class="py-5">
+   <div class="container my-lg-7">
+      <div class="row">
+         <div class="col-12">
+            <div class="mb-5 text-center" data-cue="fadeIn">
+               <h2 class="mb-0">More Flinker Features</h2>
+            </div>
+         </div>
+
+         <div class="row gy-4">
+            <div class="col-md-4 col-12" data-cue="slideInLeft">
+               <div class="d-flex flex-column gap-4">
+                  <div>
+                     <!-- Updated Microsoft Icon -->
+                     <i class="bi bi-microsoft" style="font-size: 32px; color: var(--bs-primary);"></i>
+                  </div>
+
+                  <div>
+                     <h4 class="mb-2">Built with SPFx for Microsoft 365</h4>
+                     <p>Flinker Microsoft apps run natively in SharePoint and Teams. They are secure, scalable, and
+                        optimized for seamless BIM collaboration.</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 col-12" data-cue="zoomIn">
+               <div class="d-flex flex-column gap-4">
+                  <div>
+                     <!-- Updated Security Icon -->
+                     <i class="bi bi-shield-lock-fill" style="font-size: 32px; color: var(--bs-primary);"></i>
+                  </div>
+
+                  <div>
+                     <h4 class="mb-2">Secure by Design</h4>
+                     <p>Flinker ensures enterprise-grade security and compliance. Your data
+                        remains private and never leaves your Microsoft 365 tenant.</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 col-12" data-cue="slideInRight">
+               <div class="d-flex flex-column gap-4">
+                  <div>
+                     <!-- Updated AI-Powered Insights Icon -->
+                     <i class="bi bi-lightning-charge-fill" style="font-size: 32px; color: var(--bs-primary);"></i>
+                  </div>
+
+                  <div>
+                     <h4 class="mb-2">AI-Powered</h4>
+                     <p>
+                        Leverage AI to analyze project data, automate insights, and enhance decision-making.
+                        Simplify BIM project management with intelligent workflows.
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 col-12" data-cue="slideInLeft">
+               <div class="d-flex flex-column gap-4">
+                  <div>
+                     <!-- Updated Future Proof Integration Icon -->
+                     <i class="bi-boxes" style="font-size: 32px; color: var(--bs-primary);"></i>
+                  </div>
+
+                  <div>
+                     <h4 class="mb-2">Future Proof Integrations</h4>
+                     <p>Flinker extends SharePoint and Teams with BIM Apps, enabling structured data storage, version
+                        control, and real-time collaboration in one place.
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 col-12" data-cue="zoomIn">
+               <div class="d-flex flex-column gap-4">
+                  <div>
+                     <!-- Updated Icon for Microsoft Optimization -->
+                     <i class="bi bi-people-fill" style="font-size: 32px; color: var(--bs-primary);"></i>
+                  </div>
+
+                  <div>
+                     <h4 class="mb-2">Optimized for Microsoft</h4>
+                     <p>Collaborate on BIM issues directly in Teams and visualize building data in Power BI.
+                        Flinker integrates across Microsoft 365 apps effortlessly.</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 col-12" data-cue="slideInRight">
+               <div class="d-flex flex-column gap-4">
+                  <div>
+                     <!-- Updated Automation Icon -->
+                     <i class="bi bi-arrow-repeat" style="font-size: 32px; color: var(--bs-primary);"></i>
+                  </div>
+
+                  <div>
+                     <h4 class="mb-2">Automate Workflows</h4>
+                     <p>Flinker connects to Power Automate for task automation, approvals, and notifications.
+                        Reduce manual work and boost project efficiency.</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 col-12" data-cue="slideInLeft">
+               <div class="d-flex flex-column gap-4">
+                  <div>
+                     <!-- Updated Digital Twins Icon -->
+                     <i class="bi bi-building-fill-check" style="font-size: 32px; color: var(--bs-primary);"></i>
+                  </div>
+
+                  <div>
+                     <h4 class="mb-2">Digital Twins</h4>
+                     <p>Create a Digital Twin of your buildings in SharePoint. Link real-time data, visualize
+                        changes, and optimize asset performance efficiently.</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 col-12" data-cue="zoomIn">
+               <div class="d-flex flex-column gap-4">
+                  <div>
+                     <!-- Updated Viewer Icon -->
+                     <i class="bi bi-eye-fill" style="font-size: 32px; color: var(--bs-primary);"></i>
+                  </div>
+
+                  <div>
+                     <h4 class="mb-2">Viewer in Microsoft 365</h4>
+                     <p>Open and explore IFC models directly in SharePoint, Teams, and Power BI. Collaborate on
+                        3D data without leaving your Microsoft workspace or migrating data.</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 col-12" data-cue="zoomIn">
+               <div class="d-flex flex-column gap-4">
+                  <div>
+                     <!-- Updated Support Icon -->
+                     <i class="bi bi-screwdriver" style="font-size: 32px; color: var(--bs-primary);"></i>
+                  </div>
+
+                  <div>
+                     <h4 class="mb-2">Active Support</h4>
+                     <p>
+                        Our support and implementation partners help you to build any custom IFC, BCF or COBie workflows
+                        in MS 365. To get
+                        help from our team, <a
+                           href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/">Contact
+                           us.</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </div>
+</section>
+<!-- Features end -->
+
+<!-- awards section -->
+<section class="py-xl-8 py-lg-7 py-5" data-cue="fadeIn">
+   <!--Logo section start-->
+   <div class="container">
+      <div class="row mb-6">
+         <div class="col-xl-5">
+            <div>
+               <h2 class="mb-0">Our Network Reflects Our Commitment to Quality</h2>
+            </div>
+         </div>
+         <div class="offset-xl-1 col-xl-6">
+            <div>
+               <p class="mb-0">
+                  At
+                  <span class="text-primary fw-semibold">Flinker</span>
+                  , we specialize in developing comprehensive and self-hosted Microsoft BIM Apps designed to enhance
+                  your project management, simplify collaboration, and speed up your growth.
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="swiper-container swiper" id="swiper-1" data-pagination-type="" data-speed="400"
+         data-space-between="100" data-pagination="true" data-navigation="false" data-autoplay=""
+         data-autoplay-delay="3000" data-center-slides="false"
+         data-breakpoints='{"390": {"slidesPerView": 3},"480": {"slidesPerView": 3}, "768": {"slidesPerView": 4}, "1200": {"slidesPerView": 4}}'>
+         <div class="swiper-wrapper pb-xl-0 pb-6">
+            <div class="swiper-slide" data-cue="zoomIn">
+               <img src=".\assets-flinker\images\network-logo\network-logo-1.png" alt="" />
+            </div>
+            <div class="swiper-slide" data-cue="zoomIn">
+               <img src=".\assets-flinker\images\network-logo\network-logo-5.png" alt="" />
+            </div>
+            <div class="swiper-slide" data-cue="zoomIn">
+               <img src=".\assets-flinker\images\network-logo\network-logo-2.png" alt="" />
+            </div>
+            <div class="swiper-slide" data-cue="zoomIn">
+               <img src=".\assets-flinker\images\network-logo\network-logo-8.png" alt="" />
+            </div>
+
+
+         </div>
+         <!-- Add Pagination -->
+         <div class="swiper-pagination"></div>
+      </div>
+   </div>
+</section>
+<!-- awards section -->
+
+<!--speak with expert-->
+<section class="my-9">
+   <div class="container">
+      <div class="row line-pattern bg-primary rounded-3 p-7 g-0">
+         <div class="col-lg-8 offset-lg-2 z-1">
+            <div class="text-center py-md-7">
+               <h2 class="h1 text-white-stable">Want to speak with an expert?</h2>
+               <p class="text-white-50 px-lg-7 mb-5">
+                  We’d love to hear about your business
+                  challenges, even if you’re not sure what your next
+                  step is. Tell us how you work with IFC, IDS and BCF in Microsoft. No strings attached.
+               </p>
+               <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/"
+                  class="btn btn-dark">Let's talk</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--speak with expert end-->  
+
+<!--Call to action start-->
+<section class="py-5 bg-light-subtle" data-cue="fadeIn">
+   <div class="container my-lg-7" data-cues="zoomIn">
+      <div class="row justify-content-center text-center">
+         <div class="col-lg-6 col-md-9 col-12 d-flex flex-column gap-4">
+            <div>
+               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <path opacity="0.2" d="M42 18L27.2719 28.5H20.7281L6 18L24 6L42 18Z" fill="var(--bs-primary)" />
+                  <path
+                     d="M42.8325 16.7512L24.8325 4.75125C24.586 4.58679 24.2963 4.49902 24 4.49902C23.7037 4.49902 23.414 4.58679 23.1675 4.75125L5.1675 16.7512C4.96202 16.8883 4.79358 17.0741 4.67713 17.2919C4.56068 17.5098 4.49984 17.753 4.5 18V37.5C4.5 38.2956 4.81607 39.0587 5.37868 39.6213C5.94129 40.1839 6.70435 40.5 7.5 40.5H40.5C41.2957 40.5 42.0587 40.1839 42.6213 39.6213C43.1839 39.0587 43.5 38.2956 43.5 37.5V18C43.5002 17.753 43.4393 17.5098 43.3229 17.2919C43.2064 17.0741 43.038 16.8883 42.8325 16.7512ZM18.135 28.5L7.5 36V20.9119L18.135 28.5ZM21.2044 30H26.7956L37.4137 37.5H10.5862L21.2044 30ZM29.865 28.5L40.5 20.9119V36L29.865 28.5ZM24 7.80187L39.3581 18.0412L26.7956 27H21.2081L8.64563 18.0412L24 7.80187Z"
+                     fill="var(--bs-primary)" />
+               </svg>
+            </div>
+            <div>
+               <h2 class="fs-1">Subscribe to our newsletter</h2>
+               <p class="mb-0">Enjoy using Flinker Apps and stay tuned for the latest updates and news.</p>
+            </div>
+            <div>
+               <form class="row g-2 d-flex mx-lg-7" onsubmit="return submitForm(event)">
+                  <div class="col-md-9 col-12">
+                     <label for="notificationEmail" class="visually-hidden"></label>
+                     <input type="email" id="notificationEmail" class="form-control" name="email" placeholder="Email"
+                        required="" />
+                     <div class="invalid-feedback text-start">Email.</div>
+                  </div>
+                  <div class="col-md-3 col-12">
+                     <div class="d-grid">
+                        <button class="btn btn-dark" type="submit" name="subscribe">Subscribe</button>
+                     </div>
+                  </div>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
+                  <div style="position: absolute; left: -5000px" aria-hidden="true">
+                     <input class="subscription-form-antispam" type="text" name="b_b838b4eb099ebf09c3407db0f_b01fb647c7"
+                        tabindex="-1" />
+                  </div>
+               </form>
+
+               <script>
+                  function submitForm(event) {
+                     event.preventDefault(); // Prevents the default form submission
+
+                     const email = document.getElementById('notificationEmail').value;
+
+                     fetch('https://prod-03.westeurope.logic.azure.com:443/workflows/04e5b8b9120442d79aad294f652d066c/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=jAamh70YmNIxSvO32rEKwkQfhWmA884XdEpvJbIH8n0', {
+                        method: 'POST',
+                        headers: {
+                           'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ email: email })
+                     })
+                        .then(response => {
+                           if (response.ok) {
+                              alert('Thank you for subscribing!');
+                           } else {
+                              alert('There was an error submitting your subscription. Please try again.');
+                           }
+                        })
+                        .catch(error => {
+                           console.error('Error:', error);
+                           alert('There was an error submitting your subscription. Please try again.');
+                        });
+
+                     return false;
+                  }
+               </script>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--Call to action end-->
+
+<!-- Extra JS removed: replaced with CSS for hero sizing to avoid reflows -->
