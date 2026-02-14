@@ -16,12 +16,11 @@ keywords:
   - Power Platform governance
 author: "Misbah Afzal"
 author_image: "/assets/images/avatar/avatar-7.jpg"
-featured_image: "/assets-flinker/images/blog/approvals-vs-iso/layer-model.svg"
+featured_image: "hero.svg"
 categories:
+  - Compliance
   - Technology
   - Construction
-  - Compliance
-  - Information Management
 tags:
   - ISO 19650
   - SharePoint
@@ -29,6 +28,35 @@ tags:
   - Approvals Kit
   - CDE
   - Dataverse
+robots: "index, follow"
+canonicalUrl: "https://flinker.app/blog/power-automate-approvals-vs-iso-19650"
+image: "/images/blog/power-automate-approvals-vs-iso-19650-cover.png"
+ogTitle: "Approvals Connector vs Approvals Kit vs ISO 19650 Governance"
+ogDescription: "Technical comparison of Power Automate Approvals, the Approvals Kit, and ISO 19650 governance layers—data planes, release gates, and compliance enforcement on SharePoint."
+twitterTitle: "Power Automate Approvals vs ISO 19650 Governance"
+twitterDescription: "Approvals are workflow primitives. ISO 19650 governance requires state machines, release gates, and compliance enforcement. Here's how they differ."
+faq:
+  - question: "What's the difference between Power Automate Approvals and ISO 19650 governance?"
+    answer: "Power Automate Approvals handles decision routing (approve/reject tasks). ISO 19650 governance requires a state machine with controlled transitions (WIP→Shared→Published→Archive), metadata validation, release gates, and compliance enforcement."
+  - question: "Can the Approvals Kit be used for ISO 19650 compliance?"
+    answer: "The Approvals Kit accelerates multi-stage approval process development but doesn't provide ISO 19650 primitives like information states, naming enforcement, or release gates. These require custom development or a dedicated governance layer."
+  - question: "Why do Power Automate approval flows timeout?"
+    answer: "Power Automate approval flows fail after 28 days. The approval record persists in the action center, but the flow instance dies—creating abandoned approvals that complete with no downstream effect."
+  - question: "What is a release gate in ISO 19650?"
+    answer: "A release gate is a controlled checkpoint that blocks documents from moving to Published status unless they meet compliance criteria: correct naming, required metadata, and proper approval. Approval is one step inside the gate—not the gate itself."
+  - question: "Where does Dataverse store approval records?"
+    answer: "Teams Approvals provisions into the default Dataverse environment. Approval records exist as msdyn_flow_approval and msdyn_flow_approvalrequest entities. The default environment doesn't support backups."
+schema:
+  type: "Article"
+  headline: "Approvals Connector vs Approvals Kit vs ISO 19650 Governance"
+  datePublished: "2026-02-13"
+  dateModified: "2026-02-13"
+  author:
+    type: "Person"
+    name: "Misbah Afzal"
+  publisher:
+    type: "Organization"
+    name: "Flinker"
 ---
 
 Microsoft Approvals and the Approvals Kit orchestrate decisions (approve/reject). They do not provide ISO 19650 governance primitives: information states, release gates, naming/metadata enforcement, or repeatable project blueprints. A policy-driven ISO layer treats approvals as one step inside a gated state transition—not the governance engine itself.

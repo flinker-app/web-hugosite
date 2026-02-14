@@ -20,12 +20,11 @@ keywords:
   - CDE scalability
 author: "Misbah Afzal"
 author_image: "/assets/images/avatar/avatar-7.jpg"
-featured_image: "/assets-flinker/images/blog/blog-img-18.svg"
+featured_image: "hero.svg"
 categories:
+  - Compliance
   - Technology
   - Construction
-  - Compliance
-  - Information Management
 tags:
   - ISO 19650
   - SharePoint
@@ -204,6 +203,9 @@ This policy is versioned, portable, and reusable across projects.
 - Users do not have to understand Power Automate.
 - Project admins and service partners configure policies rather than creating workflows from scratch.
 - Release to "Published" becomes a controlled action that is blocked unless compliance is met.
+
+[![Full architecture overview: SharePoint project room with policy blueprint, release gates, and Microsoft 365 integration](architecture-overview.svg)](architecture-overview.svg)
+*Complete architecture: SharePoint project room with document libraries, release gates, policy blueprint, and Microsoft 365 integration including governance logs and optional Power Automate add-ons.*
 
 ## Benefits of the app approach vs. Power Automate-only
 

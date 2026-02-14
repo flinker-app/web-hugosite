@@ -18,11 +18,11 @@ keywords:
     - AECO industry
 author: "Misbah Afzal"
 author_image: "/assets/images/avatar/avatar-7.jpg"
-featured_image: "/assets-flinker/images/blog/blog-img-12.svg"
-categories: 
-    - Technology
-    - Construction
-    - Data Management
+featured_image: "hero.svg"
+categories:
+  - Data Management
+  - Construction
+  - Technology
 tags: 
     - SharePoint
     - CDE
@@ -37,6 +37,19 @@ canonicalUrl: "https://flinker.app/blog/sharepoint-cde-construction-projects"
 image: "/images/blog/sharepoint-cde-construction-projects-cover.png"
 ogTitle: "Implementing SharePoint as a CDE for Construction Projects"
 ogDescription: "Technical guide to SharePoint as a Common Data Environment: folder structures, metadata, permissions, and Microsoft 365 integration for construction."
+twitterTitle: "SharePoint CDE for Construction Projects"
+twitterDescription: "Technical guide: folder structures, metadata, permissions, and Microsoft 365 integration for construction CDEs."
+schema:
+  type: "Article"
+  headline: "Leveraging SharePoint as a Common Data Environment for Large Construction Projects"
+  datePublished: "2025-05-28"
+  dateModified: "2025-05-28"
+  author:
+    type: "Person"
+    name: "Misbah Afzal"
+  publisher:
+    type: "Organization"
+    name: "Flinker"
 faq:
   - question: "Why use SharePoint as a CDE for construction projects?"
     answer: "SharePoint offers secure data management, seamless Microsoft 365 integration, and advanced analytics, making it ideal for construction project collaboration and BIM workflows."
@@ -106,7 +119,7 @@ Project Site
 
 This structure aligns with ISO 19650 information states. Note that native SharePoint does not enforce state transitions—moving files between folders is unrestricted unless additional governance is applied.
 
-[![SharePoint CDE structure with Microsoft 365 integration](/assets-flinker/images/blog/blog-img-11.svg)](/assets-flinker/images/blog/blog-img-11.svg)
+[![SharePoint CDE structure with Microsoft 365 integration](sharepoint-cde-m365.svg)](sharepoint-cde-m365.svg)
 *SharePoint site structure configured as a CDE with Microsoft 365 integration points.*
 
 ## Implementation steps

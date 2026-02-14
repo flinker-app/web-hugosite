@@ -18,11 +18,10 @@ keywords:
   - Flinker Microsoft apps
 author: "Misbah Afzal"
 author_image: "/assets/images/avatar/avatar-7.jpg"
-featured_image: "/assets-flinker/images/blog/blog-img-16.svg"
-categories: 
-  - Technology
-  - Construction
+featured_image: "hero.svg"
+categories:
   - Compliance
+  - Construction
   - Data Management
 tags: 
   - SharePoint
@@ -38,6 +37,19 @@ canonicalUrl: "https://flinker.app/blog/iso19650-sharepoint-cde"
 image: "/images/blog/iso19650-sharepoint-cde-cover.png"
 ogTitle: "ISO 19650 and SharePoint: Compliant Common Data Environment"
 ogDescription: "Discover how to make SharePoint ISO 19650-compliant as a Common Data Environment (CDE) with Flinker Microsoft apps, enabling compliant workflows, approvals, and secure collaboration."
+twitterTitle: "ISO 19650 Compliance on SharePoint"
+twitterDescription: "Turn SharePoint into an ISO 19650-compliant CDE with workflows, approvals, and governance—all in your Microsoft 365 tenant."
+schema:
+  type: "Article"
+  headline: "ISO 19650 and SharePoint: Making Your Project Data Room Compliant"
+  datePublished: "2025-10-01"
+  dateModified: "2025-10-01"
+  author:
+    type: "Person"
+    name: "Misbah Afzal"
+  publisher:
+    type: "Organization"
+    name: "Flinker"
 faq:
   - question: "What is ISO 19650 in construction projects?"
     answer: "ISO 19650 is the international standard for managing information using BIM across the lifecycle of a built asset. It defines workflows, approvals, and structured information states in a Common Data Environment (CDE)."
@@ -79,9 +91,10 @@ Adopting ISO 19650 enables:
 - **Efficiency**: standardized processes, less time hunting files, fewer manual handovers
 - **Long-term operations**: good information early supports facility management, renovations, digital twins
 
-ISO 19650 is a framework for disciplined information governance—not a checklist.  
+ISO 19650 is a framework for disciplined information governance—not a checklist.
 
-
+[![ISO 19650 Information States: WIP to Shared to Published to Archive](iso19650-pipeline.svg)](iso19650-pipeline.svg)
+*ISO 19650 defines four information states with controlled transitions, supported by SharePoint, Teams, and Flinker governance.*
 
 ## Can SharePoint be an ISO 19650 CDE?
 
@@ -153,8 +166,8 @@ To satisfy ISO 19650, SharePoint requires enhancements in several dimensions:
 
 Additionally, SharePoint CDEs must consider usability (teams must actually adopt it) and interoperability with BIM tools and external systems.
 
-[![SharePoint Common Data Environment with Microsoft 365 and Flinker](/assets-flinker/images/blog/blog-img-17.svg)](/assets-flinker/images/blog/blog-img-17.svg)
-*SharePoint as CDE foundation – Flinker adds the governance layer for ISO 19650 compliance.*
+[![External CDE vs SharePoint with Flinker comparison](cde-comparison.svg)](cde-comparison.svg)
+*External CDE platforms vs. SharePoint + Flinker: same compliance, better data control.*
 
 ## The solution: Flinker Microsoft Apps
 

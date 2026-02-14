@@ -19,10 +19,10 @@ keywords:
 author: "Misbah Afzal"
 author_image: "/assets/images/avatar/avatar-7.jpg"
 featured_image: "/assets-flinker/images/blog/blog-img-3-1.png"
-categories: 
-  - Technology
+categories:
   - Construction
   - Data Management
+  - Technology
 tags:
   - SharePoint
   - BIM
@@ -36,6 +36,19 @@ canonicalUrl: "https://flinker.app/blog/sharepoint-cde-success-stories"
 image: "/images/blog/sharepoint-cde-success-stories-cover.png"
 ogTitle: "SharePoint as a Common Data Environment for Construction"
 ogDescription: "How construction firms use SharePoint as a CDE for centralized collaboration, data sovereignty, and Microsoft 365 integration."
+twitterTitle: "SharePoint as CDE for Construction"
+twitterDescription: "How construction firms use SharePoint for centralized collaboration, data sovereignty, and Microsoft 365 integration."
+schema:
+  type: "Article"
+  headline: "How Leading Construction Companies Use SharePoint as a Common Data Environment"
+  datePublished: "2025-05-12"
+  dateModified: "2025-05-12"
+  author:
+    type: "Person"
+    name: "Misbah Afzal"
+  publisher:
+    type: "Organization"
+    name: "Flinker"
 faq:
   - question: "Why do construction firms choose SharePoint as their CDE?"
     answer: "SharePoint offers seamless integration with Microsoft 365, enterprise-grade security, flexible customization, and cost efficiency, making it ideal for construction project data management."
