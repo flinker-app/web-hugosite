@@ -1,0 +1,265 @@
+{{ if .IsHome }}
+<footer class="pt-9 pt-lg-11" data-bs-theme="dark">
+{{ else }}
+<footer class="pt-9 pt-lg-11" style="background-color: #f8f9fa;">
+{{ end }}
+   <div class="container">
+      <!-- Footer columns -->
+      <div class="row">
+         <div class="col-lg-9 col-12">
+            <div class="row" id="ft-links-enterprise">
+               <!-- Products (all AppSource = third-party, get icons) -->
+               <div class="col-lg-3 col-12">
+                  <div class="mb-4">
+                     <div class="mb-3 pb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-25 border-bottom-lg-0">
+                        <h4 class="mb-0">Products</h4>
+                        <a class="d-block d-lg-none text-body-secondary" data-bs-toggle="collapse" href="#collapseProducts"
+                           role="button" aria-expanded="false" aria-controls="collapseProducts">
+                           <i class="bi bi-chevron-down"></i>
+                        </a>
+                     </div>
+                     <div class="collapse d-lg-block" id="collapseProducts" data-bs-parent="#ft-links-enterprise">
+                        <ul class="list-unstyled mb-0 py-3 py-lg-0">
+                           <li class="mb-2">
+                              <a href="https://appsource.microsoft.com/en-us/product/office/WA200007197?tab=Overview"
+                                 class="text-body-secondary text-decoration-none footer-link"
+                                 target="_blank" rel="noopener noreferrer">
+                                 ISO 19650 CDE <i class="bi bi-box-arrow-up-right ms-1 small"></i>
+                              </a>
+                           </li>
+                           <li class="mb-2">
+                              <a href="https://appsource.microsoft.com/en-us/product/office/WA200007412?tab=Overview"
+                                 class="text-body-secondary text-decoration-none footer-link"
+                                 target="_blank" rel="noopener noreferrer">
+                                 IFC Viewer <i class="bi bi-box-arrow-up-right ms-1 small"></i>
+                              </a>
+                           </li>
+                           <li class="mb-2">
+                              <a href="https://appsource.microsoft.com/en-us/product/office/WA200007412?tab=Overview"
+                                 class="text-body-secondary text-decoration-none footer-link"
+                                 target="_blank" rel="noopener noreferrer">
+                                 BCF Manager <i class="bi bi-box-arrow-up-right ms-1 small"></i>
+                              </a>
+                           </li>
+                           <li class="mb-2">
+                              <a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer?tab=Overview"
+                                 class="text-body-secondary text-decoration-none footer-link"
+                                 target="_blank" rel="noopener noreferrer">
+                                 Power BI Visual <i class="bi bi-box-arrow-up-right ms-1 small"></i>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Resources (mixed: Flinker subdomain = no icon, GitHub = icon) -->
+               <div class="col-lg-3 col-12">
+                  <div class="mb-4">
+                     <div class="mb-3 pb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-25 border-bottom-lg-0">
+                        <h4 class="mb-0">Resources</h4>
+                        <a class="d-block d-lg-none text-body-secondary" data-bs-toggle="collapse" href="#collapseResources"
+                           role="button" aria-expanded="false" aria-controls="collapseResources">
+                           <i class="bi bi-chevron-down"></i>
+                        </a>
+                     </div>
+                     <div class="collapse d-lg-block" id="collapseResources" data-bs-parent="#ft-links-enterprise">
+                        <ul class="list-unstyled mb-0 py-3 py-lg-0">
+                           <!-- Flinker subdomain - no icon -->
+                           <li class="mb-2">
+                              <a href="https://docs.flinker.app/"
+                                 class="text-body-secondary text-decoration-none footer-link"
+                                 target="_blank" rel="noopener noreferrer"
+                                 aria-label="Documentation (opens in new tab)">
+                                 Documentation
+                              </a>
+                           </li>
+                           <!-- Flinker subdomain - no icon -->
+                           <li class="mb-2">
+                              <a href="https://docs.flinker.app/docs/releases.html"
+                                 class="text-body-secondary text-decoration-none footer-link"
+                                 target="_blank" rel="noopener noreferrer"
+                                 aria-label="What's New (opens in new tab)">
+                                 What's New
+                              </a>
+                           </li>
+                           <!-- GitHub - third-party, gets icon -->
+                           <li class="mb-2">
+                              <a href="https://github.com/flinker-app/docsfx/discussions"
+                                 class="text-body-secondary text-decoration-none footer-link"
+                                 target="_blank" rel="noopener noreferrer">
+                                 Community <i class="bi bi-box-arrow-up-right ms-1 small"></i>
+                              </a>
+                           </li>
+                           <!-- Internal - no icon, no target -->
+                           <li class="mb-2">
+                              <a href="{{ "blog/" | absURL }}" class="text-body-secondary text-decoration-none footer-link">
+                                 Blog
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Company (mixed) -->
+               <div class="col-lg-3 col-12">
+                  <div class="mb-4">
+                     <div class="mb-3 pb-2 d-flex justify-content-between border-bottom border-secondary border-opacity-25 border-bottom-lg-0">
+                        <h4 class="mb-0">Company</h4>
+                        <a class="d-block d-lg-none text-body-secondary" data-bs-toggle="collapse" href="#collapseCompany"
+                           role="button" aria-expanded="false" aria-controls="collapseCompany">
+                           <i class="bi bi-chevron-down"></i>
+                        </a>
+                     </div>
+                     <div class="collapse d-lg-block" id="collapseCompany" data-bs-parent="#ft-links-enterprise">
+                        <ul class="list-unstyled mb-0 py-3 py-lg-0">
+                           <!-- Internal - no icon -->
+                           <li class="mb-2">
+                              <a href="{{ "about/" | absURL }}" class="text-body-secondary text-decoration-none footer-link">
+                                 About
+                              </a>
+                           </li>
+                           <!-- Flinker-hosted (Outlook booking) - no icon -->
+                           <li class="mb-2">
+                              <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/"
+                                 class="text-body-secondary text-decoration-none footer-link"
+                                 target="_blank" rel="noopener noreferrer">
+                                 Contact
+                              </a>
+                           </li>
+                           <!-- Flinker-hosted (join.com) - no icon -->
+                           <li class="mb-2">
+                              <a href="https://join.com/companies/flinker"
+                                 class="text-body-secondary text-decoration-none footer-link"
+                                 target="_blank" rel="noopener noreferrer">
+                                 Careers
+                              </a>
+                              <span class="badge bg-success bg-opacity-75 ms-2 small">Hiring</span>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Contact -->
+         <div class="col-lg-3 col-12">
+            <div class="mb-4">
+               <h4 class="mb-4">Contact</h4>
+               <div class="text-body-secondary">
+                  <p>
+                     Flinker GmbH, Zittelstrasse 7,<br>
+                     80796 Munich, Germany
+                  </p>
+                  <span>+49 89 26204274</span><br>
+                  <a href="mailto:info@flinker.app" class="text-body-secondary text-decoration-none footer-link">info@flinker.app</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Utility bar -->
+   <div class="border-top border-secondary border-opacity-25 mt-7 pt-lg-7">
+      <div class="container pb-4">
+         <div class="row align-items-center">
+            <!-- Logo -->
+            <div class="col-md-3 col-12 mb-3 mb-md-0">
+               <a href="{{ "index.html" | absURL }}">
+                  <img src="{{ "assets-flinker/images/logo/logo.svg" | absURL }}" alt="Flinker logo" style="height: 24px;{{ if .IsHome }} filter: brightness(0) invert(1);{{ end }}" />
+               </a>
+            </div>
+
+            <!-- Legal links (all internal) -->
+            <div class="col-md-6 col-12 mb-3 mb-md-0">
+               <div class="d-flex flex-wrap gap-3 justify-content-md-center small">
+                  <a href="{{ "legal/" | absURL }}" class="text-body-secondary text-decoration-none footer-link">Legal</a>
+                  <a href="{{ "privacy/" | absURL }}" class="text-body-secondary text-decoration-none footer-link">Privacy</a>
+                  <a href="{{ "terms/" | absURL }}" class="text-body-secondary text-decoration-none footer-link">Terms</a>
+                  <a href="{{ "legal/accessibility/" | absURL }}" class="text-body-secondary text-decoration-none footer-link">Accessibility</a>
+                  <span class="text-body-tertiary">&copy; {{ now.Year }} Flinker GmbH</span>
+               </div>
+            </div>
+
+            <!-- Social & language -->
+            <div class="col-md-3 col-12">
+               <div class="d-flex align-items-center justify-content-md-end gap-2">
+                  <!-- Language indicator -->
+                  <span class="text-body-secondary small me-2">
+                     <i class="bi bi-globe2 me-1"></i>English
+                  </span>
+
+                  <!-- Follow us label (visible on larger screens) -->
+                  <span class="text-body-secondary small d-none d-lg-inline me-1">Follow us</span>
+
+                  {{/* Theme switcher (commented out for now)
+                  <div class="dropdown">
+                     <button class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center"
+                        style="width: 32px; height: 32px;" type="button"
+                        aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme">
+                        <i class="bi bi-circle-half theme-icon-active"></i>
+                     </button>
+                     <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                        <li>
+                           <button type="button" class="dropdown-item d-flex align-items-center"
+                              data-bs-theme-value="light" aria-pressed="false">
+                              <i class="bi bi-sun-fill me-2"></i>Light
+                           </button>
+                        </li>
+                        <li>
+                           <button type="button" class="dropdown-item d-flex align-items-center"
+                              data-bs-theme-value="dark" aria-pressed="true">
+                              <i class="bi bi-moon-stars-fill me-2"></i>Dark
+                           </button>
+                        </li>
+                        <li>
+                           <button type="button" class="dropdown-item d-flex align-items-center active"
+                              data-bs-theme-value="auto" aria-pressed="false">
+                              <i class="bi bi-circle-half me-2"></i>Auto
+                           </button>
+                        </li>
+                     </ul>
+                  </div>
+                  */}}
+
+                  <!-- Social links (third-party, but icons are already the brand logos) -->
+                  <a href="https://www.linkedin.com/company/flinker-app/"
+                     class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center"
+                     style="width: 32px; height: 32px;"
+                     target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">
+                     <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/flinker-app/docsfx/discussions"
+                     class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center"
+                     style="width: 32px; height: 32px;"
+                     target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)">
+                     <i class="bi bi-github"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Footer link hover style -->
+   <style>
+      .footer-link:hover {
+         text-decoration: underline !important;
+      }
+      [data-bs-theme="dark"] .footer-link:hover {
+         color: #fff !important;
+      }
+      /* Muted social button borders in dark mode */
+      [data-bs-theme="dark"] .btn-outline-secondary {
+         border-color: rgba(255, 255, 255, 0.25) !important;
+         color: rgba(255, 255, 255, 0.6) !important;
+      }
+      [data-bs-theme="dark"] .btn-outline-secondary:hover {
+         border-color: rgba(255, 255, 255, 0.4) !important;
+         color: rgba(255, 255, 255, 0.85) !important;
+         background-color: rgba(255, 255, 255, 0.1) !important;
+      }
+   </style>
+</footer>

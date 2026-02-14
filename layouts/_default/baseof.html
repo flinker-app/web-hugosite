@@ -36,6 +36,55 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="{{ "assets/css/theme.min.css" | absURL }}">
 
+    <!-- Sticky footer fix -->
+    <style>
+      html, body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main {
+        flex: 1 0 auto;
+      }
+      footer {
+        flex-shrink: 0;
+      }
+    </style>
+
+    {{ if not .IsHome }}
+    <!-- Light mode pages: enterprise navbar style with frosted glass -->
+    <style>
+      /* Hide the clone navbar (disable flip animation) */
+      .navbar-clone {
+        display: none !important;
+      }
+      /* Make original navbar sticky with subtle background transition */
+      .navbar {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1030;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+      }
+      /* Initial state: frosted glass */
+      .navbar:not(.header-fixed):not(.navbar-stick) {
+        background-color: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+      }
+      /* Scrolled state - solid background with subtle shadow */
+      .navbar.header-fixed,
+      .navbar.navbar-stick {
+        background-color: var(--bs-body-bg, #fff) !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+      }
+    </style>
+    {{ end }}
+
     <!-- Title -->
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
 
@@ -63,8 +112,8 @@
       .navbar.navbar-dark .nav-link:focus {
         color: rgba(0, 0, 0, 1) !important;
       }
-      /* Ensure dark logo is visible (remove any theme filters) */
-      .navbar .navbar-brand img,
+      /* Remove white filter from logo on light mode pages */
+      .navbar.navbar-dark .navbar-brand,
       .navbar .offcanvas-header img {
         filter: none !important;
       }
@@ -75,11 +124,82 @@
       .navbar.navbar-dark .navbar-toggler i {
         color: rgba(0, 0, 0, 0.85);
       }
+      /* Fix CTA buttons for light mode */
+      .navbar .btn-outline-light {
+        color: rgba(0, 0, 0, 0.85) !important;
+        border-color: rgba(0, 0, 0, 0.3) !important;
+      }
+      .navbar .btn-outline-light:hover {
+        color: #000 !important;
+        border-color: rgba(0, 0, 0, 0.5) !important;
+        background-color: rgba(0, 0, 0, 0.05) !important;
+      }
+      /* Make Try Viewer button use primary color on light mode */
+      .navbar .btn-light {
+        background-color: var(--bs-primary) !important;
+        border-color: var(--bs-primary) !important;
+        color: #fff !important;
+      }
+      .navbar .btn-light i,
+      .navbar .btn-light i::before {
+        color: #fff !important;
+      }
+      .navbar .btn-light:hover {
+        background-color: var(--bs-primary) !important;
+        border-color: var(--bs-primary) !important;
+        filter: brightness(0.9);
+      }
     </style>
     {{ end }}
 
     <!-- Logo tint setup (SVG filter + minimal CSS) -->
     {{ partial "logo-tint-setup.html" . }}
+
+    <!-- Dark mode scrolled navbar fix (homepage) -->
+    {{ if .IsHome }}
+    <style>
+      /* Ensure scrolled/cloned navbar is readable in dark mode */
+      [data-bs-theme="dark"] .navbar-clone .nav-link,
+      [data-bs-theme="dark"] .navbar-clone .navbar-nav .nav-link,
+      [data-bs-theme="dark"] .navbar.header-fixed .nav-link,
+      [data-bs-theme="dark"] .navbar.header-fixed .navbar-nav .nav-link {
+        color: rgba(255, 255, 255, 0.85) !important;
+      }
+      [data-bs-theme="dark"] .navbar-clone .nav-link:hover,
+      [data-bs-theme="dark"] .navbar-clone .nav-link:focus,
+      [data-bs-theme="dark"] .navbar.header-fixed .nav-link:hover,
+      [data-bs-theme="dark"] .navbar.header-fixed .nav-link:focus {
+        color: rgba(255, 255, 255, 1) !important;
+      }
+      [data-bs-theme="dark"] .navbar-clone .dropdown-toggle::after,
+      [data-bs-theme="dark"] .navbar.header-fixed .dropdown-toggle::after {
+        border-color: rgba(255, 255, 255, 0.85) transparent transparent transparent;
+      }
+      [data-bs-theme="dark"] .navbar-clone .btn-outline-light,
+      [data-bs-theme="dark"] .navbar.header-fixed .btn-outline-light {
+        color: #fff !important;
+        border-color: rgba(255, 255, 255, 0.5) !important;
+      }
+      [data-bs-theme="dark"] .navbar-clone .btn-outline-light:hover,
+      [data-bs-theme="dark"] .navbar.header-fixed .btn-outline-light:hover {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+      }
+      /* Try Viewer button - primary color for dark mode */
+      [data-bs-theme="dark"] .navbar .btn-light {
+        background-color: var(--bs-primary) !important;
+        border-color: var(--bs-primary) !important;
+        color: #fff !important;
+      }
+      [data-bs-theme="dark"] .navbar .btn-light i,
+      [data-bs-theme="dark"] .navbar .btn-light i::before {
+        color: #fff !important;
+        -webkit-text-fill-color: #fff !important;
+      }
+      [data-bs-theme="dark"] .navbar .btn-light:hover {
+        filter: brightness(1.1);
+      }
+    </style>
+    {{ end }}
   </head>
 
   <body>
@@ -100,7 +220,7 @@
     </main>
 
     <!-- Footer -->
-    {{ partial "footer.html" . }}
+    {{ partial "footer-enterprise.html" . }}
 
     <!-- Cookie-consent -->
     {{ partial "cookies.html" . }}
