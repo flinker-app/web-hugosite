@@ -577,7 +577,37 @@ Christian Laimer, Mario Beltempo&lt;/p>
  &lt;p class="lead mb-4">
  We’re shaping the &lt;strong>OpenBIM ecosystem for Microsoft 365&lt;/strong> — a connected, self-hosted environment where companies, integrators, and developers can 
  &lt;strong>build, connect, and innovate&lt;/strong> together using open standards like IFC, IDS, and BCF.
- &lt;/p></description></item><item><title>Products</title><link>https://flinker.app/products/</link><pubDate>Thu, 05 Oct 2023 00:00:00 +0000</pubDate><guid>https://flinker.app/products/</guid><description>&lt;!--Accounting software start-->
+ &lt;/p></description></item><item><title>Home (New Draft)</title><link>https://flinker.app/home-new/</link><pubDate>Thu, 05 Oct 2023 00:00:00 +0000</pubDate><guid>https://flinker.app/home-new/</guid><description>&lt;style>
+ /* Hero height without JS-induced reflows */
+ #get-started { min-height: 70vh; }
+ @media (min-width: 1200px) { #get-started { min-height: 100vh; } }
+
+ /* Keep outline-light legible on dark hero */
+ .hero-agency .btn.btn-outline-light {
+ --bs-btn-color: #fff;
+ --bs-btn-border-color: rgba(255,255,255,.9);
+ --bs-btn-hover-bg: rgba(255,255,255,.12);
+ }
+
+ /* Respect reduced motion: tone down parallax */
+ @media (prefers-reduced-motion: reduce) {
+ .jarallax { transform: none !important; }
+ }
+&lt;/style>
+
+&lt;!--hero start-->
+&lt;section id="get-started" class="position-relative py-10 jarallax hero-agency" data-jarallax data-speed="0.4">
+ &lt;img class="jarallax-img w-100" src="./assets-flinker/images/landings/landing-img-9.svg" alt="agency" loading="eager" fetchpriority="high" decoding="async"
+ style="object-fit: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; object-position: center;" />
+ &lt;div class="position-absolute start-0 end-0">
+ &lt;div class="container">
+ &lt;div class="row">
+ &lt;div class="col-xl-5 col-lg-7 col-12" data-cue="zoomIn">
+ &lt;div class="text-center text-lg-start">
+ &lt;div class="mb-4 text-white-stable">
+ &lt;small class="text-uppercase ls-lg">Microsoft 365 Apps&lt;/small>
+ &lt;h1 class="mb-3 mt-3 display-3 text-white-stable">The built environment layer for Microsoft&lt;/h1>
+ &lt;p class="lead mb-0">Self-hosted OpenBIM inside Microsoft 365 — connecting design, data and systems. Secure. Enterprise-grade.&lt;/p></description></item><item><title>Products</title><link>https://flinker.app/products/</link><pubDate>Thu, 05 Oct 2023 00:00:00 +0000</pubDate><guid>https://flinker.app/products/</guid><description>&lt;!--Accounting software start-->
 &lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
  &lt;!-- Gradient overlay for navbar readability -->
  &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
