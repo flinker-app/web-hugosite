@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}"{{ if .IsHome }} data-bs-theme="dark"{{ end }}>
+<html lang="{{ .Site.Language.Lang }}" data-bs-theme="{{ if .IsHome }}dark{{ else }}light{{ end }}">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -15,10 +15,6 @@
     <meta name="msapplication-TileColor" content="#8b3dff">
     <meta name="msapplication-config" content="{{ "assets-flinker/images/favicon/tile.xml" | absURL }}">
 
-  <!-- Color modes (load only on non-home pages) -->
-  {{ if not .IsHome }}
-  <script src="{{ "assets/js/vendors/color-modes.js" | absURL }}"></script>
-  {{ end }}
 
     <!-- Libs CSS -->
     <link href="{{ "assets/libs/simplebar/dist/simplebar.min.css" | absURL }}" rel="stylesheet">
