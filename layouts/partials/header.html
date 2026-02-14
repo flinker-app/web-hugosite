@@ -1,3 +1,44 @@
+<style>
+  /* SAP-like dropdown styling */
+  .dropdown-menu {
+    background: #fff !important;
+  }
+  .dropdown-menu .dropdown-item {
+    font-weight: 400;
+    font-size: 0.938rem;
+    color: #1a1a1a !important;
+    background: transparent;
+    transition: color 0.2s ease;
+  }
+  .dropdown-menu .dropdown-item:hover,
+  .dropdown-menu .dropdown-item:focus {
+    background: transparent;
+    color: #0d6efd !important;
+  }
+  .dropdown-menu .dropdown-item h6 {
+    font-size: 0.938rem;
+    color: #1a1a1a;
+    transition: border-color 0.2s ease;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+  }
+  .dropdown-menu .dropdown-item:hover h6,
+  .dropdown-menu .dropdown-item:focus h6 {
+    color: #0d6efd;
+    border-bottom: 2px solid #0d6efd;
+  }
+  .dropdown-menu .dropdown-item p {
+    font-size: 0.85rem;
+    color: #6c757d !important;
+  }
+  .dropdown-menu .dropdown-header {
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6c757d !important;
+  }
+</style>
 <header>
   <nav class="navbar navbar-expand-lg transparent navbar-transparent navbar-dark">
      <div class="container px-3">
@@ -17,18 +58,19 @@
          <div class="offcanvas-body pt-0 align-items-center">
              <ul class="navbar-nav mx-auto align-items-lg-center">
 
-              <!-- Apps -->
+              <!-- Products -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="{{ "products/" | absURL }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Apps
+                  Products
                 </a>
                 <div class="dropdown-menu dropdown-menu-md p-3">
                   <div class="row row-cols-1 g-3">
 
                     <!-- Overview -->
                     <div class="col">
-                      <div class="dropdown-header">Flinker Apps for Microsoft 365</div>
-                      <a class="dropdown-item fw-semibold" href="{{ "products/" | absURL }}">Overview</a>
+                      <div class="dropdown-header">Microsoft 365 Apps</div>
+                      <a class="dropdown-item" href="{{ "products/" | absURL }}">Overview</a>
+                      <a class="dropdown-item" href="{{ "/solutions/" | absURL }}">Solutions by Role</a>
                     </div>
 
                     <!-- SharePoint CDE -->
@@ -42,7 +84,7 @@
                       </a>
                     </div>
 
-                    <!-- Analytics Apps -->
+                    <!-- Analytics -->
                     <div class="col">
                       <div class="dropdown-header">Analytics</div>
                       <a class="dropdown-item" href="{{ "/products/power-bi-ifc-viewer/" | absURL }}">
@@ -53,91 +95,142 @@
                       </a>
                     </div>
 
+                    <!-- Case Studies -->
+                    <div class="col">
+                      <div class="dropdown-header">Case Studies</div>
+                      <a class="dropdown-item" href="{{ "/customers/ohla-group/" | absURL }}">OHLA Group</a>
+                      <a class="dropdown-item" href="{{ "/customers/sawa-engineering/" | absURL }}">Sawa Engineering</a>
+                    </div>
+
                   </div>
                 </div>
               </li>
 
-              <!-- Case Studies -->
+              <!-- Partners -->
               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Case Studies</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="{{ "/customers/ohla-group/" | absURL }}">Validate IFC with SharePoint Viewer</a></li>
-                    <li><a class="dropdown-item" href="{{ "/customers/sawa-engineering/" | absURL }}">Chat-to-Quantities with IFC Copilot</a></li>
-                  </ul>
-              </li>
-
-              <!-- Support -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support</a>
+                <a class="nav-link dropdown-toggle" href="{{ "/partners/" | absURL }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Partners
+                </a>
                 <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown">
-
-                  <!-- Docs -->
-                  <a class="dropdown-item mb-3 text-body" href="https://docs.flinker.app/" target="_blank">
+                  <a class="dropdown-item mb-3 text-body" href="{{ "/partners/" | absURL }}">
                       <div class="d-flex align-items-center">
-                        <i class="bi bi-journal-text fs-4 text-primary"></i>
+                        <i class="bi bi-handshake fs-4 text-primary"></i>
                         <div class="ms-3 lh-1">
-                            <h5 class="mb-1">Documentation <i class="bi bi-arrow-right"></i></h5>
-                            <p class="mb-0 fs-6">Browse product guides & setup docs</p>
+                            <h6 class="mb-1 fw-normal">Partner Program</h6>
+                            <p class="mb-0 fs-6">Overview & benefits</p>
                         </div>
                       </div>
                   </a>
-
-                  <!-- Changelog -->
-                  <a class="dropdown-item mb-3 text-body" href="https://docs.flinker.app/docs/releases.html" target="_blank">
+                  <a class="dropdown-item mb-3 text-body" href="{{ "/services/partners/" | absURL }}">
                       <div class="d-flex align-items-center">
-                        <i class="bi bi-megaphone fs-4 text-primary"></i>
+                        <i class="bi bi-building fs-4 text-primary"></i>
                         <div class="ms-3 lh-1">
-                            <h5 class="mb-1">What's New <i class="bi bi-arrow-right"></i></h5>
-                            <p class="mb-0 fs-6">Latest updates & releases</p>
+                            <h6 class="mb-1 fw-normal">Become a Partner</h6>
+                            <p class="mb-0 fs-6">Apply to our partner program</p>
                         </div>
                       </div>
                   </a>
-
-                  <!-- Data Services -->
-                  <a class="dropdown-item mb-3 text-body" href="{{ "/services/data-services/" | absURL }}">
-                      <div class="d-flex align-items-center">
-                        <i class="bi bi-bar-chart-line fs-4 text-primary"></i>
-                        <div class="ms-3 lh-1">
-                            <h5 class="mb-1">Data Services</h5>
-                            <p class="mb-0 fs-6">Support packages for Power BI & IFC data</p>
-                        </div>
-                      </div>
-                  </a>
-
-                  <!-- Partners -->
-                  <a class="dropdown-item text-body" href="{{ "/services/partners/" | absURL }}">
+                  <a class="dropdown-item mb-3 text-body" href="{{ "/partners/directory/" | absURL }}">
                       <div class="d-flex align-items-center">
                         <i class="bi bi-people fs-4 text-primary"></i>
                         <div class="ms-3 lh-1">
-                            <h5 class="mb-1">Partners</h5>
-                            <p class="mb-0 fs-6">Certified Flinker service partners</p>
+                            <h6 class="mb-1 fw-normal">Partner Directory</h6>
+                            <p class="mb-0 fs-6">Find a certified Flinker partner</p>
+                        </div>
+                      </div>
+                  </a>
+                  <a class="dropdown-item text-body" href="{{ "/services/" | absURL }}">
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-headset fs-4 text-primary"></i>
+                        <div class="ms-3 lh-1">
+                            <h6 class="mb-1 fw-normal">Services & Support</h6>
+                            <p class="mb-0 fs-6">Implementation, consulting & support</p>
                         </div>
                       </div>
                   </a>
                 </div>
-              </li>           
+              </li>
 
-
-             <!-- Company -->
-             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Company
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="{{ "about/" | absURL }}">About</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="{{ "blog/" | absURL }}">Blog</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="https://join.com/companies/flinker" target="_blank">
-                    Careers <i class="bi bi-arrow-right ms-1"></i>
+              <!-- Developers -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="{{ "/developers/" | absURL }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Developers
+                </a>
+                <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item mb-3 text-body" href="{{ "/developers/" | absURL }}">
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-code-square fs-4 text-primary"></i>
+                        <div class="ms-3 lh-1">
+                            <h6 class="mb-1 fw-normal">Platform Overview</h6>
+                            <p class="mb-0 fs-6">API, SDK & embedding options</p>
+                        </div>
+                      </div>
                   </a>
-                </li>
-              </ul>
-            </li>
+                  <a class="dropdown-item mb-3 text-body" href="{{ "/developers/ifc-viewer/" | absURL }}">
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-box fs-4 text-primary"></i>
+                        <div class="ms-3 lh-1">
+                            <h6 class="mb-1 fw-normal">IFC Viewer SDK</h6>
+                            <p class="mb-0 fs-6">Embed 3D viewing in your app</p>
+                        </div>
+                      </div>
+                  </a>
+                  <a class="dropdown-item mb-3 text-body" href="{{ "/developers/ifc-copilot/" | absURL }}">
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-chat-dots fs-4 text-primary"></i>
+                        <div class="ms-3 lh-1">
+                            <h6 class="mb-1 fw-normal">IFC Copilot API</h6>
+                            <p class="mb-0 fs-6">AI-powered IFC data extraction</p>
+                        </div>
+                      </div>
+                  </a>
+                  <a class="dropdown-item text-body" href="{{ "/developers/white-label/" | absURL }}">
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-palette fs-4 text-primary"></i>
+                        <div class="ms-3 lh-1">
+                            <h6 class="mb-1 fw-normal">White Label</h6>
+                            <p class="mb-0 fs-6">OEM licensing & customization</p>
+                        </div>
+                      </div>
+                  </a>
+                </div>
+              </li>
+
+              <!-- Integrations -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="{{ "/integrations/" | absURL }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Integrations
+                </a>
+                <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item mb-3 text-body" href="{{ "/integrations/" | absURL }}">
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-diagram-3 fs-4 text-primary"></i>
+                        <div class="ms-3 lh-1">
+                            <h6 class="mb-1 fw-normal">All Integrations</h6>
+                            <p class="mb-0 fs-6">Connect with your tools</p>
+                        </div>
+                      </div>
+                  </a>
+                  <a class="dropdown-item mb-3 text-body" href="{{ "/integrations/microsoft/" | absURL }}">
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-microsoft fs-4 text-primary"></i>
+                        <div class="ms-3 lh-1">
+                            <h6 class="mb-1 fw-normal">Microsoft 365</h6>
+                            <p class="mb-0 fs-6">SharePoint, Teams, Power BI</p>
+                        </div>
+                      </div>
+                  </a>
+                  <a class="dropdown-item text-body" href="{{ "/integrations/bentley/" | absURL }}">
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-buildings fs-4 text-primary"></i>
+                        <div class="ms-3 lh-1">
+                            <h6 class="mb-1 fw-normal">Bentley Systems</h6>
+                            <p class="mb-0 fs-6">iTwin & ProjectWise integration</p>
+                        </div>
+                      </div>
+                  </a>
+                </div>
+              </li>
 
            </ul>
 
