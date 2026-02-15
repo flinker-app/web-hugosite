@@ -121,9 +121,8 @@
  &lt;a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer"
  class="btn btn-lg"
  style="--btn-bg: var(--bs-primary, #0d6efd); background:var(--btn-bg); color:#fff; padding:12px 18px; border-radius:12px; font-weight:700; text-decoration:none;">
- Start Free in AppSource
+ Use Free on Desktop
  &lt;/a>
- &lt;small class="d-block mt-2 text-muted">Works in your Microsoft 365 tenant — self-hosted by design.&lt;/small>
  &lt;/div>
 &lt;/section>
 
@@ -147,11 +146,11 @@
 &lt;/section>
 
 &lt;!-- IN-PAGE NAV -->
-&lt;nav class="container my-3 text-center" aria-label="Feature shortcuts">
- &lt;a class="btn btn-outline-primary btn-sm me-2 mb-2" href="#load-from-sharepoint">SharePoint/Teams&lt;/a>
- &lt;a class="btn btn-outline-primary btn-sm me-2 mb-2" href="#multi-ifc">Multi-IFC&lt;/a>
- &lt;a class="btn btn-outline-primary btn-sm me-2 mb-2" href="#extended-query">Extended query&lt;/a>
- &lt;a class="btn btn-outline-primary btn-sm mb-2" href="#color-by">Color-by&lt;/a>
+&lt;nav class="container my-5 text-center" aria-label="Feature shortcuts">
+ &lt;a class="text-muted text-decoration-none me-4" href="#load-from-sharepoint">SharePoint/Teams&lt;/a>
+ &lt;a class="text-muted text-decoration-none me-4" href="#multi-ifc">Multi-IFC&lt;/a>
+ &lt;a class="text-muted text-decoration-none me-4" href="#extended-query">Extended query&lt;/a>
+ &lt;a class="text-muted text-decoration-none" href="#color-by">Color-by&lt;/a>
 &lt;/nav>
 
 &lt;!-- LOAD FROM SHAREPOINT -->
