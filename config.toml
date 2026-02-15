@@ -30,3 +30,14 @@ description = "Building the global OpenBIM layer for Microsoft 365 — secure, s
 [permalinks]
 #  "home" = "/"  # Mappt home.html explizit auf die Root-URL
   "blog" = "/blog/:slug/"  # Für Blogposts
+
+# Sitemap settings
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Taxonomy sitemap settings (lower priority for tags/categories)
+[taxonomies]
+  tag = "tags"
+  category = "categories"
