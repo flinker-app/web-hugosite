@@ -223,34 +223,7 @@
  &lt;div class="card-body p-4">
  &lt;i class="bi bi-folder fs-3 text-primary mb-3">&lt;/i>
  &lt;h5>SharePoint&lt;/h5>
- &lt;p class="text-muted mb-0">View IFC files directly in SharePoint document libraries. Full integration with metadata, permissions, and version history.&lt;/p></description></item><item><title>Partner Directory</title><link>https://flinker.app/partners/directory/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/partners/directory/</guid><description>&lt;!-- Hero Section -->
-&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
- &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
- &lt;div class="container">
- &lt;div class="row align-items-center py-lg-8">
- &lt;div class="col-lg-8 offset-lg-2 text-center">
- &lt;h1 class="display-5">Partner Directory&lt;/h1>
- &lt;p class="lead">Find a certified Flinker partner in your region to help you deploy and configure our solutions.&lt;/p>
- &lt;/div>
- &lt;/div>
- &lt;/div>
-&lt;/section>
-
-&lt;!-- Partner List -->
-&lt;section class="py-9">
- &lt;div class="container">
- &lt;div class="row mb-6">
- &lt;div class="col-lg-8 offset-lg-2 text-center">
- &lt;p class="text-muted">Our partner network is growing. Contact us directly for implementation support in your region.&lt;/p>
- &lt;/div>
- &lt;/div>
-
- &lt;!-- Placeholder for future partners -->
- &lt;div class="row g-4">
- &lt;div class="col-12 text-center py-8">
- &lt;i class="bi bi-people fs-1 text-muted mb-3">&lt;/i>
- &lt;h4 class="text-muted">Partner listings coming soon&lt;/h4>
- &lt;p class="text-muted">In the meantime, contact us directly for implementation support.&lt;/p></description></item><item><title>Partners</title><link>https://flinker.app/partners/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/partners/</guid><description>&lt;!-- Hero Section -->
+ &lt;p class="text-muted mb-0">View IFC files directly in SharePoint document libraries. Full integration with metadata, permissions, and version history.&lt;/p></description></item><item><title>Partners</title><link>https://flinker.app/partners/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/partners/</guid><description>&lt;!-- Hero Section -->
 &lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
  &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
  &lt;div class="container">
