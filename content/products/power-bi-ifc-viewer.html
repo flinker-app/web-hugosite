@@ -75,52 +75,41 @@ plans:
     price: 0
     currency: "EUR"
     interval: "month"
-    audience: "Editors — Power BI Desktop"
+    audience: "Individuals, evaluation"
     includes:
-      - "1 free starter template"
-      - "IFC in Power BI Desktop"
-      - "Core features to build first reports"
-      - "No Power BI Service sharing"
+      - "Standard PBIX template"
+      - "Power Query IFC extraction"
+      - "Multi-IFC viewing"
+      - "Load up to 3 files"
+      - "Power BI Desktop only"
     cta:
       label: "Start free"
       url: "https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer"
-  - name: "Pro (Editors)"
-    price: 99
-    currency: "EUR"
-    interval: "month"
-    tenant_pricing: true
-    includes:
-      - "Multi-IFC loading"
-      - "Extended query / data extension"
-      - "Color-by features"
-      - "All editors included"
-      - "Email support"
-    cta:
-      label: "Unlock Pro"
-      url: "https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true"
-  - name: "Business (Sharing)"
+  - name: "Pro"
     price: 299
     currency: "EUR"
     interval: "month"
     tenant_pricing: true
     includes:
-      - "Everything in Pro"
-      - "Power BI Service sharing included"
-      - "All MS365 viewers covered"
-      - "Multi-IFC subfolder loading"
-      - "Priority support"
+      - "Everything in Free"
+      - "Folder + subfolder loading (.mez)"
+      - "Large local models up to 10 GB"
+      - "Color-by any field"
+      - "Power BI Service supported"
+      - "All MS365 viewers included"
+      - "Unlimited editors per tenant"
     cta:
-      label: "Talk to sales"
-      url: "https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true"
+      label: "Buy now"
+      url: "https://buy.stripe.com/8x24gy6aueFCdMU4UDcZa02"
   - name: "Enterprise"
-    price_from: 999
+    price_label: "Contact us"
     currency: "EUR"
     interval: "month"
     tenant_pricing: true
     includes:
-      - "Advanced performance & scale"
-      - "Security reviews & onboarding"
-      - "Custom templates & support"
+      - "Everything in Pro"
+      - "Unlimited model size via API"
+      - "Power BI Embedded supported"
     cta:
       label: "Get Quote"
       url: "https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true"
@@ -140,9 +129,9 @@ use_cases:
 
 faqs:
   - q: "Does the Free plan support sharing?"
-    a: "No. Sharing in Power BI Service requires Business or Enterprise."
+    a: "No. Sharing in Power BI Service requires Pro or Enterprise."
   - q: "Do viewers need extra licenses?"
-    a: "No. With Business, all MS365 viewers are covered."
+    a: "No. With Pro, all MS365 viewers are covered."
   - q: "Where does data live?"
     a: "In your Microsoft 365 tenant (SharePoint/Teams). No external servers."
 
@@ -151,7 +140,7 @@ schema:
   "@context": "https://schema.org"
   "@type": "Product"
   name: "Flinker IFC Viewer for Power BI"
-  description: "Bring BIM (IFC) into Power BI and SharePoint, 100% tenant-native. Start free, upgrade to Pro, scale to Business or Enterprise."
+  description: "Bring BIM (IFC) into Power BI and SharePoint, 100% tenant-native. Start free, scale with Pro or Enterprise."
   brand:
     "@type": "Brand"
     name: "Flinker"
@@ -170,30 +159,19 @@ schema:
       availability: "https://schema.org/InStock"
       url: "https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer"
     - "@type": "Offer"
-      name: "Pro (Editors)"
-      price: "99"
-      priceCurrency: "EUR"
-      priceSpecification:
-        "@type": "UnitPriceSpecification"
-        unitText: "per tenant per month"
-      availability: "https://schema.org/InStock"
-      url: "https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true"
-    - "@type": "Offer"
-      name: "Business (Sharing)"
+      name: "Pro"
       price: "299"
       priceCurrency: "EUR"
       priceSpecification:
         "@type": "UnitPriceSpecification"
         unitText: "per tenant per month"
       availability: "https://schema.org/InStock"
-      url: "https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true"
+      url: "https://buy.stripe.com/8x24gy6aueFCdMU4UDcZa02"
     - "@type": "Offer"
       name: "Enterprise"
-      price: "999"
-      priceCurrency: "EUR"
       priceSpecification:
         "@type": "UnitPriceSpecification"
-        unitText: "starting per tenant per month"
+        unitText: "contact us"
       availability: "https://schema.org/PreOrder"
       url: "https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true"
   image: "https://flinker.app/assets-flinker/images/products/power-bi-ifc-viewer/ifc-viewer-hero.png"
@@ -492,7 +470,8 @@ schema:
     <div class="pricing-grid-3">
 
       <!-- Free -->
-      <article aria-labelledby="plan-free" class="plan">
+      <article aria-labelledby="plan-free" class="plan plan-accent">
+        <div style="position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:var(--bs-primary,#0d6efd); color:#fff; font-weight:900; font-size:12px; padding:4px 12px; border-radius:999px;">Most popular</div>
         <h3 id="plan-free">Free</h3>
         <p class="sub">Build reports in Power BI Desktop</p>
         <p class="price">€0</p>
@@ -524,8 +503,7 @@ schema:
       </article>
 
       <!-- Pro -->
-      <article aria-labelledby="plan-pro" class="plan plan-accent">
-        <div style="position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:var(--bs-primary,#0d6efd); color:#fff; font-weight:900; font-size:12px; padding:4px 12px; border-radius:999px;">Most popular</div>
+      <article aria-labelledby="plan-pro" class="plan">
         <h3 id="plan-pro">Pro</h3>
         <p class="sub">Share with your team via Power BI Service</p>
         <p class="price">€299 <span style="font-size:14px; font-weight:600; color:var(--bs-secondary-color);">/month / tenant</span></p>
@@ -1326,7 +1304,7 @@ schema:
             </h2>
             <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="mt-3">
-                We support credit card payments via Stripe and invoice billing for Business and Enterprise customers.
+                We support credit card payments via Stripe and invoice billing for Pro and Enterprise customers.
               </div>
             </div>
           </div>
@@ -1681,25 +1659,25 @@ schema:
           <td>Share with internal viewers</td>
           <td>Publish to workspace/app (tenant)</td>
           <td>Standard Power BI Service licensing</td>
-          <td><span class="label">Business</span></td>
+          <td><span class="label">Pro</span></td>
         </tr>
         <tr>
           <td>Share with named external users</td>
           <td>Entra B2B guest sharing (report/app)</td>
           <td>Publisher: Pro/PPU; Guests: Pro/PPU or Premium/Fabric capacity</td>
-          <td><span class="label">Business</span></td>
+          <td><span class="label">Pro</span></td>
         </tr>
         <tr>
           <td>Portal-like experience in SharePoint/Teams</td>
           <td>Embed in SharePoint/Teams + guests</td>
           <td>Matches workspace/app licensing</td>
-          <td><span class="label">Business</span></td>
+          <td><span class="label">Pro</span></td>
         </tr>
         <tr>
           <td>Branded client portal, many external viewers</td>
           <td>Power BI Embedded (app-owns-data)</td>
           <td>Capacity-based (Embedded/Fabric); no per-viewer licenses</td>
-          <td><span class="label">Enterprise</span> + <span class="label">Embedded add-on</span></td>
+          <td><span class="label">Enterprise</span></td>
         </tr>
         <tr>
           <td>Public demo or marketing sample</td>
@@ -1734,7 +1712,7 @@ schema:
             </h2>
             <p class="mb-0 px-xl-5 lead" style="color:var(--bs-secondary-color)">
               Start free in AppSource. Upgrade to Pro when you need advanced editor features.
-              Scale to Business when sharing matters.
+              Scale to Pro when sharing matters.
             </p>
           </div>
           <!-- CTA buttons -->
