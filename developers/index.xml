@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Developers on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/developers/</link><description>Recent content in Developers on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 14 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>IFC Copilot API</title><link>https://flinker.app/developers/ifc-copilot/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-copilot/</guid><description>&lt;!-- Hero Section -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Developer Platform | Flinker APIs &amp; SDKs on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/developers/</link><description>Recent content in Developer Platform | Flinker APIs &amp; SDKs on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 16 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>IFC Copilot API | AI-Powered BIM Data Extraction | Flinker</title><link>https://flinker.app/developers/ifc-copilot/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-copilot/</guid><description>&lt;!-- Hero Section -->
 &lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
  &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
  &lt;div class="container">
@@ -202,7 +202,7 @@
  &lt;div class="card-body p-4">
  &lt;i class="bi bi-calculator fs-3 text-primary mb-3">&lt;/i>
  &lt;h5>Quantity Takeoffs&lt;/h5>
- &lt;p class="text-muted mb-0">Extract quantities, areas, volumes, and counts from IFC models using natural language queries like "How many doors are on level 2?"&lt;/p></description></item><item><title>IFC Viewer SDK</title><link>https://flinker.app/developers/ifc-viewer/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/</guid><description>&lt;!-- Hero Section -->
+ &lt;p class="text-muted mb-0">Extract quantities, areas, volumes, and counts from IFC models using natural language queries like "How many doors are on level 2?"&lt;/p></description></item><item><title>IFC Viewer SDK | Embed 3D BIM Viewing | Flinker</title><link>https://flinker.app/developers/ifc-viewer/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/</guid><description>&lt;!-- Hero Section -->
 &lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
  &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
  &lt;div class="container">
@@ -368,7 +368,7 @@
  &lt;div class="card-body p-4">
  &lt;i class="bi bi-speedometer2 fs-3 text-primary mb-3">&lt;/i>
  &lt;h5>High Performance&lt;/h5>
- &lt;p class="text-muted small mb-0">WebGL-based rendering optimized for large IFC models. Smooth navigation even with millions of elements.&lt;/p></description></item><item><title>White Label &amp; OEM</title><link>https://flinker.app/developers/white-label/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/white-label/</guid><description>&lt;!-- Hero Section -->
+ &lt;p class="text-muted small mb-0">WebGL-based rendering optimized for large IFC models. Smooth navigation even with millions of elements.&lt;/p></description></item><item><title>White Label IFC Viewer | OEM Licensing | Flinker</title><link>https://flinker.app/developers/white-label/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/white-label/</guid><description>&lt;!-- Hero Section -->
 &lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
  &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
  &lt;div class="container">

@@ -3,7 +3,71 @@
 &lt;h3 id="conformance-status">Conformance status&lt;/h3>
 &lt;p>We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA. These guidelines explain how to make web content more accessible for people with disabilities and more user-friendly for everyone.&lt;/p>
 &lt;h3 id="measures-we-take">Measures we take&lt;/h3>
-&lt;p>Flinker takes the following measures to ensure accessibility:&lt;/p></description></item><item><title>Imprint</title><link>https://flinker.app/imprint/</link><pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/imprint/</guid><description>&lt;h2 id="1-responsible-for-content">1. Responsible for content&lt;/h2>
+&lt;p>Flinker takes the following measures to ensure accessibility:&lt;/p></description></item><item><title>Support Plans</title><link>https://flinker.app/legal/support-plans/</link><pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/legal/support-plans/</guid><description>&lt;section class="py-5 py-lg-6">
+ &lt;div class="row align-items-center g-4">
+ &lt;div class="col-lg-8">
+ &lt;span class="badge rounded-pill text-bg-light border border-light-subtle mb-3">Legal&lt;/span>
+ &lt;h1 class="display-5 fw-semibold mb-3">Support Plans — Schedule A&lt;/h1>
+ &lt;p class="lead text-muted mb-4">Scope, service levels, and operating rules for Enterprise Basic/Plus and Success Hours.&lt;/p>
+ &lt;div class="d-flex flex-wrap gap-2">
+ &lt;a class="btn btn-primary" href="https://flinker.app/legal/support-plans/v2026-02/">Read current version&lt;/a>
+ &lt;/div>
+ &lt;div class="mt-3 text-muted">
+ Current version: v2026-02 · Effective 2026-01-26
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+&lt;section class="pb-5">
+ &lt;div class="row g-4">
+ &lt;div class="col-lg-8">
+ &lt;div class="card border-0 shadow-sm">
+ &lt;div class="card-body p-4">
+ &lt;h4 class="fw-semibold mb-3">Versions&lt;/h4>
+ &lt;ul class="list-unstyled mb-0">
+ &lt;li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+ &lt;a href="https://flinker.app/legal/support-plans/v2026-02/">v2026-02&lt;/a>
+ &lt;span class="text-muted">Effective 2026-01-26 · Current&lt;/span>
+ &lt;/li>
+ &lt;/ul>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section></description></item><item><title>Flinker Support Plans – Schedule A (V1)</title><link>https://flinker.app/legal/support-plans/v2026-02/</link><pubDate>Mon, 26 Jan 2026 00:00:00 +0100</pubDate><guid>https://flinker.app/legal/support-plans/v2026-02/</guid><description>&lt;div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+ &lt;span class="badge text-bg-primary">Version: v2026-02&lt;/span>
+ &lt;span class="badge text-bg-light">Effective date: 2026-01-26&lt;/span>
+&lt;/div>
+&lt;div class="d-flex flex-wrap gap-2 mb-4">
+ &lt;a class="btn btn-outline-secondary" href="https://flinker.app/legal/support-plans/">Back to latest&lt;/a>
+ &lt;a class="btn btn-outline-secondary" href="https://flinker.app/assets-flinker/legal/Flinker-Support-Plans-Schedule-A-v2026-02.pdf" target="_blank" rel="noopener">Download PDF&lt;/a>
+ &lt;a class="btn btn-outline-secondary" href="#" onclick="window.print(); return false;">Print&lt;/a>
+&lt;/div>
+&lt;h2 id="table-of-contents">Table of Contents&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a href="#purpose-and-structure">Purpose and structure&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#support-plans-overview">Support Plans overview&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#definitions">Definitions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#scope-of-support-reactive-l2l3">Scope of support (Reactive L2/L3)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#customer-responsibilities-sla-preconditions">Customer responsibilities (SLA preconditions)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#support-intake-channels-and-case-handling">Support intake, channels, and case handling&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#severity-levels-p1-p4">Severity levels (P1–P4)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#service-level-targets-sla">Service level targets (SLA)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#fair-use-and-capacity-controls-v1">Fair use and capacity controls (V1)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#success-hours-advisory-enablement">Success Hours (Advisory / Enablement)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#escalation-and-post-incident-review-v1">Escalation and post-incident review (V1)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#term-renewal-and-changes">Term, renewal, and changes&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#order-of-precedence">Order of precedence&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#miscellaneous">Miscellaneous&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;style>
+ @media print {
+ a.btn, .btn { display: none !important; }
+ .badge { border: 1px solid #ccc !important; }
+ }
+&lt;/style>
+&lt;hr>
+&lt;p>This Schedule A defines the scope, service levels, and operating rules for Flinker support plans (“Support Plans”). It supplements the &lt;strong>Flinker Services Terms&lt;/strong> (the “Master Terms”). Capitalized terms not defined here have the meaning set out in the Master Terms.&lt;/p></description></item><item><title>Imprint</title><link>https://flinker.app/imprint/</link><pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/imprint/</guid><description>&lt;h2 id="1-responsible-for-content">1. Responsible for content&lt;/h2>
 &lt;p>Flinker GmbH&lt;br>
 Zittelstraße&lt;br>
 80796 Munich&lt;/p>
