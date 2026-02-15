@@ -46,6 +46,10 @@ disableTopSpacing: true
       background: var(--bs-primary);
       color: white;
    }
+   .filter-btn.active i,
+   .filter-btn.active i::before {
+      color: white !important;
+   }
    .specialization-tag {
       font-size: 0.8rem;
       padding: 0.25rem 0.6rem;
@@ -66,6 +70,10 @@ disableTopSpacing: true
    .hero-search .btn {
       border-radius: 0 12px 12px 0;
       padding: 0.875rem 1.5rem;
+   }
+   .hero-search .btn i,
+   .hero-search .btn i::before {
+      color: #fff !important;
    }
    .stat-card {
       text-align: center;
@@ -99,9 +107,9 @@ disableTopSpacing: true
 
             <!-- Search Bar -->
             <div class="hero-search d-flex mb-4">
-               <input type="text" class="form-control" placeholder="Search by location, company, or specialization...">
-               <button class="btn btn-primary">
-                  <i class="bi bi-search"></i>
+               <input type="text" class="form-control" id="partnerSearch" placeholder="Search by location, company, or specialization...">
+               <button class="btn btn-primary" id="searchBtn">
+                  <i class="bi bi-search" style="color: #fff !important;"></i>
                </button>
             </div>
 
@@ -134,20 +142,20 @@ disableTopSpacing: true
 <!-- Filter Section -->
 <section class="py-4 bg-white border-bottom sticky-top" style="top: 70px; z-index: 100;">
    <div class="container">
-      <div class="d-flex flex-wrap justify-content-center gap-2">
-         <button class="filter-btn active">
+      <div class="d-flex flex-wrap justify-content-center gap-2" id="regionFilters">
+         <button class="filter-btn active" data-region="all">
             <i class="bi bi-grid-3x3-gap me-1"></i> All Partners
          </button>
-         <button class="filter-btn">
+         <button class="filter-btn" data-region="europe">
             <i class="bi bi-geo-alt me-1"></i> Europe
          </button>
-         <button class="filter-btn">
+         <button class="filter-btn" data-region="middle-east">
             <i class="bi bi-geo-alt me-1"></i> Middle East
          </button>
-         <button class="filter-btn">
+         <button class="filter-btn" data-region="americas">
             <i class="bi bi-geo-alt me-1"></i> Americas
          </button>
-         <button class="filter-btn">
+         <button class="filter-btn" data-region="asia-pacific">
             <i class="bi bi-geo-alt me-1"></i> Asia Pacific
          </button>
       </div>
@@ -155,205 +163,203 @@ disableTopSpacing: true
 </section>
 
 <!-- Partner List -->
-<section class="py-7">
+<section class="py-7" id="partnerListSection">
    <div class="container">
 
-      <!-- Featured Partners -->
-      <div class="mb-5">
-         <h5 class="text-muted text-uppercase fw-semibold mb-4" style="letter-spacing: 0.05em;">
-            <i class="bi bi-star-fill text-warning me-2"></i>Featured Partners
-         </h5>
+      <!-- No Results Message (hidden by default) -->
+      <div class="text-center py-8 d-none" id="noResults">
+         <div class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+            <i class="bi bi-search fs-2 text-muted"></i>
+         </div>
+         <h4 class="text-muted mb-2">No partners found</h4>
+         <p class="text-muted mb-4">Try adjusting your search or filter criteria.</p>
+         <button class="btn btn-outline-primary" id="clearFilters">Clear All Filters</button>
+      </div>
 
-         <div class="row g-4">
-            <!-- Partner Card 1 -->
-            <div class="col-lg-4 col-md-6">
-               <div class="card partner-card h-100 shadow-sm border-0 rounded-4">
-                  <div class="card-body p-4">
-                     <div class="d-flex align-items-start justify-content-between mb-3">
-                        <div class="bg-light rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 60px;">
-                           <i class="bi bi-building fs-3 text-primary"></i>
+      <!-- Partners Container -->
+      <div id="partnersContainer">
+         <!-- Featured Partners -->
+         <div class="mb-5" id="featuredSection">
+            <h5 class="text-muted text-uppercase fw-semibold mb-4" style="letter-spacing: 0.05em;">
+               <i class="bi bi-star-fill text-warning me-2"></i>Featured Partners
+            </h5>
+
+            <div class="row g-4" id="featuredPartners">
+               <!-- Partner Card 1 - Germany/Europe -->
+               <div class="col-lg-4 col-md-6 partner-item" data-region="europe" data-search="munich germany sharepoint power bi bim digital transformation dach europe partner announcement">
+                  <div class="card partner-card h-100 shadow-sm border-0 rounded-4">
+                     <div class="card-body p-4">
+                        <div class="d-flex align-items-start justify-content-between mb-3">
+                           <div class="bg-light rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 60px;">
+                              <i class="bi bi-building fs-3 text-primary"></i>
+                           </div>
+                           <span class="badge bg-warning bg-opacity-10 text-warning badge-certification">
+                              <i class="bi bi-clock me-1"></i>Soon
+                           </span>
                         </div>
-                        <span class="badge bg-success bg-opacity-10 text-success badge-certification">
-                           <i class="bi bi-patch-check-fill me-1"></i>Certified
-                        </span>
-                     </div>
-                     <h5 class="fw-bold mb-1">TechBuild Consulting</h5>
-                     <p class="text-muted small mb-3">
-                        <i class="bi bi-geo-alt me-1"></i>Munich, Germany
-                     </p>
-                     <p class="text-muted mb-3" style="font-size: 0.9rem;">
-                        Microsoft Gold Partner specializing in digital transformation for construction companies across DACH region.
-                     </p>
-                     <div class="d-flex flex-wrap gap-1 mb-3">
-                        <span class="specialization-tag">SharePoint</span>
-                        <span class="specialization-tag">Power BI</span>
-                        <span class="specialization-tag">BIM</span>
-                     </div>
-                     <div class="d-flex gap-2 mt-auto">
-                        <a href="#" class="btn btn-sm btn-outline-primary flex-grow-1">View Profile</a>
-                        <a href="#" class="btn btn-sm btn-primary">
-                           <i class="bi bi-envelope"></i>
-                        </a>
+                        <h5 class="fw-bold mb-1">Partner Announcement Soon</h5>
+                        <p class="text-muted small mb-3">
+                           <i class="bi bi-geo-alt me-1"></i>Munich, Germany
+                        </p>
+                        <p class="text-muted mb-3" style="font-size: 0.9rem;">
+                           We're finalizing partnership details with a certified partner in the DACH region. Stay tuned for the official announcement.
+                        </p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                           <span class="specialization-tag">SharePoint</span>
+                           <span class="specialization-tag">Power BI</span>
+                           <span class="specialization-tag">BIM</span>
+                        </div>
+                        <div class="d-flex gap-2 mt-auto">
+                           <a href="mailto:support@flinker.app?subject=Partner%20Directory%20-%20Get%20Notified" class="btn btn-sm btn-outline-primary flex-grow-1">Get Notified</a>
+                        </div>
                      </div>
                   </div>
                </div>
-            </div>
 
-            <!-- Partner Card 2 -->
-            <div class="col-lg-4 col-md-6">
-               <div class="card partner-card h-100 shadow-sm border-0 rounded-4">
-                  <div class="card-body p-4">
-                     <div class="d-flex align-items-start justify-content-between mb-3">
-                        <div class="bg-light rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 60px;">
-                           <i class="bi bi-building fs-3 text-primary"></i>
+               <!-- Partner Card 2 - Dubai/Middle East -->
+               <div class="col-lg-4 col-md-6 partner-item" data-region="middle-east" data-search="dubai uae united arab emirates middle east iso 19650 cde training partner announcement">
+                  <div class="card partner-card h-100 shadow-sm border-0 rounded-4">
+                     <div class="card-body p-4">
+                        <div class="d-flex align-items-start justify-content-between mb-3">
+                           <div class="bg-light rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 60px;">
+                              <i class="bi bi-building fs-3 text-primary"></i>
+                           </div>
+                           <span class="badge bg-warning bg-opacity-10 text-warning badge-certification">
+                              <i class="bi bi-clock me-1"></i>Soon
+                           </span>
                         </div>
-                        <span class="badge bg-success bg-opacity-10 text-success badge-certification">
-                           <i class="bi bi-patch-check-fill me-1"></i>Certified
-                        </span>
-                     </div>
-                     <h5 class="fw-bold mb-1">Constructify Solutions</h5>
-                     <p class="text-muted small mb-3">
-                        <i class="bi bi-geo-alt me-1"></i>Dubai, UAE
-                     </p>
-                     <p class="text-muted mb-3" style="font-size: 0.9rem;">
-                        Leading construction technology consultancy helping enterprises adopt ISO 19650 compliant workflows.
-                     </p>
-                     <div class="d-flex flex-wrap gap-1 mb-3">
-                        <span class="specialization-tag">ISO 19650</span>
-                        <span class="specialization-tag">CDE</span>
-                        <span class="specialization-tag">Training</span>
-                     </div>
-                     <div class="d-flex gap-2 mt-auto">
-                        <a href="#" class="btn btn-sm btn-outline-primary flex-grow-1">View Profile</a>
-                        <a href="#" class="btn btn-sm btn-primary">
-                           <i class="bi bi-envelope"></i>
-                        </a>
+                        <h5 class="fw-bold mb-1">Partner Announcement Soon</h5>
+                        <p class="text-muted small mb-3">
+                           <i class="bi bi-geo-alt me-1"></i>Dubai, UAE
+                        </p>
+                        <p class="text-muted mb-3" style="font-size: 0.9rem;">
+                           We're finalizing partnership details with a certified partner in the Middle East. Stay tuned for the official announcement.
+                        </p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                           <span class="specialization-tag">ISO 19650</span>
+                           <span class="specialization-tag">CDE</span>
+                           <span class="specialization-tag">Training</span>
+                        </div>
+                        <div class="d-flex gap-2 mt-auto">
+                           <a href="mailto:support@flinker.app?subject=Partner%20Directory%20-%20Get%20Notified" class="btn btn-sm btn-outline-primary flex-grow-1">Get Notified</a>
+                        </div>
                      </div>
                   </div>
                </div>
-            </div>
 
-            <!-- Partner Card 3 -->
-            <div class="col-lg-4 col-md-6">
-               <div class="card partner-card h-100 shadow-sm border-0 rounded-4">
-                  <div class="card-body p-4">
-                     <div class="d-flex align-items-start justify-content-between mb-3">
-                        <div class="bg-light rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 60px;">
-                           <i class="bi bi-building fs-3 text-primary"></i>
+               <!-- Partner Card 3 - BIM Partners UK (London/Europe) -->
+               <div class="col-lg-4 col-md-6 partner-item" data-region="europe" data-search="bim partners uk london united kingdom ifc infrastructure teams microsoft 365 bim consultancy award-winning">
+                  <div class="card partner-card h-100 shadow-sm border-0 rounded-4">
+                     <div class="card-body p-4">
+                        <div class="d-flex align-items-start justify-content-between mb-3">
+                           <div class="bg-light rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 60px;">
+                              <i class="bi bi-building fs-3 text-primary"></i>
+                           </div>
+                           <span class="badge bg-success bg-opacity-10 text-success badge-certification">
+                              <i class="bi bi-patch-check-fill me-1"></i>Certified
+                           </span>
                         </div>
-                        <span class="badge bg-success bg-opacity-10 text-success badge-certification">
-                           <i class="bi bi-patch-check-fill me-1"></i>Certified
-                        </span>
-                     </div>
-                     <h5 class="fw-bold mb-1">BIM Partners UK</h5>
-                     <p class="text-muted small mb-3">
-                        <i class="bi bi-geo-alt me-1"></i>London, United Kingdom
-                     </p>
-                     <p class="text-muted mb-3" style="font-size: 0.9rem;">
-                        Award-winning BIM consultancy delivering Microsoft 365 solutions for major infrastructure projects.
-                     </p>
-                     <div class="d-flex flex-wrap gap-1 mb-3">
-                        <span class="specialization-tag">IFC</span>
-                        <span class="specialization-tag">Infrastructure</span>
-                        <span class="specialization-tag">Teams</span>
-                     </div>
-                     <div class="d-flex gap-2 mt-auto">
-                        <a href="#" class="btn btn-sm btn-outline-primary flex-grow-1">View Profile</a>
-                        <a href="#" class="btn btn-sm btn-primary">
-                           <i class="bi bi-envelope"></i>
-                        </a>
+                        <h5 class="fw-bold mb-1">Partner Announcement Soon</h5>
+                        <p class="text-muted small mb-3">
+                           <i class="bi bi-geo-alt me-1"></i>London, United Kingdom
+                        </p>
+                        <p class="text-muted mb-3" style="font-size: 0.9rem;">
+                           Award-winning BIM consultancy delivering Microsoft 365 solutions for major infrastructure projects.
+                        </p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                           <span class="specialization-tag">IFC</span>
+                           <span class="specialization-tag">Infrastructure</span>
+                           <span class="specialization-tag">Teams</span>
+                        </div>
+                        <div class="d-flex gap-2 mt-auto">
+                           <a href="mailto:support@flinker.app?subject=Partner%20Directory%20-%20Get%20Notified" class="btn btn-sm btn-outline-primary flex-grow-1">Get Notified</a>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      </div>
 
-      <!-- More Partners -->
-      <div class="mb-5">
-         <h5 class="text-muted text-uppercase fw-semibold mb-4" style="letter-spacing: 0.05em;">
-            All Partners
-         </h5>
+         <!-- More Partners -->
+         <div class="mb-5" id="allPartnersSection">
+            <h5 class="text-muted text-uppercase fw-semibold mb-4" style="letter-spacing: 0.05em;">
+               All Partners
+            </h5>
 
-         <div class="row g-4">
-            <!-- Partner Card 4 -->
-            <div class="col-lg-4 col-md-6">
-               <div class="card partner-card h-100 shadow-sm border-0 rounded-4">
-                  <div class="card-body p-4">
-                     <div class="d-flex align-items-start justify-content-between mb-3">
-                        <div class="bg-light rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 60px;">
-                           <i class="bi bi-building fs-3 text-primary"></i>
+            <div class="row g-4" id="allPartners">
+               <!-- Partner Card 4 - Nordic Digital Build (Sweden/Europe) -->
+               <div class="col-lg-4 col-md-6 partner-item" data-region="europe" data-search="nordic digital build stockholm sweden azure power platform scandinavian construction digitalization microsoft cloud">
+                  <div class="card partner-card h-100 shadow-sm border-0 rounded-4">
+                     <div class="card-body p-4">
+                        <div class="d-flex align-items-start justify-content-between mb-3">
+                           <div class="bg-light rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 60px;">
+                              <i class="bi bi-building fs-3 text-primary"></i>
+                           </div>
+                           <span class="badge bg-primary bg-opacity-10 text-primary badge-certification">
+                              <i class="bi bi-award me-1"></i>Gold
+                           </span>
                         </div>
-                        <span class="badge bg-primary bg-opacity-10 text-primary badge-certification">
-                           <i class="bi bi-award me-1"></i>Gold
-                        </span>
-                     </div>
-                     <h5 class="fw-bold mb-1">Nordic Digital Build</h5>
-                     <p class="text-muted small mb-3">
-                        <i class="bi bi-geo-alt me-1"></i>Stockholm, Sweden
-                     </p>
-                     <p class="text-muted mb-3" style="font-size: 0.9rem;">
-                        Scandinavian experts in construction digitalization and Microsoft cloud solutions.
-                     </p>
-                     <div class="d-flex flex-wrap gap-1 mb-3">
-                        <span class="specialization-tag">Azure</span>
-                        <span class="specialization-tag">Power Platform</span>
-                     </div>
-                     <div class="d-flex gap-2 mt-auto">
-                        <a href="#" class="btn btn-sm btn-outline-primary flex-grow-1">View Profile</a>
-                        <a href="#" class="btn btn-sm btn-primary">
-                           <i class="bi bi-envelope"></i>
-                        </a>
+                        <h5 class="fw-bold mb-1">Partner Announcement Soon</h5>
+                        <p class="text-muted small mb-3">
+                           <i class="bi bi-geo-alt me-1"></i>Stockholm, Sweden
+                        </p>
+                        <p class="text-muted mb-3" style="font-size: 0.9rem;">
+                           Scandinavian experts in construction digitalization and Microsoft cloud solutions.
+                        </p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                           <span class="specialization-tag">Azure</span>
+                           <span class="specialization-tag">Power Platform</span>
+                        </div>
+                        <div class="d-flex gap-2 mt-auto">
+                           <a href="mailto:support@flinker.app?subject=Partner%20Directory%20-%20Get%20Notified" class="btn btn-sm btn-outline-primary flex-grow-1">Get Notified</a>
+                        </div>
                      </div>
                   </div>
                </div>
-            </div>
 
-            <!-- Partner Card 5 -->
-            <div class="col-lg-4 col-md-6">
-               <div class="card partner-card h-100 shadow-sm border-0 rounded-4">
-                  <div class="card-body p-4">
-                     <div class="d-flex align-items-start justify-content-between mb-3">
-                        <div class="bg-light rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 60px;">
-                           <i class="bi bi-building fs-3 text-primary"></i>
+               <!-- Partner Card 5 - ConstructTech APAC (Singapore/Asia Pacific) -->
+               <div class="col-lg-4 col-md-6 partner-item" data-region="asia-pacific" data-search="constructtech apac singapore asia pacific integration training construction technology consulting system integration">
+                  <div class="card partner-card h-100 shadow-sm border-0 rounded-4">
+                     <div class="card-body p-4">
+                        <div class="d-flex align-items-start justify-content-between mb-3">
+                           <div class="bg-light rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 60px;">
+                              <i class="bi bi-building fs-3 text-primary"></i>
+                           </div>
+                           <span class="badge bg-primary bg-opacity-10 text-primary badge-certification">
+                              <i class="bi bi-award me-1"></i>Gold
+                           </span>
                         </div>
-                        <span class="badge bg-primary bg-opacity-10 text-primary badge-certification">
-                           <i class="bi bi-award me-1"></i>Gold
-                        </span>
-                     </div>
-                     <h5 class="fw-bold mb-1">ConstructTech APAC</h5>
-                     <p class="text-muted small mb-3">
-                        <i class="bi bi-geo-alt me-1"></i>Singapore
-                     </p>
-                     <p class="text-muted mb-3" style="font-size: 0.9rem;">
-                        Asia-Pacific leader in construction technology consulting and system integration.
-                     </p>
-                     <div class="d-flex flex-wrap gap-1 mb-3">
-                        <span class="specialization-tag">Integration</span>
-                        <span class="specialization-tag">Training</span>
-                     </div>
-                     <div class="d-flex gap-2 mt-auto">
-                        <a href="#" class="btn btn-sm btn-outline-primary flex-grow-1">View Profile</a>
-                        <a href="#" class="btn btn-sm btn-primary">
-                           <i class="bi bi-envelope"></i>
-                        </a>
+                        <h5 class="fw-bold mb-1">Partner Announcement Soon</h5>
+                        <p class="text-muted small mb-3">
+                           <i class="bi bi-geo-alt me-1"></i>Singapore
+                        </p>
+                        <p class="text-muted mb-3" style="font-size: 0.9rem;">
+                           Asia-Pacific leader in construction technology consulting and system integration.
+                        </p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                           <span class="specialization-tag">Integration</span>
+                           <span class="specialization-tag">Training</span>
+                        </div>
+                        <div class="d-flex gap-2 mt-auto">
+                           <a href="mailto:support@flinker.app?subject=Partner%20Directory%20-%20Get%20Notified" class="btn btn-sm btn-outline-primary flex-grow-1">Get Notified</a>
+                        </div>
                      </div>
                   </div>
                </div>
-            </div>
 
-            <!-- Coming Soon Card -->
-            <div class="col-lg-4 col-md-6">
-               <div class="card coming-soon-card h-100 rounded-4">
-                  <div class="card-body p-4 d-flex flex-column align-items-center justify-content-center text-center">
-                     <div class="bg-primary bg-opacity-10 rounded-circle p-3 mb-3">
-                        <i class="bi bi-plus-lg fs-3 text-primary"></i>
+               <!-- Coming Soon Card -->
+               <div class="col-lg-4 col-md-6" id="comingSoonCard">
+                  <div class="card coming-soon-card h-100 rounded-4">
+                     <div class="card-body p-4 d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="bg-primary bg-opacity-10 rounded-circle p-3 mb-3">
+                           <i class="bi bi-plus-lg fs-3 text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">More Partners Coming</h5>
+                        <p class="text-muted small mb-3">
+                           Our partner network is expanding. New certified partners are joining regularly.
+                        </p>
+                        <a href="/partners/" class="btn btn-sm btn-outline-primary">Become a Partner</a>
                      </div>
-                     <h5 class="fw-bold mb-2">More Partners Coming</h5>
-                     <p class="text-muted small mb-3">
-                        Our partner network is expanding. New certified partners are joining regularly.
-                     </p>
-                     <a href="/partners/" class="btn btn-sm btn-outline-primary">Become a Partner</a>
                   </div>
                </div>
             </div>
@@ -363,7 +369,7 @@ disableTopSpacing: true
 </section>
 
 <!-- Why Work with Partners -->
-<section class="py-7 bg-light">
+<section class="py-7">
    <div class="container">
       <div class="row mb-5">
          <div class="col-lg-8 offset-lg-2 text-center">
@@ -399,7 +405,7 @@ disableTopSpacing: true
                   <i class="bi bi-shield-check fs-3 text-primary"></i>
                </div>
                <h5 class="fw-bold">Proven Results</h5>
-               <p class="text-muted small">Partners have successfully deployed Flinker solutions across hundreds of projects.</p>
+               <p class="text-muted small">Partners have successfully deployed Flinker solutions across of projects.</p>
             </div>
          </div>
       </div>
@@ -407,11 +413,11 @@ disableTopSpacing: true
 </section>
 
 <!-- Can't Find Partner CTA -->
-<section class="py-7">
+<section class="py-8 py-lg-9">
    <div class="container">
       <div class="row">
          <div class="col-lg-10 offset-lg-1">
-            <div class="card border-0 rounded-4 overflow-hidden" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <div class="card border-0 rounded-4 overflow-hidden bg-primary">
                <div class="card-body p-5 text-white">
                   <div class="row align-items-center">
                      <div class="col-lg-8">
@@ -434,7 +440,7 @@ disableTopSpacing: true
 </section>
 
 <!-- Become a Partner CTA -->
-<section class="py-7 bg-light">
+<section class="py-7">
    <div class="container">
       <div class="row align-items-center">
          <div class="col-lg-6 mb-4 mb-lg-0">
@@ -448,7 +454,7 @@ disableTopSpacing: true
             <ul class="list-unstyled">
                <li class="mb-2 d-flex align-items-center">
                   <i class="bi bi-check-circle-fill text-success me-2"></i>
-                  <span>Revenue sharing on referrals and implementations</span>
+                  <span>Flexible partnership models tailored to your business</span>
                </li>
                <li class="mb-2 d-flex align-items-center">
                   <i class="bi bi-check-circle-fill text-success me-2"></i>
@@ -460,7 +466,7 @@ disableTopSpacing: true
                </li>
             </ul>
             <a href="/partners/" class="btn btn-primary mt-2">
-               Learn More <i class="bi bi-arrow-right ms-1"></i>
+               Learn More
             </a>
          </div>
          <div class="col-lg-5 offset-lg-1">
@@ -469,8 +475,8 @@ disableTopSpacing: true
                   <div class="row g-3 text-center">
                      <div class="col-6">
                         <div class="stat-card">
-                           <div class="stat-number">20%</div>
-                           <div class="text-muted small">Referral Commission</div>
+                           <div class="stat-number"><i class="bi bi-globe2"></i></div>
+                           <div class="text-muted small">Global Reach</div>
                         </div>
                      </div>
                      <div class="col-6">
@@ -481,8 +487,8 @@ disableTopSpacing: true
                      </div>
                      <div class="col-6">
                         <div class="stat-card">
-                           <div class="stat-number">Free</div>
-                           <div class="text-muted small">Certification</div>
+                           <div class="stat-number"><i class="bi bi-tools"></i></div>
+                           <div class="text-muted small">Sales Enablement</div>
                         </div>
                      </div>
                      <div class="col-6">
@@ -498,3 +504,142 @@ disableTopSpacing: true
       </div>
    </div>
 </section>
+
+<!-- Partner Filter JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+   const searchInput = document.getElementById('partnerSearch');
+   const searchBtn = document.getElementById('searchBtn');
+   const filterBtns = document.querySelectorAll('.filter-btn');
+   const partnerItems = document.querySelectorAll('.partner-item');
+   const noResults = document.getElementById('noResults');
+   const clearFiltersBtn = document.getElementById('clearFilters');
+   const partnersContainer = document.getElementById('partnersContainer');
+   const featuredSection = document.getElementById('featuredSection');
+   const allPartnersSection = document.getElementById('allPartnersSection');
+   const comingSoonCard = document.getElementById('comingSoonCard');
+
+   let currentRegion = 'all';
+   let currentSearch = '';
+
+   // Filter function
+   function filterPartners() {
+      let visibleCount = 0;
+      let featuredVisible = 0;
+      let allVisible = 0;
+
+      partnerItems.forEach(item => {
+         const region = item.dataset.region;
+         const searchText = item.dataset.search.toLowerCase();
+
+         const matchesRegion = currentRegion === 'all' || region === currentRegion;
+         const matchesSearch = currentSearch === '' || searchText.includes(currentSearch.toLowerCase());
+
+         if (matchesRegion && matchesSearch) {
+            item.classList.remove('d-none');
+            visibleCount++;
+            // Count by section
+            if (item.closest('#featuredPartners')) {
+               featuredVisible++;
+            } else {
+               allVisible++;
+            }
+         } else {
+            item.classList.add('d-none');
+         }
+      });
+
+      // Show/hide sections based on visible partners
+      if (featuredVisible === 0) {
+         featuredSection.classList.add('d-none');
+      } else {
+         featuredSection.classList.remove('d-none');
+      }
+
+      if (allVisible === 0 && visibleCount > 0) {
+         allPartnersSection.classList.add('d-none');
+      } else {
+         allPartnersSection.classList.remove('d-none');
+      }
+
+      // Show/hide "Coming Soon" card (hide when filtering)
+      if (currentRegion !== 'all' || currentSearch !== '') {
+         comingSoonCard.classList.add('d-none');
+      } else {
+         comingSoonCard.classList.remove('d-none');
+      }
+
+      // Show/hide no results message
+      if (visibleCount === 0) {
+         noResults.classList.remove('d-none');
+         partnersContainer.classList.add('d-none');
+      } else {
+         noResults.classList.add('d-none');
+         partnersContainer.classList.remove('d-none');
+      }
+   }
+
+   // Region filter buttons
+   filterBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+         // Update active state
+         filterBtns.forEach(b => b.classList.remove('active'));
+         this.classList.add('active');
+
+         currentRegion = this.dataset.region;
+         filterPartners();
+
+         // Smooth scroll to partner list
+         document.getElementById('partnerListSection').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+         });
+      });
+   });
+
+   // Search functionality
+   function performSearch() {
+      currentSearch = searchInput.value.trim();
+      filterPartners();
+
+      // Scroll to results
+      if (currentSearch !== '') {
+         document.getElementById('partnerListSection').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+         });
+      }
+   }
+
+   searchBtn.addEventListener('click', performSearch);
+
+   searchInput.addEventListener('keyup', function(e) {
+      if (e.key === 'Enter') {
+         performSearch();
+      } else {
+         // Live search with debounce
+         clearTimeout(this.searchTimeout);
+         this.searchTimeout = setTimeout(() => {
+            currentSearch = this.value.trim();
+            filterPartners();
+         }, 300);
+      }
+   });
+
+   // Clear filters
+   clearFiltersBtn.addEventListener('click', function() {
+      currentRegion = 'all';
+      currentSearch = '';
+      searchInput.value = '';
+
+      filterBtns.forEach(btn => {
+         btn.classList.remove('active');
+         if (btn.dataset.region === 'all') {
+            btn.classList.add('active');
+         }
+      });
+
+      filterPartners();
+   });
+});
+</script>
