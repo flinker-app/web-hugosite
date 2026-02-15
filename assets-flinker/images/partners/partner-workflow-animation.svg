@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <style>
+    /* Data flow particles */
+    .particle {
+      animation: flowRight 3s ease-in-out infinite;
+    }
+    .particle-2 { animation-delay: 0.5s; }
+    .particle-3 { animation-delay: 1s; }
+    .particle-4 { animation-delay: 1.5s; }
+    .particle-left {
+      animation: flowLeft 3s ease-in-out infinite;
+    }
+    .particle-left-2 { animation-delay: 0.7s; }
+    .particle-left-3 { animation-delay: 1.4s; }
+
+    @keyframes flowRight {
+      0% { transform: translateX(0); opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { transform: translateX(100px); opacity: 0; }
+    }
+
+    @keyframes flowLeft {
+      0% { transform: translateX(0); opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { transform: translateX(-100px); opacity: 0; }
+    }
+
+    /* Gear rotation */
+    .gear {
+      transform-origin: center;
+      animation: rotate 8s linear infinite;
+    }
+    .gear-reverse {
+      animation: rotateReverse 6s linear infinite;
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes rotateReverse {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(-360deg); }
+    }
+
+    /* Pulse effect for central hub */
+    .pulse-ring {
+      transform-origin: center;
+      animation: pulse 2.5s ease-out infinite;
+    }
+    .pulse-ring-2 {
+      animation-delay: 0.8s;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.6; }
+      100% { transform: scale(1.4); opacity: 0; }
+    }
+
+    /* Node highlight */
+    .node-glow {
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    .node-glow-2 { animation-delay: 0.5s; }
+    .node-glow-3 { animation-delay: 1s; }
+
+    @keyframes glow {
+      from { opacity: 0.3; }
+      to { opacity: 0.7; }
+    }
+
+    /* Connection lines */
+    .connection-line {
+      stroke-dasharray: 8 4;
+      animation: dash 1.5s linear infinite;
+    }
+
+    @keyframes dash {
+      to { stroke-dashoffset: -24; }
+    }
+  </style>
+
+  <!-- Background subtle grid -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e9ecef" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d6efd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a58ca;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lightBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d6efd;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#0d6efd;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#grid)" opacity="0.5"/>
+
+  <!-- Connection lines from left nodes to center -->
+  <path class="connection-line" d="M 80 120 Q 180 120 220 200" stroke="#0d6efd" stroke-width="2" fill="none" opacity="0.4"/>
+  <path class="connection-line" d="M 80 200 L 220 200" stroke="#0d6efd" stroke-width="2" fill="none" opacity="0.4"/>
+  <path class="connection-line" d="M 80 280 Q 180 280 220 200" stroke="#0d6efd" stroke-width="2" fill="none" opacity="0.4"/>
+
+  <!-- Connection lines from center to right nodes -->
+  <path class="connection-line" d="M 380 200 Q 420 120 520 120" stroke="#0d6efd" stroke-width="2" fill="none" opacity="0.4"/>
+  <path class="connection-line" d="M 380 200 L 520 200" stroke="#0d6efd" stroke-width="2" fill="none" opacity="0.4"/>
+  <path class="connection-line" d="M 380 200 Q 420 280 520 280" stroke="#0d6efd" stroke-width="2" fill="none" opacity="0.4"/>
+
+  <!-- Left side: Data sources -->
+  <!-- Node 1: Document -->
+  <g transform="translate(50, 90)">
+    <circle class="node-glow" cx="30" cy="30" r="35" fill="url(#lightBlueGrad)"/>
+    <rect x="12" y="10" width="36" height="44" rx="3" fill="white" stroke="#0d6efd" stroke-width="2"/>
+    <line x1="18" y1="22" x2="42" y2="22" stroke="#0d6efd" stroke-width="1.5" opacity="0.5"/>
+    <line x1="18" y1="30" x2="38" y2="30" stroke="#0d6efd" stroke-width="1.5" opacity="0.5"/>
+    <line x1="18" y1="38" x2="42" y2="38" stroke="#0d6efd" stroke-width="1.5" opacity="0.5"/>
+  </g>
+
+  <!-- Node 2: Building/BIM -->
+  <g transform="translate(50, 170)">
+    <circle class="node-glow node-glow-2" cx="30" cy="30" r="35" fill="url(#lightBlueGrad)"/>
+    <path d="M30 8 L50 24 L50 52 L10 52 L10 24 Z" fill="white" stroke="#0d6efd" stroke-width="2"/>
+    <rect x="22" y="36" width="16" height="16" fill="#0d6efd" opacity="0.3"/>
+    <line x1="30" y1="24" x2="30" y2="36" stroke="#0d6efd" stroke-width="1.5"/>
+    <line x1="22" y1="30" x2="38" y2="30" stroke="#0d6efd" stroke-width="1.5"/>
+  </g>
+
+  <!-- Node 3: Data/Database -->
+  <g transform="translate(50, 250)">
+    <circle class="node-glow node-glow-3" cx="30" cy="30" r="35" fill="url(#lightBlueGrad)"/>
+    <ellipse cx="30" cy="18" rx="20" ry="8" fill="white" stroke="#0d6efd" stroke-width="2"/>
+    <path d="M10 18 L10 42 Q10 50 30 50 Q50 50 50 42 L50 18" fill="white" stroke="#0d6efd" stroke-width="2"/>
+    <ellipse cx="30" cy="30" rx="20" ry="8" fill="none" stroke="#0d6efd" stroke-width="1.5" opacity="0.4"/>
+  </g>
+
+  <!-- Data particles flowing right -->
+  <g transform="translate(120, 118)">
+    <circle class="particle" cx="0" cy="0" r="4" fill="#0d6efd"/>
+    <circle class="particle particle-2" cx="0" cy="0" r="4" fill="#0d6efd"/>
+  </g>
+  <g transform="translate(120, 198)">
+    <circle class="particle particle-3" cx="0" cy="0" r="4" fill="#0d6efd"/>
+    <circle class="particle particle-4" cx="0" cy="0" r="4" fill="#0d6efd"/>
+  </g>
+  <g transform="translate(120, 278)">
+    <circle class="particle particle-2" cx="0" cy="0" r="4" fill="#0d6efd"/>
+    <circle class="particle particle-4" cx="0" cy="0" r="4" fill="#0d6efd"/>
+  </g>
+
+  <!-- Center: Configuration Hub with Gears -->
+  <g transform="translate(300, 200)">
+    <!-- Pulse rings -->
+    <circle class="pulse-ring" cx="0" cy="0" r="60" fill="none" stroke="#0d6efd" stroke-width="2"/>
+    <circle class="pulse-ring pulse-ring-2" cx="0" cy="0" r="60" fill="none" stroke="#0d6efd" stroke-width="2"/>
+
+    <!-- Main hub circle -->
+    <circle cx="0" cy="0" r="70" fill="white" stroke="#0d6efd" stroke-width="3"/>
+    <circle cx="0" cy="0" r="60" fill="url(#lightBlueGrad)"/>
+
+    <!-- Gear 1 (main) -->
+    <g class="gear" transform="translate(-15, -10)">
+      <circle cx="0" cy="0" r="22" fill="#0d6efd"/>
+      <circle cx="0" cy="0" r="8" fill="white"/>
+      <rect x="-4" y="-28" width="8" height="12" rx="2" fill="#0d6efd"/>
+      <rect x="-4" y="16" width="8" height="12" rx="2" fill="#0d6efd"/>
+      <rect x="-28" y="-4" width="12" height="8" rx="2" fill="#0d6efd"/>
+      <rect x="16" y="-4" width="12" height="8" rx="2" fill="#0d6efd"/>
+      <rect x="12" y="-24" width="8" height="10" rx="2" fill="#0d6efd" transform="rotate(45)"/>
+      <rect x="12" y="14" width="8" height="10" rx="2" fill="#0d6efd" transform="rotate(-45)"/>
+      <rect x="-20" y="14" width="8" height="10" rx="2" fill="#0d6efd" transform="rotate(45)"/>
+      <rect x="-20" y="-24" width="8" height="10" rx="2" fill="#0d6efd" transform="rotate(-45)"/>
+    </g>
+
+    <!-- Gear 2 (smaller, interlocking) -->
+    <g class="gear gear-reverse" transform="translate(22, 18)">
+      <circle cx="0" cy="0" r="15" fill="#0a58ca"/>
+      <circle cx="0" cy="0" r="5" fill="white"/>
+      <rect x="-3" y="-20" width="6" height="8" rx="1" fill="#0a58ca"/>
+      <rect x="-3" y="12" width="6" height="8" rx="1" fill="#0a58ca"/>
+      <rect x="-20" y="-3" width="8" height="6" rx="1" fill="#0a58ca"/>
+      <rect x="12" y="-3" width="8" height="6" rx="1" fill="#0a58ca"/>
+    </g>
+
+    <!-- M365 hint text -->
+    <text x="0" y="50" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#0d6efd" font-weight="600">M365</text>
+  </g>
+
+  <!-- Right side: Outputs/Results -->
+  <!-- Node 4: Workflow/Process -->
+  <g transform="translate(490, 90)">
+    <circle class="node-glow" cx="30" cy="30" r="35" fill="url(#lightBlueGrad)"/>
+    <rect x="10" y="14" width="40" height="10" rx="3" fill="white" stroke="#0d6efd" stroke-width="2"/>
+    <rect x="10" y="28" width="40" height="10" rx="3" fill="white" stroke="#0d6efd" stroke-width="2"/>
+    <rect x="10" y="42" width="40" height="10" rx="3" fill="white" stroke="#0d6efd" stroke-width="2"/>
+    <path d="M26 24 L30 28 L34 24" stroke="#0d6efd" stroke-width="2" fill="none"/>
+    <path d="M26 38 L30 42 L34 38" stroke="#0d6efd" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Node 5: Team/SharePoint -->
+  <g transform="translate(490, 170)">
+    <circle class="node-glow node-glow-2" cx="30" cy="30" r="35" fill="url(#lightBlueGrad)"/>
+    <circle cx="20" cy="22" r="8" fill="white" stroke="#0d6efd" stroke-width="2"/>
+    <circle cx="40" cy="22" r="8" fill="white" stroke="#0d6efd" stroke-width="2"/>
+    <circle cx="30" cy="40" r="8" fill="white" stroke="#0d6efd" stroke-width="2"/>
+    <line x1="25" y1="28" x2="28" y2="34" stroke="#0d6efd" stroke-width="1.5"/>
+    <line x1="35" y1="28" x2="32" y2="34" stroke="#0d6efd" stroke-width="1.5"/>
+    <line x1="26" y1="22" x2="34" y2="22" stroke="#0d6efd" stroke-width="1.5"/>
+  </g>
+
+  <!-- Node 6: Analytics/Dashboard -->
+  <g transform="translate(490, 250)">
+    <circle class="node-glow node-glow-3" cx="30" cy="30" r="35" fill="url(#lightBlueGrad)"/>
+    <rect x="10" y="12" width="40" height="36" rx="3" fill="white" stroke="#0d6efd" stroke-width="2"/>
+    <rect x="16" y="28" width="6" height="14" fill="#0d6efd" opacity="0.6"/>
+    <rect x="27" y="22" width="6" height="20" fill="#0d6efd" opacity="0.8"/>
+    <rect x="38" y="32" width="6" height="10" fill="#0d6efd" opacity="0.4"/>
+    <line x1="14" y1="18" x2="46" y2="18" stroke="#0d6efd" stroke-width="1" opacity="0.3"/>
+  </g>
+
+  <!-- Data particles flowing to right nodes -->
+  <g transform="translate(480, 118)">
+    <circle class="particle-left" cx="0" cy="0" r="4" fill="#0d6efd"/>
+    <circle class="particle-left particle-left-2" cx="0" cy="0" r="4" fill="#0d6efd"/>
+  </g>
+  <g transform="translate(480, 198)">
+    <circle class="particle-left particle-left-3" cx="0" cy="0" r="4" fill="#0d6efd"/>
+    <circle class="particle-left" cx="0" cy="0" r="4" fill="#0d6efd"/>
+  </g>
+  <g transform="translate(480, 278)">
+    <circle class="particle-left particle-left-2" cx="0" cy="0" r="4" fill="#0d6efd"/>
+    <circle class="particle-left particle-left-3" cx="0" cy="0" r="4" fill="#0d6efd"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="80" y="370" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6c757d">Data Sources</text>
+  <text x="300" y="370" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6c757d">Configure & Process</text>
+  <text x="520" y="370" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6c757d">Workflows & Insights</text>
+</svg>

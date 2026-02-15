@@ -3,72 +3,7 @@
 &lt;h3 id="conformance-status">Conformance status&lt;/h3>
 &lt;p>We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA. These guidelines explain how to make web content more accessible for people with disabilities and more user-friendly for everyone.&lt;/p>
 &lt;h3 id="measures-we-take">Measures we take&lt;/h3>
-&lt;p>Flinker takes the following measures to ensure accessibility:&lt;/p></description></item><item><title>Bentley Systems Integration</title><link>https://flinker.app/integrations/bentley/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/integrations/bentley/</guid><description>&lt;!-- Hero Section -->
-&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
- &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
- &lt;div class="container">
- &lt;div class="row align-items-center py-lg-8">
- &lt;div class="col-lg-6 col-12">
- &lt;div class="text-center text-lg-start">
- &lt;div class="d-flex align-items-center justify-content-center justify-content-lg-start mb-3">
- &lt;i class="bi bi-buildings fs-2 text-primary me-2">&lt;/i>
- &lt;span class="badge bg-primary">Technology Partner&lt;/span>
- &lt;/div>
- &lt;h1 class="display-5">Bentley Systems&lt;/h1>
- &lt;p class="lead">Connect Flinker with Bentley's infrastructure engineering platforms. Access iTwin data and ProjectWise documents.&lt;/p>
- &lt;div class="mt-5">
- &lt;a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-primary">Contact Us&lt;/a>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;div class="col-lg-6 col-12">
- &lt;div class="text-center">
- &lt;i class="bi bi-buildings display-1 text-primary opacity-50">&lt;/i>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
-&lt;/section>
-
-&lt;!-- Integration Capabilities -->
-&lt;section class="py-9">
- &lt;div class="container">
- &lt;div class="row mb-8">
- &lt;div class="col-lg-8 offset-lg-2 text-center">
- &lt;h2 class="mb-3">Integration Capabilities&lt;/h2>
- &lt;p class="text-muted">Leverage Bentley's powerful infrastructure engineering tools alongside Flinker's Microsoft 365 integration.&lt;/p></description></item><item><title>Developers</title><link>https://flinker.app/developers/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/</guid><description>&lt;!-- Hero Section -->
-&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
- &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
- &lt;div class="container">
- &lt;div class="row align-items-center py-lg-8">
- &lt;div class="col-lg-6 col-12">
- &lt;div class="text-center text-lg-start">
- &lt;div class="mb-6">
- &lt;h1 class="display-5">Build with Flinker&lt;/h1>
- &lt;p class="lead">Integrate powerful IFC viewing and AI-powered data extraction into your applications with our APIs, SDKs, and white-label solutions.&lt;/p>
- &lt;/div>
- &lt;div class="mb-5">
- &lt;a href="https://docs.flinker.app/" class="btn btn-primary me-2" target="_blank">Documentation&lt;/a>
- &lt;a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-outline-dark">Talk to Sales&lt;/a>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;div class="col-lg-6 col-12">
- &lt;div class="text-center">
- &lt;i class="bi bi-code-square display-1 text-primary opacity-50">&lt;/i>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
-&lt;/section>
-
-&lt;!-- Core Products -->
-&lt;section class="py-9">
- &lt;div class="container">
- &lt;div class="row mb-8">
- &lt;div class="col-lg-8 offset-lg-2 text-center">
- &lt;h2 class="mb-3">Core Technologies&lt;/h2>
- &lt;p class="lead text-muted">Embed our battle-tested IFC technologies into your products.&lt;/p></description></item><item><title>IFC Copilot API</title><link>https://flinker.app/developers/ifc-copilot/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-copilot/</guid><description>&lt;!-- Hero Section -->
+&lt;p>Flinker takes the following measures to ensure accessibility:&lt;/p></description></item><item><title>IFC Copilot API</title><link>https://flinker.app/developers/ifc-copilot/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-copilot/</guid><description>&lt;!-- Hero Section -->
 &lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
  &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
  &lt;div class="container">
@@ -86,7 +21,172 @@
  &lt;/div>
  &lt;div class="col-lg-6 col-12">
  &lt;div class="text-center">
- &lt;i class="bi bi-chat-dots display-1 text-primary opacity-50">&lt;/i>
+ &lt;svg width="380" height="300" viewBox="0 0 380 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+ &lt;defs>
+ &lt;!-- Flinker brand gradients -->
+ &lt;linearGradient id="flinkerPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+ &lt;stop offset="0%" style="stop-color:#0779FF;stop-opacity:1" />
+ &lt;stop offset="100%" style="stop-color:#0560cc;stop-opacity:1" />
+ &lt;/linearGradient>
+ &lt;linearGradient id="flinkerLight" x1="0%" y1="0%" x2="100%" y2="100%">
+ &lt;stop offset="0%" style="stop-color:#96BFFF;stop-opacity:0.7" />
+ &lt;stop offset="100%" style="stop-color:#0779FF;stop-opacity:0.4" />
+ &lt;/linearGradient>
+ &lt;linearGradient id="flinkerGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+ &lt;stop offset="0%" style="stop-color:#0779FF;stop-opacity:0.15" />
+ &lt;stop offset="100%" style="stop-color:#96BFFF;stop-opacity:0.05" />
+ &lt;/linearGradient>
+ &lt;linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+ &lt;stop offset="0%" style="stop-color:#0779FF;stop-opacity:1" />
+ &lt;stop offset="50%" style="stop-color:#96BFFF;stop-opacity:0.8" />
+ &lt;stop offset="100%" style="stop-color:#0560cc;stop-opacity:1" />
+ &lt;/linearGradient>
+ &lt;linearGradient id="codeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+ &lt;stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+ &lt;stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+ &lt;/linearGradient>
+ &lt;filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+ &lt;feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+ &lt;feMerge>
+ &lt;feMergeNode in="coloredBlur"/>
+ &lt;feMergeNode in="SourceGraphic"/>
+ &lt;/feMerge>
+ &lt;/filter>
+ &lt;filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+ &lt;feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0779FF" flood-opacity="0.25"/>
+ &lt;/filter>
+ &lt;/defs>
+
+ &lt;!-- Background glow -->
+ &lt;ellipse cx="190" cy="150" rx="150" ry="120" fill="url(#flinkerGlow)" />
+
+ &lt;!-- Chat bubble / Natural Language Input (left) -->
+ &lt;g transform="translate(25, 45)" filter="url(#dropShadow)">
+ &lt;rect x="0" y="0" width="120" height="75" rx="12" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+ &lt;polygon points="25,75 35,90 45,75" fill="white" stroke="#e2e8f0" stroke-width="1.5" stroke-linejoin="round"/>
+ &lt;line x1="25" y1="75" x2="45" y2="75" stroke="white" stroke-width="2"/>
+ &lt;!-- Text lines representing user query -->
+ &lt;rect x="15" y="18" width="70" height="6" rx="3" fill="#0779FF" opacity="0.8"/>
+ &lt;rect x="15" y="30" width="90" height="6" rx="3" fill="#96BFFF" opacity="0.6"/>
+ &lt;rect x="15" y="42" width="55" height="6" rx="3" fill="#96BFFF" opacity="0.4"/>
+ &lt;!-- Question mark icon -->
+ &lt;circle cx="100" cy="55" r="12" fill="url(#flinkerPrimary)" opacity="0.15"/>
+ &lt;text x="100" y="60" fill="#0779FF" font-size="14" text-anchor="middle" font-weight="bold" font-family="system-ui">?&lt;/text>
+ &lt;/g>
+
+ &lt;!-- Central AI Processing Element -->
+ &lt;g transform="translate(155, 85)">
+ &lt;!-- Outer ring - rotating effect -->
+ &lt;circle cx="45" cy="55" r="52" stroke="url(#flinkerLight)" stroke-width="2" fill="none" stroke-dasharray="8,6" opacity="0.6">
+ &lt;animateTransform attributeName="transform" type="rotate" from="0 45 55" to="360 45 55" dur="20s" repeatCount="indefinite"/>
+ &lt;/circle>
+ &lt;!-- Inner glow circle -->
+ &lt;circle cx="45" cy="55" r="42" fill="url(#flinkerGlow)" />
+ &lt;!-- AI brain/neural icon -->
+ &lt;circle cx="45" cy="55" r="35" fill="white" stroke="url(#flinkerPrimary)" stroke-width="2.5" filter="url(#dropShadow)"/>
+ &lt;!-- Neural network nodes -->
+ &lt;g filter="url(#softGlow)">
+ &lt;!-- Center node -->
+ &lt;circle cx="45" cy="55" r="6" fill="url(#flinkerPrimary)"/>
+ &lt;!-- Surrounding nodes -->
+ &lt;circle cx="30" cy="42" r="4" fill="#0779FF"/>
+ &lt;circle cx="60" cy="42" r="4" fill="#0779FF"/>
+ &lt;circle cx="28" cy="62" r="4" fill="#0779FF"/>
+ &lt;circle cx="62" cy="62" r="4" fill="#0779FF"/>
+ &lt;circle cx="45" cy="75" r="4" fill="#0779FF"/>
+ &lt;circle cx="45" cy="35" r="4" fill="#0779FF"/>
+ &lt;!-- Connection lines -->
+ &lt;line x1="45" y1="55" x2="30" y2="42" stroke="#96BFFF" stroke-width="1.5"/>
+ &lt;line x1="45" y1="55" x2="60" y2="42" stroke="#96BFFF" stroke-width="1.5"/>
+ &lt;line x1="45" y1="55" x2="28" y2="62" stroke="#96BFFF" stroke-width="1.5"/>
+ &lt;line x1="45" y1="55" x2="62" y2="62" stroke="#96BFFF" stroke-width="1.5"/>
+ &lt;line x1="45" y1="55" x2="45" y2="75" stroke="#96BFFF" stroke-width="1.5"/>
+ &lt;line x1="45" y1="55" x2="45" y2="35" stroke="#96BFFF" stroke-width="1.5"/>
+ &lt;!-- Cross connections -->
+ &lt;line x1="30" y1="42" x2="60" y2="42" stroke="#96BFFF" stroke-width="1" opacity="0.5"/>
+ &lt;line x1="28" y1="62" x2="62" y2="62" stroke="#96BFFF" stroke-width="1" opacity="0.5"/>
+ &lt;/g>
+ &lt;!-- Pulsing effect -->
+ &lt;circle cx="45" cy="55" r="35" fill="none" stroke="#0779FF" stroke-width="1" opacity="0.5">
+ &lt;animate attributeName="r" values="35;45;35" dur="2s" repeatCount="indefinite"/>
+ &lt;animate attributeName="opacity" values="0.5;0;0.5" dur="2s" repeatCount="indefinite"/>
+ &lt;/circle>
+ &lt;/g>
+
+ &lt;!-- 3D IFC Building (behind/integrated with AI) -->
+ &lt;g transform="translate(170, 175)">
+ &lt;!-- Simple 3D building -->
+ &lt;path d="M30 15 L55 5 L55 55 L30 65 Z" fill="#0560cc" opacity="0.6"/>
+ &lt;path d="M5 25 L30 15 L30 65 L5 75 Z" fill="url(#flinkerPrimary)" opacity="0.7"/>
+ &lt;path d="M5 25 L30 15 L55 5 L30 15 Z" fill="#96BFFF" opacity="0.5"/>
+ &lt;!-- Windows -->
+ &lt;rect x="10" y="35" width="8" height="10" rx="1" fill="#96BFFF" opacity="0.6"/>
+ &lt;rect x="10" y="50" width="8" height="10" rx="1" fill="#96BFFF" opacity="0.6"/>
+ &lt;rect x="22" y="35" width="6" height="8" rx="1" fill="#96BFFF" opacity="0.4"/>
+ &lt;/g>
+
+ &lt;!-- JSON/Code Output (right) -->
+ &lt;g transform="translate(250, 160)" filter="url(#dropShadow)">
+ &lt;rect x="0" y="0" width="105" height="100" rx="8" fill="url(#codeGradient)"/>
+ &lt;!-- Code header bar -->
+ &lt;rect x="0" y="0" width="105" height="22" rx="8" fill="#334155"/>
+ &lt;rect x="0" y="14" width="105" height="8" fill="#334155"/>
+ &lt;!-- Dots -->
+ &lt;circle cx="14" cy="11" r="4" fill="#ef4444"/>
+ &lt;circle cx="28" cy="11" r="4" fill="#fbbf24"/>
+ &lt;circle cx="42" cy="11" r="4" fill="#22c55e"/>
+ &lt;!-- JSON content -->
+ &lt;text x="10" y="40" fill="#94a3b8" font-size="10" font-family="monospace">{&lt;/text>
+ &lt;text x="16" y="54" fill="#0779FF" font-size="10" font-family="monospace">"walls"&lt;/text>
+ &lt;text x="60" y="54" fill="#94a3b8" font-size="10" font-family="monospace">:&lt;/text>
+ &lt;text x="68" y="54" fill="#22c55e" font-size="10" font-family="monospace">247&lt;/text>
+ &lt;text x="16" y="70" fill="#0779FF" font-size="10" font-family="monospace">"doors"&lt;/text>
+ &lt;text x="62" y="70" fill="#94a3b8" font-size="10" font-family="monospace">:&lt;/text>
+ &lt;text x="70" y="70" fill="#22c55e" font-size="10" font-family="monospace">58&lt;/text>
+ &lt;text x="16" y="86" fill="#0779FF" font-size="10" font-family="monospace">"area"&lt;/text>
+ &lt;text x="54" y="86" fill="#94a3b8" font-size="10" font-family="monospace">:&lt;/text>
+ &lt;text x="62" y="86" fill="#22c55e" font-size="10" font-family="monospace">1250&lt;/text>
+ &lt;text x="10" y="96" fill="#94a3b8" font-size="10" font-family="monospace">}&lt;/text>
+ &lt;/g>
+
+ &lt;!-- Flow arrows -->
+ &lt;g filter="url(#softGlow)">
+ &lt;!-- Arrow from chat to AI -->
+ &lt;path d="M145 95 Q160 95 162 110" stroke="#0779FF" stroke-width="2" fill="none" stroke-dasharray="5,3">
+ &lt;animate attributeName="stroke-dashoffset" values="16;0" dur="1s" repeatCount="indefinite"/>
+ &lt;/path>
+ &lt;polygon points="162,118 157,108 167,108" fill="#0779FF"/>
+
+ &lt;!-- Arrow from AI to JSON output -->
+ &lt;path d="M238 150 Q250 155 252 168" stroke="#0779FF" stroke-width="2" fill="none" stroke-dasharray="5,3">
+ &lt;animate attributeName="stroke-dashoffset" values="16;0" dur="1s" repeatCount="indefinite"/>
+ &lt;/path>
+ &lt;polygon points="255,175 248,167 258,165" fill="#0779FF"/>
+ &lt;/g>
+
+ &lt;!-- Labels -->
+ &lt;g>
+ &lt;text x="85" y="155" fill="#64748b" font-size="11" text-anchor="middle" font-family="system-ui" font-weight="500">Natural Language&lt;/text>
+ &lt;text x="200" y="50" fill="#64748b" font-size="11" text-anchor="middle" font-family="system-ui" font-weight="500">AI Analysis&lt;/text>
+ &lt;text x="302" y="275" fill="#64748b" font-size="11" text-anchor="middle" font-family="system-ui" font-weight="500">Structured Data&lt;/text>
+ &lt;/g>
+
+ &lt;!-- Floating data particles -->
+ &lt;g opacity="0.6">
+ &lt;circle cx="120" cy="180" r="2" fill="#0779FF">
+ &lt;animate attributeName="cy" values="180;160;180" dur="3s" repeatCount="indefinite"/>
+ &lt;animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+ &lt;/circle>
+ &lt;circle cx="260" cy="135" r="2" fill="#96BFFF">
+ &lt;animate attributeName="cy" values="135;120;135" dur="2.5s" repeatCount="indefinite"/>
+ &lt;animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.5s" repeatCount="indefinite"/>
+ &lt;/circle>
+ &lt;circle cx="320" cy="145" r="2" fill="#0779FF">
+ &lt;animate attributeName="cy" values="145;130;145" dur="2s" repeatCount="indefinite"/>
+ &lt;animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite"/>
+ &lt;/circle>
+ &lt;/g>
+ &lt;/svg>
  &lt;/div>
  &lt;/div>
  &lt;/div>
@@ -125,7 +225,134 @@
  &lt;/div>
  &lt;div class="col-lg-6 col-12">
  &lt;div class="text-center">
- &lt;i class="bi bi-box display-1 text-primary opacity-50">&lt;/i>
+ &lt;svg width="340" height="280" viewBox="0 0 340 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+ &lt;defs>
+ &lt;!-- Flinker brand gradients -->
+ &lt;linearGradient id="flinkerPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+ &lt;stop offset="0%" style="stop-color:#0779FF;stop-opacity:1" />
+ &lt;stop offset="100%" style="stop-color:#0560cc;stop-opacity:1" />
+ &lt;/linearGradient>
+ &lt;linearGradient id="flinkerLight" x1="0%" y1="0%" x2="100%" y2="100%">
+ &lt;stop offset="0%" style="stop-color:#96BFFF;stop-opacity:0.7" />
+ &lt;stop offset="100%" style="stop-color:#0779FF;stop-opacity:0.4" />
+ &lt;/linearGradient>
+ &lt;linearGradient id="flinkerGround" x1="0%" y1="0%" x2="0%" y2="100%">
+ &lt;stop offset="0%" style="stop-color:#0779FF;stop-opacity:0.25" />
+ &lt;stop offset="100%" style="stop-color:#96BFFF;stop-opacity:0.05" />
+ &lt;/linearGradient>
+ &lt;linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+ &lt;stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+ &lt;stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+ &lt;/linearGradient>
+ &lt;filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+ &lt;feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+ &lt;feMerge>
+ &lt;feMergeNode in="coloredBlur"/>
+ &lt;feMergeNode in="SourceGraphic"/>
+ &lt;/feMerge>
+ &lt;/filter>
+ &lt;filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+ &lt;feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0779FF" flood-opacity="0.2"/>
+ &lt;/filter>
+ &lt;/defs>
+
+ &lt;!-- Ground reflection -->
+ &lt;ellipse cx="170" cy="255" rx="130" ry="20" fill="url(#flinkerGround)" />
+
+ &lt;!-- Monitor/Screen frame -->
+ &lt;g filter="url(#shadow)">
+ &lt;rect x="45" y="35" width="250" height="175" rx="8" fill="#2d2d2d"/>
+ &lt;rect x="50" y="40" width="240" height="165" rx="5" fill="url(#screenGrad)"/>
+ &lt;/g>
+
+ &lt;!-- Monitor stand -->
+ &lt;path d="M150 210 L190 210 L195 235 L145 235 Z" fill="#3d3d3d"/>
+ &lt;ellipse cx="170" cy="238" rx="35" ry="6" fill="#2d2d2d"/>
+
+ &lt;!-- 3D Building inside screen - Main Tower -->
+ &lt;g transform="translate(95, 55)">
+ &lt;!-- Back face -->
+ &lt;path d="M70 25 L120 42 L120 145 L70 128 Z" fill="#0560cc" opacity="0.8"/>
+ &lt;!-- Front face -->
+ &lt;path d="M70 25 L70 128 L20 145 L20 42 Z" fill="url(#flinkerPrimary)"/>
+ &lt;!-- Top face -->
+ &lt;path d="M20 42 L70 25 L120 42 L70 59 Z" fill="#96BFFF"/>
+
+ &lt;!-- Windows grid on front face -->
+ &lt;g opacity="0.9">
+ &lt;rect x="28" y="55" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
+ &lt;rect x="48" y="55" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
+ &lt;rect x="28" y="78" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
+ &lt;rect x="48" y="78" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
+ &lt;rect x="28" y="101" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
+ &lt;rect x="48" y="101" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
+ &lt;rect x="28" y="124" width="12" height="14" rx="1" fill="url(#flinkerLight)"/>
+ &lt;rect x="48" y="124" width="12" height="14" rx="1" fill="url(#flinkerLight)"/>
+ &lt;/g>
+ &lt;/g>
+
+ &lt;!-- Smaller building - left side -->
+ &lt;g transform="translate(60, 105)">
+ &lt;path d="M35 18 L60 27 L60 95 L35 86 Z" fill="#0560cc" opacity="0.7"/>
+ &lt;path d="M35 18 L35 86 L10 95 L10 27 Z" fill="url(#flinkerPrimary)" opacity="0.85"/>
+ &lt;path d="M10 27 L35 18 L60 27 L35 36 Z" fill="#96BFFF" opacity="0.85"/>
+ &lt;rect x="16" y="40" width="8" height="10" rx="1" fill="url(#flinkerLight)" opacity="0.8"/>
+ &lt;rect x="16" y="56" width="8" height="10" rx="1" fill="url(#flinkerLight)" opacity="0.8"/>
+ &lt;rect x="16" y="72" width="8" height="10" rx="1" fill="url(#flinkerLight)" opacity="0.8"/>
+ &lt;/g>
+
+ &lt;!-- Wireframe/measurement overlays on screen -->
+ &lt;g filter="url(#softGlow)">
+ &lt;!-- Horizontal measurement -->
+ &lt;line x1="70" y1="190" x2="140" y2="190" stroke="#96BFFF" stroke-width="1.5" stroke-dasharray="4,3"/>
+ &lt;circle cx="70" cy="190" r="3" fill="#96BFFF"/>
+ &lt;circle cx="140" cy="190" r="3" fill="#96BFFF"/>
+ &lt;text x="105" y="186" fill="#96BFFF" font-size="8" text-anchor="middle" font-family="system-ui">12.5m&lt;/text>
+
+ &lt;!-- Vertical measurement -->
+ &lt;line x1="230" y1="70" x2="230" y2="155" stroke="#96BFFF" stroke-width="1.5" stroke-dasharray="4,3"/>
+ &lt;circle cx="230" cy="70" r="3" fill="#96BFFF"/>
+ &lt;circle cx="230" cy="155" r="3" fill="#96BFFF"/>
+ &lt;text x="245" y="115" fill="#96BFFF" font-size="8" font-family="system-ui">8.2m&lt;/text>
+
+ &lt;!-- Selection corners -->
+ &lt;path d="M95 62 L95 52 L105 52" stroke="#0779FF" stroke-width="2" fill="none" stroke-linecap="round"/>
+ &lt;path d="M215 62 L215 52 L205 52" stroke="#0779FF" stroke-width="2" fill="none" stroke-linecap="round"/>
+ &lt;path d="M95 188 L95 198 L105 198" stroke="#0779FF" stroke-width="2" fill="none" stroke-linecap="round"/>
+ &lt;path d="M215 188 L215 198 L205 198" stroke="#0779FF" stroke-width="2" fill="none" stroke-linecap="round"/>
+ &lt;/g>
+
+ &lt;!-- Floating toolbar -->
+ &lt;g transform="translate(265, 55)">
+ &lt;rect x="0" y="0" width="38" height="95" rx="6" fill="white" fill-opacity="0.97" stroke="#e0e0e0" stroke-width="1"/>
+ &lt;!-- Zoom in -->
+ &lt;circle cx="19" cy="18" r="10" fill="#0779FF" opacity="0.12"/>
+ &lt;path d="M15 18 L23 18 M19 14 L19 22" stroke="#0779FF" stroke-width="2" stroke-linecap="round"/>
+ &lt;!-- Target/focus -->
+ &lt;circle cx="19" cy="47" r="10" fill="#0779FF" opacity="0.12"/>
+ &lt;circle cx="19" cy="47" r="5" stroke="#0779FF" stroke-width="2" fill="none"/>
+ &lt;circle cx="19" cy="47" r="1.5" fill="#0779FF"/>
+ &lt;!-- Layers -->
+ &lt;circle cx="19" cy="76" r="10" fill="#0779FF" opacity="0.12"/>
+ &lt;path d="M11 76 L19 72 L27 76 L19 80 Z" stroke="#0779FF" stroke-width="1.5" fill="none"/>
+ &lt;path d="M11 80 L19 76 L27 80" stroke="#0779FF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+ &lt;/g>
+
+ &lt;!-- 3D navigation cube -->
+ &lt;g transform="translate(55, 50)">
+ &lt;rect x="0" y="0" width="32" height="32" rx="4" fill="white" fill-opacity="0.95" stroke="#e0e0e0" stroke-width="1"/>
+ &lt;!-- Mini cube -->
+ &lt;path d="M16 8 L24 12 L24 22 L16 26 L8 22 L8 12 Z" fill="#96BFFF" opacity="0.3" stroke="#0779FF" stroke-width="1"/>
+ &lt;path d="M16 8 L16 18 L8 22 L8 12 Z" fill="#0779FF" opacity="0.6"/>
+ &lt;path d="M16 8 L24 12 L24 22 L16 18 Z" fill="#0779FF" opacity="0.4"/>
+ &lt;path d="M16 18 L24 22 L16 26 L8 22 Z" fill="#96BFFF" opacity="0.5"/>
+ &lt;/g>
+
+ &lt;!-- Status indicator dot -->
+ &lt;circle cx="275" cy="195" r="4" fill="#22c55e">
+ &lt;animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+ &lt;/circle>
+ &lt;/svg>
  &lt;/div>
  &lt;/div>
  &lt;/div>
@@ -223,39 +450,7 @@
  &lt;div class="card-body p-4">
  &lt;i class="bi bi-folder fs-3 text-primary mb-3">&lt;/i>
  &lt;h5>SharePoint&lt;/h5>
- &lt;p class="text-muted mb-0">View IFC files directly in SharePoint document libraries. Full integration with metadata, permissions, and version history.&lt;/p></description></item><item><title>Partners</title><link>https://flinker.app/partners/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/partners/</guid><description>&lt;!-- Hero Section -->
-&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
- &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
- &lt;div class="container">
- &lt;div class="row align-items-center py-lg-8">
- &lt;div class="col-lg-6 col-12">
- &lt;div class="text-center text-lg-start">
- &lt;div class="mb-6">
- &lt;h1 class="display-5">Become a Flinker Partner&lt;/h1>
- &lt;p class="lead">Join our partner ecosystem to help construction and real estate companies transform their document management with Microsoft 365.&lt;/p>
- &lt;/div>
- &lt;div class="mb-5">
- &lt;a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-primary me-2">Apply Now&lt;/a>
- &lt;a href="https://flinker.app/partners/directory/" class="btn btn-outline-dark">Find a Partner&lt;/a>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;div class="col-lg-6 col-12">
- &lt;div class="text-center">
- &lt;i class="bi bi-people-fill display-1 text-primary opacity-50">&lt;/i>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
-&lt;/section>
-
-&lt;!-- Partner Benefits -->
-&lt;section class="py-9">
- &lt;div class="container">
- &lt;div class="row mb-8">
- &lt;div class="col-lg-8 offset-lg-2 text-center">
- &lt;h2 class="mb-3">Why Partner with Flinker?&lt;/h2>
- &lt;p class="lead text-muted">Expand your service offerings with industry-leading BIM and document management solutions built on Microsoft 365.&lt;/p></description></item><item><title>White Label &amp; OEM</title><link>https://flinker.app/developers/white-label/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/white-label/</guid><description>&lt;!-- Hero Section -->
+ &lt;p class="text-muted mb-0">View IFC files directly in SharePoint document libraries. Full integration with metadata, permissions, and version history.&lt;/p></description></item><item><title>White Label &amp; OEM</title><link>https://flinker.app/developers/white-label/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/white-label/</guid><description>&lt;!-- Hero Section -->
 &lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
  &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
  &lt;div class="container">
@@ -272,7 +467,168 @@
  &lt;/div>
  &lt;div class="col-lg-6 col-12">
  &lt;div class="text-center">
- &lt;i class="bi bi-palette display-1 text-primary opacity-50">&lt;/i>
+ &lt;svg width="360" height="290" viewBox="0 0 360 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+ &lt;defs>
+ &lt;!-- Flinker brand gradients -->
+ &lt;linearGradient id="flinkerPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+ &lt;stop offset="0%" style="stop-color:#0779FF;stop-opacity:1" />
+ &lt;stop offset="100%" style="stop-color:#0560cc;stop-opacity:1" />
+ &lt;/linearGradient>
+ &lt;linearGradient id="flinkerLight" x1="0%" y1="0%" x2="100%" y2="100%">
+ &lt;stop offset="0%" style="stop-color:#96BFFF;stop-opacity:0.7" />
+ &lt;stop offset="100%" style="stop-color:#0779FF;stop-opacity:0.4" />
+ &lt;/linearGradient>
+ &lt;linearGradient id="flinkerGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+ &lt;stop offset="0%" style="stop-color:#0779FF;stop-opacity:0.15" />
+ &lt;stop offset="100%" style="stop-color:#96BFFF;stop-opacity:0.05" />
+ &lt;/linearGradient>
+ &lt;linearGradient id="customBrand1" x1="0%" y1="0%" x2="100%" y2="100%">
+ &lt;stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+ &lt;stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+ &lt;/linearGradient>
+ &lt;linearGradient id="customBrand2" x1="0%" y1="0%" x2="100%" y2="100%">
+ &lt;stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+ &lt;stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+ &lt;/linearGradient>
+ &lt;filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+ &lt;feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0779FF" flood-opacity="0.2"/>
+ &lt;/filter>
+ &lt;filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+ &lt;feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+ &lt;feMerge>
+ &lt;feMergeNode in="coloredBlur"/>
+ &lt;feMergeNode in="SourceGraphic"/>
+ &lt;/feMerge>
+ &lt;/filter>
+ &lt;/defs>
+
+ &lt;!-- Background glow -->
+ &lt;ellipse cx="180" cy="145" rx="140" ry="110" fill="url(#flinkerGlow)" />
+
+ &lt;!-- Main Application Window (center) -->
+ &lt;g transform="translate(85, 25)" filter="url(#dropShadow)">
+ &lt;!-- Window frame -->
+ &lt;rect x="0" y="0" width="190" height="155" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+ &lt;!-- Title bar -->
+ &lt;rect x="0" y="0" width="190" height="28" rx="10" fill="#f8fafc"/>
+ &lt;rect x="0" y="18" width="190" height="10" fill="#f8fafc"/>
+ &lt;line x1="0" y1="28" x2="190" y2="28" stroke="#e2e8f0" stroke-width="1"/>
+ &lt;!-- Window dots -->
+ &lt;circle cx="16" cy="14" r="4" fill="#ef4444"/>
+ &lt;circle cx="32" cy="14" r="4" fill="#fbbf24"/>
+ &lt;circle cx="48" cy="14" r="4" fill="#22c55e"/>
+
+ &lt;!-- Logo placeholder area with dashed border -->
+ &lt;rect x="15" y="40" width="70" height="35" rx="6" fill="none" stroke="#0779FF" stroke-width="2" stroke-dasharray="4,3"/>
+ &lt;text x="50" y="62" fill="#0779FF" font-size="10" text-anchor="middle" font-family="system-ui" font-weight="500">YOUR LOGO&lt;/text>
+
+ &lt;!-- Content placeholders -->
+ &lt;rect x="100" y="42" width="75" height="8" rx="4" fill="#e2e8f0"/>
+ &lt;rect x="100" y="56" width="55" height="8" rx="4" fill="#f1f5f9"/>
+ &lt;rect x="100" y="70" width="65" height="8" rx="4" fill="#f1f5f9"/>
+
+ &lt;!-- 3D Building preview -->
+ &lt;g transform="translate(35, 85)">
+ &lt;path d="M40 8 L70 18 L70 55 L40 45 Z" fill="#0560cc" opacity="0.7"/>
+ &lt;path d="M40 8 L40 45 L10 55 L10 18 Z" fill="url(#flinkerPrimary)" opacity="0.85"/>
+ &lt;path d="M10 18 L40 8 L70 18 L40 28 Z" fill="#96BFFF" opacity="0.8"/>
+ &lt;!-- Windows -->
+ &lt;rect x="17" y="28" width="8" height="10" rx="1" fill="#96BFFF" opacity="0.7"/>
+ &lt;rect x="17" y="42" width="8" height="8" rx="1" fill="#96BFFF" opacity="0.7"/>
+ &lt;rect x="30" y="28" width="6" height="8" rx="1" fill="#96BFFF" opacity="0.5"/>
+ &lt;/g>
+
+ &lt;!-- Brand color indicator -->
+ &lt;rect x="130" y="95" width="45" height="45" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+ &lt;circle cx="145" cy="110" r="8" fill="url(#flinkerPrimary)"/>
+ &lt;circle cx="163" cy="110" r="8" fill="#96BFFF"/>
+ &lt;circle cx="145" cy="128" r="8" fill="#1e293b"/>
+ &lt;circle cx="163" cy="128" r="8" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+ &lt;/g>
+
+ &lt;!-- Small branded variant 1 (purple) - left bottom -->
+ &lt;g transform="translate(20, 175)" filter="url(#dropShadow)">
+ &lt;rect x="0" y="0" width="95" height="80" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+ &lt;rect x="0" y="0" width="95" height="18" rx="8" fill="#f8fafc"/>
+ &lt;rect x="0" y="12" width="95" height="6" fill="#f8fafc"/>
+ &lt;line x1="0" y1="18" x2="95" y2="18" stroke="#e2e8f0" stroke-width="1"/>
+ &lt;!-- Purple brand logo -->
+ &lt;rect x="10" y="26" width="35" height="18" rx="4" fill="url(#customBrand1)"/>
+ &lt;text x="27" y="38" fill="white" font-size="7" text-anchor="middle" font-family="system-ui" font-weight="bold">BRAND&lt;/text>
+ &lt;!-- Mini building -->
+ &lt;g transform="translate(55, 28)">
+ &lt;path d="M15 4 L28 9 L28 40 L15 35 Z" fill="#6d28d9" opacity="0.6"/>
+ &lt;path d="M15 4 L15 35 L2 40 L2 9 Z" fill="url(#customBrand1)" opacity="0.75"/>
+ &lt;path d="M2 9 L15 4 L28 9 L15 14 Z" fill="#c4b5fd" opacity="0.7"/>
+ &lt;/g>
+ &lt;!-- Purple color dots -->
+ &lt;circle cx="15" cy="65" r="5" fill="url(#customBrand1)"/>
+ &lt;circle cx="30" cy="65" r="5" fill="#c4b5fd"/>
+ &lt;/g>
+
+ &lt;!-- Small branded variant 2 (green) - right bottom -->
+ &lt;g transform="translate(245, 175)" filter="url(#dropShadow)">
+ &lt;rect x="0" y="0" width="95" height="80" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+ &lt;rect x="0" y="0" width="95" height="18" rx="8" fill="#f8fafc"/>
+ &lt;rect x="0" y="12" width="95" height="6" fill="#f8fafc"/>
+ &lt;line x1="0" y1="18" x2="95" y2="18" stroke="#e2e8f0" stroke-width="1"/>
+ &lt;!-- Green brand logo -->
+ &lt;rect x="10" y="26" width="35" height="18" rx="4" fill="url(#customBrand2)"/>
+ &lt;text x="27" y="38" fill="white" font-size="7" text-anchor="middle" font-family="system-ui" font-weight="bold">ACME&lt;/text>
+ &lt;!-- Mini building -->
+ &lt;g transform="translate(55, 28)">
+ &lt;path d="M15 4 L28 9 L28 40 L15 35 Z" fill="#059669" opacity="0.6"/>
+ &lt;path d="M15 4 L15 35 L2 40 L2 9 Z" fill="url(#customBrand2)" opacity="0.75"/>
+ &lt;path d="M2 9 L15 4 L28 9 L15 14 Z" fill="#6ee7b7" opacity="0.7"/>
+ &lt;/g>
+ &lt;!-- Green color dots -->
+ &lt;circle cx="15" cy="65" r="5" fill="url(#customBrand2)"/>
+ &lt;circle cx="30" cy="65" r="5" fill="#6ee7b7"/>
+ &lt;/g>
+
+ &lt;!-- Connection lines from main to variants -->
+ &lt;g filter="url(#softGlow)">
+ &lt;!-- Left connection -->
+ &lt;path d="M130 180 Q100 195 95 195" stroke="#0779FF" stroke-width="2" fill="none" stroke-dasharray="4,3" opacity="0.6">
+ &lt;animate attributeName="stroke-dashoffset" values="14;0" dur="1.5s" repeatCount="indefinite"/>
+ &lt;/path>
+ &lt;polygon points="95,195 103,190 103,200" fill="#0779FF" opacity="0.6"/>
+
+ &lt;!-- Right connection -->
+ &lt;path d="M230 180 Q260 195 265 195" stroke="#0779FF" stroke-width="2" fill="none" stroke-dasharray="4,3" opacity="0.6">
+ &lt;animate attributeName="stroke-dashoffset" values="14;0" dur="1.5s" repeatCount="indefinite"/>
+ &lt;/path>
+ &lt;polygon points="265,195 257,190 257,200" fill="#0779FF" opacity="0.6"/>
+ &lt;/g>
+
+ &lt;!-- Customization icon badge -->
+ &lt;g transform="translate(265, 35)">
+ &lt;circle cx="20" cy="20" r="22" fill="white" stroke="#e2e8f0" stroke-width="1.5" filter="url(#dropShadow)"/>
+ &lt;!-- Paint brush icon -->
+ &lt;path d="M14 26 L20 20 L26 26 L23 29 Q20 32 17 29 Z" fill="url(#flinkerPrimary)"/>
+ &lt;rect x="18" y="10" width="4" height="12" rx="2" fill="url(#flinkerPrimary)" transform="rotate(45 20 16)"/>
+ &lt;circle cx="24" cy="12" r="3" fill="#96BFFF"/>
+ &lt;/g>
+
+ &lt;!-- Labels -->
+ &lt;text x="180" y="275" fill="#64748b" font-size="11" text-anchor="middle" font-family="system-ui" font-weight="500">Your Brand, Our Technology&lt;/text>
+
+ &lt;!-- Floating particles -->
+ &lt;g opacity="0.5">
+ &lt;circle cx="50" cy="100" r="3" fill="#0779FF">
+ &lt;animate attributeName="cy" values="100;85;100" dur="3s" repeatCount="indefinite"/>
+ &lt;animate attributeName="opacity" values="0.5;0.2;0.5" dur="3s" repeatCount="indefinite"/>
+ &lt;/circle>
+ &lt;circle cx="310" cy="120" r="2" fill="#96BFFF">
+ &lt;animate attributeName="cy" values="120;105;120" dur="2.5s" repeatCount="indefinite"/>
+ &lt;animate attributeName="opacity" values="0.5;0.2;0.5" dur="2.5s" repeatCount="indefinite"/>
+ &lt;/circle>
+ &lt;circle cx="180" cy="265" r="2" fill="#0779FF">
+ &lt;animate attributeName="cy" values="265;255;265" dur="2s" repeatCount="indefinite"/>
+ &lt;animate attributeName="opacity" values="0.4;0.1;0.4" dur="2s" repeatCount="indefinite"/>
+ &lt;/circle>
+ &lt;/g>
+ &lt;/svg>
  &lt;/div>
  &lt;/div>
  &lt;/div>
@@ -617,64 +973,7 @@
 &lt;p>These Flinker Services Terms (v2026) (“Terms”) apply to the services described in the quote (“Services”) provided by Flinker GmbH (“Flinker”) to the customer (“Customer”). If the parties have a signed master agreement or SOW that conflicts with these Terms, the signed agreement prevails.&lt;/p></description></item><item><title>OHLA Group brings IFC models to SharePoint</title><link>https://flinker.app/customers/ohla-group/</link><pubDate>Tue, 21 Oct 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/customers/ohla-group/</guid><description/></item><item><title>ISO 19650 and SharePoint: Making Your Project Data Room Compliant</title><link>https://flinker.app/blog/iso19650-sharepoint-cde/</link><pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/iso19650-sharepoint-cde/</guid><description>&lt;p>ISO 19650 is becoming a baseline requirement in construction and infrastructure contracts. Many organizations already have Microsoft 365 and SharePoint in place—often underutilized for project document control. The question: can SharePoint serve as a fully ISO 19650-compliant Common Data Environment (CDE)?&lt;/p>
 &lt;p>Yes—but only with the right controls, workflows, and governance layered on top. Native SharePoint provides foundational capabilities but lacks the discipline ISO 19650 demands.&lt;/p>
 &lt;h2 id="what-is-iso-19650">What is ISO 19650?&lt;/h2>
-&lt;p>ISO 19650 is the international standard (originating from the UK&amp;rsquo;s PAS/BS 1192 lineage) for information management using BIM across the lifecycle of a built asset. It covers how information is exchanged, approved, stored, and retrieved, and defines the Common Data Environment (CDE)—the single agreed source of truth for all project information.&lt;/p></description></item><item><title>Flinker Partner Program — Deliver Flinker Apps for Microsoft 365</title><link>https://flinker.app/services/partners/</link><pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/services/partners/</guid><description>&lt;section class="py-8" style="padding:88px 0;">
- &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px;">
- &lt;div class="text-center mb-4">
- &lt;span class="badge rounded-pill" style="background:rgba(13,110,253,.08); color:#0d6efd;">Partner Program&lt;/span>
- &lt;/div>
- &lt;h1 class="display-5 fw-bold text-center" style="letter-spacing:-.01em">Deliver Flinker apps for Microsoft 365&lt;/h1>
- &lt;p class="lead text-muted text-center mx-auto" style="max-width:72ch">
- Implement Flinker apps with our playbooks, templates, and QA.
- &lt;/p>
-
- &lt;!-- Pillars -->
- &lt;div class="row g-4 mt-4">
- &lt;div class="col-md-4">
- &lt;div class="p-4 border rounded-4 h-100 bg-white">
- &lt;div class="d-flex align-items-center gap-2 mb-2" aria-hidden="true">
- &lt;i class="bi bi-patch-check-fill text-primary fs-5">&lt;/i>
- &lt;h3 class="h6 mb-0">Certify&lt;/h3>
- &lt;/div>
- &lt;ul class="mb-0">
- &lt;li>Enablement on Flinker apps for Microsoft 365 (IFC Viewer, BCF, SharePoint Protect, Power BI Visual)&lt;/li>
- &lt;li>Playbooks and templates for tenant setup, SharePoint CDE, and governance&lt;/li>
- &lt;li>Quality bar aligned to openBIM standards (IFC/BCF)&lt;/li>
- &lt;li>NFR/demo tenant for internal testing and demos&lt;/li>
- &lt;/ul>
- &lt;/div>
- &lt;/div>
- &lt;div class="col-md-4">
- &lt;div class="p-4 border rounded-4 h-100 bg-white">
- &lt;div class="d-flex align-items-center gap-2 mb-2" aria-hidden="true">
- &lt;i class="bi bi-gear-fill text-success fs-5">&lt;/i>
- &lt;h3 class="h6 mb-0">Deliver&lt;/h3>
- &lt;/div>
- &lt;ul class="mb-0">
- &lt;li>Install and configure in Teams, SharePoint, and Power BI per our docs&lt;/li>
- &lt;li>Stand up a secure SharePoint CDE with permissions and SSO; automate with Power Automate&lt;/li>
- &lt;li>Run QA checkpoints with escalation to Flinker when needed&lt;/li>
- &lt;/ul>
- &lt;/div>
- &lt;/div>
- &lt;div class="col-md-4">
- &lt;div class="p-4 border rounded-4 h-100 bg-white">
- &lt;div class="d-flex align-items-center gap-2 mb-2" aria-hidden="true">
- &lt;i class="bi bi-people-fill text-primary fs-5">&lt;/i>
- &lt;h3 class="h6 mb-0">Co‑sell&lt;/h3>
- &lt;/div>
- &lt;ul class="mb-0">
- &lt;li>Simple referral and co‑sell motions for Microsoft 365 customers&lt;/li>
- &lt;li>Per‑tenant pricing — no per‑user costs, no new software to buy&lt;/li>
- &lt;li>Clear rules of engagement and email‑based deal registration&lt;/li>
- &lt;/ul>
- &lt;/div>
- &lt;/div>
- &lt;/div>
-
- &lt;!-- Service Opportunities -->
- &lt;div class="mt-5">
- &lt;h2 class="h4 text-center mb-4">Service Opportunities for Partners&lt;/h2>
- &lt;p class="text-muted text-center mb-4" style="max-width:64ch; margin:0 auto;">Deliver these solutions to your clients using Flinker apps. You handle implementation, training, and custom work — we provide the product and support.&lt;/p></description></item><item><title>Power BI Data Services — Implementation, Enablement &amp; Managed Support</title><link>https://flinker.app/services/data-services/</link><pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/services/data-services/</guid><description>Implementation, rollout, and managed support for IFC Viewer on Power BI—enterprise-ready with clear SLAs, industry accelerators, add-ons, governance, and enablement.</description></item><item><title>Flinker IFC Viewer for Power BI — Overview &amp; Pricing</title><link>https://flinker.app/products/power-bi-ifc-viewer/</link><pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/products/power-bi-ifc-viewer/</guid><description>&lt;!-- HERO -->
+&lt;p>ISO 19650 is the international standard (originating from the UK&amp;rsquo;s PAS/BS 1192 lineage) for information management using BIM across the lifecycle of a built asset. It covers how information is exchanged, approved, stored, and retrieved, and defines the Common Data Environment (CDE)—the single agreed source of truth for all project information.&lt;/p></description></item><item><title>Power BI Data Services — Implementation, Enablement &amp; Managed Support</title><link>https://flinker.app/services/data-services/</link><pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/services/data-services/</guid><description>Implementation, rollout, and managed support for IFC Viewer on Power BI—enterprise-ready with clear SLAs, industry accelerators, add-ons, governance, and enablement.</description></item><item><title>Flinker IFC Viewer for Power BI — Overview &amp; Pricing</title><link>https://flinker.app/products/power-bi-ifc-viewer/</link><pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/products/power-bi-ifc-viewer/</guid><description>&lt;!-- HERO -->
 &lt;section class="py-5 py-lg-8" style="padding-bottom:72px;">
  &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
  &lt;h1 class="display-5 fw-bold" style="margin:0 0 12px; font-size:clamp(32px,5vw,48px); line-height:1.15; letter-spacing:-0.02em;">
