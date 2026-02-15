@@ -1,14 +1,21 @@
 <!--
    Auto-tint is enabled via the wrapper class `logo-tint-scope` (defined in logo-tint-setup.html).
    Do NOT add size CSS here. Logos (SVG/PNG) are manually sized in the assets or per-image.
+   Usage: Pass showTitle=false to hide the "Trusted worldwide" heading.
 -->
+{{- $showTitle := true -}}
+{{- if isset . "showTitle" -}}
+  {{- $showTitle = .showTitle -}}
+{{- end -}}
 <!--Trusted worldwide start-->
 <div class="py-5 logo-tint-scope" data-cue="fadeIn">
    <div class="container py-2">
       <div class="row">
+         {{ if $showTitle }}
          <div class="col-12 text-center mb-4">
             <p class="text-muted text-uppercase small fw-semibold ls-lg mb-0">Trusted worldwide</p>
          </div>
+         {{ end }}
          <div class="col-lg-10 offset-lg-1">
             <div
                class="swiper-container swiper"

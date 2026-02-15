@@ -1,2 +1,9 @@
-{{/* Wrapper shortcode to render the pbi-user-logos partial from content. Usage: {{< pbi-user-logos >}} */}}
-{{ partial "pbi-user-logos.html" . }}
+{{/*
+  Wrapper shortcode to render the pbi-user-logos partial from content.
+  Usage: {{< pbi-user-logos >}} or {{< pbi-user-logos title="false" >}}
+*/}}
+{{ $showTitle := true }}
+{{ if eq (.Get "title") "false" }}
+  {{ $showTitle = false }}
+{{ end }}
+{{ partial "pbi-user-logos.html" (dict "showTitle" $showTitle) }}
