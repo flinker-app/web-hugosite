@@ -25,7 +25,168 @@ disableTopSpacing: true
          </div>
          <div class="col-lg-6 col-12">
             <div class="text-center">
-               <i class="bi bi-palette display-1 text-primary opacity-50"></i>
+               <svg width="360" height="290" viewBox="0 0 360 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                     <!-- Flinker brand gradients -->
+                     <linearGradient id="flinkerPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#0779FF;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#0560cc;stop-opacity:1" />
+                     </linearGradient>
+                     <linearGradient id="flinkerLight" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#96BFFF;stop-opacity:0.7" />
+                        <stop offset="100%" style="stop-color:#0779FF;stop-opacity:0.4" />
+                     </linearGradient>
+                     <linearGradient id="flinkerGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#0779FF;stop-opacity:0.15" />
+                        <stop offset="100%" style="stop-color:#96BFFF;stop-opacity:0.05" />
+                     </linearGradient>
+                     <linearGradient id="customBrand1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+                     </linearGradient>
+                     <linearGradient id="customBrand2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+                     </linearGradient>
+                     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0779FF" flood-opacity="0.2"/>
+                     </filter>
+                     <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                        <feMerge>
+                           <feMergeNode in="coloredBlur"/>
+                           <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                     </filter>
+                  </defs>
+
+                  <!-- Background glow -->
+                  <ellipse cx="180" cy="145" rx="140" ry="110" fill="url(#flinkerGlow)" />
+
+                  <!-- Main Application Window (center) -->
+                  <g transform="translate(85, 25)" filter="url(#dropShadow)">
+                     <!-- Window frame -->
+                     <rect x="0" y="0" width="190" height="155" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+                     <!-- Title bar -->
+                     <rect x="0" y="0" width="190" height="28" rx="10" fill="#f8fafc"/>
+                     <rect x="0" y="18" width="190" height="10" fill="#f8fafc"/>
+                     <line x1="0" y1="28" x2="190" y2="28" stroke="#e2e8f0" stroke-width="1"/>
+                     <!-- Window dots -->
+                     <circle cx="16" cy="14" r="4" fill="#ef4444"/>
+                     <circle cx="32" cy="14" r="4" fill="#fbbf24"/>
+                     <circle cx="48" cy="14" r="4" fill="#22c55e"/>
+
+                     <!-- Logo placeholder area with dashed border -->
+                     <rect x="15" y="40" width="70" height="35" rx="6" fill="none" stroke="#0779FF" stroke-width="2" stroke-dasharray="4,3"/>
+                     <text x="50" y="62" fill="#0779FF" font-size="10" text-anchor="middle" font-family="system-ui" font-weight="500">YOUR LOGO</text>
+
+                     <!-- Content placeholders -->
+                     <rect x="100" y="42" width="75" height="8" rx="4" fill="#e2e8f0"/>
+                     <rect x="100" y="56" width="55" height="8" rx="4" fill="#f1f5f9"/>
+                     <rect x="100" y="70" width="65" height="8" rx="4" fill="#f1f5f9"/>
+
+                     <!-- 3D Building preview -->
+                     <g transform="translate(35, 85)">
+                        <path d="M40 8 L70 18 L70 55 L40 45 Z" fill="#0560cc" opacity="0.7"/>
+                        <path d="M40 8 L40 45 L10 55 L10 18 Z" fill="url(#flinkerPrimary)" opacity="0.85"/>
+                        <path d="M10 18 L40 8 L70 18 L40 28 Z" fill="#96BFFF" opacity="0.8"/>
+                        <!-- Windows -->
+                        <rect x="17" y="28" width="8" height="10" rx="1" fill="#96BFFF" opacity="0.7"/>
+                        <rect x="17" y="42" width="8" height="8" rx="1" fill="#96BFFF" opacity="0.7"/>
+                        <rect x="30" y="28" width="6" height="8" rx="1" fill="#96BFFF" opacity="0.5"/>
+                     </g>
+
+                     <!-- Brand color indicator -->
+                     <rect x="130" y="95" width="45" height="45" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+                     <circle cx="145" cy="110" r="8" fill="url(#flinkerPrimary)"/>
+                     <circle cx="163" cy="110" r="8" fill="#96BFFF"/>
+                     <circle cx="145" cy="128" r="8" fill="#1e293b"/>
+                     <circle cx="163" cy="128" r="8" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+                  </g>
+
+                  <!-- Small branded variant 1 (purple) - left bottom -->
+                  <g transform="translate(20, 175)" filter="url(#dropShadow)">
+                     <rect x="0" y="0" width="95" height="80" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+                     <rect x="0" y="0" width="95" height="18" rx="8" fill="#f8fafc"/>
+                     <rect x="0" y="12" width="95" height="6" fill="#f8fafc"/>
+                     <line x1="0" y1="18" x2="95" y2="18" stroke="#e2e8f0" stroke-width="1"/>
+                     <!-- Purple brand logo -->
+                     <rect x="10" y="26" width="35" height="18" rx="4" fill="url(#customBrand1)"/>
+                     <text x="27" y="38" fill="white" font-size="7" text-anchor="middle" font-family="system-ui" font-weight="bold">BRAND</text>
+                     <!-- Mini building -->
+                     <g transform="translate(55, 28)">
+                        <path d="M15 4 L28 9 L28 40 L15 35 Z" fill="#6d28d9" opacity="0.6"/>
+                        <path d="M15 4 L15 35 L2 40 L2 9 Z" fill="url(#customBrand1)" opacity="0.75"/>
+                        <path d="M2 9 L15 4 L28 9 L15 14 Z" fill="#c4b5fd" opacity="0.7"/>
+                     </g>
+                     <!-- Purple color dots -->
+                     <circle cx="15" cy="65" r="5" fill="url(#customBrand1)"/>
+                     <circle cx="30" cy="65" r="5" fill="#c4b5fd"/>
+                  </g>
+
+                  <!-- Small branded variant 2 (green) - right bottom -->
+                  <g transform="translate(245, 175)" filter="url(#dropShadow)">
+                     <rect x="0" y="0" width="95" height="80" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+                     <rect x="0" y="0" width="95" height="18" rx="8" fill="#f8fafc"/>
+                     <rect x="0" y="12" width="95" height="6" fill="#f8fafc"/>
+                     <line x1="0" y1="18" x2="95" y2="18" stroke="#e2e8f0" stroke-width="1"/>
+                     <!-- Green brand logo -->
+                     <rect x="10" y="26" width="35" height="18" rx="4" fill="url(#customBrand2)"/>
+                     <text x="27" y="38" fill="white" font-size="7" text-anchor="middle" font-family="system-ui" font-weight="bold">ACME</text>
+                     <!-- Mini building -->
+                     <g transform="translate(55, 28)">
+                        <path d="M15 4 L28 9 L28 40 L15 35 Z" fill="#059669" opacity="0.6"/>
+                        <path d="M15 4 L15 35 L2 40 L2 9 Z" fill="url(#customBrand2)" opacity="0.75"/>
+                        <path d="M2 9 L15 4 L28 9 L15 14 Z" fill="#6ee7b7" opacity="0.7"/>
+                     </g>
+                     <!-- Green color dots -->
+                     <circle cx="15" cy="65" r="5" fill="url(#customBrand2)"/>
+                     <circle cx="30" cy="65" r="5" fill="#6ee7b7"/>
+                  </g>
+
+                  <!-- Connection lines from main to variants -->
+                  <g filter="url(#softGlow)">
+                     <!-- Left connection -->
+                     <path d="M130 180 Q100 195 95 195" stroke="#0779FF" stroke-width="2" fill="none" stroke-dasharray="4,3" opacity="0.6">
+                        <animate attributeName="stroke-dashoffset" values="14;0" dur="1.5s" repeatCount="indefinite"/>
+                     </path>
+                     <polygon points="95,195 103,190 103,200" fill="#0779FF" opacity="0.6"/>
+
+                     <!-- Right connection -->
+                     <path d="M230 180 Q260 195 265 195" stroke="#0779FF" stroke-width="2" fill="none" stroke-dasharray="4,3" opacity="0.6">
+                        <animate attributeName="stroke-dashoffset" values="14;0" dur="1.5s" repeatCount="indefinite"/>
+                     </path>
+                     <polygon points="265,195 257,190 257,200" fill="#0779FF" opacity="0.6"/>
+                  </g>
+
+                  <!-- Customization icon badge -->
+                  <g transform="translate(265, 35)">
+                     <circle cx="20" cy="20" r="22" fill="white" stroke="#e2e8f0" stroke-width="1.5" filter="url(#dropShadow)"/>
+                     <!-- Paint brush icon -->
+                     <path d="M14 26 L20 20 L26 26 L23 29 Q20 32 17 29 Z" fill="url(#flinkerPrimary)"/>
+                     <rect x="18" y="10" width="4" height="12" rx="2" fill="url(#flinkerPrimary)" transform="rotate(45 20 16)"/>
+                     <circle cx="24" cy="12" r="3" fill="#96BFFF"/>
+                  </g>
+
+                  <!-- Labels -->
+                  <text x="180" y="275" fill="#64748b" font-size="11" text-anchor="middle" font-family="system-ui" font-weight="500">Your Brand, Our Technology</text>
+
+                  <!-- Floating particles -->
+                  <g opacity="0.5">
+                     <circle cx="50" cy="100" r="3" fill="#0779FF">
+                        <animate attributeName="cy" values="100;85;100" dur="3s" repeatCount="indefinite"/>
+                        <animate attributeName="opacity" values="0.5;0.2;0.5" dur="3s" repeatCount="indefinite"/>
+                     </circle>
+                     <circle cx="310" cy="120" r="2" fill="#96BFFF">
+                        <animate attributeName="cy" values="120;105;120" dur="2.5s" repeatCount="indefinite"/>
+                        <animate attributeName="opacity" values="0.5;0.2;0.5" dur="2.5s" repeatCount="indefinite"/>
+                     </circle>
+                     <circle cx="180" cy="265" r="2" fill="#0779FF">
+                        <animate attributeName="cy" values="265;255;265" dur="2s" repeatCount="indefinite"/>
+                        <animate attributeName="opacity" values="0.4;0.1;0.4" dur="2s" repeatCount="indefinite"/>
+                     </circle>
+                  </g>
+               </svg>
             </div>
          </div>
       </div>
