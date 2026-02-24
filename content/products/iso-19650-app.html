@@ -649,6 +649,7 @@ schema:
   </div>
 </section>
 
+
 <!-- PRICING -->
 <section id="pricing" class="py-lg-9 py-5 bg-light">
   <div class="container pb-xl-5">
@@ -656,22 +657,20 @@ schema:
       <div class="col-12">
         <div class="text-center mb-xl-7 mb-5 d-flex flex-column gap-2">
           <h2 class="mb-0">Pricing Plans</h2>
-          <p class="mb-0 lead text-muted">Choose the right plan for your team</p>
+          <p class="mb-0 lead text-muted">Project-based pricing. No per-user fees. Your data stays in your Microsoft 365 tenant.</p>
         </div>
       </div>
     </div>
     <div class="row gy-5 gy-xl-0">
+
       <!-- Free Plan -->
       <div class="col-xl-4 col-md-6 col-12">
-        <div class="card h-100 position-relative bg-white border-primary border-2 shadow">
-          <div class="card-body h-100 d-flex flex-column gap-6 p-5 z-2">
+        <div class="card h-100 bg-white border shadow-sm">
+          <div class="card-body h-100 d-flex flex-column gap-6 p-5">
             <div class="d-flex flex-column gap-3">
-              <div class="position-absolute top-0 end-0 translate-middle">
-                <span class="badge bg-primary rounded-pill fw-medium px-3 py-2">Most Popular</span>
-              </div>
               <div class="d-flex flex-column gap-1">
                 <h3 class="mb-0">Free</h3>
-                <p class="mb-0 text-muted">Basic permission management</p>
+                <p class="mb-0 text-muted">Deploy and evaluate in your tenant</p>
               </div>
               <div class="d-flex flex-row align-items-center gap-2">
                 <h3 class="fs-1 fw-bold mb-0">€0</h3>
@@ -686,7 +685,7 @@ schema:
                     </g>
                     <defs><clipPath id="iso-check1"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
                   </svg>
-                  <span>Role-based permissions</span>
+                  <span>1 governance seat</span>
                 </li>
                 <li class="d-flex flex-row gap-2 align-items-center">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -696,7 +695,7 @@ schema:
                     </g>
                     <defs><clipPath id="iso-check2"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
                   </svg>
-                  <span>Basic compliance checks</span>
+                  <span>Role-based permissions</span>
                 </li>
                 <li class="d-flex flex-row gap-2 align-items-center">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -706,32 +705,8 @@ schema:
                     </g>
                     <defs><clipPath id="iso-check3"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
                   </svg>
-                  <span>External user management</span>
+                  <span>Basic compliance checks</span>
                 </li>
-              </ul>
-            </div>
-            <div class="mt-auto">
-              <a href="https://appsource.microsoft.com/en-us/product/office/WA200007197" target="_blank" class="btn btn-primary">Use Free</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Pro Plan -->
-      <div class="col-xl-4 col-md-6 col-12">
-        <div class="card h-100 bg-white border shadow-sm">
-          <div class="card-body h-100 d-flex flex-column gap-6 p-5">
-            <div class="d-flex flex-column gap-3">
-              <div class="d-flex flex-column gap-1">
-                <h3 class="mb-0">Pro</h3>
-                <p class="mb-0 text-muted">Full ISO 19650 compliance</p>
-              </div>
-              <div class="d-flex flex-row align-items-center gap-2">
-                <h3 class="fs-1 fw-bold mb-0">From €290</h3>
-                <span class="text-muted">/ project / month</span>
-              </div>
-              <p class="mb-0 small text-muted">Annual &middot; 5 governance seats &middot; 3 SharePoint sites included</p>
-              <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
                 <li class="d-flex flex-row gap-2 align-items-center">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#iso-check4)">
@@ -740,8 +715,35 @@ schema:
                     </g>
                     <defs><clipPath id="iso-check4"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
                   </svg>
-                  <span>Everything in Free</span>
+                  <span>External user management</span>
                 </li>
+              </ul>
+            </div>
+            <div class="mt-auto">
+              <a href="https://appsource.microsoft.com/en-us/product/office/WA200007197" target="_blank" class="btn btn-outline-primary">Install Free</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pro Plan -->
+      <div class="col-xl-4 col-md-6 col-12">
+        <div class="card h-100 position-relative bg-white border-primary border-2 shadow">
+          <div class="card-body h-100 d-flex flex-column gap-6 p-5 z-2">
+            <div class="d-flex flex-column gap-3">
+              <div class="position-absolute top-0 end-0 translate-middle">
+                <span class="badge bg-primary rounded-pill fw-medium px-3 py-2">Most Popular</span>
+              </div>
+              <div class="d-flex flex-column gap-1">
+                <h3 class="mb-0">Pro</h3>
+                <p class="mb-0 text-muted">Full ISO 19650 CDE for one project</p>
+              </div>
+              <div class="d-flex flex-row align-items-center gap-2">
+                <h3 class="fs-1 fw-bold mb-0">€199</h3>
+                <span class="text-muted">/ project / month</span>
+              </div>
+              <p class="mb-0 small text-muted">Billed annually &middot; 2 governance seats &middot; 1 SharePoint site</p>
+              <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
                 <li class="d-flex flex-row gap-2 align-items-center">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#iso-check5)">
@@ -750,7 +752,7 @@ schema:
                     </g>
                     <defs><clipPath id="iso-check5"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
                   </svg>
-                  <span>Policy-JSON configuration</span>
+                  <span>Everything in Free</span>
                 </li>
                 <li class="d-flex flex-row gap-2 align-items-center">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -760,7 +762,7 @@ schema:
                     </g>
                     <defs><clipPath id="iso-check6"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
                   </svg>
-                  <span>Naming &amp; metadata enforcement</span>
+                  <span><strong>Unlimited project members</strong>, no per-user fees</span>
                 </li>
                 <li class="d-flex flex-row gap-2 align-items-center">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -770,7 +772,7 @@ schema:
                     </g>
                     <defs><clipPath id="iso-check7"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
                   </svg>
-                  <span>4-stage release workflow</span>
+                  <span>Policy-JSON configuration</span>
                 </li>
                 <li class="d-flex flex-row gap-2 align-items-center">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -780,7 +782,7 @@ schema:
                     </g>
                     <defs><clipPath id="iso-check8"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
                   </svg>
-                  <span>Approval workflows</span>
+                  <span>Naming &amp; metadata enforcement</span>
                 </li>
                 <li class="d-flex flex-row gap-2 align-items-center">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -790,13 +792,35 @@ schema:
                     </g>
                     <defs><clipPath id="iso-check9"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
                   </svg>
-                  <span>Audit &amp; issue logging</span>
+                  <span>4-stage release workflow</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#iso-check10)">
+                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                    <defs><clipPath id="iso-check10"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
+                  </svg>
+                  <span>Approval workflows</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#iso-check11)">
+                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                    <defs><clipPath id="iso-check11"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
+                  </svg>
+                  <span>Audit &amp; compliance logging</span>
                 </li>
               </ul>
-              <span class="small text-muted">Need portfolio pricing? Ask for tenant plans.</span>
+              <span class="small text-muted">Running multiple projects? <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="text-primary">Ask for portfolio pricing →</a></span>
             </div>
-            <div class="mt-auto">
-              <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true" target="_blank" class="btn btn-outline-primary">Request Demo</a>
+            <div class="mt-auto d-flex flex-column gap-2">
+              <p class="small text-muted mb-0">Ready to start? Buy directly or call us for a quick intro before you set up.</p>
+              <a href="YOUR_STRIPE_LINK" target="_blank" class="btn btn-primary w-100">Start Now</a>
+              <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true" target="_blank" class="btn btn-outline-primary w-100">Talk to Sales</a>
             </div>
           </div>
         </div>
@@ -809,33 +833,14 @@ schema:
             <div class="d-flex flex-column gap-3">
               <div class="d-flex flex-column gap-1">
                 <h3 class="mb-0">Enterprise</h3>
-                <p class="mb-0 text-muted">Full enforcement + advanced features</p>
+                <p class="mb-0 text-muted">Multi-project &amp; portfolio governance</p>
               </div>
               <div class="d-flex flex-row gap-2">
-                <h3 class="fs-1 fw-bold mb-0">Custom</h3>
-                <span class="mt-auto text-muted">pricing</span>
+                <h3 class="fs-1 fw-bold mb-0">From €1.200</h3>
+                <span class="mt-auto text-muted">/ month</span>
               </div>
+              <p class="mb-0 small text-muted">Annual contract &middot; volume pricing per project &middot; dedicated onboarding</p>
               <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
-                <li class="d-flex flex-row gap-2 align-items-center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#iso-check10)">
-                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                    <defs><clipPath id="iso-check10"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
-                  </svg>
-                  <span>Everything in Pro</span>
-                </li>
-                <li class="d-flex flex-row gap-2 align-items-center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#iso-check11)">
-                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                    <defs><clipPath id="iso-check11"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
-                  </svg>
-                  <span>Hard enforcement (all paths)</span>
-                </li>
                 <li class="d-flex flex-row gap-2 align-items-center">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#iso-check12)">
@@ -844,7 +849,7 @@ schema:
                     </g>
                     <defs><clipPath id="iso-check12"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
                   </svg>
-                  <span>Transmittals suite</span>
+                  <span>Everything in Pro</span>
                 </li>
                 <li class="d-flex flex-row gap-2 align-items-center">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -854,7 +859,7 @@ schema:
                     </g>
                     <defs><clipPath id="iso-check13"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
                   </svg>
-                  <span>Advanced reporting</span>
+                  <span>Unlimited governance seats per project</span>
                 </li>
                 <li class="d-flex flex-row gap-2 align-items-center">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -864,7 +869,37 @@ schema:
                     </g>
                     <defs><clipPath id="iso-check14"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
                   </svg>
-                  <span>Priority support</span>
+                  <span>Hard enforcement (all upload paths)</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#iso-check15)">
+                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                    <defs><clipPath id="iso-check15"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
+                  </svg>
+                  <span>Transmittals suite</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#iso-check16)">
+                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                    <defs><clipPath id="iso-check16"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
+                  </svg>
+                  <span>Advanced reporting &amp; dashboards</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#iso-check17)">
+                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                    <defs><clipPath id="iso-check17"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
+                  </svg>
+                  <span>Dedicated onboarding &amp; SLA</span>
                 </li>
               </ul>
             </div>
@@ -874,9 +909,23 @@ schema:
           </div>
         </div>
       </div>
+
     </div>
+
+    <!-- Competitor comparison note -->
+    <div class="row mt-5">
+      <div class="col-12 text-center">
+        <p class="text-muted small mb-0">
+          Dalux Box and Autodesk Docs charge ~€45–75 per user per month. A 20-person project costs €900–1.500/month there.
+          Flinker Pro covers the whole project for €199, unlimited members included.
+          <a href="#comparison" class="text-primary fw-medium">See full comparison →</a>
+        </p>
+      </div>
+    </div>
+
   </div>
 </section>
+
 
 <!-- FAQ -->
 <section id="faq" class="py-lg-9 py-5">
