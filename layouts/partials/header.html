@@ -8,24 +8,37 @@
     font-size: 0.938rem;
     color: #1a1a1a !important;
     background: transparent;
-    transition: color 0.2s ease;
+    text-decoration: underline 1px solid transparent;
+    text-underline-offset: 0.15em;
+    text-decoration-skip-ink: auto;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  }
+  .dropdown-menu .dropdown-item:has(h6) {
+    text-decoration: none;
   }
   .dropdown-menu .dropdown-item:hover,
   .dropdown-menu .dropdown-item:focus {
     background: transparent;
     color: #0d6efd !important;
+    text-decoration-color: #0d6efd;
+  }
+  .dropdown-menu .dropdown-item:has(h6):hover,
+  .dropdown-menu .dropdown-item:has(h6):focus {
+    text-decoration: none;
   }
   .dropdown-menu .dropdown-item h6 {
     font-size: 0.938rem;
     color: #1a1a1a;
-    transition: border-color 0.2s ease;
     display: inline-block;
-    border-bottom: 2px solid transparent;
+    text-decoration: underline 1px solid transparent;
+    text-underline-offset: 0.15em;
+    text-decoration-skip-ink: auto;
+    transition: text-decoration-color 0.2s ease;
   }
   .dropdown-menu .dropdown-item:hover h6,
   .dropdown-menu .dropdown-item:focus h6 {
     color: #0d6efd;
-    border-bottom: 2px solid #0d6efd;
+    text-decoration-color: #0d6efd;
   }
   .dropdown-menu .dropdown-item p {
     font-size: 0.85rem;
@@ -121,7 +134,7 @@
                         </div>
                       </div>
                   </a>
-                  <a class="dropdown-item mb-3 text-body" href="{{ "/partners/" | absURL }}">
+                  <a class="dropdown-item mb-3 text-body" href="{{ "/partners/program/" | absURL }}">
                       <div class="d-flex align-items-center">
                         <i class="bi bi-building fs-4 text-primary"></i>
                         <div class="ms-3 lh-1">

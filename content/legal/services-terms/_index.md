@@ -9,9 +9,9 @@ url: "/legal/services-terms/"
 layout: "mdpage"
 
 # Page metadata
-current_version: "v2026-02"
-effective_date: 2026-01-26
-pdf_path: "/assets-flinker/legal/Flinker-Services-Terms-v2026-02.pdf"
+current_version: "v2026-03"
+effective_date: 2026-02-25
+pdf_path: "/assets-flinker/legal/Flinker-Services-Terms-v2026-03.pdf"
 ---
 
 <section class="py-5 py-lg-6">
@@ -21,8 +21,8 @@ pdf_path: "/assets-flinker/legal/Flinker-Services-Terms-v2026-02.pdf"
       <h1 class="display-5 fw-semibold mb-3">Flinker Services Terms</h1>
       <p class="lead text-muted mb-4">Authoritative, versioned terms for professional and case‑capped services.</p>
       <div class="d-flex flex-wrap gap-2">
-        <a class="btn btn-primary" href="/legal/services-terms/v2026-02/">Read current version</a>
-        <a class="btn btn-outline-secondary" href="{{< param key="pdf_path" >}}" target="_blank" rel="noopener">Download PDF</a>
+        <a class="btn btn-primary" href="/legal/services-terms/v2026-03/">Read current version</a>
+        <a class="btn btn-outline-dark" href="{{< param key="pdf_path" >}}" target="_blank" rel="noopener">Download PDF</a>
       </div>
       <div class="mt-3 text-muted">
         Current version: {{< param key="current_version" >}} · Effective {{< param key="effective_date" >}}
@@ -39,8 +39,12 @@ pdf_path: "/assets-flinker/legal/Flinker-Services-Terms-v2026-02.pdf"
           <h4 class="fw-semibold mb-3">Versions</h4>
           <ul class="list-unstyled mb-0">
             <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+              <a href="/legal/services-terms/v2026-03/">v2026-03</a>
+              <span class="text-muted">Effective 2026-02-25 · Current</span>
+            </li>
+            <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
               <a href="/legal/services-terms/v2026-02/">v2026-02</a>
-              <span class="text-muted">Effective 2026-01-26 · Current</span>
+              <span class="text-muted">Effective 2026-01-26 · Archived</span>
             </li>
             <li class="d-flex justify-content-between align-items-center py-2">
               <a href="/legal/services-terms/v2026-01/">v2026-01</a>
