@@ -52,8 +52,8 @@
                <i class="bi bi-chevron-down d-lg-none msft-chevron"></i>
             </div>
             <ul class="collapse d-lg-block list-unstyled msft-footer-links" id="ftResources">
-               <li><a href="https://docs.flinker.app/" target="_blank" rel="noopener noreferrer">Documentation <i class="bi bi-box-arrow-up-right ms-1 small"></i></a></li>
-               <li><a href="https://docs.flinker.app/docs/releases.html" target="_blank" rel="noopener noreferrer">What's New <i class="bi bi-box-arrow-up-right ms-1 small"></i></a></li>
+               <li><a href="https://docs.flinker.app/" target="_blank" rel="noopener noreferrer">Documentation</a></li>
+               <li><a href="https://docs.flinker.app/docs/releases.html" target="_blank" rel="noopener noreferrer">What's New</a></li>
                <li><a href="https://github.com/flinker-app/docsfx/discussions" target="_blank" rel="noopener noreferrer">Community <i class="bi bi-box-arrow-up-right ms-1 small"></i></a></li>
                <li><a href="{{ "blog/" | absURL }}">Blog</a></li>
             </ul>
@@ -71,7 +71,8 @@
                <li><a href="{{ "about/" | absURL }}">About</a></li>
                <li><a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/"
                   target="_blank" rel="noopener noreferrer">Contact</a></li>
-               <li><a href="https://join.com/companies/flinker" target="_blank" rel="noopener noreferrer">Careers</a></li>
+               <li><a href="https://join.com/companies/flinker" target="_blank" rel="noopener noreferrer">Careers</a>
+                  <span class="badge bg-success bg-opacity-75 ms-2 small">Hiring</span></li>
             </ul>
          </div>
 
@@ -107,9 +108,17 @@
                </span>
                <span class="text-body-secondary small d-none d-lg-inline">Follow us</span>
                <a href="https://www.linkedin.com/company/flinker-app/" target="_blank" rel="noopener noreferrer"
-                  aria-label="LinkedIn" class="msft-social-link"><i class="bi bi-linkedin"></i></a>
+                  aria-label="LinkedIn (opens in new tab)"
+                  class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center"
+                  style="width: 32px; height: 32px;">
+                  <i class="bi bi-linkedin"></i>
+               </a>
                <a href="https://github.com/flinker-app/docsfx/discussions" target="_blank" rel="noopener noreferrer"
-                  aria-label="GitHub" class="msft-social-link"><i class="bi bi-github"></i></a>
+                  aria-label="GitHub (opens in new tab)"
+                  class="btn btn-sm btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center"
+                  style="width: 32px; height: 32px;">
+                  <i class="bi bi-github"></i>
+               </a>
             </div>
          </div>
 
@@ -118,7 +127,7 @@
             <nav class="d-flex flex-wrap align-items-center gap-3" aria-label="Footer legal links">
                <a href="{{ "legal/" | absURL }}">Legal</a>
                <a href="{{ "privacy/" | absURL }}">Privacy</a>
-               <a href="{{ "terms/" | absURL }}">Terms of use</a>
+               <a href="{{ "terms/" | absURL }}">Terms</a>
                <a href="{{ "legal/accessibility/" | absURL }}">Accessibility</a>
             </nav>
             <span class="msft-copyright">&copy; {{ now.Year }} Flinker. All rights reserved. All trademarks are the property of their respective owners.</span>
@@ -135,9 +144,12 @@
          color: var(--bs-secondary-color);
          text-decoration: none;
       }
-      .msft-footer a:hover {
-         color: var(--bs-body-color);
-         text-decoration: underline;
+      /* Hover only on text links (not logo, not social buttons) — matches footer-enterprise-1 */
+      .msft-footer-links a:hover {
+         text-decoration: underline !important;
+      }
+      [data-bs-theme="dark"] .msft-footer-links a:hover {
+         color: #fff !important;
       }
 
       /* Main link area */
@@ -157,7 +169,7 @@
       @media (max-width: 991.98px) {
          .msft-footer-heading {
             cursor: pointer;
-            border-bottom: 1px solid var(--bs-border-color);
+            border-bottom: 1px solid rgba(var(--bs-secondary-rgb), 0.25);
             padding: 0.875rem 0;
          }
       }
@@ -179,21 +191,17 @@
          color: var(--bs-secondary-color);
       }
 
-      /* Bottom bar */
+      /* Bottom bar — muted border matching old footer (border-secondary border-opacity-25) */
       .msft-footer-bottom {
-         border-top: 1px solid var(--bs-border-color);
+         border-top: 1px solid rgba(var(--bs-secondary-rgb), 0.25);
       }
 
-      /* Logo */
+      /* Logo — no hover effect, matches enterprise-1 */
       .msft-footer-logo {
          height: 24px;
-         opacity: 0.7;
       }
       [data-bs-theme="dark"] .msft-footer-logo {
          filter: brightness(0) invert(1);
-      }
-      .msft-footer-logo:hover {
-         opacity: 1;
       }
 
       /* Locale link */
@@ -204,24 +212,28 @@
          color: var(--bs-body-color) !important;
       }
 
-      /* Social */
-      .msft-follow-label {
-         color: var(--bs-tertiary-color);
+      /* Social buttons — rounded-circle style from footer-enterprise-1 */
+      [data-bs-theme="dark"] .btn-outline-secondary {
+         border-color: rgba(255, 255, 255, 0.25) !important;
+         color: rgba(255, 255, 255, 0.6) !important;
       }
-      .msft-social-link {
-         color: var(--bs-secondary-color) !important;
-      }
-      .msft-social-link:hover {
-         color: var(--bs-body-color) !important;
+      [data-bs-theme="dark"] .btn-outline-secondary:hover {
+         border-color: rgba(255, 255, 255, 0.4) !important;
+         color: rgba(255, 255, 255, 0.85) !important;
+         background-color: rgba(255, 255, 255, 0.1) !important;
          text-decoration: none !important;
       }
 
-      /* Legal row */
+      /* Legal row — matches enterprise-1: secondary color, same hover as footer-link */
       .msft-footer-legal-row a {
-         color: var(--bs-tertiary-color);
+         color: var(--bs-secondary-color);
+         text-decoration: none;
       }
       .msft-footer-legal-row a:hover {
-         color: var(--bs-secondary-color);
+         text-decoration: underline !important;
+      }
+      [data-bs-theme="dark"] .msft-footer-legal-row a:hover {
+         color: #fff !important;
       }
       .msft-copyright {
          color: var(--bs-tertiary-color);
