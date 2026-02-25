@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flinker | OpenBIM Apps for Microsoft 365 on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Flinker | OpenBIM Apps for Microsoft 365 on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 16 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Accessibility Statement</title><link>https://flinker.app/legal/accessibility/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/legal/accessibility/</guid><description>&lt;h2 id="our-commitment-to-accessibility">Our commitment to accessibility&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flinker | OpenBIM Apps for Microsoft 365 on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Flinker | OpenBIM Apps for Microsoft 365 on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 25 Feb 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Flinker Services Terms (v2026-03)</title><link>https://flinker.app/legal/services-terms/v2026-03/</link><pubDate>Wed, 25 Feb 2026 00:00:00 +0100</pubDate><guid>https://flinker.app/legal/services-terms/v2026-03/</guid><description>&lt;div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+ &lt;span class="badge text-bg-primary">Version: v2026-03&lt;/span>
+ &lt;span class="badge text-bg-light">Effective date: 2026-02-25&lt;/span>
+&lt;/div>
+&lt;div class="d-flex flex-wrap gap-2 mb-4">
+ &lt;a class="btn btn-outline-dark" href="https://flinker.app/legal/services-terms/">Back to latest&lt;/a>
+ &lt;a class="btn btn-outline-dark" href="https://flinker.app/assets-flinker/legal/Flinker-Services-Terms-v2026-03.pdf" target="_blank" rel="noopener">Download PDF&lt;/a>
+ &lt;a class="btn btn-outline-dark" href="#" onclick="window.print(); return false;">Print&lt;/a>
+&lt;/div>
+&lt;h2 id="table-of-contents">Table of Contents&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a href="#scope-and-precedence">Scope and precedence&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#support-plans-schedule-a-applicability-and-precedence">Support Plans (Schedule A) — applicability and precedence&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#definitions">Definitions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#deliverables-and-delivery-windows">Deliverables and delivery windows&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#what-is-included-vs-excluded">What is included vs excluded&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#change-control-scope-expansion">Change control (scope expansion)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#support-requests-cases-operating-rules">Support Requests (Cases) — operating rules&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#customer-responsibilities-prerequisites">Customer responsibilities (Prerequisites)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#response-targets-best-effort">Response targets (best effort)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#evaluation-and-production-licenses">Evaluation and production licenses&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#tier-trigger-standard-vs-enterprise-professional-services">Tier trigger (Standard vs Enterprise) — Professional Services&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#fees-invoicing-and-payment">Fees, invoicing, and payment&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#data-and-confidentiality-summary">Data and confidentiality (summary)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#intellectual-property">Intellectual property&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#limitation-of-liability">Limitation of liability&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#governing-law-and-venue">Governing law and venue&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#schedule-b-service-types-delivery-specifications">Schedule B: Service Types &amp;amp; Delivery Specifications&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#b1-pilot-setup-engagements">B.1 Pilot &amp;amp; Setup Engagements&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#b2-advisory-engagements-reserved">B.2 Advisory Engagements (reserved)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#b3-implementation-engagements-reserved">B.3 Implementation Engagements (reserved)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;style>
+ @media print {
+ a.btn, .btn { display: none !important; }
+ .badge { border: 1px solid #ccc !important; }
+ }
+&lt;/style>
+&lt;hr>
+&lt;h2 id="scope-and-precedence">1. Scope and precedence&lt;/h2>
+&lt;p>These Flinker Services Terms (v2026-03) (&amp;ldquo;Terms&amp;rdquo;) apply to the professional services and case-capped services described in the quote (&amp;ldquo;Services&amp;rdquo;) provided by Flinker GmbH (&amp;ldquo;Flinker&amp;rdquo;) to the customer (&amp;ldquo;Customer&amp;rdquo;).&lt;/p></description></item><item><title>Accessibility Statement</title><link>https://flinker.app/legal/accessibility/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/legal/accessibility/</guid><description>&lt;h2 id="our-commitment-to-accessibility">Our commitment to accessibility&lt;/h2>
 &lt;p>Flinker GmbH is committed to ensuring digital accessibility for people with disabilities. We continually improve the user experience for everyone and apply the relevant accessibility standards.&lt;/p>
 &lt;h3 id="conformance-status">Conformance status&lt;/h3>
 &lt;p>We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA. These guidelines explain how to make web content more accessible for people with disabilities and more user-friendly for everyone.&lt;/p>
@@ -830,9 +873,9 @@
  &lt;span class="badge text-bg-light">Effective date: 2026-01-26&lt;/span>
 &lt;/div>
 &lt;div class="d-flex flex-wrap gap-2 mb-4">
- &lt;a class="btn btn-outline-secondary" href="https://flinker.app/legal/services-terms/">Back to latest&lt;/a>
- &lt;a class="btn btn-outline-secondary" href="https://flinker.app/assets-flinker/legal/Flinker-Services-Terms-v2026-02.pdf" target="_blank" rel="noopener">Download PDF&lt;/a>
- &lt;a class="btn btn-outline-secondary" href="#" onclick="window.print(); return false;">Print&lt;/a>
+ &lt;a class="btn btn-outline-dark" href="https://flinker.app/legal/services-terms/">Back to latest&lt;/a>
+ &lt;a class="btn btn-outline-dark" href="https://flinker.app/assets-flinker/legal/Flinker-Services-Terms-v2026-02.pdf" target="_blank" rel="noopener">Download PDF&lt;/a>
+ &lt;a class="btn btn-outline-dark" href="#" onclick="window.print(); return false;">Print&lt;/a>
 &lt;/div>
 &lt;h2 id="table-of-contents">Table of Contents&lt;/h2>
 &lt;ol>
@@ -900,9 +943,9 @@
  &lt;span class="badge text-bg-light">Effective date: 2026-01-14&lt;/span>
 &lt;/div>
 &lt;div class="d-flex flex-wrap gap-2 mb-4">
- &lt;a class="btn btn-outline-secondary" href="https://flinker.app/legal/services-terms/">Back to latest&lt;/a>
- &lt;a class="btn btn-outline-secondary" href="https://flinker.app/assets-flinker/legal/Flinker-Services-Terms-v2026-01.pdf" target="_blank" rel="noopener">Download PDF&lt;/a>
- &lt;a class="btn btn-outline-secondary" href="#" onclick="window.print(); return false;">Print&lt;/a>
+ &lt;a class="btn btn-outline-dark" href="https://flinker.app/legal/services-terms/">Back to latest&lt;/a>
+ &lt;a class="btn btn-outline-dark" href="https://flinker.app/assets-flinker/legal/Flinker-Services-Terms-v2026-01.pdf" target="_blank" rel="noopener">Download PDF&lt;/a>
+ &lt;a class="btn btn-outline-dark" href="#" onclick="window.print(); return false;">Print&lt;/a>
 &lt;/div>
 &lt;div class="alert alert-warning" role="alert">
  This version is archived. Please refer to the latest version here: &lt;a href="https://flinker.app/legal/services-terms/">/legal/services-terms/&lt;/a>.
