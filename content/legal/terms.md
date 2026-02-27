@@ -189,6 +189,9 @@ The provider's claim to payment for use in excess of the agreed use remains unaf
 ### 2.7
 The customer is entitled to reinstatement of access rights and access rights after he has proven that he has stopped using the contract and prevented future use contrary to the contract.
 
+### 2.8 Power Query Connector Files (.mez)
+The Power Query connector files (.mez) provided as part of the Pro subscription are licensed, not sold. The .mez files remain the intellectual property of the provider. The customer may install and use the .mez files solely within the customer's own Microsoft Power BI environment for the duration of the active subscription term. The customer may not (a) redistribute, sublicense, share, or make the .mez files available to any third party, (b) reverse-engineer, decompile, or create derivative works from the .mez files, or (c) continue using the .mez files after expiration or termination of the subscription. Upon termination or non-renewal, the customer must delete all copies of the .mez files from its systems.
+
 ## 3. Availability, Performance Deficiencies
 
 ### 3.1
