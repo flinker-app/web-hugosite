@@ -169,7 +169,7 @@
                 <a class="nav-link dropdown-toggle" href="{{ "/developers/" | absURL }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Developers
                 </a>
-                <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu dropdown-menu-lg p-3" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item mb-3 text-body" href="{{ "/developers/" | absURL }}">
                       <div class="d-flex align-items-center">
                         <i class="bi bi-code-square fs-4 text-primary"></i>
@@ -179,30 +179,36 @@
                         </div>
                       </div>
                   </a>
-                  <a class="dropdown-item mb-3 text-body" href="{{ "/developers/ifc-viewer/" | absURL }}">
+                  <a class="dropdown-item mb-2 text-body" href="{{ "/developers/ifc-viewer/" | absURL }}">
                       <div class="d-flex align-items-center">
                         <i class="bi bi-box fs-4 text-primary"></i>
                         <div class="ms-3 lh-1">
-                            <h6 class="mb-1 fw-normal">IFC Viewer SDK</h6>
-                            <p class="mb-0 fs-6">Embed 3D viewing in your app</p>
+                            <h6 class="mb-1 fw-normal">IFC Viewer</h6>
+                            <p class="mb-0 fs-6">All integration options</p>
                         </div>
                       </div>
                   </a>
-                  <a class="dropdown-item mb-3 text-body" href="{{ "/developers/ifc-copilot/" | absURL }}">
+                  <!-- IFC Viewer sub-items -->
+                  <div class="ps-5 mb-3">
+                     <a class="dropdown-item py-1 text-body" href="{{ "/developers/ifc-viewer/hosted/" | absURL }}">
+                        <span class="small">Hosted Viewer</span>
+                     </a>
+                     <a class="dropdown-item py-1 text-body" href="{{ "/developers/ifc-viewer/embedded/" | absURL }}">
+                        <span class="small">Embedded Viewer</span>
+                     </a>
+                     <a class="dropdown-item py-1 text-body" href="{{ "/developers/ifc-viewer/sdk/" | absURL }}">
+                        <span class="small">SDK</span>
+                     </a>
+                     <a class="dropdown-item py-1 text-body" href="{{ "/developers/ifc-viewer/white-label/" | absURL }}">
+                        <span class="small">White-label / OEM</span>
+                     </a>
+                  </div>
+                  <a class="dropdown-item text-body" href="{{ "/developers/ifc-copilot/" | absURL }}">
                       <div class="d-flex align-items-center">
                         <i class="bi bi-chat-dots fs-4 text-primary"></i>
                         <div class="ms-3 lh-1">
                             <h6 class="mb-1 fw-normal">IFC Copilot API</h6>
                             <p class="mb-0 fs-6">AI-powered IFC data extraction</p>
-                        </div>
-                      </div>
-                  </a>
-                  <a class="dropdown-item text-body" href="{{ "/developers/white-label/" | absURL }}">
-                      <div class="d-flex align-items-center">
-                        <i class="bi bi-palette fs-4 text-primary"></i>
-                        <div class="ms-3 lh-1">
-                            <h6 class="mb-1 fw-normal">White Label</h6>
-                            <p class="mb-0 fs-6">OEM licensing & customization</p>
                         </div>
                       </div>
                   </a>

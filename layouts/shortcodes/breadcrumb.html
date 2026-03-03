@@ -1,0 +1,13 @@
+{{- if .Page.Params.breadcrumb -}}
+<nav aria-label="breadcrumb" class="container mt-3" style="position: relative; z-index: 1;">
+  <ol class="breadcrumb mb-0 small">
+    {{- range $i, $item := .Page.Params.breadcrumb -}}
+      {{- if $item.url -}}
+        <li class="breadcrumb-item"><a href="{{ $item.url | absURL }}" class="text-primary text-decoration-none">{{ $item.label }}</a></li>
+      {{- else -}}
+        <li class="breadcrumb-item active" aria-current="page">{{ $item.label }}</li>
+      {{- end -}}
+    {{- end -}}
+  </ol>
+</nav>
+{{- end -}}
