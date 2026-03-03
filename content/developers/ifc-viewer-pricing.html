@@ -1,0 +1,656 @@
+---
+title: "IFC Viewer Pricing | Developer Licensing | Flinker"
+description: "Simple, fixed monthly pricing for the Flinker IFC Viewer. Hosted deep link integration — no tokens, no flex credits, no Autodesk complexity."
+date: 2026-03-03
+lastmod: 2026-03-03
+draft: false
+url: "/developers/ifc-viewer/pricing/"
+layout: "single"
+disableTopSpacing: true
+canonical: "https://flinker.app/developers/ifc-viewer/pricing/"
+keywords: ["IFC Viewer pricing", "IFC Viewer SDK license", "BIM viewer pricing", "embed IFC viewer cost", "Flinker developer pricing"]
+author: "Flinker"
+type: "page"
+sitemap:
+  priority: 0.8
+  changefreq: "monthly"
+---
+
+<style>
+  /* Calculator scoped styles */
+  .calc-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(15,23,42,.06);
+    position: relative;
+    overflow: hidden;
+  }
+  .calc-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--bs-primary), #10b981);
+    border-radius: 16px 16px 0 0;
+  }
+  .calc-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+  .calc-slider-wrap {
+    margin-bottom: 32px;
+  }
+  .calc-slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+  }
+  .calc-slider-title { font-size: 14px; color: #64748b; }
+  .calc-slider-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--bs-emphasis-color, #0f172a);
+    transition: color 0.2s;
+  }
+
+  .calc-range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #e2e8f0;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .calc-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    background: var(--bs-primary, #007bff);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.15s;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.3);
+  }
+  .calc-range::-webkit-slider-thumb:hover { transform: scale(1.15); }
+  .calc-range::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    background: var(--bs-primary, #007bff);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.3);
+  }
+
+  .calc-tick-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+  .calc-tick-labels span {
+    font-size: 11px;
+    font-weight: 500;
+    color: #94a3b8;
+  }
+
+  /* Tier recommendation box */
+  .tier-rec {
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px 28px;
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    transition: all 0.3s ease;
+  }
+  .tier-rec.rec-starter {
+    background: rgba(16,185,129,0.06);
+    border-color: rgba(16,185,129,0.25);
+  }
+  .tier-rec.rec-enterprise {
+    background: rgba(14,165,233,0.06);
+    border-color: rgba(14,165,233,0.25);
+  }
+  .rec-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .rec-tier {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--bs-emphasis-color, #0f172a);
+    transition: color 0.3s;
+  }
+  .tier-rec.rec-starter .rec-tier { color: #10b981; }
+  .tier-rec.rec-enterprise .rec-tier { color: #0ea5e9; }
+  .rec-desc {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+    margin-top: 2px;
+  }
+  .rec-amount {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--bs-primary, #007bff);
+    transition: all 0.3s ease;
+  }
+  .tier-rec.rec-starter .rec-amount { color: #10b981; }
+  .tier-rec.rec-enterprise .rec-amount { color: #0ea5e9; }
+  .rec-period {
+    font-size: 13px;
+    font-weight: 500;
+    color: #94a3b8;
+    margin-top: 4px;
+    text-align: right;
+  }
+
+  /* Plan cards */
+  .plan {
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 26px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(15,23,42,.06);
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    position: relative;
+  }
+  .plan:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 36px rgba(15,23,42,.1);
+  }
+  .plan-accent {
+    border: 2px solid var(--bs-primary, #007bff);
+    box-shadow: 0 10px 30px rgba(0,123,255,.12);
+  }
+  .plan-badge {
+    position: absolute;
+    top: -1px; right: 20px;
+    background: var(--bs-primary, #007bff);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-radius: 0 0 8px 8px;
+  }
+  .plan-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .plan-opens {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  .plan-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--bs-primary, #007bff);
+    margin-bottom: 4px;
+  }
+  .plan-per {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 18px;
+  }
+
+  /* Info rows */
+  .info-row {
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 22px 28px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(15,23,42,.04);
+  }
+  .info-row-price {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--bs-primary, #007bff);
+    white-space: nowrap;
+  }
+
+  /* Pilot note */
+  .pilot-note {
+    border: 1px solid rgba(16,185,129,0.25);
+    background: rgba(16,185,129,0.04);
+    border-radius: 16px;
+    padding: 20px 28px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .pilot-note strong { color: #10b981; font-weight: 600; }
+
+  /* Coming soon */
+  .coming-soon-card {
+    border: 1px dashed #cbd5e1;
+    border-radius: 16px;
+    padding: 28px 32px;
+  }
+
+  @media (max-width: 768px) {
+    .calc-card { padding: 24px 18px; }
+    .tier-rec { flex-direction: column; align-items: flex-start; }
+    .rec-amount { font-size: 36px; }
+    .rec-period { text-align: left; }
+    .info-row { flex-direction: column; gap: 14px; align-items: flex-start; }
+  }
+</style>
+
+<!-- Hero Section -->
+<section class="py-md-10 pt-5">
+   <div class="container">
+      <div class="row align-items-center py-lg-8">
+         <div class="col-lg-8 offset-lg-2 text-center">
+            <span class="badge bg-primary-subtle text-primary mb-3">Hosted Viewer Pricing</span>
+            <h1 class="display-5"><em class="text-primary">Predictable</em> pricing.</h1>
+            <p class="lead text-muted mb-5">Fixed monthly plans. No tokens, no overages, no complexity.</p>
+            <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-primary btn-lg">Book a Call</a>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Value Props -->
+<section class="py-8 py-lg-10">
+   <div class="container">
+      <div class="row g-5 justify-content-center">
+         <div class="col-md-4 text-center">
+            <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 64px; height: 64px;">
+               <i class="bi bi-receipt fs-4 text-primary"></i>
+            </div>
+            <h5 class="mb-2">Fixed Monthly Price</h5>
+            <p class="text-muted small mb-0">Pick a plan, know the cost. No per-open metering, no usage surprises at the end of the month.</p>
+         </div>
+         <div class="col-md-4 text-center">
+            <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 64px; height: 64px;">
+               <i class="bi bi-gift fs-4 text-success"></i>
+            </div>
+            <h5 class="mb-2">Free Pilot Period</h5>
+            <p class="text-muted small mb-0">4–8 weeks free after integration fee. Test and validate with your team before committing to a subscription.</p>
+         </div>
+         <div class="col-md-4 text-center">
+            <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 64px; height: 64px;">
+               <i class="bi bi-shield-check fs-4 text-primary"></i>
+            </div>
+            <h5 class="mb-2">Hard Cap — No Overages</h5>
+            <p class="text-muted small mb-0">No overage charges, ever. Viewer pauses at your cap — you decide when to upgrade.</p>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Interactive Calculator -->
+<section class="py-8 py-lg-10">
+   <div class="container">
+      <div class="row justify-content-center">
+         <div class="col-lg-10">
+            <div class="calc-card">
+               <div class="calc-label">Estimate your monthly plan</div>
+
+               <div class="calc-slider-wrap">
+                  <div class="calc-slider-header">
+                     <span class="calc-slider-title">Viewer Opens per month</span>
+                     <span class="calc-slider-value" id="opensDisplay">250</span>
+                  </div>
+                  <input type="range" class="calc-range" id="opensSlider" min="0" max="100" value="8" step="1">
+                  <div class="calc-tick-labels">
+                     <span>0</span>
+                     <span>500</span>
+                     <span>2,500</span>
+                     <span>8,000</span>
+                     <span>8k+</span>
+                  </div>
+               </div>
+
+               <div class="tier-rec rec-starter" id="tierRec">
+                  <div>
+                     <div class="rec-label">Recommended plan</div>
+                     <div class="rec-tier" id="recTier">Starter</div>
+                     <div class="rec-desc" id="recDesc">Up to 500 opens/month · pilot period included</div>
+                  </div>
+                  <div class="text-end flex-shrink-0">
+                     <div class="rec-amount" id="recAmount">€199</div>
+                     <div class="rec-period">/ month</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Tier Cards -->
+<section class="py-8 py-lg-10">
+   <div class="container">
+      <div class="row justify-content-center mb-7">
+         <div class="col-lg-6 text-center">
+            <h2 class="mb-3">Choose Your Plan</h2>
+            <p class="text-muted">Fixed monthly plans that scale with your needs.</p>
+         </div>
+      </div>
+      <div class="row g-4 justify-content-center">
+         <!-- Starter -->
+         <div class="col-lg-3 col-md-6">
+            <div class="plan h-100" id="card-starter">
+               <div class="plan-name">Starter</div>
+               <div class="plan-opens">up to 500 opens/mo</div>
+               <div class="plan-price">€199</div>
+               <div class="plan-per">/ month</div>
+               <hr>
+               <ul class="list-unstyled mb-0">
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">IFC + BCF support</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Hosted on viewer.flinker.app</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Deep link integration</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Cloud storage compatible</span></li>
+                  <li class="mb-0 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Email support</span></li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- Growth -->
+         <div class="col-lg-3 col-md-6">
+            <div class="plan plan-accent h-100" id="card-growth">
+               <div class="plan-badge">Most common</div>
+               <div class="plan-name">Growth</div>
+               <div class="plan-opens">up to 2,500 opens/mo</div>
+               <div class="plan-price">€399</div>
+               <div class="plan-per">/ month</div>
+               <hr>
+               <ul class="list-unstyled mb-0">
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Everything in Starter</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Priority support</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">SLA agreement</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Onboarding session</span></li>
+                  <li class="mb-0 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Annual pre-pay option</span></li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- Scale -->
+         <div class="col-lg-3 col-md-6">
+            <div class="plan h-100" id="card-scale">
+               <div class="plan-name">Scale</div>
+               <div class="plan-opens">up to 8,000 opens/mo</div>
+               <div class="plan-price">€699</div>
+               <div class="plan-per">/ month</div>
+               <hr>
+               <ul class="list-unstyled mb-0">
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Everything in Growth</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Dedicated contact</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Custom SLA</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Quarterly usage review</span></li>
+                  <li class="mb-0 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">10% annual discount</span></li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- Enterprise -->
+         <div class="col-lg-3 col-md-6">
+            <div class="plan h-100" id="card-enterprise">
+               <div class="plan-name">Enterprise</div>
+               <div class="plan-opens">8,000+ opens/mo</div>
+               <div class="plan-price">Custom</div>
+               <div class="plan-per">contact us</div>
+               <hr>
+               <ul class="list-unstyled mb-0">
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Everything in Scale</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Volume pricing</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Multi-team setup</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Enterprise SLA</span></li>
+                  <li class="mb-0 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Custom contract</span></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Setup Fee -->
+<section class="py-8 py-lg-10">
+   <div class="container">
+      <div class="row justify-content-center">
+         <div class="col-lg-10">
+            <div class="info-row mb-4">
+               <div>
+                  <div class="fw-semibold">One-time Integration Fee</div>
+                  <div class="text-muted small">Technical setup, configuration, integration guide, and user acceptance testing. Required for all plans — ensures a smooth go-live.</div>
+               </div>
+               <div class="info-row-price">€2,000 – €4,000</div>
+            </div>
+
+            <div class="pilot-note">
+               <i class="bi bi-arrow-right text-success flex-shrink-0 mt-1"></i>
+               <p class="text-muted small mb-0 lh-lg">
+                  <strong>Pilot period included.</strong> After paying the integration fee, your first 4–8 weeks of subscription are free — giving your team time to test, validate, and go live without subscription pressure. Integration fee applies to all plans regardless of usage volume.
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Coming Soon -->
+<section class="py-8 py-lg-10">
+   <div class="container">
+      <div class="row justify-content-center">
+         <div class="col-lg-10">
+            <div class="coming-soon-card">
+               <div class="calc-label mb-4">Coming soon — additional deployment models</div>
+               <div class="row g-4">
+                  <div class="col-md-4">
+                     <h6 class="mb-1 text-muted">B) Embedded Viewer</h6>
+                     <span class="text-muted small">iFrame + BIM Data API</span>
+                  </div>
+                  <div class="col-md-4">
+                     <h6 class="mb-1 text-muted">C) SDK (Self-hosted)</h6>
+                     <span class="text-muted small">On-prem / Private Cloud</span>
+                  </div>
+                  <div class="col-md-4">
+                     <h6 class="mb-1 text-muted">D) White-label / OEM</h6>
+                     <span class="text-muted small">Your brand, your domain</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-8 py-lg-10">
+   <div class="container">
+      <div class="row justify-content-center mb-6">
+         <div class="col-lg-8 text-center">
+            <h2 class="mb-3">Frequently Asked Questions</h2>
+            <p class="text-muted">Everything you need to know about IFC Viewer pricing.</p>
+         </div>
+      </div>
+      <div class="row justify-content-center">
+         <div class="col-lg-8">
+            <div class="accordion" id="pricingFaq">
+               <div class="accordion-item border rounded-3 mb-3">
+                  <h3 class="accordion-header">
+                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+                        What is a Viewer Open?
+                     </button>
+                  </h3>
+                  <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#pricingFaq">
+                     <div class="accordion-body text-muted">
+                        1 Viewer Open = one browser tab opened with IFC/BCF files — regardless of how many files are selected. If a user opens the same file again, that counts as another open.
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item border rounded-3 mb-3">
+                  <h3 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        Are there overage charges?
+                     </button>
+                  </h3>
+                  <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                     <div class="accordion-body text-muted">
+                        No, never. We use a hard cap model — when you reach your limit, the viewer pauses, prompting an upgrade. You decide when to upgrade. No surprise bills.
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item border rounded-3 mb-3">
+                  <h3 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        Is there an annual discount?
+                     </button>
+                  </h3>
+                  <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                     <div class="accordion-body text-muted">
+                        Yes. Annual pre-pay is available on Growth and above with a 10% discount. Minimum subscription term is 12 months after the pilot period.
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item border rounded-3 mb-3">
+                  <h3 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                        What's included in the integration fee?
+                     </button>
+                  </h3>
+                  <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                     <div class="accordion-body text-muted">
+                        The one-time fee of €2,000 – €4,000 covers technical setup, configuration, an integration guide, and user acceptance testing (UAT). It is required for all plans and ensures a smooth go-live.
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item border rounded-3 mb-3">
+                  <h3 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                        What's included in the pilot period?
+                     </button>
+                  </h3>
+                  <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                     <div class="accordion-body text-muted">
+                        After paying the integration fee, your first 4–8 weeks of subscription are free. This gives your team time to test, validate, and go live without subscription pressure.
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item border rounded-3 mb-3">
+                  <h3 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                        Do prices include VAT?
+                     </button>
+                  </h3>
+                  <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                     <div class="accordion-body text-muted">
+                        All prices shown are ex. VAT. VAT will be added where applicable based on your location.
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- CTA -->
+<section class="py-8 py-lg-10 bg-primary">
+   <div class="container">
+      <div class="row justify-content-center">
+         <div class="col-lg-6 text-center">
+            <h2 class="text-white mb-3">Ready to Integrate?</h2>
+            <p class="text-white-50 mb-5">Talk to our team about your integration requirements and get started with the IFC Viewer.</p>
+            <div class="d-flex justify-content-center gap-3">
+               <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-light btn-lg px-4">Book a Call</a>
+               <a href="https://docs.flinker.app/" class="btn btn-outline-light btn-lg px-4" target="_blank">Read the Docs</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<script>
+(function() {
+  var slider = document.getElementById('opensSlider');
+  var opensDisplay = document.getElementById('opensDisplay');
+  var tierRec = document.getElementById('tierRec');
+  var recTier = document.getElementById('recTier');
+  var recDesc = document.getElementById('recDesc');
+  var recAmount = document.getElementById('recAmount');
+  var cards = {
+    starter: document.getElementById('card-starter'),
+    growth: document.getElementById('card-growth'),
+    scale: document.getElementById('card-scale'),
+    enterprise: document.getElementById('card-enterprise')
+  };
+
+  var tiers = {
+    starter:    { label: 'Starter',    price: '€199',   desc: 'Up to 500 opens/month · pilot period included',      cls: 'rec-starter',    cardCls: 'plan-accent' },
+    growth:     { label: 'Growth',     price: '€399',   desc: 'Up to 2,500 opens/month · most popular plan',         cls: '',               cardCls: 'plan-accent' },
+    scale:      { label: 'Scale',      price: '€699',   desc: 'Up to 8,000 opens/month · full SLA included',         cls: '',               cardCls: 'plan-accent' },
+    enterprise: { label: 'Enterprise', price: 'Custom',  desc: 'Above 8,000 opens/month · volume pricing available', cls: 'rec-enterprise', cardCls: 'plan-accent' }
+  };
+
+  function sliderToOpens(v) {
+    if (v <= 20) return Math.round(v * 25);
+    if (v <= 50) return Math.round(500 + (v - 20) * (2000 / 30));
+    if (v <= 80) return Math.round(2500 + (v - 50) * (5500 / 30));
+    return 8001;
+  }
+
+  function formatOpens(n) {
+    if (n > 8000) return '8,000+';
+    if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k';
+    return n.toLocaleString();
+  }
+
+  function update() {
+    var v = parseInt(slider.value);
+    var opens = sliderToOpens(v);
+    opensDisplay.textContent = formatOpens(opens);
+
+    // Slider track fill
+    slider.style.background = 'linear-gradient(to right, #007bff 0%, #007bff ' + v + '%, #e2e8f0 ' + v + '%, #e2e8f0 100%)';
+
+    var tierKey;
+    if (opens <= 500) tierKey = 'starter';
+    else if (opens <= 2500) tierKey = 'growth';
+    else if (opens <= 8000) tierKey = 'scale';
+    else tierKey = 'enterprise';
+
+    var t = tiers[tierKey];
+    tierRec.className = 'tier-rec' + (t.cls ? ' ' + t.cls : '');
+    recTier.textContent = t.label;
+    recDesc.textContent = t.desc;
+    recAmount.textContent = t.price;
+
+    // Highlight active card
+    Object.keys(cards).forEach(function(k) {
+      cards[k].classList.remove('plan-accent');
+    });
+    cards[tierKey].classList.add('plan-accent');
+  }
+
+  slider.addEventListener('input', update);
+  update();
+})();
+</script>
