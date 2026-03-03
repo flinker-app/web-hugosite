@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IFC Viewer for Developers – Hosting, Embedding, SDK &amp; White-Label on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/developers/ifc-viewer/</link><description>Recent content in IFC Viewer for Developers – Hosting, Embedding, SDK &amp; White-Label on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/developers/ifc-viewer/index.xml" rel="self" type="application/rss+xml"/><item><title>Embedded IFC Viewer – iFrame Integration &amp; BIM Data API</title><link>https://flinker.app/developers/ifc-viewer/embedded/</link><pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/embedded/</guid><description>&lt;nav aria-label="breadcrumb" class="container mt-3" style="position: relative; z-index: 1;">
+ &lt;ol class="breadcrumb mb-0 small">&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/" class="text-primary text-decoration-none">Developers&lt;/a>&lt;/li>&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/ifc-viewer/" class="text-primary text-decoration-none">IFC Viewer&lt;/a>&lt;/li>&lt;li class="breadcrumb-item active" aria-current="page">Embedded&lt;/li>&lt;/ol>
+&lt;/nav>
+
+&lt;!-- Back Link -->
+&lt;div class="container mt-2 mb-0" style="position: relative; z-index: 1;">
+ &lt;a href="https://flinker.app/developers/ifc-viewer/" class="text-primary text-decoration-none small">&lt;i class="bi bi-arrow-left me-1">&lt;/i>Back to IFC Viewer&lt;/a>
+&lt;/div>
+
+&lt;!-- Hero Section -->
+&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
+ &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
+ &lt;div class="container">
+ &lt;div class="row align-items-center py-lg-8">
+ &lt;div class="col-lg-8 offset-lg-2 text-center">
+ &lt;span class="badge bg-primary mb-3">Embedded&lt;/span>
+ &lt;h1 class="display-5">Embedded IFC Viewer &lt;span class="text-muted fs-4">(iFrame + BIM Data API)&lt;/span>&lt;/h1>
+ &lt;p class="lead">Embed the viewer and query model data programmatically. Full visual integration into your portal, ERP, or intranet.&lt;/p></description></item><item><title>Hosted IFC Viewer – Deep Link Integration &amp; Pricing</title><link>https://flinker.app/developers/ifc-viewer/hosted/</link><pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/hosted/</guid><description>&lt;style>
+ /* Calculator scoped styles */
+ .calc-card {
+ border: 1px solid #e2e8f0;
+ border-radius: 16px;
+ padding: 40px;
+ background: #fff;
+ box-shadow: 0 10px 30px rgba(15,23,42,.06);
+ position: relative;
+ overflow: hidden;
+ }
+ .calc-card::before {
+ content: '';
+ position: absolute;
+ top: 0; left: 0; right: 0;
+ height: 3px;
+ background: linear-gradient(90deg, var(--bs-primary), #10b981);
+ border-radius: 16px 16px 0 0;
+ }
+ .calc-label {
+ font-size: 12px;
+ font-weight: 700;
+ color: #64748b;
+ letter-spacing: 0.08em;
+ text-transform: uppercase;
+ margin-bottom: 28px;
+ }
+ .calc-slider-wrap {
+ margin-bottom: 32px;
+ }
+ .calc-slider-header {
+ display: flex;
+ justify-content: space-between;
+ align-items: baseline;
+ margin-bottom: 12px;
+ }
+ .calc-slider-title { font-size: 14px; color: #64748b; }
+ .calc-slider-value {
+ font-size: 28px;
+ font-weight: 700;
+ color: var(--bs-emphasis-color, #0f172a);
+ transition: color 0.2s;
+ }
+
+ .calc-range {
+ -webkit-appearance: none;
+ width: 100%;
+ height: 6px;
+ background: #e2e8f0;
+ outline: none;
+ border-radius: 3px;
+ cursor: pointer;
+ }
+ .calc-range::-webkit-slider-thumb {
+ -webkit-appearance: none;
+ width: 22px;
+ height: 22px;
+ background: var(--bs-primary, #007bff);
+ border-radius: 50%;
+ cursor: pointer;
+ transition: transform 0.15s;
+ box-shadow: 0 2px 8px rgba(0,123,255,0.3);
+ }
+ .calc-range::-webkit-slider-thumb:hover { transform: scale(1.15); }
+ .calc-range::-moz-range-thumb {
+ width: 22px;
+ height: 22px;
+ background: var(--bs-primary, #007bff);
+ border-radius: 50%;
+ cursor: pointer;
+ border: none;
+ box-shadow: 0 2px 8px rgba(0,123,255,0.3);
+ }
+
+ .calc-tick-labels {
+ display: flex;
+ justify-content: space-between;
+ margin-top: 8px;
+ }
+ .calc-tick-labels span {
+ font-size: 11px;
+ font-weight: 500;
+ color: #94a3b8;
+ }
+
+ /* Tier recommendation box */
+ .tier-rec {
+ border: 1px solid #e2e8f0;
+ border-radius: 16px;
+ padding: 24px 28px;
+ background: #f8fafc;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 16px;
+ transition: all 0.3s ease;
+ }
+ .tier-rec.rec-starter {
+ background: rgba(16,185,129,0.06);
+ border-color: rgba(16,185,129,0.25);
+ }
+ .tier-rec.rec-enterprise {
+ background: rgba(14,165,233,0.06);
+ border-color: rgba(14,165,233,0.25);
+ }
+ .rec-label {
+ font-size: 12px;
+ font-weight: 700;
+ color: #64748b;
+ letter-spacing: 0.06em;
+ text-transform: uppercase;
+ margin-bottom: 4px;
+ }
+ .rec-tier {
+ font-size: 24px;
+ font-weight: 700;
+ color: var(--bs-emphasis-color, #0f172a);
+ transition: color 0.3s;
+ }
+ .tier-rec.rec-starter .rec-tier { color: #10b981; }
+ .tier-rec.rec-enterprise .rec-tier { color: #0ea5e9; }
+ .rec-desc {
+ font-size: 13px;
+ color: #64748b;
+ line-height: 1.5;
+ margin-top: 2px;
+ }
+ .rec-amount {
+ font-size: 44px;
+ font-weight: 700;
+ line-height: 1;
+ color: var(--bs-primary, #007bff);
+ transition: all 0.3s ease;
+ }
+ .tier-rec.rec-starter .rec-amount { color: #10b981; }
+ .tier-rec.rec-enterprise .rec-amount { color: #0ea5e9; }
+ .rec-period {
+ font-size: 13px;
+ font-weight: 500;
+ color: #94a3b8;
+ margin-top: 4px;
+ text-align: right;
+ }
+
+ /* Plan cards */
+ .plan {
+ border: 1px solid #e2e8f0;
+ border-radius: 16px;
+ padding: 26px;
+ background: #fff;
+ box-shadow: 0 10px 30px rgba(15,23,42,.06);
+ transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+ position: relative;
+ }
+ .plan:hover {
+ transform: translateY(-3px);
+ box-shadow: 0 14px 36px rgba(15,23,42,.1);
+ }
+ .plan-accent {
+ border: 2px solid var(--bs-primary, #007bff);
+ box-shadow: 0 10px 30px rgba(0,123,255,.12);
+ }
+ .plan-badge {
+ position: absolute;
+ top: -1px; right: 20px;
+ background: var(--bs-primary, #007bff);
+ color: #fff;
+ font-size: 11px;
+ font-weight: 700;
+ padding: 4px 12px;
+ letter-spacing: 0.04em;
+ text-transform: uppercase;
+ border-radius: 0 0 8px 8px;
+ }
+ .plan-name {
+ font-size: 12px;
+ font-weight: 700;
+ color: #64748b;
+ letter-spacing: 0.08em;
+ text-transform: uppercase;
+ margin-bottom: 14px;
+ }
+ .plan-opens {
+ font-size: 13px;
+ color: #64748b;
+ margin-bottom: 12px;
+ line-height: 1.4;
+ }
+ .plan-price {
+ font-size: 24px;
+ font-weight: 700;
+ color: var(--bs-primary, #007bff);
+ margin-bottom: 4px;
+ }
+ .plan-per {
+ font-size: 13px;
+ color: #64748b;
+ margin-bottom: 18px;
+ }
+
+ /* Info rows */
+ .info-row {
+ border: 1px solid #e2e8f0;
+ border-radius: 16px;
+ padding: 22px 28px;
+ background: #fff;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ box-shadow: 0 4px 12px rgba(15,23,42,.04);
+ }
+ .info-row-price {
+ font-size: 26px;
+ font-weight: 700;
+ color: var(--bs-primary, #007bff);
+ white-space: nowrap;
+ }
+
+ /* Pilot note */
+ .pilot-note {
+ border: 1px solid rgba(16,185,129,0.25);
+ background: rgba(16,185,129,0.04);
+ border-radius: 16px;
+ padding: 20px 28px;
+ display: flex;
+ align-items: flex-start;
+ gap: 16px;
+ }
+ .pilot-note strong { color: #10b981; font-weight: 600; }
+
+ @media (max-width: 768px) {
+ .calc-card { padding: 24px 18px; }
+ .tier-rec { flex-direction: column; align-items: flex-start; }
+ .rec-amount { font-size: 36px; }
+ .rec-period { text-align: left; }
+ .info-row { flex-direction: column; gap: 14px; align-items: flex-start; }
+ }
+&lt;/style>
+
+&lt;nav aria-label="breadcrumb" class="container mt-3" style="position: relative; z-index: 1;">
+ &lt;ol class="breadcrumb mb-0 small">&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/" class="text-primary text-decoration-none">Developers&lt;/a>&lt;/li>&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/ifc-viewer/" class="text-primary text-decoration-none">IFC Viewer&lt;/a>&lt;/li>&lt;li class="breadcrumb-item active" aria-current="page">Hosted&lt;/li>&lt;/ol>
+&lt;/nav>
+
+&lt;!-- Back Link -->
+&lt;div class="container mt-2 mb-0" style="position: relative; z-index: 1;">
+ &lt;a href="https://flinker.app/developers/ifc-viewer/" class="text-primary text-decoration-none small">&lt;i class="bi bi-arrow-left me-1">&lt;/i>Back to IFC Viewer&lt;/a>
+&lt;/div>
+
+&lt;!-- Hero Section -->
+&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
+ &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
+ &lt;div class="container">
+ &lt;div class="row align-items-center py-lg-8">
+ &lt;div class="col-lg-8 offset-lg-2 text-center">
+ &lt;span class="badge bg-primary mb-3">Hosted Viewer&lt;/span>
+ &lt;h1 class="display-5">Hosted IFC Viewer &lt;span class="text-muted fs-3">(Deep Link)&lt;/span>&lt;/h1>
+ &lt;p class="lead">Open IFC and BCF files via secure URL — no embedding, no infrastructure.&lt;/p></description></item><item><title>IFC Viewer SDK – Embed 3D BIM Viewing in Your App</title><link>https://flinker.app/developers/ifc-viewer/sdk/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/sdk/</guid><description>&lt;nav aria-label="breadcrumb" class="container mt-3" style="position: relative; z-index: 1;">
+ &lt;ol class="breadcrumb mb-0 small">&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/" class="text-primary text-decoration-none">Developers&lt;/a>&lt;/li>&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/ifc-viewer/" class="text-primary text-decoration-none">IFC Viewer&lt;/a>&lt;/li>&lt;li class="breadcrumb-item active" aria-current="page">SDK&lt;/li>&lt;/ol>
+&lt;/nav>
+
+&lt;!-- Back Link -->
+&lt;div class="container mt-2 mb-0" style="position: relative; z-index: 1;">
+ &lt;a href="https://flinker.app/developers/ifc-viewer/" class="text-primary text-decoration-none small">&lt;i class="bi bi-arrow-left me-1">&lt;/i>Back to IFC Viewer&lt;/a>
+&lt;/div>
+
+&lt;!-- Hero Section -->
+&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
+ &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
+ &lt;div class="container">
+ &lt;div class="row align-items-center py-lg-8">
+ &lt;div class="col-lg-6 col-12">
+ &lt;div class="text-center text-lg-start">
+ &lt;span class="badge bg-primary mb-3">SDK&lt;/span>
+ &lt;h1 class="display-5">IFC Viewer SDK&lt;/h1>
+ &lt;p class="lead">Embed powerful 3D IFC viewing capabilities into your web applications. High-performance WebGL rendering that handles large construction models with ease.&lt;/p></description></item><item><title>White-Label IFC Viewer &amp; IFC Copilot – OEM Licensing</title><link>https://flinker.app/developers/ifc-viewer/white-label/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/white-label/</guid><description>&lt;nav aria-label="breadcrumb" class="container mt-3" style="position: relative; z-index: 1;">
+ &lt;ol class="breadcrumb mb-0 small">&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/" class="text-primary text-decoration-none">Developers&lt;/a>&lt;/li>&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/ifc-viewer/" class="text-primary text-decoration-none">IFC Viewer&lt;/a>&lt;/li>&lt;li class="breadcrumb-item active" aria-current="page">White-label&lt;/li>&lt;/ol>
+&lt;/nav>
+
+&lt;!-- Back Link -->
+&lt;div class="container mt-2 mb-0" style="position: relative; z-index: 1;">
+ &lt;a href="https://flinker.app/developers/ifc-viewer/" class="text-primary text-decoration-none small">&lt;i class="bi bi-arrow-left me-1">&lt;/i>Back to IFC Viewer&lt;/a>
+&lt;/div>
+
+&lt;!-- Hero Section -->
+&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
+ &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
+ &lt;div class="container">
+ &lt;div class="row align-items-center py-lg-8">
+ &lt;div class="col-lg-6 col-12">
+ &lt;div class="text-center text-lg-start">
+ &lt;span class="badge bg-primary mb-3">OEM&lt;/span>
+ &lt;h1 class="display-5">White Label &amp; OEM Licensing&lt;/h1>
+ &lt;p class="lead">Embed Flinker technology into your products under your own brand. Flexible licensing for software vendors and enterprises.&lt;/p></description></item></channel></rss>
