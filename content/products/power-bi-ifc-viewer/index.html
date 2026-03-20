@@ -458,7 +458,7 @@ schema:
 
     <div class="kicker">
       <p class="muted" style="margin:0;">
-        Start free in Power BI Desktop. Pro is priced per tenant — not per user. Enterprise also offers per-project pricing.
+        Start free in Power BI Desktop. Pro is for internal tenant-wide use. Enterprise covers project-specific, embedded, or broader commercial deployment.
       </p>
     </div>
 
@@ -501,7 +501,7 @@ schema:
       <!-- Pro -->
       <article aria-labelledby="plan-pro" class="plan">
         <h3 id="plan-pro">Pro</h3>
-        <p class="sub">Share with your team via Power BI Service</p>
+        <p class="sub">Internal use within your Microsoft 365 tenant</p>
         <p class="price">€249 <span style="font-size:14px; font-weight:600; color:var(--bs-secondary-color);">/tenant · mo, billed annually</span></p>
         <ul class="list-unstyled">
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
@@ -536,9 +536,13 @@ schema:
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
             <span><strong>All MS365 viewers</strong> included</span>
           </li>
-          <li class="d-flex align-items-start" style="gap:10px; margin:0;">
+          <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
             <span>Unlimited editors per tenant</span>
+          </li>
+          <li class="d-flex align-items-start" style="gap:10px; margin:0;">
+            <i class="bi bi-info-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+            <span><strong>Licensed for internal organizational use only</strong></span>
           </li>
         </ul>
         <div class="plan-cta">
@@ -550,7 +554,7 @@ schema:
       <!-- Enterprise -->
       <article aria-labelledby="plan-enterprise" class="plan">
         <h3 id="plan-enterprise">Enterprise</h3>
-        <p class="sub">Scale &amp; embed — per tenant or per project</p>
+        <p class="sub">Project-specific, embedded, or commercial deployment</p>
         <p class="price">Contact us</p>
         <ul class="list-unstyled">
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
@@ -565,11 +569,23 @@ schema:
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
             <span><strong>Power BI Embedded</strong> supported</span>
           </li>
+          <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
+            <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+            <span><strong>Per-project licensing</strong> available</span>
+          </li>
+          <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
+            <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+            <span>Multi-project &amp; commercial deployment rights on request</span>
+          </li>
+          <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
+            <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+            <span>Support, rollout &amp; SLA options</span>
+          </li>
+          <li class="d-flex align-items-start" style="gap:10px; margin:0;">
+            <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+            <span>Ideal for agencies, ISVs &amp; customer-facing deployments</span>
+          </li>
         </ul>
-        <p class="note" style="margin:0 0 16px; padding:12px; background:#f8fafc; border-radius:8px;">
-          Use the visual in embedded analytics (customer-facing apps/portals) — ideal for agencies and ISVs.
-          <a class="link-muted" href="https://docs.flinker.app/docs/sharing-power-bi-ifc-reports-with-external-users.html#option-3-power-bi-embedded-app-owns-data--custom-client-portal">Learn more</a>
-        </p>
         <div class="plan-cta">
           <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true" class="btn-theme-outline" style="text-align:center;">Get Quote</a>
         </div>
@@ -722,6 +738,18 @@ schema:
           <td>All included</td>
           <td>All included</td>
         </tr>
+        <tr>
+          <td>Internal tenant use</td>
+          <td class="no">—</td>
+          <td class="yes"><i class="bi bi-check-lg"></i></td>
+          <td class="yes"><i class="bi bi-check-lg"></i></td>
+        </tr>
+        <tr>
+          <td>Project / embedded / commercial rights</td>
+          <td class="no">—</td>
+          <td class="no">—</td>
+          <td class="yes"><i class="bi bi-check-lg"></i></td>
+        </tr>
       </tbody>
     </table>
 
@@ -734,8 +762,8 @@ schema:
       <p><strong>Notes:</strong></p>
       <ul style="margin:0 0 0 20px; padding:0;">
         <li>Free is designed for Power BI Desktop. Sharing in Power BI Service is included from Pro.</li>
-        <li>Pro is priced per tenant — all editors and MS365 viewers included, no per-user fees.</li>
-        <li>Enterprise is available per tenant or per project — contact us for a quote.</li>
+        <li>Pro is per tenant for internal organizational use — all editors and MS365 viewers included, no per-user fees.</li>
+        <li>Enterprise covers project-specific, embedded, API-scale, or broader commercial deployment — contact us for a quote.</li>
         <li>Prices exclude VAT. Annual billing available.</li>
       </ul>
     </div>
@@ -756,8 +784,11 @@ schema:
             <p class="text-muted mb-2" style="font-size:15px;">
               Every user who views or interacts with Flinker IFC Visual reports on Power BI Service needs access through a licensed tenant — designers and viewers alike require Pro or Enterprise.
             </p>
-            <p class="text-muted mb-0" style="font-size:15px;">
+            <p class="text-muted mb-2" style="font-size:15px;">
               All team members are covered by your single tenant license — <em>no per-user fees</em>. External viewers (e.g., embedded public reports) do not require additional licensing.
+            </p>
+            <p class="text-muted mb-0" style="font-size:15px;">
+              Pro covers internal use within one tenant. For project-specific, embedded, or commercial deployment, Enterprise licensing applies.
             </p>
           </div>
         </div>
@@ -1194,6 +1225,7 @@ schema:
               <div class="mt-3">
                 A tenant is your organization’s dedicated Microsoft 365 environment — your users, groups, domains,
                 security policies, and SharePoint/Teams data. Our pricing applies to your tenant as a whole.
+                Pro covers internal use within your tenant. For project-specific licensing, embedded analytics, or broader commercial reuse, Enterprise applies.
               </div>
             </div>
           </div>
@@ -1216,6 +1248,7 @@ schema:
               <div class="mt-3">
                 The Pro plan is billed per tenant at a flat monthly rate. All editors within your tenant
                 get access to Pro features — there’s no per-user fee.
+                Pro is designed for internal organizational use. For project-specific, embedded, or multi-project commercial rights, contact us about Enterprise.
               </div>
             </div>
           </div>
