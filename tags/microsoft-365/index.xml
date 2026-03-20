@@ -190,7 +190,7 @@
  IFC in Power BI, without leaving your tenant
  &lt;/h1>
  &lt;p class="lead text-muted" style="margin:0 auto 28px; max-width:720px; color:#64748b;">
- Load models from SharePoint, explore in 3D, and publish decision-ready dashboards — no external servers.
+ Load models from SharePoint, explore in 3D, and publish decision-ready dashboards. No external servers.
  &lt;/p>
  &lt;a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer"
  class="btn btn-lg"
@@ -226,7 +226,7 @@
  &lt;div class="col-lg-5 col-md-6 col-12">
  &lt;small class="text-primary text-uppercase ls-md fw-semibold">Microsoft 365–native &lt;span class="badge bg-primary-subtle text-primary ms-1">Direct-from-IFC&lt;/span>&lt;/small>
  &lt;div class="mb-5 mt-4">
- &lt;h2 class="mb-3">Open IFC from SharePoint &amp; Teams — no extra logins.&lt;/h2>
+ &lt;h2 class="mb-3">Open IFC from SharePoint &amp; Teams — no extra logins.&lt;a href="#load-from-sharepoint" class="anchor-link" title="Copy link">&lt;i class="bi bi-link-45deg">&lt;/i>&lt;/a>&lt;/h2>
  &lt;p class="lead mb-0">Point to a file or folder in your tenant. The Viewer reads IFC directly — no exports, no CSV staging, no mapping.&lt;/p></description></item><item><title>Leveraging SharePoint as a Common Data Environment (CDE) for Large Construction Projects</title><link>https://flinker.app/blog/sharepoint-cde-construction-projects/</link><pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/sharepoint-cde-construction-projects/</guid><description>&lt;p>A Common Data Environment (CDE) centralizes project documents, drawings, models, and coordination data in a single accessible location. For organizations using Microsoft 365, SharePoint provides the underlying infrastructure: document libraries, metadata, version control, and permissions.&lt;/p>
 &lt;p>This guide covers the technical implementation of SharePoint as a CDE for construction projects.&lt;/p>
 &lt;h2 id="sharepoint-capabilities-relevant-to-cde">SharePoint capabilities relevant to CDE&lt;/h2>
