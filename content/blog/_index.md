@@ -1,5 +1,5 @@
 ---
-title: "Blog | Flinker News & Insights"
+title: "OpenBIM & Microsoft Tech"
 description: "Read about our latest product updates, BIM best practices, and Microsoft 365 construction innovations."
 date: 2023-10-05
 lastmod: 2026-02-16
