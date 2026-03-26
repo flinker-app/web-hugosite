@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0F6FF"/>
+      <stop offset="100%" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <linearGradient id="teamsGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#5a62c3"/>
+      <stop offset="0.5" stop-color="#4d55bd"/>
+      <stop offset="1" stop-color="#3940ab"/>
+    </linearGradient>
+    <linearGradient id="linkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0779FF"/>
+      <stop offset="100%" stop-color="#4d55bd"/>
+    </linearGradient>
+    <linearGradient id="buildingTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2196f3"/>
+      <stop offset="100%" stop-color="#1565c0"/>
+    </linearGradient>
+    <linearGradient id="buildingLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1976d2"/>
+      <stop offset="100%" stop-color="#0d47a1"/>
+    </linearGradient>
+    <linearGradient id="buildingRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d47a1"/>
+      <stop offset="100%" stop-color="#082e6e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Soft ambient glow -->
+  <circle cx="600" cy="250" r="220" fill="url(#linkGrad)" opacity="0.06"/>
+
+  <!-- Thin connecting lines from sides to center -->
+  <line x1="290" y1="250" x2="475" y2="250" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6,5"/>
+  <line x1="725" y1="250" x2="910" y2="250" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6,5"/>
+
+  <!-- LEFT: IFC Building (small) -->
+  <g transform="translate(220, 250)">
+    <circle r="68" fill="white" stroke="#E2E8F0" stroke-width="2.5"/>
+    <g transform="translate(0, 5) scale(0.48)">
+      <polygon points="0,80 -70,42 -70,-18 0,20"  fill="url(#buildingLeft)"/>
+      <polygon points="0,80  70,42  70,-18 0,20"  fill="url(#buildingRight)"/>
+      <polygon points="0,20  70,-18  0,-56 -70,-18" fill="url(#buildingTop)"/>
+      <polygon points="0,20 -70,-18 -70,-78 0,-40" fill="#1976d2" opacity="0.85"/>
+      <polygon points="0,20  70,-18  70,-78 0,-40" fill="#0d47a1" opacity="0.85"/>
+      <polygon points="0,-40 70,-78  0,-116 -70,-78" fill="#2196f3" opacity="0.9"/>
+      <g fill="none" stroke="white" stroke-width="1.2" opacity="0.5">
+        <line x1="-20" y1="50" x2="-55" y2="30"/>
+        <line x1="20"  y1="50" x2="55"  y2="30"/>
+        <line x1="-20" y1="-10" x2="-55" y2="-30"/>
+        <line x1="20"  y1="-10" x2="55"  y2="-30"/>
+      </g>
+    </g>
+    <text y="90" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#1565c0" text-anchor="middle">IFC Model</text>
+  </g>
+
+  <!-- CENTER: Large chain-link icon (hero focal point) -->
+  <g transform="translate(600, 250)">
+    <circle r="120" fill="url(#linkGrad)" stroke="white" stroke-width="4"/>
+    <g transform="rotate(-45)">
+      <rect x="-52" y="-17" width="44" height="34" rx="17" fill="none" stroke="white" stroke-width="7"/>
+      <rect x="8"   y="-17" width="44" height="34" rx="17" fill="none" stroke="white" stroke-width="7"/>
+      <rect x="-5" y="-20" width="10" height="40" fill="url(#linkGrad)"/>
+    </g>
+  </g>
+
+  <!-- RIGHT: Teams logo (small) -->
+  <g transform="translate(980, 250)">
+    <circle r="68" fill="white" stroke="#E2E8F0" stroke-width="2.5"/>
+    <g transform="translate(-36, -36) scale(0.036)">
+      <path fill="#5059C9" d="M1554.637,777.5h575.713c54.391,0,98.483,44.092,98.483,98.483v524.398c0,199.901-162.051,361.952-361.952,361.952h-1.711c-199.901,.028-361.975-162-362.004-361.901V828.971C1503.167,800.544,1526.211,777.5,1554.637,777.5z"/>
+      <circle fill="#5059C9" cx="1943.75" cy="440.583" r="233.25"/>
+      <circle fill="#7B83EB" cx="1218.083" cy="336.917" r="336.917"/>
+      <path fill="#7B83EB" d="M1667.323,777.5H717.01c-53.743,1.33-96.257,45.931-95.01,99.676v598.105c-7.505,322.519,247.657,590.16,570.167,598.053c322.51-7.893,577.671-275.534,570.167-598.053V877.176C1763.579,823.431,1721.066,778.83,1667.323,777.5z"/>
+      <path fill="url(#teamsGrad)" d="M95.01,466.5h950.312c52.473,0,95.01,42.538,95.01,95.01v950.312c0,52.473-42.538,95.01-95.01,95.01H95.01c-52.473,0-95.01-42.538-95.01-95.01V561.51C0,509.038,42.538,466.5,95.01,466.5z"/>
+      <path fill="#FFF" d="M820.211,828.193H630.241v517.297H509.211V828.193H320.123V727.844h500.088V828.193z"/>
+    </g>
+    <text y="90" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#4d55bd" text-anchor="middle">Microsoft Teams</text>
+  </g>
+
+  <!-- Title & subtitle -->
+  <text x="600" y="450" font-family="system-ui, sans-serif" font-size="46" font-weight="800" fill="#0B1220" text-anchor="middle">Share Any IFC Element in Teams</text>
+  <text x="600" y="496" font-family="system-ui, sans-serif" font-size="22" fill="#64748B" text-anchor="middle">Element-Level Deep Links for Microsoft Teams</text>
+
+</svg>

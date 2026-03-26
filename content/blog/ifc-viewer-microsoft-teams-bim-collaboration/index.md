@@ -20,7 +20,7 @@ keywords:
   - Flinker IFC Viewer
 author: "Misbah Afzal"
 author_image: "/assets/images/avatar/avatar-7.jpg"
-featured_image: "hero.svg"
+featured_image: "/blog/ifc-viewer-microsoft-teams-bim-collaboration/hero.svg"
 categories:
   - Use Cases
   - Construction
