@@ -1,16 +1,16 @@
 baseURL = "https://flinker.app/"
 languageCode = "en-us"
-title = "Flinker | The built-environment layer for Microsoft 365"
-description = "Building the global OpenBIM layer for Microsoft 365 — secure, self-hosted, and enterprise-grade."
+title = "Flinker | The built-environment layer for Microsoft"
+description = "Building the global OpenBIM layer for Microsoft enterprise technologies — secure, self-hosted, and enterprise-grade."
 
 [params]
   author = "Flinker GmbH"
-  tagline = "Building the global OpenBIM layer for Microsoft 365"
+  tagline = "Building the global OpenBIM layer for Microsoft"
   legacy_description = "We are Flinker, accelerating human to robot collaboration for construction, property and facility management processes to protect and empower humans."
   linkedinImage = "images/linkedin-image.jpg"
   youtubeChannel = "IhrYouTubeKanalID"
   githubRepo = "https://github.com/flinker-app"
-  apps_heading = "BIM Apps for Microsoft 365 used"
+  apps_heading = "BIM Apps for Microsoft used"
   apps_tagline = "All Flinker Apps run natively in your Microsoft 365 tenant — no external servers or databases."
   caseStudyClientFitCarouselInterval = 5000  # ms interval for client_fit_gallery auto-slide (global)
   caseStudyClientFitCarouselIndicators = true # show position indicators (dots) for client_fit_gallery when >2 images
