@@ -80,7 +80,7 @@ plans:
       - "Standard PBIX template"
       - "Power Query IFC extraction"
       - "Multi-IFC viewing"
-      - "Load up to 3 files"
+      - "Load multiple files"
       - "Power BI Desktop only"
     cta:
       label: "Use free"
@@ -92,7 +92,10 @@ plans:
     includes:
       - "Everything in Community"
       - "Power BI Service supported"
-      - "Standard IFC attribute extraction"
+      - "Scheduled cloud refresh"
+      - "One shared semantic model"
+      - "Team reports, same data"
+      - "Consistent DAX & KPIs"
       - "Assigned per user in admin.microsoft.com"
     cta:
       label: "Get it on AppSource"
@@ -107,8 +110,9 @@ plans:
       - "Unlimited users per tenant"
       - "All IFC properties extracted (.mez)"
       - "Folder + subfolder loading (.mez)"
-      - "Performant local parsing 15 GB+ (.mez)"
-      - "Unlimited model size via API"
+      - "Performant local parsing (.mez)"
+      - "Local model conversion"
+      - "API on request"
       - "Power BI Embedded supported"
       - "Commercial & multi-project deployment rights"
       - "Support, rollout & SLA options"
@@ -487,7 +491,7 @@ schema:
           </li>
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
-            <span>Load up to 3 files</span>
+            <span>Load multiple files</span>
           </li>
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
@@ -523,9 +527,21 @@ schema:
           </li>
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
-            <span>Standard IFC attribute extraction</span>
+            <span>Scheduled cloud refresh</span>
+          </li>
+          <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
+            <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+            <span>One shared semantic model</span>
+          </li>
+          <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
+            <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+            <span>Team reports, same data</span>
           </li>
           <li class="d-flex align-items-start" style="gap:10px; margin:0;">
+            <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+            <span>Consistent DAX &amp; KPIs</span>
+          </li>
+          <li class="d-flex align-items-start" style="gap:10px; margin:10px 0 0;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
             <span>Assigned per user in your admin center (admin.microsoft.com)</span>
           </li>
@@ -540,11 +556,19 @@ schema:
       <article aria-labelledby="plan-enterprise" class="plan">
         <h3 id="plan-enterprise">Enterprise</h3>
         <p class="sub">Org-wide, embedded &amp; commercial</p>
-        <p class="price">Talk to sales <span style="font-size:14px; font-weight:600; color:var(--bs-secondary-color);">per tenant</span></p>
+        <p class="price">Per tenant <span style="font-size:14px; font-weight:600; color:var(--bs-secondary-color);">talk to sales</span></p>
         <ul class="list-unstyled">
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
             <span>Everything in Business, plus:</span>
+          </li>
+          <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
+            <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+            <span><strong>Unlimited users</strong> per tenant</span>
+          </li>
+          <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
+            <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
+            <span><strong>Power BI Embedded</strong> supported</span>
           </li>
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
@@ -553,10 +577,6 @@ schema:
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
             <span>BCF &amp; IDS querying <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="1 file each, via Pro template" style="font-size:13px; opacity:.55; cursor:help;"></i></span>
-          </li>
-          <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
-            <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
-            <span><strong>Unlimited users</strong> per tenant</span>
           </li>
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
@@ -576,23 +596,23 @@ schema:
           </li>
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
-            <span><strong>All IFC properties extracted</strong> <span class="mez-tag">.mez</span></span>
+            <span><a href="/products/power-bi-data-connector/" class="link-muted"><strong>All IFC properties extracted</strong></a> <span class="mez-tag">.mez</span></span>
           </li>
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
-            <span>Folder + subfolder loading <span class="mez-tag">.mez</span></span>
+            <span><a href="/products/power-bi-data-connector/" class="link-muted">Folder + subfolder loading</a> <span class="mez-tag">.mez</span></span>
           </li>
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
-            <span>Performant local parsing +15 GB <span class="mez-tag">.mez</span></span>
+            <span><a href="/products/power-bi-data-connector/" class="link-muted">Performant local parsing</a> <span class="mez-tag">.mez</span></span>
           </li>
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
-            <span><strong>Unlimited model size</strong> via API</span>
+            <span><a href="https://docs.flinker.app/docs/IFC_to_FRAG_Converter.html" class="link-muted" target="_blank" rel="noopener">Speed up large files locally</a></span>
           </li>
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
-            <span><strong>Power BI Embedded</strong> supported</span>
+            <span><strong>API</strong> on request</span>
           </li>
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
@@ -657,18 +677,24 @@ schema:
         </tr>
         <tr>
           <td>Multiple files</td>
-          <td>Up to 3</td>
+          <td class="yes"><i class="bi bi-check-lg"></i></td>
           <td class="yes"><i class="bi bi-check-lg"></i></td>
           <td class="yes"><i class="bi bi-check-lg"></i></td>
         </tr>
         <tr>
-          <td>Folder loading <span class="mez-tag">.mez</span></td>
+          <td>Synced cloud drives <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="ACC, Dalux, BIMcollab, Trimble, Google Drive, Box, Dropbox, and more when synced to Windows Explorer. No extra setup." style="font-size:13px; opacity:.55; cursor:help;"></i></td>
+          <td class="yes"><i class="bi bi-check-lg"></i></td>
+          <td class="yes"><i class="bi bi-check-lg"></i></td>
+          <td class="yes"><i class="bi bi-check-lg"></i></td>
+        </tr>
+        <tr>
+          <td><a href="/products/power-bi-data-connector/" class="link-muted">Folder loading</a> <span class="mez-tag">.mez</span></td>
           <td class="no">&#8212;</td>
           <td class="no">&#8212;</td>
           <td class="yes"><i class="bi bi-check-lg"></i></td>
         </tr>
         <tr>
-          <td>Subfolder loading <span class="mez-tag">.mez</span></td>
+          <td><a href="/products/power-bi-data-connector/" class="link-muted">Subfolder loading</a> <span class="mez-tag">.mez</span></td>
           <td class="no">&#8212;</td>
           <td class="no">&#8212;</td>
           <td class="yes"><i class="bi bi-check-lg"></i></td>
@@ -683,19 +709,25 @@ schema:
           <td class="yes"><i class="bi bi-check-lg"></i></td>
         </tr>
         <tr>
-          <td><strong>Full IFC property extraction</strong> <span class="mez-tag">.mez</span></td>
+          <td><a href="/products/power-bi-data-connector/" class="link-muted"><strong>Full IFC property extraction</strong></a> <span class="mez-tag">.mez</span></td>
           <td class="no">&#8212;</td>
           <td class="no">&#8212;</td>
           <td class="yes"><i class="bi bi-check-lg"></i></td>
         </tr>
         <tr>
-          <td>Large local models (15 GB+)</td>
+          <td>Large local models</td>
+          <td class="yes"><i class="bi bi-check-lg"></i></td>
+          <td class="yes"><i class="bi bi-check-lg"></i></td>
+          <td class="yes"><i class="bi bi-check-lg"></i></td>
+        </tr>
+        <tr>
+          <td><a href="https://docs.flinker.app/docs/IFC_to_FRAG_Converter.html" class="link-muted" target="_blank" rel="noopener">Local model conversion</a></td>
           <td class="no">&#8212;</td>
           <td class="no">&#8212;</td>
           <td class="yes"><i class="bi bi-check-lg"></i></td>
         </tr>
         <tr>
-          <td>Unlimited model size via API</td>
+          <td>API on request</td>
           <td class="no">&#8212;</td>
           <td class="no">&#8212;</td>
           <td class="yes"><i class="bi bi-check-lg"></i></td>
@@ -747,7 +779,7 @@ schema:
         </tr>
         <tr>
           <td>Editors</td>
-          <td>1 user</td>
+          <td>Local users</td>
           <td>Per licensed user</td>
           <td>Unlimited</td>
         </tr>
@@ -772,25 +804,12 @@ schema:
       </tbody>
     </table>
 
-    <div style="margin:20px 0 0; padding:12px 16px; background:var(--bs-primary-bg-subtle,#e7f1ff); border-left:3px solid var(--bs-primary,#0d6efd); border-radius:8px; font-size:13.5px; color:var(--bs-emphasis-color,#0f172a);">
-      <i class="bi bi-plug-fill" style="color:var(--bs-primary,#0d6efd); margin-right:6px;"></i>
-      <strong>Works with any cloud drive</strong> that syncs to Windows Explorer — ACC, Dalux, BIMcollab, Trimble, Google Drive, Box, Dropbox, and more. No extra setup needed.
-    </div>
-
     <!-- Notes -->
-    <div style="margin-top:30px; font-size:13px; color:var(--bs-secondary-color);">
+    <div style="margin-top:22px; font-size:13px; color:var(--bs-secondary-color);">
       <ul style="margin:0 0 0 20px; padding:0;">
-        <li><span class="mez-tag">.mez</span> The <strong>.mez connector</strong> is a Power Query extension for full IFC attribute extraction — all properties, faster parsing, 100% local inside your tenant. It works independently of the visual: ideal for data engineers who want to load IFC data directly into Power BI dataflows, pipelines, or semantic models without rendering a 3D view. Available as an optional add-on with Enterprise, or as a standalone connector — talk to sales. <a class="link-muted" href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true" target="_blank" rel="noopener">Talk to sales</a>.</li>
+        <li><span class="mez-tag">.mez</span> The <a class="link-muted" href="/products/power-bi-data-connector/"><strong>.mez connector</strong></a> adds full property extraction, local parsing, and standalone semantic models. Available with Enterprise or standalone — <a class="link-muted" href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true" target="_blank" rel="noopener">talk to sales</a>.</li>
         <li>Prices exclude VAT. Annual billing available.</li>
       </ul>
-    </div>
-
-    <div style="margin:20px 0 0; padding:14px 16px; border:1px solid #e2e8f0; border-radius:12px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
-      <div>
-        <strong>Need the data without the 3D view?</strong>
-        <span class="text-muted"> The Flinker Data Connector loads complete openBIM data (IFC, BCF, IDS, ifcZIP) straight into your semantic models.</span>
-      </div>
-      <a href="/products/power-bi-data-connector/" class="btn btn-outline-primary btn-sm">See the Data Connector</a>
     </div>
 
     <!-- Licensing explainer card -->
@@ -818,7 +837,6 @@ schema:
     </div>
   </div>
 </section>
-
 
 <!-- HOW IT WORKS -->
 <section id="how-it-works" class="py-8">
@@ -1226,6 +1244,26 @@ schema:
             </div>
           </div>
 
+          <!-- NEW: Standalone data connector -->
+          <div class="border mb-2 rounded-3 p-3">
+            <h2 class="h5 mb-0">
+              <a href="#"
+                 class="text-reset d-flex justify-content-between align-items-center"
+                 data-bs-toggle="collapse"
+                 data-bs-target="#faqStandaloneConnector"
+                 aria-expanded="false"
+                 aria-controls="faqStandaloneConnector">
+                Can I use the data connector without the IFC Viewer?
+                <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+              </a>
+            </h2>
+            <div id="faqStandaloneConnector" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="mt-3">
+                Yes. The <a href="/products/power-bi-data-connector/" class="text-primary">Flinker Data Connector</a> is available as a standalone Power Query connector for semantic models, dataflows and pipelines. Use it when you need complete openBIM data in Power BI without rendering a 3D view.
+              </div>
+            </div>
+          </div>
+
           <!-- NEW: What is a Microsoft 365 tenant? -->
           <div class="border mb-2 rounded-3 p-3">
             <h2 class="h5 mb-0">
@@ -1315,6 +1353,29 @@ schema:
     </div>
   </div>
 </section>
+
+<!-- STANDALONE CONNECTOR CTA -->
+<section class="py-6 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8 col-md-7">
+        <small class="text-primary text-uppercase fw-semibold ls-md">Standalone Data Connector</small>
+        <h2 class="mb-3 mt-2">Need semantic models without the 3D visual?</h2>
+        <p class="text-muted mb-0" style="max-width:680px;">
+          Use the Flinker Data Connector on its own to load complete openBIM data into Power BI semantic models, dataflows and pipelines.
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-5">
+        <div class="text-md-end mt-4 mt-md-0">
+          <a href="/products/power-bi-data-connector/" class="btn btn-outline-primary">
+            See the Data Connector <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /STANDALONE CONNECTOR CTA -->
 
 <!-- TUTORIAL -->
 <section class="py-8" style="padding:96px 0; background:var(--bs-body-bg);">
@@ -1457,7 +1518,7 @@ schema:
               Free • Runs in your Microsoft 365 tenant
             </span>
           </div>
-          <h2 id="cta" class="text-white-stable mb-3">Use the Community IFC Visual on Power BI Desktop<a href="#cta" class="anchor-link" title="Copy link"><i class="bi bi-link-45deg"></i></a></h2>
+          <h2 id="cta" class="text-white-stable mb-3">Use the Community Visual on Power BI Desktop<a href="#cta" class="anchor-link" title="Copy link"><i class="bi bi-link-45deg"></i></a></h2>
           <p class="text-white-50 mb-4">
             Get the Flinker IFC Visual for Power BI from Microsoft AppSource. No external servers. Works right in your tenant.
           </p>
