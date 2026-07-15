@@ -86,41 +86,28 @@ integrations:
     url: "https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer"
 
 plans:
-  - name: "Free"
+  - name: "Community"
     price: 0
     currency: "EUR"
     interval: "forever"
     includes:
-      - "Open IFC & BCF locally"
-      - "Filter & inspect properties"
-      - "Natural language search"
-      - "Download Excel reports"
-      - "Download selected as IFC"
+      - "Full IFC, BCF & IDS viewer"
+      - "Save Excel & BCF to SharePoint/Teams"
+      - "Sync BCF to Microsoft Lists"
+      - "IFC Copilot natural language queries"
+      - "Self-hosted, data stays in your tenant"
     cta:
-      label: "Use Free"
+      label: "Get on AppSource"
       url: "https://appsource.microsoft.com/en-us/product/office/WA200007412"
-  - name: "Pro"
-    price: 90
-    currency: "EUR"
-    interval: "year"
-    per: "user"
-    includes:
-      - "Everything in Free"
-      - "Save Excel to SharePoint/Teams"
-      - "Save BCF to SharePoint/Teams"
-      - "Save to Microsoft Lists"
-      - "Email support"
-    cta:
-      label: "Add Pro"
-      url: "https://buy.stripe.com/28E28q9mG0OM38g0EncZa0a"
   - name: "Enterprise"
     price_from: "Custom"
     includes:
-      - "Project-based licensing"
-      - "API access"
-      - "White-label solution"
-      - "Custom integrations"
-      - "Priority support"
+      - "Everything in Community"
+      - "Priority support & SLA"
+      - "Guided deployment & admin onboarding"
+      - "Volume & project-based licensing"
+      - "Framework agreement & PO invoicing"
+      - "Custom integrations & white-label"
     cta:
       label: "Get Quote"
       url: "https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/"
@@ -144,19 +131,17 @@ schema:
     - "Excel export"
   offers:
     - "@type": "Offer"
-      name: "Free"
+      name: "Community"
       price: "0"
       priceCurrency: "EUR"
       availability: "https://schema.org/InStock"
       url: "https://appsource.microsoft.com/en-us/product/office/WA200007412"
     - "@type": "Offer"
-      name: "Pro"
-      price: "90"
-      priceCurrency: "EUR"
-      url: "https://flinker.app/products/ifc-viewer/#pricing"
+      name: "Enterprise"
       priceSpecification:
-        "@type": "UnitPriceSpecification"
-        unitText: "per user per year"
+        "@type": "PriceSpecification"
+        priceCurrency: "EUR"
+      url: "https://flinker.app/products/ifc-viewer/#pricing"
   aggregateRating:
     "@type": "AggregateRating"
     ratingValue: "4.8"
@@ -505,8 +490,8 @@ schema:
 <section class="py-lg-9 py-5 bg-light">
   <div class="container" style="max-width:800px;">
     <div class="text-center mb-5">
-      <h2 class="mb-3">Free vs. Pro</h2>
-      <p class="text-muted">One Pro license unlocks all features across Teams, SharePoint, and Excel.</p>
+      <h2 class="mb-3">Community vs. Enterprise</h2>
+      <p class="text-muted">Every feature is free. Enterprise adds what large organizations need to deploy in production.</p>
     </div>
     <div class="row justify-content-center">
       <div class="col-12">
@@ -518,10 +503,10 @@ schema:
                   <div class="fs-6 text-dark fw-semibold">Feature</div>
                 </th>
                 <th class="text-center" style="width:100px;">
-                  <div class="fs-6 text-dark fw-semibold">Free</div>
+                  <div class="fs-6 text-dark fw-semibold">Community</div>
                 </th>
                 <th class="text-center" style="width:100px;">
-                  <div class="fs-6 text-dark fw-semibold">Pro</div>
+                  <div class="fs-6 text-dark fw-semibold">Enterprise</div>
                 </th>
               </tr>
             </thead>
@@ -733,8 +718,8 @@ schema:
                   </span>
                 </td>
                 <td class="text-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-muted" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                   </svg>
                 </td>
                 <td class="text-center">
@@ -929,8 +914,8 @@ schema:
               <tr>
                 <td>Save BCF to SharePoint/Teams</td>
                 <td class="text-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-muted" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                   </svg>
                 </td>
                 <td class="text-center">
@@ -949,8 +934,8 @@ schema:
                   </span>
                 </td>
                 <td class="text-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-muted" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                   </svg>
                 </td>
                 <td class="text-center">
@@ -988,6 +973,26 @@ schema:
                 <td>
                   <span class="me-2">Push output to Excel</span>
                   <span data-bs-toggle="tooltip" data-bs-title="IFC Copilot will write directly into your Excel based on your prompts">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-question-circle-fill text-muted" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+                    </svg>
+                  </span>
+                </td>
+                <td class="text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg>
+                </td>
+                <td class="text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="me-2">Advanced AI models</span>
+                  <span data-bs-toggle="tooltip" data-bs-title="Community runs on a standard model. Enterprise can use more capable AI models for large models and complex queries.">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-question-circle-fill text-muted" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
                     </svg>
@@ -1043,10 +1048,10 @@ schema:
                 </td>
               </tr>
               <tr>
-                <td>Email support</td>
+                <td>Community &amp; documentation support</td>
                 <td class="text-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-muted" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                   </svg>
                 </td>
                 <td class="text-center">
@@ -1054,6 +1059,76 @@ schema:
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                   </svg>
                 </td>
+              </tr>
+
+              <!-- Security & Architecture -->
+              <tr class="table-secondary">
+                <td colspan="3"><strong>Security &amp; Architecture</strong></td>
+              </tr>
+              <tr>
+                <td>Self-hosted in your Microsoft 365 tenant</td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
+              </tr>
+              <tr>
+                <td>Your data never leaves your tenant</td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
+              </tr>
+              <tr>
+                <td>Single sign-on &amp; MFA via Microsoft Entra ID</td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
+              </tr>
+              <tr>
+                <td>Runs on your existing Microsoft 365 permissions</td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
+              </tr>
+              <tr>
+                <td>Microsoft AppSource certified</td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
+              </tr>
+
+              <!-- Deployment & Support -->
+              <tr class="table-secondary">
+                <td colspan="3"><strong>Deployment &amp; Support</strong></td>
+              </tr>
+              <tr>
+                <td>Priority support &amp; SLA</td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-muted" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/></svg></td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
+              </tr>
+              <tr>
+                <td>Guided deployment &amp; admin onboarding</td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-muted" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/></svg></td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
+              </tr>
+              <tr>
+                <td>Volume &amp; project-based licensing</td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-muted" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/></svg></td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
+              </tr>
+              <tr>
+                <td>Framework agreement &amp; PO invoicing</td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-muted" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/></svg></td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
+              </tr>
+              <tr>
+                <td>Custom integrations &amp; Microsoft-native syncs</td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-muted" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/></svg></td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
+              </tr>
+              <tr>
+                <td>White-label / OEM licensing</td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-muted" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/></svg></td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
+              </tr>
+              <tr>
+                <td>Usage &amp; license reporting</td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-muted" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/></svg></td>
+                <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg></td>
               </tr>
             </tbody>
           </table>
@@ -1074,9 +1149,9 @@ schema:
         </div>
       </div>
     </div>
-    <div class="row gy-5 gy-xl-0">
-      <!-- Free Plan -->
-      <div class="col-xl-4 col-md-6 col-12">
+    <div class="row gy-5 gy-xl-0 justify-content-center">
+      <!-- Community Plan -->
+      <div class="col-xl-5 col-md-6 col-12">
         <div class="card position-relative bg-white border-primary border-2 shadow">
           <div class="card-body d-flex flex-column gap-6 p-5 z-2">
             <div class="d-flex flex-column gap-3">
@@ -1084,189 +1159,82 @@ schema:
                 <span class="badge bg-primary rounded-pill fw-medium px-3 py-2">Most Popular</span>
               </div>
               <div class="d-flex flex-column gap-1">
-                <h3 class="mb-0">Free</h3>
-                <p class="mb-0 text-muted">Free on web, SharePoint, Teams & Excel</p>
+                <h3 class="mb-0">Community</h3>
+                <p class="mb-0 text-muted">Free forever on web, SharePoint, Teams &amp; Excel</p>
               </div>
               <div class="d-flex flex-row align-items-center gap-2">
-                <h3 class="fs-1 fw-bold mb-0">€0</h3>
-                <span class="text-muted">forever</span>
+                <h3 class="fs-1 fw-bold mb-0">Forever free</h3>
               </div>
               <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
                 <li class="d-flex flex-row gap-2 align-items-center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#check1)">
-                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                    <defs><clipPath id="check1"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
-                  </svg>
-                  <span>Open IFC, BCF & IDS locally</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <span>Full IFC, BCF &amp; IDS viewer</span>
                 </li>
                 <li class="d-flex flex-row gap-2 align-items-center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#check2)">
-                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                    <defs><clipPath id="check2"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
-                  </svg>
-                  <span>Multi-model federation</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <span>Save Excel &amp; BCF to SharePoint / Teams</span>
                 </li>
                 <li class="d-flex flex-row gap-2 align-items-center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#check3)">
-                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                    <defs><clipPath id="check3"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
-                  </svg>
-                  <span>IFC Filters</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <span>Sync BCF to Microsoft Lists</span>
                 </li>
                 <li class="d-flex flex-row gap-2 align-items-center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#check4)">
-                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                    <defs><clipPath id="check4"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
-                  </svg>
-                  <span>Download Excel reports</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <span>IFC Copilot, natural language queries</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <span>Self-hosted, data stays in your tenant</span>
                 </li>
               </ul>
             </div>
             <div>
-              <a href="https://appsource.microsoft.com/en-us/product/office/WA200007412" target="_blank" class="btn btn-primary">Use Free</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Pro Plan -->
-      <div class="col-xl-4 col-md-6 col-12">
-        <div class="card bg-white border shadow-sm">
-          <div class="card-body d-flex flex-column gap-6 p-5">
-            <div class="d-flex flex-column gap-3">
-              <div class="d-flex flex-column gap-1">
-                <h3 class="mb-0">Pro</h3>
-                <p class="mb-0 text-muted">Cloud save & collaboration</p>
-              </div>
-              <div class="d-flex flex-row align-items-center gap-2">
-                <h3 class="fs-1 fw-bold mb-0">€90</h3>
-                <span class="text-muted">per user / year</span>
-              </div>
-              <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
-                <li class="d-flex flex-row gap-2 align-items-center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#check5)">
-                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                    <defs><clipPath id="check5"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
-                  </svg>
-                  <span>Everything in Free</span>
-                </li>
-                <li class="d-flex flex-row gap-2 align-items-center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#check6)">
-                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                    <defs><clipPath id="check6"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
-                  </svg>
-                  <span>Save Excel & BCF to cloud</span>
-                </li>
-                <li class="d-flex flex-row gap-2 align-items-center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#check8)">
-                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                    <defs><clipPath id="check8"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
-                  </svg>
-                  <span>Sync to Microsoft Lists</span>
-                </li>
-                <li class="d-flex flex-row gap-2 align-items-center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#check9)">
-                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                    <defs><clipPath id="check9"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
-                  </svg>
-                  <span>Email support</span>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <a href="https://buy.stripe.com/28E28q9mG0OM38g0EncZa0a" target="_blank" class="btn btn-outline-primary">Add Pro</a>
+              <a href="https://appsource.microsoft.com/en-us/product/office/WA200007412" target="_blank" class="btn btn-primary">Get on AppSource</a>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Enterprise Plan -->
-      <div class="col-xl-4 col-md-6 col-12">
+      <div class="col-xl-5 col-md-6 col-12">
         <div class="card bg-white border shadow-sm">
           <div class="card-body d-flex flex-column gap-6 p-5">
             <div class="d-flex flex-column gap-3">
               <div class="d-flex flex-column gap-1">
                 <h3 class="mb-0">Enterprise</h3>
-                <p class="mb-0 text-muted">For teams with custom requirements</p>
+                <p class="mb-0 text-muted">For production rollouts across your organization</p>
               </div>
               <div class="d-flex flex-row gap-2">
                 <h3 class="fs-1 fw-bold mb-0">Custom</h3>
-                <span class="mt-auto text-muted">pricing</span>
               </div>
               <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
                 <li class="d-flex flex-row gap-2 align-items-center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#check10)">
-                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                    <defs><clipPath id="check10"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
-                  </svg>
-                  <span>Everything in Pro</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <span>Everything in Community</span>
                 </li>
                 <li class="d-flex flex-row gap-2 align-items-center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#check10b)">
-                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                    <defs><clipPath id="check10b"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
-                  </svg>
-                  <span>Project-based licensing</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <span>Priority support &amp; SLA</span>
                 </li>
                 <li class="d-flex flex-row gap-2 align-items-center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#check11)">
-                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                    <defs><clipPath id="check11"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
-                  </svg>
-                  <span>Custom integrations</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <span>Guided deployment &amp; admin onboarding</span>
                 </li>
                 <li class="d-flex flex-row gap-2 align-items-center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#check12)">
-                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                    <defs><clipPath id="check12"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
-                  </svg>
-                  <span>Priority support & SLA</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <span>Volume &amp; project-based licensing</span>
                 </li>
                 <li class="d-flex flex-row gap-2 align-items-center">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#check13)">
-                      <path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                    <defs><clipPath id="check13"><rect width="20" height="20" fill="white"></rect></clipPath></defs>
-                  </svg>
-                  <span>Volume licensing</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <span>Framework agreement &amp; PO invoicing</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <span>Custom integrations &amp; white-label</span>
+                </li>
+                <li class="d-flex flex-row gap-2 align-items-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <span>Advanced AI models for IFC Copilot</span>
                 </li>
               </ul>
             </div>
@@ -1279,7 +1247,7 @@ schema:
     </div>
     <div class="row mt-5">
       <div class="col-12 text-center">
-        <p class="text-muted mb-0"><small>One Pro license unlocks all features across Teams, SharePoint, and Excel.</small></p>
+        <p class="text-muted mb-0"><small>Community is free forever for your whole team. Enterprise is tailored to your rollout.</small></p>
       </div>
     </div>
   </div>
@@ -1407,15 +1375,13 @@ schema:
           <div class="border mb-2 rounded-3 p-3">
             <h2 class="h5 mb-0">
               <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                What's the difference between Free and Pro?
+                What's the difference between Community and Enterprise?
                 <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
               </a>
             </h2>
             <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
               <div class="mt-3 text-muted">
-                Free gives you full access to view, filter, and analyze IFC models — forever, no limits. 
-                Pro adds cloud save features: save Excel and BCF files directly to SharePoint or Teams, 
-                and sync BCF issues to Microsoft Lists for workflow automation. One Pro license works across all M365 apps.
+                Community is free forever and includes the full product: view, filter, and analyze IFC models, save Excel and BCF to SharePoint or Teams, sync BCF to Microsoft Lists, and use IFC Copilot. Everything runs self-hosted in your own Microsoft 365 tenant. Enterprise is for organizations rolling out in production and adds priority support with SLA, guided deployment, volume and project-based licensing, framework agreements, and custom integrations.
               </div>
             </div>
           </div>
