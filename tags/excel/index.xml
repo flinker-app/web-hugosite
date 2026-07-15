@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Excel on Flinker | The built-environment layer for Microsoft</title><link>https://flinker.app/tags/excel/</link><description>Recent content in Excel on Flinker | The built-environment layer for Microsoft</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 29 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/tags/excel/index.xml" rel="self" type="application/rss+xml"/><item><title>IFC Model Data in Excel: Using Copilot for IFC to Track Construction Progress</title><link>https://flinker.app/blog/ifc-excel-viewer-copilot-progress-tracking/</link><pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/ifc-excel-viewer-copilot-progress-tracking/</guid><description>&lt;h2 id="the-progress-reporting-problem-in-construction">The Progress Reporting Problem in Construction&lt;/h2>
-&lt;p>Construction projects track hundreds or thousands of individual work packages across multiple floors, trades, and delivery phases. The data that would let a site manager, BIM coordinator, or project controller answer &amp;ldquo;what has been installed on floor 1 this week?&amp;rdquo; typically lives in two disconnected places: the BIM model — which contains every element, its type, its storey, and its properties — and a separate spreadsheet or site diary, which has status updates but no reliable link back to model elements.&lt;/p></description></item><item><title>IFC Viewer App for SharePoint, Teams &amp; Excel</title><link>https://flinker.app/products/ifc-viewer/</link><pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/products/ifc-viewer/</guid><description>&lt;!-- HERO -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Excel on Flinker | The built-environment layer for Microsoft</title><link>https://flinker.app/tags/excel/</link><description>Recent content in Excel on Flinker | The built-environment layer for Microsoft</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 15 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/tags/excel/index.xml" rel="self" type="application/rss+xml"/><item><title>IFC Model Data in Excel: Using Copilot for IFC to Track Construction Progress</title><link>https://flinker.app/blog/ifc-excel-viewer-copilot-progress-tracking/</link><pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/ifc-excel-viewer-copilot-progress-tracking/</guid><description>&lt;h2 id="the-progress-reporting-problem-in-construction">The Progress Reporting Problem in Construction&lt;/h2>
+&lt;p>Construction projects track hundreds or thousands of individual work packages across multiple floors, trades, and delivery phases. The data that would let a site manager, BIM coordinator, or project controller answer &amp;ldquo;what has been installed on floor 1 this week?&amp;rdquo; typically lives in two disconnected places: the BIM model — which contains every element, its type, its storey, and its properties — and a separate spreadsheet or site diary, which has status updates but no reliable link back to model elements.&lt;/p></description></item><item><title>IFC Viewer for Microsoft — SharePoint, Teams, Excel, Windows &amp; Power BI</title><link>https://flinker.app/products/ifc-viewer/</link><pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/products/ifc-viewer/</guid><description>&lt;!-- HERO -->
 &lt;section class="pt-5 pt-lg-8 pb-4">
  &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
- &lt;small class="text-primary text-uppercase ls-md fw-semibold">Enterprise-ready openBIM&lt;/small>
+ &lt;small class="text-primary text-uppercase ls-md fw-semibold">Native to Microsoft 365&lt;/small>
  &lt;h1 class="display-5 fw-bold mt-2" style="margin:0 0 12px; font-size:clamp(32px,5vw,48px); line-height:1.15; letter-spacing:-0.02em;">
- IFC Viewer: Free, Fast, and Private
+ The IFC viewer for Microsoft
  &lt;/h1>
  &lt;p class="lead text-muted" style="margin:0 auto 28px; max-width:720px;">
- Open large IFC models directly in your browser. Files stay on your device — no upload required.
+ Open, review, and coordinate IFC, BCF, and IDS across Teams, SharePoint, Excel, and Power BI. Free, fast, and private, your data stays on your device or in your tenant.
  &lt;/p>
  &lt;div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
  &lt;a href="https://viewer.flinker.app/" target="_blank"
@@ -51,26 +51,14 @@
  &lt;/div>
 &lt;/section>
 
-&lt;!-- OPENBIM STANDARDS -->
-&lt;section id="openbim-standards" class="py-lg-9 py-5">
- &lt;div class="container">
+&lt;!-- TRUSTED BY -->
+
+
+
+
+&lt;div class="py-5 logo-tint-scope" data-cue="fadeIn">
+ &lt;div class="container py-2">
  &lt;div class="row">
- &lt;div class="col-lg-8 offset-lg-2">
- &lt;div class="text-center mb-xl-7 mb-5">
- &lt;small class="text-primary text-uppercase ls-md fw-semibold">openBIM Standards&lt;/small>
- &lt;h2 class="mt-2 mb-3">Interoperability that scales with &lt;span class="text-primary">federated project teams.&lt;/span>&lt;/h2>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;div class="row align-items-center">
- &lt;div class="col-xl-5 col-md-6 col-12">
- &lt;div class="nav flex-column nav-pills mb-5 mb-lg-0" id="openbim-tabs" role="tablist" aria-orientation="vertical">
- &lt;a href="#" class="nav-link active d-flex text-start align-items-center align-items-lg-start p-xl-4 p-3" id="ifc-tab" data-bs-toggle="pill" data-bs-target="#ifc-panel" role="tab" aria-controls="ifc-panel" aria-selected="true">
- &lt;div class="d-flex">
- &lt;div class="icon-md icon-shape rounded-circle bg-white shadow-sm d-flex align-items-center justify-content-center" style="width:40px; height:40px;">
- &lt;i class="bi bi-box text-primary">&lt;/i>
- &lt;/div>
- &lt;/div>
- &lt;div class="ms-4">
- &lt;h4 class="mb-0">IFC 2x3, 4, 4x3&lt;/h4>
- &lt;p class="mb-0 mt-lg-3 d-none d-lg-block text-muted">Accelerated rendering for enterprise-scale datasets. Open multiple models simultaneously.&lt;/p></description></item></channel></rss>
+ 
+ &lt;div class="col-12 text-center mb-4">
+ &lt;p class="text-muted text-uppercase small fw-semibold ls-lg mb-0">Trusted worldwide&lt;/p></description></item></channel></rss>

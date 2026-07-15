@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Microsoft 365 on Flinker | The built-environment layer for Microsoft</title><link>https://flinker.app/tags/microsoft-365/</link><description>Recent content in Microsoft 365 on Flinker | The built-environment layer for Microsoft</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/tags/microsoft-365/index.xml" rel="self" type="application/rss+xml"/><item><title>Flinker Data Connector for Power BI — Load Complete openBIM Data</title><link>https://flinker.app/products/power-bi-data-connector/</link><pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/products/power-bi-data-connector/</guid><description>&lt;!-- HERO -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Microsoft 365 on Flinker | The built-environment layer for Microsoft</title><link>https://flinker.app/tags/microsoft-365/</link><description>Recent content in Microsoft 365 on Flinker | The built-environment layer for Microsoft</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 15 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/tags/microsoft-365/index.xml" rel="self" type="application/rss+xml"/><item><title>Flinker Data Connector for Power BI — Load Complete openBIM Data</title><link>https://flinker.app/products/power-bi-data-connector/</link><pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/products/power-bi-data-connector/</guid><description>&lt;!-- HERO -->
 &lt;section class="py-5 py-lg-8" style="padding-bottom:72px;">
  &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
  &lt;small class="text-primary text-uppercase ls-md fw-semibold">Data Connector &lt;span class="badge bg-success-subtle text-success ms-1">GA&lt;/span>&lt;/small>
@@ -123,15 +123,15 @@
  &lt;i class="bi bi-x-circle fs-2 text-danger">&lt;/i>
  &lt;/div>
  &lt;h3 class="h5 fw-bold">The Problem&lt;/h3>
- &lt;p class="text-muted mb-0">Large construction projects need ISO-19650 compliant CDE processes on their existing M365 tenant. But ISO rules (naming, status/revision, approvals) are not enforced — leading to inconsistency and compliance risks.&lt;/p></description></item><item><title>IFC Viewer App for SharePoint, Teams &amp; Excel</title><link>https://flinker.app/products/ifc-viewer/</link><pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/products/ifc-viewer/</guid><description>&lt;!-- HERO -->
+ &lt;p class="text-muted mb-0">Large construction projects need ISO-19650 compliant CDE processes on their existing M365 tenant. But ISO rules (naming, status/revision, approvals) are not enforced — leading to inconsistency and compliance risks.&lt;/p></description></item><item><title>IFC Viewer for Microsoft — SharePoint, Teams, Excel, Windows &amp; Power BI</title><link>https://flinker.app/products/ifc-viewer/</link><pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/products/ifc-viewer/</guid><description>&lt;!-- HERO -->
 &lt;section class="pt-5 pt-lg-8 pb-4">
  &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
- &lt;small class="text-primary text-uppercase ls-md fw-semibold">Enterprise-ready openBIM&lt;/small>
+ &lt;small class="text-primary text-uppercase ls-md fw-semibold">Native to Microsoft 365&lt;/small>
  &lt;h1 class="display-5 fw-bold mt-2" style="margin:0 0 12px; font-size:clamp(32px,5vw,48px); line-height:1.15; letter-spacing:-0.02em;">
- IFC Viewer: Free, Fast, and Private
+ The IFC viewer for Microsoft
  &lt;/h1>
  &lt;p class="lead text-muted" style="margin:0 auto 28px; max-width:720px;">
- Open large IFC models directly in your browser. Files stay on your device — no upload required.
+ Open, review, and coordinate IFC, BCF, and IDS across Teams, SharePoint, Excel, and Power BI. Free, fast, and private, your data stays on your device or in your tenant.
  &lt;/p>
  &lt;div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
  &lt;a href="https://viewer.flinker.app/" target="_blank"
@@ -175,29 +175,17 @@
  &lt;/div>
 &lt;/section>
 
-&lt;!-- OPENBIM STANDARDS -->
-&lt;section id="openbim-standards" class="py-lg-9 py-5">
- &lt;div class="container">
+&lt;!-- TRUSTED BY -->
+
+
+
+
+&lt;div class="py-5 logo-tint-scope" data-cue="fadeIn">
+ &lt;div class="container py-2">
  &lt;div class="row">
- &lt;div class="col-lg-8 offset-lg-2">
- &lt;div class="text-center mb-xl-7 mb-5">
- &lt;small class="text-primary text-uppercase ls-md fw-semibold">openBIM Standards&lt;/small>
- &lt;h2 class="mt-2 mb-3">Interoperability that scales with &lt;span class="text-primary">federated project teams.&lt;/span>&lt;/h2>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;div class="row align-items-center">
- &lt;div class="col-xl-5 col-md-6 col-12">
- &lt;div class="nav flex-column nav-pills mb-5 mb-lg-0" id="openbim-tabs" role="tablist" aria-orientation="vertical">
- &lt;a href="#" class="nav-link active d-flex text-start align-items-center align-items-lg-start p-xl-4 p-3" id="ifc-tab" data-bs-toggle="pill" data-bs-target="#ifc-panel" role="tab" aria-controls="ifc-panel" aria-selected="true">
- &lt;div class="d-flex">
- &lt;div class="icon-md icon-shape rounded-circle bg-white shadow-sm d-flex align-items-center justify-content-center" style="width:40px; height:40px;">
- &lt;i class="bi bi-box text-primary">&lt;/i>
- &lt;/div>
- &lt;/div>
- &lt;div class="ms-4">
- &lt;h4 class="mb-0">IFC 2x3, 4, 4x3&lt;/h4>
- &lt;p class="mb-0 mt-lg-3 d-none d-lg-block text-muted">Accelerated rendering for enterprise-scale datasets. Open multiple models simultaneously.&lt;/p></description></item><item><title>ISO 19650 and SharePoint: Making Your Project Data Room Compliant</title><link>https://flinker.app/blog/iso19650-sharepoint-cde/</link><pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/iso19650-sharepoint-cde/</guid><description>&lt;p>ISO 19650 is becoming a baseline requirement in construction and infrastructure contracts. Many organizations already have Microsoft 365 and SharePoint in place—often underutilized for project document control. The question: can SharePoint serve as a fully ISO 19650-compliant Common Data Environment (CDE)?&lt;/p>
+ 
+ &lt;div class="col-12 text-center mb-4">
+ &lt;p class="text-muted text-uppercase small fw-semibold ls-lg mb-0">Trusted worldwide&lt;/p></description></item><item><title>ISO 19650 and SharePoint: Making Your Project Data Room Compliant</title><link>https://flinker.app/blog/iso19650-sharepoint-cde/</link><pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/iso19650-sharepoint-cde/</guid><description>&lt;p>ISO 19650 is becoming a baseline requirement in construction and infrastructure contracts. Many organizations already have Microsoft 365 and SharePoint in place—often underutilized for project document control. The question: can SharePoint serve as a fully ISO 19650-compliant Common Data Environment (CDE)?&lt;/p>
 &lt;p>Yes—but only with the right controls, workflows, and governance layered on top. Native SharePoint provides foundational capabilities but lacks the discipline ISO 19650 demands.&lt;/p>
 &lt;h2 id="what-is-iso-19650">What is ISO 19650?&lt;/h2>
 &lt;p>ISO 19650 is the international standard (originating from the UK&amp;rsquo;s PAS/BS 1192 lineage) for information management using BIM across the lifecycle of a built asset. It covers how information is exchanged, approved, stored, and retrieved, and defines the Common Data Environment (CDE)—the single agreed source of truth for all project information.&lt;/p></description></item><item><title>Flinker IFC Viewer for Power BI — Overview &amp; Pricing</title><link>https://flinker.app/products/power-bi-ifc-viewer/</link><pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate><guid>https://flinker.app/products/power-bi-ifc-viewer/</guid><description>&lt;!-- HERO -->
