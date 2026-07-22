@@ -615,6 +615,7 @@
       if (!Number.isFinite(maxRegional) || maxRegional < 0) {
          maxRegional = 2;
       }
+      var minVisibleLogos = 5;
       var globalSlides = [];
       var regionalSlides = [];
 
@@ -640,6 +641,35 @@
 
       var keep = regionalSlides.slice(0, maxRegional).concat(globalSlides);
       var keepSet = new Set(keep);
+
+      if (keep.length < minVisibleLogos) {
+         var fallbackGlobalSlides = [];
+         var fallbackRegionalSlides = [];
+
+         slides.forEach(function (slide) {
+            if (keepSet.has(slide)) {
+               return;
+            }
+
+            if (slide.getAttribute('data-logo-tier') === 'global') {
+               fallbackGlobalSlides.push(slide);
+               return;
+            }
+
+            fallbackRegionalSlides.push(slide);
+         });
+
+         var fallbackPool = fallbackGlobalSlides.concat(fallbackRegionalSlides);
+
+         fallbackPool.forEach(function (slide) {
+            if (keep.length >= minVisibleLogos) {
+               return;
+            }
+
+            keep.push(slide);
+            keepSet.add(slide);
+         });
+      }
 
       slides.forEach(function (slide) {
          if (!keepSet.has(slide)) {
