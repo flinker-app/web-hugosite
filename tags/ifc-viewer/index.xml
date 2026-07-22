@@ -59,7 +59,82 @@
 
 
 
-&lt;div class="py-5 logo-tint-scope" data-cue="fadeIn">
+
+&lt;style>
+ .customer-logos-carousel {
+ --customer-logos-gap: 24px;
+ --customer-logo-slot-height: clamp(50px, 7.1vw, 78px);
+ }
+
+ .customer-logos-carousel .swiper-wrapper {
+ align-items: center;
+ }
+
+ .customer-logos-carousel .swiper-slide {
+ box-sizing: border-box;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ min-height: calc(var(--customer-logo-slot-height) + 4px);
+ width: calc((100% - var(--customer-logos-gap)) / 2);
+ }
+
+ .customer-logos-carousel .swiper-slide figure {
+ margin: 0;
+ width: 100%;
+ height: var(--customer-logo-slot-height);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ }
+
+ .customer-logos-carousel .swiper-slide a {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ }
+
+ .customer-logos-carousel .swiper-slide img,
+ .customer-logos-carousel .swiper-slide svg {
+ display: block;
+ max-width: 100%;
+ max-height: 100%;
+ width: auto;
+ height: auto;
+ object-fit: contain;
+ object-position: center;
+ }
+
+ @media (min-width: 768px) {
+ .customer-logos-carousel {
+ --customer-logo-slot-height: clamp(50px, 5.2vw, 78px);
+ }
+
+ .customer-logos-carousel .swiper-slide {
+ width: calc((100% - (2 * var(--customer-logos-gap))) / 3);
+ }
+ }
+
+ @media (min-width: 1024px) {
+ .customer-logos-carousel {
+ --customer-logo-slot-height: clamp(54px, 4.6vw, 84px);
+ }
+
+ .customer-logos-carousel .swiper-slide {
+ width: calc((100% - (4 * var(--customer-logos-gap))) / 5);
+ }
+ }
+ &lt;/style>
+
+
+&lt;div
+ class="py-5 logo-tint-scope customer-logos-carousel"
+ data-cue="fadeIn"
+ data-regional-rules-enabled="true"
+ data-max-regional="3"
+ data-supported-regions="dach,nordics,uk-ireland,benelux,france,iberia,italy,cee,mena,north-america,latam,apac,anz,india,japan-korea,global">
  &lt;div class="container py-2">
  &lt;div class="row">
  
