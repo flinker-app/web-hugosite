@@ -1,0 +1,746 @@
+<!--
+   Auto-tint is enabled via the wrapper class `logo-tint-scope` (defined in logo-tint-setup.html).
+   This partial normalizes logo rendering with responsive slots so mixed logo aspect ratios stay stable.
+    Usage: Pass showTitle=false to hide the heading. Pass headline to override default text.
+-->
+{{- $showTitle := true -}}
+{{- if isset . "showTitle" -}}
+  {{- $showTitle = .showTitle -}}
+{{- end -}}
+{{- $headline := "Trusted worldwide" -}}
+{{- $siteParams := dict -}}
+{{- if isset . "siteParams" -}}
+  {{- $siteParams = .siteParams -}}
+{{- else if .Site -}}
+  {{- $siteParams = .Site.Params -}}
+{{- else if site -}}
+  {{- $siteParams = site.Params -}}
+{{- end -}}
+{{- $enableRegionalRules := false -}}
+{{- if isset $siteParams "customerlogosregionalrulesenabled" -}}
+   {{- $enableRegionalRules = index $siteParams "customerlogosregionalrulesenabled" -}}
+{{- else if isset $siteParams "customerLogosRegionalRulesEnabled" -}}
+   {{- $enableRegionalRules = $siteParams.customerLogosRegionalRulesEnabled -}}
+{{- else if isset $siteParams "pbiuserlogosregionalrulesenabled" -}}
+   {{- $enableRegionalRules = index $siteParams "pbiuserlogosregionalrulesenabled" -}}
+{{- else if isset $siteParams "pbiUserLogosRegionalRulesEnabled" -}}
+   {{- $enableRegionalRules = $siteParams.pbiUserLogosRegionalRulesEnabled -}}
+{{- end -}}
+{{- if isset . "enableRegionalRules" -}}
+   {{- $enableRegionalRules = .enableRegionalRules -}}
+{{- end -}}
+{{- $maxRegional := 2 -}}
+{{- if isset $siteParams "customerlogosmaxregional" -}}
+   {{- $maxRegional = index $siteParams "customerlogosmaxregional" -}}
+{{- else if isset $siteParams "customerLogosMaxRegional" -}}
+   {{- $maxRegional = $siteParams.customerLogosMaxRegional -}}
+{{- else if isset $siteParams "pbiuserlogosmaxregional" -}}
+   {{- $maxRegional = index $siteParams "pbiuserlogosmaxregional" -}}
+{{- else if isset $siteParams "pbiUserLogosMaxRegional" -}}
+   {{- $maxRegional = $siteParams.pbiUserLogosMaxRegional -}}
+{{- end -}}
+{{- if isset . "maxRegional" -}}
+   {{- $maxRegional = .maxRegional -}}
+{{- end -}}
+{{- if isset $siteParams "customerlogosheadline" -}}
+   {{- $headline = index $siteParams "customerlogosheadline" -}}
+{{- else if isset $siteParams "customerLogosHeadline" -}}
+   {{- $headline = $siteParams.customerLogosHeadline -}}
+{{- else if isset $siteParams "pbiuserlogosheadline" -}}
+   {{- $headline = index $siteParams "pbiuserlogosheadline" -}}
+{{- else if isset $siteParams "pbiUserLogosHeadline" -}}
+   {{- $headline = $siteParams.pbiUserLogosHeadline -}}
+{{- end -}}
+{{- if and (isset . "headline") (ne .headline "") -}}
+   {{- $headline = .headline -}}
+{{- end -}}
+
+<style>
+   .customer-logos-carousel {
+      --customer-logos-gap: 24px;
+      --customer-logo-slot-height: clamp(50px, 7.1vw, 78px);
+   }
+
+   .customer-logos-carousel .swiper-wrapper {
+      align-items: center;
+   }
+
+   .customer-logos-carousel .swiper-slide {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(var(--customer-logo-slot-height) + 4px);
+      width: calc((100% - var(--customer-logos-gap)) / 2);
+   }
+
+   .customer-logos-carousel .swiper-slide figure {
+      margin: 0;
+      width: 100%;
+      height: var(--customer-logo-slot-height);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .customer-logos-carousel .swiper-slide a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .customer-logos-carousel .swiper-slide img,
+   .customer-logos-carousel .swiper-slide svg {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      object-position: center;
+   }
+
+   @media (min-width: 768px) {
+      .customer-logos-carousel {
+         --customer-logo-slot-height: clamp(50px, 5.2vw, 78px);
+      }
+
+      .customer-logos-carousel .swiper-slide {
+         width: calc((100% - (2 * var(--customer-logos-gap))) / 3);
+      }
+   }
+
+   @media (min-width: 1024px) {
+      .customer-logos-carousel {
+         --customer-logo-slot-height: clamp(54px, 4.6vw, 84px);
+      }
+
+      .customer-logos-carousel .swiper-slide {
+         width: calc((100% - (4 * var(--customer-logos-gap))) / 5);
+      }
+   }
+ </style>
+
+<!--Trusted worldwide start-->
+<div
+   class="py-5 logo-tint-scope customer-logos-carousel"
+   data-cue="fadeIn"
+   data-regional-rules-enabled="{{ if $enableRegionalRules }}true{{ else }}false{{ end }}"
+   data-max-regional="{{ $maxRegional }}"
+   data-supported-regions="dach,nordics,uk-ireland,benelux,france,iberia,italy,cee,mena,north-america,latam,apac,anz,india,japan-korea,global">
+   <div class="container py-2">
+      <div class="row">
+         {{ if $showTitle }}
+         <div class="col-12 text-center mb-4">
+            <p class="text-muted text-uppercase small fw-semibold ls-lg mb-0">{{ $headline }}</p>
+         </div>
+         {{ end }}
+         <div class="col-lg-10 offset-lg-1">
+            <div
+               class="swiper-container swiper"
+               id="swiper-1"
+               data-pagination-type=""
+               data-speed="520"
+               data-space-between="24"
+               data-pagination="true"
+               data-navigation="false"
+               data-autoplay="true"
+               data-autoplay-delay="4200"
+               data-breakpoints='{"480": {"slidesPerView": 2}, "768": {"slidesPerView": 3}, "1024": {"slidesPerView": 5}}'>
+               <div class="swiper-wrapper pb-6">
+                  <!--
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-85.svg" | relURL }}" alt="Orange Cybersecurity" loading="lazy" />
+                     </figure>
+                  </div>
+                  -->
+                  <div class="swiper-slide" data-logo-tier="regional" data-logo-region="dach">
+                     <figure class="text-center">
+                        <!-- TODO: verify official URL -->
+                        <a href="https://www.martiag.ch/" target="_blank" rel="noopener noreferrer" title="Marti (opens in new tab)" aria-label="Marti (opens in new tab)">
+                           <img src="{{ "assets-flinker/images/brand-logo/brand-logo-21.svg" | relURL }}" alt="Marti" loading="lazy" />
+                        </a>
+                     </figure>
+                  </div>
+                  <!--
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-4.svg" | relURL }}" alt="Electrolux" loading="lazy" />
+                     </figure>
+                  </div>
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-15.svg" | relURL }}" alt="Metrostav" loading="lazy" />
+                     </figure>
+                  </div>
+                  -->
+                  <div class="swiper-slide" data-logo-tier="global" data-logo-region="global">
+                     <figure class="text-center">
+                        <a href="https://afry.com/en" target="_blank" rel="noopener noreferrer" title="AFRY (opens in new tab)" aria-label="AFRY (opens in new tab)">
+                           <img src="{{ "assets-flinker/images/brand-logo/brand-logo-30.svg" | relURL }}" alt="AFRY" loading="lazy" />
+                        </a>
+                     </figure>
+                  </div>
+                  <!--
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-65.svg" | relURL }}" alt="Acconia" loading="lazy" />
+                     </figure>
+                  </div>
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-59.svg" | relURL }}" alt="RK&K" loading="lazy" />
+                     </figure>
+                  </div>
+                  -->
+                  <!--
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <a href="https://www.nsd.co.jp/" target="_blank" rel="noopener noreferrer" title="NSD (opens in new tab)" aria-label="NSD (opens in new tab)">
+                           <img src="{{ "assets-flinker/images/brand-logo/brand-logo-94.svg" | relURL }}" alt="NSD" loading="lazy" />
+                        </a>
+                     </figure>
+                  </div>
+                  -->
+                  <!--
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-75.svg" | relURL }}" alt="Taiki Sha" loading="lazy" />
+                     </figure>
+                  </div>
+                  -->
+                  <div class="swiper-slide" data-logo-tier="global" data-logo-region="global">
+                     <figure class="text-center">
+                        <a href="https://www.ohla-group.com/" target="_blank" rel="noopener noreferrer" title="OHLA (opens in new tab)" aria-label="OHLA (opens in new tab)">
+                           <img src="{{ "assets-flinker/images/brand-logo/brand-logo-10.svg" | relURL }}" alt="Ohla" loading="lazy" />
+                        </a>
+                     </figure>
+                  </div>
+                  <div class="swiper-slide" data-logo-tier="regional" data-logo-region="dach">
+                     <figure class="text-center">
+                        <a href="https://www.arx.ing/en" target="_blank" rel="noopener noreferrer" title="ARX (opens in new tab)" aria-label="ARX (opens in new tab)">
+                           <img src="{{ "assets-flinker/images/brand-logo/brand-logo-92.svg" | relURL }}" alt="ARX" loading="lazy" />
+                        </a>
+                     </figure>
+                  </div>
+                  <div class="swiper-slide" data-logo-tier="regional" data-logo-region="dach">
+                     <figure class="text-center">
+                        <!-- TODO: verify correct city portal URL -->
+                        <a href="https://www.stadt-zuerich.ch/" target="_blank" rel="noopener noreferrer" title="Stadt Zürich (opens in new tab)" aria-label="Stadt Zürich (opens in new tab)">
+                           <img src="{{ "assets-flinker/images/brand-logo/brand-logo-32.svg" | relURL }}" alt="Zürich City" loading="lazy" />
+                        </a>
+                     </figure>
+                  </div>
+                  <!--
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-77.svg" | relURL }}" alt="Blue Pacific Oils" loading="lazy" />
+                     </figure>
+                  </div>
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-39.svg" | relURL }}" alt="Budimex" loading="lazy" />
+                     </figure>
+                  </div>
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-40.svg" | relURL }}" alt="Systra" loading="lazy" />
+                     </figure>
+                  </div>
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-78.svg" | relURL }}" alt="Richard Mille" loading="lazy" />
+                     </figure>
+                  </div>
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-79.svg" | relURL }}" alt="Bayer" loading="lazy" />
+                     </figure>
+                  </div>
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-89.svg" | relURL }}" alt="Tclarke" loading="lazy" />
+                     </figure>
+                  </div>
+                  -->
+                  <div class="swiper-slide" data-logo-tier="regional" data-logo-region="nordics">
+                     <figure class="text-center">
+                        <a href="https://backe.no/" target="_blank" rel="noopener noreferrer" title="Backe (opens in new tab)" aria-label="Backe (opens in new tab)">
+                           <img src="{{ "assets-flinker/images/brand-logo/brand-logo-36.svg" | relURL }}" alt="Backe" loading="lazy" />
+                        </a>
+                     </figure>
+                  </div>
+                  <div class="swiper-slide" data-logo-tier="regional" data-logo-region="nordics">
+                     <figure class="text-center">
+                        <a href="https://www.veidekke.com/" target="_blank" rel="noopener noreferrer" title="Veidekke (opens in new tab)" aria-label="Veidekke (opens in new tab)">
+                           <img src="{{ "assets-flinker/images/brand-logo/brand-logo-42.svg" | relURL }}" alt="Veidekke" loading="lazy" />
+                        </a>
+                     </figure>
+                  </div>
+                  <div class="swiper-slide" data-logo-tier="regional" data-logo-region="italy">
+                     <figure class="text-center">
+                        <a href="https://www.stradeanas.it/" target="_blank" rel="noopener noreferrer" title="ANAS (opens in new tab)" aria-label="ANAS (opens in new tab)">
+                           <img src="{{ "assets-flinker/images/brand-logo/brand-logo-101.svg" | relURL }}" alt="ANAS" loading="lazy" />
+                        </a>
+                     </figure>
+                  </div>
+                  <!--
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-88.svg" | relURL }}" alt="Davidson" loading="lazy" />
+                     </figure>
+                  </div>
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-48.svg" | relURL }}" alt="Multiplex" loading="lazy" />
+                     </figure>
+                  </div>
+                  -->
+                  <!--
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-44.svg" | relURL }}" alt="Milano City" loading="lazy" />
+                     </figure>
+                  </div>
+                  -->
+                  <!--
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-45.svg" | relURL }}" alt="Artelia Digital Solutions" loading="lazy" />
+                     </figure>
+                  </div>
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-57.svg" | relURL }}" alt="Vantage Data Centers" loading="lazy" />
+                     </figure>
+                  </div>
+                  -->
+                  <!--
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <a href="https://www.dechant.de/" target="_blank" rel="noopener noreferrer" title="Dechant (opens in new tab)" aria-label="Dechant (opens in new tab)">
+                           <img src="{{ "assets-flinker/images/brand-logo/brand-logo-14.svg" | relURL }}" alt="Dechant" loading="lazy" />
+                        </a>
+                     </figure>
+                  </div>
+                  -->
+                  <!--
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-63.svg" | relURL }}" alt="Ramoil" loading="lazy" />
+                     </figure>
+                  </div>
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-74.svg" | relURL }}" alt="Eiffage" loading="lazy" />
+                     </figure>
+                  </div>
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-76.svg" | relURL }}" alt="Group-IPS" loading="lazy" />
+                     </figure>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                     <figure class="text-center">
+                        <img src="{{ "assets-flinker/images/brand-logo/brand-logo-87.svg" | relURL }}" alt="Madrid" loading="lazy" />
+                     </figure>
+                  </div>
+                  -->
+                  <div class="swiper-slide" data-logo-tier="global" data-logo-region="global">
+                     <figure class="text-center">
+                        <a href="https://www.bip-group.com/" target="_blank" rel="noopener noreferrer" title="Bip Group (opens in new tab)" aria-label="Bip Group (opens in new tab)">
+                           <img src="{{ "assets-flinker/images/brand-logo/brand-logo-90.svg" | relURL }}" alt="Bip-Group" loading="lazy" />
+                        </a>
+                     </figure>
+                  </div>
+                  <div class="swiper-slide" data-logo-tier="global" data-logo-region="global">
+                     <figure class="text-center">
+                        <a href="https://www.vinci.com/" target="_blank" rel="noopener noreferrer" title="Vinci (opens in new tab)" aria-label="Vinci (opens in new tab)">
+                           <img src="{{ "assets-flinker/images/brand-logo/brand-logo-97.svg" | relURL }}" alt="Vinci" loading="lazy" />
+                        </a>
+                     </figure>
+                  </div>
+                  <div class="swiper-slide" data-logo-tier="global" data-logo-region="global">
+                     <figure class="text-center">
+                        <a href="https://www.larsentoubro.com/" target="_blank" rel="noopener noreferrer" title="Larsen & Toubro (opens in new tab)" aria-label="Larsen & Toubro (opens in new tab)">
+                           <img src="{{ "assets-flinker/images/brand-logo/brand-logo-98.svg" | relURL }}" alt="Larsen & Toubro" loading="lazy" />
+                        </a>
+                     </figure>
+                  </div>
+                  <div class="swiper-slide" data-logo-tier="regional" data-logo-region="dach">
+                     <figure class="text-center">
+                        <a href="https://www.swietelsky.com/" target="_blank" rel="noopener noreferrer" title="Swietelsky (opens in new tab)" aria-label="Swietelsky (opens in new tab)">
+                           <img src="{{ "assets-flinker/images/brand-logo/brand-logo-100.svg" | relURL }}" alt="Swietelsky" loading="lazy" />
+                        </a>
+                     </figure>
+                  </div>
+               </div>
+               
+               <!-- Add Pagination -->
+               <div class="swiper-pagination"></div>
+               <!-- Add Navigation -->
+               <div class="swiper-navigation">
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<script>
+   (function () {
+      var wrapper = document.currentScript && document.currentScript.previousElementSibling;
+      if (!wrapper) {
+         return;
+      }
+
+      var enableRegionalRules = wrapper.getAttribute('data-regional-rules-enabled') === 'true';
+      if (!enableRegionalRules) {
+         return;
+      }
+
+      var swiperWrapper = wrapper.querySelector('.swiper-wrapper');
+      if (!swiperWrapper) {
+         return;
+      }
+
+      var slideNodes = wrapper.querySelectorAll('.swiper-wrapper .swiper-slide[data-logo-tier]');
+      if (!slideNodes.length) {
+         return;
+      }
+
+      var slides = Array.prototype.slice.call(slideNodes);
+
+      var defaultSupportedRegions = [
+         'dach',
+         'nordics',
+         'uk-ireland',
+         'benelux',
+         'france',
+         'iberia',
+         'italy',
+         'cee',
+         'mena',
+         'north-america',
+         'latam',
+         'apac',
+         'anz',
+         'india',
+         'japan-korea',
+         'global'
+      ];
+
+      function normalizeRegion(rawRegion) {
+         var region = (rawRegion || '').toLowerCase().trim().replace(/\s+/g, '-').replace(/_/g, '-');
+
+         var aliasMap = {
+            uk: 'uk-ireland',
+            gb: 'uk-ireland',
+            ireland: 'uk-ireland',
+            benelux: 'benelux',
+            na: 'north-america',
+            northamerica: 'north-america',
+            us: 'north-america',
+            ca: 'north-america',
+            latam: 'latam',
+            apj: 'apac',
+            apac: 'apac',
+            anz: 'anz',
+            india: 'india',
+            jp: 'japan-korea',
+            kr: 'japan-korea',
+            emea: 'global'
+         };
+
+         return aliasMap[region] || region || 'global';
+      }
+
+      function parseSupportedRegions(value) {
+         var normalized = (value || '')
+            .split(',')
+            .map(normalizeRegion)
+            .filter(function (region) {
+               return region.length > 0;
+            });
+
+         if (!normalized.length) {
+            normalized = defaultSupportedRegions.slice();
+         }
+
+         if (normalized.indexOf('global') === -1) {
+            normalized.push('global');
+         }
+
+         return Array.from(new Set(normalized));
+      }
+
+      var supportedRegions = parseSupportedRegions(wrapper.getAttribute('data-supported-regions'));
+
+      function detectRegion() {
+         var locale = ((navigator.languages && navigator.languages[0]) || navigator.language || '').toLowerCase().replace('_', '-');
+         var localeParts = locale.split('-');
+         var country = localeParts.length > 1 ? localeParts[1] : '';
+         var timeZone = '';
+
+          var countryRegionMap = {
+             ch: 'dach',
+             de: 'dach',
+             at: 'dach',
+             no: 'nordics',
+             se: 'nordics',
+             dk: 'nordics',
+             fi: 'nordics',
+             is: 'nordics',
+             gb: 'uk-ireland',
+             uk: 'uk-ireland',
+             ie: 'uk-ireland',
+             nl: 'benelux',
+             be: 'benelux',
+             lu: 'benelux',
+             fr: 'france',
+             es: 'iberia',
+             pt: 'iberia',
+             it: 'italy',
+             pl: 'cee',
+             cz: 'cee',
+             sk: 'cee',
+             hu: 'cee',
+             ro: 'cee',
+             bg: 'cee',
+             hr: 'cee',
+             si: 'cee',
+             rs: 'cee',
+             ae: 'mena',
+             sa: 'mena',
+             qa: 'mena',
+             kw: 'mena',
+             om: 'mena',
+             bh: 'mena',
+             eg: 'mena',
+             ma: 'mena',
+             us: 'north-america',
+             ca: 'north-america',
+             mx: 'latam',
+             br: 'latam',
+             ar: 'latam',
+             cl: 'latam',
+             co: 'latam',
+             pe: 'latam',
+             uy: 'latam',
+             sg: 'apac',
+             my: 'apac',
+             th: 'apac',
+             id: 'apac',
+             ph: 'apac',
+             vn: 'apac',
+             hk: 'apac',
+             tw: 'apac',
+             au: 'anz',
+             nz: 'anz',
+             in: 'india',
+             jp: 'japan-korea',
+             kr: 'japan-korea'
+          };
+
+          var timezoneHints = [
+             { token: 'zurich', region: 'dach' },
+             { token: 'berlin', region: 'dach' },
+             { token: 'vienna', region: 'dach' },
+             { token: 'oslo', region: 'nordics' },
+             { token: 'stockholm', region: 'nordics' },
+             { token: 'helsinki', region: 'nordics' },
+             { token: 'copenhagen', region: 'nordics' },
+             { token: 'london', region: 'uk-ireland' },
+             { token: 'dublin', region: 'uk-ireland' },
+             { token: 'amsterdam', region: 'benelux' },
+             { token: 'brussels', region: 'benelux' },
+             { token: 'luxembourg', region: 'benelux' },
+             { token: 'madrid', region: 'iberia' },
+             { token: 'lisbon', region: 'iberia' },
+             { token: 'rome', region: 'italy' },
+             { token: 'warsaw', region: 'cee' },
+             { token: 'prague', region: 'cee' },
+             { token: 'dubai', region: 'mena' },
+             { token: 'riyadh', region: 'mena' },
+             { token: 'new_york', region: 'north-america' },
+             { token: 'chicago', region: 'north-america' },
+             { token: 'toronto', region: 'north-america' },
+             { token: 'mexico_city', region: 'latam' },
+             { token: 'sao_paulo', region: 'latam' },
+             { token: 'buenos_aires', region: 'latam' },
+             { token: 'singapore', region: 'apac' },
+             { token: 'bangkok', region: 'apac' },
+             { token: 'jakarta', region: 'apac' },
+             { token: 'sydney', region: 'anz' },
+             { token: 'melbourne', region: 'anz' },
+             { token: 'auckland', region: 'anz' },
+             { token: 'kolkata', region: 'india' },
+             { token: 'tokyo', region: 'japan-korea' },
+             { token: 'seoul', region: 'japan-korea' }
+          ];
+
+         try {
+            timeZone = (Intl.DateTimeFormat().resolvedOptions().timeZone || '').toLowerCase();
+         } catch (e) {
+            timeZone = '';
+         }
+
+         if (country && countryRegionMap[country]) {
+            return countryRegionMap[country];
+         }
+
+         var timezoneMatch = timezoneHints.find(function (hint) {
+            return timeZone.indexOf(hint.token) !== -1;
+         });
+
+         if (timezoneMatch) {
+            return timezoneMatch.region;
+         }
+
+         return 'global';
+      }
+
+      var detectedRegion = normalizeRegion(detectRegion());
+      if (supportedRegions.indexOf(detectedRegion) === -1) {
+         detectedRegion = 'global';
+      }
+
+      var maxRegional = parseInt(wrapper.getAttribute('data-max-regional') || '2', 10);
+      if (!Number.isFinite(maxRegional) || maxRegional < 0) {
+         maxRegional = 2;
+      }
+      var globalSlides = [];
+      var regionalSlides = [];
+
+      slides.forEach(function (slide) {
+         var tier = slide.getAttribute('data-logo-tier');
+         var region = normalizeRegion(slide.getAttribute('data-logo-region'));
+
+         if (supportedRegions.indexOf(region) === -1) {
+            region = 'global';
+         }
+
+         slide.setAttribute('data-logo-region', region);
+
+         if (tier === 'global') {
+            globalSlides.push(slide);
+            return;
+         }
+
+         if (tier === 'regional' && region === detectedRegion) {
+            regionalSlides.push(slide);
+         }
+      });
+
+      var keep = regionalSlides.slice(0, maxRegional).concat(globalSlides);
+      var keepSet = new Set(keep);
+
+      slides.forEach(function (slide) {
+         if (!keepSet.has(slide)) {
+            slide.remove();
+         }
+      });
+
+      // Enforce display order: regional logos first, then global baseline logos.
+      keep.forEach(function (slide) {
+         swiperWrapper.appendChild(slide);
+      });
+   })();
+</script>
+
+<script>
+   (function () {
+      var node = document.currentScript && document.currentScript.previousElementSibling;
+      while (node && !(node.classList && node.classList.contains('customer-logos-carousel'))) {
+         node = node.previousElementSibling;
+      }
+
+      if (!node) {
+         return;
+      }
+
+      var wrapper = node;
+      var swiperEl = wrapper.querySelector('.swiper-container.swiper');
+      if (!swiperEl || swiperEl.getAttribute('data-autoplay') !== 'true') {
+         return;
+      }
+
+      var desktopQuery = window.matchMedia('(min-width: 1024px)');
+      var pausedByHover = false;
+
+      function bindDesktopHoverPause(swiper) {
+         if (!swiper || !swiper.autoplay || swiperEl.getAttribute('data-hover-pause-bound') === 'true') {
+            return;
+         }
+
+         swiperEl.setAttribute('data-hover-pause-bound', 'true');
+
+         swiperEl.addEventListener('pointerenter', function (event) {
+            if (event.pointerType && event.pointerType !== 'mouse') {
+               return;
+            }
+
+            if (!desktopQuery.matches || !swiper.autoplay.running) {
+               return;
+            }
+
+            swiper.autoplay.stop();
+            pausedByHover = true;
+         });
+
+         swiperEl.addEventListener('pointerleave', function (event) {
+            if (event.pointerType && event.pointerType !== 'mouse') {
+               return;
+            }
+
+            if (!pausedByHover) {
+               return;
+            }
+
+            pausedByHover = false;
+
+            if (desktopQuery.matches && !swiper.autoplay.running) {
+               swiper.autoplay.start();
+            }
+         });
+
+         function onViewportChange() {
+            if (!desktopQuery.matches && pausedByHover) {
+               pausedByHover = false;
+               if (!swiper.autoplay.running) {
+                  swiper.autoplay.start();
+               }
+            }
+         }
+
+         if (desktopQuery.addEventListener) {
+            desktopQuery.addEventListener('change', onViewportChange);
+         } else if (desktopQuery.addListener) {
+            desktopQuery.addListener(onViewportChange);
+         }
+      }
+
+      function attachWhenReady(remainingAttempts) {
+         if (swiperEl.swiper && swiperEl.swiper.autoplay) {
+            bindDesktopHoverPause(swiperEl.swiper);
+            return;
+         }
+
+         if (remainingAttempts <= 0) {
+            return;
+         }
+
+         setTimeout(function () {
+            attachWhenReady(remainingAttempts - 1);
+         }, 80);
+      }
+
+      attachWhenReady(50);
+   })();
+</script>
