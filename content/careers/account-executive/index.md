@@ -41,7 +41,7 @@ apply_url: "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=80C2RLBJBEO
 - Proven B2B closing in AEC/construction/engineering or the Microsoft ecosystem
 - Enough BIM/IFC/ISO 19650 understanding to be credible
 - Your own industry network
-- Calm, conscientious, mission-driven — no toxic "shark" behaviour
+- Calm, conscientious, mission-driven, detail oriented
 
 ## What we offer
 
