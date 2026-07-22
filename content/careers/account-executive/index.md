@@ -1,9 +1,24 @@
 ---
-title: "Account Executive / Deals"
-description: "Join Flinker to own qualified opportunities from first interest to signed deal. Build pipeline and close consultatively in the AEC/Microsoft ecosystem."
+title: "Account Executive / Deals | Flinker Careers"
+description: "Remote Account Executive role at Flinker. Own qualified opportunities from first interest to signed deal. B2B closing experience in AEC or Microsoft ecosystem required."
 date: 2026-07-22
+lastmod: 2026-07-22
 draft: false
 layout: "role"
+canonical: "https://flinker.app/careers/account-executive/"
+keywords:
+  - "Account Executive AEC"
+  - "AE construction tech"
+  - "B2B sales BIM"
+  - "closer construction software"
+  - "remote AE job"
+  - "Microsoft ecosystem sales"
+  - "pipeline management AEC"
+  - "enterprise sales construction"
+author: "Flinker GmbH"
+sitemap:
+  priority: 0.8
+  changefreq: "weekly"
 badges:
   - Remote
   - Base + commission

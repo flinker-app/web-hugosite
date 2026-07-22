@@ -1,9 +1,24 @@
 ---
-title: "Technical Inbound / Consultative Seller"
-description: "Join Flinker as the first voice our customers meet. Qualify inbound leads, run first calls, and credibly answer BIM and Microsoft 365 questions."
+title: "Technical Inbound / Consultative Seller | Flinker Careers"
+description: "Remote sales role at Flinker. Qualify inbound leads, run first calls, and credibly answer BIM and Microsoft 365 questions. AEC/BIM background required."
 date: 2026-07-22
+lastmod: 2026-07-22
 draft: false
 layout: "role"
+canonical: "https://flinker.app/careers/consultative-seller/"
+keywords:
+  - "BIM sales jobs"
+  - "OpenBIM sales"
+  - "consultative seller AEC"
+  - "inbound sales construction"
+  - "Microsoft 365 sales"
+  - "remote sales BIM"
+  - "IFC ISO 19650 sales"
+  - "construction tech sales"
+author: "Flinker GmbH"
+sitemap:
+  priority: 0.8
+  changefreq: "weekly"
 badges:
   - Remote
   - Base + commission

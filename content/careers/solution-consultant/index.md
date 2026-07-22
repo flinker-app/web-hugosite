@@ -1,9 +1,25 @@
 ---
-title: "Solution Consultant / Technical Account Manager"
-description: "Join Flinker as the technical trust anchor for our customers. Own solution design, demos, PoCs, proposals and delivery on large AEC projects."
+title: "Solution Consultant / Technical Account Manager | Flinker Careers"
+description: "Remote TAM role at Flinker. Own solution design, demos, PoCs, proposals and delivery on large AEC/infrastructure projects. Deep BIM and Microsoft 365 expertise required."
 date: 2026-07-22
+lastmod: 2026-07-22
 draft: false
 layout: "role"
+canonical: "https://flinker.app/careers/solution-consultant/"
+keywords:
+  - "Solution Consultant BIM"
+  - "Technical Account Manager AEC"
+  - "TAM construction tech"
+  - "OpenBIM consultant"
+  - "Microsoft 365 consultant"
+  - "IFC ISO 19650 consultant"
+  - "Dalux Autodesk Trimble jobs"
+  - "CDE consultant"
+  - "Power BI BIM consultant"
+author: "Flinker GmbH"
+sitemap:
+  priority: 0.8
+  changefreq: "weekly"
 badges:
   - Remote
   - Full-time

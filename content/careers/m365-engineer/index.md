@@ -1,9 +1,25 @@
 ---
-title: "Senior Microsoft 365 Integration Engineer"
-description: "Join Flinker to build deep Microsoft 365 integrations — Teams, SharePoint, Graph API, Power Platform. Freelance, remote, senior level."
+title: "Senior Microsoft 365 Integration Engineer | Flinker Careers"
+description: "Freelance remote role at Flinker. Build deep Microsoft 365 integrations — Teams apps, SharePoint, Graph API, Power Platform. Senior level, EU time zones."
 date: 2026-07-22
+lastmod: 2026-07-22
 draft: false
 layout: "role"
+canonical: "https://flinker.app/careers/m365-engineer/"
+keywords:
+  - "Microsoft 365 engineer"
+  - "Teams app developer"
+  - "SharePoint developer"
+  - "Graph API engineer"
+  - "Power Platform developer"
+  - "freelance M365"
+  - "remote Microsoft 365 jobs"
+  - "senior SharePoint engineer"
+  - "Teams extensibility"
+author: "Flinker GmbH"
+sitemap:
+  priority: 0.8
+  changefreq: "weekly"
 badges:
   - Remote
   - Freelance
