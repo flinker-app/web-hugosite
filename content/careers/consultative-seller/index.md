@@ -9,7 +9,7 @@ badges:
   - Base + commission
   - Sales
 intro: "Flinker brings openBIM natively into Microsoft 365 — IFC viewer, ISO 19650 CDE and Power BI, 100% inside the customer's own tenant, no vendor lock-in. You are the first voice our customers meet — asset owners, construction firms, large engineering offices and public building authorities."
-apply_url: "MSFORM_URL"
+apply_url: "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=80C2RLBJBEOcmMYdC8DcAu3Acr_HHtlOuyPGamiQECNUN0hLV0tFNkpDOVZHUTNWVDVSREFOT09VVy4u"
 ---
 
 ## What you'll do

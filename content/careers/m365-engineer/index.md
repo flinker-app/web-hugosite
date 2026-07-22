@@ -9,8 +9,7 @@ badges:
   - Freelance
   - Engineering
 intro: "We're a B2B software company building enterprise-grade, privacy-first software that runs inside customer Microsoft 365 tenants. We're looking for a senior, hands-on Microsoft 365 integration engineer to help us ship a small set of deep native integrations."
-apply_url: "https://github.com/flinker-app/docsfx/discussions/41"
-apply_label: "Apply via GitHub"
+apply_url: "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=80C2RLBJBEOcmMYdC8DcAu3Acr_HHtlOuyPGamiQECNUNDRKODhQR1lLSzdYVkQ1V0xQSURKNFNFSC4u"
 ---
 
 ## What you'll do
