@@ -1,0 +1,66 @@
+{{ define "main" }}
+<article>
+  <section class="py-6 py-lg-9">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+
+          <!-- Badges -->
+          {{ with .Params.badges }}
+          <div class="mb-4">
+            {{ range . }}
+            <span class="badge bg-light text-dark border me-1">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+
+          <!-- Title -->
+          <h1 class="mb-4">{{ .Title }}</h1>
+
+          <!-- Intro -->
+          {{ with .Params.intro }}
+          <p class="lead text-muted mb-6">{{ . }}</p>
+          {{ end }}
+
+          <!-- Content sections with styled headings -->
+          <style>
+            .role-content h2 {
+              font-size: 1.1rem;
+              font-weight: 600;
+              text-transform: uppercase;
+              letter-spacing: 0.05em;
+              color: #6c757d;
+              margin-top: 3rem;
+              margin-bottom: 1rem;
+            }
+            .role-content h2:first-child {
+              margin-top: 0;
+            }
+            .role-content ul {
+              padding-left: 1.25rem;
+            }
+            .role-content li {
+              margin-bottom: 0.5rem;
+            }
+          </style>
+
+          <div class="role-content">
+            {{ .Content }}
+          </div>
+
+          <!-- Apply Button -->
+          <div class="mt-6 pt-4">
+            <a href="{{ .Params.apply_url | default "MSFORM_URL" }}" class="btn btn-primary btn-lg px-5" target="_blank" rel="noopener">{{ .Params.apply_label | default "Apply for this role" }}</a>
+          </div>
+
+          <!-- Back link -->
+          <div class="mt-4">
+            <a href="/careers/" class="text-muted small">&larr; All open roles</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
+{{ end }}
