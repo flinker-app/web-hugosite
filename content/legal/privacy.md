@@ -72,10 +72,11 @@ We would like to point out that data transmission over the Internet (e.g. when c
 The controller for data processing in the Services is:
 
 Flinker GmbH  
-Zittelstr 7  
-80796 Munich  
+Zittelstraße 7  
+80796 Munich, Germany
 
-E-mail: info@flinker.app
+Phone: +49 89 26204274  
+Email: info@flinker.app
 
 The controller is the natural or legal person who alone or jointly with others determines the purposes and means of the processing of personal data (e.g. names, email addresses, etc.).
 
@@ -190,7 +191,7 @@ The recipient of the collected data is Google.
 
 ### Transfer to Third Countries
 
-The personal data is transferred to the USA under the EU-US Privacy Shield on the basis of the adequacy decision of the European Commission. You can download the certificate [here](#).
+Personal data may be transferred to the USA. Google LLC is certified under the EU-US Data Privacy Framework, which ensures an adequate level of data protection based on the adequacy decision of the European Commission of July 10, 2023. For more information, see the [Data Privacy Framework website](https://www.dataprivacyframework.gov/).
 
 ### Duration of Data Storage
 

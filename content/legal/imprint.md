@@ -13,13 +13,20 @@ layout: "mdpage"
 ## 1. Responsible for content
 
 Flinker GmbH  
-Zittelstraße  
-80796 Munich
+Zittelstraße 7  
+80796 Munich, Germany
 
-info@flinker.app
+Phone: +49 89 26204274  
+Email: info@flinker.app
 
 Represented by the managing directors:  
 Christian Laimer, Mario Beltempo
+
+Commercial register: Munich Local Court (Amtsgericht München)  
+Registration number: HRB 254870
+
+VAT identification number according to § 27a UStG:  
+DE329797108
 
 <br>
 
