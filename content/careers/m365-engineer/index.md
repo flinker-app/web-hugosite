@@ -5,6 +5,12 @@ date: 2026-07-22
 lastmod: 2026-07-22
 draft: false
 layout: "role"
+date_posted: "2026-07-22"
+valid_through: "2026-12-31T23:59:59+01:00"
+expiryDate: 2026-12-31T23:59:59+01:00
+employment_type: "CONTRACTOR"
+job_location_type: "TELECOMMUTE"
+applicant_scope: "GLOBAL"
 canonical: "https://flinker.app/careers/m365-engineer/"
 keywords:
   - "Microsoft 365 engineer"

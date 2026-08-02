@@ -1,0 +1,43 @@
+{{- $jobTitle := .Params.job_title | default (replaceRE `\s*\|\s*Flinker Careers$` "" .Title) -}}
+{{- $datePosted := .Params.date_posted | default (.Date.Format "2006-01-02") -}}
+{{- $validThrough := time.Format "2006-01-02T15:04:05Z07:00" .Params.valid_through -}}
+{{- $employmentType := .Params.employment_type -}}
+{{- $jobLocationType := .Params.job_location_type -}}
+
+{{- $hiringOrganization := dict
+  "@type" "Organization"
+  "name" "Flinker GmbH"
+  "sameAs" .Site.BaseURL
+  "logo" ("assets-flinker/images/logo/logo.png" | absURL)
+-}}
+
+{{- $jobPosting := dict
+  "@context" "https://schema.org"
+  "@type" "JobPosting"
+  "title" $jobTitle
+  "description" (printf "%s" .Content)
+  "datePosted" $datePosted
+  "validThrough" $validThrough
+  "hiringOrganization" $hiringOrganization
+  "employmentType" $employmentType
+  "url" .Permalink
+-}}
+
+{{- if eq $jobLocationType "TELECOMMUTE" -}}
+  {{- $countries := slice -}}
+  {{- $applicantCountries := .Params.applicant_countries -}}
+  {{- if eq .Params.applicant_scope "GLOBAL" -}}
+    {{- $applicantCountries = site.Data.iso_countries -}}
+  {{- end -}}
+  {{- range $applicantCountries -}}
+    {{- $countries = $countries | append (dict "@type" "Country" "name" .) -}}
+  {{- end -}}
+  {{- $jobPosting = merge $jobPosting (dict
+    "jobLocationType" "TELECOMMUTE"
+    "applicantLocationRequirements" $countries
+  ) -}}
+{{- end -}}
+
+<script type="application/ld+json">
+{{ $jobPosting | jsonify (dict "indent" "  ") | safeJS }}
+</script>

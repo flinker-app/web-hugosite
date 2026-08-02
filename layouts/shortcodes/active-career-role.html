@@ -1,0 +1,6 @@
+{{- $role := site.GetPage (.Get "path") -}}
+{{- with $role -}}
+  {{- if or .ExpiryDate.IsZero (.ExpiryDate.After now) -}}
+    {{- $.Inner | safeHTML -}}
+  {{- end -}}
+{{- end -}}

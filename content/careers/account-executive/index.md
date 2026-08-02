@@ -5,6 +5,12 @@ date: 2026-07-22
 lastmod: 2026-07-22
 draft: false
 layout: "role"
+date_posted: "2026-07-22"
+valid_through: "2026-12-31T23:59:59+01:00"
+expiryDate: 2026-12-31T23:59:59+01:00
+employment_type: "FULL_TIME"
+job_location_type: "TELECOMMUTE"
+applicant_scope: "GLOBAL"
 canonical: "https://flinker.app/careers/account-executive/"
 keywords:
   - "Account Executive AEC"
