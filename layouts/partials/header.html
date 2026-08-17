@@ -71,17 +71,33 @@
          <div class="offcanvas-body pt-0 align-items-center">
              <ul class="navbar-nav mx-auto align-items-lg-center">
 
-              <!-- Products -->
+              <!-- Industries -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="{{ "/industries/" | absURL }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Industries
+                </a>
+                <div class="dropdown-menu dropdown-menu-md p-3">
+                  <div class="dropdown-header">Built Environment &amp; Infrastructure</div>
+                  <a class="dropdown-item" href="{{ "/industries/" | absURL }}">Industry overview</a>
+                  <a class="dropdown-item fw-semibold" href="{{ "/industries/public-sector-critical-infrastructure/" | absURL }}">Public Sector &amp; Critical Infrastructure</a>
+                  <a class="dropdown-item" href="{{ "/industries/public-sector/" | absURL }}">Government &amp; Public Sector</a>
+                  <a class="dropdown-item" href="{{ "/industries/critical-infrastructure-utilities/" | absURL }}">Critical Infrastructure &amp; Utilities</a>
+                  <a class="dropdown-item" href="{{ "/industries/real-estate-asset-owners/" | absURL }}">Real Estate &amp; Asset Owners</a>
+                  <a class="dropdown-item" href="{{ "/industries/engineering-construction/" | absURL }}">Engineering &amp; Construction</a>
+                </div>
+              </li>
+
+              <!-- Solutions -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="{{ "products/" | absURL }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Products
+                  Solutions
                 </a>
                 <div class="dropdown-menu dropdown-menu-md p-3">
                   <div class="row row-cols-1 g-3">
 
                     <!-- Overview -->
                     <div class="col">
-                      <div class="dropdown-header">Microsoft 365 Apps</div>
+                      <div class="dropdown-header">Solutions &amp; Apps</div>
                       <a class="dropdown-item" href="{{ "products/" | absURL }}">Overview</a>
                       <a class="dropdown-item" href="{{ "/solutions/" | absURL }}">Solutions by Role</a>
                     </div>
@@ -119,51 +135,6 @@
                     </div>
 
                   </div>
-                </div>
-              </li>
-
-              <!-- Partners -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="{{ "/partners/" | absURL }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Partners
-                </a>
-                <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item mb-3 text-body" href="{{ "/partners/" | absURL }}">
-                      <div class="d-flex align-items-center">
-                        <i class="bi bi-handshake fs-4 text-primary"></i>
-                        <div class="ms-3 lh-1">
-                            <h6 class="mb-1 fw-normal">Partner Program</h6>
-                            <p class="mb-0 fs-6">Overview & benefits</p>
-                        </div>
-                      </div>
-                  </a>
-                  <a class="dropdown-item mb-3 text-body" href="{{ "/partners/program/" | absURL }}">
-                      <div class="d-flex align-items-center">
-                        <i class="bi bi-building fs-4 text-primary"></i>
-                        <div class="ms-3 lh-1">
-                            <h6 class="mb-1 fw-normal">Become a Partner</h6>
-                            <p class="mb-0 fs-6">Apply to our partner program</p>
-                        </div>
-                      </div>
-                  </a>
-                  <a class="dropdown-item mb-3 text-body" href="{{ "/partners/directory/" | absURL }}">
-                      <div class="d-flex align-items-center">
-                        <i class="bi bi-people fs-4 text-primary"></i>
-                        <div class="ms-3 lh-1">
-                            <h6 class="mb-1 fw-normal">Partner Directory</h6>
-                            <p class="mb-0 fs-6">Find a certified Flinker partner</p>
-                        </div>
-                      </div>
-                  </a>
-                  <a class="dropdown-item text-body" href="{{ "/services/" | absURL }}">
-                      <div class="d-flex align-items-center">
-                        <i class="bi bi-headset fs-4 text-primary"></i>
-                        <div class="ms-3 lh-1">
-                            <h6 class="mb-1 fw-normal">Services & Support</h6>
-                            <p class="mb-0 fs-6">Implementation, consulting & support</p>
-                        </div>
-                      </div>
-                  </a>
                 </div>
               </li>
 
@@ -215,16 +186,9 @@
                         </div>
                       </div>
                   </a>
-                </div>
-              </li>
-
-              <!-- Integrations -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="{{ "/integrations/" | absURL }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Integrations
-                </a>
-                <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item mb-3 text-body" href="{{ "/integrations/" | absURL }}">
+                  <div class="dropdown-divider my-3"></div>
+                  <div class="dropdown-header">Integrations</div>
+                  <a class="dropdown-item mb-2 text-body" href="{{ "/integrations/" | absURL }}">
                       <div class="d-flex align-items-center">
                         <i class="bi bi-diagram-3 fs-4 text-primary"></i>
                         <div class="ms-3 lh-1">
@@ -233,7 +197,7 @@
                         </div>
                       </div>
                   </a>
-                  <a class="dropdown-item mb-3 text-body" href="{{ "/integrations/microsoft/" | absURL }}">
+                  <a class="dropdown-item mb-2 text-body" href="{{ "/integrations/microsoft/" | absURL }}">
                       <div class="d-flex align-items-center">
                         <i class="bi bi-microsoft fs-4 text-primary"></i>
                         <div class="ms-3 lh-1">
@@ -251,6 +215,51 @@
                         </div>
                       </div>
                   </span>
+                </div>
+              </li>
+
+              <!-- Partners -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="{{ "/partners/" | absURL }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Partners
+                </a>
+                <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item mb-3 text-body" href="{{ "/partners/" | absURL }}">
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-handshake fs-4 text-primary"></i>
+                        <div class="ms-3 lh-1">
+                            <h6 class="mb-1 fw-normal">Partner Program</h6>
+                            <p class="mb-0 fs-6">Overview & benefits</p>
+                        </div>
+                      </div>
+                  </a>
+                  <a class="dropdown-item mb-3 text-body" href="{{ "/partners/program/" | absURL }}">
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-building fs-4 text-primary"></i>
+                        <div class="ms-3 lh-1">
+                            <h6 class="mb-1 fw-normal">Become a Partner</h6>
+                            <p class="mb-0 fs-6">Apply to our partner program</p>
+                        </div>
+                      </div>
+                  </a>
+                  <a class="dropdown-item mb-3 text-body" href="{{ "/partners/directory/" | absURL }}">
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-people fs-4 text-primary"></i>
+                        <div class="ms-3 lh-1">
+                            <h6 class="mb-1 fw-normal">Partner Directory</h6>
+                            <p class="mb-0 fs-6">Find a certified Flinker partner</p>
+                        </div>
+                      </div>
+                  </a>
+                  <a class="dropdown-item text-body" href="{{ "/services/" | absURL }}">
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-headset fs-4 text-primary"></i>
+                        <div class="ms-3 lh-1">
+                            <h6 class="mb-1 fw-normal">Services & Support</h6>
+                            <p class="mb-0 fs-6">Implementation, consulting & support</p>
+                        </div>
+                      </div>
+                  </a>
                 </div>
               </li>
 
