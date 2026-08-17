@@ -8,26 +8,6 @@
    <!-- Main footer links -->
    <div class="container msft-footer-main">
       <div class="row">
-         <!-- Products -->
-         <div class="col-lg col-md-4 col-12 msft-footer-col">
-            <div class="msft-footer-heading d-flex justify-content-between align-items-center"
-                 data-bs-toggle="collapse" data-bs-target="#ftProducts" role="button"
-                 aria-expanded="false" aria-controls="ftProducts">
-               Products
-               <i class="bi bi-chevron-down d-lg-none msft-chevron"></i>
-            </div>
-            <ul class="collapse d-lg-block list-unstyled msft-footer-links" id="ftProducts">
-               <li><a href="https://appsource.microsoft.com/en-us/product/office/WA200007197?tab=Overview"
-                  target="_blank" rel="noopener noreferrer">ISO 19650 CDE <i class="bi bi-box-arrow-up-right ms-1 small"></i></a></li>
-               <li><a href="https://appsource.microsoft.com/en-us/product/office/WA200007412?tab=Overview"
-                  target="_blank" rel="noopener noreferrer">IFC Viewer <i class="bi bi-box-arrow-up-right ms-1 small"></i></a></li>
-               <li><a href="https://appsource.microsoft.com/en-us/product/office/WA200007412?tab=Overview"
-                  target="_blank" rel="noopener noreferrer">BCF Manager <i class="bi bi-box-arrow-up-right ms-1 small"></i></a></li>
-               <li><a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer?tab=Overview"
-                  target="_blank" rel="noopener noreferrer">Power BI Visual <i class="bi bi-box-arrow-up-right ms-1 small"></i></a></li>
-            </ul>
-         </div>
-
          <!-- Solutions -->
          <div class="col-lg col-md-4 col-12 msft-footer-col">
             <div class="msft-footer-heading d-flex justify-content-between align-items-center"
@@ -38,11 +18,27 @@
             </div>
             <ul class="collapse d-lg-block list-unstyled msft-footer-links" id="ftSolutions">
                <li><a href="{{ "solutions/" | absURL }}">Overview</a></li>
+               <li><a href="{{ "products/ifc-viewer/" | absURL }}">IFC Viewer</a></li>
                <li><a href="{{ "products/iso-19650-app/" | absURL }}">SharePoint CDE</a></li>
+               <li><a href="{{ "products/power-bi-ifc-viewer/" | absURL }}">Power BI Analytics</a></li>
                <li><a href="{{ "developers/ifc-viewer/hosted/" | absURL }}">Hosted Viewer</a></li>
-               <li><a href="{{ "products/power-bi-ifc-viewer/" | absURL }}">Embedded Analytics</a></li>
-               <li><a href="{{ "integrations/" | absURL }}">Integrations</a></li>
-               <li><a href="{{ "services/" | absURL }}">Services</a></li>
+               <li><a href="{{ "services/" | absURL }}">Services &amp; Support</a></li>
+            </ul>
+         </div>
+
+         <!-- Industries -->
+         <div class="col-lg col-md-4 col-12 msft-footer-col">
+            <div class="msft-footer-heading d-flex justify-content-between align-items-center"
+                 data-bs-toggle="collapse" data-bs-target="#ftIndustries" role="button"
+                 aria-expanded="false" aria-controls="ftIndustries">
+               Industries
+               <i class="bi bi-chevron-down d-lg-none msft-chevron"></i>
+            </div>
+            <ul class="collapse d-lg-block list-unstyled msft-footer-links" id="ftIndustries">
+               <li><a href="{{ "industries/public-sector-critical-infrastructure/" | absURL }}">Public Sector &amp; Critical Infrastructure</a></li>
+               <li><a href="{{ "industries/critical-infrastructure-utilities/" | absURL }}">Infrastructure &amp; Utilities</a></li>
+               <li><a href="{{ "industries/real-estate-asset-owners/" | absURL }}">Real Estate &amp; Asset Owners</a></li>
+               <li><a href="{{ "industries/engineering-construction/" | absURL }}">Engineering &amp; Construction</a></li>
             </ul>
          </div>
 
