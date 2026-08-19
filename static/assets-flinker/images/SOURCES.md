@@ -35,6 +35,22 @@ Unless noted otherwise, the photographs below are used under the [Pexels License
 - Source: https://www.pexels.com/photo/facade-of-a-modern-building-13468793/
 - Local derivatives: `industries/real-estate-asset-owners/geometric-facade-800.webp`, `industries/real-estate-asset-owners/geometric-facade-1600.webp`
 
+## Industries — Engineering & Construction
+
+### Beijing Daxing Airport roof structure
+
+- Photographer: Leon Li
+- Source: https://www.pexels.com/photo/modern-architectural-structure-with-geometric-and-curvilinear-pattern-8426451/
+- Location: Beijing, China
+- Local derivatives: `industries/engineering-construction/daxing-terminal-structure-800.webp`, `industries/engineering-construction/daxing-terminal-structure-1600.webp`
+
+### Petaling Jaya construction site
+
+- Photographer: Tom Fisk
+- Source: https://www.pexels.com/photo/aerial-view-of-a-construction-sites-3714734/
+- Location: Petaling Jaya, Malaysia
+- Local derivatives: `industries/engineering-construction/malaysia-construction-site-800.webp`, `industries/engineering-construction/malaysia-construction-site-1600.webp`
+
 ## Industries — Critical Infrastructure, Energy & Utilities
 
 ### Maasvlakte Rotterdam container terminal
