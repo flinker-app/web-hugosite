@@ -2,6 +2,7 @@
 /public/
 /resources/_gen/
 /hugo_stats.json
+/static/generated/social/
 
 # Node modules (if you use npm or yarn)
 /node_modules/

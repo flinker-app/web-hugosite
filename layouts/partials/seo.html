@@ -1,5 +1,12 @@
 {{- $desc := or (.Params.description | plainify) (.Summary | plainify) -}}
 {{- $shareImage := .Params.shareImage | default .Params.linkedinImage | default .Params.image | default .Params.featured_image -}}
+{{- if eq .Section "blog" -}}
+	{{- $slug := .Params.slug | default (.Title | urlize) -}}
+	{{- $generatedShareImage := printf "/generated/social/%s.png" $slug -}}
+	{{- if fileExists (printf "static%s" $generatedShareImage) -}}
+		{{- $shareImage = $generatedShareImage -}}
+	{{- end -}}
+{{- end -}}
 
 {{- $pageTitle := or .Title .Params.title -}}
 {{- if and (not $pageTitle) (eq .RelPermalink "/legal/support-plans/") -}}
@@ -17,6 +24,9 @@
 <meta property="og:title" content="{{ $pageTitle }}">
 <meta property="og:description" content="{{ $desc }}">
 {{ with $shareImage }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+{{ if and $shareImage (hasSuffix $shareImage ".png") }}<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">{{ end }}
 <meta property="og:url" content="{{ .Permalink }}">
 
 <!-- Twitter (minimal) -->

@@ -106,15 +106,13 @@ useful conceptually, but insufficiently precise terminologically.
 
 A more accurate model is:
 
-**ISO 19650 requirements and concepts**
-↓
-**Applicable national provisions, where relevant**
-↓
-**Appointing party's information requirements, information standard and information production methods/procedures**
-↓
-**Appointment- and delivery-team arrangements**
-↓
-**Operational implementation within the CDE**
+<ol class="information-model-flow" aria-label="Information-management hierarchy">
+  <li><strong>ISO 19650 requirements and concepts</strong></li>
+  <li><strong>Applicable national provisions, where relevant</strong></li>
+  <li><strong>Appointing party's information requirements, information standard and information production methods/procedures</strong></li>
+  <li><strong>Appointment- and delivery-team arrangements</strong></li>
+  <li><strong>Operational implementation within the CDE</strong></li>
+</ol>
 
 [![From information standards and client requirements to governed SharePoint logic](Flinker_in_context.svg)](Flinker_in_context.svg)
 *Translate standards, client requirements and delivery arrangements into governed, machine-readable rules for Microsoft 365.*
@@ -382,23 +380,24 @@ Its purpose is to separate the semantics of the applicable information-managemen
 
 Conceptually:
 
-**ISO 19650 / applicable standards**
-*Management framework and requirements*
-
-↓
-
-**Appointing-party and project information requirements, standards and agreed methods**
-*Concrete conventions and rules*
-
-↓
-
-**Information Management Rules Layer**
-*Machine-readable operational representation*
-
-↓
-
-**Microsoft 365 / SharePoint**
-*Metadata, validation, permissions, workflow, versioning and user interaction*
+<ol class="information-model-flow information-model-flow--detailed" aria-label="From information standards to Microsoft 365 implementation">
+  <li>
+    <strong>ISO 19650 / applicable standards</strong>
+    <span class="information-model-flow__description">Management framework and requirements</span>
+  </li>
+  <li>
+    <strong>Appointing-party and project information requirements, standards and agreed methods</strong>
+    <span class="information-model-flow__description">Concrete conventions and rules</span>
+  </li>
+  <li>
+    <strong>Information Management Rules Layer</strong>
+    <span class="information-model-flow__description">Machine-readable operational representation</span>
+  </li>
+  <li>
+    <strong>Microsoft 365 / SharePoint</strong>
+    <span class="information-model-flow__description">Metadata, validation, permissions, workflow, versioning and user interaction</span>
+  </li>
+</ol>
 
 [![Configurable ISO 19650 information-management rules for naming, status and revision in SharePoint](<ISO 19650 _SharePoint.svg>)](<ISO 19650 _SharePoint.svg>)
 *Naming, status and revision should behave as configurable information-management rules — not fixed software constants.*
