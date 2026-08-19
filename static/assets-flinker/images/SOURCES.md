@@ -6,19 +6,22 @@ Unless noted otherwise, the photographs below are used under the [Pexels License
 
 ## Industries — Public Sector
 
-### Charité Berlin
+### HM Treasury, London
 
-- Photographer: Ayoub Chanoufi
-- Source: https://www.pexels.com/photo/modern-architecture-of-charite-university-in-berlin-34627082/
+- Photographer: Jagjeet Dhuna
+- Source: https://www.pexels.com/photo/hm-treasury-building-in-london-england-17718824/
+- Location: London, United Kingdom
+- Local derivatives: `industries/public-sector/hm-treasury-800.webp`, `industries/public-sector/hm-treasury-1600.webp`
+
+### Charité University Hospital Berlin
+
+- Photographer: Friedmann Steinhausen
+- Source: https://www.swecogroup.com/portfolio/uncategorized/charite-university-hospital-berlin/
+- Original asset: https://www.swecogroup.com/wp-content/uploads/sites/2/2021/02/Charite_9-1680x800.jpg
+- Rights: Sweco project image; confirm publication permission before production use
 - Location: Berlin, Germany
-- Local derivatives: `industries/public-sector/charite-berlin-800.webp`, `industries/public-sector/charite-berlin-1600.webp`
-
-### University of Washington campus
-
-- Photographer: Rick Han
-- Source: https://www.pexels.com/photo/aerial-shot-of-buildings-3974918/
-- Location: Seattle, United States
-- Local derivatives: `industries/public-sector/university-campus-seattle-800.webp`, `industries/public-sector/university-campus-seattle-1600.webp`
+- Local derivatives are cropped, resized and compressed
+- Local derivatives: `industries/public-sector/charite-campus-wide-800.webp`, `industries/public-sector/charite-campus-wide-1600.webp`
 
 ## Industries — Real Estate & Asset Owners
 
@@ -27,13 +30,13 @@ Unless noted otherwise, the photographs below are used under the [Pexels License
 - Photographer: Daniel Ford
 - Source: https://www.pexels.com/photo/aerial-view-of-manhattan-skyscrapers-in-new-york-city-32653575/
 - Location: New York City, United States
-- Local derivatives: `industries/real-estate-asset-owners/manhattan-aerial-800.webp`, `industries/real-estate-asset-owners/manhattan-aerial-1600.webp`
+- Local derivatives: `industries/real-estate-asset-owners/manhattan-aerial-wide-800.webp`, `industries/real-estate-asset-owners/manhattan-aerial-wide-1600.webp`
 
 ### Geometric building facade
 
 - Photographer: 家祺 汤
 - Source: https://www.pexels.com/photo/facade-of-a-modern-building-13468793/
-- Local derivatives: `industries/real-estate-asset-owners/geometric-facade-800.webp`, `industries/real-estate-asset-owners/geometric-facade-1600.webp`
+- Local derivatives: `industries/real-estate-asset-owners/geometric-facade-hero-800.webp`, `industries/real-estate-asset-owners/geometric-facade-hero-1200.webp`
 
 ## Industries — Engineering & Construction
 
@@ -53,20 +56,21 @@ Unless noted otherwise, the photographs below are used under the [Pexels License
 
 ## Industries overview
 
-### High-voltage grid against a clear sky
+### Expansive electricity grid at sunset
 
-- Photographer: Behnam Norouzi
-- Source: https://unsplash.com/photos/a-tall-metal-electricity-pylon-against-a-clear-blue-sky-zsVjJtuGpkk
-- Local derivatives: `industries/industries-hero-grid-800.webp`, `industries/industries-hero-grid-1600.webp`
+- Photographer: Matthew Henry
+- Source: https://unsplash.com/photos/photo-of-truss-towers-yETqkLnhsUI
+- Local derivatives: `industries/industries-hero-transmission-sunset-800.webp`, `industries/industries-hero-transmission-sunset-1600.webp`
 
 ## Industries — Critical Infrastructure, Energy & Utilities
 
-### Maasvlakte Rotterdam container terminal
+### Shanghai container terminal
 
-- Photographer: Ann H
-- Source: https://www.pexels.com/photo/massive-container-ship-docked-at-rotterdam-port-31688192/
-- Location: Maasvlakte Rotterdam, Netherlands
-- Local derivatives: `industries/critical-infrastructure-utilities/rotterdam-port-800.webp`, `industries/critical-infrastructure-utilities/rotterdam-port-1600.webp`
+- Image: Shanghai International Port Group
+- Source: https://en.portshanghai.com.cn/r/cms/www/english/images/slider/layer/slide4-bg.jpg
+- Location: Shanghai, China
+- Local derivatives are cropped, resized and compressed
+- Local derivatives: `industries/critical-infrastructure-utilities/shanghai-yangshan-port-800.webp`, `industries/critical-infrastructure-utilities/shanghai-yangshan-port-1200.webp`
 
 ### Rooppur Nuclear Power Plant
 
@@ -95,18 +99,19 @@ Unless noted otherwise, the photographs below are used under the [Pexels License
 - Location: Singapore
 - Local derivatives: `industries/critical-infrastructure-utilities/changi-airport-480.webp`, `industries/critical-infrastructure-utilities/changi-airport-960.webp`
 
-### Industrial storage facility
+### Large petrochemical refinery complex
 
 - Photographer: Tom Fisk
-- Source: https://www.pexels.com/photo/silos-and-pipes-in-birds-eye-view-11958377/
-- Location: Eyota, Minnesota, United States
+- Source: https://www.pexels.com/photo/panoramic-view-of-oil-refinery-6767962/
+- Location: Banten, Indonesia
 - Local derivatives: `industries/critical-infrastructure-utilities/industrial-facility-480.webp`, `industries/critical-infrastructure-utilities/industrial-facility-960.webp`
 
-### Data centre infrastructure
+### Hyperscale data centre aisle
 
-- Photographer: PiDatacenters
-- Source: https://commons.wikimedia.org/wiki/File:Racks_Amravati_Data_Center.jpg
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); local derivatives are cropped, resized and compressed under the same license
+- Image: Cundall, Hyperscale Data Centres in Saudi Arabia
+- Source: https://www.cundall.com/projects/hyperscale-data-centres-in-saudi-arabia
+- Original asset: https://www.cundall.com/uploads/images/Projects/Hyperscale-Data-Centres-in-Saudi-Arabia/_medium_image/489580/Hyperscale-Data-Centres-in-Saudi-Arabia.webp?v=1782482958
+- Local derivatives are cropped, resized and compressed
 - Local derivatives: `industries/critical-infrastructure-utilities/hyperscale-data-center-aisle-480.webp`, `industries/critical-infrastructure-utilities/hyperscale-data-center-aisle-960.webp`
 
 ## Industries — Public Sector & Critical Infrastructure
