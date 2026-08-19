@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Industries | OpenBIM for the Built Environment &amp; Infrastructure on Flinker | The built-environment layer for Microsoft</title><link>https://flinker.app/industries/</link><description>Recent content in Industries | OpenBIM for the Built Environment &amp; Infrastructure on Flinker | The built-environment layer for Microsoft</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 17 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/industries/index.xml" rel="self" type="application/rss+xml"/><item><title>Digital Twins for Real Estate &amp; Asset Owners</title><link>https://flinker.app/industries/real-estate-asset-owners/</link><pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/industries/real-estate-asset-owners/</guid><description>&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Industries | OpenBIM for the Built Environment &amp; Infrastructure on Flinker | The built-environment layer for Microsoft</title><link>https://flinker.app/industries/</link><description>Recent content in Industries | OpenBIM for the Built Environment &amp; Infrastructure on Flinker | The built-environment layer for Microsoft</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 19 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/industries/index.xml" rel="self" type="application/rss+xml"/><item><title>Digital Twins for Real Estate &amp; Asset Owners</title><link>https://flinker.app/industries/real-estate-asset-owners/</link><pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/industries/real-estate-asset-owners/</guid><description>&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10">
  &lt;div class="container">
- &lt;div class="row justify-content-center py-lg-8">
- &lt;div class="col-xl-9 col-lg-10 text-center">
+ &lt;div class="row align-items-center g-5 py-lg-8">
+ &lt;div class="col-lg-6">
  &lt;small class="text-primary text-uppercase ls-md fw-semibold">Real Estate &amp;amp; Asset Owners&lt;/small>
  &lt;h1 class="display-4 mt-3 mb-4">Turn building models into portfolio intelligence&lt;/h1>
  &lt;p class="lead text-muted mb-5">Connect BIM, digital twins and lifecycle information across Microsoft for buildings, facilities and real estate portfolios.&lt;/p>
  &lt;a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-primary btn-lg">Discuss your portfolio&lt;/a>
+ &lt;/div>
+ &lt;div class="col-lg-6">
+ &lt;!-- Photo: 家祺 汤 / Pexels -->
+ &lt;picture>
+ &lt;source srcset="https://flinker.app/assets-flinker/images/industries/real-estate-asset-owners/geometric-facade-hero-800.webp 800w, https://flinker.app/assets-flinker/images/industries/real-estate-asset-owners/geometric-facade-hero-1200.webp 1200w" sizes="(min-width: 992px) 50vw, 100vw" type="image/webp">
+ &lt;img src="https://flinker.app/assets-flinker/images/industries/real-estate-asset-owners/geometric-facade-hero-1200.webp" class="img-fluid rounded-3 shadow-sm w-100" width="1200" height="900" alt="" fetchpriority="high" decoding="async">
+ &lt;/picture>
  &lt;/div>
  &lt;/div>
  &lt;/div>
@@ -18,31 +25,61 @@
  &lt;h2 class="mb-4">Keep asset information useful after handover&lt;/h2>
  &lt;p class="text-muted mb-0">Use open model data in the tools asset, sustainability and portfolio teams already know&amp;mdash;without locking the building record into one authoring platform.&lt;/p></description></item><item><title>OpenBIM for Critical Infrastructure, Energy &amp; Utilities</title><link>https://flinker.app/industries/critical-infrastructure-utilities/</link><pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/industries/critical-infrastructure-utilities/</guid><description>&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10">
  &lt;div class="container">
- &lt;div class="row justify-content-center py-lg-8">
- &lt;div class="col-xl-9 col-lg-10 text-center">
+ &lt;div class="row align-items-center g-5 py-lg-8">
+ &lt;div class="col-lg-6">
  &lt;small class="text-primary text-uppercase ls-md fw-semibold">Critical Infrastructure, Energy &amp;amp; Utilities&lt;/small>
- &lt;h1 class="display-4 mt-3 mb-4">OpenBIM for complex, long-lived infrastructure assets&lt;/h1>
+ &lt;h1 class="display-4 mt-3 mb-4">OpenBIM for complex, long-lived infrastructure&lt;/h1>
  &lt;p class="lead text-muted mb-5">Connect engineering models, asset data and portfolio insight across Microsoft for energy, water, transport and industrial infrastructure.&lt;/p>
  &lt;a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-primary btn-lg">Discuss your infrastructure environment&lt;/a>
+ &lt;/div>
+ &lt;div class="col-lg-6">
+ &lt;!-- Image: Shanghai International Port Group -->
+ &lt;picture>
+ &lt;source srcset="https://flinker.app/assets-flinker/images/industries/critical-infrastructure-utilities/shanghai-yangshan-port-800.webp 800w, https://flinker.app/assets-flinker/images/industries/critical-infrastructure-utilities/shanghai-yangshan-port-1200.webp 1200w" sizes="(min-width: 992px) 50vw, 100vw" type="image/webp">
+ &lt;img src="https://flinker.app/assets-flinker/images/industries/critical-infrastructure-utilities/shanghai-yangshan-port-1200.webp" class="img-fluid rounded-3 shadow-sm w-100" width="1200" height="900" alt="Vast Shanghai container terminal with repeated crane rows and container lanes" fetchpriority="high" decoding="async">
+ &lt;/picture>
  &lt;/div>
  &lt;/div>
  &lt;/div>
 &lt;/section>
 
+&lt;style>
+ .infrastructure-card-media {
+ display: block;
+ aspect-ratio: 8 / 5;
+ overflow: hidden;
+ flex: 0 0 auto;
+ }
+
+ .infrastructure-card-media img {
+ display: block;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+&lt;/style>
+
 &lt;section class="py-lg-10 py-7">
  &lt;div class="container">
  &lt;div class="row justify-content-center mb-6">
  &lt;div class="col-lg-8 text-center">
- &lt;h2 class="mb-3">Energy is explicitly in scope&lt;/h2>
- &lt;p class="lead text-muted mb-0">From generation and power plant estates to transmission, distribution, substations and renewables, Flinker supports BIM and asset-information workflows around energy facilities.&lt;/p></description></item><item><title>OpenBIM for Engineering &amp; Construction</title><link>https://flinker.app/industries/engineering-construction/</link><pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/industries/engineering-construction/</guid><description>&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10">
+ &lt;h2 class="mb-3">Built for critical infrastructure at scale&lt;/h2>
+ &lt;p class="lead text-muted mb-0">From power generation and utility networks to water systems, transport hubs, industrial facilities and data centres, Flinker connects BIM and asset information across complex, long-lived infrastructure estates.&lt;/p></description></item><item><title>OpenBIM for Engineering &amp; Construction</title><link>https://flinker.app/industries/engineering-construction/</link><pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/industries/engineering-construction/</guid><description>&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10">
  &lt;div class="container">
- &lt;div class="row justify-content-center py-lg-8">
- &lt;div class="col-xl-9 col-lg-10 text-center">
+ &lt;div class="row align-items-center g-5 py-lg-8">
+ &lt;div class="col-lg-6">
  &lt;small class="text-primary text-uppercase ls-md fw-semibold">Engineering &amp;amp; Construction&lt;/small>
  &lt;h1 class="display-4 mt-3 mb-4">OpenBIM collaboration across Microsoft&lt;/h1>
  &lt;p class="lead text-muted mb-5">Give planners, engineering consultancies, contractors and project stakeholders practical access to models, issues and structured data.&lt;/p>
  &lt;a href="https://viewer.flinker.app/" target="_blank" class="btn btn-primary btn-lg me-2 mb-2">Try the IFC Viewer&lt;/a>
  &lt;a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-outline-primary btn-lg mb-2">Talk to an expert&lt;/a>
+ &lt;/div>
+ &lt;div class="col-lg-6">
+ &lt;!-- Photo: Leon Li / Pexels — Beijing Daxing Airport -->
+ &lt;picture>
+ &lt;source srcset="https://flinker.app/assets-flinker/images/industries/engineering-construction/daxing-terminal-structure-800.webp 800w, https://flinker.app/assets-flinker/images/industries/engineering-construction/daxing-terminal-structure-1600.webp 1600w" sizes="(min-width: 992px) 50vw, 100vw" type="image/webp">
+ &lt;img src="https://flinker.app/assets-flinker/images/industries/engineering-construction/daxing-terminal-structure-1600.webp" class="img-fluid rounded-3 shadow-sm w-100" width="1600" height="1200" alt="" fetchpriority="high" decoding="async">
+ &lt;/picture>
  &lt;/div>
  &lt;/div>
  &lt;/div>
@@ -55,12 +92,19 @@
  &lt;h2 class="mb-3">Connect delivery teams without another data silo&lt;/h2>
  &lt;p class="lead text-muted mb-0">Use IFC, IDS and BCF with SharePoint, Teams, Power BI and Excel across coordination, review and reporting workflows.&lt;/p></description></item><item><title>OpenBIM for Government &amp; Public Sector</title><link>https://flinker.app/industries/public-sector/</link><pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/industries/public-sector/</guid><description>&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10">
  &lt;div class="container">
- &lt;div class="row justify-content-center py-lg-8">
- &lt;div class="col-xl-9 col-lg-10 text-center">
+ &lt;div class="row align-items-center g-5 py-lg-8">
+ &lt;div class="col-lg-6">
  &lt;small class="text-primary text-uppercase ls-md fw-semibold">Government &amp;amp; Public Sector&lt;/small>
  &lt;h1 class="display-4 mt-3 mb-4">OpenBIM for public buildings, assets and programs&lt;/h1>
  &lt;p class="lead text-muted mb-5">Bring BIM, asset information and project insight into the Microsoft environment used by your administration, internal teams and delivery partners.&lt;/p>
  &lt;a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-primary btn-lg">Discuss your public-sector use case&lt;/a>
+ &lt;/div>
+ &lt;div class="col-lg-6">
+ &lt;!-- Photo: Jagjeet Dhuna / Pexels — HM Treasury, London -->
+ &lt;picture>
+ &lt;source srcset="https://flinker.app/assets-flinker/images/industries/public-sector/hm-treasury-800.webp 800w, https://flinker.app/assets-flinker/images/industries/public-sector/hm-treasury-1600.webp 1600w" sizes="(min-width: 992px) 50vw, 100vw" type="image/webp">
+ &lt;img src="https://flinker.app/assets-flinker/images/industries/public-sector/hm-treasury-1600.webp" class="img-fluid rounded-3 shadow-sm w-100" width="1600" height="1200" alt="HM Treasury building in Westminster, London" fetchpriority="high" decoding="async">
+ &lt;/picture>
  &lt;/div>
  &lt;/div>
  &lt;/div>
@@ -74,7 +118,7 @@
  &lt;p class="text-muted">Flinker helps municipalities, agencies, public building authorities and government-owned organizations make open model data useful beyond specialist BIM applications.&lt;/p></description></item><item><title>OpenBIM for Public Sector &amp; Critical Infrastructure</title><link>https://flinker.app/industries/public-sector-critical-infrastructure/</link><pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/industries/public-sector-critical-infrastructure/</guid><description>&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10">
  &lt;div class="container">
  &lt;div class="row align-items-center py-lg-8 g-5">
- &lt;div class="col-lg-8">
+ &lt;div class="col-lg-7">
  &lt;small class="text-primary text-uppercase ls-md fw-semibold">Public Sector &amp;amp; Critical Infrastructure&lt;/small>
  &lt;h1 class="display-4 mt-3 mb-4">OpenBIM for public assets and critical infrastructure&lt;/h1>
  &lt;p class="lead text-muted mb-5">Connect BIM, asset information and operational insights across Microsoft&amp;mdash;while keeping project data and access within the environment your organization controls.&lt;/p>
@@ -83,9 +127,21 @@
  &lt;a href="https://flinker.app/products/" class="btn btn-outline-primary btn-lg">Explore Flinker Apps&lt;/a>
  &lt;/div>
  &lt;/div>
- &lt;div class="col-lg-4">
- &lt;div class="card border-0 shadow-sm">
- &lt;div class="card-body p-5">
+ &lt;div class="col-lg-5">
+ &lt;div class="card border-0 shadow-sm overflow-hidden">
+ &lt;!-- Photo: Vladimír Sládek / Pexels, photo 10165700 -->
+ &lt;picture>
+ &lt;source media="(max-width: 767px)" srcset="https://flinker.app/assets-flinker/images/industries/public-sector-critical-infrastructure/power-plant-800.webp">
+ &lt;img src="https://flinker.app/assets-flinker/images/industries/public-sector-critical-infrastructure/power-plant-1600.webp"
+ srcset="https://flinker.app/assets-flinker/images/industries/public-sector-critical-infrastructure/power-plant-800.webp 800w, https://flinker.app/assets-flinker/images/industries/public-sector-critical-infrastructure/power-plant-1600.webp 1600w"
+ sizes="(min-width: 992px) 42vw, 100vw"
+ width="1600" height="1068"
+ class="card-img-top w-100"
+ style="height: 18rem; object-fit: cover;"
+ alt="Cooling towers of a large European power station"
+ decoding="async" fetchpriority="high">
+ &lt;/picture>
+ &lt;div class="card-body p-4 p-xl-5">
  &lt;h2 class="h5 mb-4">Built around your Microsoft estate&lt;/h2>
  &lt;ul class="list-unstyled mb-0 d-flex flex-column gap-3">
  &lt;li class="d-flex gap-2">&lt;i class="bi bi-check-circle-fill text-success">&lt;/i>&lt;span>Microsoft identities and permissions&lt;/span>&lt;/li>
