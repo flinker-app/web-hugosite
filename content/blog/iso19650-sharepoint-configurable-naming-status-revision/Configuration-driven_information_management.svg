@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="923" height="615" viewBox="0 0 923 615" role="img" aria-labelledby="title3 desc3">
+  <title id="title3">One platform core. Different project standards.</title>
+  <desc id="desc3">Two different project information standards configured on one stable Microsoft 365 and SharePoint platform.</desc>
+
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F5F8FC"/>
+    </linearGradient>
+
+    <linearGradient id="brand3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1778F2"/>
+      <stop offset="1" stop-color="#82ADEB"/>
+    </linearGradient>
+
+    <filter id="shadow3" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="9" stdDeviation="16" flood-color="#0E2138" flood-opacity=".09"/>
+    </filter>
+
+    <marker id="arrow3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#8BA5C4"/>
+    </marker>
+  </defs>
+
+  <rect width="923" height="615" rx="28" fill="url(#bg3)"/>
+  <circle cx="462" cy="650" r="235" fill="#1778F2" opacity=".025"/>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <!-- Simplified headline -->
+    <text x="54" y="92" font-size="32" font-weight="750" fill="#111827">One platform core.</text>
+    <text x="54" y="132" font-size="32" font-weight="750" fill="#111827">Different project standards.</text>
+
+    <!-- Project A -->
+    <g filter="url(#shadow3)">
+      <rect x="55" y="205" width="266" height="225" rx="21" fill="#FFFFFF"/>
+    </g>
+
+    <rect x="55" y="205" width="266" height="7" rx="3.5" fill="#1778F2"/>
+
+    <circle cx="87" cy="248" r="16" fill="#EDF4FE"/>
+    <path d="M80 249h14M83 244h8M83 254h8" stroke="#1778F2" stroke-width="2" stroke-linecap="round"/>
+    <text x="115" y="243" font-size="11" fill="#8492A6">PROJECT A</text>
+    <text x="115" y="264" font-size="17" font-weight="700" fill="#172033">Corporate Standard</text>
+
+    <text x="78" y="306" font-size="11" fill="#8492A6">IDENTIFIER</text>
+    <rect x="78" y="316" width="219" height="31" rx="8" fill="#F5F8FC"/>
+    <text x="91" y="337" font-size="11" font-weight="700" fill="#376FB8">A–ORG–LOC–DIS–001</text>
+
+    <text x="78" y="374" font-size="11" fill="#8492A6">STATUS</text>
+    <rect x="78" y="384" width="47" height="24" rx="12" fill="#E7F0FD"/>
+    <text x="94" y="400" font-size="11" font-weight="700" fill="#1778F2">S4</text>
+
+    <text x="143" y="374" font-size="11" fill="#8492A6">REVISION</text>
+    <rect x="143" y="384" width="67" height="24" rx="12" fill="#F0F4FA"/>
+    <text x="156" y="400" font-size="11" font-weight="700" fill="#567AA8">P01.01</text>
+
+    <!-- Project B -->
+    <g filter="url(#shadow3)">
+      <rect x="602" y="205" width="266" height="225" rx="21" fill="#FFFFFF"/>
+    </g>
+
+    <rect x="602" y="205" width="266" height="7" rx="3.5" fill="#82ADEB"/>
+
+    <circle cx="634" cy="248" r="16" fill="#F0F4FA"/>
+    <path d="M627 249h14M630 244h8M630 254h8" stroke="#5D8FD1" stroke-width="2" stroke-linecap="round"/>
+    <text x="662" y="243" font-size="11" fill="#8492A6">PROJECT B</text>
+    <text x="662" y="264" font-size="17" font-weight="700" fill="#172033">Client Standard</text>
+
+    <text x="625" y="306" font-size="11" fill="#8492A6">IDENTIFIER</text>
+    <rect x="625" y="316" width="219" height="31" rx="8" fill="#F5F8FC"/>
+    <text x="638" y="337" font-size="11" font-weight="700" fill="#557BAE">B–ORG–FUN–SPA–DIS–042</text>
+
+    <text x="625" y="374" font-size="11" fill="#8492A6">STATUS</text>
+    <rect x="625" y="384" width="47" height="24" rx="12" fill="#E7F0FD"/>
+    <text x="641" y="400" font-size="11" font-weight="700" fill="#1778F2">S5</text>
+
+    <text x="690" y="374" font-size="11" fill="#8492A6">REVISION</text>
+    <rect x="690" y="384" width="67" height="24" rx="12" fill="#F0F4FA"/>
+    <text x="703" y="400" font-size="11" font-weight="700" fill="#567AA8">C02.00</text>
+
+    <!-- Configuration core -->
+    <path d="M327 321H371" fill="none" stroke="#8EA8C2" stroke-width="2" stroke-dasharray="5 6" marker-end="url(#arrow3)"/>
+    <path d="M597 321H553" fill="none" stroke="#8EA8C2" stroke-width="2" stroke-dasharray="5 6" marker-end="url(#arrow3)"/>
+
+    <g filter="url(#shadow3)">
+      <rect x="373" y="233" width="178" height="178" rx="23" fill="#111827"/>
+    </g>
+
+    <circle cx="462" cy="273" r="23" fill="url(#brand3)"/>
+    <path d="M451 273h22M462 262v22" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+
+    <text x="462" y="314" text-anchor="middle" font-size="12" font-weight="700" fill="#86B5F7" letter-spacing=".7">FLINKER</text>
+    <text x="462" y="339" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">Configuration</text>
+
+    <rect x="407" y="362" width="110" height="4" rx="2" fill="#26354B"/>
+    <circle cx="418" cy="364" r="5" fill="#1778F2"/>
+    <circle cx="462" cy="364" r="5" fill="#6C9EE2"/>
+    <circle cx="506" cy="364" r="5" fill="#A3C3EF"/>
+
+    <!-- Converge -->
+    <path d="M188 440C188 486 339 477 386 510" fill="none" stroke="#A1B4C7" stroke-width="2" stroke-dasharray="5 7"/>
+    <path d="M735 440C735 486 584 477 537 510" fill="none" stroke="#A1B4C7" stroke-width="2" stroke-dasharray="5 7"/>
+
+    <!-- Stable platform -->
+    <g filter="url(#shadow3)">
+      <rect x="270" y="493" width="383" height="72" rx="19" fill="#FFFFFF"/>
+    </g>
+
+    <rect x="270" y="493" width="8" height="72" rx="4" fill="url(#brand3)"/>
+
+    <g transform="translate(299 513)">
+      <rect width="31" height="31" rx="7" fill="#EDF4FE"/>
+      <path d="M7 10h7v13H7zM15 7h9v18h-9z" fill="#1778F2"/>
+    </g>
+
+    <text x="346" y="522" font-size="11" fill="#8492A6">ONE STABLE PLATFORM</text>
+    <text x="346" y="544" font-size="17" font-weight="700" fill="#172033">Microsoft 365 / SharePoint</text>
+
+    <circle cx="607" cy="529" r="14" fill="#EDF4FE"/>
+    <path d="M601 529l4 4 8-9" fill="none" stroke="#1778F2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <text x="54" y="592" font-size="12" font-weight="700" fill="#5C6D82">CHANGE THE REQUIREMENT → CHANGE THE CONFIGURATION</text>
+  </g>
+</svg>

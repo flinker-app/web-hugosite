@@ -107,8 +107,10 @@
             
         </div>
     </div>
-    <!-- Newsletter Blogpost -->
+    <!-- Newsletter Blogpost (optionally replaced by an in-content CTA) -->
+    {{ if not .Params.hideNewsletter }}
     {{ partial "newsletter-blog.html" . }}
+    {{ end }}
 
     <!-- Blog single end -->
 
