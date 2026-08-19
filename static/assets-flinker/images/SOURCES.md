@@ -20,6 +20,21 @@ Unless noted otherwise, the photographs below are used under the [Pexels License
 - Location: Seattle, United States
 - Local derivatives: `industries/public-sector/university-campus-seattle-800.webp`, `industries/public-sector/university-campus-seattle-1600.webp`
 
+## Industries — Real Estate & Asset Owners
+
+### Manhattan real-estate portfolio view
+
+- Photographer: Daniel Ford
+- Source: https://www.pexels.com/photo/aerial-view-of-manhattan-skyscrapers-in-new-york-city-32653575/
+- Location: New York City, United States
+- Local derivatives: `industries/real-estate-asset-owners/manhattan-aerial-800.webp`, `industries/real-estate-asset-owners/manhattan-aerial-1600.webp`
+
+### Geometric building facade
+
+- Photographer: 家祺 汤
+- Source: https://www.pexels.com/photo/facade-of-a-modern-building-13468793/
+- Local derivatives: `industries/real-estate-asset-owners/geometric-facade-800.webp`, `industries/real-estate-asset-owners/geometric-facade-1600.webp`
+
 ## Industries — Critical Infrastructure, Energy & Utilities
 
 ### Maasvlakte Rotterdam container terminal
