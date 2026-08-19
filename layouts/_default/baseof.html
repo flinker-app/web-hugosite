@@ -81,9 +81,6 @@
     </style>
     {{ end }}
 
-    <!-- Title -->
-    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
-
     <!-- SEO, Open Graph, Twitter Cards -->
     {{ partial "seo.html" . }}
 

@@ -14,7 +14,7 @@
 		{{- $pageTitle = .Title -}}
 	{{- end -}}
 {{- end -}}
-<title>{{ $pageTitle }} | {{ .Site.Title }}</title>
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ $pageTitle }} | {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ $desc }}">
 <meta name="keywords" content="{{ .Params.keywords }}">
 <meta name="author" content="{{ .Site.Author.name }}">
