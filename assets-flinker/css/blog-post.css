@@ -72,6 +72,80 @@
   margin-top: 0.5rem;
 }
 
+/* Vertical information hierarchy with responsive, consistently aligned connectors */
+.markdown-content .information-model-flow {
+  counter-reset: information-model-step;
+  display: grid;
+  gap: 2.25rem;
+  list-style: none;
+  margin: 1.75rem 0 2rem;
+  padding: 0;
+}
+.markdown-content .information-model-flow li {
+  counter-increment: information-model-step;
+  position: relative;
+  margin: 0;
+  padding: 1rem 1.25rem 1rem 4rem;
+  border: 1px solid rgba(var(--bs-primary-rgb), 0.2);
+  border-radius: 0.75rem;
+  background: rgba(var(--bs-primary-rgb), 0.05);
+  line-height: 1.45;
+}
+.markdown-content .information-model-flow li::before {
+  content: counter(information-model-step);
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--bs-primary);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+.markdown-content .information-model-flow li:not(:last-child)::after {
+  content: "\2193";
+  position: absolute;
+  left: 50%;
+  bottom: -1.85rem;
+  color: var(--bs-primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  transform: translateX(-50%);
+}
+.markdown-content .information-model-flow__description {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--bs-secondary-color, #5f6b7a);
+  font-size: 0.9375em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (max-width: 575.98px) {
+  .markdown-content .information-model-flow {
+    gap: 2rem;
+  }
+  .markdown-content .information-model-flow li {
+    padding: 0.875rem 1rem 0.875rem 3.5rem;
+  }
+  .markdown-content .information-model-flow li::before {
+    left: 0.875rem;
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .markdown-content .information-model-flow li:not(:last-child)::after {
+    bottom: -1.7rem;
+  }
+}
+
 /* Tables from markdown */
 .markdown-content table {
   width: 100%;
