@@ -51,6 +51,14 @@ Unless noted otherwise, the photographs below are used under the [Pexels License
 - Location: Petaling Jaya, Malaysia
 - Local derivatives: `industries/engineering-construction/malaysia-construction-site-800.webp`, `industries/engineering-construction/malaysia-construction-site-1600.webp`
 
+## Industries overview
+
+### High-voltage grid against a clear sky
+
+- Photographer: Behnam Norouzi
+- Source: https://unsplash.com/photos/a-tall-metal-electricity-pylon-against-a-clear-blue-sky-zsVjJtuGpkk
+- Local derivatives: `industries/industries-hero-grid-800.webp`, `industries/industries-hero-grid-1600.webp`
+
 ## Industries — Critical Infrastructure, Energy & Utilities
 
 ### Maasvlakte Rotterdam container terminal
