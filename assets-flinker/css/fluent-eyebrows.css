@@ -1,0 +1,25 @@
+/*
+ * FLUENT SECTION EYEBROW OVERRIDE
+ * Delete this file to restore the original eyebrow and badge styling globally.
+ * The Hugo layouts include it only while the file exists.
+ */
+
+/* Shared Microsoft-style typography for explicit and legacy section eyebrows. */
+.hero-eyebrow,
+[class*="__eyebrow"],
+:is(span, small).text-uppercase.rounded-pill {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+}
+
+/* Legacy section labels used badge classes; keep real links, tags, and badges intact. */
+:is(span, small).text-uppercase.rounded-pill {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
