@@ -1,0 +1,22 @@
+/*
+ * FLUENT CONTROL RADIUS OVERRIDE
+ * Delete this file to restore the original theme radii globally.
+ * The Hugo layouts include it only while the file exists.
+ */
+
+/* Compact controls, including navigation buttons. */
+.btn:not(.btn-lg):not(.rounded-circle):not(.rounded-pill) {
+  border-radius: 4px !important;
+}
+
+.form-control,
+.form-select {
+  --bs-border-radius: 4px;
+}
+
+/* Large hero and custom pricing CTAs. */
+.btn-lg,
+.btn-theme,
+.btn-theme-outline {
+  border-radius: 8px !important;
+}

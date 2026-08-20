@@ -30,6 +30,14 @@
 
       <!-- Theme CSS -->
       <link rel="stylesheet" href="{{ "assets/css/theme.min.css" | absURL }}">
+      {{ if fileExists "static/assets-flinker/css/fluent-controls.css" }}
+      <!-- Optional Fluent radius override; delete the CSS file to restore theme defaults. -->
+      <link rel="stylesheet" href="{{ "assets-flinker/css/fluent-controls.css" | absURL }}">
+      {{ end }}
+      {{ if fileExists "static/assets-flinker/css/fluent-eyebrows.css" }}
+      <!-- Optional Fluent eyebrow override; delete the CSS file to restore original labels. -->
+      <link rel="stylesheet" href="{{ "assets-flinker/css/fluent-eyebrows.css" | absURL }}">
+      {{ end }}
 
       <title>Page Not Found | Flinker</title>
    </head>
