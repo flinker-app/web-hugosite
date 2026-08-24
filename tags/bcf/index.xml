@@ -2,12 +2,12 @@
 &lt;p>IFC files are the primary exchange format across the AECO industry — but a file that opens correctly in one tool regularly carries issues that cause silent failures when used downstream. Structural hierarchy problems, schema violations, and missing representations often go undetected until another application fails to import the model, a coordination platform flags unexpected gaps, or a handover package is rejected at quality review.&lt;/p></description></item><item><title>IFC Viewer for Microsoft — SharePoint, Teams, Excel, Windows &amp; Power BI</title><link>https://flinker.app/products/ifc-viewer/</link><pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/products/ifc-viewer/</guid><description>&lt;!-- HERO -->
 &lt;section class="pt-5 pt-lg-8 pb-4">
  &lt;div class="container" style="max-width:1120px; margin:0 auto; padding:0 20px; text-align:center;">
- &lt;small class="text-primary text-uppercase ls-md fw-semibold">Native to Microsoft 365&lt;/small>
+ &lt;small class="text-primary text-uppercase ls-md fw-semibold">IFC · BCF · IDS&lt;/small>
  &lt;h1 class="display-5 fw-bold mt-2" style="margin:0 0 12px; font-size:clamp(32px,5vw,48px); line-height:1.15; letter-spacing:-0.02em;">
  The IFC viewer for Microsoft
  &lt;/h1>
  &lt;p class="lead text-muted" style="margin:0 auto 28px; max-width:720px;">
- Open, review, and coordinate IFC, BCF, and IDS across Teams, SharePoint, Excel, and Power BI. Free, fast, and private, your data stays on your device or in your tenant.
+ Review and coordinate models across Teams, SharePoint, Excel, and Power BI. Free to start, with project data kept on your device or in your Microsoft 365 tenant.
  &lt;/p>
  &lt;div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
  &lt;a href="https://viewer.flinker.app/" target="_blank"
@@ -22,11 +22,11 @@
  &lt;div class="d-flex flex-wrap justify-content-center align-items-center gap-4 text-muted small">
  &lt;span class="d-flex align-items-center gap-2">
  &lt;i class="bi bi-star-fill text-warning">&lt;/i>
- &lt;strong>4.8&lt;/strong> Microsoft rating
+ &lt;strong>4.8&lt;/strong> on AppSource
  &lt;/span>
  &lt;span class="d-flex align-items-center gap-2">
- &lt;i class="bi bi-shield-check text-success">&lt;/i>
- Certified for Teams, SharePoint &amp; Power BI
+ &lt;i class="bi bi-shield-check text-primary">&lt;/i>
+ Microsoft certified
  &lt;/span>
  &lt;span class="d-flex align-items-center gap-2">
  &lt;i class="bi bi-lock-fill text-primary">&lt;/i>
