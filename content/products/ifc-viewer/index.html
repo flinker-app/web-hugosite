@@ -1547,21 +1547,33 @@ schema:
 
 <!-- ENTERPRISE & PUBLIC SECTOR -->
 <section id="enterprise-deployments" class="py-lg-9 py-5">
-  <div class="container" style="max-width:1120px;">
+  <style>
+    #enterprise-deployments .enterprise-panel-body {
+      padding: clamp(2rem, 5.5vw, 4.5rem);
+    }
+
+    #enterprise-deployments .enterprise-intro {
+      max-width: 720px;
+      color: rgba(255,255,255,.76);
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+  </style>
+  <div class="container" style="max-width:1160px;">
     <div class="position-relative overflow-hidden rounded-4 text-white shadow-sm" style="background:#020617; border:1px solid #1e293b;">
-      <div class="position-relative p-4 p-lg-6">
-        <div class="row align-items-end g-4 mb-4">
+      <div class="enterprise-panel-body position-relative">
+        <div class="row align-items-end g-5 mb-5 mb-lg-6">
           <div class="col-lg-8">
-            <small class="d-inline-block text-uppercase ls-md fw-semibold mb-3" style="color:rgba(255,255,255,.72);">Enterprise &amp; Public Sector</small>
-            <h2 class="text-white mb-3">Deploy OpenBIM on your terms</h2>
-            <p class="mb-0" style="max-width:760px; color:rgba(255,255,255,.76);">Choose a Microsoft-native rollout across Microsoft 365 or customer-hosted Azure, with governed access, regional deployment options, data integrations, and AI tailored to your environment.</p>
+            <small class="d-inline-block text-uppercase ls-md fw-semibold mb-4" style="color:rgba(255,255,255,.72);">Enterprise &amp; Public Sector</small>
+            <h2 class="text-white mb-4">Deploy OpenBIM on your terms</h2>
+            <p class="enterprise-intro mb-0">Choose a Microsoft-native rollout across Microsoft 365 or customer-hosted Azure, with governed access, regional deployment options, data integrations, and AI tailored to your environment.</p>
           </div>
           <div class="col-lg-4 text-lg-end">
             <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" target="_blank" rel="noopener" class="btn btn-light fw-semibold px-4">Plan your deployment <i class="bi bi-arrow-right ms-2"></i></a>
           </div>
         </div>
 
-        <div class="row g-3">
+        <div class="row g-4">
           <div class="col-md-6 col-lg-3">
             <div class="h-100 rounded-4 p-4" style="background:#0f172a; border:1px solid #263348;">
               <span class="d-inline-flex align-items-center justify-content-center rounded-3 mb-3" style="width:44px; height:44px; background:#1e293b;"><i class="bi bi-shield-check fs-4"></i></span>
@@ -1592,7 +1604,7 @@ schema:
           </div>
         </div>
       </div>
-      <div class="position-relative d-flex flex-wrap justify-content-center gap-3 gap-lg-5 px-4 py-4 small" style="color:rgba(255,255,255,.62); border-top:1px solid #1e293b;">
+      <div class="position-relative d-flex flex-wrap justify-content-center gap-3 gap-lg-5 px-4 py-5 small" style="color:rgba(255,255,255,.62); border-top:1px solid #1e293b;">
         <span><i class="bi bi-check-circle me-2"></i>Sovereign deployment options</span>
         <span><i class="bi bi-check-circle me-2"></i>Framework agreements</span>
         <span><i class="bi bi-check-circle me-2"></i>PO invoicing</span>
