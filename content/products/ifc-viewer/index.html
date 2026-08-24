@@ -1415,6 +1415,22 @@ schema:
 
 <!-- PRICING -->
 <section id="pricing" class="py-lg-9 py-5 bg-light">
+  <style>
+    #pricing .pricing-feature-list svg {
+      width: 18px;
+      height: 18px;
+      flex: 0 0 18px;
+    }
+
+    #pricing .pricing-feature-list svg path {
+      stroke: var(--bs-primary) !important;
+      stroke-width: 1.8 !important;
+    }
+
+    #pricing .pricing-feature-list svg path + path {
+      display: none;
+    }
+  </style>
   <div class="container pb-xl-5">
     <div class="row">
       <div class="col-12">
@@ -1440,7 +1456,7 @@ schema:
               <div class="d-flex flex-row align-items-center gap-2">
                 <h3 class="fs-1 fw-bold mb-0">Forever free</h3>
               </div>
-              <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+              <ul class="pricing-feature-list list-unstyled mb-0 d-flex flex-column gap-2">
                 <li class="d-flex flex-row gap-2 align-items-center">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                   <span>Full IFC, BCF &amp; IDS viewer</span>
@@ -1482,7 +1498,7 @@ schema:
               <div class="d-flex flex-row gap-2">
                 <h3 class="fs-1 fw-bold mb-0">Custom quote</h3>
               </div>
-              <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+              <ul class="pricing-feature-list list-unstyled mb-0 d-flex flex-column gap-2">
                 <li class="d-flex flex-row gap-2 align-items-center">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.83333 9.99992L9.99999 14.1666L18.3333 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.66667 9.99992L5.83334 14.1666M10 9.99992L14.1667 5.83325" stroke="#6FDB93" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                   <span>Everything in Community</span>
