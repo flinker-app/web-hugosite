@@ -1430,6 +1430,16 @@ schema:
     #pricing .pricing-feature-list svg path + path {
       display: none;
     }
+
+    #pricing .pricing-plan-summary {
+      min-height: 76px;
+    }
+
+    @media (max-width: 767.98px) {
+      #pricing .pricing-plan-summary {
+        min-height: 0;
+      }
+    }
   </style>
   <div class="container pb-xl-5">
     <div class="row">
@@ -1449,7 +1459,7 @@ schema:
               <div class="position-absolute top-0 end-0 translate-middle">
                 <span class="badge bg-primary rounded-pill fw-medium px-3 py-2">Most Popular</span>
               </div>
-              <div class="d-flex flex-column gap-1">
+              <div class="pricing-plan-summary d-flex flex-column gap-1">
                 <h3 class="mb-0">Community</h3>
                 <p class="mb-0 text-muted">Free forever on web, SharePoint, Teams &amp; Excel</p>
               </div>
@@ -1491,7 +1501,7 @@ schema:
         <div class="card bg-white border shadow-sm h-100">
           <div class="card-body d-flex flex-column gap-6 p-5">
             <div class="d-flex flex-column gap-3">
-              <div class="d-flex flex-column gap-1">
+              <div class="pricing-plan-summary d-flex flex-column gap-1">
                 <h3 class="mb-0">Enterprise</h3>
                 <p class="mb-0 text-muted">For tailored deployments across Microsoft 365 and Azure</p>
               </div>
@@ -1546,70 +1556,67 @@ schema:
 </section>
 
 <!-- ENTERPRISE & PUBLIC SECTOR -->
-<section id="enterprise-deployments" class="py-lg-9 py-5">
-  <style>
-    #enterprise-deployments .enterprise-panel-body {
-      padding: clamp(2rem, 5.5vw, 4.5rem);
-    }
-
-    #enterprise-deployments .enterprise-intro {
-      max-width: 720px;
-      color: rgba(255,255,255,.76);
-      font-size: 1.05rem;
-      line-height: 1.8;
-    }
-  </style>
-  <div class="container" style="max-width:1160px;">
-    <div class="position-relative overflow-hidden rounded-4 text-white shadow-sm" style="background:#020617; border:1px solid #1e293b;">
-      <div class="enterprise-panel-body position-relative">
-        <div class="row align-items-end g-5 mb-5 mb-lg-6">
-          <div class="col-lg-8">
-            <small class="d-inline-block text-uppercase ls-md fw-semibold mb-4" style="color:rgba(255,255,255,.72);">Enterprise &amp; Public Sector</small>
-            <h2 class="text-white mb-4">Deploy OpenBIM on your terms</h2>
-            <p class="enterprise-intro mb-0">Choose a Microsoft-native rollout across Microsoft 365 or customer-hosted Azure, with governed access, regional deployment options, data integrations, and AI tailored to your environment.</p>
-          </div>
-          <div class="col-lg-4 text-lg-end">
-            <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" target="_blank" rel="noopener" class="btn btn-light fw-semibold px-4">Plan your deployment <i class="bi bi-arrow-right ms-2"></i></a>
-          </div>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-3">
-            <div class="h-100 rounded-4 p-4" style="background:#0f172a; border:1px solid #263348;">
-              <span class="d-inline-flex align-items-center justify-content-center rounded-3 mb-3" style="width:44px; height:44px; background:#1e293b;"><i class="bi bi-shield-check fs-4"></i></span>
-              <h3 class="h6 text-white fw-bold mb-2">Govern at scale</h3>
-              <p class="small mb-0" style="color:rgba(255,255,255,.7);">Tenant onboarding, Microsoft 365 governance, compliance, and audit support.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="h-100 rounded-4 p-4" style="background:#0f172a; border:1px solid #263348;">
-              <span class="d-inline-flex align-items-center justify-content-center rounded-3 mb-3" style="width:44px; height:44px; background:#1e293b;"><i class="bi bi-cloud-check fs-4"></i></span>
-              <h3 class="h6 text-white fw-bold mb-2">Run in your Azure</h3>
-              <p class="small mb-0" style="color:rgba(255,255,255,.7);">Customer-hosted containers, regional deployment, LTS, and version control.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="h-100 rounded-4 p-4" style="background:#0f172a; border:1px solid #263348;">
-              <span class="d-inline-flex align-items-center justify-content-center rounded-3 mb-3" style="width:44px; height:44px; background:#1e293b;"><i class="bi bi-database fs-4"></i></span>
-              <h3 class="h6 text-white fw-bold mb-2">Connect enterprise data</h3>
-              <p class="small mb-0" style="color:rgba(255,255,255,.7);">Bring IFC-derived data into Microsoft Fabric, OneLake, and Power BI.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="h-100 rounded-4 p-4" style="background:#0f172a; border:1px solid #263348;">
-              <span class="d-inline-flex align-items-center justify-content-center rounded-3 mb-3" style="width:44px; height:44px; background:#1e293b;"><i class="bi bi-stars fs-4"></i></span>
-              <h3 class="h6 text-white fw-bold mb-2">Bring your own AI</h3>
-              <p class="small mb-0" style="color:rgba(255,255,255,.7);">Use customer-managed models and agents with Flinker IFC grounding.</p>
-            </div>
-          </div>
+<section id="enterprise-deployments" class="py-lg-9 py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-12">
+        <div class="text-center mb-6 mb-lg-8">
+          <small class="text-primary text-uppercase ls-md fw-semibold">Enterprise &amp; Public Sector</small>
+          <h2 class="my-3">Deploy OpenBIM on your terms</h2>
+          <p class="text-muted mb-0">Choose a Microsoft-native rollout across Microsoft 365 or customer-hosted Azure, with governed access, regional deployment options, data integrations, and AI tailored to your environment.</p>
+          <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" target="_blank" rel="noopener" class="icon-link icon-link-hover link-primary mt-4">
+            Plan your deployment <i class="bi bi-arrow-right"></i>
+          </a>
         </div>
       </div>
-      <div class="position-relative d-flex flex-wrap justify-content-center gap-3 gap-lg-5 px-4 py-5 small" style="color:rgba(255,255,255,.62); border-top:1px solid #1e293b;">
-        <span><i class="bi bi-check-circle me-2"></i>Sovereign deployment options</span>
-        <span><i class="bi bi-check-circle me-2"></i>Framework agreements</span>
-        <span><i class="bi bi-check-circle me-2"></i>PO invoicing</span>
-        <span><i class="bi bi-check-circle me-2"></i>Public-sector procurement support</span>
+    </div>
+
+    <div class="row g-lg-5 gy-5">
+      <div class="col-lg-3 col-md-6">
+        <div class="text-center text-md-start">
+          <div class="icon-lg icon-shape rounded bg-primary bg-opacity-10 border border-primary-subtle mb-4">
+            <i class="bi bi-shield-check text-primary fs-4" aria-hidden="true"></i>
+          </div>
+          <h3 class="h5 mb-3">Govern at scale</h3>
+          <p class="text-muted mb-0">Tenant onboarding, Microsoft 365 governance, compliance, and audit support.</p>
+        </div>
       </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="text-center text-md-start">
+          <div class="icon-lg icon-shape rounded bg-primary bg-opacity-10 border border-primary-subtle mb-4">
+            <i class="bi bi-cloud-check text-primary fs-4" aria-hidden="true"></i>
+          </div>
+          <h3 class="h5 mb-3">Run in your Azure</h3>
+          <p class="text-muted mb-0">Customer-hosted containers, regional deployment, LTS, and version control.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="text-center text-md-start">
+          <div class="icon-lg icon-shape rounded bg-primary bg-opacity-10 border border-primary-subtle mb-4">
+            <i class="bi bi-database text-primary fs-4" aria-hidden="true"></i>
+          </div>
+          <h3 class="h5 mb-3">Connect enterprise data</h3>
+          <p class="text-muted mb-0">Bring IFC-derived data into Microsoft Fabric, OneLake, and Power BI.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="text-center text-md-start">
+          <div class="icon-lg icon-shape rounded bg-primary bg-opacity-10 border border-primary-subtle mb-4">
+            <i class="bi bi-stars text-primary fs-4" aria-hidden="true"></i>
+          </div>
+          <h3 class="h5 mb-3">Bring your own AI</h3>
+          <p class="text-muted mb-0">Use customer-managed models and agents with Flinker IFC grounding.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-top mt-6 pt-5">
+      <ul class="list-inline text-center text-muted small mb-0">
+        <li class="list-inline-item mx-2 mb-2">Sovereign deployment options</li>
+        <li class="list-inline-item mx-2 mb-2">Framework agreements</li>
+        <li class="list-inline-item mx-2 mb-2">PO invoicing</li>
+        <li class="list-inline-item mx-2 mb-2">Public-sector procurement support</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -1648,35 +1655,72 @@ schema:
         </a>
       </div>
       <div class="col-lg-6">
-        <div class="bg-light rounded-4 p-5 text-center">
-          <svg width="200" height="160" viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Browser window frame -->
-            <rect x="10" y="10" width="180" height="130" rx="8" fill="white" stroke="#dee2e6" stroke-width="2"/>
-            <!-- Browser top bar -->
-            <rect x="10" y="10" width="180" height="24" rx="8" fill="#f8f9fa"/>
-            <rect x="10" y="26" width="180" height="8" fill="#f8f9fa"/>
-            <!-- Browser dots -->
-            <circle cx="26" cy="22" r="4" fill="#dc3545"/>
-            <circle cx="40" cy="22" r="4" fill="#ffc107"/>
-            <circle cx="54" cy="22" r="4" fill="#28a745"/>
-            <!-- URL bar -->
-            <rect x="70" y="16" width="100" height="12" rx="3" fill="#e9ecef"/>
-            <!-- Embed symbol </> -->
-            <text x="24" y="58" font-family="monospace" font-size="12" font-weight="bold" fill="#0d6efd" opacity="0.8">&lt;/&gt;</text>
-            <!-- Code lines -->
-            <rect x="48" y="50" width="50" height="6" rx="2" fill="#6c757d" opacity="0.5"/>
-            <rect x="24" y="62" width="90" height="6" rx="2" fill="#6c757d" opacity="0.5"/>
-            <rect x="36" y="74" width="70" height="6" rx="2" fill="#0d6efd" opacity="0.5"/>
-            <rect x="36" y="86" width="50" height="6" rx="2" fill="#198754" opacity="0.6"/>
-            <rect x="24" y="98" width="80" height="6" rx="2" fill="#6c757d" opacity="0.5"/>
-            <rect x="24" y="110" width="40" height="6" rx="2" fill="#0d6efd" opacity="0.7"/>
-            <!-- 3D cube icon with IFC label -->
-            <g transform="translate(130, 50)">
-              <path d="M25 8L45 20V44L25 56L5 44V20L25 8Z" fill="#0d6efd" opacity="0.2"/>
-              <path d="M25 8L45 20L25 32L5 20L25 8Z" fill="#0d6efd" opacity="0.4"/>
-              <path d="M25 32V56L5 44V20L25 32Z" fill="#0d6efd" opacity="0.6"/>
-              <path d="M25 32V56L45 44V20L25 32Z" fill="#0d6efd" opacity="0.8"/>
-              <text x="25" y="36" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">IFC</text>
+        <div class="p-2 p-lg-3 text-center">
+          <svg class="img-fluid" viewBox="0 0 520 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="embedGraphicTitle embedGraphicDesc">
+            <title id="embedGraphicTitle">IFC viewer embedded in a web application</title>
+            <desc id="embedGraphicDesc">Integration code connects to an interactive IFC building model inside a browser.</desc>
+            <defs>
+              <linearGradient id="embedViewerGradient" x1="230" y1="80" x2="492" y2="318" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#172554"/>
+                <stop offset="1" stop-color="#020617"/>
+              </linearGradient>
+              <linearGradient id="embedModelGradient" x1="315" y1="164" x2="423" y2="292" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#60a5fa" stop-opacity=".8"/>
+                <stop offset="1" stop-color="#2563eb" stop-opacity=".24"/>
+              </linearGradient>
+              <pattern id="embedGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+                <path d="M24 0H0V24" stroke="#60a5fa" stroke-opacity=".07"/>
+              </pattern>
+              <filter id="embedShadow" x="-10%" y="-10%" width="120%" height="130%">
+                <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f172a" flood-opacity=".12"/>
+              </filter>
+            </defs>
+
+            <!-- One browser frame -->
+            <rect x="10" y="18" width="500" height="324" rx="22" fill="white" stroke="#cbd5e1" stroke-width="1.5" filter="url(#embedShadow)"/>
+            <path d="M10 40C10 27.85 19.85 18 32 18H488C500.15 18 510 27.85 510 40V62H10V40Z" fill="#f8fafc"/>
+            <path d="M10 62H510" stroke="#e2e8f0"/>
+            <circle cx="34" cy="40" r="5" fill="#f87171"/>
+            <circle cx="51" cy="40" r="5" fill="#fbbf24"/>
+            <circle cx="68" cy="40" r="5" fill="#34d399"/>
+            <rect x="98" y="29" width="324" height="22" rx="11" fill="white" stroke="#e2e8f0"/>
+            <text x="116" y="44" fill="#64748b" font-family="system-ui, sans-serif" font-size="10.5">your-app.com/project</text>
+
+            <!-- Integration code -->
+            <rect x="28" y="80" width="184" height="238" rx="15" fill="#f8fafc" stroke="#e2e8f0"/>
+            <rect x="44" y="96" width="34" height="34" rx="9" fill="#dbeafe"/>
+            <path d="M56 107L50 113L56 119M66 107L72 113L66 119M63 104L59 122" stroke="#0d6efd" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="88" y="110" fill="#0f172a" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Embed viewer</text>
+            <text x="88" y="124" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5">Inside your application</text>
+            <rect x="44" y="147" width="152" height="128" rx="10" fill="#0f172a"/>
+            <text x="56" y="169" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5">
+              <tspan fill="#93c5fd">viewer.mount</tspan><tspan fill="#cbd5e1">({</tspan>
+              <tspan x="64" dy="20" fill="#cbd5e1">model: </tspan><tspan fill="#86efac">&quot;project.ifc&quot;</tspan>
+              <tspan x="64" dy="20" fill="#cbd5e1">target: </tspan><tspan fill="#fde68a">&quot;#model&quot;</tspan>
+              <tspan x="56" dy="20" fill="#cbd5e1">});</tspan>
+            </text>
+
+            <!-- Connection -->
+            <path d="M215 199H227M223 195L227 199L223 203" stroke="#0d6efd" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+            <!-- IFC viewer -->
+            <rect x="230" y="80" width="262" height="238" rx="15" fill="url(#embedViewerGradient)"/>
+            <rect x="230" y="80" width="262" height="238" rx="15" fill="url(#embedGrid)"/>
+            <path d="M230 122H492" stroke="white" stroke-opacity=".11"/>
+            <circle cx="250" cy="101" r="6" fill="#3b82f6"/>
+            <text x="264" y="105" fill="white" font-family="system-ui, sans-serif" font-size="11" font-weight="700">IFC Viewer</text>
+            <rect x="433" y="92" width="43" height="18" rx="9" fill="#2563eb"/>
+            <text x="454.5" y="104.5" text-anchor="middle" fill="white" font-family="system-ui, sans-serif" font-size="8" font-weight="700">IFC</text>
+
+            <!-- Building model -->
+            <g stroke-linejoin="round">
+              <path d="M273 276L365 224L461 276L369 326L273 276Z" fill="#0b2557" stroke="#60a5fa" stroke-opacity=".32"/>
+              <path d="M290 248L365 206L444 249L369 291L290 248Z" fill="url(#embedModelGradient)" stroke="#93c5fd" stroke-width="1.3"/>
+              <path d="M304 216L365 181L430 217L368 253L304 216Z" fill="#3b82f6" fill-opacity=".27" stroke="#93c5fd" stroke-width="1.3"/>
+              <path d="M318 188L365 161L416 189L367 217L318 188Z" fill="#60a5fa" fill-opacity=".42" stroke="#bfdbfe" stroke-width="1.3"/>
+              <path d="M318 188V216M365 161V206M416 189V218M304 216V248M430 217V250M290 248V276M444 249V278" stroke="#93c5fd" stroke-width="1.2" stroke-opacity=".85"/>
+              <path d="M335 198V229M394 201V231M323 226V261M408 227V264M310 257V290M425 258V291" stroke="#60a5fa" stroke-opacity=".7"/>
+              <path d="M365 181V224M365 206V254M369 253V291M369 291V326" stroke="#dbeafe" stroke-width="1.2" stroke-opacity=".7"/>
             </g>
           </svg>
           <p class="text-muted mt-3 mb-0">Runs entirely in the browser with zero external dependencies.</p>
@@ -1812,19 +1856,13 @@ schema:
       <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
         <div class="text-center">
           <h2 class="mb-3">Ready to get started?</h2>
-          <p class="lead text-muted mb-5">Try the free viewer now or install from Microsoft AppSource.</p>
-          <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
-            <a href="https://viewer.flinker.app/" target="_blank" class="btn btn-primary btn-lg">
-              Try Free Viewer →
+          <p class="text-muted mb-4">Install Flinker directly from Microsoft AppSource.</p>
+          <div class="d-flex justify-content-center">
+            <a href="https://appsource.microsoft.com/en-us/product/office/WA200007412" target="_blank" rel="noopener"
+              aria-label="Get Flinker from Microsoft AppSource">
+              <img src="/assets-flinker/images/microsoft/MS_AppSource.png" alt="Get it from Microsoft AppSource"
+                width="180" height="80" loading="lazy" style="display:block; width:auto; height:80px;">
             </a>
-            <a href="https://appsource.microsoft.com/en-us/product/office/WA200007412" target="_blank" class="btn btn-outline-primary btn-lg">
-              Get from AppSource
-            </a>
-          </div>
-          <div class="d-flex flex-wrap justify-content-center gap-4 text-muted small">
-            <span><i class="bi bi-check-circle-fill text-success me-1"></i> Free forever</span>
-            <span><i class="bi bi-check-circle-fill text-success me-1"></i> No credit card</span>
-            <span><i class="bi bi-check-circle-fill text-success me-1"></i> No sign-up required</span>
           </div>
         </div>
       </div>
