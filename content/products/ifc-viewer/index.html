@@ -204,51 +204,71 @@ schema:
 <style>
   #viewer-demo.viewer-collaboration-frame {
     isolation: isolate;
+    padding: 8px;
+    border: 2px solid #cbd5e1;
+    border-radius: 20px;
+    background: #eef2f7;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, .14);
   }
 
   #viewer-demo .viewer-stakeholder {
     position: absolute;
-    z-index: 3;
+    z-index: 5;
     display: inline-flex;
     align-items: center;
-    gap: .3rem;
+    gap: .15rem;
     color: var(--stakeholder-color);
     pointer-events: none;
-    filter: drop-shadow(0 4px 8px rgba(15, 23, 42, .18));
   }
 
   #viewer-demo .viewer-stakeholder svg {
     width: 20px;
     height: 24px;
     flex: 0 0 auto;
+    filter: drop-shadow(0 3px 4px rgba(15, 23, 42, .32));
+    transform: translateY(-9px) rotate(-4deg);
   }
 
   #viewer-demo .viewer-stakeholder span {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
     padding: .42rem .72rem;
-    border: 2px solid #fff;
+    border: 2px solid var(--stakeholder-color);
     border-radius: 999px;
-    background: var(--stakeholder-color);
-    color: #fff;
+    background: #fff;
+    color: #0f172a;
     font-size: .78rem;
     line-height: 1;
     font-weight: 700;
     white-space: nowrap;
+    box-shadow: 0 7px 18px rgba(15, 23, 42, .2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
 
-  #viewer-demo .stakeholder-owner { top: 7%; left: 2%; }
-  #viewer-demo .stakeholder-design { top: 9%; right: 2%; }
+  #viewer-demo .viewer-stakeholder span i {
+    color: var(--stakeholder-color);
+    font-size: .84rem;
+  }
+
+  #viewer-demo .stakeholder-owner { top: 12%; left: 2%; }
+  #viewer-demo .stakeholder-design { top: 14%; right: 2%; }
   #viewer-demo .stakeholder-manager { top: 46%; left: 1%; }
   #viewer-demo .stakeholder-contractor { top: 51%; right: 1%; }
   #viewer-demo .stakeholder-asset { bottom: 5%; left: 50%; transform: translateX(-50%); }
 
   @media (max-width: 575.98px) {
     #viewer-demo .viewer-stakeholder { gap: .15rem; }
-    #viewer-demo .viewer-stakeholder svg { width: 14px; height: 18px; }
+    #viewer-demo .viewer-stakeholder svg { width: 14px; height: 18px; transform: translateY(-6px) rotate(-4deg); }
     #viewer-demo .viewer-stakeholder span {
       padding: .3rem .48rem;
-      border-width: 1px;
+      gap: .25rem;
       font-size: .58rem;
     }
+    #viewer-demo .viewer-stakeholder span i { font-size: .65rem; }
+    #viewer-demo .stakeholder-owner { top: 12%; }
+    #viewer-demo .stakeholder-design { top: 15%; }
   }
 </style>
 <section class="pb-lg-9 pb-5">
@@ -264,23 +284,23 @@ schema:
 
       <div class="viewer-stakeholder stakeholder-owner" style="--stakeholder-color:#2563eb;">
         <svg viewBox="0 0 18 22" aria-hidden="true"><path d="M1.5 1.5v15.2l4.1-4.1 3.2 7.1 3.1-1.4-3.2-6.9h6.2L1.5 1.5Z" fill="currentColor" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/></svg>
-        <span>Project owner</span>
+        <span><i class="bi bi-person-badge"></i>Project owner</span>
       </div>
       <div class="viewer-stakeholder stakeholder-design" style="--stakeholder-color:#7c3aed;">
         <svg viewBox="0 0 18 22" aria-hidden="true"><path d="M1.5 1.5v15.2l4.1-4.1 3.2 7.1 3.1-1.4-3.2-6.9h6.2L1.5 1.5Z" fill="currentColor" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/></svg>
-        <span>Design team</span>
+        <span><i class="bi bi-rulers"></i>Design team</span>
       </div>
       <div class="viewer-stakeholder stakeholder-manager" style="--stakeholder-color:#047857;">
         <svg viewBox="0 0 18 22" aria-hidden="true"><path d="M1.5 1.5v15.2l4.1-4.1 3.2 7.1 3.1-1.4-3.2-6.9h6.2L1.5 1.5Z" fill="currentColor" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/></svg>
-        <span>Project manager</span>
+        <span><i class="bi bi-kanban"></i>Project manager</span>
       </div>
       <div class="viewer-stakeholder stakeholder-contractor" style="--stakeholder-color:#c2410c;">
         <svg viewBox="0 0 18 22" aria-hidden="true"><path d="M1.5 1.5v15.2l4.1-4.1 3.2 7.1 3.1-1.4-3.2-6.9h6.2L1.5 1.5Z" fill="currentColor" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/></svg>
-        <span>Contractor</span>
+        <span><i class="bi bi-cone-striped"></i>Contractor</span>
       </div>
       <div class="viewer-stakeholder stakeholder-asset" style="--stakeholder-color:#be123c;">
         <svg viewBox="0 0 18 22" aria-hidden="true"><path d="M1.5 1.5v15.2l4.1-4.1 3.2 7.1 3.1-1.4-3.2-6.9h6.2L1.5 1.5Z" fill="currentColor" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/></svg>
-        <span>Asset owner</span>
+        <span><i class="bi bi-buildings"></i>Asset owner</span>
       </div>
     </div>
     <p class="text-center text-muted small mt-3 mb-0"><i class="bi bi-people me-2 text-primary"></i>One shared model for every stakeholder, from design and delivery to operations.</p>
@@ -665,7 +685,7 @@ schema:
             <p class="mb-4 fs-5">"Flinker's IFC Viewer is very smooth and works very well for viewing IFC models."</p>
             <div class="d-flex align-items-center gap-3 mt-auto">
               <div class="rounded-circle overflow-hidden d-flex align-items-center justify-content-center" style="width:48px; height:48px; flex-shrink:0;">
-                <img src="https://media.licdn.com/dms/image/v2/D4D03AQEFn4p6TOvOLA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1673339671730?e=1785974400&v=beta&t=2AqsptN5h_FJbSLdhBrvZEFQjtY2YVDDOxR6O3GmAM4" alt="Pankaj Goyal" style="width:48px; height:48px; object-fit:cover;">
+                <img src="/assets-flinker/images/testimonials/pankaj-goyal.jpg" alt="Pankaj Goyal" width="48" height="48" loading="lazy" style="width:48px; height:48px; object-fit:cover;">
               </div>
               <div>
                 <a href="https://www.linkedin.com/in/pankaj-goyal-66793b251/" target="_blank" class="fw-semibold text-reset text-decoration-none">Pankaj Goyal</a>
@@ -681,7 +701,7 @@ schema:
             <p class="mb-4 fs-5">"Flinker turned Microsoft 365 into a full BIM-ready CDE. Open IFC from SharePoint, embed it as a native web part, with BCF and IDS for real coordination."</p>
             <div class="d-flex align-items-center gap-3 mt-auto">
               <div class="rounded-circle overflow-hidden d-flex align-items-center justify-content-center" style="width:48px; height:48px; flex-shrink:0;">
-                <img src="https://media.licdn.com/dms/image/v2/D4D03AQFM15S7zQuLJA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719027860926?e=1785974400&v=beta&t=wh7_Py1BEkShU8QkuaZygKST2lUIvBsmNnRI4Lvynrk" alt="Antonio González Viegas" style="width:48px; height:48px; object-fit:cover;">
+                <img src="/assets-flinker/images/testimonials/antonio-gonzalez-viegas.jpg" alt="Antonio González Viegas" width="48" height="48" loading="lazy" style="width:48px; height:48px; object-fit:cover;">
               </div>
               <div>
                 <a href="https://www.linkedin.com/in/that-open-guy/" target="_blank" class="fw-semibold text-reset text-decoration-none">Antonio González Viegas</a>
@@ -1473,10 +1493,7 @@ schema:
     <div class="position-relative overflow-hidden rounded-4 text-white shadow-sm" style="background:#020617; border:1px solid #1e293b;">
       <div class="row g-5 align-items-center position-relative p-4 p-lg-6">
         <div class="col-lg-5">
-          <span class="d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-4 small fw-semibold" style="background:#0f172a; border:1px solid #263348;">
-            <i class="bi bi-buildings"></i>
-            Enterprise &amp; Public Sector
-          </span>
+          <small class="d-inline-block text-uppercase ls-md fw-semibold mb-6" style="color:rgba(255,255,255,.72);">Enterprise &amp; Public Sector</small>
           <h2 class="text-white mb-3">OpenBIM that fits your environment</h2>
           <p class="mb-4" style="color:rgba(255,255,255,.76);">Roll out across Microsoft 365, deploy in your own Azure environment, and connect IFC data to the tools your organization already governs.</p>
           <div class="d-flex flex-wrap gap-2 mb-4">
