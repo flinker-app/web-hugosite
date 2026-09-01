@@ -1,8 +1,8 @@
 ---
-title: "IFC Viewer SDK – Free Forever, Commercial Use, No Copyleft | Flinker"
-description: "Embed a complete IFC viewer in your web app. The Community tier is free forever with commercial use included, no copyleft, and up to 500 requests/month. No npm install, privacy-first, works with React, Vue, Angular."
+title: "IFC Viewer SDK"
+description: "Flinker IFC Viewer SDK for JavaScript: embed IFC, BCF, and IDS in any web app. Free commercial use, no copyleft, local processing, and 500 requests/month."
 date: 2026-02-14
-lastmod: 2026-08-31
+lastmod: 2026-09-01
 url: "/developers/ifc-viewer/sdk/"
 layout: "single"
 disableTopSpacing: true
@@ -10,20 +10,20 @@ shareImage: "/assets-flinker/images/products/ifc-viewer-app/ifc-viewer-hero.png"
 image: "/assets-flinker/images/products/ifc-viewer-app/ifc-viewer-hero.png"
 keywords:
   - IFC Viewer SDK
+  - JavaScript IFC Viewer SDK
   - free IFC viewer SDK
-  - embed IFC viewer free
-  - IFC viewer SDK no copyleft
   - commercial use IFC SDK
-  - IFC SDK pricing
-  - community IFC viewer
-  - browser IFC SDK
-  - WebGL BIM viewer
-  - IFC JavaScript library
-  - BIM SDK
+  - no copyleft IFC SDK
   - embed IFC viewer
-  - IFC viewer component
-  - IFC WebGL rendering
-  - IFC viewer React Vue Angular
+  - browser IFC viewer SDK
+  - self-hosted IFC viewer SDK
+  - IFC BCF IDS viewer
+  - React IFC viewer
+  - Vue IFC viewer
+  - Angular IFC viewer
+  - white-label IFC viewer SDK
+  - IFC SDK pricing
+  - BIM viewer SDK
 author: "Flinker"
 type: "page"
 sitemap:
@@ -604,7 +604,7 @@ breadcrumb:
 
 <span class="token-keyword">&lt;script</span> type=<span class="token-string">"module"</span><span class="token-keyword">&gt;</span>
   <span class="token-comment">// 2. Import — no npm install required</span>
-  <span class="token-keyword">import</span> { <span class="token-fn">IfcViewer</span> } <span class="token-keyword">from</span> <span class="token-string">"https://cdn.flinker.app/ifc-viewer/v3.3.0/ifc-viewer.es.js"</span>;
+  <span class="token-keyword">import</span> { <span class="token-fn">IfcViewer</span> } <span class="token-keyword">from</span> <span class="token-string">"https://cdn.flinker.app/ifc-viewer/v3.4.7/ifc-viewer.es.js"</span>;
 
   <span class="token-comment">// 3. Mount and wait for ready</span>
   <span class="token-keyword">const</span> <span class="token-var">viewer</span> = <span class="token-keyword">new</span> <span class="token-fn">IfcViewer</span>(<span class="token-string">"#ifc-viewer"</span>);
@@ -665,14 +665,14 @@ breadcrumb:
          <div class="col-lg-4 col-md-6">
             <div class="plan h-100 d-flex flex-column" id="sdk-card-pro">
                <div class="plan-name">Pro</div>
-               <div class="plan-requests">up to 3,000 requests/mo</div>
+               <div class="plan-requests">up to 1,500 requests/mo</div>
                <div class="plan-price">€300</div>
                <div class="plan-per">/ month · annual billing</div>
                <hr>
                <ul class="list-unstyled mb-4">
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Everything in Community</span></li>
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Email support</span></li>
-                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Self-serve upgrade</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-info-circle-fill text-warning mt-1 me-2"></i><span class="text-muted small">Flinker branding required</span></li>
                   <li class="mb-0 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Annual pre-pay (€3,600/yr)</span></li>
                </ul>
                <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-outline-primary w-100 mt-auto">Get Pro</a>
@@ -683,14 +683,13 @@ breadcrumb:
          <div class="col-lg-4 col-md-6">
             <div class="plan h-100 d-flex flex-column" id="sdk-card-enterprise">
                <div class="plan-name">Enterprise</div>
-               <div class="plan-requests">3,000+ requests/mo</div>
+               <div class="plan-requests">1,500+ requests/mo</div>
                <div class="plan-price">Custom</div>
                <div class="plan-per">contact us for pricing</div>
                <hr>
                <ul class="list-unstyled mb-4">
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Everything in Pro</span></li>
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">White-label — no Flinker branding</span></li>
-                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">OEM licensing</span></li>
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Custom quote</span></li>
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Priority support + SLA agreement</span></li>
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Dedicated contact</span></li>
@@ -790,7 +789,7 @@ breadcrumb:
             <div class="ai-prompt-block">
                <pre>Add a fully working browser IFC viewer with the Flinker IFC Viewer SDK.
 Use this import:
-import { IfcViewer } from "https://cdn.flinker.app/ifc-viewer/v3.3.0/ifc-viewer.es.js";
+import { IfcViewer } from "https://cdn.flinker.app/ifc-viewer/v3.4.7/ifc-viewer.es.js";
 
 Mount it into a &lt;bim-grid id="ifc-viewer"&gt;&lt;/bim-grid&gt; element.
 Create the viewer with new IfcViewer("#ifc-viewer").
@@ -843,11 +842,25 @@ Do not upload the IFC file to a backend just to view it.</pre>
                <div class="border mb-2 rounded-3 p-3">
                   <h3 class="h5 mb-0">
                      <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq2" aria-expanded="false" aria-controls="sdkFaq2">
-                        Does the SDK upload my IFC files to a Flinker server?
+                        Can I use the SDK in a product I sell to my customers?
                         <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
                      </a>
                   </h3>
                   <div id="sdkFaq2" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
+                     <div class="mt-3 text-muted">
+                        Yes. All plans include commercial use, and there is no copyleft requirement — your own code stays yours. You can embed the viewer in a product you sell, host it yourself, and run it under your own domain. Community and Pro require Flinker branding to remain visible in the viewer. If you need white-label licensing, choose Enterprise.
+                     </div>
+                  </div>
+               </div>
+
+               <div class="border mb-2 rounded-3 p-3">
+                  <h3 class="h5 mb-0">
+                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq3" aria-expanded="false" aria-controls="sdkFaq3">
+                        Does the SDK upload my IFC files to a Flinker server?
+                        <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+                     </a>
+                  </h3>
+                  <div id="sdkFaq3" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
                      <div class="mt-3 text-muted">
                         No. Your application reads or fetches the file, converts it to <code>Uint8Array</code>, and passes it to <code>viewer.add()</code>. IFC parsing and WebGL rendering happen entirely inside the visitor's browser. Files are never transferred to a Flinker server.
                      </div>
@@ -856,12 +869,12 @@ Do not upload the IFC file to a backend just to view it.</pre>
 
                <div class="border mb-2 rounded-3 p-3">
                   <h3 class="h5 mb-0">
-                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq3" aria-expanded="false" aria-controls="sdkFaq3">
+                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq4" aria-expanded="false" aria-controls="sdkFaq4">
                         Which JavaScript frameworks are supported?
                         <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
                      </a>
                   </h3>
-                  <div id="sdkFaq3" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
+                  <div id="sdkFaq4" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
                      <div class="mt-3 text-muted">
                         The SDK mounts into a DOM element and works with any framework that supports browser ES modules: React, Vue, Angular, TypeScript, Svelte, or plain HTML.
                      </div>
@@ -870,12 +883,12 @@ Do not upload the IFC file to a backend just to view it.</pre>
 
                <div class="border mb-2 rounded-3 p-3">
                   <h3 class="h5 mb-0">
-                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq4" aria-expanded="false" aria-controls="sdkFaq4">
+                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq5" aria-expanded="false" aria-controls="sdkFaq5">
                         What counts as a request?
                         <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
                      </a>
                   </h3>
-                  <div id="sdkFaq4" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
+                  <div id="sdkFaq5" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
                      <div class="mt-3 text-muted">
                         A request is counted when a viewer session loads. The number of IFC, BCF, or IDS files opened within that session does not matter — loading a federated model of nine files counts as one request. Reloading the page counts as a new request. Local development on localhost is not counted.
                      </div>
@@ -884,12 +897,26 @@ Do not upload the IFC file to a backend just to view it.</pre>
 
                <div class="border mb-2 rounded-3 p-3">
                   <h3 class="h5 mb-0">
-                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq5" aria-expanded="false" aria-controls="sdkFaq5">
+                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq6" aria-expanded="false" aria-controls="sdkFaq6">
+                        What happens if I exceed my plan limit?
+                        <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+                     </a>
+                  </h3>
+                  <div id="sdkFaq6" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
+                     <div class="mt-3 text-muted">
+                        Community and Pro have no overage billing. If usage exceeds the plan limit for two consecutive months, or exceeds three times the limit in a single month, we will contact you to move to the appropriate plan. The viewer keeps working while we talk.
+                     </div>
+                  </div>
+               </div>
+
+               <div class="border mb-2 rounded-3 p-3">
+                  <h3 class="h5 mb-0">
+                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq7" aria-expanded="false" aria-controls="sdkFaq7">
                         Is the Community plan permanently free?
                         <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
                      </a>
                   </h3>
-                  <div id="sdkFaq5" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
+                  <div id="sdkFaq7" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
                      <div class="mt-3 text-muted">
                         Yes. The Community plan is free up to 500 requests per month with no time limit. Flinker branding must remain visible in the viewer on the Community plan. When you need more requests, upgrade to Pro. For white-label licensing, choose Enterprise.
                      </div>
@@ -898,26 +925,26 @@ Do not upload the IFC file to a backend just to view it.</pre>
 
                <div class="border mb-2 rounded-3 p-3">
                   <h3 class="h5 mb-0">
-                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq6" aria-expanded="false" aria-controls="sdkFaq6">
+                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq8" aria-expanded="false" aria-controls="sdkFaq8">
                         Can I remove Flinker branding from the viewer?
                         <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
                      </a>
                   </h3>
-                  <div id="sdkFaq6" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
+                  <div id="sdkFaq8" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
                      <div class="mt-3 text-muted">
-                        Yes. White-label and OEM licensing are available with Enterprise. Community and Pro require Flinker branding.
+                        Yes. White-label licensing is available with Enterprise. Community and Pro require Flinker branding.
                      </div>
                   </div>
                </div>
 
                <div class="border mb-2 rounded-3 p-3">
                   <h3 class="h5 mb-0">
-                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq7" aria-expanded="false" aria-controls="sdkFaq7">
+                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq9" aria-expanded="false" aria-controls="sdkFaq9">
                         Does the SDK need an npm install?
                         <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
                      </a>
                   </h3>
-                  <div id="sdkFaq7" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
+                  <div id="sdkFaq9" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
                      <div class="mt-3 text-muted">
                         No. The standard integration uses Flinker's CDN ES module — one <code>import</code> line. No build pipeline changes are required.
                      </div>
@@ -926,12 +953,12 @@ Do not upload the IFC file to a backend just to view it.</pre>
 
                <div class="border mb-2 rounded-3 p-3">
                   <h3 class="h5 mb-0">
-                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq8" aria-expanded="false" aria-controls="sdkFaq8">
+                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq10" aria-expanded="false" aria-controls="sdkFaq10">
                         Do prices include VAT?
                         <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
                      </a>
                   </h3>
-                  <div id="sdkFaq8" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
+                  <div id="sdkFaq10" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
                      <div class="mt-3 text-muted">
                         All prices shown are exclusive of VAT. VAT will be applied where required based on your location.
                      </div>
@@ -974,9 +1001,9 @@ Do not upload the IFC file to a backend just to view it.</pre>
   "applicationCategory": "DeveloperApplication",
   "operatingSystem": "Web Browser (Chrome, Edge, Firefox, Safari 16+)",
   "url": "https://flinker.app/developers/ifc-viewer/sdk/",
-  "downloadUrl": "https://cdn.flinker.app/ifc-viewer/v3.3.0/ifc-viewer.es.js",
+  "downloadUrl": "https://cdn.flinker.app/ifc-viewer/v3.4.7/ifc-viewer.es.js",
   "installUrl": "https://docs.flinker.app/docs/ifc-viewer-sdk.html",
-  "softwareVersion": "3.3.0",
+  "softwareVersion": "3.4.7",
   "releaseNotes": "https://docs.flinker.app/docs/releases.html",
   "featureList": "IFC viewer, federated BIM model review, model tree, element properties, selection, visibility control, coloring, clipping planes, section views, viewpoints, BCF coordination, IDS validation, local browser processing",
   "programmingLanguage": ["JavaScript", "TypeScript"],
@@ -993,7 +1020,7 @@ Do not upload the IFC file to a backend just to view it.</pre>
     {
       "@type": "Offer",
       "name": "Pro",
-      "description": "Up to 3,000 requests per month. Annual billing.",
+      "description": "Up to 1,500 requests per month. Annual billing.",
       "price": "300",
       "priceCurrency": "EUR",
       "priceSpecification": {
@@ -1008,7 +1035,7 @@ Do not upload the IFC file to a backend just to view it.</pre>
     {
       "@type": "Offer",
       "name": "Enterprise",
-      "description": "Custom pricing for 3,000+ requests/month. White-label, OEM licensing, priority support, and SLA. Annual billing.",
+      "description": "Custom pricing for 1,500+ requests/month. White-label, priority support, and SLA. Annual billing.",
       "availability": "https://schema.org/InStock"
     }
   ],
