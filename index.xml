@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flinker | OpenBIM solutions for Microsoft on Flinker | The built-environment layer for Microsoft</title><link>https://flinker.app/</link><description>Recent content in Flinker | OpenBIM solutions for Microsoft on Flinker | The built-environment layer for Microsoft</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 19 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>ISO 19650 SharePoint: Configurable CDE Rules</title><link>https://flinker.app/blog/iso-19650-sharepoint-configurable-cde-rules/</link><pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/iso-19650-sharepoint-configurable-cde-rules/</guid><description>&lt;h1 id="iso-19650-in-sharepoint-why-naming-status-and-revision-need-to-be-configurable">ISO 19650 in SharePoint: Why Naming, Status and Revision Need to Be Configurable&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flinker | OpenBIM solutions for Microsoft on Flinker | The built-environment layer for Microsoft</title><link>https://flinker.app/</link><description>Recent content in Flinker | OpenBIM solutions for Microsoft on Flinker | The built-environment layer for Microsoft</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>ISO 19650 SharePoint: Configurable CDE Rules</title><link>https://flinker.app/blog/iso-19650-sharepoint-configurable-cde-rules/</link><pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/iso-19650-sharepoint-configurable-cde-rules/</guid><description>&lt;h1 id="iso-19650-in-sharepoint-why-naming-status-and-revision-need-to-be-configurable">ISO 19650 in SharePoint: Why Naming, Status and Revision Need to Be Configurable&lt;/h1>
 &lt;p>Implementing ISO 19650 in SharePoint is sometimes reduced to a familiar set of technical tasks: create a naming convention, add status and revision metadata, configure document libraries and automate approvals.&lt;/p>
 &lt;p>That approach can work for a single, stable information standard. It becomes more difficult when the same organisation delivers projects for clients with different information requirements, conventions and approval processes.&lt;/p></description></item><item><title>Digital Twins for Real Estate &amp; Asset Owners</title><link>https://flinker.app/industries/real-estate-asset-owners/</link><pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/industries/real-estate-asset-owners/</guid><description>&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10">
  &lt;div class="container">
@@ -873,7 +873,7 @@ Amtsgericht M&amp;uuml;nchen HRB 254870 (hereinafter &amp;ldquo;Processor&amp;rd
  &lt;div class="card-body p-4">
  &lt;i class="bi bi-calculator fs-3 text-primary mb-3">&lt;/i>
  &lt;h5>Quantity Takeoffs&lt;/h5>
- &lt;p class="text-muted mb-0">Extract quantities, areas, volumes, and counts from IFC models using natural language queries like "How many doors are on level 2?"&lt;/p></description></item><item><title>IFC Viewer SDK – Free Forever, Commercial Use | Flinker</title><link>https://flinker.app/developers/ifc-viewer/sdk/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/sdk/</guid><description>&lt;style>
+ &lt;p class="text-muted mb-0">Extract quantities, areas, volumes, and counts from IFC models using natural language queries like "How many doors are on level 2?"&lt;/p></description></item><item><title>IFC Viewer SDK</title><link>https://flinker.app/developers/ifc-viewer/sdk/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/sdk/</guid><description>&lt;style>
  /* Pricing section scoped styles */
  /* Plan cards */
  .plan {
@@ -927,7 +927,7 @@ Amtsgericht M&amp;uuml;nchen HRB 254870 (hereinafter &amp;ldquo;Processor&amp;rd
  text-transform: uppercase;
  margin-bottom: 14px;
  }
- .plan-opens {
+ .plan-requests {
  font-size: 13px;
  color: #64748b;
  margin-bottom: 12px;
@@ -1045,7 +1045,7 @@ Amtsgericht M&amp;uuml;nchen HRB 254870 (hereinafter &amp;ldquo;Processor&amp;rd
  &lt;div class="col-lg-5 col-12">
  &lt;span class="badge bg-primary mb-4">IFC Viewer SDK&lt;/span>
  &lt;h1 class="display-5 mb-3">Embed a complete IFC viewer in any app&lt;/h1>
- &lt;p class="lead mb-5">Free forever, commercial use included. Up to 2,000 opens/month.&lt;/p></description></item><item><title>Integrations | Connect Flinker with Your Tools</title><link>https://flinker.app/integrations/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/integrations/</guid><description>&lt;!-- Hero Section -->
+ &lt;p class="lead mb-5">Free forever, commercial use included, no copyleft. Up to 500 requests/month.&lt;/p></description></item><item><title>Integrations | Connect Flinker with Your Tools</title><link>https://flinker.app/integrations/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/integrations/</guid><description>&lt;!-- Hero Section -->
 &lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
  &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
  &lt;div class="container">

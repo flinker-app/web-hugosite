@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IFC Viewer for Developers – Hosting, Embedding, SDK &amp; White-Label on Flinker | The built-environment layer for Microsoft</title><link>https://flinker.app/developers/ifc-viewer/</link><description>Recent content in IFC Viewer for Developers – Hosting, Embedding, SDK &amp; White-Label on Flinker | The built-environment layer for Microsoft</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 26 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/developers/ifc-viewer/index.xml" rel="self" type="application/rss+xml"/><item><title>Embedded IFC Viewer – iFrame Integration &amp; BIM Data API</title><link>https://flinker.app/developers/ifc-viewer/embedded/</link><pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/embedded/</guid><description>&lt;nav aria-label="breadcrumb" class="container mt-3" style="position: relative; z-index: 1;">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IFC Viewer for Developers – Hosting, Embedding, SDK &amp; White-Label on Flinker | The built-environment layer for Microsoft</title><link>https://flinker.app/developers/ifc-viewer/</link><description>Recent content in IFC Viewer for Developers – Hosting, Embedding, SDK &amp; White-Label on Flinker | The built-environment layer for Microsoft</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/developers/ifc-viewer/index.xml" rel="self" type="application/rss+xml"/><item><title>Embedded IFC Viewer – iFrame Integration &amp; BIM Data API</title><link>https://flinker.app/developers/ifc-viewer/embedded/</link><pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/embedded/</guid><description>&lt;nav aria-label="breadcrumb" class="container mt-3" style="position: relative; z-index: 1;">
  &lt;ol class="breadcrumb mb-0 small">&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/" class="text-primary text-decoration-none">Developers&lt;/a>&lt;/li>&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/ifc-viewer/" class="text-primary text-decoration-none">IFC Viewer&lt;/a>&lt;/li>&lt;li class="breadcrumb-item active" aria-current="page">Embedded&lt;/li>&lt;/ol>
 &lt;/nav>
 
@@ -277,7 +277,7 @@
  &lt;div class="col-lg-8 offset-lg-2 text-center">
  &lt;span class="badge bg-primary mb-3">Deep Link Integration&lt;/span>
  &lt;h1 class="display-5">Hosted IFC Viewer&lt;/h1>
- &lt;p class="lead">Open IFC and BCF files via secure URL — no embedding, no infrastructure.&lt;/p></description></item><item><title>IFC Viewer SDK – Free Forever, Commercial Use | Flinker</title><link>https://flinker.app/developers/ifc-viewer/sdk/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/sdk/</guid><description>&lt;style>
+ &lt;p class="lead">Open IFC and BCF files via secure URL — no embedding, no infrastructure.&lt;/p></description></item><item><title>IFC Viewer SDK</title><link>https://flinker.app/developers/ifc-viewer/sdk/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/sdk/</guid><description>&lt;style>
  /* Pricing section scoped styles */
  /* Plan cards */
  .plan {
@@ -331,7 +331,7 @@
  text-transform: uppercase;
  margin-bottom: 14px;
  }
- .plan-opens {
+ .plan-requests {
  font-size: 13px;
  color: #64748b;
  margin-bottom: 12px;
@@ -449,7 +449,7 @@
  &lt;div class="col-lg-5 col-12">
  &lt;span class="badge bg-primary mb-4">IFC Viewer SDK&lt;/span>
  &lt;h1 class="display-5 mb-3">Embed a complete IFC viewer in any app&lt;/h1>
- &lt;p class="lead mb-5">Free forever, commercial use included. Up to 2,000 opens/month.&lt;/p></description></item><item><title>White-Label IFC Viewer &amp; IFC Copilot – OEM Licensing</title><link>https://flinker.app/developers/ifc-viewer/white-label/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/white-label/</guid><description>&lt;nav aria-label="breadcrumb" class="container mt-3" style="position: relative; z-index: 1;">
+ &lt;p class="lead mb-5">Free forever, commercial use included, no copyleft. Up to 500 requests/month.&lt;/p></description></item><item><title>White-Label IFC Viewer &amp; IFC Copilot – OEM Licensing</title><link>https://flinker.app/developers/ifc-viewer/white-label/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/white-label/</guid><description>&lt;nav aria-label="breadcrumb" class="container mt-3" style="position: relative; z-index: 1;">
  &lt;ol class="breadcrumb mb-0 small">&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/" class="text-primary text-decoration-none">Developers&lt;/a>&lt;/li>&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/ifc-viewer/" class="text-primary text-decoration-none">IFC Viewer&lt;/a>&lt;/li>&lt;li class="breadcrumb-item active" aria-current="page">White-label&lt;/li>&lt;/ol>
 &lt;/nav>
 
