@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flinker | OpenBIM solutions for Microsoft on Flinker | The built-environment layer for Microsoft</title><link>https://flinker.app/</link><description>Recent content in Flinker | OpenBIM solutions for Microsoft on Flinker | The built-environment layer for Microsoft</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>ISO 19650 SharePoint: Configurable CDE Rules</title><link>https://flinker.app/blog/iso-19650-sharepoint-configurable-cde-rules/</link><pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/iso-19650-sharepoint-configurable-cde-rules/</guid><description>&lt;h1 id="iso-19650-in-sharepoint-why-naming-status-and-revision-need-to-be-configurable">ISO 19650 in SharePoint: Why Naming, Status and Revision Need to Be Configurable&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flinker | OpenBIM solutions for Microsoft on Flinker | The built-environment layer for Microsoft</title><link>https://flinker.app/</link><description>Recent content in Flinker | OpenBIM solutions for Microsoft on Flinker | The built-environment layer for Microsoft</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 02 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>IFC Viewer Architectures: Where Should Model Processing Live?</title><link>https://flinker.app/blog/ifc-viewer-architectures-model-processing/</link><pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/ifc-viewer-architectures-model-processing/</guid><description>&lt;p>Embedding a BIM viewer into a web application is not only a rendering decision. It establishes a system boundary.&lt;/p>
+&lt;p>The choice affects where source models are processed, which credentials participate in the request path, whether intermediate representations are created, how model revisions propagate, and which components an engineering team must integrate and operate.&lt;/p>
+&lt;p>For IFC-centric applications, one question is especially useful:&lt;/p>
+&lt;p>&lt;strong>Where should IFC model processing live?&lt;/strong>&lt;/p>
+&lt;p>Autodesk Platform Services (APS) and the Flinker IFC Viewer SDK represent two different approaches.&lt;/p></description></item><item><title>ISO 19650 SharePoint: Configurable CDE Rules</title><link>https://flinker.app/blog/iso-19650-sharepoint-configurable-cde-rules/</link><pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/iso-19650-sharepoint-configurable-cde-rules/</guid><description>&lt;h1 id="iso-19650-in-sharepoint-why-naming-status-and-revision-need-to-be-configurable">ISO 19650 in SharePoint: Why Naming, Status and Revision Need to Be Configurable&lt;/h1>
 &lt;p>Implementing ISO 19650 in SharePoint is sometimes reduced to a familiar set of technical tasks: create a naming convention, add status and revision metadata, configure document libraries and automate approvals.&lt;/p>
 &lt;p>That approach can work for a single, stable information standard. It becomes more difficult when the same organisation delivers projects for clients with different information requirements, conventions and approval processes.&lt;/p></description></item><item><title>Digital Twins for Real Estate &amp; Asset Owners</title><link>https://flinker.app/industries/real-estate-asset-owners/</link><pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/industries/real-estate-asset-owners/</guid><description>&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10">
  &lt;div class="container">
@@ -352,286 +356,19 @@ Amtsgericht M&amp;uuml;nchen HRB 254870 (hereinafter &amp;ldquo;Processor&amp;rd
 &lt;/style>
 &lt;hr>
 &lt;h2 id="scope-and-precedence">1. Scope and precedence&lt;/h2>
-&lt;p>These Flinker Services Terms (v2026-04) (&amp;ldquo;Terms&amp;rdquo;) apply to the professional services and case-capped services described in the quote (&amp;ldquo;Services&amp;rdquo;) provided by Flinker GmbH (&amp;ldquo;Flinker&amp;rdquo;) to the customer (&amp;ldquo;Customer&amp;rdquo;).&lt;/p></description></item><item><title>Embedded IFC Viewer – iFrame Integration &amp; BIM Data API</title><link>https://flinker.app/developers/ifc-viewer/embedded/</link><pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/embedded/</guid><description>&lt;nav aria-label="breadcrumb" class="container mt-3" style="position: relative; z-index: 1;">
- &lt;ol class="breadcrumb mb-0 small">&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/" class="text-primary text-decoration-none">Developers&lt;/a>&lt;/li>&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/ifc-viewer/" class="text-primary text-decoration-none">IFC Viewer&lt;/a>&lt;/li>&lt;li class="breadcrumb-item active" aria-current="page">Embedded&lt;/li>&lt;/ol>
-&lt;/nav>
-
-&lt;!-- Hero Section -->
-&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
- &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
- &lt;div class="container">
- &lt;div class="row align-items-center py-lg-8">
- &lt;div class="col-lg-8 offset-lg-2 text-center">
- &lt;span class="badge bg-primary mb-3">iFrame + BIM Data API&lt;/span>
- &lt;h1 class="display-5">Embedded IFC Viewer&lt;/h1>
- &lt;p class="lead">Embed the viewer and query model data programmatically. Full visual integration into your portal, ERP, or intranet.&lt;/p>
- &lt;div class="mt-5">
- &lt;a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-primary me-2">Talk to Sales&lt;/a>
- &lt;a href="https://docs.flinker.app/" class="btn btn-outline-dark" target="_blank">View Docs&lt;/a>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
-&lt;/section>
-
-&lt;!-- Use Cases -->
-&lt;section class="py-9">
- &lt;div class="container">
- &lt;div class="row justify-content-center mb-7">
- &lt;div class="col-lg-8 text-center">
- &lt;h2 class="mb-3">Use Cases&lt;/h2>
- &lt;p class="text-muted">The Embedded Viewer is designed for software partners who need BIM visualization inside their own product.&lt;/p></description></item><item><title>Hosted IFC Viewer – Deep Link Integration &amp; Pricing</title><link>https://flinker.app/developers/ifc-viewer/hosted/</link><pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/hosted/</guid><description>&lt;style>
- /* Calculator scoped styles */
- .calc-card {
- border: 1px solid #e2e8f0;
- border-radius: 16px;
- padding: 40px;
- background: #fff;
- box-shadow: 0 10px 30px rgba(15,23,42,.06);
- position: relative;
- overflow: hidden;
- }
- .calc-card::before {
- content: '';
- position: absolute;
- top: 0; left: 0; right: 0;
- height: 3px;
- background: linear-gradient(90deg, var(--bs-primary), #10b981);
- border-radius: 16px 16px 0 0;
- }
- .calc-label {
- font-size: 12px;
- font-weight: 700;
- color: #64748b;
- letter-spacing: 0.08em;
- text-transform: uppercase;
- margin-bottom: 28px;
- }
- .calc-slider-wrap {
- margin-bottom: 32px;
- }
- .calc-slider-header {
- display: flex;
- justify-content: space-between;
- align-items: baseline;
- margin-bottom: 12px;
- }
- .calc-slider-title { font-size: 14px; color: #64748b; }
- .calc-slider-value {
- font-size: 28px;
- font-weight: 700;
- color: var(--bs-emphasis-color, #0f172a);
- transition: color 0.2s;
- }
-
- .calc-range {
- -webkit-appearance: none;
- width: 100%;
- height: 6px;
- background: #e2e8f0;
- outline: none;
- border-radius: 3px;
- cursor: pointer;
- }
- .calc-range::-webkit-slider-thumb {
- -webkit-appearance: none;
- width: 22px;
- height: 22px;
- background: var(--bs-primary, #007bff);
- border-radius: 50%;
- cursor: pointer;
- transition: transform 0.15s;
- box-shadow: 0 2px 8px rgba(0,123,255,0.3);
- }
- .calc-range::-webkit-slider-thumb:hover { transform: scale(1.15); }
- .calc-range::-moz-range-thumb {
- width: 22px;
- height: 22px;
- background: var(--bs-primary, #007bff);
- border-radius: 50%;
- cursor: pointer;
- border: none;
- box-shadow: 0 2px 8px rgba(0,123,255,0.3);
- }
-
- .calc-tick-labels {
- display: flex;
- justify-content: space-between;
- margin-top: 8px;
- }
- .calc-tick-labels span {
- font-size: 11px;
- font-weight: 500;
- color: #94a3b8;
- }
-
- /* Tier recommendation box */
- .tier-rec {
- border: 1px solid #e2e8f0;
- border-radius: 16px;
- padding: 24px 28px;
- background: #f8fafc;
- display: flex;
- align-items: center;
- justify-content: space-between;
- gap: 16px;
- transition: all 0.3s ease;
- }
- .tier-rec.rec-starter {
- background: rgba(16,185,129,0.06);
- border-color: rgba(16,185,129,0.25);
- }
- .tier-rec.rec-enterprise {
- background: rgba(14,165,233,0.06);
- border-color: rgba(14,165,233,0.25);
- }
- .rec-label {
- font-size: 12px;
- font-weight: 700;
- color: #64748b;
- letter-spacing: 0.06em;
- text-transform: uppercase;
- margin-bottom: 4px;
- }
- .rec-tier {
- font-size: 24px;
- font-weight: 700;
- color: var(--bs-emphasis-color, #0f172a);
- transition: color 0.3s;
- }
- .tier-rec.rec-starter .rec-tier { color: #10b981; }
- .tier-rec.rec-enterprise .rec-tier { color: #0ea5e9; }
- .rec-desc {
- font-size: 13px;
- color: #64748b;
- line-height: 1.5;
- margin-top: 2px;
- }
- .rec-amount {
- font-size: 44px;
- font-weight: 700;
- line-height: 1;
- color: var(--bs-primary, #007bff);
- transition: all 0.3s ease;
- }
- .tier-rec.rec-starter .rec-amount { color: #10b981; }
- .tier-rec.rec-enterprise .rec-amount { color: #0ea5e9; }
- .rec-period {
- font-size: 13px;
- font-weight: 500;
- color: #94a3b8;
- margin-top: 4px;
- text-align: right;
- }
-
- /* Plan cards */
- .plan {
- border: 1px solid #e2e8f0;
- border-radius: 16px;
- padding: 26px;
- background: #fff;
- box-shadow: 0 10px 30px rgba(15,23,42,.06);
- transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
- position: relative;
- }
- .plan:hover {
- transform: translateY(-3px);
- box-shadow: 0 14px 36px rgba(15,23,42,.1);
- }
- .plan-accent {
- border: 2px solid var(--bs-primary, #007bff);
- box-shadow: 0 10px 30px rgba(0,123,255,.12);
- }
- .plan-badge {
- position: absolute;
- top: -1px; right: 20px;
- background: var(--bs-primary, #007bff);
- color: #fff;
- font-size: 11px;
- font-weight: 700;
- padding: 4px 12px;
- letter-spacing: 0.04em;
- text-transform: uppercase;
- border-radius: 0 0 8px 8px;
- }
- .plan-name {
- font-size: 12px;
- font-weight: 700;
- color: #64748b;
- letter-spacing: 0.08em;
- text-transform: uppercase;
- margin-bottom: 14px;
- }
- .plan-opens {
- font-size: 13px;
- color: #64748b;
- margin-bottom: 12px;
- line-height: 1.4;
- }
- .plan-price {
- font-size: 24px;
- font-weight: 700;
- color: var(--bs-primary, #007bff);
- margin-bottom: 4px;
- }
- .plan-per {
- font-size: 13px;
- color: #64748b;
- margin-bottom: 18px;
- }
-
- /* Info rows */
- .info-row {
- border: 1px solid #e2e8f0;
- border-radius: 16px;
- padding: 22px 28px;
- background: #fff;
- display: flex;
- justify-content: space-between;
- align-items: center;
- box-shadow: 0 4px 12px rgba(15,23,42,.04);
- }
- .info-row-price {
- font-size: 26px;
- font-weight: 700;
- color: var(--bs-primary, #007bff);
- white-space: nowrap;
- }
-
- /* Pilot note */
- .pilot-note {
- border: 1px solid rgba(16,185,129,0.25);
- background: rgba(16,185,129,0.04);
- border-radius: 16px;
- padding: 20px 28px;
- display: flex;
- align-items: flex-start;
- gap: 16px;
- }
- .pilot-note strong { color: #10b981; font-weight: 600; }
-
- @media (max-width: 768px) {
- .calc-card { padding: 24px 18px; }
- .tier-rec { flex-direction: column; align-items: flex-start; }
- .rec-amount { font-size: 36px; }
- .rec-period { text-align: left; }
- .info-row { flex-direction: column; gap: 14px; align-items: flex-start; }
- }
-&lt;/style>
-
-&lt;nav aria-label="breadcrumb" class="container mt-3" style="position: relative; z-index: 1;">
+&lt;p>These Flinker Services Terms (v2026-04) (&amp;ldquo;Terms&amp;rdquo;) apply to the professional services and case-capped services described in the quote (&amp;ldquo;Services&amp;rdquo;) provided by Flinker GmbH (&amp;ldquo;Flinker&amp;rdquo;) to the customer (&amp;ldquo;Customer&amp;rdquo;).&lt;/p></description></item><item><title>Hosted IFC Viewer – Secure Deep-Link Integration</title><link>https://flinker.app/developers/ifc-viewer/hosted/</link><pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/hosted/</guid><description>&lt;nav aria-label="breadcrumb" class="container mt-3" style="position: relative; z-index: 1;">
  &lt;ol class="breadcrumb mb-0 small">&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/" class="text-primary text-decoration-none">Developers&lt;/a>&lt;/li>&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/ifc-viewer/" class="text-primary text-decoration-none">IFC Viewer&lt;/a>&lt;/li>&lt;li class="breadcrumb-item active" aria-current="page">Hosted&lt;/li>&lt;/ol>
 &lt;/nav>
 
-&lt;!-- Hero Section -->
+&lt;!-- Hero -->
 &lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
  &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
  &lt;div class="container">
  &lt;div class="row align-items-center py-lg-8">
  &lt;div class="col-lg-8 offset-lg-2 text-center">
- &lt;span class="badge bg-primary mb-3">Deep Link Integration&lt;/span>
- &lt;h1 class="display-5">Hosted IFC Viewer&lt;/h1>
- &lt;p class="lead">Open IFC and BCF files via secure URL — no embedding, no infrastructure.&lt;/p></description></item><item><title>Brand &amp; Partner Usage Guidelines | Flinker</title><link>https://flinker.app/partners/brand-guidelines/</link><pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/partners/brand-guidelines/</guid><description>&lt;!-- Header -->
+ &lt;small class="d-block text-uppercase ls-lg fw-semibold text-primary mb-3">Hosted deep-link option&lt;/small>
+ &lt;h1 class="display-5">Open IFC models from your product&lt;/h1>
+ &lt;p class="lead">Launch IFC and BCF files in a Flinker-hosted viewer through a secure URL with minimal application code and no viewer infrastructure to operate.&lt;/p></description></item><item><title>Brand &amp; Partner Usage Guidelines | Flinker</title><link>https://flinker.app/partners/brand-guidelines/</link><pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/partners/brand-guidelines/</guid><description>&lt;!-- Header -->
 &lt;section class="py-5 py-lg-8">
  &lt;div class="container">
  &lt;div class="row">
@@ -1122,222 +859,165 @@ Amtsgericht M&amp;uuml;nchen HRB 254870 (hereinafter &amp;ldquo;Processor&amp;rd
  &lt;div class="card-body p-4">
  &lt;i class="bi bi-folder fs-3 text-primary mb-3">&lt;/i>
  &lt;h5>SharePoint&lt;/h5>
- &lt;p class="text-muted mb-0">View IFC files directly in SharePoint document libraries. Full integration with metadata, permissions, and version history.&lt;/p></description></item><item><title>White-Label IFC Viewer &amp; IFC Copilot – OEM Licensing</title><link>https://flinker.app/developers/ifc-viewer/white-label/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/white-label/</guid><description>&lt;nav aria-label="breadcrumb" class="container mt-3" style="position: relative; z-index: 1;">
- &lt;ol class="breadcrumb mb-0 small">&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/" class="text-primary text-decoration-none">Developers&lt;/a>&lt;/li>&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/ifc-viewer/" class="text-primary text-decoration-none">IFC Viewer&lt;/a>&lt;/li>&lt;li class="breadcrumb-item active" aria-current="page">White-label&lt;/li>&lt;/ol>
+ &lt;p class="text-muted mb-0">View IFC files directly in SharePoint document libraries. Full integration with metadata, permissions, and version history.&lt;/p></description></item><item><title>White-Label &amp; OEM Licensing for IFC Technology</title><link>https://flinker.app/developers/ifc-viewer/white-label/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/white-label/</guid><description>&lt;nav aria-label="breadcrumb" class="container mt-3" style="position: relative; z-index: 1;">
+ &lt;ol class="breadcrumb mb-0 small">&lt;li class="breadcrumb-item">&lt;a href="https://flinker.app/developers/" class="text-primary text-decoration-none">Developers&lt;/a>&lt;/li>&lt;li class="breadcrumb-item active" aria-current="page">White-label &amp;amp; OEM&lt;/li>&lt;/ol>
 &lt;/nav>
 
-&lt;!-- Hero Section -->
+&lt;!-- Hero -->
 &lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
  &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
  &lt;div class="container">
- &lt;div class="row align-items-center py-lg-8">
- &lt;div class="col-lg-6 col-12">
- &lt;div class="text-center text-lg-start">
- &lt;span class="badge bg-primary mb-3">OEM&lt;/span>
- &lt;h1 class="display-5">White Label &amp; OEM Licensing&lt;/h1>
- &lt;p class="lead">Embed Flinker technology into your products under your own brand. Flexible licensing for software vendors and enterprises.&lt;/p>
- &lt;div class="d-flex flex-wrap gap-2 mt-3 justify-content-center justify-content-lg-start">
- &lt;span class="badge bg-primary-subtle text-primary px-3 py-2">IFC Viewer&lt;/span>
- &lt;span class="badge bg-primary-subtle text-primary px-3 py-2">IFC Copilot&lt;/span>
- &lt;/div>
- &lt;div class="mt-5">
- &lt;a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-primary">Contact Sales&lt;/a>
+ &lt;div class="row align-items-center py-lg-8 g-6">
+ &lt;div class="col-lg-6">
+ &lt;small class="d-block text-uppercase ls-lg fw-semibold text-primary mb-3">Enterprise licensing&lt;/small>
+ &lt;h1 class="display-5">White-label &amp;amp; OEM licensing&lt;/h1>
+ &lt;p class="lead">Use the IFC Viewer SDK or IFC Copilot under your brand, with commercial terms for distribution and deployment.&lt;/p>
+ &lt;div class="mt-5 d-flex flex-wrap gap-2">
+ &lt;a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-primary">Discuss your requirements&lt;/a>
+ &lt;a href="https://flinker.app/developers/ifc-viewer/sdk/" class="btn btn-outline-dark">Explore the IFC Viewer SDK&lt;/a>
  &lt;/div>
  &lt;/div>
- &lt;/div>
- &lt;div class="col-lg-6 col-12">
- &lt;div class="text-center">
- &lt;svg width="360" height="290" viewBox="0 0 360 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+ &lt;div class="col-lg-5 offset-lg-1">
+ &lt;svg class="img-fluid" viewBox="0 0 620 440" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="whiteLabelGraphicTitle whiteLabelGraphicDesc">
+ &lt;title id="whiteLabelGraphicTitle">White-label IFC viewer product&lt;/title>
+ &lt;desc id="whiteLabelGraphicDesc">An IFC viewer adapted to a customer's logo, colors, interface, and product.&lt;/desc>
  &lt;defs>
- &lt;!-- Flinker brand gradients -->
- &lt;linearGradient id="flinkerPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
- &lt;stop offset="0%" style="stop-color:#0779FF;stop-opacity:1" />
- &lt;stop offset="100%" style="stop-color:#0560cc;stop-opacity:1" />
+ &lt;linearGradient id="wlPremiumViewer" x1="245" y1="120" x2="480" y2="345" gradientUnits="userSpaceOnUse">
+ &lt;stop stop-color="#12366D"/>
+ &lt;stop offset="1" stop-color="#07162F"/>
  &lt;/linearGradient>
- &lt;linearGradient id="flinkerLight" x1="0%" y1="0%" x2="100%" y2="100%">
- &lt;stop offset="0%" style="stop-color:#96BFFF;stop-opacity:0.7" />
- &lt;stop offset="100%" style="stop-color:#0779FF;stop-opacity:0.4" />
+ &lt;linearGradient id="wlPremiumModelTop" x1="280" y1="186" x2="415" y2="262" gradientUnits="userSpaceOnUse">
+ &lt;stop stop-color="#8BC5FF"/>
+ &lt;stop offset="1" stop-color="#3E8FE6"/>
  &lt;/linearGradient>
- &lt;linearGradient id="flinkerGlow" x1="0%" y1="0%" x2="100%" y2="100%">
- &lt;stop offset="0%" style="stop-color:#0779FF;stop-opacity:0.15" />
- &lt;stop offset="100%" style="stop-color:#96BFFF;stop-opacity:0.05" />
+ &lt;linearGradient id="wlPremiumModelSide" x1="390" y1="218" x2="420" y2="312" gradientUnits="userSpaceOnUse">
+ &lt;stop stop-color="#286DB7"/>
+ &lt;stop offset="1" stop-color="#164880"/>
  &lt;/linearGradient>
- &lt;linearGradient id="customBrand1" x1="0%" y1="0%" x2="100%" y2="100%">
- &lt;stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
- &lt;stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
- &lt;/linearGradient>
- &lt;linearGradient id="customBrand2" x1="0%" y1="0%" x2="100%" y2="100%">
- &lt;stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
- &lt;stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
- &lt;/linearGradient>
- &lt;filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
- &lt;feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0779FF" flood-opacity="0.2"/>
+ &lt;radialGradient id="wlPremiumGlow" cx="0" cy="0" r="1" gradientTransform="translate(318 220) rotate(90) scale(204 267)" gradientUnits="userSpaceOnUse">
+ &lt;stop stop-color="#BFDFFF" stop-opacity=".72"/>
+ &lt;stop offset="1" stop-color="#D8EAFF" stop-opacity="0"/>
+ &lt;/radialGradient>
+ &lt;pattern id="wlPremiumGrid" width="18" height="18" patternUnits="userSpaceOnUse">
+ &lt;path d="M18 0H0V18" stroke="#78A9DD" stroke-opacity=".12" stroke-width="1"/>
+ &lt;/pattern>
+ &lt;filter id="wlPremiumShadow" x="52" y="15" width="516" height="396" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+ &lt;feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#10233E" flood-opacity=".18"/>
  &lt;/filter>
- &lt;filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
- &lt;feGaussianBlur stdDeviation="2" result="coloredBlur"/>
- &lt;feMerge>
- &lt;feMergeNode in="coloredBlur"/>
- &lt;feMergeNode in="SourceGraphic"/>
- &lt;/feMerge>
+ &lt;filter id="wlPremiumSmallShadow" x="0" y="80" width="620" height="350" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+ &lt;feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#10233E" flood-opacity=".15"/>
  &lt;/filter>
  &lt;/defs>
 
- &lt;!-- Background glow -->
- &lt;ellipse cx="180" cy="145" rx="140" ry="110" fill="url(#flinkerGlow)" />
+ &lt;ellipse cx="312" cy="223" rx="267" ry="204" fill="url(#wlPremiumGlow)"/>
 
- &lt;!-- Main Application Window (center) -->
- &lt;g transform="translate(85, 25)" filter="url(#dropShadow)">
- &lt;!-- Window frame -->
- &lt;rect x="0" y="0" width="190" height="155" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
- &lt;!-- Title bar -->
- &lt;rect x="0" y="0" width="190" height="28" rx="10" fill="#f8fafc"/>
- &lt;rect x="0" y="18" width="190" height="10" fill="#f8fafc"/>
- &lt;line x1="0" y1="28" x2="190" y2="28" stroke="#e2e8f0" stroke-width="1"/>
- &lt;!-- Window dots -->
- &lt;circle cx="16" cy="14" r="4" fill="#ef4444"/>
- &lt;circle cx="32" cy="14" r="4" fill="#fbbf24"/>
- &lt;circle cx="48" cy="14" r="4" fill="#22c55e"/>
-
- &lt;!-- Logo placeholder area with dashed border -->
- &lt;rect x="15" y="40" width="70" height="35" rx="6" fill="none" stroke="#0779FF" stroke-width="2" stroke-dasharray="4,3"/>
- &lt;text x="50" y="62" fill="#0779FF" font-size="10" text-anchor="middle" font-family="system-ui" font-weight="500">YOUR LOGO&lt;/text>
-
- &lt;!-- Content placeholders -->
- &lt;rect x="100" y="42" width="75" height="8" rx="4" fill="#e2e8f0"/>
- &lt;rect x="100" y="56" width="55" height="8" rx="4" fill="#f1f5f9"/>
- &lt;rect x="100" y="70" width="65" height="8" rx="4" fill="#f1f5f9"/>
-
- &lt;!-- 3D Building preview -->
- &lt;g transform="translate(35, 85)">
- &lt;path d="M40 8 L70 18 L70 55 L40 45 Z" fill="#0560cc" opacity="0.7"/>
- &lt;path d="M40 8 L40 45 L10 55 L10 18 Z" fill="url(#flinkerPrimary)" opacity="0.85"/>
- &lt;path d="M10 18 L40 8 L70 18 L40 28 Z" fill="#96BFFF" opacity="0.8"/>
- &lt;!-- Windows -->
- &lt;rect x="17" y="28" width="8" height="10" rx="1" fill="#96BFFF" opacity="0.7"/>
- &lt;rect x="17" y="42" width="8" height="8" rx="1" fill="#96BFFF" opacity="0.7"/>
- &lt;rect x="30" y="28" width="6" height="8" rx="1" fill="#96BFFF" opacity="0.5"/>
+ &lt;!-- Branded product variants -->
+ &lt;g transform="rotate(-6 116 235)" filter="url(#wlPremiumSmallShadow)">
+ &lt;rect x="28" y="126" width="176" height="218" rx="18" fill="white"/>
+ &lt;rect x="28.75" y="126.75" width="174.5" height="216.5" rx="17.25" stroke="#DCE5F0" stroke-width="1.5"/>
+ &lt;rect x="28" y="126" width="176" height="48" rx="18" fill="#6D4EE8"/>
+ &lt;path d="M28 156H204V174H28V156Z" fill="#6D4EE8"/>
+ &lt;circle cx="52" cy="150" r="8" fill="white" fill-opacity=".24"/>
+ &lt;text x="68" y="154" fill="white" font-family="Segoe UI, sans-serif" font-size="10" font-weight="700" letter-spacing="1">BRAND&lt;/text>
+ &lt;rect x="45" y="193" width="142" height="130" rx="10" fill="#171B3A"/>
+ &lt;path d="M73 277L115 253L161 278L117 302L73 277Z" fill="#795FF0" fill-opacity=".48" stroke="#B6A9FF"/>
+ &lt;path d="M88 249L115 234L145 250L116 266L88 249Z" fill="#9C8AF8" fill-opacity=".62" stroke="#D2CAFF"/>
+ &lt;/g>
+ &lt;g transform="rotate(6 506 235)" filter="url(#wlPremiumSmallShadow)">
+ &lt;rect x="418" y="126" width="176" height="218" rx="18" fill="white"/>
+ &lt;rect x="418.75" y="126.75" width="174.5" height="216.5" rx="17.25" stroke="#DCE5F0" stroke-width="1.5"/>
+ &lt;rect x="418" y="126" width="176" height="48" rx="18" fill="#008D7B"/>
+ &lt;path d="M418 156H594V174H418V156Z" fill="#008D7B"/>
+ &lt;circle cx="442" cy="150" r="8" fill="white" fill-opacity=".24"/>
+ &lt;text x="458" y="154" fill="white" font-family="Segoe UI, sans-serif" font-size="10" font-weight="700" letter-spacing="1">ACME&lt;/text>
+ &lt;rect x="435" y="193" width="142" height="130" rx="10" fill="#092F31"/>
+ &lt;path d="M463 277L505 253L551 278L507 302L463 277Z" fill="#00A995" fill-opacity=".45" stroke="#70D7CB"/>
+ &lt;path d="M478 249L505 234L535 250L506 266L478 249Z" fill="#41C8B8" fill-opacity=".6" stroke="#A7EAE2"/>
  &lt;/g>
 
- &lt;!-- Brand color indicator -->
- &lt;rect x="130" y="95" width="45" height="45" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
- &lt;circle cx="145" cy="110" r="8" fill="url(#flinkerPrimary)"/>
- &lt;circle cx="163" cy="110" r="8" fill="#96BFFF"/>
- &lt;circle cx="145" cy="128" r="8" fill="#1e293b"/>
- &lt;circle cx="163" cy="128" r="8" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+ &lt;!-- Main customer product -->
+ &lt;g filter="url(#wlPremiumShadow)">
+ &lt;rect x="85" y="48" width="450" height="324" rx="20" fill="white"/>
+ &lt;rect x="85.75" y="48.75" width="448.5" height="322.5" rx="19.25" stroke="#D7E2EE" stroke-width="1.5"/>
+ &lt;/g>
+ &lt;path d="M85 98H535" stroke="#E5ECF4" stroke-width="1.5"/>
+ &lt;circle cx="112" cy="73" r="5" fill="#D7E0EA"/>
+ &lt;circle cx="130" cy="73" r="5" fill="#D7E0EA"/>
+ &lt;circle cx="148" cy="73" r="5" fill="#D7E0EA"/>
+ &lt;rect x="191" y="64" width="238" height="18" rx="9" fill="#F0F4F8"/>
+
+ &lt;!-- Customer navigation -->
+ &lt;rect x="105" y="118" width="116" height="234" rx="13" fill="#F5F8FC"/>
+ &lt;rect x="116" y="134" width="94" height="36" rx="8" fill="#0779FF"/>
+ &lt;path d="M127 145L135 141L143 145V154L135 158L127 154V145Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+ &lt;text x="150" y="154" fill="white" font-family="Segoe UI, sans-serif" font-size="8" font-weight="700" letter-spacing=".45">YOUR LOGO&lt;/text>
+ &lt;rect x="121" y="194" width="67" height="8" rx="4" fill="#A9B9CB"/>
+ &lt;rect x="121" y="217" width="82" height="8" rx="4" fill="#D3DDE8"/>
+ &lt;rect x="121" y="240" width="56" height="8" rx="4" fill="#D3DDE8"/>
+ &lt;rect x="121" y="263" width="72" height="8" rx="4" fill="#D3DDE8"/>
+ &lt;rect x="121" y="318" width="23" height="6" rx="3" fill="#0779FF"/>
+ &lt;rect x="149" y="318" width="23" height="6" rx="3" fill="#18396C"/>
+ &lt;rect x="177" y="318" width="23" height="6" rx="3" fill="#C7D3E0"/>
+
+ &lt;!-- Viewer and tools -->
+ &lt;rect x="237" y="118" width="278" height="234" rx="13" fill="url(#wlPremiumViewer)"/>
+ &lt;rect x="237" y="118" width="278" height="234" rx="13" fill="url(#wlPremiumGrid)"/>
+ &lt;rect x="251" y="132" width="43" height="22" rx="11" fill="#0779FF"/>
+ &lt;text x="272.5" y="147" text-anchor="middle" fill="white" font-family="Segoe UI, sans-serif" font-size="9" font-weight="700">IFC&lt;/text>
+ &lt;rect x="300" y="132" width="43" height="22" rx="11" fill="#244778"/>
+ &lt;text x="321.5" y="147" text-anchor="middle" fill="#CBE1FF" font-family="Segoe UI, sans-serif" font-size="9" font-weight="700">BCF&lt;/text>
+ &lt;rect x="349" y="132" width="43" height="22" rx="11" fill="#244778"/>
+ &lt;text x="370.5" y="147" text-anchor="middle" fill="#CBE1FF" font-family="Segoe UI, sans-serif" font-size="9" font-weight="700">IDS&lt;/text>
+ &lt;circle cx="491" cy="143" r="11" fill="white" fill-opacity=".12"/>
+ &lt;path d="M486 143H496M491 138V148" stroke="#D7E9FF" stroke-width="1.5" stroke-linecap="round"/>
+
+ &lt;!-- Architectural model -->
+ &lt;g stroke-linejoin="round">
+ &lt;path d="M266 306L352 258L430 302L344 347L266 306Z" fill="#0A2B56" stroke="#3B78BA" stroke-opacity=".6"/>
+ &lt;path d="M283 270L351 232L414 267L345 306L283 270Z" fill="#2168AF" fill-opacity=".36" stroke="#75B2F2"/>
+ &lt;path d="M300 236L351 207L399 234L346 264L300 236Z" fill="url(#wlPremiumModelTop)" fill-opacity=".8" stroke="#B5D9FF"/>
+ &lt;path d="M300 236L346 264V319L300 292V236Z" fill="#307AC6" fill-opacity=".62" stroke="#75B2F2"/>
+ &lt;path d="M346 264L399 234V289L346 319V264Z" fill="url(#wlPremiumModelSide)" stroke="#75B2F2"/>
+ &lt;path d="M314 244V299M329 253V308M361 256V310M377 247V301M300 255L346 282L399 252M300 274L346 301L399 271" stroke="#B9DBFF" stroke-opacity=".55" stroke-width=".8"/>
+ &lt;path d="M321 224V205L351 188L380 204V245" stroke="#9DCAFA" stroke-width="1.2"/>
+ &lt;path d="M321 205L351 222L380 204M351 188V222" stroke="#9DCAFA" stroke-width="1.2"/>
  &lt;/g>
 
- &lt;!-- Small branded variant 1 (purple) - left bottom -->
- &lt;g transform="translate(20, 175)" filter="url(#dropShadow)">
- &lt;rect x="0" y="0" width="95" height="80" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
- &lt;rect x="0" y="0" width="95" height="18" rx="8" fill="#f8fafc"/>
- &lt;rect x="0" y="12" width="95" height="6" fill="#f8fafc"/>
- &lt;line x1="0" y1="18" x2="95" y2="18" stroke="#e2e8f0" stroke-width="1"/>
- &lt;!-- Purple brand logo -->
- &lt;rect x="10" y="26" width="35" height="18" rx="4" fill="url(#customBrand1)"/>
- &lt;text x="27" y="38" fill="white" font-size="7" text-anchor="middle" font-family="system-ui" font-weight="bold">BRAND&lt;/text>
- &lt;!-- Mini building -->
- &lt;g transform="translate(55, 28)">
- &lt;path d="M15 4 L28 9 L28 40 L15 35 Z" fill="#6d28d9" opacity="0.6"/>
- &lt;path d="M15 4 L15 35 L2 40 L2 9 Z" fill="url(#customBrand1)" opacity="0.75"/>
- &lt;path d="M2 9 L15 4 L28 9 L15 14 Z" fill="#c4b5fd" opacity="0.7"/>
- &lt;/g>
- &lt;!-- Purple color dots -->
- &lt;circle cx="15" cy="65" r="5" fill="url(#customBrand1)"/>
- &lt;circle cx="30" cy="65" r="5" fill="#c4b5fd"/>
- &lt;/g>
+ &lt;!-- Properties panel -->
+ &lt;rect x="423" y="172" width="76" height="151" rx="10" fill="#0B2143" fill-opacity=".88" stroke="#527EB1" stroke-opacity=".4"/>
+ &lt;rect x="436" y="187" width="29" height="6" rx="3" fill="#84B9F3"/>
+ &lt;rect x="436" y="207" width="49" height="5" rx="2.5" fill="#466B96"/>
+ &lt;rect x="436" y="220" width="38" height="5" rx="2.5" fill="#466B96"/>
+ &lt;path d="M436 239H486" stroke="#35577F"/>
+ &lt;rect x="436" y="253" width="44" height="5" rx="2.5" fill="#466B96"/>
+ &lt;rect x="436" y="266" width="32" height="5" rx="2.5" fill="#466B96"/>
+ &lt;rect x="436" y="292" width="50" height="17" rx="8.5" fill="#0779FF"/>
 
- &lt;!-- Small branded variant 2 (green) - right bottom -->
- &lt;g transform="translate(245, 175)" filter="url(#dropShadow)">
- &lt;rect x="0" y="0" width="95" height="80" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
- &lt;rect x="0" y="0" width="95" height="18" rx="8" fill="#f8fafc"/>
- &lt;rect x="0" y="12" width="95" height="6" fill="#f8fafc"/>
- &lt;line x1="0" y1="18" x2="95" y2="18" stroke="#e2e8f0" stroke-width="1"/>
- &lt;!-- Green brand logo -->
- &lt;rect x="10" y="26" width="35" height="18" rx="4" fill="url(#customBrand2)"/>
- &lt;text x="27" y="38" fill="white" font-size="7" text-anchor="middle" font-family="system-ui" font-weight="bold">ACME&lt;/text>
- &lt;!-- Mini building -->
- &lt;g transform="translate(55, 28)">
- &lt;path d="M15 4 L28 9 L28 40 L15 35 Z" fill="#059669" opacity="0.6"/>
- &lt;path d="M15 4 L15 35 L2 40 L2 9 Z" fill="url(#customBrand2)" opacity="0.75"/>
- &lt;path d="M2 9 L15 4 L28 9 L15 14 Z" fill="#6ee7b7" opacity="0.7"/>
+ &lt;!-- Brand controls -->
+ &lt;g filter="url(#wlPremiumSmallShadow)">
+ &lt;rect x="42" y="315" width="176" height="88" rx="16" fill="white"/>
+ &lt;rect x="42.75" y="315.75" width="174.5" height="86.5" rx="15.25" stroke="#DCE5F0" stroke-width="1.5"/>
  &lt;/g>
- &lt;!-- Green color dots -->
- &lt;circle cx="15" cy="65" r="5" fill="url(#customBrand2)"/>
- &lt;circle cx="30" cy="65" r="5" fill="#6ee7b7"/>
- &lt;/g>
-
- &lt;!-- Connection lines from main to variants -->
- &lt;g filter="url(#softGlow)">
- &lt;!-- Left connection -->
- &lt;path d="M130 180 Q100 195 95 195" stroke="#0779FF" stroke-width="2" fill="none" stroke-dasharray="4,3" opacity="0.6">
- &lt;animate attributeName="stroke-dashoffset" values="14;0" dur="1.5s" repeatCount="indefinite"/>
- &lt;/path>
- &lt;polygon points="95,195 103,190 103,200" fill="#0779FF" opacity="0.6"/>
-
- &lt;!-- Right connection -->
- &lt;path d="M230 180 Q260 195 265 195" stroke="#0779FF" stroke-width="2" fill="none" stroke-dasharray="4,3" opacity="0.6">
- &lt;animate attributeName="stroke-dashoffset" values="14;0" dur="1.5s" repeatCount="indefinite"/>
- &lt;/path>
- &lt;polygon points="265,195 257,190 257,200" fill="#0779FF" opacity="0.6"/>
- &lt;/g>
-
- &lt;!-- Customization icon badge -->
- &lt;g transform="translate(265, 35)">
- &lt;circle cx="20" cy="20" r="22" fill="white" stroke="#e2e8f0" stroke-width="1.5" filter="url(#dropShadow)"/>
- &lt;!-- Paint brush icon -->
- &lt;path d="M14 26 L20 20 L26 26 L23 29 Q20 32 17 29 Z" fill="url(#flinkerPrimary)"/>
- &lt;rect x="18" y="10" width="4" height="12" rx="2" fill="url(#flinkerPrimary)" transform="rotate(45 20 16)"/>
- &lt;circle cx="24" cy="12" r="3" fill="#96BFFF"/>
- &lt;/g>
-
- &lt;!-- Labels -->
- &lt;text x="180" y="275" fill="#64748b" font-size="11" text-anchor="middle" font-family="system-ui" font-weight="500">Your Brand, Our Technology&lt;/text>
-
- &lt;!-- Floating particles -->
- &lt;g opacity="0.5">
- &lt;circle cx="50" cy="100" r="3" fill="#0779FF">
- &lt;animate attributeName="cy" values="100;85;100" dur="3s" repeatCount="indefinite"/>
- &lt;animate attributeName="opacity" values="0.5;0.2;0.5" dur="3s" repeatCount="indefinite"/>
- &lt;/circle>
- &lt;circle cx="310" cy="120" r="2" fill="#96BFFF">
- &lt;animate attributeName="cy" values="120;105;120" dur="2.5s" repeatCount="indefinite"/>
- &lt;animate attributeName="opacity" values="0.5;0.2;0.5" dur="2.5s" repeatCount="indefinite"/>
- &lt;/circle>
- &lt;circle cx="180" cy="265" r="2" fill="#0779FF">
- &lt;animate attributeName="cy" values="265;255;265" dur="2s" repeatCount="indefinite"/>
- &lt;animate attributeName="opacity" values="0.4;0.1;0.4" dur="2s" repeatCount="indefinite"/>
- &lt;/circle>
- &lt;/g>
+ &lt;circle cx="67" cy="340" r="10" fill="#0779FF"/>
+ &lt;path d="M62 340H72M67 335V345" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+ &lt;text x="87" y="344" fill="#163252" font-family="Segoe UI, sans-serif" font-size="10" font-weight="700" letter-spacing="1.1">BRAND&lt;/text>
+ &lt;rect x="61" y="367" width="38" height="12" rx="6" fill="#0779FF"/>
+ &lt;rect x="105" y="367" width="38" height="12" rx="6" fill="#6D4EE8"/>
+ &lt;rect x="149" y="367" width="38" height="12" rx="6" fill="#008D7B"/>
  &lt;/svg>
  &lt;/div>
  &lt;/div>
  &lt;/div>
- &lt;/div>
 &lt;/section>
 
-&lt;!-- Available for both products -->
-&lt;section class="py-6">
- &lt;div class="container">
- &lt;div class="row justify-content-center">
- &lt;div class="col-lg-8">
- &lt;div class="alert alert-primary border-0 d-flex align-items-center" role="alert">
- &lt;i class="bi bi-info-circle fs-5 me-3 flex-shrink-0">&lt;/i>
- &lt;div>
- &lt;strong>Available for IFC Viewer and IFC Copilot.&lt;/strong> White-label and OEM licensing applies to both the IFC Viewer and the &lt;a href="https://flinker.app/developers/ifc-copilot/" class="alert-link">IFC Copilot&lt;/a>. Choose one or both products for your white-label deployment.
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
- &lt;/div>
-&lt;/section>
-
-&lt;!-- Options -->
+&lt;!-- Scope -->
 &lt;section class="py-9">
  &lt;div class="container">
- &lt;div class="row mb-8">
- &lt;div class="col-lg-8 offset-lg-2 text-center">
- &lt;h2 class="mb-3">Licensing Options&lt;/h2>
- &lt;p class="lead text-muted">Choose the model that fits your business.&lt;/p></description></item><item><title>Approvals Connector vs Approvals Kit vs ISO 19650 Governance</title><link>https://flinker.app/blog/power-automate-approvals-vs-iso-19650/</link><pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/power-automate-approvals-vs-iso-19650/</guid><description>&lt;p>Microsoft Approvals and the Approvals Kit orchestrate decisions (approve/reject). They do not provide ISO 19650 governance primitives: information states, release gates, naming/metadata enforcement, or repeatable project blueprints. A policy-driven ISO layer treats approvals as one step inside a gated state transition—not the governance engine itself.&lt;/p>
+ &lt;div class="row justify-content-center mb-7">
+ &lt;div class="col-lg-8 text-center">
+ &lt;small class="d-block text-uppercase ls-lg fw-semibold text-primary mb-3">Enterprise scope&lt;/small>
+ &lt;h2 class="mb-3">Choose the rights you need&lt;/h2>
+ &lt;p class="text-muted">Combine branding, distribution, and deployment in one agreement.&lt;/p></description></item><item><title>Approvals Connector vs Approvals Kit vs ISO 19650 Governance</title><link>https://flinker.app/blog/power-automate-approvals-vs-iso-19650/</link><pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/power-automate-approvals-vs-iso-19650/</guid><description>&lt;p>Microsoft Approvals and the Approvals Kit orchestrate decisions (approve/reject). They do not provide ISO 19650 governance primitives: information states, release gates, naming/metadata enforcement, or repeatable project blueprints. A policy-driven ISO layer treats approvals as one step inside a gated state transition—not the governance engine itself.&lt;/p>
 &lt;h2 id="the-terminology-problem">The terminology problem&lt;/h2>
 &lt;p>In Microsoft 365 environments, &amp;ldquo;approval&amp;rdquo; conflates two distinct concepts: a workflow task (approve/reject an item) and a release authorization (transition information into a contractually binding state). Treating Power Automate approval flows as ISO 19650 publication governance produces fragile implementations, incomplete audit trails, and operational complexity at scale.&lt;/p></description></item><item><title>ISO 19650 on SharePoint: Why a Policy-Driven App Beats Power Automate-Only</title><link>https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate/</link><pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/iso19650-sharepoint-policy-driven-vs-power-automate/</guid><description>&lt;h1 id="iso-19650-on-sharepoint-why-a-policy-driven-app-beats-a-power-automate-only-approach">ISO 19650 on SharePoint: Why a Policy-Driven App Beats a &amp;ldquo;Power Automate-Only&amp;rdquo; Approach&lt;/h1>
 &lt;p>Many construction and infrastructure organizations want an ISO 19650–aligned Common Data Environment (CDE) while keeping data inside Microsoft 365. SharePoint provides the underlying document management platform, and Power Automate is often used to stitch processes together. In practice, however, an ISO 19650 CDE requires more than automation steps: it requires governance, repeatability, enforceable rules, and predictable user experience at scale.&lt;/p></description></item><item><title>ISO 19650 App for SharePoint</title><link>https://flinker.app/products/iso-19650-app/</link><pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/products/iso-19650-app/</guid><description>&lt;!-- HERO -->
