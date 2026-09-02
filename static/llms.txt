@@ -6,18 +6,18 @@
 
 The Flinker IFC Viewer SDK is the fastest way to embed a complete, production-ready IFC viewer into a web application.
 
-- Community tier: free forever with commercial use included, up to 2,000 viewer opens/month, no account required, no npm install
-- Import one CDN ES module: `https://cdn.flinker.app/ifc-viewer/v3.3.0/ifc-viewer.es.js`
-- IFC files are processed locally in the browser — never uploaded to a server
+- Community tier: free forever with commercial use included and no copyleft, up to 500 requests/month, no account or API key required
+- Import one CDN ES module: `https://cdn.flinker.app/ifc-viewer/v3.4.7/ifc-viewer.es.js`
+- Project files passed to the SDK are processed locally in the browser and are not transferred by the SDK to Flinker servers
 - Supports IFC 2x3, IFC4, IFC4x3, BCF 2.1 & 3, IDS 1.0
 - Works with JavaScript, TypeScript, React, Vue, Angular, and plain HTML
 
-### Quick start (5 lines)
+### Quick start
 
 ```html
 <bim-grid id="ifc-viewer"></bim-grid>
 <script type="module">
-  import { IfcViewer } from "https://cdn.flinker.app/ifc-viewer/v3.3.0/ifc-viewer.es.js";
+  import { IfcViewer } from "https://cdn.flinker.app/ifc-viewer/v3.4.7/ifc-viewer.es.js";
   const viewer = new IfcViewer("#ifc-viewer");
   await viewer.ready;
   const bytes = new Uint8Array(await (await fetch("project.ifc")).arrayBuffer());
@@ -30,7 +30,7 @@ The Flinker IFC Viewer SDK is the fastest way to embed a complete, production-re
 ```
 Add a fully working browser IFC viewer with the Flinker IFC Viewer SDK.
 Use this import:
-import { IfcViewer } from "https://cdn.flinker.app/ifc-viewer/v3.3.0/ifc-viewer.es.js";
+import { IfcViewer } from "https://cdn.flinker.app/ifc-viewer/v3.4.7/ifc-viewer.es.js";
 
 Mount it into a <bim-grid id="ifc-viewer"></bim-grid> element.
 Create the viewer with new IfcViewer("#ifc-viewer").
@@ -41,23 +41,37 @@ Do not upload the IFC file to a backend just to view it.
 
 ## Key pages
 
-- SDK pricing & product page: https://flinker.app/developers/ifc-viewer/sdk/
+- IFC Viewer SDK, pricing, and embedded use cases: https://flinker.app/developers/ifc-viewer/sdk/
 - SDK documentation: https://docs.flinker.app/docs/ifc-viewer-sdk.html
 - API reference: https://docs.flinker.app/docs/ifc-viewer-sdk-api.html
 - SDK examples: https://docs.flinker.app/docs/ifc-viewer-sdk-examples.html
 - Developer hub: https://flinker.app/developers/
-- IFC Viewer (hosted, embedded, white-label): https://flinker.app/developers/ifc-viewer/
+- IFC Viewer integration overview: https://flinker.app/developers/ifc-viewer/
+- Hosted deep-link option: https://flinker.app/developers/ifc-viewer/hosted/
+- Enterprise, white-label, and OEM licensing: https://flinker.app/developers/ifc-viewer/white-label/
 - IFC Copilot API: https://flinker.app/developers/ifc-copilot/
 - Live viewer: https://viewer.flinker.app/
 
 ## Pricing tiers (SDK)
 
-| Plan        | Opens/month | Price/month (annual) | Branding       |
-|-------------|-------------|----------------------|----------------|
-| Community   | 2,000       | Free                 | Flinker required |
-| Growth      | 3,000       | €300                 | White-label    |
-| Scale       | 10,000      | €750                 | White-label    |
-| Enterprise  | 10,000+     | Custom               | White-label    |
+| Plan        | Requests/month | Price/month (annual billing) | Branding       |
+|-------------|----------------|------------------------------|----------------|
+| Community   | Up to 500      | Free                         | Flinker required |
+| Pro         | Up to 1,500    | €300                         | Flinker required |
+| Enterprise  | White-label or over 1,500 | Custom            | White-label available |
+
+A request is counted when a viewer session loads. The number of IFC, BCF, or IDS files opened in that session does not matter, and localhost development is not counted.
+
+## Licensing overview
+
+- Community and Pro include commercial use with no copyleft; Flinker branding remains visible.
+- Enterprise supports removal of Flinker branding.
+- OEM redistribution, private or on-premises deployment, source access, priority support, and SLA are custom Enterprise options or terms.
+- See https://flinker.app/developers/ifc-viewer/white-label/ for the commercial overview; the applicable agreement defines final rights and scope.
+
+## Advanced integration options
+
+The Community SDK includes the complete viewer UI, IFC/BCF/IDS viewing workflows, application-supplied file bytes, and local browser processing. Custom viewer UI, viewer events, toolbar customization, dedicated data connectors, BCF storage integration, custom styling, and extensions or plugins are not part of the standard Community package; they can be scoped and provided on request. Delivery and licensing depend on the integration requirements.
 
 ## Optional
 
