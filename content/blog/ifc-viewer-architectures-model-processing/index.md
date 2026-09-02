@@ -169,6 +169,9 @@ The architectural implication is specific: an application can keep its existing 
 
 That does not mean the application requires no backend or no infrastructure. Those responsibilities remain with the host system.
 
+![Service-side processing compared with browser-local openBIM processing](service-side-vs-browser-local-processing.svg)
+*Existing systems stay in control while openBIM processing moves browser-side.*
+
 ## 3. Source IFC versus derived viewable
 
 The most concrete technical difference is what the browser viewer consumes.
@@ -448,6 +451,9 @@ Instead of scoring viewer features, start with the surrounding system.
 
 This matrix is not a product ranking. It identifies which architecture is more directly aligned with a given starting point.
 
+![Architecture paths for service-side and browser-local model processing](service-side-vs-browser-local-processing.svg)
+*Choose processing architecture based on formats, workflows, and platform needs.*
+
 Then ask the questions that cut across both choices.
 
 **Data boundary:** Where does the authoritative source live, and which systems receive it?
@@ -499,4 +505,3 @@ The answer should follow from the application's existing responsibilities, forma
 Then it should be tested with representative production models.
 
 **Architecture can identify what needs to be measured. It cannot replace the measurement.**
-
