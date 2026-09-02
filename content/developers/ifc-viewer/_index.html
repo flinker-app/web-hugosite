@@ -1,30 +1,28 @@
 ---
-title: "IFC Viewer for Developers – Hosting, Embedding, SDK & White-Label"
-description: "Integrate the Flinker IFC Viewer into your platform. Choose from hosted deep links, embedded iFrame, full SDK, or white-label OEM licensing."
+title: "IFC Viewer SDK & Integration Options for Developers"
+description: "Add IFC viewing to any web app with the Flinker JavaScript and TypeScript SDK. Start free without an account, or explore hosted, white-label, and OEM options."
 date: 2026-03-03
-lastmod: 2026-03-03
+lastmod: 2026-09-02
 draft: false
 url: "/developers/ifc-viewer/"
 layout: "single"
 disableTopSpacing: true
+canonical: "https://flinker.app/developers/ifc-viewer/"
 shareImage: "/assets-flinker/images/products/ifc-viewer-app/ifc-viewer-hero.png"
 image: "/assets-flinker/images/products/ifc-viewer-app/ifc-viewer-hero.png"
 keywords:
-  - IFC Viewer
-  - BIM viewer integration
-  - hosted IFC viewer
+  - IFC Viewer SDK
+  - JavaScript IFC viewer
   - embedded IFC viewer
-  - IFC viewer SDK
+  - BIM viewer SDK
+  - hosted IFC viewer
   - white label IFC viewer
-  - IFC viewer API
-  - BIM viewer for developers
-  - IFC deep link
-  - IFC iFrame embed
+  - OEM BIM software
 author: "Flinker"
 type: "page"
 sitemap:
   priority: 0.9
-  changefreq: "weekly"
+  changefreq: "monthly"
 breadcrumb:
   - label: "Developers"
     url: "/developers/"
@@ -33,155 +31,167 @@ breadcrumb:
 
 {{< breadcrumb >}}
 
-<!-- Hero Section -->
+<!-- Hero -->
 <section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
    <div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;"></div>
    <div class="container">
       <div class="row align-items-center py-lg-8">
          <div class="col-lg-8 offset-lg-2 text-center">
-            <span class="badge bg-primary mb-3">IFC Viewer</span>
-            <h1 class="display-5">IFC Viewer</h1>
-            <p class="lead">From deep link to full SDK — choose your integration depth.</p>
-            <div class="mt-5">
-               <a href="https://docs.flinker.app/" class="btn btn-primary me-2" target="_blank">Documentation</a>
-               <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-outline-dark">Talk to Sales</a>
+            <small class="d-block text-uppercase ls-lg fw-semibold text-primary mb-3">IFC Viewer SDK · JavaScript · TypeScript</small>
+            <h1 class="display-5 mb-3">Build IFC viewing into any web app</h1>
+            <p class="lead text-muted mb-0">Add a complete viewer in minutes. Start free, then scale to higher usage, white-label, or OEM.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3 gap-md-4 mt-4 small fw-semibold">
+               <span><i class="bi bi-check2 text-primary me-1"></i>Commercial use included</span>
+               <span><i class="bi bi-check2 text-primary me-1"></i>No account or API key</span>
+               <span><i class="bi bi-check2 text-primary me-1"></i>No copyleft</span>
+               <span><i class="bi bi-check2 text-primary me-1"></i>Browser-local processing</span>
+            </div>
+            <div class="mt-5 d-flex flex-wrap justify-content-center gap-2">
+               <a href="https://docs.flinker.app/docs/ifc-viewer-sdk.html" class="btn btn-primary" target="_blank" rel="noopener">Start free with the SDK</a>
+               <a href="/developers/ifc-viewer/sdk/" class="btn btn-outline-dark">Explore the SDK</a>
             </div>
          </div>
       </div>
    </div>
 </section>
 
-<!-- 4 Integration Options -->
+<!-- Primary path -->
 <section class="py-9">
    <div class="container">
-      <div class="row justify-content-center mb-8">
+      <div class="row justify-content-center mb-7">
          <div class="col-lg-8 text-center">
-            <h2 class="mb-3">Choose Your Integration Depth</h2>
-            <p class="text-muted">Four options from zero-code deep links to full SDK control — pick what fits your product.</p>
+            <small class="d-block text-uppercase ls-lg fw-semibold text-primary mb-3">Recommended for new integrations</small>
+            <h2 class="mb-3">One SDK, from prototype to enterprise product</h2>
+            <p class="lead text-muted">Start in minutes. Your application controls user access, project data, and the complete viewer experience.</p>
          </div>
       </div>
-      <div class="row g-4">
-         <!-- A) Hosted -->
-         <div class="col-lg-3 col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-               <div class="card-body p-4 d-flex flex-column">
-                  <div class="bg-primary bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px;">
-                     <i class="bi bi-link-45deg fs-4 text-primary"></i>
-                  </div>
-                  <span class="badge bg-success-subtle text-success mb-2" style="width: fit-content;">Lowest complexity</span>
-                  <h5 class="mb-2">Hosted Viewer</h5>
-                  <p class="text-muted small mb-4 flex-grow-1">Open IFC and BCF files via secure URL — no embedding, no infrastructure. Deep link integration with predictable pricing.</p>
-                  <a href="/developers/ifc-viewer/hosted/" class="btn btn-outline-primary btn-sm">View Details & Pricing</a>
-               </div>
+      <div class="row g-4 justify-content-center">
+         <div class="col-md-6 col-lg-3">
+            <div class="h-100 p-4 rounded-3 bg-light">
+               <i class="bi bi-code-slash fs-3 text-primary"></i>
+               <h3 class="h5 mt-3">Build</h3>
+               <p class="text-muted small mb-0">Import one browser module and pass IFC, BCF, or IDS bytes from your application.</p>
             </div>
          </div>
-
-         <!-- B) Embedded -->
-         <div class="col-lg-3 col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-               <div class="card-body p-4 d-flex flex-column">
-                  <div class="bg-primary bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px;">
-                     <i class="bi bi-window fs-4 text-primary"></i>
-                  </div>
-                  <h5 class="mb-2">Embedded Viewer</h5>
-                  <p class="text-muted small mb-4 flex-grow-1">Embed the viewer in your app via iFrame and query model data programmatically through the BIM Data API.</p>
-                  <a href="/developers/ifc-viewer/embedded/" class="btn btn-outline-primary btn-sm">View Details</a>
-               </div>
+         <div class="col-md-6 col-lg-3">
+            <div class="h-100 p-4 rounded-3 bg-light">
+               <i class="bi bi-window fs-3 text-primary"></i>
+               <h3 class="h5 mt-3">Embed</h3>
+               <p class="text-muted small mb-0">Integrate the viewer into portals, CDEs, ERPs, digital twins, intranets, and customer-facing products.</p>
             </div>
          </div>
-
-         <!-- C) SDK -->
-         <div class="col-lg-3 col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-               <div class="card-body p-4 d-flex flex-column">
-                  <div class="bg-primary bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px;">
-                     <i class="bi bi-code-slash fs-4 text-primary"></i>
-                  </div>
-                  <h5 class="mb-2">SDK</h5>
-                  <p class="text-muted small mb-4 flex-grow-1">Full JavaScript/TypeScript SDK for maximum control. Build custom IFC viewing experiences with npm, CDN, or self-hosted deployment.</p>
-                  <a href="/developers/ifc-viewer/sdk/" class="btn btn-outline-primary btn-sm">View Details</a>
-               </div>
+         <div class="col-md-6 col-lg-3">
+            <div class="h-100 p-4 rounded-3 bg-light">
+               <i class="bi bi-shield-check fs-3 text-primary"></i>
+               <h3 class="h5 mt-3">Keep control</h3>
+               <p class="text-muted small mb-0">IFC parsing and rendering run locally in the browser; your app controls files and permissions.</p>
             </div>
          </div>
-
-         <!-- D) White-label -->
-         <div class="col-lg-3 col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-               <div class="card-body p-4 d-flex flex-column">
-                  <div class="bg-primary bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px;">
-                     <i class="bi bi-palette fs-4 text-primary"></i>
-                  </div>
-                  <span class="badge bg-primary-subtle text-primary mb-2" style="width: fit-content;">Full control</span>
-                  <h5 class="mb-2">White-label / OEM</h5>
-                  <p class="text-muted small mb-4 flex-grow-1">Your brand, our technology. White-label the IFC Viewer or IFC Copilot under your own domain with full OEM licensing.</p>
-                  <a href="/developers/ifc-viewer/white-label/" class="btn btn-outline-primary btn-sm">View Details</a>
-               </div>
+         <div class="col-md-6 col-lg-3">
+            <div class="h-100 p-4 rounded-3 bg-light">
+               <i class="bi bi-building fs-3 text-primary"></i>
+               <h3 class="h5 mt-3">Scale</h3>
+               <p class="text-muted small mb-0">Move to Pro or Enterprise for higher usage, support, white-label, OEM, or custom terms.</p>
             </div>
          </div>
+      </div>
+      <div class="text-center mt-6">
+         <a href="/developers/ifc-viewer/sdk/" class="btn btn-outline-primary">Features, live demo, and pricing</a>
       </div>
    </div>
 </section>
 
-<!-- How it works: Funnel -->
+<!-- Architecture -->
 <section class="py-9 bg-light">
    <div class="container">
       <div class="row justify-content-center mb-7">
          <div class="col-lg-8 text-center">
-            <h2 class="mb-3">How It Works</h2>
-            <p class="text-muted">Integration depth grows from left to right — complexity rises, but so does your control.</p>
+            <small class="d-block text-uppercase ls-lg fw-semibold text-primary mb-3">Architecture at a glance</small>
+            <h2 class="mb-3">Your application stays in control</h2>
+            <p class="text-muted mb-0">Your application supplies project data and controls user access. The SDK processes the data locally and renders the complete viewer inside your interface.</p>
          </div>
       </div>
-      <div class="row justify-content-center">
-         <div class="col-lg-10">
-            <div class="position-relative">
-               <!-- Progress arrow background -->
-               <div class="d-none d-md-block position-absolute w-100" style="top: 50%; height: 4px; background: linear-gradient(to right, #10b981, #0779FF, #6366f1); border-radius: 2px; transform: translateY(-50%); z-index: 0;"></div>
+      <div class="row align-items-stretch justify-content-center g-3">
+         <div class="col-lg-3">
+            <div class="h-100 bg-white rounded-3 p-4 shadow-sm">
+               <i class="bi bi-folder2-open fs-3 text-primary"></i>
+               <h3 class="h5 mt-3">Your application</h3>
+               <p class="text-muted small mb-0">Authenticates users and reads IFC, BCF, or IDS from files, URLs, SharePoint, object storage, or your API.</p>
+            </div>
+         </div>
+         <div class="col-lg-1 d-flex align-items-center justify-content-center">
+            <i class="bi bi-arrow-right fs-3 text-primary d-none d-lg-block" aria-hidden="true"></i>
+            <i class="bi bi-arrow-down fs-3 text-primary d-lg-none" aria-hidden="true"></i>
+         </div>
+         <div class="col-lg-3">
+            <div class="h-100 bg-white rounded-3 p-4 border border-primary shadow-sm">
+               <i class="bi bi-box fs-3 text-primary"></i>
+               <h3 class="h5 mt-3">Flinker SDK in the browser</h3>
+               <p class="text-muted small mb-0">Receives bytes, parses IFC data, and renders the model locally with WebGL 2.</p>
+            </div>
+         </div>
+         <div class="col-lg-1 d-flex align-items-center justify-content-center">
+            <i class="bi bi-arrow-right fs-3 text-primary d-none d-lg-block" aria-hidden="true"></i>
+            <i class="bi bi-arrow-down fs-3 text-primary d-lg-none" aria-hidden="true"></i>
+         </div>
+         <div class="col-lg-3">
+            <div class="h-100 bg-white rounded-3 p-4 shadow-sm">
+               <i class="bi bi-window-stack fs-3 text-primary"></i>
+               <h3 class="h5 mt-3">Your product workflow</h3>
+               <p class="text-muted small mb-0">Runs the complete viewer inside your interface. Advanced UI and data connections are available on request.</p>
+            </div>
+         </div>
+      </div>
+      <p class="text-center text-muted small mt-5 mb-0"><i class="bi bi-shield-check me-2 text-primary"></i>Project data is not transferred to Flinker servers by the SDK.</p>
+   </div>
+</section>
 
-               <div class="row g-4 position-relative" style="z-index: 1;">
-                  <!-- Step A -->
-                  <div class="col-md-3 text-center">
-                     <div class="bg-white rounded-3 p-4 shadow-sm h-100">
-                        <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px;">
-                           <span class="fw-bold text-success">A</span>
-                        </div>
-                        <h6>Hosted</h6>
-                        <p class="text-muted small mb-1">Deep Link</p>
-                        <p class="small mb-0"><span class="text-success"><i class="bi bi-arrow-down"></i> Low complexity</span></p>
+<!-- Secondary options -->
+<section class="py-9 bg-light">
+   <div class="container">
+      <div class="row justify-content-center mb-7">
+         <div class="col-lg-8 text-center">
+            <h2 class="mb-3">Other ways to deploy</h2>
+            <p class="text-muted mb-0">The SDK is the default. Use these options for quick viewing workflows or enterprise licensing.</p>
+         </div>
+      </div>
+      <div class="row g-4 justify-content-center">
+         <div class="col-lg-5" id="hosted">
+            <div class="card h-100 border-0 shadow-sm rounded-3">
+               <div class="card-body p-5 d-flex flex-column">
+                  <div class="d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 rounded-3 mb-4" style="width: 52px; height: 52px;">
+                     <i class="bi bi-link-45deg fs-4 text-primary"></i>
+                  </div>
+                  <small class="d-block text-uppercase ls-lg fw-semibold text-primary mb-2">Specialized option</small>
+                  <h3 class="h4 mb-3">Hosted deep link</h3>
+                  <p class="text-muted mb-4">Open IFC and BCF files in a Flinker-hosted viewer through a secure URL.</p>
+                  <div class="bg-light rounded-3 p-4 mb-4">
+                     <small class="d-block text-uppercase ls-lg fw-semibold text-muted mb-2">Best fit</small>
+                     <p class="mb-0 fw-semibold">Fast viewing without building a custom interface.</p>
+                  </div>
+                  <p class="small text-muted mb-5"><strong class="text-body">Choose the SDK</strong> for custom UI, in-app interaction, write-back, or white-label.</p>
+                  <a href="/developers/ifc-viewer/hosted/" class="text-primary fw-semibold text-decoration-none mt-auto">Hosted viewer details <i class="bi bi-arrow-right ms-1"></i></a>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-5" id="enterprise">
+            <div class="card h-100 border-0 shadow-sm rounded-3">
+               <div class="card-body p-5 d-flex flex-column">
+                  <div class="d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 rounded-3 mb-4" style="width: 52px; height: 52px;">
+                     <i class="bi bi-palette fs-4 text-primary"></i>
+                  </div>
+                  <small class="d-block text-uppercase ls-lg fw-semibold text-primary mb-2">Enterprise licensing</small>
+                  <h3 class="h4 mb-3">White-label &amp; OEM</h3>
+                  <p class="text-muted mb-4">Use Flinker technology under your brand or distribute it as part of your product. Available for IFC Viewer and IFC Copilot.</p>
+                  <div class="bg-light rounded-3 p-4 mb-5">
+                     <small class="d-block text-uppercase ls-lg fw-semibold text-muted mb-3">Available by agreement</small>
+                     <div class="d-grid gap-2 small fw-semibold">
+                        <span><i class="bi bi-check2 text-primary me-2"></i>Branding &amp; redistribution</span>
+                        <span><i class="bi bi-check2 text-primary me-2"></i>Private deployment &amp; source access</span>
+                        <span><i class="bi bi-check2 text-primary me-2"></i>Support &amp; SLA</span>
                      </div>
                   </div>
-                  <!-- Step B -->
-                  <div class="col-md-3 text-center">
-                     <div class="bg-white rounded-3 p-4 shadow-sm h-100">
-                        <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px;">
-                           <span class="fw-bold text-primary">B</span>
-                        </div>
-                        <h6>Embedded</h6>
-                        <p class="text-muted small mb-1">iFrame + API</p>
-                        <p class="small mb-0"><span class="text-primary"><i class="bi bi-arrow-up"></i> More control</span></p>
-                     </div>
-                  </div>
-                  <!-- Step C -->
-                  <div class="col-md-3 text-center">
-                     <div class="bg-white rounded-3 p-4 shadow-sm h-100">
-                        <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px;">
-                           <span class="fw-bold text-primary">C</span>
-                        </div>
-                        <h6>SDK</h6>
-                        <p class="text-muted small mb-1">npm / CDN / Self-hosted</p>
-                        <p class="small mb-0"><span class="text-primary"><i class="bi bi-arrow-up"></i> Full flexibility</span></p>
-                     </div>
-                  </div>
-                  <!-- Step D -->
-                  <div class="col-md-3 text-center">
-                     <div class="bg-white rounded-3 p-4 shadow-sm h-100">
-                        <div class="bg-indigo bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px; background-color: rgba(99,102,241,0.1) !important;">
-                           <span class="fw-bold" style="color: #6366f1;">D</span>
-                        </div>
-                        <h6>White-label</h6>
-                        <p class="text-muted small mb-1">OEM / Your Brand</p>
-                        <p class="small mb-0"><span style="color: #6366f1;"><i class="bi bi-arrow-up"></i> Maximum control</span></p>
-                     </div>
-                  </div>
+                  <a href="/developers/ifc-viewer/white-label/" class="text-primary fw-semibold text-decoration-none mt-auto">Explore enterprise licensing <i class="bi bi-arrow-right ms-1"></i></a>
                </div>
             </div>
          </div>
@@ -194,9 +204,12 @@ breadcrumb:
    <div class="container">
       <div class="row">
          <div class="col-lg-8 offset-lg-2 text-center">
-            <h2 class="mb-3">Not Sure Where to Start?</h2>
-            <p class="lead text-muted mb-5">Talk to us — we'll help you choose the right integration model for your product and timeline.</p>
-            <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-primary btn-lg">Book a Call</a>
+            <h2 class="mb-3">Start building now</h2>
+            <p class="lead text-muted mb-5">Use the SDK immediately, or talk to us about enterprise integration and licensing.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+               <a href="https://docs.flinker.app/docs/ifc-viewer-sdk.html" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Open SDK documentation</a>
+               <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-outline-primary btn-lg">Talk to Sales</a>
+            </div>
          </div>
       </div>
    </div>
